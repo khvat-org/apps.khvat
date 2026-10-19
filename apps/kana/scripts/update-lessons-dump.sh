@@ -7,7 +7,7 @@
 
 set -euo pipefail
 
-API_URL="${API_URL:-https://nihongo.khvat.org/api/v2/lessons}"
+API_URL="${API_URL:-https://dev1.khvat.org/api/v2/lessons}"
 LANGS=(ru en de fr id ko it es-ES es-MX pt-BR pt-PT zh-CN zh-HK zh-TW)
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

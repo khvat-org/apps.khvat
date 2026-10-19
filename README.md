@@ -1,11 +1,11 @@
 # apps.nihongo.khvat
 
-> Monorepo for nihongo.khvat apps, see https://nihongo.khvat.org
+> Monorepo for nihongo.khvat apps, see https://khvat.org
 
 This repository includes the following applications:
 
 - `./apps/kana` — NihonGo: Hiragana & Katakana ([Google Play](https://play.google.com/store/apps/details?id=pro.khvat.learnjapanese) & [App Store - Apple](https://apps.apple.com/us/app/nihongo-hiragana-katakana/id6479753061))
-- `./apps/memoboard` — Memo Board, the app for https://nihongo.khvat.org
+- `./apps/memoboard` — Memo Board, the app for https://khvat.org
 
 It also contains the `packages/core` package, which holds shared components, pages, UI kit, universal features, entities, contexts, and more. Everything that can be reused across multiple applications is stored here.
 
