@@ -14,6 +14,8 @@ type borderLetterProps = {
   marginTop?: number;
   viewportBottom?: number | null;
 
+  isStencil?: boolean;
+
   onComplete?: (hasError: boolean) => void;
 };
 
@@ -22,6 +24,7 @@ const BorderLetterExercise: React.FC<borderLetterProps> = ({
   kana,
   marginTop,
   viewportBottom,
+  isStencil,
   onComplete,
 }) => {
   const drawRef = useRef<React.ComponentRef<typeof View>>(null);
@@ -51,6 +54,7 @@ const BorderLetterExercise: React.FC<borderLetterProps> = ({
         <Draw
           maxCanvasSize={maxCanvasSize}
           isCheck
+          isStencil={isStencil}
           onCompleted={(isError) => onComplete?.(isError)}
           letter={lettersTableBase[id]}
           kana={kana}

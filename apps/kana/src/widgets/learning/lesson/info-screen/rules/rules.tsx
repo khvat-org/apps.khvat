@@ -4,6 +4,8 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import { Typography } from "@nihongo/core/shared/typography";
 import { StyleSheet, Text, View } from "react-native";
 
+import { parseString } from "../lib/parse-string";
+
 type RulesProps = {
   rules: string[];
 };
@@ -18,7 +20,7 @@ const Rules: React.FC<RulesProps> = ({ rules }) => {
       {rules.map((rule, idx) => (
         <View style={[styles.textContainer, idx === 0 ? { borderTopWidth: 0 } : {}]} key={rule}>
           <Text style={styles.text}>
-            {idx + 1}. {rule}
+            {idx + 1}. {parseString(rule)}
           </Text>
         </View>
       ))}

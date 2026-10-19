@@ -62,6 +62,8 @@ interface DrawProps {
 
   isCheck?: boolean;
 
+  isStencil?: boolean;
+
   isFullHeight?: boolean;
 
   isTextRecognition?: boolean;
@@ -79,6 +81,7 @@ const getTypeById = (id: string) => {
 
 const Draw: React.FC<DrawProps> = ({
   isCheck,
+  isStencil,
   letter,
   kana,
   isTextRecognition,
@@ -96,7 +99,10 @@ const Draw: React.FC<DrawProps> = ({
 
   const [, forceUpdate] = useReducer((x) => x + 1, 0);
 
-  const canvasSize = Math.min(getCanvasSize(width, height), maxCanvasSize);
+  const canvasSize =
+    width < TABLET_WIDTH
+      ? getCanvasSize(width, height)
+      : Math.min(getCanvasSize(width, height), maxCanvasSize);
 
   const { settings } = useDrawSettings();
 
@@ -285,7 +291,7 @@ const Draw: React.FC<DrawProps> = ({
               </View>
             )}
 
-            {isShowLetter && !isCheck && (
+            {((isShowLetter && !isCheck) || isStencil) && (
               <View style={[styles.drawContainerImage, { width: canvasSize, height: canvasSize }]}>
                 <Symbol isGray id={letter?.id} kana={kana} size={canvasSize} />
               </View>

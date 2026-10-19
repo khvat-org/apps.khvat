@@ -1,10 +1,28 @@
 import React from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { useFileUrl } from "@nihongo/core/shared/lib/api-gateway";
 import { Typography } from "@nihongo/core/shared/typography";
 import { CheckIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { StyleSheet, Text, useWindowDimensions, View, Image, Pressable } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  useWindowDimensions,
+  View,
+  Image,
+  ImageStyle,
+  Pressable,
+} from "react-native";
+
+const isImageIcon = (icon: string) =>
+  /^https?:\/\//i.test(icon) || /\.(png|jpe?g|webp|gif)$/i.test(icon);
+
+const IconImage: React.FC<{ src: string; style: ImageStyle }> = ({ src, style }) => {
+  const uri = useFileUrl(src);
+
+  return <Image style={style} source={uri ? { uri } : undefined} />;
+};
 
 interface TopicItemProps {
   isPassed?: boolean;
@@ -40,8 +58,8 @@ const TopicItem: React.FC<TopicItemProps> = ({
   const styles = makeStyles(colors);
 
   const getIcon = (link: string) => {
-    if (link.includes("http")) {
-      return <Image style={styles.icon} source={{ uri: link }} />;
+    if (isImageIcon(link)) {
+      return <IconImage style={styles.icon} src={link} />;
     }
 
     return (

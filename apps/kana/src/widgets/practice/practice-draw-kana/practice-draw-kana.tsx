@@ -37,24 +37,26 @@ const PracticeDrawKana: React.FC<PracticeDrawKanaProps> = ({ symbol, kana, onCom
         subtitle={`${kana === Kana.Hiragana ? t("kana.hiragana") : t("kana.katakana")} (${t(getTypeById(symbol.id))})`}
       />
       <View style={styles.container} onLayout={onLayout}>
-        {areaHeight > 0 && (
-          <GestureHandlerRootView style={styles.scroll}>
-            <ScrollView contentContainerStyle={styles.draw}>
-              <Draw
-                maxCanvasSize={Math.max(MIN_FIT_CANVAS_SIZE, areaHeight - DRAW_CONTROLS_HEIGHT)}
-                onCompleted={(isCorrect, _pickedAnswer, drawing) =>
-                  onCompleted({
-                    isCorrectAnswer: isCorrect,
-                    userSelect: { type: PracticeType.Drawing, value: drawing },
-                  })
-                }
-                isCheck
-                letter={symbol}
-                kana={kana === Kana.Hiragana ? KanaAlphabet.Hiragana : KanaAlphabet.Katakana}
-              />
-            </ScrollView>
-          </GestureHandlerRootView>
-        )}
+        <GestureHandlerRootView style={styles.scroll}>
+          <ScrollView contentContainerStyle={styles.draw}>
+            <Draw
+              maxCanvasSize={
+                areaHeight > 0
+                  ? Math.max(MIN_FIT_CANVAS_SIZE, areaHeight - DRAW_CONTROLS_HEIGHT)
+                  : undefined
+              }
+              onCompleted={(isCorrect, _pickedAnswer, drawing) =>
+                onCompleted({
+                  isCorrectAnswer: isCorrect,
+                  userSelect: { type: PracticeType.Drawing, value: drawing },
+                })
+              }
+              isCheck
+              letter={symbol}
+              kana={kana === Kana.Hiragana ? KanaAlphabet.Hiragana : KanaAlphabet.Katakana}
+            />
+          </ScrollView>
+        </GestureHandlerRootView>
       </View>
     </View>
   );

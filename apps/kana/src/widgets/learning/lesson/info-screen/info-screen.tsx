@@ -9,6 +9,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { LearningTitle } from "../ui/title";
 
 import BorderLetterExercise from "./borderLetterExercise/borderLetter";
+import ImageBlock from "./image/image";
 import Rules from "./rules/rules";
 import Table from "./table/table";
 import BlockText from "./text/text";
@@ -30,6 +31,7 @@ import {
   LessonBlockSequence,
   LessonBlockTitle,
   LessonBlockMatching,
+  LessonBlockImage,
 } from "@/shared/constants/lessons";
 import { useFirstClickHandler } from "@/shared/helpers/firstClickHandler";
 
@@ -53,6 +55,7 @@ const blockType = {
     item.type === "matching",
   isSequence: (item: AnyLessonBlock): item is LessonBlockSequence => item.type === "sequence",
   isTitleBlock: (item: AnyLessonBlock): item is LessonBlockTitle => item.type === "title",
+  isImage: (item: AnyLessonBlock): item is LessonBlockImage => item.type === "image",
 };
 
 const InfoScreen: React.FC<InfoScreenProps> = ({ next, finish, title, blocks, isLast }) => {
@@ -173,6 +176,7 @@ const InfoScreen: React.FC<InfoScreenProps> = ({ next, finish, title, blocks, is
                       kana={blockKana}
                       key={idx}
                       id={block.content.id}
+                      isStencil={block.content.stencil}
                     />
                   );
                 } else {
@@ -204,6 +208,8 @@ const InfoScreen: React.FC<InfoScreenProps> = ({ next, finish, title, blocks, is
                     key={idx}
                   />
                 );
+              } else if (blockType.isImage(block)) {
+                return <ImageBlock url={block.content.url} alt={block.content.alt} key={idx} />;
               } else if (blockType.isTitleBlock(block)) {
                 return (
                   <Title title={block.content.title} subtitle={block.content.sub_title} key={idx} />

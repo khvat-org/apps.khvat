@@ -357,6 +357,14 @@ export const useGatewayUrl = (path: string): string | undefined => {
   return url;
 };
 
+// ? Абсолютный url отдаёт как есть, имя файла (uuid.png) — c самым быстрым gateway: {gateway}/file/{name}
+export const useFileUrl = (src: string): string | undefined => {
+  const isAbsolute = /^https?:\/\//i.test(src);
+  const gatewayUrl = useGatewayUrl(isAbsolute ? "" : `/file/${src}`);
+
+  return isAbsolute ? src : gatewayUrl;
+};
+
 export type ApiFetchOptions = {
   timeout?: number;
   failover?: boolean;

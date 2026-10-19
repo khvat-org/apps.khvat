@@ -4,6 +4,8 @@ import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-conte
 import { Typography } from "@nihongo/core/shared/typography";
 import { StyleSheet, Text, View } from "react-native";
 
+import { parseString } from "../lib/parse-string";
+
 interface TableProps {
   data: string[][];
 }
@@ -30,7 +32,9 @@ const Table: React.FC<TableProps> = ({ data }) => {
               style={[styles.cell, cellStyles, index > 0 ? { borderTopWidth: 1 } : {}]}
               key={`${idx}/${index}`}
             >
-              <Text style={[{ color: colors.TextPrimary }, Typography.regularDefault]}>{cell}</Text>
+              <Text style={[{ color: colors.TextPrimary }, Typography.regularDefault]}>
+                {parseString(cell)}
+              </Text>
             </View>
           ))}
         </View>
