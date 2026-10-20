@@ -273,20 +273,25 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
     return (
       <View style={styles.lines}>
         {answer.lines.map((line, lineIndex) => (
-          <View key={lineIndex} style={styles.line}>
-            <ResultStatusIcon size={20} isCorrect={line.isCorrect} colors={colors} />
-            <Text style={styles.line__question}>{line.question}</Text>
-            <ArrowIcon color={colors.TextPrimary} />
-            <Text style={styles.line__answer}>
-              {line.answer.map((segment, segmentIndex) => (
-                <Text
-                  key={segmentIndex}
-                  style={{ color: segment.isCorrect ? colors.TextSuccess : colors.TextDanger }}
-                >
-                  {segment.text}
-                </Text>
-              ))}
-            </Text>
+          <View key={lineIndex}>
+            <View style={styles.line}>
+              <ResultStatusIcon size={20} isCorrect={line.isCorrect} colors={colors} />
+              <Text style={styles.line__question}>{line.question}</Text>
+              <ArrowIcon color={colors.TextPrimary} />
+              <Text style={styles.line__answer}>
+                {line.answer.map((segment, segmentIndex) => (
+                  <Text
+                    key={segmentIndex}
+                    style={{ color: segment.isCorrect ? colors.TextSuccess : colors.TextDanger }}
+                  >
+                    {segment.text}
+                  </Text>
+                ))}
+              </Text>
+            </View>
+            {line.correct !== undefined && (
+              <Text style={styles.line__correct}>({line.correct})</Text>
+            )}
           </View>
         ))}
       </View>
@@ -565,6 +570,12 @@ const makeStyles = (colors: ColorsType) =>
     line__answer: {
       ...Typography.boldDefault,
       flexShrink: 1,
+    },
+
+    line__correct: {
+      ...Typography.regularDefault,
+      color: colors.TextSecondary,
+      marginLeft: 28,
     },
   });
 

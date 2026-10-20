@@ -12,7 +12,12 @@ interface FormatResultAnswerProps {
 
 export type ResultSegment = { text: string; isCorrect: boolean };
 
-export type ResultLine = { question: string; answer: ResultSegment[]; isCorrect: boolean };
+export type ResultLine = {
+  question: string;
+  answer: ResultSegment[];
+  isCorrect: boolean;
+  correct?: string;
+};
 
 export interface ResultAnswerView {
   question: PracticeQuestion | null;
@@ -106,6 +111,9 @@ const formatResultAnswer = ({
           question: attempt.question,
           answer: [{ text: attempt.answer, isCorrect: attempt.isCorrect }],
           isCorrect: attempt.isCorrect,
+          correct: attempt.isCorrect
+            ? undefined
+            : data.pairs.find((pair) => pair.kana === attempt.question)?.transliteration,
         })),
         errors: attempts.filter((attempt) => !attempt.isCorrect).length,
       };
@@ -138,7 +146,16 @@ const formatResultAnswer = ({
         ...empty,
         question: { type: PracticeType.Typing, [PracticeType.Typing]: data },
         lines:
-          typed.length > 0 ? [{ question: from, answer: segments, isCorrect: errors === 0 }] : [],
+          typed.length > 0
+            ? [
+                {
+                  question: from,
+                  answer: segments,
+                  isCorrect: errors === 0,
+                  correct: errors > 0 ? to : undefined,
+                },
+              ]
+            : [],
         errors,
       };
     }
