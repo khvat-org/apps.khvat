@@ -30,7 +30,7 @@ import {
   probeGateway,
   ProbeResult,
   removeCustomGateway,
-  useUserGatewayUrl,
+  resolveUserGateway,
 } from "@nihongo/core/shared/lib/api-gateway";
 import { Typography } from "@nihongo/core/shared/typography";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -95,7 +95,7 @@ const DebugInfo: React.FC = () => {
   const [probes, setProbes] = useState<Record<string, ProbeResult>>({});
   const [newHost, setNewHost] = useState("");
 
-  const userServer = useUserGatewayUrl("");
+  const [userServer, setUserServer] = useState<string | null>(null);
 
   const { getField } = useRemoteConfig();
 
@@ -124,6 +124,9 @@ const DebugInfo: React.FC = () => {
     if (!isVisible) return;
     AsyncStorage.getItem(NOTIFICATION_TOKEN).then(setNotificationToken);
     AsyncStorage.getItem(DEVICE_ID).then(setDeviceId);
+    resolveUserGateway()
+      .then(setUserServer)
+      .catch(() => {});
 
     ensureSelected()
       .then((url: string) => {
