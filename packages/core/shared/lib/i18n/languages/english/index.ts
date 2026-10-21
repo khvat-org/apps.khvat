@@ -80,7 +80,7 @@ const English = {
 
   selectKana: {
     chooseKana: "Choose kana",
-    words: "Words for practice",
+    words: "Words",
     nothingSelected: "Nothing selected",
   },
 

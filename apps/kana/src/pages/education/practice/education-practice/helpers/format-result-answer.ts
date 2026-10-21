@@ -42,6 +42,15 @@ const selectOf = <Type extends PracticeType>(
   return userSelect.value as UserSelectByType[Type];
 };
 
+const NO_ANSWER = "—";
+
+const missedLine = (question: string, correct: string): ResultLine => ({
+  question,
+  answer: [{ text: NO_ANSWER, isCorrect: false }],
+  isCorrect: false,
+  correct,
+});
+
 const compareSymbols = (answer: string[], correct: string[]) => {
   const segments = answer.map((text, index) => ({
     text,
@@ -103,19 +112,25 @@ const formatResultAnswer = ({
     case PracticeType.MatchingPairs: {
       const data = question[PracticeType.MatchingPairs]!;
       const attempts = selectOf(userSelect, PracticeType.MatchingPairs) ?? [];
+      const missed = data.pairs.filter(
+        (pair) => !attempts.some((attempt) => attempt.question === pair.kana),
+      );
 
       return {
         ...empty,
         question: { type: PracticeType.MatchingPairs, [PracticeType.MatchingPairs]: data },
-        lines: attempts.map((attempt) => ({
-          question: attempt.question,
-          answer: [{ text: attempt.answer, isCorrect: attempt.isCorrect }],
-          isCorrect: attempt.isCorrect,
-          correct: attempt.isCorrect
-            ? undefined
-            : data.pairs.find((pair) => pair.kana === attempt.question)?.transliteration,
-        })),
-        errors: attempts.filter((attempt) => !attempt.isCorrect).length,
+        lines: [
+          ...attempts.map((attempt) => ({
+            question: attempt.question,
+            answer: [{ text: attempt.answer, isCorrect: attempt.isCorrect }],
+            isCorrect: attempt.isCorrect,
+            correct: attempt.isCorrect
+              ? undefined
+              : data.pairs.find((pair) => pair.kana === attempt.question)?.transliteration,
+          })),
+          ...missed.map((pair) => missedLine(pair.kana, pair.transliteration)),
+        ],
+        errors: attempts.filter((attempt) => !attempt.isCorrect).length + missed.length,
       };
     }
 
@@ -129,8 +144,15 @@ const formatResultAnswer = ({
         question: { type: PracticeType.WordBuilding, [PracticeType.WordBuilding]: data },
         lines:
           picked.length > 0
-            ? [{ question: data.title, answer: segments, isCorrect: errors === 0 }]
-            : [],
+            ? [
+                {
+                  question: data.title,
+                  answer: segments,
+                  isCorrect: errors === 0,
+                  correct: errors > 0 ? data.sequence.join("") : undefined,
+                },
+              ]
+            : [missedLine(data.title, data.sequence.join(""))],
         errors,
       };
     }
@@ -155,7 +177,7 @@ const formatResultAnswer = ({
                   correct: errors > 0 ? to : undefined,
                 },
               ]
-            : [],
+            : [missedLine(from, to)],
         errors,
       };
     }

@@ -25,10 +25,12 @@ const ageFromDateString = (value: string): number => {
   return age;
 };
 
+const NAME_MAX_LENGTH = 16;
+
 // * Messages are i18n keys (auth.errors.*); translated in the component via t().
 const signUpSchema = z
   .object({
-    name: z.string().trim().min(1, "nameRequired"),
+    name: z.string().trim().min(1, "nameRequired").max(NAME_MAX_LENGTH, "nameTooLong"),
     email: z
       .string()
       .trim()
@@ -79,6 +81,8 @@ const mapServerError = (status: number, code?: string): Record<string, string> =
       return { email: "invalidEmail" };
     case "weak_password":
       return { password: "weakPassword" };
+    case "invalid_name":
+      return { name: "nameTooLong" };
     case "invalid_date_of_birth":
       return { date: "invalidDate" };
     case "too_many_attempts":

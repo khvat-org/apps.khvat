@@ -1,5 +1,3 @@
-import { TEST_DELAY } from "@/shared/constants/kana";
-
 class Sequence {
   originalSequence: string = "";
   sequence: (string | null)[] = [];
@@ -65,9 +63,7 @@ class Sequence {
 
     const typed = this.sequence.map((char) => char ?? "").join("");
 
-    setTimeout(() => {
-      this.onComplete?.(isMatch, typed);
-    }, TEST_DELAY / 2);
+    this.onComplete?.(isMatch, typed);
   }
 }
 

@@ -1,4 +1,3 @@
-import { TEST_DELAY } from "@/shared/constants/kana";
 import { shuffleArray } from "@/shared/helpers/letters";
 
 class Sequence {
@@ -99,9 +98,7 @@ class Sequence {
 
     const picked = this.sequence.map((char) => char ?? "");
 
-    setTimeout(() => {
-      this.onComplete?.(isMatch, picked);
-    }, TEST_DELAY / 2);
+    this.onComplete?.(isMatch, picked);
   }
 }
 

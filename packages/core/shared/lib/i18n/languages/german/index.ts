@@ -80,7 +80,7 @@ const German = {
 
   selectKana: {
     chooseKana: "Kana auswählen",
-    words: "Wörter zum Üben",
+    words: "Wörter",
     nothingSelected: "Nichts ausgewählt",
   },
 
@@ -149,7 +149,7 @@ const German = {
     you: "Du",
 
     title: "Übung beendet",
-    score: "Punktzahl",
+    score: "Punkte",
     percent: "Prozent",
 
     sec: "Sek",

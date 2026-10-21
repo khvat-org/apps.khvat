@@ -319,19 +319,25 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
               <Text style={styles.header_widget__title} numberOfLines={1} adjustsFontSizeToFit>
                 {((data.correctAnswers / data.totalQuestions) * 100).toFixed(0)}%
               </Text>
-              <Text style={styles.header_widget__subtitle}>{t("result.percent")}</Text>
+              <Text style={styles.header_widget__subtitle} numberOfLines={1} adjustsFontSizeToFit>
+                {t("result.percent")}
+              </Text>
             </View>
             <View style={widgetStyle}>
               <Text style={styles.header_widget__title} numberOfLines={1} adjustsFontSizeToFit>
                 {data.correctAnswers} / {data.totalQuestions}
               </Text>
-              <Text style={styles.header_widget__subtitle}>{t("result.score")}</Text>
+              <Text style={styles.header_widget__subtitle} numberOfLines={1} adjustsFontSizeToFit>
+                {t("result.score")}
+              </Text>
             </View>
             <View style={widgetStyle}>
               <Text style={styles.header_widget__title} numberOfLines={1} adjustsFontSizeToFit>
                 {totalTime.value}
               </Text>
-              <Text style={styles.header_widget__subtitle}>{totalTime.unit}</Text>
+              <Text style={styles.header_widget__subtitle} numberOfLines={1} adjustsFontSizeToFit>
+                {totalTime.unit}
+              </Text>
             </View>
           </View>
         </View>
@@ -459,7 +465,7 @@ const makeStyles = (colors: ColorsType) =>
     header_widget__subtitle: {
       color: colors.TextSecondary,
 
-      ...Typography.boldLabel,
+      ...Typography.regularLabel,
     },
 
     scroll: {

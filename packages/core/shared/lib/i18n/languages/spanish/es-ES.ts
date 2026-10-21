@@ -81,7 +81,7 @@ const SpanishES = {
 
   selectKana: {
     chooseKana: "Elegir kana",
-    words: "Palabras para practicar",
+    words: "Palabras",
     nothingSelected: "Nada seleccionado",
   },
 
@@ -150,8 +150,8 @@ const SpanishES = {
     you: "Tú",
 
     title: "Práctica completada",
-    score: "Puntuación",
-    percent: "Porcentaje",
+    score: "Puntos",
+    percent: "Aciertos",
 
     sec: "seg",
     min: "min",

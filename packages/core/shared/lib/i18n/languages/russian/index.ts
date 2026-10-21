@@ -80,7 +80,7 @@ const Russian = {
 
   selectKana: {
     chooseKana: "Выбрать кану",
-    words: "Слов для практики",
+    words: "Слов",
     nothingSelected: "Ничего не выбрано",
   },
 
@@ -152,7 +152,7 @@ const Russian = {
     score: "Счёт",
     percent: "Процент",
 
-    sec: "cек",
+    sec: "сек",
     min: "мин",
     errors_one: "{{count}} ошибка",
     errors_few: "{{count}} ошибки",

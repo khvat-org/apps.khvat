@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 
 import { getCanvasSize } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -105,14 +105,17 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
 
   const switchButtonText = `${letterKana === KanaAlphabet.Hiragana ? t("kana.katakana") : t("kana.hiragana")}`;
 
-  useFocusEffect(() => {
-    StatusBar.setBarStyle("light-content");
+  const isDarkTheme = colors._theme === "dark";
 
-    return () => {
-      const barStyle = colors._theme === "dark" ? "light-content" : "dark-content";
-      StatusBar.setBarStyle(barStyle);
-    };
-  });
+  useFocusEffect(
+    useCallback(() => {
+      StatusBar.setBarStyle("light-content");
+
+      return () => {
+        StatusBar.setBarStyle(isDarkTheme ? "light-content" : "dark-content");
+      };
+    }, [isDarkTheme]),
+  );
 
   const active = lettersTableById[letterId];
   const activeIndex = flatLetters.findIndex((element) => element === active.id);

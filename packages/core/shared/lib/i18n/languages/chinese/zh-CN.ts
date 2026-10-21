@@ -79,7 +79,7 @@ const ChineseCN = {
 
   selectKana: {
     chooseKana: "选择假名",
-    words: "练习单词数",
+    words: "单词",
     nothingSelected: "未选择任何内容",
   },
 

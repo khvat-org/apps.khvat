@@ -81,7 +81,7 @@ const French = {
 
   selectKana: {
     chooseKana: "Choisir les kana",
-    words: "Mots pour la pratique",
+    words: "Mots",
     nothingSelected: "Rien de sélectionné",
   },
 
@@ -152,7 +152,7 @@ const French = {
 
     title: "Pratique terminée",
     score: "Score",
-    percent: "Pourcentage",
+    percent: "Réussite",
 
     sec: "sec",
     min: "min",

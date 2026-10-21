@@ -63,8 +63,8 @@ const SequenceUi: React.FC<SequenceProps> = ({ sequence, onFinish, onError }) =>
             key={`letter-${index}`}
             style={styles.letterContainer}
           >
-            <Text style={[styles.letter, Typography.regularDefault, { color: colors.TextPrimary }]}>
-              {letter !== null && letter}
+            <Text style={[Typography.regularDefault, { color: colors.TextPrimary }]}>
+              {(letter ?? "").toUpperCase()}
             </Text>
 
             <View style={[styles.letterLine, getLetterStyle(index)]} />
@@ -125,9 +125,6 @@ const styles = StyleSheet.create({
     bottom: 0,
     height: 2,
     borderRadius: 2,
-  },
-  letter: {
-    textTransform: "uppercase",
   },
   chooseLettersContainer: {
     flexDirection: "row",

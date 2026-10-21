@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 
 import { isIOS } from "@nihongo/core/shared/constants/platformUtil";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
@@ -29,14 +29,17 @@ const KanaTableChoiceLettersPage: React.FC = () => {
   const { t } = useTranslation();
   const insets = useSafeAreaInsets();
 
-  useFocusEffect(() => {
-    StatusBar.setBarStyle("light-content");
+  const isDarkTheme = colors._theme === "dark";
 
-    return () => {
-      const barStyle = colors._theme === "dark" ? "light-content" : "dark-content";
-      StatusBar.setBarStyle(barStyle);
-    };
-  });
+  useFocusEffect(
+    useCallback(() => {
+      StatusBar.setBarStyle("light-content");
+
+      return () => {
+        StatusBar.setBarStyle(isDarkTheme ? "light-content" : "dark-content");
+      };
+    }, [isDarkTheme]),
+  );
 
   const { selectedLettersHiragana, selectedLettersKatakana } = useKanaContext();
 

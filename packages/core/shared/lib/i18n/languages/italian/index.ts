@@ -80,7 +80,7 @@ const Italian = {
 
   selectKana: {
     chooseKana: "Scegli i kana",
-    words: "Parole per la pratica",
+    words: "Parole",
     nothingSelected: "Niente selezionato",
   },
 
@@ -150,8 +150,8 @@ const Italian = {
     you: "Tu",
 
     title: "Pratica completata",
-    score: "Punteggio",
-    percent: "Percentuale",
+    score: "Punti",
+    percent: "Riuscita",
 
     sec: "sec",
     min: "min",

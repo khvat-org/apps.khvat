@@ -79,7 +79,7 @@ const Korean = {
 
   selectKana: {
     chooseKana: "가나 선택",
-    words: "연습할 단어",
+    words: "단어",
     nothingSelected: "선택된 항목 없음",
   },
 

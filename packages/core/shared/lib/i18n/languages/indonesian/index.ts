@@ -80,7 +80,7 @@ const Indonesian = {
 
   selectKana: {
     chooseKana: "Pilih kana",
-    words: "Kata untuk latihan",
+    words: "Kata",
     nothingSelected: "Tidak ada yang dipilih",
   },
 
@@ -150,7 +150,7 @@ const Indonesian = {
 
     title: "Latihan selesai",
     score: "Skor",
-    percent: "Persentase",
+    percent: "Akurasi",
 
     sec: "detik",
     min: "menit",

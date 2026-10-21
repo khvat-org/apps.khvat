@@ -188,6 +188,7 @@ const styles = StyleSheet.create({
     paddingRight: 16,
   },
   switchContainer: {
+    marginLeft: 16,
     height: "100%",
     flexDirection: "column",
     alignItems: "center",

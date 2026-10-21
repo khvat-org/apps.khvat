@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
@@ -34,6 +34,7 @@ import {
   LessonBlockImage,
 } from "@/shared/constants/lessons";
 import { useFirstClickHandler } from "@/shared/helpers/firstClickHandler";
+import { shuffleArray } from "@/shared/helpers/letters";
 
 type InfoScreenProps = InfoLessonScreen & {
   next: () => void;
@@ -73,6 +74,14 @@ const InfoScreen: React.FC<InfoScreenProps> = ({ next, finish, title, blocks, is
       setViewportBottom((prev) => (prev === bottom ? prev : bottom));
     });
   };
+
+  const choiceAnswers = useMemo(
+    () =>
+      blocks.map((item) =>
+        blockType.isSelectAnswer(item) ? shuffleArray(item.content.answers) : [],
+      ),
+    [blocks],
+  );
 
   const interactiveBlocks = blocks.filter(
     (item) =>
@@ -187,7 +196,7 @@ const InfoScreen: React.FC<InfoScreenProps> = ({ next, finish, title, blocks, is
                   <SelectAnswer
                     key={idx}
                     onFinish={(_) => nextDelayed()}
-                    answers={block.content.answers}
+                    answers={choiceAnswers[idx]}
                   />
                 );
               } else if (blockType.isMatchAnswerBlock(block)) {

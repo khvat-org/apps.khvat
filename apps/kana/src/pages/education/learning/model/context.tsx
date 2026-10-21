@@ -53,23 +53,50 @@ function pickNewerLesson(a: Lesson, b: Lesson): Lesson {
   return dateA >= dateB ? a : b;
 }
 
-function mergeChapters(primary: Chapter[], ...others: (Chapter[] | null | undefined)[]): Chapter[] {
-  const bestByKey = new Map<string, Lesson>();
+type Source = Chapter[] | null | undefined;
 
-  for (const chapters of [primary, ...others]) {
-    if (!chapters) continue;
-    for (const chapter of chapters) {
+function mergeChapters(listed: Source[], versions: Source[] = []): Chapter[] {
+  const chaptersById = new Map<string, Chapter>();
+  const best = new Map<string, { lesson: Lesson; chapterId: string }>();
+
+  const consider = (lesson: Lesson, chapterId: string) => {
+    const existing = best.get(lesson.lesson_key);
+    if (!existing || pickNewerLesson(existing.lesson, lesson) === lesson) {
+      best.set(lesson.lesson_key, { lesson, chapterId });
+    }
+  };
+
+  for (const chapters of listed) {
+    for (const chapter of chapters ?? []) {
+      if (!chaptersById.has(chapter.id)) chaptersById.set(chapter.id, chapter);
+      for (const lesson of chapter.lessons) consider(lesson, chapter.id);
+    }
+  }
+
+  for (const chapters of versions) {
+    for (const chapter of chapters ?? []) {
       for (const lesson of chapter.lessons) {
-        const existing = bestByKey.get(lesson.lesson_key);
-        bestByKey.set(lesson.lesson_key, existing ? pickNewerLesson(existing, lesson) : lesson);
+        if (best.has(lesson.lesson_key)) consider(lesson, chapter.id);
       }
     }
   }
 
-  return primary.map((chapter) => ({
-    ...chapter,
-    lessons: chapter.lessons.map((lesson) => bestByKey.get(lesson.lesson_key) ?? lesson),
-  }));
+  const lessonsByChapter = new Map<string, Lesson[]>();
+  for (const { lesson, chapterId } of best.values()) {
+    const id = chaptersById.has(lesson.topic_id) ? lesson.topic_id : chapterId;
+    if (!chaptersById.has(id)) continue;
+    lessonsByChapter.set(id, [...(lessonsByChapter.get(id) ?? []), lesson]);
+  }
+
+  return [...chaptersById.values()]
+    .map((chapter) => ({
+      ...chapter,
+      lessons: (lessonsByChapter.get(chapter.id) ?? []).sort(
+        (a, b) => a.lesson_order - b.lesson_order,
+      ),
+    }))
+    .filter((chapter) => chapter.lessons.length > 0)
+    .sort((a, b) => a.topic_order - b.topic_order);
 }
 
 export const LessonsProvider = ({ children }: { children: ReactNode }) => {
@@ -186,12 +213,12 @@ export const LessonsProvider = ({ children }: { children: ReactNode }) => {
       if (signal?.aborted) return;
 
       if (status === 200) {
-        const merged = mergeChapters(serverLessons, cachedChapters, dumpChapters);
+        const merged = mergeChapters([serverLessons, dumpChapters], [cachedChapters]);
         setChapters(merged);
         setLang(newLang);
         AsyncStorage.setItem(LESSONS_LIST, JSON.stringify({ lang: newLang, lessons: merged }));
       } else if (cachedChapters) {
-        setChapters(mergeChapters(cachedChapters, dumpChapters));
+        setChapters(mergeChapters([cachedChapters, dumpChapters]));
         setLang(newLang);
       } else {
         setChapters(dumpChapters);
@@ -201,7 +228,7 @@ export const LessonsProvider = ({ children }: { children: ReactNode }) => {
       if (signal?.aborted) return;
 
       if (cachedChapters) {
-        setChapters(mergeChapters(cachedChapters, dumpChapters));
+        setChapters(mergeChapters([cachedChapters, dumpChapters]));
         setLang(newLang);
       } else {
         setChapters(dumpChapters);

@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -7,7 +7,6 @@ import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary
 import { StyleSheet, View } from "react-native";
 
 import { TEST_DELAY } from "@/shared/constants/kana";
-import { shuffleArray } from "@/shared/helpers/letters";
 
 type SelectAnswerProps = {
   answers: { title: string; isTrue: boolean }[];
@@ -16,8 +15,6 @@ type SelectAnswerProps = {
 
 const SelectAnswer: React.FC<SelectAnswerProps> = ({ answers, onFinish }) => {
   const { colors } = useThemeContext();
-
-  const shuffleAnswers = useMemo(() => shuffleArray(answers), [answers]);
 
   const [errors, setErrors] = useState<string[]>([]);
   const [correct, setCorrect] = useState<string[]>([]);
@@ -50,7 +47,7 @@ const SelectAnswer: React.FC<SelectAnswerProps> = ({ answers, onFinish }) => {
   return (
     <View style={styles.container}>
       <View style={styles.answers}>
-        {shuffleAnswers.map((answer) => (
+        {answers.map((answer) => (
           <SecondaryButton
             key={answer.title}
             isOutline

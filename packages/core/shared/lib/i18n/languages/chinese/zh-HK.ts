@@ -79,7 +79,7 @@ const ChineseHK = {
 
   selectKana: {
     chooseKana: "選擇假名",
-    words: "練習單字數",
+    words: "單字",
     nothingSelected: "未選擇任何項目",
   },
 

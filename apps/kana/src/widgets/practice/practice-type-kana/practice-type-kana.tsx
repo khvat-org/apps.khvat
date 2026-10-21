@@ -97,7 +97,7 @@ const PracticeTypeKana: React.FC<PracticeTypeKanaProps> = ({ symbol, kana, onCom
             {sequence.sequence.map((letter, index) => (
               <View key={`letter-${index}`} style={[styles.letterContainer, getLetterStyle(index)]}>
                 <Text style={[styles.letter, Typography.regularDefault]}>
-                  {letter !== null && letter}
+                  {(letter ?? "").toUpperCase()}
                 </Text>
               </View>
             ))}
@@ -138,7 +138,6 @@ const makeStyles = (colors: ColorsType) =>
       alignItems: "center",
     },
     letter: {
-      textTransform: "uppercase",
       color: colors.TextPrimary,
     },
   });

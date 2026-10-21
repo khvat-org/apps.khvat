@@ -78,7 +78,7 @@ const ChineseTW = {
 
   selectKana: {
     chooseKana: "選擇假名",
-    words: "練習用單字",
+    words: "單字",
     nothingSelected: "尚未選擇",
   },
 
