@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 
 import { resetPassword } from "@nihongo/core/features/auth/api";
 import { completeAuth } from "@nihongo/core/features/auth/lib/completeAuth";
+import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -46,16 +47,15 @@ const validate = (d: Record<string, string>): Record<string, string> => {
 };
 
 // * Backend error codes (docs/auth/reset_password.md) -> поля формы.
-const mapServerError = (code?: string): Record<string, string> => {
+const mapServerError = (status: number, code?: string): Record<string, string> => {
   switch (code) {
     case "weak_password":
       return { password: "weakPassword" };
     case "invalid_reset_token":
       // * reset_token истёк/невалиден — сессию сброса надо начинать заново (§7.1 доков).
       return { password2: "invalidResetToken" };
-    default:
-      return { password2: "somethingWrong" };
   }
+  return { password2: commonAuthError(status, code) ?? "somethingWrong" };
 };
 
 type ResetPasswordNavProp = StackNavigationProp<
@@ -117,7 +117,7 @@ export const ResetPasswordPage: React.FC = () => {
 
     setSubmitting(true);
     try {
-      const { ok, body } = await resetPassword(email, region, resetToken, data["password"]);
+      const { ok, status, body } = await resetPassword(email, region, resetToken, data["password"]);
 
       if (ok && body.access_token && body.refresh_token) {
         await completeAuth(body.access_token, body.refresh_token);
@@ -125,7 +125,7 @@ export const ResetPasswordPage: React.FC = () => {
         return;
       }
 
-      setServerErrors(mapServerError(body.error));
+      setServerErrors(mapServerError(status, body.error));
     } catch {
       setServerErrors({ password2: "requestFailed" });
     } finally {

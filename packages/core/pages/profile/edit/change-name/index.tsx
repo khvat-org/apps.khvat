@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 
+import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { PROFILE_ROUTES, ProfileParamList } from "@nihongo/core/pages/profile/routes";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -22,13 +23,12 @@ const validate = (name: string): string | undefined => {
   return result.success ? undefined : result.error.issues[0]?.message;
 };
 
-const mapServerError = (code?: string): string => {
+const mapServerError = (status: number, code?: string): string => {
   switch (code) {
     case "invalid_name":
       return "nameTooLong";
-    default:
-      return "somethingWrong";
   }
+  return commonAuthError(status, code) ?? "somethingWrong";
 };
 
 type NavigationProp = StackNavigationProp<ProfileParamList, typeof PROFILE_ROUTES.EDIT_NAME>;
@@ -66,14 +66,14 @@ const ProfileChangeNamePage: React.FC = () => {
 
     setSubmitting(true);
     try {
-      const { ok, error: code } = await updateProfile({ name: name.trim() });
+      const { ok, status, error: code } = await updateProfile({ name: name.trim() });
 
       if (ok) {
         navigation.goBack();
         return;
       }
 
-      setServerError(mapServerError(code));
+      setServerError(mapServerError(status, code));
     } catch {
       setServerError("requestFailed");
     } finally {

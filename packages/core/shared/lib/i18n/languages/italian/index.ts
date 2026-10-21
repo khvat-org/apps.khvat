@@ -224,6 +224,7 @@ const Italian = {
       privacy: "Informativa sulla privacy",
     },
     continueWithGoogle: "Continua con Google",
+    googleFailed: "Impossibile accedere con Google",
     googleUnavailable: {
       title: "L'accesso con Google non è disponibile in Russia",
       subtitle:
@@ -287,7 +288,7 @@ const Italian = {
       codeRequired: "Inserisci il codice a 6 cifre",
       invalidCode: "Codice non valido",
       codeExpired: "Il codice è scaduto",
-      tooManyAttempts: "Troppi tentativi, riprova più tardi",
+      tooManyAttempts: "Troppi tentativi. Richiedi un nuovo codice o riprova domani.",
       resendCooldown: "Attendi prima di richiedere un nuovo codice",
       passwordRequired: "Inserisci la password",
       invalidCredentials: "Email o password non validi",
@@ -295,6 +296,13 @@ const Italian = {
       useGoogleToSignIn: "Questo account usa l'accesso con Google",
       invalidResetToken: "Sessione di reimpostazione scaduta. Richiedi un nuovo codice.",
       accountMigrating: "Account in fase di trasferimento. Riprova più tardi.",
+      serverUnavailable:
+        "Il server del tuo account è temporaneamente non disponibile. Riprova più tardi.",
+      tooManyRequests: "Troppe richieste. Attendi un minuto e riprova.",
+      userNotFound: "Nessun account con questa email. Controlla l'indirizzo o registrati.",
+      loginBlocked:
+        "Troppe password errate. L'accesso con password è bloccato per un'ora. Reimposta la password o accedi con Google.",
+      emailTakenOtherRegion: "Questa email è già registrata. Accedi.",
     },
   },
   profile: {
@@ -326,6 +334,14 @@ const Italian = {
     },
     signInPrompt: "Accedi a {{app}} per sincronizzare i progressi su tutti i dispositivi.",
     signInButton: "Accedi o crea un account",
+    unavailable: {
+      title: "Manutenzione sul tuo server",
+      text: "Il server del tuo account è temporaneamente non disponibile. Lezioni ed esercizi funzionano, il profilo tornerà presto.",
+    },
+    offline: {
+      title: "Nessuna connessione",
+      text: "Impossibile raggiungere il server. Controlla la connessione a Internet.",
+    },
   },
   debug: {
     store: "Store",

@@ -151,6 +151,33 @@ export const getProfile = async (): Promise<Profile | null> => {
   }
 };
 
+export type ProfileState =
+  | { kind: "ok"; profile: Profile }
+  | { kind: "signedOut" }
+  | { kind: "unavailable" }
+  | { kind: "offline" };
+
+export const loadProfile = async (): Promise<ProfileState> => {
+  const token = await getAccessToken();
+  if (!token) return { kind: "signedOut" };
+
+  let res: Response;
+  try {
+    res = await authFetch("/api/v2/profile");
+  } catch {
+    return { kind: "offline" };
+  }
+
+  if (res.ok) {
+    const profile = (await res.json().catch(() => null)) as Profile | null;
+    return profile?.email ? { kind: "ok", profile } : { kind: "unavailable" };
+  }
+
+  if (!(await getRefreshToken())) return { kind: "signedOut" };
+  if (res.status === 404) return { kind: "signedOut" };
+  return { kind: "unavailable" };
+};
+
 export type UpdateProfileResult = AccountActionResult & { profile?: Profile };
 
 const PROFILE_WRITE_TIMEOUT = 15_000;

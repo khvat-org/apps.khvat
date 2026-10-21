@@ -223,6 +223,7 @@ const PortuguesePT = {
       privacy: "Política de Privacidade",
     },
     continueWithGoogle: "Continuar com Google",
+    googleFailed: "Não foi possível iniciar sessão com o Google",
     googleUnavailable: {
       title: "O início de sessão com a Google não está disponível na Rússia",
       subtitle:
@@ -286,7 +287,7 @@ const PortuguesePT = {
       codeRequired: "Introduza o código de 6 dígitos",
       invalidCode: "Código inválido",
       codeExpired: "O código expirou",
-      tooManyAttempts: "Demasiadas tentativas, tente mais tarde",
+      tooManyAttempts: "Demasiadas tentativas. Peça um novo código ou tente amanhã.",
       resendCooldown: "Aguarde antes de solicitar um novo código",
       passwordRequired: "Introduza a palavra-passe",
       invalidCredentials: "E-mail ou palavra-passe inválidos",
@@ -294,6 +295,13 @@ const PortuguesePT = {
       useGoogleToSignIn: "Esta conta utiliza o início de sessão com Google",
       invalidResetToken: "A sessão de reposição expirou. Solicite um novo código.",
       accountMigrating: "A conta está a ser transferida. Tente novamente mais tarde.",
+      serverUnavailable:
+        "O servidor da sua conta está temporariamente indisponível. Tente novamente mais tarde.",
+      tooManyRequests: "Demasiados pedidos. Aguarde um minuto e tente novamente.",
+      userNotFound: "Não existe nenhuma conta com este e-mail. Verifique o endereço ou registe-se.",
+      loginBlocked:
+        "Demasiadas palavras-passe erradas. O início de sessão com palavra-passe está bloqueado durante uma hora. Reponha a palavra-passe ou inicie sessão com o Google.",
+      emailTakenOtherRegion: "Este e-mail já está registado. Inicie sessão.",
     },
   },
   profile: {
@@ -325,6 +333,14 @@ const PortuguesePT = {
     signInPrompt:
       "Inicie sessão em {{app}} para sincronizar o seu progresso em todos os dispositivos.",
     signInButton: "Iniciar sessão ou criar uma conta",
+    unavailable: {
+      title: "Manutenção no seu servidor",
+      text: "O servidor da sua conta está temporariamente indisponível. As lições e a prática continuam a funcionar e o seu perfil voltará em breve.",
+    },
+    offline: {
+      title: "Sem ligação",
+      text: "Não foi possível contactar o servidor. Verifique a sua ligação à Internet.",
+    },
   },
   debug: {
     store: "Loja",

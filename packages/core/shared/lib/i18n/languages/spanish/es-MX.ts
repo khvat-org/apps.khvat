@@ -225,6 +225,7 @@ const SpanishMX = {
       privacy: "Política de privacidad",
     },
     continueWithGoogle: "Continuar con Google",
+    googleFailed: "No se pudo iniciar sesión con Google",
     googleUnavailable: {
       title: "El inicio de sesión con Google no está disponible en Rusia",
       subtitle:
@@ -287,7 +288,7 @@ const SpanishMX = {
       codeRequired: "Ingresa el código de 6 dígitos",
       invalidCode: "Código no válido",
       codeExpired: "El código ha expirado",
-      tooManyAttempts: "Demasiados intentos, intenta más tarde",
+      tooManyAttempts: "Demasiados intentos. Solicita un código nuevo o inténtalo mañana.",
       resendCooldown: "Espera antes de solicitar un nuevo código",
       passwordRequired: "Ingresa tu contraseña",
       invalidCredentials: "Correo electrónico o contraseña incorrectos",
@@ -295,6 +296,13 @@ const SpanishMX = {
       useGoogleToSignIn: "Esta cuenta usa inicio de sesión con Google",
       invalidResetToken: "La sesión de restablecimiento ha expirado. Solicita un nuevo código.",
       accountMigrating: "La cuenta se está transfiriendo. Intenta de nuevo más tarde.",
+      serverUnavailable:
+        "El servidor de tu cuenta no está disponible por el momento. Inténtalo más tarde.",
+      tooManyRequests: "Demasiadas solicitudes. Espera un minuto e inténtalo de nuevo.",
+      userNotFound: "No hay ninguna cuenta con este correo. Revisa la dirección o regístrate.",
+      loginBlocked:
+        "Demasiadas contraseñas incorrectas. El inicio de sesión con contraseña está bloqueado por una hora. Restablece tu contraseña o inicia sesión con Google.",
+      emailTakenOtherRegion: "Este correo ya está registrado. Inicia sesión.",
     },
   },
   profile: {
@@ -327,6 +335,14 @@ const SpanishMX = {
     signInPrompt:
       "Inicia sesión en {{app}} para sincronizar tu progreso en todos los dispositivos.",
     signInButton: "Iniciar sesión o crear una cuenta",
+    unavailable: {
+      title: "Mantenimiento en tu servidor",
+      text: "El servidor de tu cuenta no está disponible por el momento. Las lecciones y la práctica siguen funcionando y tu perfil volverá pronto.",
+    },
+    offline: {
+      title: "Sin conexión",
+      text: "No se pudo conectar con el servidor. Revisa tu conexión a internet.",
+    },
   },
   debug: {
     store: "Tienda",

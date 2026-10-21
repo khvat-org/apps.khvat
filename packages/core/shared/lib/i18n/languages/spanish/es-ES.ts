@@ -225,6 +225,7 @@ const SpanishES = {
       privacy: "Política de privacidad",
     },
     continueWithGoogle: "Continuar con Google",
+    googleFailed: "No se pudo iniciar sesión con Google",
     googleUnavailable: {
       title: "El inicio de sesión con Google no está disponible en Rusia",
       subtitle:
@@ -288,7 +289,7 @@ const SpanishES = {
       codeRequired: "Introduce el código de 6 dígitos",
       invalidCode: "Código no válido",
       codeExpired: "El código ha caducado",
-      tooManyAttempts: "Demasiados intentos, inténtalo más tarde",
+      tooManyAttempts: "Demasiados intentos. Solicita un código nuevo o inténtalo mañana.",
       resendCooldown: "Espera antes de solicitar un nuevo código",
       passwordRequired: "Introduce tu contraseña",
       invalidCredentials: "Correo electrónico o contraseña no válidos",
@@ -296,6 +297,13 @@ const SpanishES = {
       useGoogleToSignIn: "Esta cuenta usa el inicio de sesión de Google",
       invalidResetToken: "La sesión de restablecimiento ha caducado. Solicita un nuevo código.",
       accountMigrating: "La cuenta se está transfiriendo. Inténtalo de nuevo más tarde.",
+      serverUnavailable:
+        "El servidor de tu cuenta no está disponible temporalmente. Inténtalo más tarde.",
+      tooManyRequests: "Demasiadas solicitudes. Espera un minuto e inténtalo de nuevo.",
+      userNotFound: "No hay ninguna cuenta con este correo. Revisa la dirección o regístrate.",
+      loginBlocked:
+        "Demasiadas contraseñas incorrectas. El inicio de sesión con contraseña está bloqueado durante una hora. Restablece tu contraseña o inicia sesión con Google.",
+      emailTakenOtherRegion: "Este correo ya está registrado. Inicia sesión.",
     },
   },
   profile: {
@@ -328,6 +336,14 @@ const SpanishES = {
     signInPrompt:
       "Inicia sesión en {{app}} para sincronizar tu progreso en todos los dispositivos.",
     signInButton: "Iniciar sesión o crear una cuenta",
+    unavailable: {
+      title: "Mantenimiento en tu servidor",
+      text: "El servidor de tu cuenta no está disponible temporalmente. Las lecciones y la práctica siguen funcionando y tu perfil volverá pronto.",
+    },
+    offline: {
+      title: "Sin conexión",
+      text: "No se pudo conectar con el servidor. Comprueba tu conexión a internet.",
+    },
   },
   debug: {
     store: "Tienda",

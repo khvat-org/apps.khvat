@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 
 import { signInWithEmail } from "@nihongo/core/features/auth/api";
 import { completeAuth } from "@nihongo/core/features/auth/lib/completeAuth";
+import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -41,7 +42,7 @@ const validateSignIn = (d: Record<string, string>): Record<string, string> => {
 };
 
 // * Backend error codes (docs/auth/auth_api.md) -> form fields.
-const mapSignInError = (code?: string): Record<string, string> => {
+const mapSignInError = (status: number, code?: string): Record<string, string> => {
   switch (code) {
     case "invalid_credentials":
       return { password: "invalidCredentials" };
@@ -49,9 +50,12 @@ const mapSignInError = (code?: string): Record<string, string> => {
       return { email: "emailNotVerified" };
     case "use_google_to_sign_in":
       return { email: "useGoogleToSignIn" };
-    default:
-      return { email: "somethingWrong" };
+    case "user_not_found":
+      return { email: "userNotFound" };
+    case "too_many_attempts":
+      return { password: "loginBlocked" };
   }
+  return { email: commonAuthError(status, code) ?? "somethingWrong" };
 };
 
 type LoginNavigationProp = StackNavigationProp<AuthParamList, typeof AUTH_ROUTES.SIGN_IN>;
@@ -107,7 +111,7 @@ export const SignInPage: React.FC = () => {
 
     setSubmitting(true);
     try {
-      const { ok, body } = await signInWithEmail(data["email"].trim(), data["password"]);
+      const { ok, status, body } = await signInWithEmail(data["email"].trim(), data["password"]);
 
       if (ok && body.access_token && body.refresh_token) {
         await completeAuth(body.access_token, body.refresh_token);
@@ -115,7 +119,7 @@ export const SignInPage: React.FC = () => {
         return;
       }
 
-      setServerErrors(mapSignInError(body.error));
+      setServerErrors(mapSignInError(status, body.error));
     } catch {
       setServerErrors({ email: "requestFailed" });
     } finally {

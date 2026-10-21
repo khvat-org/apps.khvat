@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { resendVerification, verifyEmail } from "@nihongo/core/features/auth/api";
 import { completeAuth } from "@nihongo/core/features/auth/lib/completeAuth";
+import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -23,7 +24,7 @@ const maskEmail = (email: string): string => {
   return `****${local.slice(-2)}@${domain}`;
 };
 
-const mapCodeError = (code?: string): string => {
+const mapCodeError = (status: number, code?: string): string => {
   switch (code) {
     case "invalid_code":
       return "invalidCode";
@@ -33,9 +34,8 @@ const mapCodeError = (code?: string): string => {
       return "tooManyAttempts";
     case "resend_cooldown":
       return "resendCooldown";
-    default:
-      return "somethingWrong";
   }
+  return commonAuthError(status, code) ?? "somethingWrong";
 };
 
 type SubmitCodeNavProp = StackNavigationProp<AuthParamList, typeof AUTH_ROUTES.SUBMIT_CODE>;
@@ -90,7 +90,7 @@ export const SubmitCode: React.FC = () => {
 
     setSubmitting(true);
     try {
-      const { ok, body } = await verifyEmail(email, code, region);
+      const { ok, status, body } = await verifyEmail(email, code, region);
 
       if (ok && body.access_token && body.refresh_token) {
         await completeAuth(body.access_token, body.refresh_token);
@@ -98,7 +98,7 @@ export const SubmitCode: React.FC = () => {
         return;
       }
 
-      setError(mapCodeError(body.error));
+      setError(mapCodeError(status, body.error));
     } catch {
       setError("requestFailed");
     } finally {
@@ -119,7 +119,7 @@ export const SubmitCode: React.FC = () => {
         return;
       }
 
-      setError(mapCodeError(body.error));
+      setError(mapCodeError(status, body.error));
     } catch {
       setError("requestFailed");
     } finally {

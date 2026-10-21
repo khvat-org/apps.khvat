@@ -1,6 +1,7 @@
 import React from "react";
 
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
+import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { useEraseData } from "@nihongo/core/features/settings/lib/use-erase-data";
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { AlertModal } from "@nihongo/core/shared/contexts/modal/presets/alert";
@@ -82,7 +83,7 @@ const AccountActions: React.FC = () => {
 
   const requestDelete = async () => {
     try {
-      const { ok, error } = await requestAccountDeletion();
+      const { ok, status, error } = await requestAccountDeletion();
 
       if (ok || error === "resend_cooldown") {
         showDeleteCodeModal();
@@ -94,7 +95,7 @@ const AccountActions: React.FC = () => {
         return;
       }
 
-      showError(t("auth.errors.somethingWrong"));
+      showError(t(`auth.errors.${commonAuthError(status, error) ?? "somethingWrong"}`));
     } catch {
       showError(t("auth.errors.requestFailed"));
     }

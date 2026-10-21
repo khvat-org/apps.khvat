@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 
+import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { PROFILE_ROUTES, ProfileParamList } from "@nihongo/core/pages/profile/routes";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -44,7 +45,7 @@ const validate = (d: Record<string, string>): Record<string, string> => {
   return errors;
 };
 
-const mapServerError = (code?: string): Record<string, string> => {
+const mapServerError = (status: number, code?: string): Record<string, string> => {
   switch (code) {
     case "invalid_credentials":
       return { oldPassword: "incorrectOldPassword" };
@@ -52,9 +53,8 @@ const mapServerError = (code?: string): Record<string, string> => {
       return { password: "weakPassword" };
     case "use_google_to_sign_in":
       return { oldPassword: "useGoogleToSignIn" };
-    default:
-      return { password2: "somethingWrong" };
   }
+  return { password2: commonAuthError(status, code) ?? "somethingWrong" };
 };
 
 type NavigationProp = StackNavigationProp<ProfileParamList, typeof PROFILE_ROUTES.EDIT_PASSWORD>;
@@ -97,14 +97,14 @@ const ProfileChangePasswordPage: React.FC = () => {
 
     setSubmitting(true);
     try {
-      const { ok, error } = await changePassword(data["oldPassword"], data["password"]);
+      const { ok, status, error } = await changePassword(data["oldPassword"], data["password"]);
 
       if (ok) {
         navigation.goBack();
         return;
       }
 
-      setServerErrors(mapServerError(error));
+      setServerErrors(mapServerError(status, error));
     } catch {
       setServerErrors({ password2: "requestFailed" });
     } finally {

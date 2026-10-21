@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 
 import { signUpWithEmail } from "@nihongo/core/features/auth/api";
+import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useGatewayUrl } from "@nihongo/core/shared/lib/api-gateway";
@@ -69,7 +70,7 @@ const validateSignUp = (d: Record<string, string>): Record<string, string> => {
 };
 
 // * Returns i18n keys (auth.errors.*) by field.
-const mapServerError = (code?: string): Record<string, string> => {
+const mapServerError = (status: number, code?: string): Record<string, string> => {
   switch (code) {
     case "email_taken":
     case "email_taken_oauth":
@@ -80,9 +81,10 @@ const mapServerError = (code?: string): Record<string, string> => {
       return { password: "weakPassword" };
     case "invalid_date_of_birth":
       return { date: "invalidDate" };
-    default:
-      return { email: "somethingWrong" };
+    case "too_many_attempts":
+      return { email: "tooManyAttempts" };
   }
+  return { email: commonAuthError(status, code) ?? "somethingWrong" };
 };
 
 type LoginNavigationProp = StackNavigationProp<AuthParamList, typeof AUTH_ROUTES.SIGN_UP>;
@@ -163,7 +165,7 @@ export const SignUpPage: React.FC = () => {
         return;
       }
 
-      setServerErrors(mapServerError(body?.error));
+      setServerErrors(mapServerError(status, body?.error));
     } catch {
       setServerErrors({ email: "requestFailed" });
     } finally {

@@ -222,6 +222,7 @@ const German = {
       privacy: "Datenschutzerklärung",
     },
     continueWithGoogle: "Mit Google fortfahren",
+    googleFailed: "Anmeldung mit Google fehlgeschlagen",
     googleUnavailable: {
       title: "Google-Anmeldung ist in Russland nicht verfügbar",
       subtitle:
@@ -285,7 +286,8 @@ const German = {
       codeRequired: "Gib den 6-stelligen Code ein",
       invalidCode: "Ungültiger Code",
       codeExpired: "Code ist abgelaufen",
-      tooManyAttempts: "Zu viele Versuche, bitte versuche es später",
+      tooManyAttempts:
+        "Zu viele Versuche. Fordere einen neuen Code an oder versuche es morgen erneut.",
       resendCooldown: "Bitte warte, bevor du einen neuen Code anforderst",
       passwordRequired: "Gib dein Passwort ein",
       invalidCredentials: "Ungültige E-Mail oder Passwort",
@@ -293,6 +295,13 @@ const German = {
       useGoogleToSignIn: "Dieses Konto verwendet die Google-Anmeldung",
       invalidResetToken: "Zurücksetzungs-Sitzung abgelaufen. Fordere einen neuen Code an.",
       accountMigrating: "Konto wird übertragen. Bitte versuche es später erneut.",
+      serverUnavailable:
+        "Der Server deines Kontos ist vorübergehend nicht erreichbar. Bitte versuche es später erneut.",
+      tooManyRequests: "Zu viele Anfragen. Bitte warte eine Minute und versuche es erneut.",
+      userNotFound: "Kein Konto mit dieser E-Mail. Prüfe die Adresse oder registriere dich.",
+      loginBlocked:
+        "Zu viele falsche Passwörter. Die Anmeldung mit Passwort ist für eine Stunde gesperrt. Setze dein Passwort zurück oder melde dich mit Google an.",
+      emailTakenOtherRegion: "Diese E-Mail ist bereits registriert. Bitte melde dich an.",
     },
   },
   profile: {
@@ -325,6 +334,14 @@ const German = {
     signInPrompt:
       "Melde dich bei {{app}} an, um deinen Fortschritt auf allen Geräten zu synchronisieren.",
     signInButton: "Anmelden oder Konto erstellen",
+    unavailable: {
+      title: "Wartungsarbeiten an deinem Server",
+      text: "Der Server deines Kontos ist vorübergehend nicht erreichbar. Lektionen und Übungen funktionieren weiter, dein Profil ist bald wieder da.",
+    },
+    offline: {
+      title: "Keine Verbindung",
+      text: "Der Server ist nicht erreichbar. Prüfe deine Internetverbindung.",
+    },
   },
   debug: {
     store: "Store",

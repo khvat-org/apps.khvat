@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 
 import { requestPasswordReset } from "@nihongo/core/features/auth/api";
+import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
@@ -19,13 +20,12 @@ const emailSchema = z
   .min(1, "emailRequired")
   .regex(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "invalidEmail");
 
-const mapServerError = (code?: string): string => {
+const mapServerError = (status: number, code?: string): string => {
   switch (code) {
     case "invalid_email":
       return "invalidEmail";
-    default:
-      return "somethingWrong";
   }
+  return commonAuthError(status, code) ?? "somethingWrong";
 };
 
 type LoginNavigationProp = StackNavigationProp<
@@ -79,7 +79,7 @@ export const ResetPasswordAskEmailPage: React.FC = () => {
 
     setSubmitting(true);
     try {
-      const { ok, body } = await requestPasswordReset(trimmed);
+      const { ok, status, body } = await requestPasswordReset(trimmed);
 
       if (ok && body.region) {
         navigation.navigate(AUTH_ROUTES.RESET_PASSWORD_SUBMIT_CODE, {
@@ -89,7 +89,7 @@ export const ResetPasswordAskEmailPage: React.FC = () => {
         return;
       }
 
-      setServerError(mapServerError(body.error));
+      setServerError(mapServerError(status, body.error));
     } catch {
       setServerError("requestFailed");
     } finally {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, View, Text } from "react-native";
 
@@ -12,7 +13,7 @@ import { ColorsType, useThemeContext } from "../../theme/theme-context";
 
 const RESEND_COOLDOWN_SEC = 45;
 
-export type DeleteActionResult = { ok: boolean; error?: string };
+export type DeleteActionResult = { ok: boolean; status?: number; error?: string };
 
 interface DeleteAccountModalProps {
   // * Подтверждает удаление кодом (DELETE /account). ok=true → аккаунт удалён.
@@ -25,7 +26,7 @@ interface DeleteAccountModalProps {
 }
 
 // * Backend error codes (docs/auth/remove_account.md) -> i18n-ключи (auth.errors.*).
-const mapCodeError = (code?: string): string => {
+const mapCodeError = (status: number, code?: string): string => {
   switch (code) {
     case "invalid_code":
       return "invalidCode";
@@ -37,9 +38,8 @@ const mapCodeError = (code?: string): string => {
       return "resendCooldown";
     case "account_migrating":
       return "accountMigrating";
-    default:
-      return "somethingWrong";
   }
+  return commonAuthError(status, code) ?? "somethingWrong";
 };
 
 export const DeleteAccountModal = (props: DeleteAccountModalProps) => {
@@ -76,14 +76,14 @@ export const DeleteAccountModal = (props: DeleteAccountModalProps) => {
 
     setSubmitting(true);
     try {
-      const { ok, error: err } = await onConfirm(code);
+      const { ok, status, error: err } = await onConfirm(code);
 
       if (ok) {
         onSuccess();
         return;
       }
 
-      setError(mapCodeError(err));
+      setError(mapCodeError(status ?? 0, err));
     } catch {
       setError("requestFailed");
     } finally {
@@ -97,14 +97,14 @@ export const DeleteAccountModal = (props: DeleteAccountModalProps) => {
     setResending(true);
     setError(undefined);
     try {
-      const { ok, error: err } = await onResend();
+      const { ok, status, error: err } = await onResend();
 
       if (ok) {
         setCooldown(RESEND_COOLDOWN_SEC);
         return;
       }
 
-      setError(mapCodeError(err));
+      setError(mapCodeError(status ?? 0, err));
     } catch {
       setError("requestFailed");
     } finally {

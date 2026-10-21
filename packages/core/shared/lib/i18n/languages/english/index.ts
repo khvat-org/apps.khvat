@@ -221,6 +221,7 @@ const English = {
       privacy: "Privacy Policy",
     },
     continueWithGoogle: "Continue with Google",
+    googleFailed: "Couldn't sign in with Google",
     googleUnavailable: {
       title: "Google sign-in is unavailable in Russia",
       subtitle:
@@ -283,7 +284,7 @@ const English = {
       codeRequired: "Enter the 6-digit code",
       invalidCode: "Invalid code",
       codeExpired: "The code has expired",
-      tooManyAttempts: "Too many attempts, please try later",
+      tooManyAttempts: "Too many attempts. Request a new code or try again tomorrow.",
       resendCooldown: "Please wait before requesting a new code",
       passwordRequired: "Enter your password",
       invalidCredentials: "Invalid email or password",
@@ -291,6 +292,13 @@ const English = {
       useGoogleToSignIn: "This account uses Google sign-in",
       invalidResetToken: "Reset session expired. Request a new code.",
       accountMigrating: "Account is being transferred. Please try again later.",
+      serverUnavailable:
+        "The server for your account is temporarily unavailable. Please try again later.",
+      tooManyRequests: "Too many requests. Please wait a minute and try again.",
+      userNotFound: "No account with this email. Check the address or sign up.",
+      loginBlocked:
+        "Too many wrong passwords. Password sign-in is locked for an hour. Reset your password or sign in with Google.",
+      emailTakenOtherRegion: "This email is already registered. Please sign in instead.",
     },
   },
   profile: {
@@ -321,6 +329,14 @@ const English = {
     },
     signInPrompt: "Sign in to {{app}} to sync your progress across devices.",
     signInButton: "Sign in or create an account",
+    unavailable: {
+      title: "Technical work on your server",
+      text: "Your account's server is temporarily unavailable. Lessons and practice keep working, and your profile will be back soon.",
+    },
+    offline: {
+      title: "No connection",
+      text: "Couldn't reach the server. Check your internet connection.",
+    },
   },
   debug: {
     store: "Store",

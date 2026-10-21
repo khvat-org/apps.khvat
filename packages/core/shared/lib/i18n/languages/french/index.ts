@@ -225,6 +225,7 @@ const French = {
       privacy: "Politique de confidentialité",
     },
     continueWithGoogle: "Continuer avec Google",
+    googleFailed: "Impossible de se connecter avec Google",
     googleUnavailable: {
       title: "La connexion Google n'est pas disponible en Russie",
       subtitle:
@@ -287,7 +288,7 @@ const French = {
       codeRequired: "Entrez le code à 6 chiffres",
       invalidCode: "Code invalide",
       codeExpired: "Le code a expiré",
-      tooManyAttempts: "Trop de tentatives, veuillez réessayer plus tard",
+      tooManyAttempts: "Trop de tentatives. Demandez un nouveau code ou réessayez demain.",
       resendCooldown: "Veuillez attendre avant de demander un nouveau code",
       passwordRequired: "Entrez votre mot de passe",
       invalidCredentials: "E-mail ou mot de passe invalide",
@@ -295,6 +296,13 @@ const French = {
       useGoogleToSignIn: "Ce compte utilise la connexion Google",
       invalidResetToken: "La session de réinitialisation a expiré. Demandez un nouveau code.",
       accountMigrating: "Le compte est en cours de transfert. Veuillez réessayer plus tard.",
+      serverUnavailable:
+        "Le serveur de votre compte est temporairement indisponible. Veuillez réessayer plus tard.",
+      tooManyRequests: "Trop de requêtes. Patientez une minute et réessayez.",
+      userNotFound: "Aucun compte avec cet e-mail. Vérifiez l'adresse ou inscrivez-vous.",
+      loginBlocked:
+        "Trop de mots de passe incorrects. La connexion par mot de passe est bloquée pendant une heure. Réinitialisez votre mot de passe ou connectez-vous avec Google.",
+      emailTakenOtherRegion: "Cet e-mail est déjà enregistré. Veuillez vous connecter.",
     },
   },
   profile: {
@@ -327,6 +335,14 @@ const French = {
     signInPrompt:
       "Connectez-vous à {{app}} pour synchroniser votre progression sur tous les appareils.",
     signInButton: "Se connecter ou créer un compte",
+    unavailable: {
+      title: "Maintenance sur votre serveur",
+      text: "Le serveur de votre compte est temporairement indisponible. Les leçons et les exercices fonctionnent, votre profil sera bientôt de retour.",
+    },
+    offline: {
+      title: "Pas de connexion",
+      text: "Impossible de joindre le serveur. Vérifiez votre connexion Internet.",
+    },
   },
   debug: {
     store: "Magasin",

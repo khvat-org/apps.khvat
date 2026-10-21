@@ -7,6 +7,7 @@ import {
 } from "@nihongo/core/features/auth/api";
 import { completeAuth } from "@nihongo/core/features/auth/lib/completeAuth";
 import { googleSignIn } from "@nihongo/core/features/auth/lib/googleAuth";
+import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { IS_WELCOME_PAGE } from "@nihongo/core/shared/constants/storageKeys";
@@ -85,6 +86,20 @@ export const LoginPage: React.FC = () => {
       ),
     });
 
+  const showGoogleFailed = (reason: string) =>
+    showModal({
+      closeOnBackdrop: true,
+      onClose: () => {},
+      content: (
+        <AlertModal
+          title={t("auth.googleFailed")}
+          subtitle={t(`auth.errors.${reason}`)}
+          button={t("alert.ok")}
+          onPress={hideModal}
+        />
+      ),
+    });
+
   const continueWithGoogle = async () => {
     if (googleLoading) return;
     setGoogleLoading(true);
@@ -99,7 +114,12 @@ export const LoginPage: React.FC = () => {
 
       const idToken = await googleSignIn();
 
-      const { ok, body } = await oauthGoogle(idToken);
+      const result = await oauthGoogle(idToken).catch(() => null);
+      if (!result) {
+        showGoogleFailed("requestFailed");
+        return;
+      }
+      const { ok, status, body } = result;
 
       if (body.error === GOOGLE_OAUTH_BLOCKED) {
         showGoogleUnavailable(availability?.ip);
@@ -111,6 +131,8 @@ export const LoginPage: React.FC = () => {
         forceReset();
         return;
       }
+
+      showGoogleFailed(commonAuthError(status, body.error) ?? "somethingWrong");
     } catch (error) {
       if (error instanceof Error && error.message === "User cancelled flow") return;
     } finally {

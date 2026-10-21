@@ -218,6 +218,7 @@ const ChineseCN = {
       privacy: "隐私政策",
     },
     continueWithGoogle: "使用 Google 继续",
+    googleFailed: "无法使用 Google 登录",
     googleUnavailable: {
       title: "俄罗斯境内无法使用 Google 登录",
       subtitle: "无法在俄罗斯使用 Google 登录。你的 IP 地址：{{ip}}。你可以改用邮箱注册。",
@@ -279,7 +280,7 @@ const ChineseCN = {
       codeRequired: "请输入 6 位验证码",
       invalidCode: "验证码无效",
       codeExpired: "验证码已过期",
-      tooManyAttempts: "尝试次数过多，请稍后再试",
+      tooManyAttempts: "尝试次数过多。请重新获取验证码，或明天再试。",
       resendCooldown: "请稍候再重新发送",
       passwordRequired: "请输入密码",
       invalidCredentials: "邮箱或密码错误",
@@ -287,6 +288,11 @@ const ChineseCN = {
       useGoogleToSignIn: "此账户使用 Google 登录",
       invalidResetToken: "重置会话已过期，请重新获取验证码。",
       accountMigrating: "账户正在迁移中，请稍后再试。",
+      serverUnavailable: "你的账户所在服务器暂时不可用，请稍后再试。",
+      tooManyRequests: "请求过于频繁，请等待一分钟后再试。",
+      userNotFound: "没有使用该邮箱的账户。请检查地址或注册。",
+      loginBlocked: "密码错误次数过多，密码登录已锁定一小时。请重置密码或使用 Google 登录。",
+      emailTakenOtherRegion: "该邮箱已注册，请直接登录。",
     },
   },
   profile: {
@@ -317,6 +323,14 @@ const ChineseCN = {
     },
     signInPrompt: "登录 {{app}} 以在所有设备上同步进度。",
     signInButton: "登录或创建账户",
+    unavailable: {
+      title: "你的服务器正在维护",
+      text: "你的账户所在服务器暂时不可用。课程和练习仍可正常使用，个人资料很快就会恢复。",
+    },
+    offline: {
+      title: "无网络连接",
+      text: "无法连接到服务器，请检查网络连接。",
+    },
   },
   debug: {
     store: "商店",

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { resendResetCode, verifyResetCode } from "@nihongo/core/features/auth/api";
+import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
@@ -21,7 +22,7 @@ const maskEmail = (email: string): string => {
   return `****${local.slice(-2)}@${domain}`;
 };
 
-const mapCodeError = (code?: string): string => {
+const mapCodeError = (status: number, code?: string): string => {
   switch (code) {
     case "invalid_code":
       return "invalidCode";
@@ -31,9 +32,8 @@ const mapCodeError = (code?: string): string => {
       return "tooManyAttempts";
     case "resend_cooldown":
       return "resendCooldown";
-    default:
-      return "somethingWrong";
   }
+  return commonAuthError(status, code) ?? "somethingWrong";
 };
 
 type SubmitCodeNavProp = StackNavigationProp<
@@ -89,7 +89,7 @@ export const ResetPasswordSubmitCodePage: React.FC = () => {
 
     setSubmitting(true);
     try {
-      const { ok, body } = await verifyResetCode(email, code, region);
+      const { ok, status, body } = await verifyResetCode(email, code, region);
 
       if (ok && body.reset_token) {
         navigation.navigate(AUTH_ROUTES.RESET_PASSWORD_CONFIRM, {
@@ -100,7 +100,7 @@ export const ResetPasswordSubmitCodePage: React.FC = () => {
         return;
       }
 
-      setError(mapCodeError(body.error));
+      setError(mapCodeError(status, body.error));
     } catch {
       setError("requestFailed");
     } finally {
@@ -121,7 +121,7 @@ export const ResetPasswordSubmitCodePage: React.FC = () => {
         return;
       }
 
-      setError(mapCodeError(body.error));
+      setError(mapCodeError(status, body.error));
     } catch {
       setError("requestFailed");
     } finally {

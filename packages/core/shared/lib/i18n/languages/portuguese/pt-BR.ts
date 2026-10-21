@@ -223,6 +223,7 @@ const PortugueseBR = {
       privacy: "Política de Privacidade",
     },
     continueWithGoogle: "Continuar com o Google",
+    googleFailed: "Não foi possível entrar com o Google",
     googleUnavailable: {
       title: "O login com o Google não está disponível na Rússia",
       subtitle:
@@ -285,7 +286,7 @@ const PortugueseBR = {
       codeRequired: "Digite o código de 6 dígitos",
       invalidCode: "Código inválido",
       codeExpired: "O código expirou",
-      tooManyAttempts: "Muitas tentativas, tente mais tarde",
+      tooManyAttempts: "Muitas tentativas. Solicite um novo código ou tente amanhã.",
       resendCooldown: "Aguarde antes de solicitar um novo código",
       passwordRequired: "Digite sua senha",
       invalidCredentials: "E-mail ou senha inválidos",
@@ -293,6 +294,13 @@ const PortugueseBR = {
       useGoogleToSignIn: "Esta conta usa login com Google",
       invalidResetToken: "Sessão de redefinição expirada. Solicite um novo código.",
       accountMigrating: "A conta está sendo transferida. Tente novamente mais tarde.",
+      serverUnavailable:
+        "O servidor da sua conta está temporariamente indisponível. Tente novamente mais tarde.",
+      tooManyRequests: "Muitas solicitações. Aguarde um minuto e tente novamente.",
+      userNotFound: "Nenhuma conta com este e-mail. Verifique o endereço ou cadastre-se.",
+      loginBlocked:
+        "Muitas senhas incorretas. O login com senha está bloqueado por uma hora. Redefina sua senha ou entre com o Google.",
+      emailTakenOtherRegion: "Este e-mail já está cadastrado. Faça login.",
     },
   },
   profile: {
@@ -323,6 +331,14 @@ const PortugueseBR = {
     },
     signInPrompt: "Entre no {{app}} para sincronizar seu progresso em todos os dispositivos.",
     signInButton: "Entrar ou criar uma conta",
+    unavailable: {
+      title: "Manutenção no seu servidor",
+      text: "O servidor da sua conta está temporariamente indisponível. As lições e a prática continuam funcionando, e seu perfil voltará em breve.",
+    },
+    offline: {
+      title: "Sem conexão",
+      text: "Não foi possível acessar o servidor. Verifique sua conexão com a internet.",
+    },
   },
   debug: {
     store: "Loja",

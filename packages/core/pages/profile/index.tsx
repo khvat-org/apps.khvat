@@ -10,7 +10,7 @@ import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
 import { useStudyActivity } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import { getProfile, Profile } from "@nihongo/core/shared/lib/auth";
+import { loadProfile, ProfileState } from "@nihongo/core/shared/lib/auth";
 import { useProfileWidgets } from "@nihongo/core/shared/lib/settings/useProfileWidgets";
 import { Typography } from "@nihongo/core/shared/typography";
 import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
@@ -50,15 +50,27 @@ const ProfilePage: React.FC = () => {
     navigation.navigate(PROFILE_ROUTES.EDIT);
   };
 
-  const [profile, setProfile] = useState<Profile | null>(null);
+  const [state, setState] = useState<ProfileState | null>(null);
   const [loading, setLoading] = useState(true);
+
+  const profile = state?.kind === "ok" ? state.profile : null;
+  const problem = state?.kind === "unavailable" || state?.kind === "offline" ? state.kind : null;
+
+  const reload = useCallback(() => {
+    setLoading(true);
+    return loadProfile().then((next) => {
+      setState(next);
+      setLoading(false);
+      return next;
+    });
+  }, []);
 
   useFocusEffect(
     useCallback(() => {
       let active = true;
-      getProfile().then((data) => {
+      loadProfile().then((next) => {
         if (!active) return;
-        setProfile(data);
+        setState(next);
         setLoading(false);
       });
       void sync();
@@ -91,6 +103,20 @@ const ProfilePage: React.FC = () => {
           />
         )}
 
+        {!loading && problem && (
+          <View>
+            <Text style={styles.problemTitle}>{t(`profile.${problem}.title`)}</Text>
+            <Text style={styles.problemText}>{t(`profile.${problem}.text`)}</Text>
+            <PrimaryButton
+              onClick={() => {
+                triggerHaptic();
+                void reload();
+              }}
+              text={t("common.retry")}
+            />
+          </View>
+        )}
+
         {!loading && profile?.email && (
           <Pressable onPress={toEditProfile}>
             <ProfileItem
@@ -101,7 +127,7 @@ const ProfilePage: React.FC = () => {
           </Pressable>
         )}
 
-        {!loading && !profile?.email && (
+        {!loading && state?.kind === "signedOut" && (
           <View>
             <Text
               style={{
@@ -152,6 +178,17 @@ const makeStyles = (colors: ColorsType) =>
       borderBottomLeftRadius: 24,
       borderBottomRightRadius: 24,
       backgroundColor: colors.BgPrimary,
+    },
+    problemTitle: {
+      ...Typography.boldDefault,
+      color: colors.TextPrimary,
+      marginBottom: 8,
+    },
+    problemText: {
+      ...Typography.regularDefault,
+      color: colors.TextSecondary,
+      maxWidth: 300,
+      marginBottom: 16,
     },
     content: {
       paddingTop: 16,

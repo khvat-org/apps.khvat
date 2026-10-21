@@ -217,6 +217,7 @@ const ChineseTW = {
       privacy: "隱私權政策",
     },
     continueWithGoogle: "使用 Google 繼續",
+    googleFailed: "無法使用 Google 登入",
     googleUnavailable: {
       title: "俄羅斯境內無法使用 Google 登入",
       subtitle: "無法在俄羅斯使用 Google 登入。你的 IP 位址：{{ip}}。你可以改用電子郵件註冊。",
@@ -278,7 +279,7 @@ const ChineseTW = {
       codeRequired: "請輸入 6 位數驗證碼",
       invalidCode: "驗證碼無效",
       codeExpired: "驗證碼已過期",
-      tooManyAttempts: "嘗試次數過多，請稍後再試",
+      tooManyAttempts: "嘗試次數過多。請重新取得驗證碼，或明天再試。",
       resendCooldown: "請稍候再重新寄送",
       passwordRequired: "請輸入密碼",
       invalidCredentials: "電子郵件或密碼錯誤",
@@ -286,6 +287,11 @@ const ChineseTW = {
       useGoogleToSignIn: "此帳號使用 Google 登入",
       invalidResetToken: "重設工作階段已過期。請重新請求驗證碼。",
       accountMigrating: "帳號正在轉移中。請稍後再試。",
+      serverUnavailable: "你的帳號所在伺服器暫時無法使用，請稍後再試。",
+      tooManyRequests: "請求過於頻繁，請等待一分鐘後再試。",
+      userNotFound: "沒有使用此電子郵件的帳號。請確認地址或註冊。",
+      loginBlocked: "密碼錯誤次數過多，密碼登入已鎖定一小時。請重設密碼或使用 Google 登入。",
+      emailTakenOtherRegion: "此電子郵件已註冊，請直接登入。",
     },
   },
   profile: {
@@ -316,6 +322,14 @@ const ChineseTW = {
     },
     signInPrompt: "登入 {{app}} 以在所有裝置上同步進度。",
     signInButton: "登入或建立帳號",
+    unavailable: {
+      title: "你的伺服器正在維護",
+      text: "你的帳號所在伺服器暫時無法使用。課程和練習仍可正常使用，個人檔案很快就會恢復。",
+    },
+    offline: {
+      title: "沒有網路連線",
+      text: "無法連線到伺服器，請檢查網路連線。",
+    },
   },
   debug: {
     store: "商店",

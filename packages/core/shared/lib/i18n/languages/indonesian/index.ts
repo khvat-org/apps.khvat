@@ -222,6 +222,7 @@ const Indonesian = {
       privacy: "Kebijakan Privasi",
     },
     continueWithGoogle: "Lanjutkan dengan Google",
+    googleFailed: "Gagal masuk dengan Google",
     googleUnavailable: {
       title: "Masuk dengan Google tidak tersedia di Rusia",
       subtitle:
@@ -284,7 +285,7 @@ const Indonesian = {
       codeRequired: "Masukkan kode 6 digit",
       invalidCode: "Kode tidak valid",
       codeExpired: "Kode telah kedaluwarsa",
-      tooManyAttempts: "Terlalu banyak percobaan, silakan coba nanti",
+      tooManyAttempts: "Terlalu banyak percobaan. Minta kode baru atau coba lagi besok.",
       resendCooldown: "Harap tunggu sebelum meminta kode baru",
       passwordRequired: "Masukkan kata sandi",
       invalidCredentials: "Email atau kata sandi tidak valid",
@@ -292,6 +293,12 @@ const Indonesian = {
       useGoogleToSignIn: "Akun ini menggunakan masuk dengan Google",
       invalidResetToken: "Sesi reset telah kedaluwarsa. Minta kode baru.",
       accountMigrating: "Akun sedang dipindahkan. Silakan coba lagi nanti.",
+      serverUnavailable: "Server akunmu sedang tidak tersedia. Silakan coba lagi nanti.",
+      tooManyRequests: "Terlalu banyak permintaan. Tunggu satu menit lalu coba lagi.",
+      userNotFound: "Tidak ada akun dengan email ini. Periksa alamatnya atau daftar.",
+      loginBlocked:
+        "Terlalu banyak kata sandi salah. Masuk dengan kata sandi dikunci selama satu jam. Atur ulang kata sandi atau masuk dengan Google.",
+      emailTakenOtherRegion: "Email ini sudah terdaftar. Silakan masuk.",
     },
   },
   profile: {
@@ -322,6 +329,14 @@ const Indonesian = {
     },
     signInPrompt: "Masuk ke {{app}} untuk menyinkronkan progres di semua perangkat.",
     signInButton: "Masuk atau buat akun",
+    unavailable: {
+      title: "Pemeliharaan di servermu",
+      text: "Server akunmu sedang tidak tersedia. Pelajaran dan latihan tetap berjalan, profilmu akan segera kembali.",
+    },
+    offline: {
+      title: "Tidak ada koneksi",
+      text: "Tidak dapat terhubung ke server. Periksa koneksi internetmu.",
+    },
   },
   debug: {
     store: "Toko",

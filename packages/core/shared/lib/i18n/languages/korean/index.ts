@@ -219,6 +219,7 @@ const Korean = {
       privacy: "개인정보 처리방침",
     },
     continueWithGoogle: "Google로 계속하기",
+    googleFailed: "Google로 로그인하지 못했습니다",
     googleUnavailable: {
       title: "러시아에서는 Google 로그인을 사용할 수 없습니다",
       subtitle:
@@ -281,7 +282,7 @@ const Korean = {
       codeRequired: "6자리 코드를 입력하세요",
       invalidCode: "올바르지 않은 코드",
       codeExpired: "코드가 만료되었습니다",
-      tooManyAttempts: "시도 횟수가 너무 많습니다. 나중에 다시 시도해 주세요",
+      tooManyAttempts: "시도 횟수가 너무 많습니다. 새 코드를 요청하거나 내일 다시 시도해 주세요.",
       resendCooldown: "다시 보내기 전에 잠시 기다려 주세요",
       passwordRequired: "비밀번호를 입력하세요",
       invalidCredentials: "이메일 또는 비밀번호가 올바르지 않습니다",
@@ -289,6 +290,12 @@ const Korean = {
       useGoogleToSignIn: "이 계정은 Google로 로그인합니다",
       invalidResetToken: "재설정 세션이 만료되었습니다. 코드를 다시 요청하세요.",
       accountMigrating: "계정 이전 중입니다. 나중에 다시 시도해 주세요.",
+      serverUnavailable: "계정 서버를 일시적으로 사용할 수 없습니다. 나중에 다시 시도해 주세요.",
+      tooManyRequests: "요청이 너무 많습니다. 1분 후 다시 시도해 주세요.",
+      userNotFound: "이 이메일로 등록된 계정이 없습니다. 주소를 확인하거나 가입해 주세요.",
+      loginBlocked:
+        "잘못된 비밀번호를 너무 많이 입력했습니다. 비밀번호 로그인이 1시간 동안 잠깁니다. 비밀번호를 재설정하거나 Google로 로그인해 주세요.",
+      emailTakenOtherRegion: "이미 등록된 이메일입니다. 로그인해 주세요.",
     },
   },
   profile: {
@@ -319,6 +326,14 @@ const Korean = {
     },
     signInPrompt: "{{app}}에 로그인하여 모든 기기에서 진행 상황을 동기화하세요.",
     signInButton: "로그인 또는 계정 만들기",
+    unavailable: {
+      title: "서버 점검 중",
+      text: "계정 서버를 일시적으로 사용할 수 없습니다. 레슨과 연습은 계속 이용할 수 있으며, 프로필은 곧 다시 표시됩니다.",
+    },
+    offline: {
+      title: "연결 없음",
+      text: "서버에 연결할 수 없습니다. 인터넷 연결을 확인해 주세요.",
+    },
   },
   debug: {
     store: "스토어",
