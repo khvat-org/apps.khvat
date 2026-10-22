@@ -306,6 +306,10 @@ const SpanishMX = {
     },
   },
   profile: {
+    widgets: {
+      hide: "Ocultar widget",
+    },
+
     stats: {
       daysOfStudy: "días de estudio",
       timesOfPractice: "sesiones de práctica",

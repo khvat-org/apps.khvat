@@ -299,6 +299,10 @@ const Korean = {
     },
   },
   profile: {
+    widgets: {
+      hide: "위젯 숨기기",
+    },
+
     stats: {
       daysOfStudy: "학습일수",
       timesOfPractice: "연습 횟수",

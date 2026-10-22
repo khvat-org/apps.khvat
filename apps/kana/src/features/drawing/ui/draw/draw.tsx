@@ -224,7 +224,7 @@ const Draw: React.FC<DrawProps> = ({
   return (
     <GestureHandlerRootView
       style={[
-        { height: canvasSize + DRAW_CONTROLS_HEIGHT },
+        { minHeight: canvasSize + DRAW_CONTROLS_HEIGHT },
         isFullHeight ? { flex: 1, justifyContent: "space-between" } : {},
       ]}
     >

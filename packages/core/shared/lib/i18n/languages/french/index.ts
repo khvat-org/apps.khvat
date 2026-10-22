@@ -306,6 +306,10 @@ const French = {
     },
   },
   profile: {
+    widgets: {
+      hide: "Masquer le widget",
+    },
+
     stats: {
       daysOfStudy: "jours d'étude",
       timesOfPractice: "sessions d'entraînement",

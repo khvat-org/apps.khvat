@@ -305,6 +305,10 @@ const German = {
     },
   },
   profile: {
+    widgets: {
+      hide: "Widget ausblenden",
+    },
+
     stats: {
       daysOfStudy: "Lerntage",
       timesOfPractice: "Übungen",

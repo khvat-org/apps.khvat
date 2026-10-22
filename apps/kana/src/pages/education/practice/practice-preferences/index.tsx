@@ -117,6 +117,10 @@ export const PracticePreferencesPage: React.FC = () => {
             text: t("common.back"),
             onPress: navigation.goBack,
           }}
+          right={{
+            text: t("common.save"),
+            onPress: navigation.goBack,
+          }}
         />
 
         <ScrollView contentContainerStyle={{ gap: 16, paddingBottom: insets.bottom + 16 }}>

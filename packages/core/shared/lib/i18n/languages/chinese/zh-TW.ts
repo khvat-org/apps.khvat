@@ -295,6 +295,10 @@ const ChineseTW = {
     },
   },
   profile: {
+    widgets: {
+      hide: "隱藏小工具",
+    },
+
     stats: {
       daysOfStudy: "學習天數",
       timesOfPractice: "練習次數",

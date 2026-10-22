@@ -304,6 +304,10 @@ const Russian = {
     },
   },
   profile: {
+    widgets: {
+      hide: "Скрыть виджет",
+    },
+
     stats: {
       daysOfStudy: "дней занятий",
       timesOfPractice: "раз практики",

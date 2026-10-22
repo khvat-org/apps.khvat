@@ -13,7 +13,9 @@ async function request<TResponse>(
 }
 
 export const getLessons = async (lang: string, signal?: AbortSignal) => {
-  const path = `/api/v2/lessons?language=${lang}&app=alphabet`;
+  const app = encodeURIComponent(process.env.APP_SLUG ?? "");
+  const version = encodeURIComponent(process.env.VERSION ?? "");
+  const path = `/api/v2/lessons?language=${lang}&app=${app}&app_version=${version}`;
   const [data, status] = await request<{ data: Chapter[] }>(path, 60000, signal);
   return { data: data.data, status };
 };

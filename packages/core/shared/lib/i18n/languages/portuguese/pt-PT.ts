@@ -305,6 +305,10 @@ const PortuguesePT = {
     },
   },
   profile: {
+    widgets: {
+      hide: "Ocultar widget",
+    },
+
     stats: {
       daysOfStudy: "dias de estudo",
       timesOfPractice: "sessões de prática",

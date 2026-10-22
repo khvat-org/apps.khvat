@@ -2,11 +2,6 @@ import React, { useCallback, useEffect, useState } from "react";
 
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
 import SettingsSection from "@nihongo/core/entities/setting/setting-section/settings-section";
-import {
-  isBareWorkflow,
-  isExpoGo,
-  isProductionBuild,
-} from "@nihongo/core/shared/constants/environment";
 import { isIOS } from "@nihongo/core/shared/constants/platformUtil";
 import {
   APP_THEME,
@@ -36,7 +31,6 @@ import { Typography } from "@nihongo/core/shared/typography";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
   AppStoreLogoIcon,
-  CornersOutIcon,
   DeviceMobileIcon,
   FingerprintIcon,
   GitBranchIcon,
@@ -209,14 +203,6 @@ const DebugInfo: React.FC = () => {
     Share.share({ message: `${value}` });
   };
 
-  const getAppEnv = () => {
-    if (isExpoGo) return "ExpoGo";
-    if (isBareWorkflow) return "BareWorkflow";
-    if (isProductionBuild) return "ProductionBuild";
-
-    return "Unknow";
-  };
-
   const getIconByName = (name?: string) => {
     if (name === "github-logo") return <GithubLogoIcon size={20} color={colors.BgContrast} />;
 
@@ -283,14 +269,6 @@ const DebugInfo: React.FC = () => {
           />
 
           <SettingItem
-            leftIcon={<FingerprintIcon size={20} color={colors.BgContrast} />}
-            hideArrow
-            text={"User Server"}
-            onClick={() => share("user's server", userServer || "-")}
-            subText={userServer || "-"}
-          />
-
-          <SettingItem
             leftIcon={<KeyIcon size={20} color={colors.BgContrast} />}
             hideArrow
             text={t("debug.notificationToken")}
@@ -299,11 +277,11 @@ const DebugInfo: React.FC = () => {
           />
 
           <SettingItem
-            leftIcon={<CornersOutIcon size={20} color={colors.BgContrast} />}
+            leftIcon={<FingerprintIcon size={20} color={colors.BgContrast} />}
             hideArrow
-            text={"App env"}
-            onClick={() => share("App env", getAppEnv())}
-            subText={getAppEnv()}
+            text={"User Server"}
+            onClick={() => share("user's server", userServer || "-")}
+            subText={userServer || "-"}
           />
 
           <View style={styles.gateways}>

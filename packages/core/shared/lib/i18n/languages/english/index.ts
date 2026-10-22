@@ -302,6 +302,10 @@ const English = {
     },
   },
   profile: {
+    widgets: {
+      hide: "Hide widget",
+    },
+
     stats: {
       daysOfStudy: "days of study",
       timesOfPractice: "times of practice",

@@ -9,9 +9,10 @@ export const fetchRemoteConfig = async (
   try {
     const appSlug = process.env.APP_SLUG;
     const appParam = appSlug ? `&app=${encodeURIComponent(appSlug)}` : "";
+    const versionParam = `&app_version=${encodeURIComponent(process.env.VERSION ?? "")}`;
 
     const response = await apiFetch(
-      `/api/conf?language=${encodeURIComponent(language)}${appParam}`,
+      `/api/conf?language=${encodeURIComponent(language)}${appParam}${versionParam}`,
       { signal },
     );
 

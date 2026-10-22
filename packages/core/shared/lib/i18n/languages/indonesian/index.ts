@@ -302,6 +302,10 @@ const Indonesian = {
     },
   },
   profile: {
+    widgets: {
+      hide: "Sembunyikan widget",
+    },
+
     stats: {
       daysOfStudy: "hari belajar",
       timesOfPractice: "kali latihan",

@@ -306,6 +306,10 @@ const Italian = {
     },
   },
   profile: {
+    widgets: {
+      hide: "Nascondi widget",
+    },
+
     stats: {
       daysOfStudy: "giorni di studio",
       timesOfPractice: "sessioni di pratica",

@@ -2,6 +2,7 @@ import React, { useCallback, useState } from "react";
 
 import PracticeHeatmap from "@nihongo/core/entities/profile/practice-heatmap";
 import ProfileItem from "@nihongo/core/entities/profile/profile-item/profile-item";
+import ProfileWidgetFrame from "@nihongo/core/entities/profile/profile-widget-frame/profile-widget-frame";
 import SocialMediaProfile from "@nihongo/core/entities/profile/social-media-profile/social-media-profile";
 import { PROFILE_ROUTES, ProfileParamList } from "@nihongo/core/pages/profile/routes";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
@@ -33,7 +34,7 @@ const ProfilePage: React.FC = () => {
 
   const { forceReset } = useResetApp();
   const { days, sync } = useStudyActivity();
-  const { widgets, loaded: widgetsLoaded } = useProfileWidgets();
+  const { widgets, loaded: widgetsLoaded, setWidget } = useProfileWidgets();
 
   const insets = useSafeAreaInsets();
   const { triggerHaptic } = useHaptic();
@@ -157,9 +158,15 @@ const ProfilePage: React.FC = () => {
         style={styles.content}
       >
         {widgetsLoaded && process.env.APP_SLUG === "kana-master" && widgets.statistics && (
-          <PracticeHeatmap data={days} />
+          <ProfileWidgetFrame onHide={() => setWidget("statistics", false)}>
+            <PracticeHeatmap data={days} />
+          </ProfileWidgetFrame>
         )}
-        {widgetsLoaded && widgets.social && <SocialMediaProfile />}
+        {widgetsLoaded && widgets.social && (
+          <ProfileWidgetFrame onHide={() => setWidget("social", false)}>
+            <SocialMediaProfile />
+          </ProfileWidgetFrame>
+        )}
       </ScrollView>
     </View>
   );

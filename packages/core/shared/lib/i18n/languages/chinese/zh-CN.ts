@@ -296,6 +296,10 @@ const ChineseCN = {
     },
   },
   profile: {
+    widgets: {
+      hide: "隐藏小组件",
+    },
+
     stats: {
       daysOfStudy: "学习天数",
       timesOfPractice: "练习次数",
