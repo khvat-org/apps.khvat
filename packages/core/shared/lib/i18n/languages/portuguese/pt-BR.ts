@@ -54,11 +54,6 @@ const PortugueseBR = {
         title: "Caracteres insuficientes",
         subtitle: "Selecione {count} caracteres de Hiragana ou {count} caracteres de Katakana.",
       },
-      insufficientBaseKanaSelected: {
-        title: "Caracteres insuficientes",
-        subtitle:
-          "Selecione {count} caracteres básicos de Hiragana ou {count} caracteres básicos de Katakana (excluindo dakuten, handakuten e yōon).",
-      },
       insufficientWordsAvailable: {
         title: "Palavras insuficientes disponíveis",
         subtitle:

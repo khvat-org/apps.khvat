@@ -54,11 +54,6 @@ const Korean = {
         title: "문자가 부족합니다",
         subtitle: "{count}개의 히라가나 문자 또는 {count}개의 가타카나 문자를 선택해 주세요.",
       },
-      insufficientBaseKanaSelected: {
-        title: "문자가 부족합니다",
-        subtitle:
-          "{count}개의 기본 히라가나 또는 {count}개의 기본 가타카나 문자를 선택해 주세요 (탁음, 반탁음, 요음 제외).",
-      },
       insufficientWordsAvailable: {
         title: "사용 가능한 단어가 부족합니다",
         subtitle: "필요한 단어 수보다 적습니다. 히라가나 또는 가타카나 음절을 더 선택해 주세요.",

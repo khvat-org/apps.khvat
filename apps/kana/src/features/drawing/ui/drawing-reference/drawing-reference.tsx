@@ -4,7 +4,7 @@ import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-conte
 import { ILetter } from "@nihongo/core/shared/data/lettersTable";
 import { StyleSheet, View } from "react-native";
 
-import { kanaReferences } from "../../lib/hieroglyph-recognition/references";
+import { composeReference } from "../../lib/hieroglyph-recognition/compose-reference";
 import { kanaTemplates } from "../../lib/hieroglyph-recognition/templates";
 import { DrawingPath } from "../../lib/svg-path";
 import StrokesCanvas from "../drawing-preview/strokes-canvas";
@@ -30,9 +30,10 @@ interface DrawingReferenceProps {
 const getReferenceStrokes = (letter: ILetter, kana: KanaAlphabet): DrawingPath[] | null => {
   const symbol = kana === KanaAlphabet.Hiragana ? letter.hi : letter.ka;
 
-  const reference = (
-    kana === KanaAlphabet.Hiragana ? kanaReferences.hiragana : kanaReferences.katakana
-  )[symbol];
+  const reference = composeReference(
+    symbol,
+    kana === KanaAlphabet.Hiragana ? "hiragana" : "katakana",
+  );
 
   if (!reference) return null;
 

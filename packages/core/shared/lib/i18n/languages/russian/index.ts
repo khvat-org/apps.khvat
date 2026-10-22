@@ -54,11 +54,6 @@ const Russian = {
         title: "Недостаточно символов",
         subtitle: "Выберите {count} символов хираганы или {count} символов катаканы.",
       },
-      insufficientBaseKanaSelected: {
-        title: "Недостаточно символов",
-        subtitle:
-          "Выберите {count} базовых символов хираганы или {count} базовых символов катаканы (без дакуона, хандакуона и ёона).",
-      },
       insufficientWordsAvailable: {
         title: "Недостаточно доступных слов",
         subtitle:

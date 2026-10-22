@@ -46,16 +46,6 @@ const PracticeCard: React.FC<PracticeCardProps> = ({
     if (message === AccessibilityError.Available) {
       onClick();
     } else {
-      if (message === AccessibilityError.insufficientBaseKanaSelected) {
-        callAlert(
-          t("practice.alert.insufficientBaseKanaSelected.title"),
-          t("practice.alert.insufficientBaseKanaSelected.subtitle").replaceAll(
-            "{count}",
-            count.toString(),
-          ),
-        );
-      }
-
       if (message === AccessibilityError.insufficientKanaSelected) {
         callAlert(
           t("practice.alert.insufficientKanaSelected.title"),

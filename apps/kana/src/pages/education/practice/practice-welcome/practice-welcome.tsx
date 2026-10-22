@@ -42,21 +42,13 @@ const PracticeWelcomePage: React.FC = () => {
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
 
-  const {
-    selectedWords,
-    selected: letters,
-    selectedLettersHiragana,
-    selectedLettersKatakana,
-  } = useKanaContext();
+  const { selectedWords, selectedLettersHiragana, selectedLettersKatakana } = useKanaContext();
 
   const {
     preferences: { questionsCount, mixModes },
   } = usePracticePreferences();
 
   const wordsCount = selectedWords.hiragana.length + selectedWords.katakana.length;
-
-  const baseHiragana = letters.base.hiragana.length;
-  const baseKatakana = letters.base.katakana.length;
 
   const hiraganaLength = selectedLettersHiragana;
   const katakanaLength = selectedLettersKatakana;
@@ -65,8 +57,6 @@ const PracticeWelcomePage: React.FC = () => {
     questionsLength: questionsCount,
     hiraganaLength,
     katakanaLength,
-    baseHiragana,
-    baseKatakana,
     wordsCount,
   });
 

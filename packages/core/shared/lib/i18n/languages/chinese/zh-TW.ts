@@ -54,10 +54,6 @@ const ChineseTW = {
         title: "字元不足",
         subtitle: "請選擇 {count} 個平假名或 {count} 個片假名字元。",
       },
-      insufficientBaseKanaSelected: {
-        title: "字元不足",
-        subtitle: "請選擇 {count} 個基本平假名或 {count} 個基本片假名（不含濁音、半濁音和拗音）。",
-      },
       insufficientWordsAvailable: {
         title: "可用單字不足",
         subtitle: "可用單字少於所需數量。請選擇更多平假名或片假名音節。",

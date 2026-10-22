@@ -54,11 +54,6 @@ const English = {
         title: "Not Enough Characters",
         subtitle: "Please select {count} Hiragana characters or {count} Katakana characters.",
       },
-      insufficientBaseKanaSelected: {
-        title: "Not Enough Characters",
-        subtitle:
-          "Please select {count} basic Hiragana or {count} basic Katakana characters (excluding dakuten, handakuten, and yōon).",
-      },
       insufficientWordsAvailable: {
         title: "Not Enough Words Available",
         subtitle:

@@ -6,15 +6,11 @@ interface isAvailablePracticeProps {
   hiraganaLength: number;
   katakanaLength: number;
 
-  baseHiragana: number;
-  baseKatakana: number;
-
   wordsCount: number;
 }
 
 export enum AccessibilityError {
   insufficientKanaSelected = "practice.alert.insufficientKanaSelected",
-  insufficientBaseKanaSelected = "practice.alert.insufficientBaseKanaSelected",
   insufficientWordsAvailable = "practice.alert.insufficientWordsAvailable",
 
   Available = "available",
@@ -30,14 +26,7 @@ export enum AccessibilityError {
  * isAvailable.isAvailableTesting() // If "true" means available, otherwise false.
  */
 export const isAvailablePractice = (data: isAvailablePracticeProps) => {
-  const {
-    questionsLength,
-    hiraganaLength,
-    katakanaLength,
-    baseHiragana,
-    baseKatakana,
-    wordsCount,
-  } = data;
+  const { questionsLength, hiraganaLength, katakanaLength, wordsCount } = data;
 
   return {
     [PracticeType.Testing]: () => {
@@ -49,8 +38,8 @@ export const isAvailablePractice = (data: isAvailablePracticeProps) => {
     },
 
     [PracticeType.Drawing]: () => {
-      if (baseHiragana < questionsLength && baseKatakana < questionsLength) {
-        return { message: AccessibilityError.insufficientBaseKanaSelected, count: questionsLength };
+      if (hiraganaLength < questionsLength && katakanaLength < questionsLength) {
+        return { message: AccessibilityError.insufficientKanaSelected, count: questionsLength };
       }
 
       return { message: AccessibilityError.Available, count: questionsLength };

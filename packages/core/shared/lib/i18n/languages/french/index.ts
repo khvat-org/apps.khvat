@@ -55,11 +55,6 @@ const French = {
         subtitle:
           "Veuillez sélectionner {count} caractères Hiragana ou {count} caractères Katakana.",
       },
-      insufficientBaseKanaSelected: {
-        title: "Pas assez de caractères",
-        subtitle:
-          "Veuillez sélectionner {count} caractères Hiragana de base ou {count} caractères Katakana de base (sans dakuon, handakuon et yōon).",
-      },
       insufficientWordsAvailable: {
         title: "Pas assez de mots disponibles",
         subtitle:

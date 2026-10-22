@@ -2,12 +2,7 @@ import React, { useRef, useReducer, useState, useEffect } from "react";
 
 import { getCanvasSize, TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import {
-  dakuonFlatLettersId,
-  handakuonFlatLettersId,
-  ILetter,
-  yoonFlatLettersId,
-} from "@nihongo/core/shared/data/lettersTable";
+import { ILetter } from "@nihongo/core/shared/data/lettersTable";
 import { Typography } from "@nihongo/core/shared/typography";
 import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
 import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
@@ -21,6 +16,10 @@ import {
 } from "react-native-gesture-handler";
 import { Svg, Path } from "react-native-svg";
 
+import {
+  addComposedTemplates,
+  templateName,
+} from "../../lib/hieroglyph-recognition/compose-reference";
 import {
   canvasCoordinates,
   normalizeCoordinates,
@@ -73,14 +72,6 @@ interface DrawProps {
 
   onCompleted?: (isErrors: boolean, pickedAnswer: ILetter, drawing: DrawingSnapshot) => void;
 }
-
-const getTypeById = (id: string) => {
-  if (yoonFlatLettersId.includes(id)) return "kana.yoon";
-  if (handakuonFlatLettersId.includes(id)) return "kana.handakuon";
-  if (dakuonFlatLettersId.includes(id)) return "kana.dakuon";
-
-  return "kana.basic";
-};
 
 const Draw: React.FC<DrawProps> = ({
   isCheck,
@@ -171,10 +162,12 @@ const Draw: React.FC<DrawProps> = ({
 
     if (kana === KanaAlphabet.Hiragana) {
       kanaTemplates.addHiragana(recognizer);
+      addComposedTemplates(recognizer, "hiragana");
     }
 
     if (kana === KanaAlphabet.Katakana) {
       kanaTemplates.addKatakana(recognizer);
+      addComposedTemplates(recognizer, "katakana");
     }
 
     const strokes = normalizeCoordinates(pathsRef.current);
@@ -186,7 +179,7 @@ const Draw: React.FC<DrawProps> = ({
     const RANK_MARGIN = 0.1;
 
     const best = result[0];
-    const targetMatch = result.find((symbol) => symbol.name[0] === target);
+    const targetMatch = result.find((symbol) => templateName(symbol.name) === target);
 
     const isSomeKana =
       !!best &&
@@ -316,7 +309,7 @@ const Draw: React.FC<DrawProps> = ({
           <ClearButtons clearFull={handleClearButtonClick} clearStep={handleClearStepButtonClick} />
           <View style={styles.buttonsContainer}>
             <View style={styles.actionButtons}>
-              {getTypeById(letter.id) === "kana.basic" && isTextRecognition && (
+              {isTextRecognition && (
                 <PrimaryButton
                   isIcon
                   isHapticFeedback

@@ -11,7 +11,7 @@ import questionGenerateTesting from "./question-generate-testing";
 import questionGenerateTyping from "./question-generate-typing";
 import questionGenerateWordBuilding from "./question-generate-word-building";
 
-import { kanaTemplates } from "@/features/drawing/lib/hieroglyph-recognition/templates";
+import { composeReference } from "@/features/drawing/lib/hieroglyph-recognition/compose-reference";
 import { PracticeQuestion } from "@/pages/education/practice/education-practice/lib/types/questions";
 import { Kana, KanaAlphabet, PracticeType } from "@/shared/constants/kana";
 import { Word } from "@/shared/data/words";
@@ -145,14 +145,12 @@ const wrapperQuestionGenerate = ({
   hiraganaLetters.forEach((item) => {
     const letter = lettersTableById[item];
 
-    if (Object.hasOwn(kanaTemplates["hiragana"], letter.hi))
-      availableDrawHiraganaLetters.push(letter);
+    if (composeReference(letter.hi, "hiragana")) availableDrawHiraganaLetters.push(letter);
   });
 
   katakanaLetters.forEach((item) => {
     const letter = lettersTableById[item];
-    if (Object.hasOwn(kanaTemplates["katakana"], letter.ka))
-      availableDrawKatakanaLetters.push(letter);
+    if (composeReference(letter.ka, "katakana")) availableDrawKatakanaLetters.push(letter);
   });
 
   const questionKanaTemplate = generateKanaTemplate(

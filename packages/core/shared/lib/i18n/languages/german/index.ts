@@ -54,11 +54,6 @@ const German = {
         title: "Nicht genug Zeichen",
         subtitle: "Bitte wähle {count} Hiragana-Zeichen oder {count} Katakana-Zeichen aus.",
       },
-      insufficientBaseKanaSelected: {
-        title: "Nicht genug Zeichen",
-        subtitle:
-          "Bitte wähle {count} grundlegende Hiragana- oder {count} grundlegende Katakana-Zeichen aus (ohne Dakuten, Handakuten und Yōon).",
-      },
       insufficientWordsAvailable: {
         title: "Nicht genug verfügbare Wörter",
         subtitle:

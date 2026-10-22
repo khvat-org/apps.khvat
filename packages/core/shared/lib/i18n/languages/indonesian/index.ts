@@ -54,11 +54,6 @@ const Indonesian = {
         title: "Karakter tidak cukup",
         subtitle: "Silakan pilih {count} karakter Hiragana atau {count} karakter Katakana.",
       },
-      insufficientBaseKanaSelected: {
-        title: "Karakter tidak cukup",
-        subtitle:
-          "Silakan pilih {count} karakter dasar Hiragana atau {count} karakter dasar Katakana (tanpa dakuon, handakuon, dan yōon).",
-      },
       insufficientWordsAvailable: {
         title: "Kata yang tersedia tidak cukup",
         subtitle:

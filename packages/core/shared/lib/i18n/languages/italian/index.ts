@@ -54,11 +54,6 @@ const Italian = {
         title: "Caratteri insufficienti",
         subtitle: "Seleziona {count} caratteri hiragana o {count} caratteri katakana.",
       },
-      insufficientBaseKanaSelected: {
-        title: "Caratteri insufficienti",
-        subtitle:
-          "Seleziona {count} caratteri base di hiragana o {count} caratteri base di katakana (esclusi dakuten, handakuten e yōon).",
-      },
       insufficientWordsAvailable: {
         title: "Parole insufficienti",
         subtitle:

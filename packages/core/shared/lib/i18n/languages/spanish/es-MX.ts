@@ -55,11 +55,6 @@ const SpanishMX = {
         subtitle:
           "Por favor selecciona {count} caracteres de hiragana o {count} caracteres de katakana.",
       },
-      insufficientBaseKanaSelected: {
-        title: "No hay suficientes caracteres",
-        subtitle:
-          "Por favor selecciona {count} caracteres básicos de hiragana o {count} caracteres básicos de katakana (sin dakuon, handakuon ni yōon).",
-      },
       insufficientWordsAvailable: {
         title: "No hay suficientes palabras disponibles",
         subtitle:

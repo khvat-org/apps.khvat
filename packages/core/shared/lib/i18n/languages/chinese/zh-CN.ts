@@ -54,11 +54,6 @@ const ChineseCN = {
         title: "字符不足",
         subtitle: "请选择 {count} 个平假名或 {count} 个片假名字符。",
       },
-      insufficientBaseKanaSelected: {
-        title: "字符不足",
-        subtitle:
-          "请选择 {count} 个基本平假名或 {count} 个基本片假名字符（不包括浊音、半浊音和拗音）。",
-      },
       insufficientWordsAvailable: {
         title: "可用单词不足",
         subtitle: "可用单词少于所需数量。请选择更多平假名或片假名音节。",
