@@ -21,9 +21,12 @@ import {
 } from "react-native-gesture-handler";
 import { Svg, Path } from "react-native-svg";
 
-import { normalizeCoordinates } from "../../lib/hieroglyph-recognition/coordinates";
+import {
+  canvasCoordinates,
+  normalizeCoordinates,
+} from "../../lib/hieroglyph-recognition/coordinates";
 import Recognizer from "../../lib/hieroglyph-recognition/recognizer";
-import { processDrawing } from "../../lib/hieroglyph-recognition/record";
+import { processDrawing, processReference } from "../../lib/hieroglyph-recognition/record";
 import { kanaTemplates } from "../../lib/hieroglyph-recognition/templates";
 import { DrawingPath, generatePathDAttribute } from "../../lib/svg-path";
 import { useDrawSettings } from "../../model/hooks";
@@ -332,11 +335,21 @@ const Draw: React.FC<DrawProps> = ({
                   width={50}
                   icon={<FloppyDiskIcon size={20} color={colors.BgWhite} />}
                   onClick={() => {
+                    const symbol = kana === KanaAlphabet.Hiragana ? letter.hi : letter.ka;
+
                     const points = shortenLines(
                       normalizeCoordinates(processDrawing(pathsRef.current)),
                     );
 
-                    console.log("📦 Symbol points: ", JSON.stringify(points));
+                    const reference = shortenLines(
+                      canvasCoordinates(processReference(pathsRef.current), canvasSize),
+                    );
+
+                    console.log("📦 Symbol points: ", `${symbol}: ${JSON.stringify(points)},`);
+                    console.log(
+                      "🖌️ Reference points: ",
+                      `${symbol}: ${JSON.stringify(reference)},`,
+                    );
                   }}
                 />
               )}

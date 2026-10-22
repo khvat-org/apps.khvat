@@ -28,6 +28,8 @@ interface StrokesCanvasProps {
   size: number;
 
   additionalPadding?: number;
+
+  strokeScale?: number;
 }
 
 const StrokesCanvas: React.FC<StrokesCanvasProps> = ({
@@ -35,8 +37,9 @@ const StrokesCanvas: React.FC<StrokesCanvasProps> = ({
   viewBoxSize,
   size,
   additionalPadding = 0,
+  strokeScale = 1,
 }) => {
-  const strokeWidth = viewBoxSize / 40;
+  const strokeWidth = (viewBoxSize / 40) * strokeScale;
 
   const padding = viewBoxSize * (PADDING_RATIO + additionalPadding);
   const viewBox = `${-padding} ${-padding} ${viewBoxSize + padding * 2} ${viewBoxSize + padding * 2}`;

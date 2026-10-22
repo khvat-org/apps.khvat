@@ -64,3 +64,7 @@ function reducePointsToLimit(points: Point[], limit: number) {
   }
   return reduced;
 }
+
+export function processReference(strokesData: Point[][]) {
+  return strokesData.map((stroke) => simplifyDouglasPeucker(stroke, 0.5));
+}

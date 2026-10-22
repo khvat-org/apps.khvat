@@ -22,3 +22,9 @@ export const normalizeCoordinates = (
     path.map((point) => [(point.x - minX) / width, (point.y - minY) / height]),
   );
 };
+
+export const canvasCoordinates = (
+  data: Array<Array<{ x: number; y: number }>>,
+  canvasSize: number,
+): number[][][] =>
+  data.map((path) => path.map((point) => [point.x / canvasSize, point.y / canvasSize]));

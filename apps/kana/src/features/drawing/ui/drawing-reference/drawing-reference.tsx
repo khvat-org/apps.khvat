@@ -4,6 +4,7 @@ import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-conte
 import { ILetter } from "@nihongo/core/shared/data/lettersTable";
 import { StyleSheet, View } from "react-native";
 
+import { kanaReferences } from "../../lib/hieroglyph-recognition/references";
 import { kanaTemplates } from "../../lib/hieroglyph-recognition/templates";
 import { DrawingPath } from "../../lib/svg-path";
 import StrokesCanvas from "../drawing-preview/strokes-canvas";
@@ -15,6 +16,8 @@ const TEMPLATE_VIEW_BOX = 1;
 
 const SVG_SIZE = 345;
 
+const STROKE_SCALE = 1.3;
+
 interface DrawingReferenceProps {
   letter: ILetter;
   kana: KanaAlphabet;
@@ -23,6 +26,36 @@ interface DrawingReferenceProps {
 
   additionalPadding: number;
 }
+
+const getReferenceStrokes = (letter: ILetter, kana: KanaAlphabet): DrawingPath[] | null => {
+  const symbol = kana === KanaAlphabet.Hiragana ? letter.hi : letter.ka;
+
+  const reference = (
+    kana === KanaAlphabet.Hiragana ? kanaReferences.hiragana : kanaReferences.katakana
+  )[symbol];
+
+  if (!reference) return null;
+
+  const points = reference.flat();
+  const xs = points.map(([x]) => x);
+  const ys = points.map(([, y]) => y);
+
+  const minX = Math.min(...xs);
+  const minY = Math.min(...ys);
+  const width = Math.max(...xs) - minX;
+  const height = Math.max(...ys) - minY;
+
+  const scale = 1 / (Math.max(width, height) || 1);
+  const offsetX = (1 - width * scale) / 2;
+  const offsetY = (1 - height * scale) / 2;
+
+  return reference.map((stroke) =>
+    stroke.map(([x, y]) => ({
+      x: (x - minX) * scale + offsetX,
+      y: (y - minY) * scale + offsetY,
+    })),
+  );
+};
 
 const getTemplateStrokes = (letter: ILetter, kana: KanaAlphabet): DrawingPath[] | null => {
   const symbol = kana === KanaAlphabet.Hiragana ? letter.hi : letter.ka;
@@ -45,12 +78,13 @@ const DrawingReference: React.FC<DrawingReferenceProps> = ({
 }) => {
   const { colors } = useThemeContext();
 
-  const strokes = getTemplateStrokes(letter, kana);
+  const strokes = getReferenceStrokes(letter, kana) ?? getTemplateStrokes(letter, kana);
 
   if (strokes !== null) {
     return (
       <StrokesCanvas
         additionalPadding={additionalPadding}
+        strokeScale={STROKE_SCALE}
         strokes={strokes}
         viewBoxSize={TEMPLATE_VIEW_BOX}
         size={size}
