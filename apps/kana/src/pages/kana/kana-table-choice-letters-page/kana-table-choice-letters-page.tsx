@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import { isIOS } from "@nihongo/core/shared/constants/platformUtil";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
@@ -41,7 +41,8 @@ const KanaTableChoiceLettersPage: React.FC = () => {
     }, [isDarkTheme]),
   );
 
-  const { selectedLettersHiragana, selectedLettersKatakana } = useKanaContext();
+  const { selected, selectedLettersHiragana, selectedLettersKatakana, replaceSelected } =
+    useKanaContext();
 
   const [activeTab, setActiveTab] = useState<KanaAlphabet>(KanaAlphabet.Hiragana);
 
@@ -55,19 +56,39 @@ const KanaTableChoiceLettersPage: React.FC = () => {
     [t],
   );
 
-  const done = () => navigation.goBack();
+  const initial = useRef(selected);
+  const isSaved = useRef(false);
+
+  const isDirty = selected !== initial.current;
+
+  useEffect(
+    () => () => {
+      if (!isSaved.current) replaceSelected(initial.current);
+    },
+    [replaceSelected],
+  );
+
+  const cancel = () => navigation.goBack();
+
+  const done = () => {
+    if (!isDirty) return;
+
+    isSaved.current = true;
+    navigation.goBack();
+  };
 
   return (
     <View style={{ flex: 1 }}>
       <ModalHeader
         title={t("tabs.kana")}
         left={{
-          text: t("common.close"),
-          onPress: done,
+          text: t("alert.cancel"),
+          onPress: cancel,
         }}
         right={{
           text: t("common.save"),
           onPress: done,
+          color: isDirty ? colors.TextPrimary : colors.TextDisabled,
         }}
       />
 

@@ -113,11 +113,11 @@ const SettingsThemePage: React.FC = () => {
         <ModalHeader
           title={t("settings.theme.title")}
           left={{
-            text: t("common.close"),
+            text: t("alert.cancel"),
             onPress: onClose,
           }}
           right={{
-            text: t("common.done"),
+            text: t("common.save"),
             onPress: () => isDirty && onDone(),
             color: isDirty ? colors.TextPrimary : colors.TextDisabled,
           }}

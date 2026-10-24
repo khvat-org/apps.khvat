@@ -110,11 +110,6 @@ const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({ kana, a
     const initial = new Set(commitRef.current.selectedLetters);
     setSelected(initial);
     selectedRef.current = initial;
-
-    return () => {
-      const sectionKey = getKanaSectionKey(alphabetType, kana);
-      commitRef.current.fill([...selectedRef.current], sectionKey);
-    };
   }, [kana, alphabetType]);
 
   const letters = useMemo(() => {

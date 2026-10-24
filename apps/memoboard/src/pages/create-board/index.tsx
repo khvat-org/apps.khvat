@@ -44,11 +44,11 @@ const CreateBoardPage: React.FC = () => {
         <ModalHeader
           title={t("boards.newBoard")}
           left={{
-            text: t("common.close"),
+            text: t("alert.cancel"),
             onPress: () => navigation.goBack(),
           }}
           right={{
-            text: t("common.done"),
+            text: t("common.save"),
             onPress: submit,
             color: canSubmit ? colors.TextPrimary : colors.TextDisabled,
           }}

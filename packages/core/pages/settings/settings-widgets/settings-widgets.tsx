@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
 import SettingsSection from "@nihongo/core/entities/setting/setting-section/settings-section";
@@ -24,7 +24,20 @@ const SettingsWidgetsPage: React.FC = () => {
   const insets = useSafeAreaInsets();
 
   const available = useAvailableProfileWidgets();
-  const { widgets, setWidget } = useProfileWidgets();
+  const { widgets, loaded, saveWidgets } = useProfileWidgets();
+
+  const [draft, setDraft] = useState<Partial<Record<ProfileWidget, boolean>>>({});
+
+  const current = { ...widgets, ...draft };
+
+  const isDirty = loaded && available.some((key) => current[key] !== widgets[key]);
+
+  const save = () => {
+    if (!isDirty) return;
+
+    saveWidgets(current);
+    navigation.goBack();
+  };
 
   const items: Record<ProfileWidget, { title: string; icon: React.ReactNode }> = {
     statistics: {
@@ -42,9 +55,14 @@ const SettingsWidgetsPage: React.FC = () => {
       <View style={{ flex: 1, paddingBottom: insets.bottom }}>
         <ModalHeader
           title={t("settings.widgets.title")}
-          right={{
-            text: t("common.done"),
+          left={{
+            text: t("alert.cancel"),
             onPress: () => navigation.goBack(),
+          }}
+          right={{
+            text: t("common.save"),
+            onPress: save,
+            color: isDirty ? colors.TextPrimary : colors.TextDisabled,
           }}
         />
 
@@ -55,8 +73,8 @@ const SettingsWidgetsPage: React.FC = () => {
                 key={key}
                 leftIcon={items[key].icon}
                 text={items[key].title}
-                isEnable={widgets[key]}
-                onValueChange={() => setWidget(key, !widgets[key])}
+                isEnable={current[key]}
+                onValueChange={() => setDraft((prev) => ({ ...prev, [key]: !current[key] }))}
                 isLast={index === available.length - 1}
               />
             ))}

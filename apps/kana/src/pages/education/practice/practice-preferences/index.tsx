@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
 import SettingsSection from "@nihongo/core/entities/setting/setting-section/settings-section";
@@ -23,7 +23,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { GestureHandlerRootView, ScrollView } from "react-native-gesture-handler";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import { QUESTIONS_COUNT, TIMER_SECONDS } from "./model/context";
+import { PracticePreferences, QUESTIONS_COUNT, TIMER_SECONDS } from "./model/context";
 import { usePracticePreferences } from "./model/hooks";
 
 import { RootStackParamList, ROUTES } from "@/app/routes.types";
@@ -96,14 +96,29 @@ export const PracticePreferencesPage: React.FC = () => {
     selectedLettersHiragana + selectedLettersKatakana === 0
       ? t("selectKana.nothingSelected")
       : `${selectedLettersHiragana} ${t("kana.hiragana")}, ${selectedLettersKatakana} ${t("kana.katakana")}`;
-  const { autoplaySound, questionsCount, timerModes, timerSeconds, mixModes } = preferences;
+
+  const [draft, setDraft] = useState(preferences);
+
+  const change = (patch: Partial<PracticePreferences>) =>
+    setDraft((prev) => ({ ...prev, ...patch }));
+
+  const isDirty = JSON.stringify(draft) !== JSON.stringify(preferences);
+
+  const save = () => {
+    if (!isDirty) return;
+
+    update(draft);
+    navigation.goBack();
+  };
+
+  const { autoplaySound, questionsCount, timerModes, timerSeconds, mixModes } = draft;
 
   const toggle = (list: PracticeType[], mode: PracticeType) =>
     list.includes(mode) ? list.filter((item) => item !== mode) : [...list, mode];
 
   const toggleMixMode = (mode: PracticeType) => {
     const next = toggle(mixModes, mode);
-    if (next.length > 0) update({ mixModes: next });
+    if (next.length > 0) change({ mixModes: next });
   };
 
   const iconProps = { size: 20, color: colors.BgContrast };
@@ -114,12 +129,13 @@ export const PracticePreferencesPage: React.FC = () => {
         <ModalHeader
           title={t("practice.preferences.title")}
           left={{
-            text: t("common.back"),
+            text: t("alert.cancel"),
             onPress: navigation.goBack,
           }}
           right={{
             text: t("common.save"),
-            onPress: navigation.goBack,
+            onPress: save,
+            color: isDirty ? colors.TextPrimary : colors.TextDisabled,
           }}
         />
 
@@ -139,7 +155,7 @@ export const PracticePreferencesPage: React.FC = () => {
               leftIcon={<PlayCircleIcon {...iconProps} />}
               text={t("practice.preferences.autoplaySound")}
               isEnable={autoplaySound}
-              onValueChange={() => update({ autoplaySound: !autoplaySound })}
+              onValueChange={() => change({ autoplaySound: !autoplaySound })}
             />
 
             <PreferenceBlock
@@ -152,7 +168,7 @@ export const PracticePreferencesPage: React.FC = () => {
                 min={QUESTIONS_COUNT.min}
                 max={QUESTIONS_COUNT.max}
                 step={QUESTIONS_COUNT.step}
-                onChange={(value) => update({ questionsCount: value })}
+                onChange={(value) => change({ questionsCount: value })}
               />
             </PreferenceBlock>
 
@@ -163,7 +179,7 @@ export const PracticePreferencesPage: React.FC = () => {
             >
               <ModeChips
                 selected={timerModes}
-                onToggle={(mode) => update({ timerModes: toggle(timerModes, mode) })}
+                onToggle={(mode) => change({ timerModes: toggle(timerModes, mode) })}
               />
             </PreferenceBlock>
 
@@ -177,7 +193,7 @@ export const PracticePreferencesPage: React.FC = () => {
                 min={TIMER_SECONDS.min}
                 max={TIMER_SECONDS.max}
                 step={TIMER_SECONDS.step}
-                onChange={(value) => update({ timerSeconds: value })}
+                onChange={(value) => change({ timerSeconds: value })}
               />
             </PreferenceBlock>
 

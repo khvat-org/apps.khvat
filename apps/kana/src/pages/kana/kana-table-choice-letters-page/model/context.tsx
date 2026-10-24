@@ -33,6 +33,7 @@ export interface KanaContextType {
   selectedLetters: number;
   fill: (ids: string[], key: KanaSection) => void;
   resetKanaSelected: () => void;
+  replaceSelected: (value: Selected) => void;
 }
 
 const initialSelected: Selected = {
@@ -97,6 +98,11 @@ export const KanaProvider = ({ children }: { children: ReactNode }) => {
     save(next);
   }, []);
 
+  const replaceSelected = useCallback((value: Selected) => {
+    setSelected(value);
+    save(value);
+  }, []);
+
   const selectedLettersHiragana = useMemo(
     () => Object.values(selected).reduce((sum, group) => sum + group.hiragana.length, 0),
     [selected],
@@ -143,6 +149,7 @@ export const KanaProvider = ({ children }: { children: ReactNode }) => {
       selectedLetters,
       fill,
       resetKanaSelected,
+      replaceSelected,
     }),
     [
       selected,
@@ -152,6 +159,7 @@ export const KanaProvider = ({ children }: { children: ReactNode }) => {
       selectedLetters,
       fill,
       resetKanaSelected,
+      replaceSelected,
     ],
   );
 

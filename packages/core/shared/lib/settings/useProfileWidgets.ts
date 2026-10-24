@@ -59,5 +59,10 @@ export const useProfileWidgets = () => {
     });
   }, []);
 
-  return { widgets, loaded, setWidget };
+  const saveWidgets = useCallback((next: ProfileWidgetsState) => {
+    setWidgets(next);
+    AsyncStorage.setItem(PROFILE_WIDGETS, JSON.stringify(next)).catch(() => {});
+  }, []);
+
+  return { widgets, loaded, setWidget, saveWidgets };
 };

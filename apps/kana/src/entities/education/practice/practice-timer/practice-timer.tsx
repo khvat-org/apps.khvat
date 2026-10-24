@@ -1,8 +1,8 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
-import { View, Text, StyleSheet, Animated, LayoutChangeEvent } from "react-native";
+import { View, Text, StyleSheet, Animated } from "react-native";
 
 interface EducationPracticeTimerProps {
   onTimerEnd?: () => void;
@@ -22,16 +22,11 @@ const EducationPracticeTimer: React.FC<EducationPracticeTimerProps> = ({
 
   const animatedValue = useRef(new Animated.Value(1)).current;
   const [timeLeft, setTimeLeft] = useState(initial);
-  const [containerWidth, setContainerWidth] = useState(0);
 
   const isFreezeRef = useRef(isFreeze);
   const lastWholeSecondsRef = useRef(initial);
   const remainingRef = useRef(initial * 1000);
   const lastFrameTime = useRef(Date.now());
-
-  const onContainerLayout = useCallback((e: LayoutChangeEvent) => {
-    setContainerWidth(e.nativeEvent.layout.width);
-  }, []);
 
   useEffect(() => {
     isFreezeRef.current = isFreeze;
@@ -88,13 +83,13 @@ const EducationPracticeTimer: React.FC<EducationPracticeTimerProps> = ({
 
   return (
     <View style={styles.container}>
-      <View style={styles.timerContainer} onLayout={onContainerLayout}>
+      <View style={styles.timerContainer}>
         <Animated.View
           style={{
             ...styles.timerStroke,
             width: animatedValue.interpolate({
               inputRange: [0, 1],
-              outputRange: [0, containerWidth],
+              outputRange: ["0%", "100%"],
             }),
             backgroundColor: animatedValue.interpolate({
               inputRange: [0, 1],
