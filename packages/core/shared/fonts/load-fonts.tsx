@@ -3,8 +3,6 @@ import { Platform } from "react-native";
 
 import IBMPlexSansMedium from "./IBMPlexSans/IBMPlexSans-Medium.ttf";
 import IBMPlexSansRegular from "./IBMPlexSans/IBMPlexSans-Regular.ttf";
-import SFProDisplaySemibold from "./SFProText/SFProDisplay-Semibold.ttf";
-import SFProTextRegular from "./SFProText/SFProText-Regular.ttf";
 
 interface LoadFontsProps {
   successful?: () => void | Promise<void>;
@@ -18,10 +16,6 @@ export const loadFonts = async ({ successful, error, finallyCallback }: LoadFont
       android: {
         "IBMPlexSans-Regular": IBMPlexSansRegular,
         "IBMPlexSans-Medium": IBMPlexSansMedium,
-      },
-      ios: {
-        "SFProText-Regular": SFProTextRegular,
-        "SFProDisplay-Semibold": SFProDisplaySemibold,
       },
       default: {},
     })!;
