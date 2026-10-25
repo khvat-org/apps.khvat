@@ -2,7 +2,7 @@ import React from "react";
 
 import ThemeItem, { ThemeType } from "@nihongo/core/entities/setting/theme/theme-item";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
-import { Theme } from "@nihongo/core/shared/constants/theme";
+import { Theme, THEME_TITLES } from "@nihongo/core/shared/constants/theme";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import usePreviewSetting from "@nihongo/core/shared/lib/settings/usePreviewSetting";
 import { blueOceanDarkTheme } from "@nihongo/core/shared/themes/blue_ocean";
@@ -55,54 +55,64 @@ const SettingsThemePage: React.FC = () => {
   };
 
   const themeOptions = [
-    { key: Theme.Light, type: ThemeType.Light, title: "Default Light", icon: getIcon(lightTheme) },
-    { key: Theme.Dark, type: ThemeType.Dark, title: "Default Dark", icon: getIcon(darkTheme) },
+    {
+      key: Theme.Light,
+      type: ThemeType.Light,
+      title: THEME_TITLES[Theme.Light],
+      icon: getIcon(lightTheme),
+    },
+    {
+      key: Theme.Dark,
+      type: ThemeType.Dark,
+      title: THEME_TITLES[Theme.Dark],
+      icon: getIcon(darkTheme),
+    },
     {
       key: Theme.OsakaLight,
       type: ThemeType.Light,
-      title: "Osaka Light",
+      title: THEME_TITLES[Theme.OsakaLight],
       icon: getIcon(osakaLightTheme),
     },
     {
       key: Theme.OsakaDark,
       type: ThemeType.Dark,
-      title: "Osaka Dark",
+      title: THEME_TITLES[Theme.OsakaDark],
       icon: getIcon(osakaDarkTheme),
     },
     {
       key: Theme.HokkaidoLight,
       type: ThemeType.Light,
-      title: "Hokkaido Light",
+      title: THEME_TITLES[Theme.HokkaidoLight],
       icon: getIcon(hokkaidoLightTheme),
     },
     {
       key: Theme.HokkaidoDark,
       type: ThemeType.Dark,
-      title: "Hokkaido Dark",
+      title: THEME_TITLES[Theme.HokkaidoDark],
       icon: getIcon(hokkaidoDarkTheme),
     },
     {
       key: Theme.SakuraLight,
       type: ThemeType.Light,
-      title: "Sakura Light",
+      title: THEME_TITLES[Theme.SakuraLight],
       icon: getIcon(sakuraLightTheme),
     },
     {
       key: Theme.JiraiKeiDark,
       type: ThemeType.Dark,
-      title: "Jirai Kei Dark",
+      title: THEME_TITLES[Theme.JiraiKeiDark],
       icon: getIcon(jiraiKeiDark),
     },
     {
       key: Theme.BlueOceanLight,
       type: ThemeType.Light,
-      title: "Blue Ocean Light",
+      title: THEME_TITLES[Theme.BlueOceanLight],
       icon: getIcon(blueOceanLightTheme),
     },
     {
       key: Theme.BlueOceanDark,
       type: ThemeType.Dark,
-      title: "Blue Ocean Dark",
+      title: THEME_TITLES[Theme.BlueOceanDark],
       icon: getIcon(blueOceanDarkTheme),
     },
   ];
