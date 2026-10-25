@@ -75,7 +75,7 @@ const makeStyles = (colors: ColorsType) =>
       flex: 1,
       flexDirection: "column",
       alignItems: "center",
-      justifyContent: "space-between",
+      justifyContent: "flex-start",
 
       width: "100%",
       maxWidth: 546,
@@ -84,8 +84,10 @@ const makeStyles = (colors: ColorsType) =>
     word: {
       alignItems: "center",
       gap: 8,
+      marginBottom: 32,
     },
     word__kana: {
+      marginTop: 32,
       ...Typography.H2,
       color: colors.TextPrimary,
       textAlign: "center",

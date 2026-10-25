@@ -103,12 +103,13 @@ const SettingsLanguagePage: React.FC = () => {
           right={{
             text: t("common.save"),
             onPress: () => isDirty && onDone(),
-            color: isDirty ? colors.TextPrimary : colors.TextDisabled,
+            isDisabled: !isDirty,
           }}
         />
 
         <View style={styles.content}>
           <FlatList
+            showsVerticalScrollIndicator={false}
             style={{ flex: 1 }}
             contentContainerStyle={{ paddingBottom: insets.bottom }}
             data={languageList}

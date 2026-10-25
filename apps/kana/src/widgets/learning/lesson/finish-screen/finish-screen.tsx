@@ -2,8 +2,7 @@ import React from "react";
 
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, View } from "react-native";
 
@@ -45,14 +44,20 @@ const FinishScreen: React.FC<FinishScreenProps> = ({ next, retry }) => {
       </View>
 
       <View style={styles.buttonsContainer}>
-        <SecondaryButton
+        <Button
+          color="secondary"
           isHapticFeedback
-          isOutline
           isFullWidth
           text={t("common.retry")}
           onClick={retry}
         />
-        <PrimaryButton isHapticFeedback isFullWidth text={t("common.complete")} onClick={onNext} />
+        <Button
+          color="primary"
+          isHapticFeedback
+          isFullWidth
+          text={t("common.complete")}
+          onClick={onNext}
+        />
       </View>
     </View>
   );

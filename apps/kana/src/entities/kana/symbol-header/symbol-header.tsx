@@ -87,11 +87,9 @@ const makeStyles = (colors: ColorsType) =>
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
-      height: 62,
     },
     subTitle: {
-      ...Typography.H3,
-      marginTop: 16,
+      ...Typography.H2,
     },
     kanaSub: {
       ...Typography.boldDefault,

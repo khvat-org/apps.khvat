@@ -3,17 +3,9 @@ import React from "react";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useFileUrl } from "@nihongo/core/shared/lib/api-gateway";
 import { Typography } from "@nihongo/core/shared/typography";
-import { CheckIcon } from "phosphor-react-native";
+import Button from "@nihongo/core/shared/ui/button";
 import { useTranslation } from "react-i18next";
-import {
-  StyleSheet,
-  Text,
-  useWindowDimensions,
-  View,
-  Image,
-  ImageStyle,
-  Pressable,
-} from "react-native";
+import { StyleSheet, Text, View, Image, ImageStyle, Pressable } from "react-native";
 
 const isImageIcon = (icon: string) =>
   /^https?:\/\//i.test(icon) || /\.(png|jpe?g|webp|gif)$/i.test(icon);
@@ -46,12 +38,11 @@ const TopicItem: React.FC<TopicItemProps> = ({
   subtitle,
   infoTitle,
   infoSubTitle,
-  isLast,
   isOpened,
+  isLast,
   onClick,
   onStartLesson,
 }) => {
-  const { width } = useWindowDimensions();
   const { colors } = useThemeContext();
   const { t } = useTranslation();
 
@@ -71,121 +62,93 @@ const TopicItem: React.FC<TopicItemProps> = ({
 
   return (
     <Pressable
-      style={[styles.container, { marginBottom: !isLast ? 8 : isOpened ? 32 : 16 }]}
+      style={[styles.container, isOpened && styles.containerOpened, isLast && { marginBottom: 10 }]}
       onPress={() => onClick?.()}
     >
-      <View style={styles.content}>
-        <View
-          style={[
-            {
-              width: "100%",
-              flexDirection: "column",
-              gap: 8,
-            },
-          ]}
-        >
+      <View style={styles.row}>
+        <View style={[styles.indicator]}>
           <View
-            style={{
-              flexDirection: "row",
-              gap: 16,
-              position: "relative",
-            }}
-          >
-            <View style={[styles.indicator]}>
-              <View
-                style={[
-                  styles.indicatorRound,
-                  {
-                    borderColor: isPassed ? colors.BgSuccess : colors.BgLightGray,
-                  },
-                ]}
-              />
+            style={[
+              styles.indicatorRound,
+              {
+                borderColor: isPassed ? colors.BgSuccess : colors.BgLightGray,
+              },
+            ]}
+          />
 
-              {getIcon(icon)}
+          {getIcon(icon)}
+        </View>
 
-              {isPassed && (
-                <View style={[styles.indicatorCheck]}>
-                  <CheckIcon weight="bold" size={12} color={colors.BgWhite} />
-                </View>
-              )}
-            </View>
-
-            <View>
-              <Text style={styles.title}>{title}</Text>
-              <Text style={styles.subtitle}>{subtitle}</Text>
-            </View>
-          </View>
-
-          <View style={{ flexDirection: "row" }}>
-            <View
-              style={{
-                backgroundColor: isPassed ? colors.BgSuccess : colors.BgLightGray,
-                height: isOpened ? "100%" : 16,
-                borderRadius: 4,
-                width: 4,
-                marginLeft: 34,
-                opacity: !isLast || isOpened ? 1 : 0,
-              }}
-            />
-
-            <View
-              style={{
-                height: isOpened ? "auto" : 0,
-                overflow: "hidden",
-              }}
-            >
-              <View style={{ paddingLeft: 50, maxWidth: width - 80 }}>
-                <View>
-                  {<View style={[styles.infoLine, { opacity: isOpened ? 1 : 0 }]} />}
-                  <Text style={styles.expandedTitle}>{infoTitle}</Text>
-                  <Text style={styles.expandedSubtitle}>{infoSubTitle}</Text>
-                </View>
-
-                {isOpened && (
-                  <Pressable onPress={onStartLesson} style={styles.buttonStartLesson}>
-                    <Text style={styles.buttonStartLessonText}>
-                      {isPassed ? t("common.retry") : t("common.start")}
-                    </Text>
-                  </Pressable>
-                )}
-              </View>
-            </View>
-          </View>
+        <View style={styles.info}>
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.subtitle}>{subtitle}</Text>
         </View>
       </View>
+
+      {isOpened && (
+        <View style={styles.expanded}>
+          <View
+            style={[
+              styles.expandedLine,
+              { backgroundColor: isPassed ? colors.BgSuccess : colors.BgLightGray },
+            ]}
+          />
+
+          <View style={styles.expandedContent}>
+            <Text style={styles.expandedTitle}>{infoTitle}</Text>
+            <Text style={styles.expandedSubtitle}>{infoSubTitle}</Text>
+
+            <Button
+              color="primary"
+              size="sm"
+              onClick={onStartLesson}
+              text={isPassed ? t("common.retry") : t("common.start")}
+              style={styles.buttonStartLesson}
+            />
+          </View>
+        </View>
+      )}
     </Pressable>
   );
 };
 
 export default TopicItem;
 
+const INDICATOR_SIZE = 72;
+const ICON_SIZE = 56;
+const ICON_OFFSET = (70 - ICON_SIZE) / 2;
+const LINE_WIDTH = 4;
+const TEXT_GAP = 12;
+
 const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
     container: {
-      width: "100%",
-      position: "relative",
-      paddingLeft: 16,
-      paddingRight: 16,
-      flex: 1,
+      marginHorizontal: 8,
+      paddingHorizontal: 8,
+      borderRadius: 16,
+
+      paddingVertical: 8,
     },
-    content: {
-      width: "100%",
+    containerOpened: {
+      backgroundColor: colors.BgSecondary,
+
+      paddingVertical: 8,
+    },
+    row: {
       flexDirection: "row",
-      height: "100%",
-      alignItems: "flex-start",
-      gap: 16,
+      gap: TEXT_GAP,
     },
     indicator: {
       position: "relative",
-      width: 72,
-      height: 72,
+      width: INDICATOR_SIZE,
+      height: 70,
     },
     indicatorText: {
       ...Typography.regularLabel,
       color: colors.BgContrast,
     },
     info: {
-      gap: 5,
+      flex: 1,
     },
     title: {
       ...Typography.boldDefault,
@@ -196,36 +159,31 @@ const makeStyles = (colors: ColorsType) =>
       ...Typography.regularLabel,
       color: colors.TextSecondary,
     },
+    expanded: {
+      flexDirection: "row",
+      marginTop: 8,
+    },
+    expandedLine: {
+      width: LINE_WIDTH,
+      borderRadius: LINE_WIDTH,
+      marginLeft: (70 - LINE_WIDTH) / 2,
+    },
+    expandedContent: {
+      flex: 1,
+      paddingLeft: INDICATOR_SIZE + TEXT_GAP - (70 - LINE_WIDTH) / 2 - LINE_WIDTH,
+    },
     expandedTitle: {
-      ...Typography.boldDefault,
+      ...Typography.boldLabel,
       color: colors.TextPrimary,
-      marginTop: 16,
     },
     expandedSubtitle: {
       ...Typography.regularLabel,
       color: colors.TextSecondary,
-      marginTop: 4,
-      marginBottom: 32,
     },
     buttonStartLesson: {
-      backgroundColor: colors.BgContrast,
-      borderRadius: 12,
-      alignItems: "center",
-      justifyContent: "center",
-      height: 40,
-      width: "auto",
       alignSelf: "flex-start",
-      paddingLeft: 24,
-      paddingRight: 24,
-    },
-    buttonStartLessonText: {
-      ...Typography.boldDefault,
-      color: colors.TextContrast,
-    },
-    infoLine: {
-      width: "100%",
-      height: 1,
-      backgroundColor: colors.BorderDefault,
+
+      marginTop: 16,
     },
     indicatorRound: {
       backgroundColor: colors.transparent,
@@ -235,35 +193,22 @@ const makeStyles = (colors: ColorsType) =>
       borderWidth: 4,
     },
     icon: {
-      width: 54,
-      height: 54,
+      width: ICON_SIZE,
+      height: ICON_SIZE,
       position: "absolute",
-      borderRadius: 54,
-      left: 8,
-      top: 8,
+      borderRadius: ICON_SIZE,
+      left: ICON_OFFSET,
+      top: ICON_OFFSET,
     },
     indicatorIcon: {
-      width: 54,
-      height: 54,
+      width: ICON_SIZE,
+      height: ICON_SIZE,
       position: "absolute",
-      borderRadius: 54,
-      left: 8,
-      top: 8,
+      borderRadius: ICON_SIZE,
+      left: ICON_OFFSET,
+      top: ICON_OFFSET,
 
       justifyContent: "center",
       alignItems: "center",
-    },
-    indicatorCheck: {
-      borderColor: colors.BgPrimary,
-      backgroundColor: colors.BgSuccess,
-      position: "absolute",
-      bottom: -5,
-      left: 26,
-      width: 20,
-      height: 20,
-      borderRadius: 20,
-      alignItems: "center",
-      justifyContent: "center",
-      borderWidth: 2,
     },
   });

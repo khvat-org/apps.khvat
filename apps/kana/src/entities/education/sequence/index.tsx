@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import Sequence from "./sequence-engine";
@@ -79,10 +79,10 @@ const SequenceUi: React.FC<SequenceProps> = ({ sequence, onFinish, onError }) =>
           }
 
           return (
-            <SecondaryButton
+            <Button
+              color="secondary"
               key={`letter-list-${letter}-${index}`}
               width={50}
-              isOutline
               onClick={() => {
                 sequenceCurrent.addItem(letter, index);
                 triggerHaptic();

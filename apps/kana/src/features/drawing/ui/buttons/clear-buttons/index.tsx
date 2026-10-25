@@ -1,7 +1,6 @@
 import React from "react";
 
-import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { ArrowBendUpLeftIcon, ArrowCounterClockwiseIcon } from "phosphor-react-native";
 import { StyleSheet, View } from "react-native";
 
@@ -11,24 +10,24 @@ interface ClearButtonsProps {
 }
 
 const ClearButtons: React.FC<ClearButtonsProps> = ({ clearFull, clearStep }) => {
-  const { colors } = useThemeContext();
-
   return (
     <View style={styles.buttonsContainer}>
       <View style={{ flex: 1 }}>
-        <SecondaryButton
+        <Button
+          color="secondary"
           isHapticFeedback
-          icon={<ArrowBendUpLeftIcon size={20} color={colors.BgContrast} />}
+          width="100%"
+          icon={<ArrowBendUpLeftIcon size={20} />}
           onClick={clearStep}
-          isOutline
         />
       </View>
       <View style={{ flex: 1 }}>
-        <SecondaryButton
+        <Button
+          color="secondary"
           isHapticFeedback
-          icon={<ArrowCounterClockwiseIcon size={20} color={colors.BgContrast} />}
+          width="100%"
+          icon={<ArrowCounterClockwiseIcon size={20} />}
           onClick={clearFull}
-          isOutline
         />
       </View>
     </View>

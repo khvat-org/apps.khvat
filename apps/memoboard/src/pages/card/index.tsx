@@ -2,12 +2,12 @@ import React, { useMemo } from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { ArrowLeftIcon, ArrowRightIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { View, StyleSheet, Linking } from "react-native";
+import { View, StyleSheet, Linking, StatusBar } from "react-native";
 import { ScrollView, Gesture, GestureDetector } from "react-native-gesture-handler";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -73,6 +73,7 @@ const CardPage = () => {
   return (
     <GestureDetector gesture={swipe}>
       <View style={styles.screen}>
+        <StatusBar barStyle="light-content" />
         <CardHeader goBack={goBack} card={card} edit={edit} />
 
         <View style={styles.container}>
@@ -91,40 +92,28 @@ const CardPage = () => {
 
         {!edit.isEditing && (
           <View style={[styles.buttons, { paddingBottom: insets.bottom }]}>
-            <SecondaryButton
+            <Button
+              color="secondary"
               isHapticFeedback
-              icon={
-                <ArrowLeftIcon
-                  color={hasPrev ? colors.TextPrimary : colors.TextSecondary}
-                  size={24}
-                />
-              }
-              isOutline
+              icon={<ArrowLeftIcon size={24} />}
               isDisabled={!hasPrev}
-              width={50}
               onClick={prev}
             />
 
-            <SecondaryButton
+            <Button
+              color="secondary"
               isHapticFeedback
               text={t("card.open")}
-              isOutline
               isFullWidth
               isDisabled={!boardId}
               onClick={openInDictionary}
             />
 
-            <SecondaryButton
+            <Button
+              color="secondary"
               isHapticFeedback
-              icon={
-                <ArrowRightIcon
-                  color={hasNext ? colors.TextPrimary : colors.TextSecondary}
-                  size={24}
-                />
-              }
-              isOutline
+              icon={<ArrowRightIcon size={24} />}
               isDisabled={!hasNext}
-              width={50}
               onClick={next}
             />
           </View>

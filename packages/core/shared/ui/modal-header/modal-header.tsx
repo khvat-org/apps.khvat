@@ -1,33 +1,30 @@
 import React from "react";
 
-import { View, StyleSheet, Text, Pressable } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import { useHaptic } from "../../contexts/haptic/haptic-context";
 import { ColorsType, useThemeContext } from "../../contexts/theme/theme-context";
 import { Typography } from "../../typography";
+import Button, { ButtonColor } from "../button";
+
+interface ModalHeaderButton {
+  onPress: () => void;
+  text: string;
+  color?: ButtonColor;
+  textColor?: string;
+  isDisabled?: boolean;
+}
 
 interface ModalHeaderProps {
   title: string;
   titleColor?: string;
 
-  left?: {
-    onPress: () => void;
-    text: string;
-    color?: string;
-  };
-
-  right?: {
-    onPress: () => void;
-    text: string;
-    color?: string;
-  };
+  left?: ModalHeaderButton;
+  right?: ModalHeaderButton;
 }
 
 export const ModalHeader: React.FC<ModalHeaderProps> = ({ left, title, titleColor, right }) => {
   const insets = useSafeAreaInsets();
-
-  const { triggerHaptic } = useHaptic();
 
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
@@ -42,57 +39,28 @@ export const ModalHeader: React.FC<ModalHeaderProps> = ({ left, title, titleColo
         },
       ]}
     >
-      <Pressable
-        style={[styles.buttonContainerStyles, { justifyContent: "flex-start" }]}
-        onPress={
-          left?.onPress
-            ? () => {
-                triggerHaptic();
-                left.onPress();
-              }
-            : () => {}
-        }
-      >
-        {({ pressed }) => (
-          <Text
-            style={[
-              styles.buttonTextStyles,
-              {
-                // ! make pressed
-                textAlign: "left",
-                color: left?.color
-                  ? left?.color
-                  : pressed
-                    ? colors.TextSecondaryPressed
-                    : colors.TextSecondary,
-                ...Typography.regularDefault,
-              },
-            ]}
-          >
-            {left?.text ? left.text : ""}
-          </Text>
-        )}
-      </Pressable>
+      <Button
+        color={left?.color ?? "secondary"}
+        variant="text"
+        isHapticFeedback={!!left}
+        isDisabled={left?.isDisabled}
+        text={left?.text}
+        onClick={left?.onPress}
+        style={[styles.button, { justifyContent: "flex-start" }]}
+        textStyle={[styles.buttonText, left?.textColor ? { color: left.textColor } : {}]}
+      />
 
       <Text style={[styles.title, titleColor && { color: titleColor }]}>{title}</Text>
 
-      <Pressable
-        style={[styles.buttonContainerStyles, { justifyContent: "flex-end" }]}
-        onPress={right?.onPress ? right.onPress : () => {}}
-      >
-        <Text
-          style={[
-            styles.buttonTextStyles,
-            {
-              textAlign: "right",
-              color: right?.color ? right?.color : colors.TextSecondary,
-              ...Typography.regularDefault,
-            },
-          ]}
-        >
-          {right?.text ? right.text : ""}
-        </Text>
-      </Pressable>
+      <Button
+        color={right?.color ?? "primary"}
+        variant="text"
+        isDisabled={right?.isDisabled}
+        text={right?.text}
+        onClick={right?.onPress}
+        style={[styles.button, { justifyContent: "flex-end" }]}
+        textStyle={[styles.buttonText, right?.textColor ? { color: right.textColor } : {}]}
+      />
     </View>
   );
 };
@@ -117,17 +85,12 @@ const makeStyles = (colors: ColorsType) =>
 
       left: 16,
     },
-    buttonContainerStyles: {
+    button: {
       width: "40%",
-      borderWidth: 0,
-      backgroundColor: colors.transparent,
-      flexDirection: "row",
-      alignItems: "center",
       height: 50,
       zIndex: 9,
     },
-    buttonTextStyles: {
+    buttonText: {
       ...Typography.regularDefault,
-      color: colors.TextSecondary,
     },
   });

@@ -62,7 +62,7 @@ const SettingsWidgetsPage: React.FC = () => {
           right={{
             text: t("common.save"),
             onPress: save,
-            color: isDirty ? colors.TextPrimary : colors.TextDisabled,
+            isDisabled: !isDirty,
           }}
         />
 

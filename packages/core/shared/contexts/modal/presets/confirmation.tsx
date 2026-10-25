@@ -5,8 +5,7 @@ import { StyleSheet, View, Text } from "react-native";
 
 import { TABLET_WIDTH } from "../../../constants/sizes";
 import { Typography } from "../../../typography";
-import PrimaryButton from "../../../ui/buttons/Primary/primary-button";
-import SecondaryButton from "../../../ui/buttons/Secondary/secondary-button";
+import Button from "../../../ui/button";
 import { ColorsType, useThemeContext } from "../../theme/theme-context";
 
 interface ConfirmationModalProps {
@@ -37,8 +36,8 @@ export const ConfirmationModal = (props: ConfirmationModalProps) => {
       {subtitle && <Text style={styles.subtitle}>{subtitle}</Text>}
 
       <View style={styles.buttons}>
-        <PrimaryButton onClick={onCancel} isFullWidth text={buttoncancelText} />
-        <SecondaryButton onClick={onConfirm} isOutline isFullWidth text={buttonConfirmText} />
+        <Button color="primary" onClick={onCancel} isFullWidth text={buttoncancelText} />
+        <Button color="secondary" onClick={onConfirm} isFullWidth text={buttonConfirmText} />
       </View>
     </View>
   );

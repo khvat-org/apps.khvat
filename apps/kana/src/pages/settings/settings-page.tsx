@@ -18,12 +18,13 @@ import StoreReviewLink from "@nihongo/core/features/settings/store-review-link/s
 import TermsAndConditions from "@nihongo/core/features/settings/terms-and-conditions/terms-and-conditions";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useIsLoggedIn } from "@nihongo/core/shared/lib/auth/use-is-logged-in";
+import Button from "@nihongo/core/shared/ui/button";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { CaretLeftIcon, PencilSimpleIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { StyleSheet, View, ScrollView, Pressable } from "react-native";
+import { StyleSheet, View, ScrollView } from "react-native";
 
 import { RootStackParamList, ROUTES } from "@/app/routes.types";
 import SettingsStatistics from "@/features/settings/settings-statistics/settings-statistics";
@@ -53,11 +54,13 @@ const SettingsPage: React.FC = () => {
       <PageTitle
         isSaveArea
         leftIcon={
-          <Pressable onPress={goBack}>
-            <>
-              <CaretLeftIcon size={32} color={colors.BgContrast} />
-            </>
-          </Pressable>
+          <Button
+            color="primary"
+            variant="text"
+            isHapticFeedback
+            icon={<CaretLeftIcon size={32} />}
+            onClick={goBack}
+          />
         }
       >
         {t("tabs.settings")}

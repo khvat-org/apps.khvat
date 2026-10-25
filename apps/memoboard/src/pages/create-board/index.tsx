@@ -50,7 +50,7 @@ const CreateBoardPage: React.FC = () => {
           right={{
             text: t("common.save"),
             onPress: submit,
-            color: canSubmit ? colors.TextPrimary : colors.TextDisabled,
+            isDisabled: !canSubmit,
           }}
         />
 

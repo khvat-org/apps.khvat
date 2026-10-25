@@ -12,7 +12,7 @@ import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { useKeepAwake } from "expo-keep-awake";
 import { useTranslation } from "react-i18next";
-import { StyleSheet, useWindowDimensions, BackHandler, View } from "react-native";
+import { StyleSheet, BackHandler, View } from "react-native";
 
 import QuestionsEducationPractice from "./helpers/education-practice";
 import wrapperQuestionGenerate from "./helpers/wrapper-question-generate";
@@ -52,7 +52,6 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   const { mode } = route.params;
 
   const { colors } = useThemeContext();
-  const { height } = useWindowDimensions();
   const styles = makeStyles(colors);
 
   const engineRef = useRef(new QuestionsEducationPractice());
@@ -161,7 +160,7 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   if (question === null) return <View></View>;
 
   return (
-    <SafeLayout style={[styles.container, { gap: height < 700 ? 0 : 22 }]}>
+    <SafeLayout style={styles.container}>
       <View>
         {questions.length !== 0 && currentIndex <= questions.length && (
           <LinearProgressBar

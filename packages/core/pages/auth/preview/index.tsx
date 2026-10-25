@@ -17,7 +17,7 @@ import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-c
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useGatewayUrl } from "@nihongo/core/shared/lib/api-gateway";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -28,7 +28,6 @@ import {
   Text,
   Image,
   StyleSheet,
-  Pressable,
   Linking,
   ScrollView,
   useWindowDimensions,
@@ -149,17 +148,19 @@ export const LoginPage: React.FC = () => {
 
   return (
     <View style={styles.page}>
-      <Pressable
-        onPress={goBack}
+      <Button
+        color="primary"
+        variant="text"
+        isHapticFeedback
+        icon={<CaretLeftIcon size={32} />}
+        onClick={goBack}
         style={{
           position: "absolute",
           left: insets.left + 16,
           top: insets.top + 16,
           zIndex: 1,
         }}
-      >
-        <CaretLeftIcon color={colors.BgContrast} size={32} />
-      </Pressable>
+      />
 
       <ScrollView
         style={styles.scroll}
@@ -183,23 +184,17 @@ export const LoginPage: React.FC = () => {
             {t("auth.agreement.prefix")}
           </Text>
 
-          <Pressable
-            onPress={() => {
+          <Button
+            color="primary"
+            variant="text"
+            size="sm"
+            isHapticFeedback
+            text={t("auth.agreement.terms")}
+            onClick={() => {
               if (termsUrl) Linking.openURL(termsUrl);
             }}
-            style={{ height: 20, margin: 0, padding: 0, alignItems: "center" }}
-          >
-            {({ pressed }) => (
-              <Text
-                style={[
-                  styles.link,
-                  { color: pressed ? colors.TextPrimaryPressed : colors.TextPrimary },
-                ]}
-              >
-                {t("auth.agreement.terms")}
-              </Text>
-            )}
-          </Pressable>
+            style={{ height: 20 }}
+          />
 
           <Text
             style={{
@@ -214,27 +209,22 @@ export const LoginPage: React.FC = () => {
             {" & "}
           </Text>
 
-          <Pressable
-            onPress={() => {
+          <Button
+            color="primary"
+            variant="text"
+            size="sm"
+            isHapticFeedback
+            text={t("auth.agreement.privacy")}
+            onClick={() => {
               if (privacyPolicyUrl) Linking.openURL(privacyPolicyUrl);
             }}
-            style={{ height: 20, margin: 0, padding: 0, alignItems: "center" }}
-          >
-            {({ pressed }) => (
-              <Text
-                style={[
-                  styles.link,
-                  { color: pressed ? colors.TextPrimaryPressed : colors.TextPrimary },
-                ]}
-              >
-                {t("auth.agreement.privacy")}
-              </Text>
-            )}
-          </Pressable>
+            style={{ height: 20 }}
+          />
         </View>
 
         <View style={styles.buttons}>
-          <PrimaryButton
+          <Button
+            color="primary"
             width="100%"
             onClick={continueWithGoogle}
             isDisabled={googleLoading}
@@ -243,67 +233,44 @@ export const LoginPage: React.FC = () => {
                 <Image style={styles.button_image} source={googleIcon}></Image>
               </View>
             }
-            containerStyles={{
-              flexDirection: "row",
-              gap: 8,
-            }}
           >
             <Text style={styles.button_text}>{t("auth.continueWithGoogle")}</Text>
-          </PrimaryButton>
+          </Button>
 
-          <PrimaryButton
+          <Button
+            color="secondary"
             width="100%"
             onClick={() => {
               navigation.navigate(AUTH_ROUTES.SIGN_UP);
             }}
-            containerStyles={{
-              flexDirection: "row",
-              gap: 8,
-              marginTop: 8,
-              backgroundColor: colors.BgSecondary,
-            }}
-          >
-            <Text style={[styles.button_text, { color: colors.TextPrimary }]}>
-              {t("auth.signUpWithEmail")}
-            </Text>
-          </PrimaryButton>
+            style={{ marginTop: 8 }}
+            text={t("auth.signUpWithEmail")}
+          />
 
-          <Pressable
-            onPress={() => {
-              navigation.navigate(AUTH_ROUTES.SIGN_IN);
-            }}
-            style={styles.buttonLink}
-          >
-            {({ pressed }) => (
-              <>
-                <Text style={styles.buttonLinkText}>{t("auth.alreadyHaveAccount")}</Text>
-                <Text
-                  style={[
-                    styles.buttonLinkBold,
-                    { color: pressed ? colors.TextPrimaryPressed : colors.TextPrimary },
-                  ]}
-                >
-                  {t("auth.login")}
-                </Text>
-              </>
-            )}
-          </Pressable>
+          <View style={styles.buttonLink}>
+            <Text style={styles.buttonLinkText}>{t("auth.alreadyHaveAccount")}</Text>
+            <Button
+              color="primary"
+              variant="text"
+              isHapticFeedback
+              text={t("auth.login")}
+              onClick={() => {
+                navigation.navigate(AUTH_ROUTES.SIGN_IN);
+              }}
+            />
+          </View>
         </View>
 
         <View style={styles.spacer} />
 
-        <Pressable onPress={skipAuth} style={[styles.buttonLink, styles.skipLink]}>
-          {({ pressed }) => (
-            <Text
-              style={[
-                styles.buttonLinkBold,
-                { color: pressed ? colors.TextPrimaryPressed : colors.TextPrimary },
-              ]}
-            >
-              {t("auth.continueWithoutLogin")}
-            </Text>
-          )}
-        </Pressable>
+        <Button
+          color="primary"
+          variant="text"
+          isHapticFeedback
+          text={t("auth.continueWithoutLogin")}
+          onClick={skipAuth}
+          style={[styles.buttonLink, styles.skipLink]}
+        />
       </ScrollView>
     </View>
   );
@@ -365,10 +332,6 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets, imageSize: number) =
 
       maxWidth: TABLET_WIDTH,
     },
-    link: {
-      ...Typography.boldLabel,
-      color: colors.TextPrimary,
-    },
     buttons: {
       width: "100%",
       maxWidth: TABLET_WIDTH,
@@ -394,8 +357,5 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets, imageSize: number) =
     buttonLinkText: {
       ...Typography.regularDefault,
       color: colors.TextPrimary,
-    },
-    buttonLinkBold: {
-      ...Typography.boldDefault,
     },
   });

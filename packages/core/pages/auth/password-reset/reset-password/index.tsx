@@ -7,7 +7,7 @@ import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import Input from "@nihongo/core/shared/ui/input";
 import KeyboardScrollLayout from "@nihongo/core/shared/ui/layouts/keyboard-scroll-layout";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
@@ -154,10 +154,11 @@ export const ResetPasswordPage: React.FC = () => {
         />
       </View>
 
-      <PrimaryButton
+      <Button
+        color="primary"
         onClick={confirm}
         isDisabled={(submitted && !isValid) || submitting}
-        containerStyles={styles.submitButton}
+        style={styles.submitButton}
         text={t("auth.resetPassword.confirm")}
       />
     </KeyboardScrollLayout>

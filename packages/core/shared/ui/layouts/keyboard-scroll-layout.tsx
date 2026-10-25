@@ -1,18 +1,11 @@
 import React, { ReactNode } from "react";
 
 import { CaretLeftIcon } from "phosphor-react-native";
-import {
-  KeyboardAvoidingView,
-  Platform,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  View,
-} from "react-native";
+import { KeyboardAvoidingView, Platform, ScrollView, StyleSheet, View } from "react-native";
 import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { TABLET_WIDTH } from "../../constants/sizes";
-import { useThemeContext } from "../../contexts/theme/theme-context";
+import Button from "../button";
 
 interface KeyboardScrollLayoutProps {
   children: ReactNode;
@@ -20,16 +13,20 @@ interface KeyboardScrollLayoutProps {
 }
 
 const KeyboardScrollLayout: React.FC<KeyboardScrollLayoutProps> = ({ children, onBack }) => {
-  const { colors } = useThemeContext();
   const insets = useSafeAreaInsets();
   const styles = makeStyles(insets);
 
   return (
     <View style={styles.page}>
       {onBack && (
-        <Pressable onPress={onBack} style={styles.back}>
-          <CaretLeftIcon color={colors.BgContrast} size={32} />
-        </Pressable>
+        <Button
+          color="primary"
+          variant="text"
+          isHapticFeedback
+          icon={<CaretLeftIcon size={32} />}
+          onClick={onBack}
+          style={styles.back}
+        />
       )}
 
       <KeyboardAvoidingView

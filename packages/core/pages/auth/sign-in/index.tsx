@@ -7,13 +7,13 @@ import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import Input from "@nihongo/core/shared/ui/input";
 import KeyboardScrollLayout from "@nihongo/core/shared/ui/layouts/keyboard-scroll-layout";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { useTranslation } from "react-i18next";
-import { View, StyleSheet, Pressable, Text } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 import { z } from "zod";
 
 // * Messages are i18n keys (auth.errors.*); translated in the component via t().
@@ -147,30 +147,25 @@ export const SignInPage: React.FC = () => {
         />
       </View>
 
-      <PrimaryButton
+      <Button
+        color="primary"
         onClick={next}
         isDisabled={(submitted && !isValid) || submitting}
-        containerStyles={styles.submitButton}
+        style={styles.submitButton}
         text={t("auth.signIn.submit")}
       />
 
-      <Pressable
-        onPress={() => {
+      <Button
+        color="primary"
+        variant="text"
+        size="sm"
+        isHapticFeedback
+        text={t("auth.resetPassword.title")}
+        onClick={() => {
           navigation.navigate(AUTH_ROUTES.RESET_PASSWORD_ASK_EMAIL);
         }}
-        style={{ height: 20, margin: 0, marginTop: 16, padding: 0, alignItems: "center" }}
-      >
-        {({ pressed }) => (
-          <Text
-            style={[
-              styles.link,
-              { color: pressed ? colors.TextPrimaryPressed : colors.TextPrimary },
-            ]}
-          >
-            {t("auth.resetPassword.title")}
-          </Text>
-        )}
-      </Pressable>
+        style={{ marginTop: 16, alignSelf: "center" }}
+      />
     </KeyboardScrollLayout>
   );
 };
@@ -218,9 +213,5 @@ const makeStyles = (colors: ColorsType) =>
       // alignItems: 'center',
 
       maxWidth: 360,
-    },
-    link: {
-      ...Typography.boldLabel,
-      color: colors.TextPrimary,
     },
   });

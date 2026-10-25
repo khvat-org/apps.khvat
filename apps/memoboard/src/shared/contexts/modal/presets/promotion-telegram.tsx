@@ -6,7 +6,7 @@ import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { useRemoteConfig } from "@nihongo/core/shared/contexts/remote-config/remote-config-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, View, Text, ScrollView } from "react-native";
 import { z } from "zod";
@@ -137,9 +137,9 @@ export const PromotionTelegram = (props: ConfirmationModalProps) => {
       </View>
 
       <View style={styles.buttons}>
-        <SecondaryButton
+        <Button
+          color="secondary"
           onClick={onPress}
-          isOutline
           isFullWidth
           text={t("promotionTelegram.fixMyself")}
         />

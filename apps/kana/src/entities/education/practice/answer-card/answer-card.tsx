@@ -3,7 +3,7 @@ import React from "react";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { ILetter } from "@nihongo/core/shared/data/lettersTable";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
+import { Pressable, Text } from "react-native";
 
 interface AnswerCardProps {
   value: ILetter;
@@ -52,21 +52,19 @@ const AnswerCard: React.FC<AnswerCardProps> = ({
   const textColor = redMarked || greenMarked ? colors.TextWhite : colors.TextPrimary;
 
   return (
-    <PrimaryButton
-      onClick={() => onClick?.(value, questionId)}
-      containerStylesFunc={({ pressed }) => ({
+    <Pressable
+      onPress={() => onClick?.(value, questionId)}
+      style={({ pressed }) => ({
         width: width,
         height: width,
         backgroundColor: cardBackground(pressed),
         borderRadius: 24,
+        justifyContent: "center",
+        alignItems: "center",
       })}
-      isOutline
-      text={children}
-      textStyles={{
-        ...Typography.H3,
-        color: textColor,
-      }}
-    />
+    >
+      <Text style={{ ...Typography.H3, color: textColor }}>{children}</Text>
+    </Pressable>
   );
 };
 

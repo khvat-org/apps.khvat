@@ -3,7 +3,6 @@ import React, { useMemo, useState } from "react";
 import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { PROFILE_ROUTES, ProfileParamList } from "@nihongo/core/pages/profile/routes";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
-import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { updateProfile } from "@nihongo/core/shared/lib/auth";
 import Input from "@nihongo/core/shared/ui/input";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
@@ -37,7 +36,6 @@ const ProfileChangeNamePage: React.FC = () => {
   const navigation = useNavigation<NavigationProp>();
 
   const { t } = useTranslation();
-  const { colors } = useThemeContext();
 
   const [name, setName] = useState("");
   const [serverError, setServerError] = useState<string | undefined>(undefined);
@@ -95,7 +93,7 @@ const ProfileChangeNamePage: React.FC = () => {
           right={{
             text: t("common.save"),
             onPress: save,
-            color: canSave ? colors.TextPrimary : colors.TextDisabled,
+            isDisabled: !canSave,
           }}
         />
 

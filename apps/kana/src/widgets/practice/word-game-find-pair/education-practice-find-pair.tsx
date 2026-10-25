@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
     width: "100%",
     textAlign: "center",
     ...Typography.boldDefault,
+    marginTop: 32,
   },
 });
 

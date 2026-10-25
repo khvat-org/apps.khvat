@@ -1,7 +1,6 @@
 import React from "react";
 
-import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import {
   NumberCircleOneIcon,
   NumberCircleThreeIcon,
@@ -11,8 +10,6 @@ import {
 import { useDrawLineWidth } from "@/features/drawing/model/hooks";
 
 const ToggleStrokeWidth: React.FC = () => {
-  const { colors } = useThemeContext();
-
   const { lineWidth, setLineWidth } = useDrawLineWidth();
 
   const BIG_WIDTH = 14;
@@ -34,15 +31,13 @@ const ToggleStrokeWidth: React.FC = () => {
   };
 
   const getIcon = () => {
-    if (lineWidth === BIG_WIDTH)
-      return <NumberCircleThreeIcon size={20} color={colors.BgContrast} />;
-    if (lineWidth === MIDDLE_WIDTH)
-      return <NumberCircleTwoIcon size={20} color={colors.BgContrast} />;
+    if (lineWidth === BIG_WIDTH) return <NumberCircleThreeIcon size={20} />;
+    if (lineWidth === MIDDLE_WIDTH) return <NumberCircleTwoIcon size={20} />;
 
-    return <NumberCircleOneIcon size={20} color={colors.BgContrast} />;
+    return <NumberCircleOneIcon size={20} />;
   };
 
-  return <PrimaryButton isHapticFeedback isIcon width={50} onClick={onClick} icon={getIcon()} />;
+  return <Button color="secondary" isHapticFeedback onClick={onClick} icon={getIcon()} />;
 };
 
 export default ToggleStrokeWidth;

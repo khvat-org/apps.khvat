@@ -28,8 +28,8 @@ const French = {
 
     modes: {
       mixed: { title: "Mixte", subtitle: "Tout à la fois" },
-      testing: { title: "Test", subtitle: "Choisissez une réponse contre la montre" },
-      drawing: { title: "Dessin", subtitle: "Dessinez l'Hiragana / le Katakana" },
+      testing: { title: "Test", subtitle: "Répondez contre la montre" },
+      drawing: { title: "Dessin", subtitle: "Dessinez hiragana / katakana" },
       listening: { title: "Écoute", subtitle: "Sélectionnez la bonne réponse" },
       multipleChoice: { title: "Sélection de mot", subtitle: "Choisissez la bonne réponse" },
       matchingPairs: { title: "Paires correspondantes", subtitle: "Associez les paires de mots" },
@@ -41,7 +41,7 @@ const French = {
 
     preferences: {
       title: "Préférences",
-      autoplaySound: "Lecture automatique du son",
+      autoplaySound: "Son automatique",
       questionsCount: "Nombre de questions",
       timer: "Minuteur",
       mixMode: "Mode mixte",
@@ -94,7 +94,7 @@ const French = {
       title: "Supprimer le compte ?",
       subtitle:
         "Entrez le code à 6 chiffres que nous avons envoyé à votre e-mail. Cette action est permanente et irréversible.",
-      confirm: "Supprimer le compte",
+      confirm: "Supprimer",
     },
     displayStatistics: "Afficher les statistiques",
     hapticFeedback: "Retour haptique",

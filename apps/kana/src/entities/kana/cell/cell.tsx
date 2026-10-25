@@ -5,9 +5,7 @@ import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-conte
 import { ILetter } from "@nihongo/core/shared/data/lettersTable";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
-import { StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 const CELL_GAP = 9;
 
@@ -91,11 +89,14 @@ const Cell: React.FC<CellProps> = ({
 
   if (isPlus) {
     return (
-      <PrimaryButton
-        onClick={() => onPress?.("")}
-        isHapticFeedback
-        containerStylesFunc={({ pressed }) => [
+      <Pressable
+        onPress={() => {
+          triggerHaptic();
+          onPress?.("");
+        }}
+        style={({ pressed }) => [
           styles.cell,
+          { backgroundColor: pressed ? colors.BgContrastPressed : colors.BgContrast },
           !isTablet
             ? {
                 width: isLong ? widthLong : tabletCellSize,
@@ -111,8 +112,9 @@ const Cell: React.FC<CellProps> = ({
               }
             : {},
         ]}
-        icon={isStartOfLine as React.ReactElement}
-      />
+      >
+        {isStartOfLine as React.ReactElement}
+      </Pressable>
     );
   }
 
@@ -147,13 +149,12 @@ const Cell: React.FC<CellProps> = ({
   }
 
   return (
-    <SecondaryButton
-      onClick={() => {
+    <Pressable
+      onPress={() => {
         onPress?.(cell.id);
         triggerHaptic();
       }}
-      isOutline
-      containerStylesFunc={({ pressed }) => [
+      style={({ pressed }) => [
         styles.cell,
         {
           width: isLong ? widthLong : tabletCellSize,
@@ -171,53 +172,50 @@ const Cell: React.FC<CellProps> = ({
           height: tabletCellSize,
         },
       ]}
-      content={
-        <>
-          {indicator && (
-            <View
-              style={[styles.cellIndicator, { backgroundColor: getIndicatorColor(indicator) }]}
-            />
-          )}
+    >
+      <>
+        {indicator && (
+          <View style={[styles.cellIndicator, { backgroundColor: getIndicatorColor(indicator) }]} />
+        )}
 
-          <View
+        <View
+          style={[
+            {
+              alignItems: "center",
+              justifyContent: "center",
+            },
+            {
+              width: isLong ? widthLong : tabletCellSize,
+              height: tabletCellSize,
+            },
+            isTablet && {
+              width: tabletCellSize,
+              height: tabletCellSize,
+            },
+          ]}
+        >
+          <Text
             style={[
-              {
-                alignItems: "center",
-                justifyContent: "center",
-              },
-              {
-                width: isLong ? widthLong : tabletCellSize,
-                height: tabletCellSize,
-              },
-              isTablet && {
-                width: tabletCellSize,
-                height: tabletCellSize,
-              },
+              getFintSize("default"),
+              styles.cellText,
+              { color: active ? colors.TextWhite : colors.TextPrimary },
             ]}
           >
-            <Text
-              style={[
-                getFintSize("default"),
-                styles.cellText,
-                { color: active ? colors.TextWhite : colors.TextPrimary },
-              ]}
-            >
-              {getKana(cell, kana)}
-            </Text>
+            {getKana(cell, kana)}
+          </Text>
 
-            <Text
-              style={[
-                getFintSize("regularLabel"),
-                styles.cellText,
-                { color: active ? colors.TextWhite : colors.TextPrimary },
-              ]}
-            >
-              {getRomaji(cell).toUpperCase()}
-            </Text>
-          </View>
-        </>
-      }
-    ></SecondaryButton>
+          <Text
+            style={[
+              getFintSize("regularLabel"),
+              styles.cellText,
+              { color: active ? colors.TextWhite : colors.TextPrimary },
+            ]}
+          >
+            {getRomaji(cell).toUpperCase()}
+          </Text>
+        </View>
+      </>
+    </Pressable>
   );
 };
 

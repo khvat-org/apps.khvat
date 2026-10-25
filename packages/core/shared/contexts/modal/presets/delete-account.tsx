@@ -6,8 +6,7 @@ import { StyleSheet, View, Text } from "react-native";
 
 import { TABLET_WIDTH } from "../../../constants/sizes";
 import { Typography } from "../../../typography";
-import PrimaryButton from "../../../ui/buttons/Primary/primary-button";
-import SecondaryButton from "../../../ui/buttons/Secondary/secondary-button";
+import Button from "../../../ui/button";
 import Input from "../../../ui/input";
 import { ColorsType, useThemeContext } from "../../theme/theme-context";
 
@@ -125,27 +124,29 @@ export const DeleteAccountModal = (props: DeleteAccountModalProps) => {
       <View style={styles.input}>
         <Input
           placeholder={t("auth.fields.code")}
+          isCode
           onChange={onChangeCode}
           error={error ? t(`auth.errors.${error}`) : undefined}
         />
       </View>
 
       <View style={styles.buttons}>
-        <PrimaryButton onClick={onCancel} isFullWidth text={t("alert.cancel")} />
-        <SecondaryButton
+        <Button color="primary" onClick={onCancel} isFullWidth text={t("alert.cancel")} />
+        <Button
+          color="secondary"
           onClick={confirm}
-          isOutline
           isFullWidth
           isDisabled={!isCodeValid || submitting}
           text={t("settings.deleteAccount.confirm")}
         />
       </View>
 
-      <SecondaryButton
+      <Button
+        color="accent"
         onClick={resend}
         isFullWidth
         isDisabled={cooldown > 0 || resending}
-        containerStyles={styles.resend}
+        style={styles.resend}
         text={resendLabel}
       />
     </View>

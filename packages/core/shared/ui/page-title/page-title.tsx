@@ -36,13 +36,15 @@ const PageTitle: React.FC<PageTitleProps> = ({
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
+          paddingTop: 8,
+          paddingBottom: 16,
         },
         ...(isSaveArea
           ? [
               {
                 paddingLeft: insets.left + 16,
                 paddingRight: insets.right + 16,
-                paddingTop: insets.top,
+                paddingTop: insets.top + 8,
               },
             ]
           : []),
@@ -65,8 +67,6 @@ export default PageTitle;
 const styles = StyleSheet.create({
   title: {
     ...Typography.H3,
-    marginTop: 10,
-    marginBottom: 16,
   },
 
   line: {

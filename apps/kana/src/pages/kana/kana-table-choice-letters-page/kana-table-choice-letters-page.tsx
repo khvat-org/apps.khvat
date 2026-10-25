@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 
 import { isIOS } from "@nihongo/core/shared/constants/platformUtil";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
@@ -6,7 +6,7 @@ import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-conte
 import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import Switcher from "@nihongo/core/shared/ui/switcher/switcher";
-import { useFocusEffect, useNavigation } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { useTranslation } from "react-i18next";
 import { View, Text, SectionList, StyleSheet } from "react-native";
@@ -28,18 +28,6 @@ const KanaTableChoiceLettersPage: React.FC = () => {
 
   const { t } = useTranslation();
   const insets = useSafeAreaInsets();
-
-  const isDarkTheme = colors._theme === "dark";
-
-  useFocusEffect(
-    useCallback(() => {
-      StatusBar.setBarStyle("light-content");
-
-      return () => {
-        StatusBar.setBarStyle(isDarkTheme ? "light-content" : "dark-content");
-      };
-    }, [isDarkTheme]),
-  );
 
   const { selected, selectedLettersHiragana, selectedLettersKatakana, replaceSelected } =
     useKanaContext();
@@ -79,6 +67,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
 
   return (
     <View style={{ flex: 1 }}>
+      <StatusBar barStyle="light-content" />
       <ModalHeader
         title={t("tabs.kana")}
         left={{
@@ -88,7 +77,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
         right={{
           text: t("common.save"),
           onPress: done,
-          color: isDirty ? colors.TextPrimary : colors.TextDisabled,
+          isDisabled: !isDirty,
         }}
       />
 

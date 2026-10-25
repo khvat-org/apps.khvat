@@ -90,13 +90,13 @@ const makeStyles = (colors: ColorsType) =>
     title: {
       ...Typography.H4,
       color: colors.TextPrimary,
-      marginTop: 10,
+      marginTop: 22,
       paddingHorizontal: 16,
     },
     subtitle: {
       ...Typography.regularLabel,
       marginTop: 8,
-      marginBottom: 22,
+      marginBottom: 16,
       paddingHorizontal: 16,
     },
   });

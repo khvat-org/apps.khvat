@@ -119,7 +119,7 @@ const SettingsThemePage: React.FC = () => {
           right={{
             text: t("common.save"),
             onPress: () => isDirty && onDone(),
-            color: isDirty ? colors.TextPrimary : colors.TextDisabled,
+            isDisabled: !isDirty,
           }}
         />
 
@@ -127,6 +127,7 @@ const SettingsThemePage: React.FC = () => {
           <Text style={styles.title}>{t("settings.theme.installed")}</Text>
           <View style={styles.list}>
             <FlatList
+              showsVerticalScrollIndicator={false}
               style={{ flexShrink: 1 }}
               contentContainerStyle={{ paddingBottom: insets.bottom }}
               data={themeOptions}

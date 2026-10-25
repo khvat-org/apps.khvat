@@ -28,9 +28,9 @@ const SpanishMX = {
 
     modes: {
       mixed: { title: "Mixto", subtitle: "Todo a la vez" },
-      testing: { title: "Prueba", subtitle: "Elige una respuesta contra el tiempo" },
-      drawing: { title: "Dibujo", subtitle: "Dibuja el hiragana / katakana" },
-      listening: { title: "Audición", subtitle: "Selecciona la respuesta correcta" },
+      testing: { title: "Prueba", subtitle: "Responde contra el tiempo" },
+      drawing: { title: "Dibujo", subtitle: "Dibuja hiragana / katakana" },
+      listening: { title: "Audición", subtitle: "Elige la respuesta correcta" },
       multipleChoice: { title: "Selección de palabra", subtitle: "Elige la respuesta correcta" },
       matchingPairs: { title: "Emparejar", subtitle: "Empareja pares de palabras" },
       wordBuilding: { title: "Formar palabra", subtitle: "Forma una palabra" },
@@ -41,7 +41,7 @@ const SpanishMX = {
 
     preferences: {
       title: "Preferencias",
-      autoplaySound: "Reproducir sonido automáticamente",
+      autoplaySound: "Sonido automático",
       questionsCount: "Número de preguntas",
       timer: "Temporizador",
       mixMode: "Modo mixto",
@@ -93,7 +93,7 @@ const SpanishMX = {
       title: "¿Eliminar cuenta?",
       subtitle:
         "Ingresa el código de 6 dígitos que te enviamos por correo. Esta acción es permanente e irreversible.",
-      confirm: "Eliminar cuenta",
+      confirm: "Eliminar",
     },
     displayStatistics: "Mostrar estadísticas",
     hapticFeedback: "Vibración",

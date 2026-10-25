@@ -1,7 +1,6 @@
 import React from "react";
 
-import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { EyeIcon, EyeSlashIcon } from "phosphor-react-native";
 
 import { useDrawLetter } from "@/features/drawing/model/hooks";
@@ -9,21 +8,12 @@ import { useDrawLetter } from "@/features/drawing/model/hooks";
 const ToggleShowLetter: React.FC = () => {
   const { isShowLetter, toggleLetter } = useDrawLetter();
 
-  const { colors } = useThemeContext();
-
   return (
-    <SecondaryButton
+    <Button
+      color={isShowLetter ? "accent" : "secondary"}
       isHapticFeedback
-      icon={
-        isShowLetter ? (
-          <EyeIcon size={20} color={isShowLetter ? colors.BgWhite : colors.BgContrast} />
-        ) : (
-          <EyeSlashIcon size={20} color={isShowLetter ? colors.BgWhite : colors.BgContrast} />
-        )
-      }
-      isOutline={!isShowLetter}
+      icon={isShowLetter ? <EyeIcon size={20} /> : <EyeSlashIcon size={20} />}
       onClick={toggleLetter}
-      width={50}
     />
   );
 };

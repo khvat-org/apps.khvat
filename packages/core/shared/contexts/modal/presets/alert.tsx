@@ -5,7 +5,7 @@ import { StyleSheet, View, Text } from "react-native";
 
 import { TABLET_WIDTH } from "../../../constants/sizes";
 import { Typography } from "../../../typography";
-import PrimaryButton from "../../../ui/buttons/Primary/primary-button";
+import Button from "../../../ui/button";
 import { ColorsType, useThemeContext } from "../../theme/theme-context";
 
 interface AlertModalProps {
@@ -32,7 +32,7 @@ export const AlertModal = (props: AlertModalProps) => {
       {subtitle && <Text style={styles.subtitle}>{subtitle}</Text>}
 
       <View style={styles.buttons}>
-        <PrimaryButton onClick={onPress} isFullWidth text={buttonText} />
+        <Button color="primary" onClick={onPress} isFullWidth text={buttonText} />
       </View>
     </View>
   );

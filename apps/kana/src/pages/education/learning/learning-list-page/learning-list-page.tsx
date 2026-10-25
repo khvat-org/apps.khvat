@@ -7,7 +7,7 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import { useTransliterationsContext } from "@nihongo/core/shared/contexts/transliteration/transliteration";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -186,10 +186,11 @@ const LearningList: React.FC = () => {
                 >
                   {t("lessonsList.failedToLoadLessons")}
                 </Text>
-                <PrimaryButton
+                <Button
+                  color="primary"
                   onClick={retry}
                   text={t("common.retry")}
-                  containerStyles={styles.retryButton}
+                  style={styles.retryButton}
                 />
               </>
             )}
@@ -251,8 +252,6 @@ const makeStyles = (colors: ColorsType, width: number) =>
 
       borderBottomRightRadius: 24,
       borderBottomLeftRadius: 24,
-
-      marginBottom: 16,
     },
     errorIcon: {
       height: "80%",
@@ -267,7 +266,7 @@ const makeStyles = (colors: ColorsType, width: number) =>
     progressBarContainer: {
       marginLeft: 16,
       marginRight: 16,
-      marginTop: 9,
+      marginTop: 8,
       zIndex: 999,
     },
     progressBarBack: {

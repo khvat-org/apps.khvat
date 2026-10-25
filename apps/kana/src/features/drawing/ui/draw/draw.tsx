@@ -4,8 +4,7 @@ import { getCanvasSize, TABLET_WIDTH } from "@nihongo/core/shared/constants/size
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { ILetter } from "@nihongo/core/shared/data/lettersTable";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { CircleIcon, FloppyDiskIcon, ScanIcon, XIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet, useWindowDimensions } from "react-native";
@@ -310,23 +309,18 @@ const Draw: React.FC<DrawProps> = ({
           <View style={styles.buttonsContainer}>
             <View style={styles.actionButtons}>
               {isTextRecognition && (
-                <PrimaryButton
-                  isIcon
+                <Button
+                  color="secondary"
                   isHapticFeedback
-                  width={50}
-                  icon={<ScanIcon size={20} color={colors.BgContrast} />}
+                  icon={<ScanIcon size={20} />}
                   onClick={detectSymbol}
-                  containerStyles={{
-                    flexDirection: "row-reverse",
-                    alignItems: "center",
-                  }}
                 />
               )}
 
               {IS_SAVE && (
-                <SecondaryButton
-                  width={50}
-                  icon={<FloppyDiskIcon size={20} color={colors.BgWhite} />}
+                <Button
+                  color="accent"
+                  icon={<FloppyDiskIcon size={20} />}
                   onClick={() => {
                     const symbol = kana === KanaAlphabet.Hiragana ? letter.hi : letter.ka;
 
@@ -361,7 +355,12 @@ const Draw: React.FC<DrawProps> = ({
           }}
         >
           {isCheck && (
-            <PrimaryButton isHapticFeedback onClick={detectSymbol} text={t("common.check")} />
+            <Button
+              color="primary"
+              isHapticFeedback
+              onClick={detectSymbol}
+              text={t("common.check")}
+            />
           )}
         </View>
       </View>

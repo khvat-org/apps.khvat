@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
-import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { StyleSheet, View } from "react-native";
 
 import { TEST_DELAY } from "@/shared/constants/kana";
@@ -14,8 +13,6 @@ type SelectAnswerProps = {
 };
 
 const SelectAnswer: React.FC<SelectAnswerProps> = ({ answers, onFinish }) => {
-  const { colors } = useThemeContext();
-
   const [errors, setErrors] = useState<string[]>([]);
   const [correct, setCorrect] = useState<string[]>([]);
 
@@ -48,33 +45,19 @@ const SelectAnswer: React.FC<SelectAnswerProps> = ({ answers, onFinish }) => {
     <View style={styles.container}>
       <View style={styles.answers}>
         {answers.map((answer) => (
-          <SecondaryButton
+          <Button
+            color={
+              errors.includes(answer.title)
+                ? "danger"
+                : correct.includes(answer.title)
+                  ? "success"
+                  : "secondary"
+            }
             key={answer.title}
-            isOutline
             isHapticFeedback
             onClick={() => onAnswer(answer)}
             text={answer.title}
-            containerStyles={
-              errors.includes(answer.title)
-                ? {
-                    backgroundColor: colors.BgDanger,
-                  }
-                : correct.includes(answer.title)
-                  ? {
-                      backgroundColor: colors.BgSuccess,
-                    }
-                  : {}
-            }
-            textStyles={
-              errors.includes(answer.title) || correct.includes(answer.title)
-                ? {
-                    color: colors.TextWhite,
-                    ...Typography.regularDefault,
-                  }
-                : {
-                    ...Typography.regularDefault,
-                  }
-            }
+            textStyle={Typography.regularDefault}
           />
         ))}
       </View>

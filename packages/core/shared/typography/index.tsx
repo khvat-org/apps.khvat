@@ -23,7 +23,7 @@ const gts = (
 };
 
 export const Typography = StyleSheet.create({
-  H1: gts(medium, 96, 104, "500"),
+  H1: gts(medium, 96, 114, "500"),
   H2: gts(medium, 40, 48, "500"),
   H3: gts(medium, 28, 32, "500"),
   H4: gts(medium, 22, 28, "500"),

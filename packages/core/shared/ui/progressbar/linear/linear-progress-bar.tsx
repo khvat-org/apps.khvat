@@ -3,14 +3,13 @@ import React from "react";
 import { FeatureFlagsService } from "@nihongo/core/shared/services/feature-flags-service/feature-flags-service";
 import { XIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
-import { useHaptic } from "../../../contexts/haptic/haptic-context";
 import { useModal } from "../../../contexts/modal/modal-context";
 import { ConfirmationModal } from "../../../contexts/modal/presets/confirmation";
 import { ColorsType, useThemeContext } from "../../../contexts/theme/theme-context";
 import { Typography } from "../../../typography/index";
-import SmallPrimaryButton from "../../buttons/small/primary";
+import Button from "../../button";
 
 interface ProgressBarProp {
   close?: () => void;
@@ -33,7 +32,6 @@ const LinearProgressBar: React.FC<ProgressBarProp> = ({
 }) => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
-  const { triggerHaptic } = useHaptic();
   const { showModal, hideModal } = useModal();
 
   const styles = makeStyles(colors);
@@ -81,29 +79,30 @@ const LinearProgressBar: React.FC<ProgressBarProp> = ({
         ))}
       </View>
       <View style={styles.progressBarBottom}>
-        <TouchableOpacity
-          style={styles.progressBarPressble}
-          onPress={() => {
-            triggerHaptic();
-
+        <Button
+          color="secondary"
+          size="sm"
+          isHapticFeedback
+          icon={<XIcon size={20} />}
+          onClick={() => {
             if (requireConfirmation) {
               confirmationCloseAlert();
             } else {
               close?.();
             }
           }}
-        >
-          <XIcon size={20} color={colors.BgContrast} />
-        </TouchableOpacity>
+        />
 
         <Text style={styles.progressBarText}>
           {title ? title : t("practice.question")} {current + 1} / {all}
         </Text>
 
         {FeatureFlagsService.isEnabled("askAI") && (
-          <SmallPrimaryButton
+          <Button
+            color="primary"
+            size="sm"
             text={"Ask AI"}
-            onPress={() => {
+            onClick={() => {
               console.log("Тест");
             }}
           />
@@ -116,10 +115,11 @@ const LinearProgressBar: React.FC<ProgressBarProp> = ({
 const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
     progressBarContainer: {
-      paddingTop: 25,
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
+
+      marginTop: 8,
     },
     progressBarLine: {
       width: "100%",
@@ -127,15 +127,19 @@ const makeStyles = (colors: ColorsType) =>
       alignItems: "center",
       justifyContent: "space-between",
       backgroundColor: colors.BgLightGray,
+      borderRadius: 2,
     },
     progressBarLineActive: {
       height: 4,
+      borderRadius: 2,
     },
     progressBarBottom: {
       width: "100%",
       flexDirection: "row",
       alignItems: "center",
       justifyContent: "space-between",
+
+      marginTop: 12,
     },
     progressBarClose: {
       zIndex: 999,
@@ -147,10 +151,6 @@ const makeStyles = (colors: ColorsType) =>
       textAlign: "right",
       fontStyle: "normal",
       color: colors.TextSecondary,
-    },
-    progressBarPressble: {
-      padding: 10,
-      paddingLeft: 0,
     },
   });
 

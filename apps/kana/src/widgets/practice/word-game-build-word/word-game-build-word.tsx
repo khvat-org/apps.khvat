@@ -63,6 +63,7 @@ const styles = StyleSheet.create({
     marginBottom: 32,
   },
   word__title: {
+    marginTop: 32,
     ...Typography.H2,
     textAlign: "center",
   },

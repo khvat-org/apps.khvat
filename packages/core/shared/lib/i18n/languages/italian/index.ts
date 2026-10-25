@@ -29,8 +29,8 @@ const Italian = {
     modes: {
       mixed: { title: "Misto", subtitle: "Tutto insieme" },
       testing: { title: "Test", subtitle: "Scegli una risposta a tempo" },
-      drawing: { title: "Disegno", subtitle: "Disegna l'hiragana / katakana" },
-      listening: { title: "Ascolto", subtitle: "Seleziona la risposta corretta" },
+      drawing: { title: "Disegno", subtitle: "Disegna hiragana / katakana" },
+      listening: { title: "Ascolto", subtitle: "Scegli la risposta corretta" },
       multipleChoice: { title: "Selezione della parola", subtitle: "Scegli la risposta corretta" },
       matchingPairs: { title: "Abbinamento di coppie", subtitle: "Abbina le coppie di parole" },
       wordBuilding: { title: "Costruzione di parole", subtitle: "Forma una parola" },
@@ -41,7 +41,7 @@ const Italian = {
 
     preferences: {
       title: "Preferenze",
-      autoplaySound: "Riproduzione automatica dell'audio",
+      autoplaySound: "Audio automatico",
       questionsCount: "Numero di domande",
       timer: "Timer",
       mixMode: "Modalità mista",
@@ -93,7 +93,7 @@ const Italian = {
       title: "Eliminare l'account?",
       subtitle:
         "Inserisci il codice a 6 cifre che ti abbiamo inviato via email. Questa azione è permanente e irreversibile.",
-      confirm: "Elimina account",
+      confirm: "Elimina",
     },
     displayStatistics: "Mostra statistiche",
     hapticFeedback: "Feedback aptico",

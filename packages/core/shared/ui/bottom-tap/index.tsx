@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 import { Pressable, View, Text } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import { isIOS } from "../../constants/platformUtil";
 import { useBottomTabVisibility } from "../../contexts/bottom-tab-visibility";
 import { useHaptic } from "../../contexts/haptic/haptic-context";
 import { useThemeContext } from "../../contexts/theme/theme-context";
@@ -42,7 +41,7 @@ export const TabBarButton = ({ state, navigation, tabs }: TabBarButtonProps) => 
         paddingLeft: insets.left,
         paddingRight: insets.right,
         paddingBottom: insets.bottom,
-        height: insets.bottom + (isIOS ? 52 : 62),
+        height: insets.bottom + 48,
         alignItems: "center",
         borderTopColor: colors.BorderDefault,
         borderTopWidth: 1,
@@ -73,10 +72,11 @@ export const TabBarButton = ({ state, navigation, tabs }: TabBarButtonProps) => 
             onPress={onPress}
             style={{
               flex: 1,
-              paddingTop: 3,
               alignItems: "center",
               gap: 0,
               justifyContent: "center",
+              height: 44,
+              marginTop: 4,
             }}
           >
             <Icon size={20} color={isFocused ? colors.BgAccent : colors.BgGray} />

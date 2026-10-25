@@ -28,7 +28,7 @@ const Indonesian = {
 
     modes: {
       mixed: { title: "Campuran", subtitle: "Semuanya sekaligus" },
-      testing: { title: "Tes", subtitle: "Pilih jawaban dengan batas waktu" },
+      testing: { title: "Tes", subtitle: "Jawab dengan batas waktu" },
       drawing: { title: "Menggambar", subtitle: "Gambar Hiragana / Katakana" },
       listening: { title: "Mendengarkan", subtitle: "Pilih jawaban yang benar" },
       multipleChoice: { title: "Pilihan Kata", subtitle: "Pilih jawaban yang benar" },
@@ -41,7 +41,7 @@ const Indonesian = {
 
     preferences: {
       title: "Preferensi",
-      autoplaySound: "Putar suara otomatis",
+      autoplaySound: "Suara otomatis",
       questionsCount: "Jumlah pertanyaan",
       timer: "Pengatur waktu",
       mixMode: "Mode campuran",
@@ -92,7 +92,7 @@ const Indonesian = {
       title: "Hapus akun?",
       subtitle:
         "Masukkan kode 6 digit dari email. Tindakan ini permanen dan tidak dapat dibatalkan — akun serta semua data akan dihapus.",
-      confirm: "Hapus akun",
+      confirm: "Hapus",
     },
     displayStatistics: "Tampilkan statistik",
     hapticFeedback: "Umpan balik haptic",

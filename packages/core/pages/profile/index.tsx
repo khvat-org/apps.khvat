@@ -14,7 +14,7 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import { loadProfile, ProfileState } from "@nihongo/core/shared/lib/auth";
 import { useProfileWidgets } from "@nihongo/core/shared/lib/settings/useProfileWidgets";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
@@ -86,11 +86,12 @@ const ProfilePage: React.FC = () => {
       <View style={[styles.container, { paddingTop: insets.top }]}>
         <PageTitle
           icon={
-            <Pressable onPress={toSettings}>
-              <>
-                <GearIcon size={32} color={colors.BgContrast} />
-              </>
-            </Pressable>
+            <Button
+              color="primary"
+              variant="text"
+              icon={<GearIcon size={32} />}
+              onClick={toSettings}
+            />
           }
         >
           {t("tabs.profile")}
@@ -108,7 +109,8 @@ const ProfilePage: React.FC = () => {
           <View>
             <Text style={styles.problemTitle}>{t(`profile.${problem}.title`)}</Text>
             <Text style={styles.problemText}>{t(`profile.${problem}.text`)}</Text>
-            <PrimaryButton
+            <Button
+              color="primary"
               onClick={() => {
                 triggerHaptic();
                 void reload();
@@ -141,7 +143,8 @@ const ProfilePage: React.FC = () => {
               {t("profile.signInPrompt", { app: process.env.APP_NAME })}
             </Text>
 
-            <PrimaryButton
+            <Button
+              color="primary"
               onClick={() => {
                 AsyncStorage.removeItem(IS_WELCOME_PAGE);
                 forceReset();

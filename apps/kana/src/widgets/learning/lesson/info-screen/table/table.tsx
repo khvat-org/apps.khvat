@@ -13,7 +13,7 @@ interface TableProps {
 const Table: React.FC<TableProps> = ({ data }) => {
   const { colors } = useThemeContext();
 
-  const tableColors = { borderColor: colors.BorderDefault };
+  const tableColors = { backgroundColor: colors.BgSecondary };
   const columnStyles = {
     borderColor: colors.BorderDefault,
     width: 100 / data.length + "%",
@@ -32,7 +32,12 @@ const Table: React.FC<TableProps> = ({ data }) => {
               style={[styles.cell, cellStyles, index > 0 ? { borderTopWidth: 1 } : {}]}
               key={`${idx}/${index}`}
             >
-              <Text style={[{ color: colors.TextPrimary }, Typography.regularDefault]}>
+              <Text
+                style={[
+                  { color: colors.TextPrimary },
+                  index === 0 ? Typography.boldDefault : Typography.regularDefault,
+                ]}
+              >
                 {parseString(cell)}
               </Text>
             </View>
@@ -49,8 +54,8 @@ const styles = StyleSheet.create({
   table: {
     width: "100%",
     flexDirection: "row",
-    borderWidth: 1,
     borderRadius: 12,
+    overflow: "hidden",
     marginTop: 16,
     marginBottom: 16,
   },
@@ -59,6 +64,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    minHeight: 42,
+    minHeight: 48,
   },
 });

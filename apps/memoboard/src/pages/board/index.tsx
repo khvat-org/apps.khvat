@@ -3,13 +3,14 @@ import React, { useCallback, useEffect, useMemo, useRef } from "react";
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
+import Button from "@nihongo/core/shared/ui/button";
 import Input from "@nihongo/core/shared/ui/input";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { CaretLeftIcon, ListIcon, MagnifyingGlassIcon, XIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { View, Text, SectionList, useWindowDimensions, StyleSheet, Pressable } from "react-native";
+import { View, Text, SectionList, useWindowDimensions, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { Card } from "../../shared/api/get-cards";
@@ -163,27 +164,43 @@ const BoardPage = () => {
             />
           </View>
 
-          <Pressable onPress={closeSearch}>
-            <XIcon size={32} color={colors.BgContrast} />
-          </Pressable>
+          <Button
+            color="primary"
+            variant="text"
+            isHapticFeedback
+            icon={<XIcon size={32} />}
+            onClick={closeSearch}
+          />
         </View>
       ) : (
         <PageTitle
           isSaveArea
           leftIcon={
-            <Pressable onPress={() => navigation.goBack()}>
-              <CaretLeftIcon size={32} color={colors.BgContrast} />
-            </Pressable>
+            <Button
+              color="primary"
+              variant="text"
+              isHapticFeedback
+              icon={<CaretLeftIcon size={32} />}
+              onClick={() => navigation.goBack()}
+            />
           }
           icon={
             <View style={styles.headerIcons}>
-              <Pressable onPress={openSearch}>
-                <MagnifyingGlassIcon size={32} color={colors.BgContrast} />
-              </Pressable>
+              <Button
+                color="primary"
+                variant="text"
+                isHapticFeedback
+                icon={<MagnifyingGlassIcon size={32} />}
+                onClick={openSearch}
+              />
 
-              <Pressable onPress={() => navigation.navigate(ROUTES.SECTIONS)}>
-                <ListIcon size={32} color={colors.BgContrast} />
-              </Pressable>
+              <Button
+                color="primary"
+                variant="text"
+                isHapticFeedback
+                icon={<ListIcon size={32} />}
+                onClick={() => navigation.navigate(ROUTES.SECTIONS)}
+              />
             </View>
           }
         >

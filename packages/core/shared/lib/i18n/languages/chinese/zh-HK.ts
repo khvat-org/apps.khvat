@@ -90,7 +90,7 @@ const ChineseHK = {
       confirmSubtitle: "你所有的學習進度和帳號資料都會一併刪除。",
       title: "刪除帳號？",
       subtitle: "輸入我們寄到你電郵的 6 位數字代碼。此操作永久且無法復原。",
-      confirm: "刪除帳號",
+      confirm: "刪除",
     },
     displayStatistics: "顯示統計資料",
     hapticFeedback: "觸覺回饋",

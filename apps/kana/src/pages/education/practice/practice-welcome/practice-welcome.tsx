@@ -2,12 +2,13 @@ import React from "react";
 
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import Button from "@nihongo/core/shared/ui/button";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { SlidersHorizontalIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { ScrollView, View, StyleSheet, Pressable } from "react-native";
+import { ScrollView, View, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import {
@@ -96,14 +97,13 @@ const PracticeWelcomePage: React.FC = () => {
       <View style={[styles.container, { paddingTop: insets.top }]}>
         <PageTitle
           icon={
-            <Pressable
-              onPress={() => {
-                triggerHaptic();
-                navigation.navigate(ROUTES.PRACTICE_PREFERENCES);
-              }}
-            >
-              <SlidersHorizontalIcon size={32} color={colors.BgContrast} />
-            </Pressable>
+            <Button
+              color="primary"
+              variant="text"
+              isHapticFeedback
+              icon={<SlidersHorizontalIcon size={32} />}
+              onClick={() => navigation.navigate(ROUTES.PRACTICE_PREFERENCES)}
+            />
           }
         >
           {t("tabs.practice")}

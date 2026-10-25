@@ -4,7 +4,7 @@ import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { RouteProp, useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { useTranslation } from "react-i18next";
@@ -398,7 +398,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
 
       <View style={{ marginBottom: insets.bottom, marginTop: 16, paddingHorizontal: 20 }}>
         <View style={styles.done}>
-          <PrimaryButton isHapticFeedback text={t("result.done")} onClick={home} />
+          <Button color="primary" isHapticFeedback text={t("result.done")} onClick={home} />
         </View>
       </View>
     </View>

@@ -75,7 +75,7 @@ const CardHeader: React.FC<CardHeaderProps> = ({ card, edit, goBack }) => {
       <Container image={image}>
         <ModalHeader
           left={{
-            color: primaryColor,
+            textColor: primaryColor,
             text: edit.isEditing ? t("alert.cancel") : t("common.close"),
             onPress: edit.isEditing ? edit.cancel : goBack,
           }}
@@ -84,7 +84,8 @@ const CardHeader: React.FC<CardHeaderProps> = ({ card, edit, goBack }) => {
           right={
             edit.canEdit
               ? {
-                  color: edit.isSaving ? colors.TextDisabled : primaryColor,
+                  textColor: edit.isSaving ? undefined : primaryColor,
+                  isDisabled: edit.isSaving,
                   text: edit.isEditing ? t("card.save") : t("card.edit"),
                   onPress: edit.isEditing ? edit.save : edit.start,
                 }

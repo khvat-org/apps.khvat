@@ -28,7 +28,7 @@ const English = {
 
     modes: {
       mixed: { title: "Mixed", subtitle: "All at once" },
-      testing: { title: "Test", subtitle: "Choose an answer against the clock" },
+      testing: { title: "Test", subtitle: "Answer against the clock" },
       drawing: { title: "Drawing", subtitle: "Draw the Hiragana/Katakana" },
       listening: { title: "Listening", subtitle: "Select the correct answer" },
       multipleChoice: { title: "Word Selection", subtitle: "Choose the correct answer" },
@@ -92,7 +92,7 @@ const English = {
       title: "Delete account?",
       subtitle:
         "Enter the 6-digit code we sent to your email. This action is permanent and cannot be undone.",
-      confirm: "Delete account",
+      confirm: "Delete",
     },
     displayStatistics: "Show statistics",
     hapticFeedback: "Haptic feedback",

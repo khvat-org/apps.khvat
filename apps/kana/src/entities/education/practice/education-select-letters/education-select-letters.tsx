@@ -2,7 +2,7 @@ import React from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, Text, useWindowDimensions, View } from "react-native";
 
@@ -55,8 +55,9 @@ const EducationKanaSelectedCard: React.FC<EducationKanaSelectedCardProps> = ({ o
         </View>
       </View>
 
-      <PrimaryButton
-        containerStyles={styles.btn}
+      <Button
+        color="primary"
+        style={styles.btn}
         onClick={onSelectKana}
         text={t("selectKana.chooseKana")}
       />

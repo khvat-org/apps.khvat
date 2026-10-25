@@ -41,7 +41,7 @@ const Russian = {
 
     preferences: {
       title: "Настройки",
-      autoplaySound: "Автовоспроизведение звука",
+      autoplaySound: "Автоозвучка",
       questionsCount: "Количество вопросов",
       timer: "Таймер",
       mixMode: "Смешанный режим",
@@ -92,7 +92,7 @@ const Russian = {
       title: "Удалить аккаунт?",
       subtitle:
         "Введите 6-значный код из письма. Действие необратимо — аккаунт и все данные будут удалены.",
-      confirm: "Удалить аккаунт",
+      confirm: "Удалить",
     },
     displayStatistics: "Отображать статистику",
     hapticFeedback: "Виброотклик",

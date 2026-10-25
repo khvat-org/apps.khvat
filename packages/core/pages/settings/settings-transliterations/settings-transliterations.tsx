@@ -80,7 +80,7 @@ const SettingsTransliterationsPage: React.FC = () => {
           right={{
             text: t("common.save"),
             onPress: () => isDirty && onDone(),
-            color: isDirty ? colors.TextPrimary : colors.TextDisabled,
+            isDisabled: !isDirty,
           }}
         />
 

@@ -1,7 +1,6 @@
 import React, { ReactNode, useEffect, useRef } from "react";
 
-import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { createAudioPlayer, type AudioPlayer } from "expo-audio";
 import { SpeakerHighIcon } from "phosphor-react-native";
 import { Pressable } from "react-native";
@@ -16,7 +15,6 @@ interface SoundLetterProps {
 }
 
 const SoundLetter: React.FC<SoundLetterProps> = ({ id, width, children, isAutoPlay }) => {
-  const { colors } = useThemeContext();
   const playerRef = useRef<AudioPlayer | null>(null);
 
   useEffect(() => {
@@ -53,18 +51,18 @@ const SoundLetter: React.FC<SoundLetterProps> = ({ id, width, children, isAutoPl
     }
   };
 
-  const soundIcon = <SpeakerHighIcon size={20} color={colors.BgContrast} />;
+  const soundIcon = <SpeakerHighIcon size={20} />;
 
   if (children) {
     return <Pressable onPress={playSound}>{children}</Pressable>;
   }
 
   return (
-    <SecondaryButton
+    <Button
+      color="secondary"
       isHapticFeedback
       icon={soundIcon}
       width={width}
-      isOutline
       isFullWidth={!width}
       onClick={playSound}
     />

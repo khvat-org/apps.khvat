@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 
 import { getCanvasSize } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -9,9 +9,9 @@ import {
   lettersTableById,
   yoonFlatLettersId,
 } from "@nihongo/core/shared/data/lettersTable";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
-import { RouteProp, useFocusEffect } from "@react-navigation/native";
+import { RouteProp } from "@react-navigation/native";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { CaretLeftIcon, CaretRightIcon, PencilSimpleIcon } from "phosphor-react-native";
@@ -81,11 +81,11 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
   const [letterKana, setLetterKana] = useState(kanaFromParams);
   const [currentScreen, setCurrentScreen] = useState(isOnlyDrawing ? Screen.Draw : Screen.Symbol);
 
-  const leftIcon = <CaretLeftIcon color={colors.BgContrast} size={20} />;
+  const leftIcon = <CaretLeftIcon size={20} />;
 
-  const rightIcon = <CaretRightIcon color={colors.BgContrast} size={20} />;
+  const rightIcon = <CaretRightIcon size={20} />;
 
-  const pencilIcon = <PencilSimpleIcon size={20} color={colors.BgContrast} />;
+  const pencilIcon = <PencilSimpleIcon size={20} />;
 
   const flatLetters = useMemo(
     () => [
@@ -104,18 +104,6 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
     letterKana === KanaAlphabet.Hiragana ? t("kana.hiragana") : t("kana.katakana");
 
   const switchButtonText = `${letterKana === KanaAlphabet.Hiragana ? t("kana.katakana") : t("kana.hiragana")}`;
-
-  const isDarkTheme = colors._theme === "dark";
-
-  useFocusEffect(
-    useCallback(() => {
-      StatusBar.setBarStyle("light-content");
-
-      return () => {
-        StatusBar.setBarStyle(isDarkTheme ? "light-content" : "dark-content");
-      };
-    }, [isDarkTheme]),
-  );
 
   const active = lettersTableById[letterId];
   const activeIndex = flatLetters.findIndex((element) => element === active.id);
@@ -157,6 +145,7 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
 
   return (
     <>
+      <StatusBar barStyle="light-content" />
       <ModalHeader
         left={{
           text: currentScreen === Screen.Draw ? t("common.back") : t("common.close"),
@@ -211,10 +200,10 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
                   <View style={[styles.buttons, { paddingLeft: 0, paddingRight: 0 }]}>
                     <SoundLetter id={letter.id} />
 
-                    <SecondaryButton
+                    <Button
+                      color="secondary"
                       isHapticFeedback
                       icon={pencilIcon}
-                      isOutline
                       isFullWidth
                       onClick={goToDrawScreen}
                     />
@@ -239,27 +228,25 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
           <View style={{ width: "100%", maxWidth: width > canvasSize ? canvasSize : width - 32 }}>
             {!isOnlyDrawing && (
               <View style={[styles.buttons]}>
-                <SecondaryButton
+                <Button
+                  color="secondary"
                   isHapticFeedback
                   icon={leftIcon}
-                  isOutline
-                  width={50}
                   onClick={() => prevLetter()}
                 />
 
-                <SecondaryButton
+                <Button
+                  color="secondary"
                   isHapticFeedback
                   text={switchButtonText}
-                  isOutline
                   isFullWidth
                   onClick={switchKana}
                 />
 
-                <SecondaryButton
+                <Button
+                  color="secondary"
                   isHapticFeedback
                   icon={rightIcon}
-                  isOutline
-                  width={50}
                   onClick={() => nextLetter()}
                 />
               </View>

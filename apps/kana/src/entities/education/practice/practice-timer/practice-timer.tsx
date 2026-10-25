@@ -119,6 +119,7 @@ const makeStyles = (colors: ColorsType) =>
       justifyContent: "space-between",
       alignItems: "center",
       gap: 16,
+      marginTop: 8,
     },
     timerContainer: {
       flex: 1,

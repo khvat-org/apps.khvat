@@ -41,7 +41,7 @@ const German = {
 
     preferences: {
       title: "Einstellungen",
-      autoplaySound: "Ton automatisch abspielen",
+      autoplaySound: "Auto-Wiedergabe",
       questionsCount: "Anzahl der Fragen",
       timer: "Timer",
       mixMode: "Gemischter Modus",
@@ -92,7 +92,7 @@ const German = {
       title: "Konto löschen?",
       subtitle:
         "Gib den 6-stelligen Code aus der E-Mail ein. Diese Aktion ist unwiderruflich – Konto und alle Daten werden gelöscht.",
-      confirm: "Konto löschen",
+      confirm: "Löschen",
     },
     displayStatistics: "Statistiken anzeigen",
     hapticFeedback: "Haptisches Feedback",

@@ -10,9 +10,7 @@ import { Typography } from "../../typography";
 interface SectionProps {
   title: string;
   buttons?: JSX.Element[];
-  // content: React.JSX.Element;
 
-  /** Ключ хранилища для свёрнутого/развёрнутого состояния, напр. "memoboard.card.examples.show" */
   stateKey?: string;
 
   children: ReactNode;

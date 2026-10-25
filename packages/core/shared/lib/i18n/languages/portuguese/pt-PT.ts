@@ -28,7 +28,7 @@ const PortuguesePT = {
 
     modes: {
       mixed: { title: "Misto", subtitle: "Tudo de uma vez" },
-      testing: { title: "Teste", subtitle: "Escolha uma resposta contra o tempo" },
+      testing: { title: "Teste", subtitle: "Responda contra o tempo" },
       drawing: { title: "Desenho", subtitle: "Desenhe o Hiragana/Katakana" },
       listening: { title: "Audição", subtitle: "Selecione a resposta correta" },
       multipleChoice: { title: "Seleção de palavra", subtitle: "Escolha a resposta correta" },
@@ -41,7 +41,7 @@ const PortuguesePT = {
 
     preferences: {
       title: "Preferências",
-      autoplaySound: "Reproduzir som automaticamente",
+      autoplaySound: "Som automático",
       questionsCount: "Número de perguntas",
       timer: "Temporizador",
       mixMode: "Modo misto",
@@ -92,7 +92,7 @@ const PortuguesePT = {
       title: "Eliminar conta?",
       subtitle:
         "Introduza o código de 6 dígitos que enviámos para o seu e-mail. Esta ação é permanente e irreversível.",
-      confirm: "Eliminar conta",
+      confirm: "Eliminar",
     },
     displayStatistics: "Mostrar estatísticas",
     hapticFeedback: "Feedback háptico",

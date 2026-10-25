@@ -97,19 +97,12 @@ const PracticeAudio: React.FC<EducationPracticeSelectAnswersProps> = ({
   return (
     <>
       <View style={styles.buttonContainer}>
-        <View
-          style={{
-            marginTop: 26,
-          }}
-        >
-          <SoundLetter isAutoPlay={preferences.autoplaySound} id={question.id}>
-            <View style={styles.button}>
-              <SpeakerHighIcon size={64} color={colors.BgContrast} />
-            </View>
-          </SoundLetter>
-        </View>
-
         <Text style={styles.subText}>{t("practice.playAudio")}</Text>
+        <SoundLetter isAutoPlay={preferences.autoplaySound} id={question.id}>
+          <View style={styles.button}>
+            <SpeakerHighIcon size={64} color={colors.BgContrast} />
+          </View>
+        </SoundLetter>
       </View>
       <View style={styles.container} onLayout={onLayout}>
         <View style={styles.content}>
@@ -186,8 +179,8 @@ const makeStyles = (colors: ColorsType) =>
     },
     button: {
       backgroundColor: colors.BgSecondary,
-      width: 104,
-      height: 104,
+      width: 112,
+      height: 112,
 
       justifyContent: "center",
       alignItems: "center",
@@ -197,7 +190,11 @@ const makeStyles = (colors: ColorsType) =>
     },
     subText: {
       ...Typography.boldDefault,
-      color: colors.TextSecondary,
+      color: colors.TextPrimary,
+
+      textAlign: "center",
+      marginTop: 32,
+      marginBottom: 32,
     },
   });
 

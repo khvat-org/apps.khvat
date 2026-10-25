@@ -48,7 +48,7 @@ const BorderLetterExercise: React.FC<borderLetterProps> = ({
         onLayout={measureDrawTop}
         style={{
           borderRadius: 12,
-          marginTop: marginTop !== undefined ? marginTop : 30,
+          marginTop: marginTop !== undefined ? marginTop : 16,
         }}
       >
         <Draw

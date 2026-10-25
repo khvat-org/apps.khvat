@@ -20,6 +20,8 @@ const loadDatePicker = (): DatePickerComponent | null => {
 
 const MIN_YEAR = 1900;
 
+const CODE_LENGTH = 6;
+
 const maskDateInput = (raw: string) => {
   const digits = raw.replace(/\D/g, "").slice(0, 8);
 
@@ -66,6 +68,7 @@ interface InputProps {
 
   isSecure?: boolean;
   isAge?: boolean;
+  isCode?: boolean;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -75,6 +78,7 @@ const Input: React.FC<InputProps> = ({
   autoFocus,
   isSecure,
   isAge,
+  isCode,
   error,
 }) => {
   const { colors } = useThemeContext();
@@ -159,6 +163,12 @@ const Input: React.FC<InputProps> = ({
           value={value}
           autoFocus={autoFocus}
           secureTextEntry={secureText}
+          {...(isCode && {
+            keyboardType: "number-pad",
+            textContentType: "oneTimeCode",
+            autoComplete: "one-time-code",
+            maxLength: CODE_LENGTH,
+          })}
         />
 
         {isSecure && (

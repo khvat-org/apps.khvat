@@ -35,13 +35,12 @@ const makeStyles = (colors: ColorsType) =>
     rules: {
       width: "100%",
       flexDirection: "column",
-      borderWidth: 1,
       borderRadius: 12,
       marginTop: 16,
       marginBottom: 16,
       paddingLeft: 16,
       paddingRight: 16,
-      borderColor: colors.BorderDefault,
+      backgroundColor: colors.BgSecondary,
     },
     textContainer: {
       paddingTop: 10,

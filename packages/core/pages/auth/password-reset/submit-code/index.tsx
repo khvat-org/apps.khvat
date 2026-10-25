@@ -5,8 +5,7 @@ import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import Input from "@nihongo/core/shared/ui/input";
 import KeyboardScrollLayout from "@nihongo/core/shared/ui/layouts/keyboard-scroll-layout";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
@@ -147,22 +146,24 @@ export const ResetPasswordSubmitCodePage: React.FC = () => {
       <View style={styles.inputs}>
         <Input
           placeholder={t("auth.fields.code")}
+          isCode
           onChange={onChangeCode}
           error={error ? t(`auth.errors.${error}`) : undefined}
         />
       </View>
 
-      <PrimaryButton
+      <Button
+        color="primary"
         onClick={verify}
         isDisabled={!isCodeValid || submitting}
-        containerStyles={styles.submitButton}
+        style={styles.submitButton}
         text={t("auth.verifyEmail.submit")}
       />
-      <SecondaryButton
-        isOutline
+      <Button
+        color="secondary"
         onClick={resend}
         isDisabled={cooldown > 0 || resending}
-        containerStyles={[styles.submitButton, { marginTop: 8 }]}
+        style={[styles.submitButton, { marginTop: 8 }]}
         text={resendLabel}
       />
     </KeyboardScrollLayout>

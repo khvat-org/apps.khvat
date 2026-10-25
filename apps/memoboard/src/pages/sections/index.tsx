@@ -6,7 +6,7 @@ import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { useTranslation } from "react-i18next";
-import { View, Text, StyleSheet, Pressable } from "react-native";
+import { View, Text, StyleSheet, Pressable, StatusBar } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -47,6 +47,7 @@ const SectionsPage: React.FC = () => {
 
   return (
     <>
+      <StatusBar barStyle="light-content" />
       <ModalHeader
         left={{
           text: t("common.close"),

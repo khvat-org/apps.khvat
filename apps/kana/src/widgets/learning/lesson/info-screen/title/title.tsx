@@ -32,7 +32,6 @@ const makeStyles = (colors: ColorsType) =>
       alignItems: "center",
       flexDirection: "column",
       marginBottom: 32,
-      gap: 8,
     },
     title: {
       ...Typography.H3,

@@ -1,7 +1,6 @@
 import React from "react";
 
-import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { SelectionIcon, SelectionSlashIcon } from "phosphor-react-native";
 
 import { useDrawBorder } from "@/features/drawing/model/hooks";
@@ -9,21 +8,12 @@ import { useDrawBorder } from "@/features/drawing/model/hooks";
 const ToggleShowBorders: React.FC = () => {
   const { isShowBorder, toggleBorder } = useDrawBorder();
 
-  const { colors } = useThemeContext();
-
   return (
-    <SecondaryButton
+    <Button
+      color={isShowBorder ? "accent" : "secondary"}
       isHapticFeedback
-      icon={
-        !isShowBorder ? (
-          <SelectionSlashIcon size={20} color={isShowBorder ? colors.BgWhite : colors.BgContrast} />
-        ) : (
-          <SelectionIcon size={20} color={isShowBorder ? colors.BgWhite : colors.BgContrast} />
-        )
-      }
-      isOutline={!isShowBorder}
+      icon={!isShowBorder ? <SelectionSlashIcon size={20} /> : <SelectionIcon size={20} />}
       onClick={toggleBorder}
-      width={50}
     />
   );
 };

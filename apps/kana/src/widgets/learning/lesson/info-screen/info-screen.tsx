@@ -1,7 +1,7 @@
 import React, { useMemo, useRef, useState } from "react";
 
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { useTranslation } from "react-i18next";
 import { ScrollView, StyleSheet, useWindowDimensions, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -127,14 +127,17 @@ const InfoScreen: React.FC<InfoScreenProps> = ({ next, finish, title, blocks, is
           ]}
         >
           {!isLast && (
-            <PrimaryButton
+            <Button
+              color="primary"
               isHapticFeedback
               isFullWidth
               text={t("common.next")}
               onClick={nextScreen}
             />
           )}
-          {isLast && <PrimaryButton isFullWidth text={t("common.complete")} onClick={finish} />}
+          {isLast && (
+            <Button color="primary" isFullWidth text={t("common.complete")} onClick={finish} />
+          )}
         </View>
       </View>
     );
@@ -159,7 +162,7 @@ const InfoScreen: React.FC<InfoScreenProps> = ({ next, finish, title, blocks, is
           width: "100%",
         }}
       >
-        <LearningTitle>{title}</LearningTitle>
+        <LearningTitle style={{ marginBottom: 16 }}>{title}</LearningTitle>
 
         <View style={styles.blocksContainer}>
           <View style={styles.blocks}>

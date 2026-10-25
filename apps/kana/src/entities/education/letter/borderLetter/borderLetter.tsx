@@ -37,7 +37,7 @@ const BorderLetter: React.FC<borderLetterProps> = ({ id, kana, marginTop }) => {
           width: canvasSize,
           backgroundColor: colors.BgSecondary,
           borderRadius: 12,
-          marginTop: marginTop !== undefined ? marginTop : 30,
+          marginTop: marginTop !== undefined ? marginTop : 16,
         }}
       >
         <Symbol id={id} kana={kana} />

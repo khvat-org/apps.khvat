@@ -91,7 +91,7 @@ const Korean = {
       title: "계정을 삭제하시겠습니까?",
       subtitle:
         "이메일로 받은 6자리 코드를 입력하세요. 이 작업은 되돌릴 수 없으며 계정과 모든 데이터가 삭제됩니다.",
-      confirm: "계정 삭제",
+      confirm: "삭제",
     },
     displayStatistics: "통계 표시",
     hapticFeedback: "햅틱 피드백",

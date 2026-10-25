@@ -6,13 +6,13 @@ import { AUTH_ROUTES, AuthParamList } from "@nihongo/core/features/auth/routes";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useGatewayUrl } from "@nihongo/core/shared/lib/api-gateway";
 import { Typography } from "@nihongo/core/shared/typography";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import Input from "@nihongo/core/shared/ui/input";
 import KeyboardScrollLayout from "@nihongo/core/shared/ui/layouts/keyboard-scroll-layout";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { useTranslation } from "react-i18next";
-import { View, StyleSheet, Pressable, Text, Linking } from "react-native";
+import { View, StyleSheet, Text, Linking } from "react-native";
 import { z } from "zod";
 
 const ageFromDateString = (value: string): number => {
@@ -214,10 +214,11 @@ export const SignUpPage: React.FC = () => {
         />
       </View>
 
-      <PrimaryButton
+      <Button
+        color="primary"
         onClick={next}
         isDisabled={(submitted && !isValid) || submitting}
-        containerStyles={styles.submitButton}
+        style={styles.submitButton}
         text={t("auth.signUp.submit")}
       />
 
@@ -235,23 +236,17 @@ export const SignUpPage: React.FC = () => {
           {t("auth.agreement.prefix")}
         </Text>
 
-        <Pressable
-          onPress={() => {
+        <Button
+          color="primary"
+          variant="text"
+          size="sm"
+          isHapticFeedback
+          text={t("auth.agreement.terms")}
+          onClick={() => {
             if (termsUrl) Linking.openURL(termsUrl);
           }}
-          style={{ height: 20, margin: 0, padding: 0, alignItems: "center" }}
-        >
-          {({ pressed }) => (
-            <Text
-              style={[
-                styles.link,
-                { color: pressed ? colors.TextPrimaryPressed : colors.TextPrimary },
-              ]}
-            >
-              {t("auth.agreement.terms")}
-            </Text>
-          )}
-        </Pressable>
+          style={{ height: 20 }}
+        />
 
         <Text
           style={{
@@ -266,23 +261,17 @@ export const SignUpPage: React.FC = () => {
           {" & "}
         </Text>
 
-        <Pressable
-          onPress={() => {
+        <Button
+          color="primary"
+          variant="text"
+          size="sm"
+          isHapticFeedback
+          text={t("auth.agreement.privacy")}
+          onClick={() => {
             if (privacyPolicyUrl) Linking.openURL(privacyPolicyUrl);
           }}
-          style={{ height: 20, margin: 0, padding: 0, alignItems: "center" }}
-        >
-          {({ pressed }) => (
-            <Text
-              style={[
-                styles.link,
-                { color: pressed ? colors.TextPrimaryPressed : colors.TextPrimary },
-              ]}
-            >
-              {t("auth.agreement.privacy")}
-            </Text>
-          )}
-        </Pressable>
+          style={{ height: 20 }}
+        />
       </View>
     </KeyboardScrollLayout>
   );
@@ -328,9 +317,5 @@ const makeStyles = (colors: ColorsType) =>
       justifyContent: "center",
 
       maxWidth: 360,
-    },
-    link: {
-      ...Typography.boldLabel,
-      color: colors.TextPrimary,
     },
   });

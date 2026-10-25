@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import PrimaryButton from "@nihongo/core/shared/ui/buttons/Primary/primary-button";
-import SecondaryButton from "@nihongo/core/shared/ui/buttons/Secondary/secondary-button";
+import Button from "@nihongo/core/shared/ui/button";
 import { BlurView } from "expo-blur";
 import { useTranslation } from "react-i18next";
 import { Pressable, StyleSheet, View } from "react-native";
@@ -60,13 +59,15 @@ const ProfileWidgetFrame: React.FC<ProfileWidgetFrameProps> = ({ children, onHid
               <Pressable style={StyleSheet.absoluteFill} onPress={close} />
 
               <View style={styles.actions}>
-                <PrimaryButton
+                <Button
+                  color="primary"
                   isHapticFeedback
                   width="100%"
                   text={t("profile.widgets.hide")}
                   onClick={hide}
                 />
-                <SecondaryButton
+                <Button
+                  color="accent"
                   isHapticFeedback
                   width="100%"
                   text={t("alert.cancel")}
