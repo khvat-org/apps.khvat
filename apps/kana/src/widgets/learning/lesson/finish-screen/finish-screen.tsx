@@ -35,10 +35,8 @@ const FinishScreen: React.FC<FinishScreenProps> = ({ next, retry }) => {
   return (
     <View style={styles.container}>
       <View style={styles.titleContainer}>
-        <LearningTitle style={[Typography.H3, { marginBottom: 16 }]}>
-          {t("lesson.learningComplete")}
-        </LearningTitle>
-        <LearningTitle style={[Typography.regularLabel, { color: colors.TextSecondary }]}>
+        <LearningTitle style={[Typography.H3]}>{t("lesson.learningComplete")}</LearningTitle>
+        <LearningTitle style={[Typography.regularDefault, { color: colors.TextSecondary }]}>
           {t("lesson.practiceEveryDay")}
         </LearningTitle>
       </View>

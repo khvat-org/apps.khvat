@@ -162,7 +162,7 @@ const InfoScreen: React.FC<InfoScreenProps> = ({ next, finish, title, blocks, is
           width: "100%",
         }}
       >
-        <LearningTitle style={{ marginBottom: 16 }}>{title}</LearningTitle>
+        <LearningTitle>{title}</LearningTitle>
 
         <View style={styles.blocksContainer}>
           <View style={styles.blocks}>
@@ -262,8 +262,6 @@ const styles = StyleSheet.create({
   },
 
   blocks: {
-    gap: 16,
-
     width: "100%",
     maxWidth: TABLET_WIDTH,
   },

@@ -3,6 +3,7 @@ import React, { useMemo, useState } from "react";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { toDateKey } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { Typography } from "@nihongo/core/shared/typography";
 import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet, LayoutChangeEvent, useWindowDimensions } from "react-native";
 
@@ -164,12 +165,17 @@ const makeStyles = (colors: ColorsType) =>
     },
     infoItem: {
       flexDirection: "row",
+      alignItems: "center",
     },
     infoText: {
       color: colors.TextPrimary,
+
+      ...Typography.boldLabel,
     },
     infoTextAccent: {
-      color: colors.TextSecondary,
+      color: colors.TextAccent,
+
+      ...Typography.boldLabel,
     },
     graphWrapper: {
       alignItems: "flex-end",

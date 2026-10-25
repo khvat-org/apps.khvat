@@ -98,6 +98,6 @@ const makeStyles = (colors: ColorsType) =>
     content: {
       width: "100%",
       alignItems: "center",
-      paddingHorizontal: 24,
+      paddingHorizontal: 16,
     },
   });

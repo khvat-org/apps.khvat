@@ -171,9 +171,13 @@ const SettingItem: React.FC<SettingItemProps> = ({
         </View>
       )}
 
-      {link && !hideArrow && <CaretRightIcon color={colors.BgGray} size={20} />}
+      {link && !hideArrow && (
+        <CaretRightIcon color={colors.BgGray} size={20} style={styles.arrow} />
+      )}
 
-      {onClick !== undefined && !hideArrow && <CaretRightIcon color={colors.BgGray} size={20} />}
+      {onClick !== undefined && !hideArrow && (
+        <CaretRightIcon color={colors.BgGray} size={20} style={styles.arrow} />
+      )}
     </Pressable>
   );
 };
@@ -186,6 +190,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     paddingRight: 16,
+  },
+  arrow: {
+    marginLeft: 16,
   },
   switchContainer: {
     marginLeft: 16,

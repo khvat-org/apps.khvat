@@ -34,10 +34,14 @@ const makeStyles = (colors: ColorsType) =>
       marginBottom: 32,
     },
     title: {
-      ...Typography.H3,
+      width: "100%",
+      textAlign: "center",
+
+      ...Typography.H2,
       color: colors.TextPrimary,
     },
     subtitle: {
+      marginTop: 8,
       ...Typography.boldDefault,
       color: colors.TextSecondary,
     },

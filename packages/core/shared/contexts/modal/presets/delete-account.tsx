@@ -167,15 +167,18 @@ const makeStyles = (color: ColorsType) =>
       color: color.TextPrimary,
       ...Typography.H4,
       textAlign: "center",
+      marginTop: 8,
+      paddingHorizontal: 16,
     },
     subtitle: {
       color: color.TextPrimary,
       ...Typography.regularDefault,
       textAlign: "center",
       marginTop: 8,
+      paddingHorizontal: 16,
     },
     input: {
-      marginTop: 16,
+      marginTop: 32,
     },
     buttons: {
       marginTop: 16,

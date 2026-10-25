@@ -72,7 +72,6 @@ const makeStyles = (color: ColorsType) =>
       borderRadius: 12,
       padding: 0,
       paddingLeft: 16,
-      paddingRight: 16,
       backgroundColor: color.BgContrastSecondary,
       marginTop: 16,
     },

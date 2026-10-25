@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
-import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import Button from "@nihongo/core/shared/ui/button";
-import { BlurView } from "expo-blur";
 import { useTranslation } from "react-i18next";
 import { Pressable, StyleSheet, View } from "react-native";
 import {
@@ -22,6 +21,7 @@ const LONG_PRESS_MS = 450;
 const ProfileWidgetFrame: React.FC<ProfileWidgetFrameProps> = ({ children, onHide }) => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
+  const styles = makeStyles(colors);
   const { triggerHaptic } = useHaptic();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,11 +51,6 @@ const ProfileWidgetFrame: React.FC<ProfileWidgetFrameProps> = ({ children, onHid
 
           {isMenuOpen && (
             <View style={styles.overlay}>
-              <BlurView
-                intensity={30}
-                tint={colors._theme === "dark" ? "dark" : "light"}
-                style={StyleSheet.absoluteFill}
-              />
               <Pressable style={StyleSheet.absoluteFill} onPress={close} />
 
               <View style={styles.actions}>
@@ -67,7 +62,7 @@ const ProfileWidgetFrame: React.FC<ProfileWidgetFrameProps> = ({ children, onHid
                   onClick={hide}
                 />
                 <Button
-                  color="accent"
+                  color="secondary"
                   isHapticFeedback
                   width="100%"
                   text={t("alert.cancel")}
@@ -82,20 +77,23 @@ const ProfileWidgetFrame: React.FC<ProfileWidgetFrameProps> = ({ children, onHid
   );
 };
 
-const styles = StyleSheet.create({
-  overlay: {
-    ...StyleSheet.absoluteFill,
-    borderRadius: 12,
-    overflow: "hidden",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: 16,
-  },
-  actions: {
-    gap: 8,
-    width: "100%",
-    maxWidth: 360,
-  },
-});
+const makeStyles = (colors: ColorsType) =>
+  StyleSheet.create({
+    overlay: {
+      ...StyleSheet.absoluteFill,
+      borderRadius: 12,
+      overflow: "hidden",
+      alignItems: "center",
+      justifyContent: "center",
+      padding: 16,
+
+      backgroundColor: colors.BgModal,
+    },
+    actions: {
+      gap: 8,
+      width: "100%",
+      maxWidth: 360,
+    },
+  });
 
 export default ProfileWidgetFrame;

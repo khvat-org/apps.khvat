@@ -208,7 +208,7 @@ const makeStyles = (colors: ColorsType) =>
       width: "100%",
       maxWidth: TABLET_WIDTH,
       alignSelf: "center",
-      gap: 16,
+      gap: 8,
     },
   });
 

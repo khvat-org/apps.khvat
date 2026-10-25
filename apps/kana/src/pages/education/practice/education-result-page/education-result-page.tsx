@@ -417,7 +417,7 @@ const makeStyles = (colors: ColorsType) =>
     header: {
       backgroundColor: colors.BgPrimary,
       flexDirection: "column",
-      paddingTop: 16,
+      paddingTop: 8,
       borderBottomLeftRadius: 24,
       borderBottomRightRadius: 24,
       paddingBottom: 16,

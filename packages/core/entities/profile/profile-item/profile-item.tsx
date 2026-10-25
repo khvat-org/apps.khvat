@@ -47,7 +47,7 @@ const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
     container: {
       flexDirection: "row",
-      gap: 16,
+      gap: 12,
     },
     avatar: {
       width: 64,
