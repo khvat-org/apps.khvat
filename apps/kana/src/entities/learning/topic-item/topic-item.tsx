@@ -1,19 +1,59 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useFileUrl } from "@nihongo/core/shared/lib/api-gateway";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import { useTranslation } from "react-i18next";
-import { StyleSheet, Text, View, Image, ImageStyle, Pressable } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  ImageErrorEvent,
+  ImageStyle,
+  Pressable,
+} from "react-native";
 
 const isImageIcon = (icon: string) =>
   /^https?:\/\//i.test(icon) || /\.(png|jpe?g|webp|gif)$/i.test(icon);
 
+const ICON_RETRIES = 2;
+const ICON_RETRY_DELAY = 1_500;
+
 const IconImage: React.FC<{ src: string; style: ImageStyle }> = ({ src, style }) => {
   const uri = useFileUrl(src);
+  const [attempt, setAttempt] = useState(0);
 
-  return <Image style={style} source={uri ? { uri } : undefined} />;
+  const retryTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    setAttempt(0);
+
+    return () => {
+      if (retryTimer.current) clearTimeout(retryTimer.current);
+    };
+  }, [uri]);
+
+  const onError = (event: ImageErrorEvent) => {
+    console.log("[lessons] icon load failed", { uri, attempt, error: event.nativeEvent.error });
+
+    if (attempt >= ICON_RETRIES) return;
+
+    retryTimer.current = setTimeout(
+      () => setAttempt((prev) => prev + 1),
+      ICON_RETRY_DELAY * (attempt + 1),
+    );
+  };
+
+  return (
+    <Image
+      key={`${uri}-${attempt}`}
+      style={style}
+      source={uri ? { uri } : undefined}
+      onError={onError}
+    />
+  );
 };
 
 interface TopicItemProps {

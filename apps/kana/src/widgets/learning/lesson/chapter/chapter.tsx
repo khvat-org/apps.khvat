@@ -63,7 +63,7 @@ const Chapter: React.FC<ChapterProps> = ({ lessons, title, startLesson }) => {
 
       {lessons.map((item, index) => (
         <TopicItem
-          key={item.id}
+          key={item.lesson_key}
           isPassed={completedLessons.includes(item.lesson_key)}
           isOpened={activeLesson === item.id}
           isLast={index + 1 === lessons.length}
