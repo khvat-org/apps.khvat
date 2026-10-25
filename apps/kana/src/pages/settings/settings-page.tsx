@@ -84,10 +84,6 @@ const SettingsPage: React.FC = () => {
           <SettingsTheme toThemeSettingPage={() => navigation.navigate(ROUTES.SETTINGS_THEME)} />
         </SettingsSection>
 
-        <SettingsWidgetsSection
-          toWidgetsSettingPage={() => navigation.navigate(ROUTES.SETTINGS_WIDGETS)}
-        />
-
         <SettingsSection>
           <SettingsLanguage
             goToLanguageSettingsPage={() => navigation.navigate(ROUTES.SETTINGS_LANGUAGE)}
@@ -98,6 +94,10 @@ const SettingsPage: React.FC = () => {
             }
           />
         </SettingsSection>
+
+        <SettingsWidgetsSection
+          toWidgetsSettingPage={() => navigation.navigate(ROUTES.SETTINGS_WIDGETS)}
+        />
 
         <StoreReviewLink iosId="id6479753061" packageName={process.env.ANDROID_PACKAGE} />
 

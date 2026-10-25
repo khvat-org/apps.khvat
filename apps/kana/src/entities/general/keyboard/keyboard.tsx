@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
-import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import {
   Transliterations,
   useTransliterationsContext,
@@ -36,7 +36,7 @@ const CustomKeyboard: React.FC<KeyboardProps> = ({ setValue, onSubmit, disable }
   const { width } = useWindowDimensions();
   const { t } = useTranslation();
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors);
+  const styles = makeStyles();
   const { triggerHaptic } = useHaptic();
   const { transliterations } = useTransliterationsContext();
 
@@ -94,11 +94,6 @@ const CustomKeyboard: React.FC<KeyboardProps> = ({ setValue, onSubmit, disable }
         },
       ]}
     >
-      <View style={styles.keyboardHeader}>
-        <View style={styles.keyboardCell} />
-        <View style={styles.keyboardCell} />
-      </View>
-
       {keyboard.map((row, index) => (
         <View style={styles.row} key={`keyboard_row/${index}`}>
           {row.map((item) => (
@@ -188,25 +183,10 @@ const CustomKeyboard: React.FC<KeyboardProps> = ({ setValue, onSubmit, disable }
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = () =>
   StyleSheet.create({
     container: {
       marginTop: 0,
-    },
-
-    keyboardHeader: {
-      width: "100%",
-      height: 50,
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "space-around",
-      paddingHorizontal: 70,
-    },
-
-    keyboardCell: {
-      width: 1,
-      height: "50%",
-      backgroundColor: colors.BorderDefault,
     },
 
     row: {

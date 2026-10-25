@@ -65,18 +65,12 @@ const LinearProgressBar: React.FC<ProgressBarProp> = ({
   return (
     <View style={styles.progressBarContainer}>
       <View style={styles.progressBarLine}>
-        {Array.from({ length: all }, (_, index) => index).map((item) => (
-          <View
-            style={[
-              styles.progressBarLineActive,
-              {
-                width: `${100 / all}%`,
-                backgroundColor: current > item ? colors.BgContrast : colors.BgSecondary,
-              },
-            ]}
-            key={`progress-bar-item-${item}`}
-          ></View>
-        ))}
+        <View
+          style={[
+            styles.progressBarLineActive,
+            { width: `${all > 0 ? (Math.min(current, all) / all) * 100 : 0}%` },
+          ]}
+        />
       </View>
       <View style={styles.progressBarBottom}>
         <Button
@@ -123,15 +117,14 @@ const makeStyles = (colors: ColorsType) =>
     },
     progressBarLine: {
       width: "100%",
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "space-between",
-      backgroundColor: colors.BgLightGray,
+      height: 4,
+      backgroundColor: colors.BgSecondary,
       borderRadius: 2,
     },
     progressBarLineActive: {
       height: 4,
       borderRadius: 2,
+      backgroundColor: colors.BgContrast,
     },
     progressBarBottom: {
       width: "100%",

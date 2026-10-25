@@ -224,6 +224,7 @@ const makeStyles = (colors: ColorsType) =>
       alignSelf: "flex-start",
 
       marginTop: 16,
+      marginBottom: 8,
     },
     indicatorRound: {
       backgroundColor: colors.transparent,
