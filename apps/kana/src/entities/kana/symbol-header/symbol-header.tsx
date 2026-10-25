@@ -60,8 +60,8 @@ const SymbolHeader: React.FC<SymbolHeaderProps> = ({ letter, kana, indicatorColo
             width: 6,
             height: 6,
             borderRadius: 6,
-            top: 16,
-            right: -5,
+            top: 5,
+            right: -10,
           }}
         />
       )}
