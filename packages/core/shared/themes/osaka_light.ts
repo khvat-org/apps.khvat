@@ -11,7 +11,7 @@ const osakaLightTheme: Colors = {
   BgDarkGray: "#3A3B28",
   BgDisabled: "#BBB681",
   BgContrast: "#2C2C26",
-  BgContrastPressed: "#1F1F1B",
+  BgContrastPressed: "#3A3B28",
   BgContrastSecondary: "#1F1F1B",
   BgWhite: "#FFFFFF",
   BgModal: "#00000080",
@@ -30,7 +30,7 @@ const osakaLightTheme: Colors = {
 
   // Text
   TextPrimary: "#2C2C26",
-  TextPrimaryPressed: "#1F1F1B",
+  TextPrimaryPressed: "#76724F",
   TextSecondary: "#76724F",
   TextSecondaryPressed: "#3A3B28",
   TextDisabled: "#BBB681",

@@ -11,7 +11,7 @@ const lightTheme: Colors = {
   BgDarkGray: "#363636",
   BgDisabled: "#BBBBBB",
   BgContrast: "#2A2A2A",
-  BgContrastPressed: "#1E1E1E",
+  BgContrastPressed: "#363636",
   BgContrastSecondary: "#1E1E1E",
   BgWhite: "#FFFFFF",
   BgModal: "#00000080",
@@ -30,7 +30,7 @@ const lightTheme: Colors = {
 
   // Text
   TextPrimary: "#2A2A2A",
-  TextPrimaryPressed: "#1E1E1E",
+  TextPrimaryPressed: "#757575",
   TextSecondary: "#757575",
   TextSecondaryPressed: "#363636",
   TextDisabled: "#BBBBBB",

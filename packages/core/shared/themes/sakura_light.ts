@@ -11,7 +11,7 @@ const sakuraLightTheme: Colors = {
   BgDarkGray: "#392626",
   BgDisabled: "#BA9695",
   BgContrast: "#2D2424",
-  BgContrastPressed: "#1F1717",
+  BgContrastPressed: "#392626",
   BgContrastSecondary: "#1F1717",
   BgWhite: "#FFFFFF",
   BgModal: "#00000080",
@@ -30,7 +30,7 @@ const sakuraLightTheme: Colors = {
 
   // Text
   TextPrimary: "#2D2424",
-  TextPrimaryPressed: "#1F1717",
+  TextPrimaryPressed: "#76504F",
   TextSecondary: "#76504F",
   TextSecondaryPressed: "#392626",
   TextDisabled: "#BA9695",

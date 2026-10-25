@@ -11,7 +11,7 @@ const hokkaidoLightTheme: Colors = {
   BgDarkGray: "#27363B",
   BgDisabled: "#82ADBA",
   BgContrast: "#1F292D",
-  BgContrastPressed: "#141B1E",
+  BgContrastPressed: "#27363B",
   BgContrastSecondary: "#141B1E",
   BgWhite: "#FFFFFF",
   BgModal: "#00000080",
@@ -30,7 +30,7 @@ const hokkaidoLightTheme: Colors = {
 
   // Text
   TextPrimary: "#1F292D",
-  TextPrimaryPressed: "#141B1E",
+  TextPrimaryPressed: "#506D75",
   TextSecondary: "#506D75",
   TextSecondaryPressed: "#27363B",
   TextDisabled: "#82ADBA",

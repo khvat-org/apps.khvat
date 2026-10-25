@@ -319,7 +319,6 @@ const Draw: React.FC<DrawProps> = ({
 
               {IS_SAVE && (
                 <Button
-                  color="accent"
                   icon={<FloppyDiskIcon size={20} />}
                   onClick={() => {
                     const symbol = kana === KanaAlphabet.Hiragana ? letter.hi : letter.ka;

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { View, StyleSheet, Text } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { ColorsType, useThemeContext } from "../../contexts/theme/theme-context";
 import { Typography } from "../../typography";
@@ -27,18 +27,10 @@ export const ModalHeader: React.FC<ModalHeaderProps> = ({ left, title, titleColo
   const insets = useSafeAreaInsets();
 
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors);
+  const styles = makeStyles(colors, insets);
 
   return (
-    <View
-      style={[
-        styles.header,
-        {
-          paddingLeft: insets.left + 16,
-          paddingRight: insets.right + 16,
-        },
-      ]}
-    >
+    <View style={styles.header}>
       <Button
         color={left?.color ?? "secondary"}
         variant="text"
@@ -47,7 +39,7 @@ export const ModalHeader: React.FC<ModalHeaderProps> = ({ left, title, titleColo
         text={left?.text}
         onClick={left?.onPress}
         style={[styles.button, { justifyContent: "flex-start" }]}
-        textStyle={[styles.buttonText, left?.textColor ? { color: left.textColor } : {}]}
+        textStyle={left?.textColor ? { color: left.textColor } : undefined}
       />
 
       <Text style={[styles.title, titleColor && { color: titleColor }]}>{title}</Text>
@@ -59,13 +51,13 @@ export const ModalHeader: React.FC<ModalHeaderProps> = ({ left, title, titleColo
         text={right?.text}
         onClick={right?.onPress}
         style={[styles.button, { justifyContent: "flex-end" }]}
-        textStyle={[styles.buttonText, right?.textColor ? { color: right.textColor } : {}]}
+        textStyle={right?.textColor ? { color: right.textColor } : undefined}
       />
     </View>
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
   StyleSheet.create({
     header: {
       width: "100%",
@@ -75,6 +67,9 @@ const makeStyles = (colors: ColorsType) =>
       position: "relative",
 
       height: 54,
+
+      paddingLeft: insets.left + 16,
+      paddingRight: insets.right + 16,
     },
     title: {
       position: "absolute",
@@ -89,8 +84,5 @@ const makeStyles = (colors: ColorsType) =>
       width: "40%",
       height: 50,
       zIndex: 9,
-    },
-    buttonText: {
-      ...Typography.regularDefault,
     },
   });

@@ -187,7 +187,7 @@ const makeStyles = ({
       ...(isFullWidth ? { flex: 1 } : width !== undefined ? { width } : {}),
     },
     text: {
-      ...(size === "md" ? Typography.boldDefault : Typography.boldLabel),
+      ...Typography.boldDefault,
     },
   });
 

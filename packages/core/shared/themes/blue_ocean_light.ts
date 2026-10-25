@@ -11,7 +11,7 @@ const blueOceanLightTheme: Colors = {
   BgDarkGray: "#242E3A",
   BgDisabled: "#A5AFBA",
   BgContrast: "#141E2B",
-  BgContrastPressed: "#0A141E",
+  BgContrastPressed: "#242E3A",
   BgContrastSecondary: "#0A141E",
   BgWhite: "#FFFFFF",
   BgModal: "#00000080",
@@ -30,7 +30,7 @@ const blueOceanLightTheme: Colors = {
 
   // Text
   TextPrimary: "#141E2B",
-  TextPrimaryPressed: "#0A141E",
+  TextPrimaryPressed: "#5B6877",
   TextSecondary: "#5B6877",
   TextSecondaryPressed: "#242E3A",
   TextDisabled: "#A5AFBA",

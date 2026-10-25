@@ -6,16 +6,16 @@ import { Circle, Path, Svg } from "react-native-svg";
 import { DrawingPath, generatePathDAttribute } from "../../lib/svg-path";
 
 export const STROKE_COLORS = [
-  "#E84F4F",
-  "#5BD2CE",
-  "#EBD037",
-  "#8C4FB5",
-  "#91C33A",
-  "#4F5DB5",
-  "#EB6137",
-  "#C74E99",
-  "#AC7F65",
-  "#51B571",
+  "#E69F5D",
+  "#72ADD2",
+  "#F6D067",
+  "#DA96DB",
+  "#BBD05C",
+  "#8791D4",
+  "#FAB18D",
+  "#AC85D7",
+  "#CB9F80",
+  "#8BC47B",
 ];
 
 const PADDING_RATIO = 0.1;
