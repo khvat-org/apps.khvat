@@ -16,7 +16,7 @@ import { StyleSheet, BackHandler, View } from "react-native";
 
 import QuestionsEducationPractice from "./helpers/education-practice";
 import wrapperQuestionGenerate from "./helpers/wrapper-question-generate";
-import { OnSubmit, PracticeResultData } from "./lib/types/questions";
+import { OnSubmit, PracticeResultData, PracticeUserSelect } from "./lib/types/questions";
 import { getKatakanaLetters, getHiraganaLetters } from "./selectors/kanaSelectors";
 
 import { ROUTES, RootStackParamList } from "@/app/routes.types";
@@ -64,6 +64,7 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
 
   const [, forceUpdate] = useReducer((x) => x + 1, 0);
   const [timerKey, setTimerKey] = useState(0);
+  const partialSelect = useRef<PracticeUserSelect | undefined>(undefined);
 
   React.useEffect(() => {
     const onBackPress = () => {
@@ -146,6 +147,7 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
             forceUpdate();
           },
           nextCallback: () => {
+            partialSelect.current = undefined;
             setTimerKey((prev) => prev + 1);
             engine.setFreezeFalse();
             engine.isLocked = false;
@@ -176,7 +178,9 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
             key={timerKey}
             initial={preferences.timerSeconds}
             isFreeze={isFreeze}
-            onTimerEnd={() => onSubmit({ isCorrectAnswer: false })}
+            onTimerEnd={() =>
+              onSubmit({ isCorrectAnswer: false, userSelect: partialSelect.current })
+            }
           />
         )}
       </View>
@@ -226,6 +230,9 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
             words={question.matchingPairs.pairs}
             currentIndex={currentIndex}
             onCompleted={onSubmit}
+            onProgress={(userSelect) => {
+              partialSelect.current = userSelect;
+            }}
           />
         )}
 

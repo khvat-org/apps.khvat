@@ -9,7 +9,10 @@ import { View, Text, StyleSheet } from "react-native";
 import MatchWordsByField, {
   MatchAttempt,
 } from "@/entities/education/practice/match-words-by-field/match-words-by-field";
-import { OnSubmit } from "@/pages/education/practice/education-practice/lib/types/questions";
+import {
+  OnSubmit,
+  PracticeUserSelect,
+} from "@/pages/education/practice/education-practice/lib/types/questions";
 import { Kana, PracticeType, TEST_DELAY } from "@/shared/constants/kana";
 import { useFirstClickHandler } from "@/shared/helpers/firstClickHandler";
 
@@ -24,12 +27,14 @@ interface EducationPracticeFindPairProps {
   }[];
 
   onCompleted: OnSubmit;
+  onProgress?: (userSelect: PracticeUserSelect) => void;
 }
 const EducationPracticeFindPair: React.FC<EducationPracticeFindPairProps> = ({
   currentIndex,
   kana,
   words,
   onCompleted,
+  onProgress,
 }) => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
@@ -57,6 +62,9 @@ const EducationPracticeFindPair: React.FC<EducationPracticeFindPairProps> = ({
           words={words}
           by="kana"
           onComplete={onFinish}
+          onAttempt={(attempts) =>
+            onProgress?.({ type: PracticeType.MatchingPairs, value: attempts })
+          }
         />
       </View>
     </View>

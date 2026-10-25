@@ -23,6 +23,7 @@ export type MatchAttempt = {
 
 interface MatchPairsProps {
   onComplete?: (hasError: boolean, attempts: MatchAttempt[]) => void;
+  onAttempt?: (attempts: MatchAttempt[]) => void;
   words: Word[];
   by: ByKey;
 }
@@ -57,7 +58,7 @@ function getRightLabel(
 
 type ItemState = "default" | "selected" | "matched" | "error";
 
-export default function MatchWordsByField({ onComplete, words, by }: MatchPairsProps) {
+export default function MatchWordsByField({ onComplete, onAttempt, words, by }: MatchPairsProps) {
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
   const { triggerHaptic } = useHaptic();
@@ -106,6 +107,7 @@ export default function MatchWordsByField({ onComplete, words, by }: MatchPairsP
         isCorrect,
       },
     ];
+    onAttempt?.(attemptsRef.current);
 
     if (isCorrect) {
       const newMatched = { ...matched, [rightIndex]: leftIndex };
