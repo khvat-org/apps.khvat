@@ -11,9 +11,11 @@ interface StylesProps {
 
 interface FuriganaProps extends StylesProps {
   text: string;
+  // * Без переноса строк: всё, что не влезло, обрезается (для карточек в сетке)
+  isSingleLine?: boolean;
 }
 
-const Furigana: React.FC<FuriganaProps> = ({ text, typography, typographyFurigana }) => {
+const Furigana: React.FC<FuriganaProps> = ({ text, typography, typographyFurigana, isSingleLine }) => {
   const { colors } = useThemeContext();
 
   if (!text) return null;
@@ -30,6 +32,16 @@ const Furigana: React.FC<FuriganaProps> = ({ text, typography, typographyFurigan
   let match;
 
   const pushPlainText = (chunk: string, keyPrefix: string) => {
+    // * В одну строку кусок текста не дробим по словам: пусть обрежется многоточием целиком
+    if (isSingleLine) {
+      elements.push(
+        <Text key={keyPrefix} numberOfLines={1} style={[styles.regularText, styles.shrink]}>
+          {chunk}
+        </Text>,
+      );
+      return;
+    }
+
     chunk.split(/(\s+)/).forEach((token, i) => {
       if (!token) return;
       elements.push(
@@ -50,8 +62,12 @@ const Furigana: React.FC<FuriganaProps> = ({ text, typography, typographyFurigan
 
     elements.push(
       <View key={`furigana-${startIndex}`} style={styles.furiganaContainer}>
-        <Text style={styles.furiganaText}>{furigana}</Text>
-        <Text style={styles.kanjiText}>{kanji}</Text>
+        <Text numberOfLines={isSingleLine ? 1 : undefined} style={styles.furiganaText}>
+          {furigana}
+        </Text>
+        <Text numberOfLines={isSingleLine ? 1 : undefined} style={styles.kanjiText}>
+          {kanji}
+        </Text>
       </View>,
     );
 
@@ -62,7 +78,7 @@ const Furigana: React.FC<FuriganaProps> = ({ text, typography, typographyFurigan
     pushPlainText(text.slice(lastIndex), `text-${lastIndex}`);
   }
 
-  return <View style={styles.container}>{elements}</View>;
+  return <View style={[styles.container, isSingleLine && styles.singleLine]}>{elements}</View>;
 };
 
 const makeStyles = (colors: ColorsType, options: StylesProps) =>
@@ -71,6 +87,13 @@ const makeStyles = (colors: ColorsType, options: StylesProps) =>
       flexDirection: "row",
       flexWrap: "wrap",
       alignItems: "flex-end",
+    },
+    singleLine: {
+      flexWrap: "nowrap",
+      overflow: "hidden",
+    },
+    shrink: {
+      flexShrink: 1,
     },
     furiganaContainer: {
       alignItems: "center",

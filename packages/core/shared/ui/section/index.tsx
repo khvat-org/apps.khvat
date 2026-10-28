@@ -1,6 +1,6 @@
 import React, { JSX, ReactNode } from "react";
 
-import { CaretCircleDownIcon, CaretCircleUpIcon } from "phosphor-react-native";
+import { CaretDownIcon, CaretUpIcon } from "phosphor-react-native";
 import { View, Text, Pressable, StyleSheet } from "react-native";
 
 import { ColorsType, useThemeContext } from "../../contexts/theme/theme-context";
@@ -29,12 +29,14 @@ const Section: React.FC<SectionProps> = ({ title, buttons, stateKey, children })
           <Text style={styles.headerTitle}>{title}</Text>
 
           <View style={styles.buttons}>
-            {buttons || []}
+            {buttons?.map((button, index) => (
+              <React.Fragment key={index}>{button}</React.Fragment>
+            ))}
             <Pressable onPress={() => setIsShow((prev) => !prev)}>
               {isShow ? (
-                <CaretCircleUpIcon color={colors.TextContrast} />
+                <CaretUpIcon size={20} color={colors.TextSecondary} />
               ) : (
-                <CaretCircleDownIcon color={colors.TextContrast} />
+                <CaretDownIcon size={20} color={colors.TextSecondary} />
               )}
             </Pressable>
           </View>
@@ -50,17 +52,18 @@ const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
     container: {
       marginTop: 0,
-      marginBottom: 6,
+      marginBottom: 32,
     },
     buttons: {
       flexDirection: "row",
-      gap: 8,
+      alignItems: "center",
+      gap: 12,
     },
     header: {
-      backgroundColor: colors.BgContrast,
-      borderRadius: 6,
-      paddingHorizontal: 6,
-      paddingVertical: 4,
+      backgroundColor: colors.BgSecondary,
+      borderRadius: 10,
+      paddingHorizontal: 12,
+      paddingVertical: 10,
 
       flexDirection: "row",
       justifyContent: "space-between",
@@ -68,9 +71,9 @@ const makeStyles = (colors: ColorsType) =>
       marginBottom: 6,
     },
     headerTitle: {
-      ...Typography.boldDefault,
+      ...Typography.boldLabel,
 
-      color: colors.TextContrast,
+      color: colors.TextPrimary,
     },
     content: {
       flexDirection: "column",

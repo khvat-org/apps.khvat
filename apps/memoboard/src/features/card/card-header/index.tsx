@@ -1,16 +1,16 @@
 import React from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import { Typography } from "@nihongo/core/shared/typography";
+import { fonts, Typography } from "@nihongo/core/shared/typography";
 import Input from "@nihongo/core/shared/ui/input";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
-import Tag from "@nihongo/core/shared/ui/tag/tag";
-import { BookIcon, TagIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { View, ImageBackground, StyleSheet, Text } from "react-native";
 
 import { CardEdit } from "@/features/card/edit/use-card-edit";
 import { Card } from "@/shared/api/get-cards";
+import { useBoard } from "@/shared/contexts/board/board-context";
+import { CardTag } from "@/shared/ui/card-tag/card-tag";
 import Furigana from "@/shared/ui/furigana/furigana";
 
 interface CardHeaderProps {
@@ -55,7 +55,11 @@ const ViewContainer: React.FC<ViewContainerProps> = ({ children }) => {
 };
 
 const CardHeader: React.FC<CardHeaderProps> = ({ card, edit, goBack }) => {
-  const image = card?.images?.length
+  const { preference } = useBoard();
+
+  const image = !preference.showImages
+    ? null
+    : card?.images?.length
     ? card?.images?.[0].includes("https://") || card?.images?.[0].includes("http://")
       ? card?.images?.[0]
       : `${process.env.MEMOBOARD_API}${card?.images?.[0]}`
@@ -119,9 +123,11 @@ const CardHeader: React.FC<CardHeaderProps> = ({ card, edit, goBack }) => {
             <>
               <Furigana
                 typography={{
-                  ...Typography.H3,
+                  ...Typography.H2,
+                  ...fonts.regular,
                   color: primaryColor,
                 }}
+                typographyFurigana={Typography.regularDefault}
                 text={card.title}
               />
 
@@ -132,16 +138,10 @@ const CardHeader: React.FC<CardHeaderProps> = ({ card, edit, goBack }) => {
           )}
 
           <View style={styles.tags}>
-            <Tag text={card.lessonTitle} icon={<BookIcon size={12} color={colors.TextPrimary} />} />
-
             {card.tags.map((tag) => (
-              <Tag
-                key={tag.label}
-                isUpperCase={tag.label === "iii" || tag.label === "ii" || tag.label === "i"}
-                text={tag.label}
-                icon={<TagIcon size={12} color={colors.TextPrimary} />}
-              />
+              <CardTag key={tag.label} tag={tag} />
             ))}
+            <CardTag tag={{ label: card.lessonTitle, color: "purple" }} />
           </View>
         </View>
       </Container>
@@ -175,7 +175,8 @@ const makeStyles = (colors: ColorsType) =>
     },
     card_subtitle: {
       color: colors.TextPrimary,
-      ...Typography.H3,
+      ...Typography.H4,
+      ...fonts.regular,
 
       marginTop: 8,
     },
@@ -201,6 +202,7 @@ const makeStyles = (colors: ColorsType) =>
     },
     tags: {
       flexDirection: "row",
+      flexWrap: "wrap",
       marginTop: 16,
       gap: 4,
     },

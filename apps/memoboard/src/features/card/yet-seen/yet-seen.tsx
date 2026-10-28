@@ -10,6 +10,7 @@ import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet, Pressable } from "react-native";
 
 import { Card } from "@/shared/api/get-cards";
+import { CardTag } from "@/shared/ui/card-tag/card-tag";
 import Furigana from "@/shared/ui/furigana/furigana";
 
 interface YetSeenProps {
@@ -62,9 +63,9 @@ const YetSeen: React.FC<YetSeenProps> = ({ title, cards, openModal }) => {
           isFurigana ? (
             <Pressable key={"eye_btn"} onPress={() => setShowFurigana((prev) => !prev)}>
               {showFurigana ? (
-                <SelectionSlashIcon color={colors.TextContrast} />
+                <SelectionSlashIcon color={colors.TextSecondary} />
               ) : (
-                <SelectionIcon color={colors.TextContrast} />
+                <SelectionIcon color={colors.TextSecondary} />
               )}
             </Pressable>
           ) : (
@@ -74,9 +75,7 @@ const YetSeen: React.FC<YetSeenProps> = ({ title, cards, openModal }) => {
       >
         {yetSeenKanji.map((group) => (
           <View key={group.key} style={styles.group}>
-            <View style={styles.labelContainer}>
-              <Text style={styles.groupLabel}>{group.key}:</Text>
-            </View>
+            <Text style={styles.groupLabel}>{group.key}</Text>
 
             <View style={styles.list}>
               {group.cards.map((card) => (
@@ -92,6 +91,13 @@ const YetSeen: React.FC<YetSeenProps> = ({ title, cards, openModal }) => {
                       <Text style={styles.itemValue}>{card.titleWithoutFurigana}</Text>
                     )}
                     <Text style={styles.itemSubtitle}>{card.subtitleNoFurigana}</Text>
+                  </View>
+
+                  <View style={styles.itemTags}>
+                    {card.tags.map((tag) => (
+                      <CardTag key={tag.label} tag={tag} />
+                    ))}
+                    <CardTag tag={{ label: card.lessonTitle, color: "purple" }} />
                   </View>
                 </Pressable>
               ))}
@@ -131,14 +137,10 @@ const makeStyles = (colors: ColorsType) =>
       gap: 6,
     },
     groupLabel: {
-      color: colors.TextWhite,
-      ...Typography.boldLabel,
-    },
-    labelContainer: {
-      backgroundColor: colors.BgAccent,
-      borderRadius: 6,
-      paddingHorizontal: 12,
-      paddingVertical: 4,
+      color: colors.TextPrimary,
+      ...Typography.H3,
+
+      paddingTop: 4,
     },
     list: {
       flexDirection: "column",
@@ -166,5 +168,7 @@ const makeStyles = (colors: ColorsType) =>
       flexDirection: "row",
       flexWrap: "wrap",
       gap: 4,
+
+      marginBottom: 2,
     },
   });

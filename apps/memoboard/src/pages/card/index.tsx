@@ -5,9 +5,9 @@ import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { ArrowLeftIcon, ArrowRightIcon } from "phosphor-react-native";
+import { ArrowLeftIcon, ArrowRightIcon, BookmarkSimpleIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { View, StyleSheet, Linking, StatusBar } from "react-native";
+import { View, StyleSheet, StatusBar } from "react-native";
 import { ScrollView, Gesture, GestureDetector } from "react-native-gesture-handler";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -31,7 +31,17 @@ const CardPage = () => {
   const navigation = useNavigation<BoardNavProp>();
   const { params } = useRoute<BoardRouteProp>();
 
-  const { currentCard, boardId, cards, selectCard, hasNext, hasPrev, next, prev } = useBoard();
+  const {
+    currentCard,
+    cards,
+    selectCard,
+    hasNext,
+    hasPrev,
+    next,
+    prev,
+    bookmarks,
+    toggleBookmark,
+  } = useBoard();
 
   const card = currentCard ?? params.card;
 
@@ -45,11 +55,7 @@ const CardPage = () => {
 
   const goBack = () => navigation.goBack();
 
-  const openInDictionary = () => {
-    if (!boardId) return;
-
-    Linking.openURL(`${process.env.MEMOBOARD_API}/${boardId}/${card.index}`);
-  };
+  const isBookmarked = bookmarks.has(card.id);
 
   const swipe = useMemo(
     () =>
@@ -103,10 +109,10 @@ const CardPage = () => {
             <Button
               color="secondary"
               isHapticFeedback
-              text={t("card.open")}
+              text={t(isBookmarked ? "card.bookmarkRemove" : "card.bookmarkAdd")}
+              icon={<BookmarkSimpleIcon size={20} weight={isBookmarked ? "fill" : "regular"} />}
               isFullWidth
-              isDisabled={!boardId}
-              onClick={openInDictionary}
+              onClick={() => toggleBookmark(card.id)}
             />
 
             <Button

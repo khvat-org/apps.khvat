@@ -1,5 +1,6 @@
 import { memoboardFetch } from "@/shared/api/memoboard-fetch";
 import getVerbForm, { VerbForm } from "@/shared/helpers/verb/get-verb-form";
+import { TagColor } from "@/shared/ui/card-tag/tag-colors";
 
 export function removeFurigana(text: string) {
   return text.replace(/\([^)]+\)/g, "");
@@ -24,11 +25,7 @@ interface ResponseLesson {
 
 export interface CardTag {
   label: string;
-  color: {
-    color: string;
-    background: string;
-    borderColor: string;
-  };
+  color: TagColor;
 }
 
 export interface Card {
@@ -100,65 +97,21 @@ function decodeBitset(base64: string, tagsDictionary: string[]): string[] {
   return tags;
 }
 
-const colors = {
-  magenta: {
-    color: "var(--magenta-color)",
-    background: "var(--magenta-background)",
-    borderColor: "var(--magenta-borderColor)",
-  },
-  red: {
-    color: "var(--red-color)",
-    background: "var(--red-background)",
-    borderColor: "var(--red-borderColor)",
-  },
-  volcano: {
-    color: "var(--volcano-color)",
-    background: "var(--volcano-background)",
-    borderColor: "var(--volcano-borderColor)",
-  },
-  orange: {
-    color: "var(--orange-color)",
-    background: "var(--orange-background)",
-    borderColor: "var(--orange-borderColor)",
-  },
-  gold: {
-    color: "var(--gold-color)",
-    background: "var(--gold-background)",
-    borderColor: "var(--gold-borderColor)",
-  },
-  lime: {
-    color: "var(--lime-color)",
-    background: "var(--lime-background)",
-    borderColor: "var(--lime-borderColor)",
-  },
-  green: {
-    color: "var(--green-color)",
-    background: "var(--green-background)",
-    borderColor: "var(--green-borderColor)",
-  },
-  cyan: {
-    color: "var(--cyan-color)",
-    background: "var(--cyan-background)",
-    borderColor: "var(--cyan-borderColor)",
-  },
-  blue: {
-    color: "var(--blue-color)",
-    background: "var(--blue-background)",
-    borderColor: "var(--blue-borderColor)",
-  },
-  geekblue: {
-    color: "var(--geekblue-color)",
-    background: "var(--geekblue-background)",
-    borderColor: "var(--geekblue-borderColor)",
-  },
-  purple: {
-    color: "var(--purple-color)",
-    background: "var(--purple-background)",
-    borderColor: "var(--purple-borderColor)",
-  },
-};
+const colors: TagColor[] = [
+  "magenta",
+  "red",
+  "volcano",
+  "orange",
+  "gold",
+  "lime",
+  "green",
+  "cyan",
+  "blue",
+  "geekblue",
+  "purple",
+];
 
-const savedColors: { [key: string]: string } = {
+const savedColors: { [key: string]: TagColor } = {
   i: "gold",
   ii: "gold",
   iii: "gold",
@@ -170,34 +123,19 @@ const savedColors: { [key: string]: string } = {
   глагол: "magenta",
 };
 
+// * Новый тег получает следующий цвет по кругу, повторный — тот же, что и в первый раз
 const getColors = () => {
-  const keys = Object.keys(colors);
+  let nextIndex = colors.length - 1;
 
-  let lastKey = keys[keys.length - 1];
-
-  const getNewColor = () => {
-    const oldKey = lastKey;
-
-    if (lastKey === keys[keys.length - 1]) {
-      lastKey = keys[0];
-    } else {
-      lastKey = keys[keys.indexOf(lastKey) + 1];
-    }
-
-    return { color: colors[oldKey as "magenta"], key: oldKey };
-  };
-
-  return (name: string) => {
+  return (name: string): TagColor => {
     name = name.toLowerCase();
 
-    if (savedColors?.[name]) {
-      return colors[savedColors?.[name] as "magenta"];
-    } else {
-      const newColor = getNewColor();
-
-      savedColors[name] = newColor.key;
-      return newColor.color;
+    if (!savedColors[name]) {
+      savedColors[name] = colors[nextIndex];
+      nextIndex = (nextIndex + 1) % colors.length;
     }
+
+    return savedColors[name];
   };
 };
 const colorUtil = getColors();

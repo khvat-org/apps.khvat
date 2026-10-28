@@ -2,7 +2,7 @@ install:
 	bun install
 
 start:
-	npx expo start -c
+	REACT_NATIVE_PACKAGER_HOSTNAME=127.0.0.1 npx expo start -c
 
 # ? Build app
 

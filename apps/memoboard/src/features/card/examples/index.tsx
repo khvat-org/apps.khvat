@@ -43,7 +43,7 @@ const Examples: React.FC<ExamplesProps> = ({ card, edit }) => {
         stateKey="memoboard.card.examples.show"
         buttons={[
           <Pressable key={"add_btn"} onPress={edit.addExample}>
-            <PlusCircleIcon color={colors.TextContrast} />
+            <PlusCircleIcon color={colors.TextSecondary} />
           </Pressable>,
         ]}
       >
@@ -78,9 +78,9 @@ const Examples: React.FC<ExamplesProps> = ({ card, edit }) => {
         examplesFurigana ? (
           <Pressable key={"eye_btn"} onPress={() => isShowFurigana((prev) => !prev)}>
             {showFurigana ? (
-              <SelectionSlashIcon color={colors.TextContrast} />
+              <SelectionSlashIcon color={colors.TextSecondary} />
             ) : (
-              <SelectionIcon color={colors.TextContrast} />
+              <SelectionIcon color={colors.TextSecondary} />
             )}
           </Pressable>
         ) : (

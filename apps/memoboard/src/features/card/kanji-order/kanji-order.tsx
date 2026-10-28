@@ -119,20 +119,24 @@ const makeStyles = (colors: ColorsType) =>
     tabs: {
       flexDirection: "row",
       flexWrap: "wrap",
-      gap: 6,
+      gap: 8,
     },
     tab: {
+      width: 56,
+      height: 56,
+
+      alignItems: "center",
+      justifyContent: "center",
+
       backgroundColor: colors.BgSecondary,
-      borderRadius: 6,
-      paddingHorizontal: 12,
-      paddingVertical: 4,
+      borderRadius: 12,
     },
     tabSelected: {
       backgroundColor: colors.BgAccent,
     },
     tabLabel: {
       color: colors.TextPrimary,
-      ...Typography.boldDefault,
+      ...Typography.H3,
     },
     tabLabelSelected: {
       color: colors.TextWhite,
