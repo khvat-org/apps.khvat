@@ -198,6 +198,6 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     justifyContent: "space-between",
     gap: 16,
-    paddingHorizontal: 20,
+    paddingHorizontal: 16,
   },
 });

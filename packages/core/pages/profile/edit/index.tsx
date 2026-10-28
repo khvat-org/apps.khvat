@@ -13,7 +13,7 @@ import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { CameraIcon, PasswordIcon, UserIcon } from "phosphor-react-native";
+import { CameraIcon, PasswordIcon, UserIcon, UserListIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { View, StyleSheet, Image, ActivityIndicator, Pressable, Text } from "react-native";
 
@@ -102,7 +102,7 @@ const ProfileEditPage: React.FC = () => {
         {!loading && (
           <SettingsSection>
             <SettingItem
-              leftIcon={<UserIcon size={20} color={colors.BgContrast} />}
+              leftIcon={<UserListIcon size={20} color={colors.BgContrast} />}
               text={t("profile.edit.name")}
               subText={profile?.name}
               onClick={() => navigation.navigate(PROFILE_ROUTES.EDIT_NAME)}
@@ -133,8 +133,7 @@ const makeStyles = (colors: ColorsType) =>
     avatarBlock: {
       alignSelf: "center",
 
-      marginTop: 8,
-      marginBottom: 24,
+      marginBottom: 16,
 
       position: "relative",
     },
@@ -171,9 +170,9 @@ const makeStyles = (colors: ColorsType) =>
       right: 0,
       bottom: 0,
 
-      width: 28,
-      height: 28,
-      borderRadius: 28,
+      width: 32,
+      height: 32,
+      borderRadius: 32,
 
       backgroundColor: colors.BgContrast,
 
@@ -186,7 +185,7 @@ const makeStyles = (colors: ColorsType) =>
     cancel: {
       alignSelf: "center",
 
-      marginTop: -16,
+      marginTop: -8,
       marginBottom: 16,
     },
     cancelText: {

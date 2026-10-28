@@ -135,7 +135,6 @@ const makeStyles = (colors: ColorsType) =>
 
       ...Typography.H4,
 
-      marginTop: 16,
       marginBottom: 16,
     },
     title_bottom: {

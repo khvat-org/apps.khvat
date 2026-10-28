@@ -48,7 +48,7 @@ const ThemeItem: React.FC<ThemeItemProps> = (props) => {
   return (
     <Pressable onPress={props.onPress} style={[styles.conteiner, isLast && styles.conteinerLast]}>
       <View style={styles.icon}>
-        <ThemeIcon colors={icon} />
+        <ThemeIcon colors={icon} active={active} />
       </View>
       <View style={styles.info}>
         <Text style={styles.title}>{name}</Text>

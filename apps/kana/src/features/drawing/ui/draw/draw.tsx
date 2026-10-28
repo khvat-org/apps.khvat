@@ -1,4 +1,4 @@
-import React, { useRef, useReducer, useState, useEffect } from "react";
+import React, { useRef, useReducer, useState, useEffect, useImperativeHandle } from "react";
 
 import { getCanvasSize, TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -55,9 +55,19 @@ export type DrawingSnapshot = {
 export const DRAW_CONTROLS_HEIGHT = 165;
 export const MIN_FIT_CANVAS_SIZE = 200;
 
+const CHECK_BUTTON_HEIGHT = 48;
+
+export type DrawHandle = {
+  check: () => void;
+};
+
 interface DrawProps {
+  ref?: React.Ref<DrawHandle>;
+
   letter: ILetter;
   kana: KanaAlphabet;
+
+  isCheckButtonExternal?: boolean;
 
   maxCanvasSize?: number;
 
@@ -73,7 +83,9 @@ interface DrawProps {
 }
 
 const Draw: React.FC<DrawProps> = ({
+  ref,
   isCheck,
+  isCheckButtonExternal,
   isStencil,
   letter,
   kana,
@@ -210,6 +222,12 @@ const Draw: React.FC<DrawProps> = ({
     }
   }, 400);
 
+  useImperativeHandle(ref, () => ({ check: detectSymbol }), [detectSymbol]);
+
+  const controlsHeight = isCheckButtonExternal
+    ? DRAW_CONTROLS_HEIGHT - CHECK_BUTTON_HEIGHT
+    : DRAW_CONTROLS_HEIGHT;
+
   const IS_SAVE = false;
 
   useEffect(() => {
@@ -219,7 +237,7 @@ const Draw: React.FC<DrawProps> = ({
   return (
     <GestureHandlerRootView
       style={[
-        { minHeight: canvasSize + DRAW_CONTROLS_HEIGHT },
+        { minHeight: canvasSize + controlsHeight },
         isFullHeight ? { flex: 1, justifyContent: "space-between" } : {},
       ]}
     >
@@ -353,7 +371,7 @@ const Draw: React.FC<DrawProps> = ({
             maxWidth: TABLET_WIDTH,
           }}
         >
-          {isCheck && (
+          {isCheck && !isCheckButtonExternal && (
             <Button
               color="primary"
               isHapticFeedback

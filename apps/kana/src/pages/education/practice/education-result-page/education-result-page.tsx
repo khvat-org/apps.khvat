@@ -396,7 +396,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
         </ScrollView>
       </View>
 
-      <View style={{ marginBottom: insets.bottom, marginTop: 16, paddingHorizontal: 20 }}>
+      <View style={{ marginBottom: insets.bottom, marginTop: 16, paddingHorizontal: 16 }}>
         <View style={styles.done}>
           <Button color="primary" isHapticFeedback text={t("result.done")} onClick={home} />
         </View>

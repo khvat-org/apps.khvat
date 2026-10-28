@@ -2,6 +2,7 @@ import React, { useMemo, useRef, useState } from "react";
 
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import Button from "@nihongo/core/shared/ui/button";
+import { CaretLeftIcon, CaretRightIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { ScrollView, StyleSheet, useWindowDimensions, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -19,6 +20,7 @@ import BorderLetter from "@/entities/education/letter/borderLetter/borderLetter"
 import MatchPairs from "@/entities/education/practice/match-pairs/match-pairs";
 import SelectAnswer from "@/entities/education/select-answer/select-answer";
 import Sequence from "@/entities/education/sequence";
+import { DrawHandle } from "@/features/drawing/ui/draw/draw";
 import { KanaAlphabet, TEST_DELAY } from "@/shared/constants/kana";
 import {
   InfoLessonScreen,
@@ -38,9 +40,12 @@ import { shuffleArray } from "@/shared/helpers/letters";
 
 type InfoScreenProps = InfoLessonScreen & {
   next: () => void;
+  back: () => void;
   finish: () => void;
 
+  isFirst?: boolean;
   isLast?: boolean;
+  isPassed?: boolean;
 };
 
 const blockType = {
@@ -59,17 +64,28 @@ const blockType = {
   isImage: (item: AnyLessonBlock): item is LessonBlockImage => item.type === "image",
 };
 
-const InfoScreen: React.FC<InfoScreenProps> = ({ next, finish, title, blocks, isLast }) => {
+const InfoScreen: React.FC<InfoScreenProps> = ({
+  next,
+  back,
+  finish,
+  title,
+  blocks,
+  isFirst,
+  isLast,
+  isPassed,
+}) => {
   const insets = useSafeAreaInsets();
   const { t } = useTranslation();
 
   const { width } = useWindowDimensions();
 
-  const containerRef = useRef<React.ComponentRef<typeof View>>(null);
+  const viewportRef = useRef<React.ComponentRef<typeof View>>(null);
   const [viewportBottom, setViewportBottom] = useState<number | null>(null);
 
+  const drawRef = useRef<DrawHandle>(null);
+
   const measureViewport = () => {
-    containerRef.current?.measureInWindow((_x, y, _width, height) => {
+    viewportRef.current?.measureInWindow((_x, y, _width, height) => {
       const bottom = y + height - SCROLL_PADDING;
       setViewportBottom((prev) => (prev === bottom ? prev : bottom));
     });
@@ -103,43 +119,76 @@ const InfoScreen: React.FC<InfoScreenProps> = ({ next, finish, title, blocks, is
     }
   };
 
-  const getButtons = () => {
-    if (interactiveBlocks.length) return <View></View>;
+  const hasLetterExercise = blocks.some(blockType.isLetterExercise);
+  const isSkippable = isPassed && interactiveBlocks.length > 0;
 
-    return (
+  const renderFooter = (action: React.ReactNode) => (
+    <View
+      style={{
+        width: "100%",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <View
-        style={{
-          width: "100%",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <View
-          style={[
-            styles.btnsContainer,
-            {
-              paddingLeft: width > TABLET_WIDTH ? 0 : insets.left + 16,
-              paddingRight: width > TABLET_WIDTH ? 0 : insets.right + 16,
+        style={[
+          styles.btnsContainer,
+          {
+            paddingLeft: width > TABLET_WIDTH ? 0 : insets.left + 16,
+            paddingRight: width > TABLET_WIDTH ? 0 : insets.right + 16,
 
-              width: "100%",
-              maxWidth: TABLET_WIDTH,
-            },
-          ]}
-        >
-          {!isLast && (
-            <Button
-              color="primary"
-              isHapticFeedback
-              isFullWidth
-              text={t("common.next")}
-              onClick={nextScreen}
-            />
-          )}
-          {isLast && (
-            <Button color="primary" isFullWidth text={t("common.complete")} onClick={finish} />
-          )}
-        </View>
+            width: "100%",
+            maxWidth: TABLET_WIDTH,
+          },
+        ]}
+      >
+        <Button
+          color="secondary"
+          isHapticFeedback
+          isDisabled={isFirst}
+          icon={<CaretLeftIcon size={20} />}
+          onClick={back}
+        />
+        {action ?? <View style={styles.spacer} />}
+        {isSkippable && (
+          <Button
+            color="secondary"
+            isHapticFeedback
+            icon={<CaretRightIcon size={20} />}
+            onClick={nextScreen}
+          />
+        )}
       </View>
+    </View>
+  );
+
+  const getButtons = () => {
+    if (hasLetterExercise) {
+      return renderFooter(
+        <Button
+          color="primary"
+          isHapticFeedback
+          isFullWidth
+          text={t("common.check")}
+          onClick={() => drawRef.current?.check()}
+        />,
+      );
+    }
+
+    if (interactiveBlocks.length) return renderFooter(null);
+
+    return renderFooter(
+      isLast ? (
+        <Button color="primary" isFullWidth text={t("common.complete")} onClick={finish} />
+      ) : (
+        <Button
+          color="primary"
+          isHapticFeedback
+          isFullWidth
+          text={t("common.next")}
+          onClick={nextScreen}
+        />
+      ),
     );
   };
 
@@ -150,89 +199,96 @@ const InfoScreen: React.FC<InfoScreenProps> = ({ next, finish, title, blocks, is
   }, TEST_DELAY + 100);
 
   return (
-    <View style={styles.container} ref={containerRef} onLayout={measureViewport}>
-      <ScrollView
-        contentContainerStyle={{
-          paddingTop: SCROLL_PADDING,
-          paddingBottom: SCROLL_PADDING,
-        }}
-        style={{
-          paddingLeft: insets.left + 16,
-          paddingRight: insets.right + 16,
-          width: "100%",
-        }}
-      >
-        <LearningTitle>{title}</LearningTitle>
+    <View style={styles.container}>
+      <View style={styles.viewport} ref={viewportRef} onLayout={measureViewport}>
+        <ScrollView
+          contentContainerStyle={{
+            paddingTop: SCROLL_PADDING,
+            paddingBottom: SCROLL_PADDING,
+          }}
+          style={{
+            paddingLeft: insets.left + 16,
+            paddingRight: insets.right + 16,
+            width: "100%",
+          }}
+        >
+          <LearningTitle>{title}</LearningTitle>
 
-        <View style={styles.blocksContainer}>
-          <View style={styles.blocks}>
-            {blocks.map((block, idx) => {
-              if (blockType.isText(block)) {
-                return <BlockText text={block.content.text} key={idx} />;
-              } else if (blockType.isTable(block)) {
-                return <Table key={idx} data={block.content.table} />;
-              } else if (blockType.isRules(block)) {
-                return <Rules key={idx} rules={block.content.rules} />;
-              } else if (blockType.isLetter(block) || blockType.isLetterExercise(block)) {
-                const isExercise = block.content.exercise;
-                const blockKana =
-                  block.content.kana.toLowerCase() === "hiragana"
-                    ? KanaAlphabet.Hiragana
-                    : KanaAlphabet.Katakana;
+          <View style={styles.blocksContainer}>
+            <View style={styles.blocks}>
+              {blocks.map((block, idx) => {
+                if (blockType.isText(block)) {
+                  return <BlockText text={block.content.text} key={idx} />;
+                } else if (blockType.isTable(block)) {
+                  return <Table key={idx} data={block.content.table} />;
+                } else if (blockType.isRules(block)) {
+                  return <Rules key={idx} rules={block.content.rules} />;
+                } else if (blockType.isLetter(block) || blockType.isLetterExercise(block)) {
+                  const isExercise = block.content.exercise;
+                  const blockKana =
+                    block.content.kana.toLowerCase() === "hiragana"
+                      ? KanaAlphabet.Hiragana
+                      : KanaAlphabet.Katakana;
 
-                if (isExercise) {
+                  if (isExercise) {
+                    return (
+                      <BorderLetterExercise
+                        ref={drawRef}
+                        viewportBottom={viewportBottom}
+                        onComplete={() => nextDelayed()}
+                        kana={blockKana}
+                        key={idx}
+                        id={block.content.id}
+                        isStencil={block.content.stencil}
+                      />
+                    );
+                  } else {
+                    return <BorderLetter kana={blockKana} key={idx} id={block.content.id} />;
+                  }
+                } else if (blockType.isSelectAnswer(block)) {
                   return (
-                    <BorderLetterExercise
-                      viewportBottom={viewportBottom}
-                      onComplete={() => nextDelayed()}
-                      kana={blockKana}
+                    <SelectAnswer
                       key={idx}
-                      id={block.content.id}
-                      isStencil={block.content.stencil}
+                      onFinish={(_) => nextDelayed()}
+                      answers={choiceAnswers[idx]}
+                    />
+                  );
+                } else if (blockType.isMatchAnswerBlock(block)) {
+                  return (
+                    <MatchPairs
+                      onComplete={() => nextDelayed()}
+                      pairs={{
+                        data: block.content.pairs,
+                      }}
+                      key={idx}
+                    />
+                  );
+                } else if (blockType.isSequence(block)) {
+                  return (
+                    <Sequence
+                      onFinish={(_) => nextDelayed()}
+                      sequence={block.content.sequence}
+                      key={idx}
+                    />
+                  );
+                } else if (blockType.isImage(block)) {
+                  return <ImageBlock url={block.content.url} alt={block.content.alt} key={idx} />;
+                } else if (blockType.isTitleBlock(block)) {
+                  return (
+                    <Title
+                      title={block.content.title}
+                      subtitle={block.content.sub_title}
+                      key={idx}
                     />
                   );
                 } else {
-                  return <BorderLetter kana={blockKana} key={idx} id={block.content.id} />;
+                  checkUnknown(block);
                 }
-              } else if (blockType.isSelectAnswer(block)) {
-                return (
-                  <SelectAnswer
-                    key={idx}
-                    onFinish={(_) => nextDelayed()}
-                    answers={choiceAnswers[idx]}
-                  />
-                );
-              } else if (blockType.isMatchAnswerBlock(block)) {
-                return (
-                  <MatchPairs
-                    onComplete={() => nextDelayed()}
-                    pairs={{
-                      data: block.content.pairs,
-                    }}
-                    key={idx}
-                  />
-                );
-              } else if (blockType.isSequence(block)) {
-                return (
-                  <Sequence
-                    onFinish={(_) => nextDelayed()}
-                    sequence={block.content.sequence}
-                    key={idx}
-                  />
-                );
-              } else if (blockType.isImage(block)) {
-                return <ImageBlock url={block.content.url} alt={block.content.alt} key={idx} />;
-              } else if (blockType.isTitleBlock(block)) {
-                return (
-                  <Title title={block.content.title} subtitle={block.content.sub_title} key={idx} />
-                );
-              } else {
-                checkUnknown(block);
-              }
-            })}
+              })}
+            </View>
           </View>
-        </View>
-      </ScrollView>
+        </ScrollView>
+      </View>
       {getButtons()}
     </View>
   );
@@ -248,10 +304,20 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "flex-start",
   },
+  viewport: {
+    flex: 1,
+    width: "100%",
+  },
   btnsContainer: {
     width: "100%",
     height: 66,
     paddingTop: 16,
+
+    flexDirection: "row",
+    gap: 16,
+  },
+  spacer: {
+    flex: 1,
   },
 
   blocksContainer: {

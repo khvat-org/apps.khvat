@@ -4,10 +4,16 @@ import { lettersTableBase, lettersTableById } from "@nihongo/core/shared/data/le
 import { View } from "react-native";
 
 import SymbolHeader from "@/entities/kana/symbol-header/symbol-header";
-import Draw, { DRAW_CONTROLS_HEIGHT, MIN_FIT_CANVAS_SIZE } from "@/features/drawing/ui/draw/draw";
+import Draw, {
+  DRAW_CONTROLS_HEIGHT,
+  DrawHandle,
+  MIN_FIT_CANVAS_SIZE,
+} from "@/features/drawing/ui/draw/draw";
 import { KanaAlphabet } from "@/shared/constants/kana";
 
 type borderLetterProps = {
+  ref?: React.Ref<DrawHandle>;
+
   id: string;
   kana: KanaAlphabet;
 
@@ -20,6 +26,7 @@ type borderLetterProps = {
 };
 
 const BorderLetterExercise: React.FC<borderLetterProps> = ({
+  ref,
   id,
   kana,
   marginTop,
@@ -52,8 +59,10 @@ const BorderLetterExercise: React.FC<borderLetterProps> = ({
         }}
       >
         <Draw
+          ref={ref}
           maxCanvasSize={maxCanvasSize}
           isCheck
+          isCheckButtonExternal
           isStencil={isStencil}
           onCompleted={(isError) => onComplete?.(isError)}
           letter={lettersTableBase[id]}

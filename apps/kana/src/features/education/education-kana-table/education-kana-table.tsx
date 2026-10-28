@@ -52,9 +52,11 @@ const EducationKanaTable: React.FC<EducationKanaTableProps> = ({
     return "-" + (romaji.length === 2 ? romaji[1] : romaji.length === 1 ? romaji[0] : romaji[2]);
   };
 
+  const hasColumnHeader = letters && letters.length > 1;
+
   return (
-    <View style={styles.container}>
-      {letters && letters.length > 1 && (
+    <View style={[styles.container, !hasColumnHeader && styles.containerWithoutHeader]}>
+      {hasColumnHeader && (
         <View style={styles.rowButtons}>
           <Cell
             key={"0/start_of_line"}
@@ -123,11 +125,13 @@ const styles = StyleSheet.create({
   container: {
     paddingLeft: 16,
     paddingRight: 16,
-    marginTop: 16,
     paddingBottom: 30,
     gap: 9,
     width: "100%",
     alignItems: "center",
+  },
+  containerWithoutHeader: {
+    marginTop: 16,
   },
   row: {
     flexDirection: "row",

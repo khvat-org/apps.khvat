@@ -32,7 +32,8 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
 
   const { showModal, hideModal } = useModal();
 
-  const { init, currentScreen, screen, lessonScreens, next, retry } = useEducationLessonContext();
+  const { init, currentScreen, screen, furthestScreen, lessonScreens, next, back, retry } =
+    useEducationLessonContext();
 
   const navigation = useNavigation();
 
@@ -134,7 +135,11 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
       {currentScreen && currentScreen?.title !== "finish" && (
         <View style={styles.container}>
           <InfoScreen
+            key={screen}
             next={next}
+            back={back}
+            isFirst={screen === 0}
+            isPassed={screen < furthestScreen}
             finish={onComplete}
             title={currentScreen.title}
             blocks={currentScreen.blocks}

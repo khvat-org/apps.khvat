@@ -9,7 +9,6 @@ import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
 import { useNavigation } from "@react-navigation/native";
-import { CheckIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { FlatList, View, StyleSheet, Text, Pressable } from "react-native";
 import CountryFlag from "react-native-country-flag";
@@ -52,7 +51,9 @@ const Item = ({ title, lang, colors, onPress, active }: ItemProps) => {
         <Text style={active ? styles.item__text_active : styles.item__text}>{title}</Text>
       </View>
 
-      {active && <CheckIcon color={colors.BgContrast} size={20} />}
+      {lang !== ShortLanguage.EN && lang !== ShortLanguage.RU && (
+        <Text style={active ? styles.beta__active : styles.beta}>βeta</Text>
+      )}
     </Pressable>
   );
 };
@@ -173,8 +174,16 @@ const makeStyles = (colors: ColorsType) =>
     },
     row: {
       flexDirection: "row",
-      gap: 6,
+      gap: 10,
       alignItems: "center",
+    },
+    beta: {
+      ...Typography.regularDefault,
+      color: colors.TextPrimary,
+    },
+    beta__active: {
+      ...Typography.regularDefault,
+      color: colors.TextContrast,
     },
     item__text: {
       ...Typography.boldDefault,

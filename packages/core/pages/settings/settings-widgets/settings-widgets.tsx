@@ -66,20 +66,18 @@ const SettingsWidgetsPage: React.FC = () => {
           }}
         />
 
-        <View style={{ marginTop: 16 }}>
-          <SettingsSection>
-            {available.map((key, index) => (
-              <SettingItem
-                key={key}
-                leftIcon={items[key].icon}
-                text={items[key].title}
-                isEnable={current[key]}
-                onValueChange={() => setDraft((prev) => ({ ...prev, [key]: !current[key] }))}
-                isLast={index === available.length - 1}
-              />
-            ))}
-          </SettingsSection>
-        </View>
+        <SettingsSection>
+          {available.map((key, index) => (
+            <SettingItem
+              key={key}
+              leftIcon={items[key].icon}
+              text={items[key].title}
+              isEnable={current[key]}
+              onValueChange={() => setDraft((prev) => ({ ...prev, [key]: !current[key] }))}
+              isLast={index === available.length - 1}
+            />
+          ))}
+        </SettingsSection>
       </View>
     </ModelContainer>
   );

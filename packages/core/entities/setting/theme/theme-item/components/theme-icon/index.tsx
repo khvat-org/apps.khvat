@@ -2,12 +2,16 @@ import React from "react";
 
 import { View, StyleSheet } from "react-native";
 
+import { ColorsType, useThemeContext } from "../../../../../../shared/contexts/theme/theme-context";
+
 interface ThemeIconProps {
   colors: string[];
+  active: boolean;
 }
 
 const ThemeIcon: React.FC<ThemeIconProps> = (props) => {
-  const styles = makeStyles();
+  const { colors } = useThemeContext();
+  const styles = makeStyles(colors, props.active);
 
   if (props.colors.length < 3) {
     return <View></View>;
@@ -37,13 +41,16 @@ const ThemeIcon: React.FC<ThemeIconProps> = (props) => {
   );
 };
 
-const makeStyles = () =>
+const makeStyles = (colors: ColorsType, active: boolean) =>
   StyleSheet.create({
     container: {
       width: 48,
       height: 48,
 
       borderRadius: 48,
+      borderWidth: 1,
+      borderColor: active ? colors.BorderContrast : colors.BorderDefault,
+      overflow: "hidden",
       flexDirection: "column",
       transform: [{ rotate: "315deg" }],
     },

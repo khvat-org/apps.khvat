@@ -15,12 +15,11 @@ import { lightTheme } from "@nihongo/core/shared/themes/light";
 import { osakaDarkTheme } from "@nihongo/core/shared/themes/osaka_dark";
 import { osakaLightTheme } from "@nihongo/core/shared/themes/osaka_light";
 import { sakuraLightTheme } from "@nihongo/core/shared/themes/sakura_light";
-import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
 import { useNavigation } from "@react-navigation/native";
 import { useTranslation } from "react-i18next";
-import { FlatList, View, StyleSheet, Text } from "react-native";
+import { FlatList, View, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const SettingsThemePage: React.FC = () => {
@@ -28,11 +27,11 @@ const SettingsThemePage: React.FC = () => {
 
   const { updateTheme } = useThemeContext();
 
-  const { colors, themeString } = useThemeContext();
+  const { themeString } = useThemeContext();
 
   const navigation = useNavigation();
 
-  const styles = makeStyles(colors);
+  const styles = makeStyles();
   const insets = useSafeAreaInsets();
 
   const { selected, select, isDirty, confirm, cancel } = usePreviewSetting<Theme>({
@@ -134,7 +133,6 @@ const SettingsThemePage: React.FC = () => {
         />
 
         <View style={styles.content}>
-          <Text style={styles.title}>{t("settings.theme.installed")}</Text>
           <View style={styles.list}>
             <FlatList
               showsVerticalScrollIndicator={false}
@@ -166,7 +164,7 @@ const SettingsThemePage: React.FC = () => {
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = () =>
   StyleSheet.create({
     content: {
       flexShrink: 1,
@@ -174,13 +172,6 @@ const makeStyles = (colors: ColorsType) =>
       maxWidth: TABLET_WIDTH + 36,
       alignSelf: "center",
       paddingHorizontal: 18,
-    },
-    title: {
-      color: colors.TextPrimary,
-
-      ...Typography.H4,
-
-      marginVertical: 16,
     },
     list: {
       flexShrink: 1,

@@ -61,8 +61,7 @@ const Cell: React.FC<CellProps> = ({
   const widthLong = (tabletCellSize * 5 + CELL_GAP * 2) / 3;
 
   const getFintSize = (type: "regularLabel" | "default") => {
-    const x =
-      tabletCellSize / 60 > 1.2 ? 1.2 : tabletCellSize / 60 < 0.6 ? 0.6 : tabletCellSize / 60;
+    const x = tabletCellSize / 60 > 1.2 ? 1.2 : tabletCellSize / 60 < 1 ? 1 : tabletCellSize / 60;
 
     const base = type == "regularLabel" ? Typography.regularLabel : Typography.regularDefault;
 

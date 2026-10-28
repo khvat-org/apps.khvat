@@ -72,7 +72,7 @@ export const KanaTableListPage: React.FC<KanaInfoProps> = () => {
       <PageTitle isSaveArea>{t("tabs.kana")}</PageTitle>
 
       <View style={{ flex: 1, backgroundColor: colors.BgPrimary }}>
-        <View style={{ paddingBottom: isAndroid ? 20 : 0, paddingHorizontal: 20 }}>
+        <View style={{ paddingBottom: isAndroid ? 20 : 6, paddingHorizontal: 16 }}>
           <Switcher<KanaAlphabet>
             activeTab={activeTab}
             setActiveTab={setActiveTab}
@@ -140,7 +140,6 @@ const styles = StyleSheet.create({
     paddingLeft: 16,
     paddingRight: 16,
     paddingTop: 10,
-    paddingBottom: 10,
   },
   lineContainer: {
     width: "100%",
