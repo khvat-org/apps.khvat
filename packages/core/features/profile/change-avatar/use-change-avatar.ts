@@ -9,11 +9,13 @@ import {
   UpdateProfileResult,
   uploadAvatar,
 } from "@nihongo/core/shared/lib/auth";
+import { ImageManipulator, SaveFormat } from "expo-image-manipulator";
 import * as ImagePicker from "expo-image-picker";
 import { useTranslation } from "react-i18next";
-import { Alert } from "react-native";
+import { Alert, Platform } from "react-native";
 
-const MAX_FILE_SIZE = 5 * 1024 * 1024;
+const AVATAR_MAX_SIDE = 1024;
+const AVATAR_QUALITY = 0.8;
 
 const PICKER_OPTIONS: ImagePicker.ImagePickerOptions = {
   mediaTypes: ["images"],
@@ -22,6 +24,16 @@ const PICKER_OPTIONS: ImagePicker.ImagePickerOptions = {
   quality: 0.8,
   presentationStyle: ImagePicker.UIImagePickerPresentationStyle.FULL_SCREEN,
 };
+
+const LIBRARY_PICKER_OPTIONS: ImagePicker.ImagePickerOptions =
+  Platform.OS === "ios"
+    ? {
+        ...PICKER_OPTIONS,
+        allowsEditing: false,
+        preferredAssetRepresentationMode:
+          ImagePicker.UIImagePickerPreferredAssetRepresentationMode.Compatible,
+      }
+    : PICKER_OPTIONS;
 
 const mapErrorCode = (code?: string): string | null => {
   switch (code) {
@@ -43,11 +55,28 @@ const mapServerError = (code: string | undefined, status: number): string =>
 const isRetryable = (messageKey: string): boolean =>
   messageKey === "storageUnavailable" || messageKey === "failed";
 
-const toAvatarFile = (asset: ImagePicker.ImagePickerAsset): AvatarFile => ({
-  uri: asset.uri,
-  name: asset.fileName ?? "avatar.jpg",
-  type: asset.mimeType ?? "image/jpeg",
-});
+const toAvatarFile = async (asset: ImagePicker.ImagePickerAsset): Promise<AvatarFile> => {
+  const context = ImageManipulator.manipulate(asset.uri);
+
+  try {
+    if (Math.max(asset.width, asset.height) > AVATAR_MAX_SIDE) {
+      context.resize(
+        asset.width >= asset.height ? { width: AVATAR_MAX_SIDE } : { height: AVATAR_MAX_SIDE },
+      );
+    }
+
+    const image = await context.renderAsync();
+
+    try {
+      const { uri } = await image.saveAsync({ format: SaveFormat.JPEG, compress: AVATAR_QUALITY });
+      return { uri, name: "avatar.jpg", type: "image/jpeg" };
+    } finally {
+      image.release();
+    }
+  } finally {
+    context.release();
+  }
+};
 
 type AvatarRequest = (signal: AbortSignal) => Promise<UpdateProfileResult>;
 
@@ -134,19 +163,21 @@ export const useChangeAvatar = ({ hasAvatar, onUpdated }: UseChangeAvatarParams)
       const result =
         source === "camera"
           ? await ImagePicker.launchCameraAsync(PICKER_OPTIONS)
-          : await ImagePicker.launchImageLibraryAsync(PICKER_OPTIONS);
+          : await ImagePicker.launchImageLibraryAsync(LIBRARY_PICKER_OPTIONS);
 
       if (result.canceled) return;
 
       const asset = result.assets[0];
       if (!asset) return;
 
-      if (asset.fileSize !== undefined && asset.fileSize > MAX_FILE_SIZE) {
-        showError("fileTooLarge");
+      let file: AvatarFile;
+      try {
+        file = await toAvatarFile(asset);
+      } catch (_) {
+        if (alive.current) showError("invalidImage");
         return;
       }
 
-      const file = toAvatarFile(asset);
       await submit((signal) => uploadAvatar(file, signal));
     } catch (_) {
       if (alive.current) showError("failed");
