@@ -57,6 +57,11 @@ export const MIN_FIT_CANVAS_SIZE = 200;
 
 const CHECK_BUTTON_HEIGHT = 48;
 
+export const getDrawCanvasSize = (width: number, height: number, maxCanvasSize = Infinity) =>
+  width < TABLET_WIDTH
+    ? getCanvasSize(width, height)
+    : Math.min(getCanvasSize(width, height), maxCanvasSize);
+
 export type DrawHandle = {
   check: () => void;
 };
@@ -104,10 +109,7 @@ const Draw: React.FC<DrawProps> = ({
 
   const [, forceUpdate] = useReducer((x) => x + 1, 0);
 
-  const canvasSize =
-    width < TABLET_WIDTH
-      ? getCanvasSize(width, height)
-      : Math.min(getCanvasSize(width, height), maxCanvasSize);
+  const canvasSize = getDrawCanvasSize(width, height, maxCanvasSize);
 
   const { settings } = useDrawSettings();
 

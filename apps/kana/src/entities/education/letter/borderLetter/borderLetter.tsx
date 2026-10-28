@@ -2,11 +2,10 @@ import React from "react";
 
 import { getCanvasSize } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import { lettersTableById } from "@nihongo/core/shared/data/lettersTable";
 import { useWindowDimensions, View } from "react-native";
 
+import LetterSoundHeader from "@/entities/education/letter/letter-sound-header/letter-sound-header";
 import Symbol from "@/entities/kana/symbol/symbol";
-import SymbolHeader from "@/entities/kana/symbol-header/symbol-header";
 import { KanaAlphabet } from "@/shared/constants/kana";
 
 type borderLetterProps = {
@@ -31,7 +30,7 @@ const BorderLetter: React.FC<borderLetterProps> = ({ id, kana, marginTop }) => {
         alignItems: "center",
       }}
     >
-      <SymbolHeader kana={kana} letter={lettersTableById[id]} />
+      <LetterSoundHeader kana={kana} id={id} width={canvasSize} />
       <View
         style={{
           width: canvasSize,

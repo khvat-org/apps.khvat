@@ -1,12 +1,13 @@
 import React, { useRef, useState } from "react";
 
-import { lettersTableBase, lettersTableById } from "@nihongo/core/shared/data/lettersTable";
-import { View } from "react-native";
+import { lettersTableBase } from "@nihongo/core/shared/data/lettersTable";
+import { useWindowDimensions, View } from "react-native";
 
-import SymbolHeader from "@/entities/kana/symbol-header/symbol-header";
+import LetterSoundHeader from "@/entities/education/letter/letter-sound-header/letter-sound-header";
 import Draw, {
   DRAW_CONTROLS_HEIGHT,
   DrawHandle,
+  getDrawCanvasSize,
   MIN_FIT_CANVAS_SIZE,
 } from "@/features/drawing/ui/draw/draw";
 import { KanaAlphabet } from "@/shared/constants/kana";
@@ -46,9 +47,12 @@ const BorderLetterExercise: React.FC<borderLetterProps> = ({
       ? Math.max(MIN_FIT_CANVAS_SIZE, viewportBottom - drawTop - DRAW_CONTROLS_HEIGHT)
       : undefined;
 
+  const { width, height } = useWindowDimensions();
+  const canvasSize = getDrawCanvasSize(width, height, maxCanvasSize);
+
   return (
     <View>
-      <SymbolHeader kana={kana} letter={lettersTableById[id]} />
+      <LetterSoundHeader kana={kana} id={id} width={canvasSize} />
 
       <View
         ref={drawRef}

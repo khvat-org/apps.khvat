@@ -140,6 +140,7 @@ const styles = StyleSheet.create({
     paddingLeft: 16,
     paddingRight: 16,
     paddingTop: 10,
+    paddingBottom: 16,
   },
   lineContainer: {
     width: "100%",

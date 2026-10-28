@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
@@ -24,12 +24,30 @@ const FinishScreen: React.FC<FinishScreenProps> = ({ next, retry }) => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
 
+  const locked = useRef(false);
+
   const onNext = async () => {
-    await requestStoreReview();
-    await requestHuaweiStoreReview();
-    await requestRustoreStoreReview();
-    await showTelegramPromotionIfNeeded();
+    if (locked.current) return;
+    locked.current = true;
+
+    try {
+      await requestStoreReview();
+      await requestHuaweiStoreReview();
+      await requestRustoreStoreReview();
+      await showTelegramPromotionIfNeeded();
+    } catch (error) {
+      locked.current = false;
+      throw error;
+    }
+
     next();
+  };
+
+  const onRetry = () => {
+    if (locked.current) return;
+    locked.current = true;
+
+    retry();
   };
 
   return (
@@ -47,7 +65,7 @@ const FinishScreen: React.FC<FinishScreenProps> = ({ next, retry }) => {
           isHapticFeedback
           isFullWidth
           text={t("common.retry")}
-          onClick={retry}
+          onClick={onRetry}
         />
         <Button
           color="primary"

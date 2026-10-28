@@ -110,15 +110,15 @@ export const StudyActivityProvider = ({ children }: { children: ReactNode }) => 
         const server = (await getUserDataField<StudyDays>(FIELD_NAME)) ?? {};
         const merged = local.synced ? mergeMax(server, local.days) : mergeSum(server, local.days);
 
-        if (!sameDays(merged, server)) {
-          await syncUserData({ [FIELD_NAME]: merged });
-        }
-
         if (epoch.current !== startedAt) return;
 
         const latest = isOurs ? stateRef.current.days : local.days;
 
         write({ days: addDelta(merged, local.days, latest), synced: true, owner: userId });
+
+        if (!sameDays(merged, server)) {
+          await syncUserData({ [FIELD_NAME]: merged });
+        }
       } catch {
         console.log("error study-activity sync");
       } finally {

@@ -77,7 +77,7 @@ const LinearProgressBar: React.FC<ProgressBarProp> = ({
           color="secondary"
           size="sm"
           isHapticFeedback
-          icon={<XIcon size={20} />}
+          icon={<XIcon />}
           onClick={() => {
             if (requireConfirmation) {
               confirmationCloseAlert();
@@ -132,7 +132,7 @@ const makeStyles = (colors: ColorsType) =>
       alignItems: "center",
       justifyContent: "space-between",
 
-      marginTop: 12,
+      marginTop: 8,
     },
     progressBarClose: {
       zIndex: 999,

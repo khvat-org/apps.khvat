@@ -20,7 +20,7 @@ interface ButtonProps {
   content?: ReactNode;
 
   text?: string;
-  icon?: React.ReactElement<{ color?: string }>;
+  icon?: React.ReactElement<{ color?: string; size?: number }>;
 
   color?: ButtonColor;
   variant?: "contained" | "text";
@@ -143,7 +143,11 @@ const Button: FC<ButtonProps> = ({
             </Text>
           )}
           {content && content}
-          {icon && React.cloneElement(icon, { color: getColor(getState(pressed))[1] })}
+          {icon &&
+            React.cloneElement(icon, {
+              color: getColor(getState(pressed))[1],
+              size: size === "md" ? 20 : 16,
+            })}
 
           {children && children}
         </>

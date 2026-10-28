@@ -55,7 +55,7 @@ const EducationKanaTable: React.FC<EducationKanaTableProps> = ({
   const hasColumnHeader = letters && letters.length > 1;
 
   return (
-    <View style={[styles.container, !hasColumnHeader && styles.containerWithoutHeader]}>
+    <View style={[styles.container, hasColumnHeader && styles.containerWithColumnHeader]}>
       {hasColumnHeader && (
         <View style={styles.rowButtons}>
           <Cell
@@ -125,13 +125,13 @@ const styles = StyleSheet.create({
   container: {
     paddingLeft: 16,
     paddingRight: 16,
-    paddingBottom: 30,
+    paddingBottom: 20,
     gap: 9,
     width: "100%",
     alignItems: "center",
   },
-  containerWithoutHeader: {
-    marginTop: 16,
+  containerWithColumnHeader: {
+    marginTop: -16,
   },
   row: {
     flexDirection: "row",
