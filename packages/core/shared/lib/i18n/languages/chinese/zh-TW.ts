@@ -428,6 +428,32 @@ const ChineseTW = {
     channelMultiple: "我們的 Telegram 頻道",
     fixMyself: "我自己修",
   },
+
+  report: {
+    title: "回報錯誤",
+    subtitle: "這題有什麼問題？我們會盡快修正。",
+    placeholder: "內容",
+    upload: "上傳",
+    send: "送出",
+    success: {
+      title: "謝謝！",
+      subtitle: "我們已收到你的回報，會盡快修正錯誤。",
+    },
+    errors: {
+      too_large: "圖片太大，請刪除部分後再試。",
+      rate_limited: "回報次數過多，請稍後再試。",
+      unavailable: "回報送出失敗，請稍後再試。",
+      invalid: "發生問題，請再試一次。",
+    },
+    tags: {
+      grammatical_typo: "錯字",
+      interface_error: "介面錯誤",
+      incorrect_information: "資訊有誤",
+      answer_marked_wrong: "正確答案未被接受",
+      incorrect_character: "字元錯誤",
+      other: "其他",
+    },
+  },
 };
 
 export default ChineseTW;

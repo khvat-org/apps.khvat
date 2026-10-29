@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 
+import { useReport } from "@nihongo/core/features/report/use-report";
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
@@ -18,6 +19,8 @@ import { useEducationLessonContext } from "../lib/context/education-lesson-conte
 import FinishScreen from "@/widgets/learning/lesson/finish-screen/finish-screen";
 import InfoScreen from "@/widgets/learning/lesson/info-screen/info-screen";
 
+const REPORT_TAGS = ["grammatical_typo", "interface_error", "incorrect_information", "other"];
+
 interface LessonProps {
   lesson: LessonInterface;
 }
@@ -31,6 +34,7 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
   const { triggerHaptic } = useHaptic();
 
   const { showModal, hideModal } = useModal();
+  const { openReport } = useReport();
 
   const { init, currentScreen, screen, furthestScreen, lessonScreens, next, back, retry } =
     useEducationLessonContext();
@@ -115,6 +119,12 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
         {currentScreen?.title !== "finish" && (
           <LinearProgressBar
             close={navigation.goBack}
+            onReport={() =>
+              openReport({
+                tags: REPORT_TAGS,
+                context: `lesson:${lesson.lesson_key}/screen:${currentScreen?.id}`,
+              })
+            }
             current={screen}
             all={lessonScreens.length - 1}
           />

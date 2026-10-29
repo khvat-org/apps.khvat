@@ -431,6 +431,32 @@ const Korean = {
     channelMultiple: "저희 텔레그램 채널",
     fixMyself: "직접 고칠게요",
   },
+
+  report: {
+    title: "오류 신고",
+    subtitle: "이 문제에 어떤 문제가 있나요? 바로 고치겠습니다.",
+    placeholder: "내용",
+    upload: "업로드",
+    send: "신고 보내기",
+    success: {
+      title: "감사합니다!",
+      subtitle: "신고를 받았습니다. 오류를 수정하겠습니다.",
+    },
+    errors: {
+      too_large: "이미지가 너무 큽니다. 일부를 삭제해 주세요.",
+      rate_limited: "신고가 너무 많습니다. 잠시 후 다시 시도해 주세요.",
+      unavailable: "신고를 보내지 못했습니다. 잠시 후 다시 시도해 주세요.",
+      invalid: "문제가 발생했습니다. 다시 시도해 주세요.",
+    },
+    tags: {
+      grammatical_typo: "오타",
+      interface_error: "인터페이스 오류",
+      incorrect_information: "잘못된 정보",
+      answer_marked_wrong: "정답이 인정되지 않음",
+      incorrect_character: "잘못된 문자",
+      other: "기타",
+    },
+  },
 };
 
 export default Korean;

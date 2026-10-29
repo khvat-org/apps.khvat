@@ -146,7 +146,7 @@ const Button: FC<ButtonProps> = ({
           {icon &&
             React.cloneElement(icon, {
               color: getColor(getState(pressed))[1],
-              size: size === "md" ? 20 : 16,
+              // size: size === "sm" ? 16 : 20,
             })}
 
           {children && children}

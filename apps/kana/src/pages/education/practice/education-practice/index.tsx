@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useReducer, useRef, useState } from "react";
 
+import { useReport } from "@nihongo/core/features/report/use-report";
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
 import { useStudyActivity } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
@@ -15,6 +16,7 @@ import { useTranslation } from "react-i18next";
 import { StyleSheet, BackHandler, View } from "react-native";
 
 import QuestionsEducationPractice from "./helpers/education-practice";
+import { getPracticeReportContext } from "./helpers/report-context";
 import wrapperQuestionGenerate from "./helpers/wrapper-question-generate";
 import { OnSubmit, PracticeResultData, PracticeUserSelect } from "./lib/types/questions";
 import { getKatakanaLetters, getHiraganaLetters } from "./selectors/kanaSelectors";
@@ -40,10 +42,14 @@ interface LearnScreenProps {
 
 const MemoTimer = React.memo(EducationPracticeTimer);
 
+const REPORT_TAGS = ["answer_marked_wrong", "incorrect_character", "interface_error", "other"];
+
 const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   useKeepAwake();
 
   const { showModal, hideModal } = useModal();
+  const { openReport } = useReport();
+  const [isReporting, setIsReporting] = useState(false);
 
   const navigation = useNavigation<ScreenNavigationProp>();
 
@@ -167,6 +173,14 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
         {questions.length !== 0 && currentIndex <= questions.length && (
           <LinearProgressBar
             close={navigation.goBack}
+            onReport={() => {
+              setIsReporting(true);
+              openReport({
+                tags: REPORT_TAGS,
+                context: getPracticeReportContext(question),
+                onClose: () => setIsReporting(false),
+              });
+            }}
             current={currentIndex}
             all={questions.length}
           />
@@ -177,7 +191,7 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
             index={currentIndex}
             key={timerKey}
             initial={preferences.timerSeconds}
-            isFreeze={isFreeze}
+            isFreeze={isFreeze || isReporting}
             onTimerEnd={() =>
               onSubmit({ isCorrectAnswer: false, userSelect: partialSelect.current })
             }

@@ -440,6 +440,32 @@ const SpanishMX = {
     channelMultiple: "Nuestros canales de Telegram",
     fixMyself: "Yo lo arreglo",
   },
+
+  report: {
+    title: "Reportar un error",
+    subtitle: "¿Qué está mal en esta pregunta? Lo corregiremos de inmediato.",
+    placeholder: "Texto",
+    upload: "Subir",
+    send: "Enviar",
+    success: {
+      title: "¡Gracias!",
+      subtitle: "Recibimos tu reporte y vamos a corregir el error.",
+    },
+    errors: {
+      too_large: "Las imágenes son demasiado grandes. Intenta quitar algunas.",
+      rate_limited: "Demasiados reportes. Inténtalo más tarde.",
+      unavailable: "No se pudo enviar el reporte. Inténtalo más tarde.",
+      invalid: "Algo salió mal. Inténtalo de nuevo.",
+    },
+    tags: {
+      grammatical_typo: "Error ortográfico",
+      interface_error: "Error de la interfaz",
+      incorrect_information: "Información incorrecta",
+      answer_marked_wrong: "Respuesta correcta no aceptada",
+      incorrect_character: "Carácter incorrecto",
+      other: "Otro",
+    },
+  },
 };
 
 export default SpanishMX;

@@ -434,6 +434,32 @@ const Indonesian = {
     channelMultiple: "Channel Telegram kami",
     fixMyself: "Saya akan perbaiki sendiri",
   },
+
+  report: {
+    title: "Laporkan kesalahan",
+    subtitle: "Apa yang salah dengan pertanyaan ini? Kami akan segera memperbaikinya.",
+    placeholder: "Teks",
+    upload: "Unggah",
+    send: "Kirim",
+    success: {
+      title: "Terima kasih!",
+      subtitle: "Kami sudah menerima laporanmu dan akan memperbaiki kesalahannya.",
+    },
+    errors: {
+      too_large: "Gambar terlalu besar. Coba hapus beberapa.",
+      rate_limited: "Terlalu banyak laporan. Coba lagi nanti.",
+      unavailable: "Laporan gagal dikirim. Coba lagi nanti.",
+      invalid: "Terjadi kesalahan. Coba lagi.",
+    },
+    tags: {
+      grammatical_typo: "Salah ketik",
+      interface_error: "Kesalahan antarmuka",
+      incorrect_information: "Informasi salah",
+      answer_marked_wrong: "Jawaban benar tidak diterima",
+      incorrect_character: "Karakter salah",
+      other: "Lainnya",
+    },
+  },
 };
 
 export default Indonesian;

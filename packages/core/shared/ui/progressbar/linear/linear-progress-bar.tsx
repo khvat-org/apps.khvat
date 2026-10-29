@@ -1,7 +1,7 @@
 import React from "react";
 
 import { FeatureFlagsService } from "@nihongo/core/shared/services/feature-flags-service/feature-flags-service";
-import { XIcon } from "phosphor-react-native";
+import { FlagIcon, XIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet } from "react-native";
 
@@ -13,6 +13,7 @@ import Button from "../../button";
 
 interface ProgressBarProp {
   close?: () => void;
+  onReport?: () => void;
   requireConfirmation?: boolean;
   confirmationTitle?: string;
   confirmationSubtitle?: string;
@@ -23,6 +24,7 @@ interface ProgressBarProp {
 
 const LinearProgressBar: React.FC<ProgressBarProp> = ({
   close,
+  onReport,
   requireConfirmation = true,
   confirmationTitle,
   confirmationSubtitle,
@@ -73,19 +75,31 @@ const LinearProgressBar: React.FC<ProgressBarProp> = ({
         />
       </View>
       <View style={styles.progressBarBottom}>
-        <Button
-          color="secondary"
-          size="sm"
-          isHapticFeedback
-          icon={<XIcon />}
-          onClick={() => {
-            if (requireConfirmation) {
-              confirmationCloseAlert();
-            } else {
-              close?.();
-            }
-          }}
-        />
+        <View style={styles.progressBarActions}>
+          <Button
+            color="secondary"
+            size="sm"
+            isHapticFeedback
+            icon={<XIcon size={16} />}
+            onClick={() => {
+              if (requireConfirmation) {
+                confirmationCloseAlert();
+              } else {
+                close?.();
+              }
+            }}
+          />
+
+          {onReport && (
+            <Button
+              color="secondary"
+              size="sm"
+              isHapticFeedback
+              icon={<FlagIcon size={16} />}
+              onClick={onReport}
+            />
+          )}
+        </View>
 
         <Text style={styles.progressBarText}>
           {title ? title : t("practice.question")} {current + 1} / {all}
@@ -133,6 +147,10 @@ const makeStyles = (colors: ColorsType) =>
       justifyContent: "space-between",
 
       marginTop: 8,
+    },
+    progressBarActions: {
+      flexDirection: "row",
+      gap: 16,
     },
     progressBarClose: {
       zIndex: 999,

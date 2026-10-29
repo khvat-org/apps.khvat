@@ -428,6 +428,32 @@ const ChineseCN = {
     channelMultiple: "我们的 Telegram 频道",
     fixMyself: "我自己会修",
   },
+
+  report: {
+    title: "报告错误",
+    subtitle: "这道题有什么问题？我们会尽快修正。",
+    placeholder: "内容",
+    upload: "上传",
+    send: "发送",
+    success: {
+      title: "谢谢！",
+      subtitle: "我们已收到你的反馈，会尽快修正错误。",
+    },
+    errors: {
+      too_large: "图片太大，请删除一些后再试。",
+      rate_limited: "反馈次数过多，请稍后再试。",
+      unavailable: "反馈发送失败，请稍后再试。",
+      invalid: "出了点问题，请重试。",
+    },
+    tags: {
+      grammatical_typo: "错别字",
+      interface_error: "界面错误",
+      incorrect_information: "信息有误",
+      answer_marked_wrong: "正确答案未被认可",
+      incorrect_character: "字符错误",
+      other: "其他",
+    },
+  },
 };
 
 export default ChineseCN;

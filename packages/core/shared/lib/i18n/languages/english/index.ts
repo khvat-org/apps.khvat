@@ -434,6 +434,32 @@ const English = {
     channelMultiple: "Our Telegram channels",
     fixMyself: "I'll fix it myself",
   },
+
+  report: {
+    title: "Report an error",
+    subtitle: "What's wrong with this question? We'll fix it right away.",
+    placeholder: "Text",
+    upload: "Upload",
+    send: "Send report",
+    success: {
+      title: "Thank you!",
+      subtitle: "We've received your report and will fix the error.",
+    },
+    errors: {
+      too_large: "The images are too large. Try removing some of them.",
+      rate_limited: "Too many reports. Please try again later.",
+      unavailable: "Couldn't send the report. Please try again later.",
+      invalid: "Something went wrong. Please try again.",
+    },
+    tags: {
+      grammatical_typo: "Grammatical typo",
+      interface_error: "Interface error",
+      incorrect_information: "Incorrect information",
+      answer_marked_wrong: "Correct answer not accepted",
+      incorrect_character: "Incorrect character",
+      other: "Other",
+    },
+  },
 };
 
 export default English;

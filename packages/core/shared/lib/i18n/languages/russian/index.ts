@@ -436,6 +436,32 @@ const Russian = {
     channelMultiple: "Наши телеграм-каналы",
     fixMyself: "Я починю сам",
   },
+
+  report: {
+    title: "Сообщить об ошибке",
+    subtitle: "Что не так с этим вопросом? Мы быстро всё исправим.",
+    placeholder: "Текст",
+    upload: "Загрузить",
+    send: "Отправить",
+    success: {
+      title: "Спасибо!",
+      subtitle: "Мы получили ваше сообщение и исправим ошибку.",
+    },
+    errors: {
+      too_large: "Картинки слишком большие. Попробуйте убрать часть из них.",
+      rate_limited: "Слишком много сообщений. Попробуйте позже.",
+      unavailable: "Не удалось отправить сообщение. Попробуйте позже.",
+      invalid: "Что-то пошло не так. Попробуйте ещё раз.",
+    },
+    tags: {
+      grammatical_typo: "Опечатка",
+      interface_error: "Ошибка интерфейса",
+      incorrect_information: "Неверная информация",
+      answer_marked_wrong: "Правильный ответ не засчитан",
+      incorrect_character: "Неверный символ",
+      other: "Другое",
+    },
+  },
 };
 
 export default Russian;

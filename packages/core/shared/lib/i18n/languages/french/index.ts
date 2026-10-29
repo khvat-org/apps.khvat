@@ -440,6 +440,32 @@ const French = {
     channelMultiple: "Nos canaux Telegram",
     fixMyself: "Je le réparerai moi-même",
   },
+
+  report: {
+    title: "Signaler une erreur",
+    subtitle: "Qu'est-ce qui ne va pas avec cette question ? Nous corrigerons rapidement.",
+    placeholder: "Texte",
+    upload: "Ajouter",
+    send: "Envoyer",
+    success: {
+      title: "Merci !",
+      subtitle: "Nous avons bien reçu votre signalement et corrigerons l'erreur.",
+    },
+    errors: {
+      too_large: "Les images sont trop lourdes. Essayez d'en retirer quelques-unes.",
+      rate_limited: "Trop de signalements. Réessayez plus tard.",
+      unavailable: "Impossible d'envoyer le signalement. Réessayez plus tard.",
+      invalid: "Une erreur s'est produite. Réessayez.",
+    },
+    tags: {
+      grammatical_typo: "Faute de frappe",
+      interface_error: "Erreur d'interface",
+      incorrect_information: "Information incorrecte",
+      answer_marked_wrong: "Bonne réponse non acceptée",
+      incorrect_character: "Caractère incorrect",
+      other: "Autre",
+    },
+  },
 };
 
 export default French;

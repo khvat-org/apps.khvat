@@ -439,6 +439,32 @@ const German = {
     channelMultiple: "Unsere Telegram-Kanäle",
     fixMyself: "Ich repariere es selbst",
   },
+
+  report: {
+    title: "Fehler melden",
+    subtitle: "Was stimmt mit dieser Frage nicht? Wir beheben es sofort.",
+    placeholder: "Text",
+    upload: "Hochladen",
+    send: "Senden",
+    success: {
+      title: "Danke!",
+      subtitle: "Wir haben deine Meldung erhalten und beheben den Fehler.",
+    },
+    errors: {
+      too_large: "Die Bilder sind zu groß. Entferne einige davon.",
+      rate_limited: "Zu viele Meldungen. Versuche es später noch einmal.",
+      unavailable: "Die Meldung konnte nicht gesendet werden. Versuche es später noch einmal.",
+      invalid: "Etwas ist schiefgelaufen. Versuche es noch einmal.",
+    },
+    tags: {
+      grammatical_typo: "Tippfehler",
+      interface_error: "Fehler in der Oberfläche",
+      incorrect_information: "Falsche Information",
+      answer_marked_wrong: "Richtige Antwort nicht gewertet",
+      incorrect_character: "Falsches Zeichen",
+      other: "Sonstiges",
+    },
+  },
 };
 
 export default German;
