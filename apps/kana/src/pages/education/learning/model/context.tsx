@@ -43,6 +43,8 @@ export interface LessonsContextType {
   loading: boolean;
   loadLessons: (lang: string, signal?: AbortSignal) => Promise<void>;
   completeLesson: (lessonKey: string) => void;
+  openedLessonId: string | null;
+  setOpenedLessonId: (lessonId: string | null) => void;
 }
 
 const LessonsContext = createContext<LessonsContextType | null>(null);
@@ -104,6 +106,7 @@ export const LessonsProvider = ({ children }: { children: ReactNode }) => {
   const [completedLessonsKeys, setCompletedLessonsKeys] = useState<string[]>([]);
   const [lang, setLang] = useState<string>("en");
   const [loading, setLoading] = useState(false);
+  const [openedLessonId, setOpenedLessonId] = useState<string | null>(null);
 
   const completedRef = useRef<string[]>([]);
   const ownerRef = useRef<string | null>(null);
@@ -283,8 +286,10 @@ export const LessonsProvider = ({ children }: { children: ReactNode }) => {
       loading,
       loadLessons,
       completeLesson,
+      openedLessonId,
+      setOpenedLessonId,
     }),
-    [chapters, completedLessonsKeys, lang, loading, loadLessons, completeLesson],
+    [chapters, completedLessonsKeys, lang, loading, loadLessons, completeLesson, openedLessonId],
   );
 
   return <LessonsContext.Provider value={value}>{children}</LessonsContext.Provider>;

@@ -4,7 +4,7 @@ import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-conte
 import { Typography } from "@nihongo/core/shared/typography";
 import { View, Text, StyleSheet } from "react-native";
 
-import { parseString } from "../lib/parse-string";
+import { parseString } from "../../lib/parse-string";
 
 type TextProps = {
   text: string;

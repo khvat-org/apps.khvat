@@ -13,6 +13,7 @@ import { useTranslation } from "react-i18next";
 import { StyleSheet, Text, View } from "react-native";
 
 import { StatisticLevel } from "@/pages/kana/kana-table-list-page/model/types";
+import { getRowFirstLetterById, getRowLabel } from "@/shared/helpers/kana-letter";
 
 interface SymbolHeaderProps {
   letter: ILetter;
@@ -20,9 +21,11 @@ interface SymbolHeaderProps {
   kana?: string;
 
   indicatorColor?: StatisticLevel | null;
+
+  isShowRow?: boolean;
 }
 
-const SymbolHeader: React.FC<SymbolHeaderProps> = ({ letter, kana, indicatorColor }) => {
+const SymbolHeader: React.FC<SymbolHeaderProps> = ({ letter, kana, indicatorColor, isShowRow }) => {
   const { colors } = useThemeContext();
   const { t } = useTranslation();
   const { getRomaji } = useGetRomaji();
@@ -50,6 +53,10 @@ const SymbolHeader: React.FC<SymbolHeaderProps> = ({ letter, kana, indicatorColo
     return "kana.basic";
   };
 
+  const isRowVisible = isShowRow && !handakuonFlatLettersId.includes(letter.id);
+  const rowFirstLetter = isRowVisible ? getRowFirstLetterById(letter.id) : undefined;
+  const rowLabel = rowFirstLetter ? getRowLabel(getRomaji(rowFirstLetter)).toUpperCase() : null;
+
   return (
     <View style={styles.titleContainer}>
       {indicatorColor && (
@@ -72,7 +79,8 @@ const SymbolHeader: React.FC<SymbolHeaderProps> = ({ letter, kana, indicatorColo
 
       {kana && (
         <Text style={styles.kanaSub}>
-          {t(`kana.${kana}`)} ({t(getTypeById(letter.id))})
+          {t(`kana.${kana}`)} ({t(getTypeById(letter.id))}
+          {rowLabel && ` / ${t("kana.row", { row: rowLabel })}`})
         </Text>
       )}
     </View>

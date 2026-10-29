@@ -71,6 +71,7 @@ const Russian = {
     dakuon: "Дакуон",
     handakuon: "Хандакуон",
     yoon: "Юон",
+    row: "Ряд {{row}}",
   },
 
   selectKana: {

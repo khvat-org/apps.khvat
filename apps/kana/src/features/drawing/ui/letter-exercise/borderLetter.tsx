@@ -3,9 +3,9 @@ import React, { useRef, useState } from "react";
 import { lettersTableBase } from "@nihongo/core/shared/data/lettersTable";
 import { useWindowDimensions, View } from "react-native";
 
-import LetterSoundHeader from "@/entities/education/letter/letter-sound-header/letter-sound-header";
+import LetterSoundHeader from "@/entities/kana/letter-sound-header/letter-sound-header";
 import Draw, {
-  DRAW_CONTROLS_HEIGHT,
+  DRAW_CONTROLS_HEIGHT_EXTERNAL_CHECK,
   DrawHandle,
   getDrawCanvasSize,
   MIN_FIT_CANVAS_SIZE,
@@ -44,7 +44,10 @@ const BorderLetterExercise: React.FC<borderLetterProps> = ({
 
   const maxCanvasSize =
     viewportBottom != null && drawTop !== null
-      ? Math.max(MIN_FIT_CANVAS_SIZE, viewportBottom - drawTop - DRAW_CONTROLS_HEIGHT)
+      ? Math.max(
+          MIN_FIT_CANVAS_SIZE,
+          viewportBottom - drawTop - DRAW_CONTROLS_HEIGHT_EXTERNAL_CHECK,
+        )
       : undefined;
 
   const { width, height } = useWindowDimensions();

@@ -218,6 +218,9 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
             symbol={question.drawing.question}
             kana={question.drawing.questionKana}
             onCompleted={onSubmit}
+            onProgress={(userSelect) => {
+              partialSelect.current = userSelect;
+            }}
           />
         )}
 

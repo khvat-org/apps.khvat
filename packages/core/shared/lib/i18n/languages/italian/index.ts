@@ -71,6 +71,7 @@ const Italian = {
     dakuon: "Dakuon",
     handakuon: "Handakuon",
     yoon: "Yoon",
+    row: "Riga {{row}}",
   },
 
   selectKana: {

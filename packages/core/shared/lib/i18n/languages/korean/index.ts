@@ -70,6 +70,7 @@ const Korean = {
     dakuon: "탁음",
     handakuon: "반탁음",
     yoon: "요음",
+    row: "{{row}}행",
   },
 
   selectKana: {

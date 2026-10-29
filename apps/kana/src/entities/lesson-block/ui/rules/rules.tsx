@@ -4,7 +4,7 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import { Typography } from "@nihongo/core/shared/typography";
 import { StyleSheet, Text, View } from "react-native";
 
-import { parseString } from "../lib/parse-string";
+import { parseString } from "../../lib/parse-string";
 
 type RulesProps = {
   rules: string[];
@@ -36,8 +36,6 @@ const makeStyles = (colors: ColorsType) =>
       width: "100%",
       flexDirection: "column",
       borderRadius: 12,
-      marginTop: 16,
-      marginBottom: 16,
       paddingLeft: 16,
       paddingRight: 16,
       backgroundColor: colors.BgSecondary,

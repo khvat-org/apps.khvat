@@ -71,6 +71,7 @@ const English = {
     dakuon: "Dakuon",
     handakuon: "Handakuon",
     yoon: "Yoon",
+    row: "{{row}} row",
   },
 
   selectKana: {

@@ -4,7 +4,7 @@ import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-conte
 import { Typography } from "@nihongo/core/shared/typography";
 import { StyleSheet, Text, View } from "react-native";
 
-import { parseString } from "../lib/parse-string";
+import { parseString } from "../../lib/parse-string";
 
 interface TableProps {
   data: string[][];
@@ -56,8 +56,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     borderRadius: 12,
     overflow: "hidden",
-    marginTop: 16,
-    marginBottom: 16,
   },
   column: {},
   cell: {

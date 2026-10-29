@@ -209,13 +209,13 @@ const ReportModal: React.FC<ReportModalProps> = ({ tags, context, onClose, onSen
           {Array.from({ length: processing }, (_, index) => (
             <View key={`processing-${index}`} style={[styles.tile, styles.tileProcessing]}>
               <ImageIcon size={20} color={colors.TextPrimary} />
-              <ActivityIndicator size="small" color={colors.BgAccent} />
+              <ActivityIndicator size="small" color={colors.BgGray} />
             </View>
           ))}
 
           {canAddImages && (
             <Pressable
-              style={({ pressed }) => [styles.tile, styles.upload, pressed && { opacity: 0.7 }]}
+              style={({ pressed }) => [styles.tile, styles.upload, pressed && styles.uploadPressed]}
               onPress={() => void pickImages()}
             >
               <UploadSimpleIcon size={20} color={colors.TextPrimary} />
@@ -321,7 +321,7 @@ const makeStyles = (colors: ColorsType) =>
       width: TILE_SIZE,
       height: TILE_SIZE,
       borderRadius: 12,
-      borderWidth: 1,
+      borderWidth: 2,
       borderColor: colors.BorderDefault,
       overflow: "hidden",
     },
@@ -350,10 +350,13 @@ const makeStyles = (colors: ColorsType) =>
     },
     upload: {
       borderStyle: "dashed",
-      borderWidth: 1.5,
+      backgroundColor: colors.BgSecondary,
       alignItems: "center",
       justifyContent: "center",
       gap: 8,
+    },
+    uploadPressed: {
+      backgroundColor: colors.BgLightGray,
     },
     uploadText: {
       ...Typography.boldLabel,

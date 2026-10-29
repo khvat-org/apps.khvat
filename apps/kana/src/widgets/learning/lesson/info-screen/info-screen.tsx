@@ -9,18 +9,10 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { LearningTitle } from "../ui/title";
 
-import BorderLetterExercise from "./borderLetterExercise/borderLetter";
-import ImageBlock from "./image/image";
-import Rules from "./rules/rules";
-import Table from "./table/table";
-import BlockText from "./text/text";
-import Title from "./title/title";
-
-import BorderLetter from "@/entities/education/letter/borderLetter/borderLetter";
-import MatchPairs from "@/entities/education/practice/match-pairs/match-pairs";
-import SelectAnswer from "@/entities/education/select-answer/select-answer";
-import Sequence from "@/entities/education/sequence";
+import { MatchPairs, SelectAnswer, Sequence } from "@/entities/exercise";
+import { BlockText, BorderLetter, ImageBlock, Rules, Table, Title } from "@/entities/lesson-block";
 import { DrawHandle } from "@/features/drawing/ui/draw/draw";
+import BorderLetterExercise from "@/features/drawing/ui/letter-exercise/borderLetter";
 import { KanaAlphabet, TEST_DELAY } from "@/shared/constants/kana";
 import {
   InfoLessonScreen,
@@ -198,6 +190,70 @@ const InfoScreen: React.FC<InfoScreenProps> = ({
     }, TEST_DELAY);
   }, TEST_DELAY + 100);
 
+  const renderBlock = (block: AnyLessonBlock, idx: number) => {
+    if (blockType.isText(block)) {
+      return <BlockText text={block.content.text} key={idx} />;
+    } else if (blockType.isTable(block)) {
+      return <Table key={idx} data={block.content.table} />;
+    } else if (blockType.isRules(block)) {
+      return <Rules key={idx} rules={block.content.rules} />;
+    } else if (blockType.isLetter(block) || blockType.isLetterExercise(block)) {
+      const isExercise = block.content.exercise;
+      const blockKana =
+        block.content.kana.toLowerCase() === "hiragana"
+          ? KanaAlphabet.Hiragana
+          : KanaAlphabet.Katakana;
+
+      if (isExercise) {
+        return (
+          <BorderLetterExercise
+            ref={drawRef}
+            viewportBottom={viewportBottom}
+            onComplete={() => nextDelayed()}
+            kana={blockKana}
+            key={idx}
+            id={block.content.id}
+            isStencil={block.content.stencil}
+          />
+        );
+      } else {
+        return <BorderLetter kana={blockKana} key={idx} id={block.content.id} />;
+      }
+    } else if (blockType.isSelectAnswer(block)) {
+      return (
+        <SelectAnswer key={idx} onFinish={(_) => nextDelayed()} answers={choiceAnswers[idx]} />
+      );
+    } else if (blockType.isMatchAnswerBlock(block)) {
+      return (
+        <MatchPairs
+          onComplete={() => nextDelayed()}
+          items={block.content.pairs.map(([left, right]) => ({
+            left: { text: left },
+            right: { text: right },
+          }))}
+          key={idx}
+        />
+      );
+    } else if (blockType.isSequence(block)) {
+      return (
+        <Sequence onFinish={(_) => nextDelayed()} sequence={block.content.sequence} key={idx} />
+      );
+    } else if (blockType.isImage(block)) {
+      return <ImageBlock url={block.content.url} alt={block.content.alt} key={idx} />;
+    } else if (blockType.isTitleBlock(block)) {
+      return <Title title={block.content.title} subtitle={block.content.sub_title} key={idx} />;
+    } else {
+      checkUnknown(block);
+    }
+  };
+
+  const getBlockMarginTop = (block: AnyLessonBlock, idx: number) => {
+    if (idx === 0) return 0;
+    if (blockType.isLetter(block) || blockType.isLetterExercise(block))
+      return LETTER_BLOCK_MARGIN_TOP;
+    return BLOCK_MARGIN_TOP;
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.viewport} ref={viewportRef} onLayout={measureViewport}>
@@ -216,75 +272,11 @@ const InfoScreen: React.FC<InfoScreenProps> = ({
 
           <View style={styles.blocksContainer}>
             <View style={styles.blocks}>
-              {blocks.map((block, idx) => {
-                if (blockType.isText(block)) {
-                  return <BlockText text={block.content.text} key={idx} />;
-                } else if (blockType.isTable(block)) {
-                  return <Table key={idx} data={block.content.table} />;
-                } else if (blockType.isRules(block)) {
-                  return <Rules key={idx} rules={block.content.rules} />;
-                } else if (blockType.isLetter(block) || blockType.isLetterExercise(block)) {
-                  const isExercise = block.content.exercise;
-                  const blockKana =
-                    block.content.kana.toLowerCase() === "hiragana"
-                      ? KanaAlphabet.Hiragana
-                      : KanaAlphabet.Katakana;
-
-                  if (isExercise) {
-                    return (
-                      <BorderLetterExercise
-                        ref={drawRef}
-                        viewportBottom={viewportBottom}
-                        onComplete={() => nextDelayed()}
-                        kana={blockKana}
-                        key={idx}
-                        id={block.content.id}
-                        isStencil={block.content.stencil}
-                      />
-                    );
-                  } else {
-                    return <BorderLetter kana={blockKana} key={idx} id={block.content.id} />;
-                  }
-                } else if (blockType.isSelectAnswer(block)) {
-                  return (
-                    <SelectAnswer
-                      key={idx}
-                      onFinish={(_) => nextDelayed()}
-                      answers={choiceAnswers[idx]}
-                    />
-                  );
-                } else if (blockType.isMatchAnswerBlock(block)) {
-                  return (
-                    <MatchPairs
-                      onComplete={() => nextDelayed()}
-                      pairs={{
-                        data: block.content.pairs,
-                      }}
-                      key={idx}
-                    />
-                  );
-                } else if (blockType.isSequence(block)) {
-                  return (
-                    <Sequence
-                      onFinish={(_) => nextDelayed()}
-                      sequence={block.content.sequence}
-                      key={idx}
-                    />
-                  );
-                } else if (blockType.isImage(block)) {
-                  return <ImageBlock url={block.content.url} alt={block.content.alt} key={idx} />;
-                } else if (blockType.isTitleBlock(block)) {
-                  return (
-                    <Title
-                      title={block.content.title}
-                      subtitle={block.content.sub_title}
-                      key={idx}
-                    />
-                  );
-                } else {
-                  checkUnknown(block);
-                }
-              })}
+              {blocks.map((block, idx) => (
+                <View key={idx} style={{ marginTop: getBlockMarginTop(block, idx) }}>
+                  {renderBlock(block, idx)}
+                </View>
+              ))}
             </View>
           </View>
         </ScrollView>
@@ -297,6 +289,8 @@ const InfoScreen: React.FC<InfoScreenProps> = ({
 export default InfoScreen;
 
 const SCROLL_PADDING = 22;
+const BLOCK_MARGIN_TOP = 16;
+const LETTER_BLOCK_MARGIN_TOP = 32;
 
 const styles = StyleSheet.create({
   container: {

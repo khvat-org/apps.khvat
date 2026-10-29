@@ -4,7 +4,7 @@ import { getCanvasSize } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useWindowDimensions, View } from "react-native";
 
-import LetterSoundHeader from "@/entities/education/letter/letter-sound-header/letter-sound-header";
+import LetterSoundHeader from "@/entities/kana/letter-sound-header/letter-sound-header";
 import Symbol from "@/entities/kana/symbol/symbol";
 import { KanaAlphabet } from "@/shared/constants/kana";
 

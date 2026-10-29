@@ -71,6 +71,7 @@ const German = {
     dakuon: "Dakuon",
     handakuon: "Handakuon",
     yoon: "Yōon",
+    row: "Reihe {{row}}",
   },
 
   selectKana: {

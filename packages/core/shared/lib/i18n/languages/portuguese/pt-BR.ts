@@ -71,6 +71,7 @@ const PortugueseBR = {
     dakuon: "Dakuon",
     handakuon: "Handakuon",
     yoon: "Yoon",
+    row: "Linha {{row}}",
   },
 
   selectKana: {

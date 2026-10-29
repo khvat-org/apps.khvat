@@ -70,6 +70,7 @@ const ChineseCN = {
     dakuon: "浊音",
     handakuon: "半浊音",
     yoon: "拗音",
+    row: "{{row}}行",
   },
 
   selectKana: {

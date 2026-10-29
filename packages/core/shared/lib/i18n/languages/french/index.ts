@@ -72,6 +72,7 @@ const French = {
     dakuon: "Dakuon",
     handakuon: "Handakuon",
     yoon: "Yōon",
+    row: "Ligne {{row}}",
   },
 
   selectKana: {

@@ -57,7 +57,7 @@ const SelectAnswer: React.FC<SelectAnswerProps> = ({ answers, onFinish }) => {
             isHapticFeedback
             onClick={() => onAnswer(answer)}
             text={answer.title}
-            textStyle={Typography.regularDefault}
+            textStyle={Typography.boldDefault}
           />
         ))}
       </View>

@@ -31,7 +31,6 @@ const makeStyles = (colors: ColorsType) =>
       justifyContent: "center",
       alignItems: "center",
       flexDirection: "column",
-      marginBottom: 32,
     },
     title: {
       width: "100%",

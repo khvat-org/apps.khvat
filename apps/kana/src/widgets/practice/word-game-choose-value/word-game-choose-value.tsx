@@ -5,7 +5,7 @@ import { Typography } from "@nihongo/core/shared/typography";
 import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet } from "react-native";
 
-import SelectAnswer from "@/entities/education/select-answer/select-answer";
+import { SelectAnswer } from "@/entities/exercise";
 import { OnSubmit } from "@/pages/education/practice/education-practice/lib/types/questions";
 import { PracticeType, TEST_DELAY } from "@/shared/constants/kana";
 import { Word } from "@/shared/data/words";

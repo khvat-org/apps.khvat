@@ -7,6 +7,7 @@ import { useWindowDimensions, View, StyleSheet } from "react-native";
 import Cell from "@/entities/kana/cell/cell";
 import { useStatisticsContext } from "@/pages/kana/kana-table-list-page/model/hooks";
 import { Alphabet, KanaAlphabet } from "@/shared/constants/kana";
+import { getColumnLabel, getRowLabel } from "@/shared/helpers/kana-letter";
 interface EducationKanaTableProps {
   kana: KanaAlphabet.Hiragana | KanaAlphabet.Katakana;
   type: Alphabet;
@@ -39,17 +40,9 @@ const EducationKanaTableForTablet: React.FC<EducationKanaTableProps> = ({
 
   const { getRomaji } = useGetRomaji();
 
-  const getStartOfRow = (letter: ILetter) => {
-    const romaji = getRomaji(letter);
+  const getStartOfRow = (letter: ILetter) => getRowLabel(getRomaji(letter));
 
-    return (romaji.length < 3 ? romaji[0] : romaji[0] + romaji[1]) + "-";
-  };
-
-  const getEndOfColumn = (letter: ILetter) => {
-    const romaji = getRomaji(letter);
-
-    return "-" + (romaji.length === 2 ? romaji[1] : romaji.length === 1 ? romaji[0] : romaji[2]);
-  };
+  const getEndOfColumn = (letter: ILetter) => getColumnLabel(getRomaji(letter));
 
   return (
     <View style={styles.container}>

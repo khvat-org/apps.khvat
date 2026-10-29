@@ -53,9 +53,8 @@ export type DrawingSnapshot = {
 };
 
 export const DRAW_CONTROLS_HEIGHT = 165;
+export const DRAW_CONTROLS_HEIGHT_EXTERNAL_CHECK = 80;
 export const MIN_FIT_CANVAS_SIZE = 200;
-
-const CHECK_BUTTON_HEIGHT = 48;
 
 export const getDrawCanvasSize = (width: number, height: number, maxCanvasSize = Infinity) =>
   width < TABLET_WIDTH
@@ -85,6 +84,7 @@ interface DrawProps {
   isTextRecognition?: boolean;
 
   onCompleted?: (isErrors: boolean, pickedAnswer: ILetter, drawing: DrawingSnapshot) => void;
+  onProgress?: (drawing: DrawingSnapshot) => void;
 }
 
 const Draw: React.FC<DrawProps> = ({
@@ -98,6 +98,7 @@ const Draw: React.FC<DrawProps> = ({
   isFullHeight,
   maxCanvasSize = Infinity,
   onCompleted,
+  onProgress,
 }) => {
   const { width, height } = useWindowDimensions();
 
@@ -117,6 +118,13 @@ const Draw: React.FC<DrawProps> = ({
   const isShowLetter = settings.isShowLetter;
   const isShowBorder = settings.isShowBorder;
 
+  const getSnapshot = (): DrawingSnapshot => ({
+    strokes: pathsRef.current.map((path) => path.map((point) => ({ ...point }))),
+    canvasSize,
+  });
+
+  const notifyProgress = () => onProgress?.(getSnapshot());
+
   const drawGesture = usePanGesture({
     minDistance: 0,
     maxPointers: 1,
@@ -129,11 +137,13 @@ const Draw: React.FC<DrawProps> = ({
       forceUpdate();
     },
     onFinalize: () => {
-      if (currentPathRef.current.length > 1) {
+      const isStrokeAdded = currentPathRef.current.length > 1;
+      if (isStrokeAdded) {
         pathsRef.current = [...pathsRef.current, currentPathRef.current];
       }
       currentPathRef.current = [];
       forceUpdate();
+      if (isStrokeAdded) notifyProgress();
     },
   });
 
@@ -200,10 +210,7 @@ const Draw: React.FC<DrawProps> = ({
       targetMatch.score <= ABS_THRESHOLD &&
       targetMatch.score <= best.score * (1 + RANK_MARGIN);
 
-    const drawing: DrawingSnapshot = {
-      strokes: pathsRef.current.map((path) => path.map((point) => ({ ...point }))),
-      canvasSize,
-    };
+    const drawing = getSnapshot();
 
     if (isSomeKana) {
       onCompleted?.(true, letter, drawing);
@@ -227,7 +234,7 @@ const Draw: React.FC<DrawProps> = ({
   useImperativeHandle(ref, () => ({ check: detectSymbol }), [detectSymbol]);
 
   const controlsHeight = isCheckButtonExternal
-    ? DRAW_CONTROLS_HEIGHT - CHECK_BUTTON_HEIGHT
+    ? DRAW_CONTROLS_HEIGHT_EXTERNAL_CHECK
     : DRAW_CONTROLS_HEIGHT;
 
   const IS_SAVE = false;
@@ -325,7 +332,16 @@ const Draw: React.FC<DrawProps> = ({
             maxWidth: width > canvasSize ? canvasSize : width - 32,
           }}
         >
-          <ClearButtons clearFull={handleClearButtonClick} clearStep={handleClearStepButtonClick} />
+          <ClearButtons
+            clearFull={() => {
+              handleClearButtonClick();
+              notifyProgress();
+            }}
+            clearStep={() => {
+              handleClearStepButtonClick();
+              notifyProgress();
+            }}
+          />
           <View style={styles.buttonsContainer}>
             <View style={styles.actionButtons}>
               {isTextRecognition && (

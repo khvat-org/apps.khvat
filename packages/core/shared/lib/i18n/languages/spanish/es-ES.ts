@@ -72,6 +72,7 @@ const SpanishES = {
     dakuon: "Dakuon",
     handakuon: "Handakuon",
     yoon: "Yoon",
+    row: "Fila {{row}}",
   },
 
   selectKana: {

@@ -6,9 +6,7 @@ import { Typography } from "@nihongo/core/shared/typography";
 import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet } from "react-native";
 
-import MatchWordsByField, {
-  MatchAttempt,
-} from "@/entities/education/practice/match-words-by-field/match-words-by-field";
+import { MatchAttempt, MatchPairs } from "@/entities/exercise";
 import {
   OnSubmit,
   PracticeUserSelect,
@@ -57,10 +55,12 @@ const EducationPracticeFindPair: React.FC<EducationPracticeFindPairProps> = ({
             : t("lesson.matchKatakanaWithTransliteration")}
         </Text>
 
-        <MatchWordsByField
+        <MatchPairs
           key={words[0].toString() + currentIndex}
-          words={words}
-          by="kana"
+          items={words.map((word) => ({
+            left: { text: word.kana },
+            right: { text: word.transliteration, subtitle: word.translate },
+          }))}
           onComplete={onFinish}
           onAttempt={(attempts) =>
             onProgress?.({ type: PracticeType.MatchingPairs, value: attempts })

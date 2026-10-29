@@ -71,6 +71,7 @@ const Indonesian = {
     dakuon: "Dakuon",
     handakuon: "Handakuon",
     yoon: "Yoon",
+    row: "Baris {{row}}",
   },
 
   selectKana: {

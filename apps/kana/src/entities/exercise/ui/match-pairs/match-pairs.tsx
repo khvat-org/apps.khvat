@@ -1,16 +1,18 @@
-import React, { useState, useMemo, useRef } from "react";
+import React, { useState, useRef } from "react";
 
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
-import { View, Text, StyleSheet, TouchableOpacity, StyleProp, TextStyle } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-type ByKey = "kana" | "translate" | "transliteration";
+export interface MatchPairSide {
+  text: string;
+  subtitle?: string;
+}
 
-interface Word {
-  kana: string;
-  translate: string;
-  transliteration: string;
+export interface MatchPairItem {
+  left: MatchPairSide;
+  right: MatchPairSide;
 }
 
 export type MatchAttempt = {
@@ -24,8 +26,7 @@ export type MatchAttempt = {
 interface MatchPairsProps {
   onComplete?: (hasError: boolean, attempts: MatchAttempt[]) => void;
   onAttempt?: (attempts: MatchAttempt[]) => void;
-  words: Word[];
-  by: ByKey;
+  items: MatchPairItem[];
 }
 
 function shuffleArray<T>(array: T[]): T[] {
@@ -37,34 +38,15 @@ function shuffleArray<T>(array: T[]): T[] {
   return shuffled;
 }
 
-function getRightLabel(
-  word: Word,
-  by: ByKey,
-  textStyle: StyleProp<TextStyle>,
-  translateStyle: StyleProp<TextStyle>,
-): React.JSX.Element {
-  if (by === "kana") {
-    return (
-      <View>
-        <Text style={textStyle}>{word.transliteration}</Text>
-
-        <Text style={translateStyle}>({word.translate})</Text>
-      </View>
-    );
-  }
-
-  return <View></View>;
-}
-
 type ItemState = "default" | "selected" | "matched" | "error";
 
-export default function MatchWordsByField({ onComplete, onAttempt, words, by }: MatchPairsProps) {
+export default function MatchPairs({ onComplete, onAttempt, items }: MatchPairsProps) {
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
   const { triggerHaptic } = useHaptic();
 
-  const shuffledLeftIndices = useMemo(() => shuffleArray(words.map((_, i) => i)), [words]);
-  const shuffledRightIndices = useMemo(() => shuffleArray(words.map((_, i) => i)), [words]);
+  const [shuffledLeftIndices] = useState(() => shuffleArray(items.map((_, i) => i)));
+  const [shuffledRightIndices] = useState(() => shuffleArray(items.map((_, i) => i)));
 
   const [matched, setMatched] = useState<Record<number, number>>({});
   const [selectedLeft, setSelectedLeft] = useState<number | null>(null);
@@ -101,9 +83,9 @@ export default function MatchWordsByField({ onComplete, onAttempt, words, by }: 
     attemptsRef.current = [
       ...attemptsRef.current,
       {
-        question: words[leftIndex][by],
-        answer: words[rightIndex].transliteration,
-        translate: words[rightIndex].translate,
+        question: items[leftIndex].left.text,
+        answer: items[rightIndex].right.text,
+        translate: items[rightIndex].right.subtitle ?? "",
         isCorrect,
       },
     ];
@@ -114,7 +96,7 @@ export default function MatchWordsByField({ onComplete, onAttempt, words, by }: 
       setMatched(newMatched);
       setSelectedLeft(null);
       setSelectedRight(null);
-      if (Object.keys(newMatched).length === words.length) {
+      if (Object.keys(newMatched).length === items.length) {
         const hasError = attemptsRef.current.some((attempt) => !attempt.isCorrect);
         onComplete?.(hasError, attemptsRef.current);
       }
@@ -166,18 +148,24 @@ export default function MatchWordsByField({ onComplete, onAttempt, words, by }: 
     }
   };
 
-  const getTranslateStyle = (state: ItemState) =>
+  const getSubtitleStyle = (state: ItemState) =>
     state === "error"
-      ? [styles.itemTranslate, styles.itemTextError]
+      ? [styles.itemSubtitle, styles.itemTextError]
       : state === "matched"
-        ? [styles.itemTranslate, styles.itemTextMatched]
-        : [styles.itemTranslate];
+        ? [styles.itemSubtitle, styles.itemTextMatched]
+        : [styles.itemSubtitle];
 
-  const rowCount = Math.max(shuffledLeftIndices.length, shuffledRightIndices.length);
+  const renderSide = (side: MatchPairSide, state: ItemState) => (
+    <>
+      <Text style={getTextStyle(state)}>{side.text}</Text>
+
+      {!!side.subtitle && <Text style={getSubtitleStyle(state)}>({side.subtitle})</Text>}
+    </>
+  );
 
   return (
     <View style={styles.container}>
-      {Array.from({ length: rowCount }).map((_, rowIndex) => {
+      {items.map((_, rowIndex) => {
         const leftIndex = shuffledLeftIndices[rowIndex];
         const rightIndex = shuffledRightIndices[rowIndex];
         const leftState = getLeftState(leftIndex);
@@ -191,7 +179,7 @@ export default function MatchWordsByField({ onComplete, onAttempt, words, by }: 
               activeOpacity={leftState === "matched" ? 1 : 0.7}
               disabled={leftState === "matched"}
             >
-              <Text style={getTextStyle(leftState)}>{words[leftIndex][by]}</Text>
+              {renderSide(items[leftIndex].left, leftState)}
             </TouchableOpacity>
 
             <TouchableOpacity
@@ -200,14 +188,7 @@ export default function MatchWordsByField({ onComplete, onAttempt, words, by }: 
               activeOpacity={rightState === "matched" ? 1 : 0.7}
               disabled={rightState === "matched"}
             >
-              <View>
-                {getRightLabel(
-                  words[rightIndex],
-                  by,
-                  getTextStyle(rightState),
-                  getTranslateStyle(rightState),
-                )}
-              </View>
+              {renderSide(items[rightIndex].right, rightState)}
             </TouchableOpacity>
           </View>
         );
@@ -257,7 +238,7 @@ const makeStyles = (colors: ColorsType) =>
       color: colors.TextPrimary,
       textAlign: "center",
     },
-    itemTranslate: {
+    itemSubtitle: {
       ...Typography.regularDefault,
       color: colors.TextSecondary,
       textAlign: "center",

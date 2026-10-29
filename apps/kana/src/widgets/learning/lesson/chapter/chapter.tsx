@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
@@ -9,7 +9,7 @@ import { StyleSheet, View } from "react-native";
 import { Text } from "react-native";
 
 import TopicItem from "@/entities/learning/topic-item/topic-item";
-import { useCompletedLessons } from "@/pages/education/learning/model/hooks";
+import { useCompletedLessons, useLessonsContext } from "@/pages/education/learning/model/hooks";
 import { Lesson as LessonInterface } from "@/pages/education/learning/model/types";
 
 type ChapterProps = {
@@ -25,7 +25,7 @@ const Chapter: React.FC<ChapterProps> = ({ lessons, title, startLesson }) => {
 
   const { triggerHaptic } = useHaptic();
 
-  const [activeLesson, setActiveLesson] = useState<string | null>(null);
+  const { openedLessonId, setOpenedLessonId } = useLessonsContext();
 
   const { replaceTransliterations, transliterations } = useTransliterationsContext();
 
@@ -39,11 +39,7 @@ const Chapter: React.FC<ChapterProps> = ({ lessons, title, startLesson }) => {
   const toggleActiveLesson = (key: string) => {
     triggerHaptic();
 
-    if (activeLesson === key) {
-      setActiveLesson("");
-    } else {
-      setActiveLesson(key);
-    }
+    setOpenedLessonId(openedLessonId === key ? null : key);
   };
 
   const subtitleColor =
@@ -65,7 +61,7 @@ const Chapter: React.FC<ChapterProps> = ({ lessons, title, startLesson }) => {
         <TopicItem
           key={item.lesson_key}
           isPassed={completedLessons.includes(item.lesson_key)}
-          isOpened={activeLesson === item.id}
+          isOpened={openedLessonId === item.id}
           isLast={index + 1 === lessons.length}
           icon={item.icon}
           title={item.title}

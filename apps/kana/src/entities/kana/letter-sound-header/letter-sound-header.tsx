@@ -18,7 +18,7 @@ type LetterSoundHeaderProps = {
 
 const LetterSoundHeader: React.FC<LetterSoundHeaderProps> = ({ id, kana, width }) => (
   <View style={[styles.container, { width }]}>
-    <SymbolHeader kana={kana} letter={lettersTableById[id]} />
+    <SymbolHeader kana={kana} letter={lettersTableById[id]} isShowRow />
 
     <View style={styles.sound}>
       <SoundLetter id={id} color="primary" width={SOUND_BUTTON_SIZE} />
