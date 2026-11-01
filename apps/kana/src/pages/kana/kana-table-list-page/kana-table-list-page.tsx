@@ -3,6 +3,7 @@ import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
+import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import Switcher from "@nihongo/core/shared/ui/switcher/switcher";
 import { RouteProp, useNavigation } from "@react-navigation/native";
@@ -68,8 +69,8 @@ export const KanaTableListPage: React.FC<KanaInfoProps> = () => {
   );
 
   return (
-    <>
-      <PageTitle isSaveArea>{t("tabs.kana")}</PageTitle>
+    <SafeLayout disableButton>
+      <PageTitle padded>{t("tabs.kana")}</PageTitle>
 
       <View style={{ flex: 1, backgroundColor: colors.BgPrimary }}>
         <View style={{ paddingBottom: isAndroid ? 20 : 6, paddingHorizontal: 16 }}>
@@ -126,7 +127,7 @@ export const KanaTableListPage: React.FC<KanaInfoProps> = () => {
           />
         )}
       </View>
-    </>
+    </SafeLayout>
   );
 };
 

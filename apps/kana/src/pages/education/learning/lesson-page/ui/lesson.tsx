@@ -10,7 +10,6 @@ import LinearProgressBar from "@nihongo/core/shared/ui/progressbar/linear/linear
 import { useNavigation } from "@react-navigation/native";
 import { useTranslation } from "react-i18next";
 import { BackHandler, StyleSheet, View } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { useLessonsContext } from "../../model/hooks";
 import { Lesson as LessonInterface } from "../../model/types";
@@ -28,7 +27,6 @@ interface LessonProps {
 const Lesson: React.FC<LessonProps> = ({ lesson }) => {
   const { completeLesson } = useLessonsContext();
   const { registerStudyDay } = useStudyActivity();
-  const insets = useSafeAreaInsets();
   const { t } = useTranslation();
 
   const { triggerHaptic } = useHaptic();
@@ -109,11 +107,11 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
   }, [triggerHaptic, hideModal, navigation, showModal, t]);
 
   return (
-    <SafeLayout disableLeft disableRight style={styles.container}>
+    <SafeLayout style={styles.container}>
       <View
         style={{
-          paddingLeft: insets.left + 16,
-          paddingRight: insets.right + 16,
+          paddingLeft: 16,
+          paddingRight: 16,
         }}
       >
         {currentScreen?.title !== "finish" && (
@@ -132,12 +130,7 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
       </View>
 
       {currentScreen && currentScreen?.title === "finish" && (
-        <View
-          style={[
-            styles.container,
-            { paddingLeft: insets.left + 16, paddingRight: insets.right + 16 },
-          ]}
-        >
+        <View style={[styles.container, { paddingLeft: 16, paddingRight: 16 }]}>
           <FinishScreen next={onComplete} retry={onRetry} />
         </View>
       )}

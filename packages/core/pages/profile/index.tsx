@@ -15,6 +15,7 @@ import { loadProfile, ProfileState } from "@nihongo/core/shared/lib/auth";
 import { useProfileWidgets } from "@nihongo/core/shared/lib/settings/useProfileWidgets";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
+import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
@@ -22,7 +23,7 @@ import { StackNavigationProp } from "@react-navigation/stack";
 import { GearIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { ActivityIndicator, View, StyleSheet, Pressable, Text, ScrollView } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 
 type NavigationProp = StackNavigationProp<ProfileParamList, typeof PROFILE_ROUTES.PROFILE>;
 
@@ -35,11 +36,10 @@ const ProfilePage: React.FC = () => {
   const { forceReset } = useResetApp();
   const { days, sync } = useStudyActivity();
   const { widgets, loaded: widgetsLoaded, setWidget } = useProfileWidgets();
-
-  const insets = useSafeAreaInsets();
   const { triggerHaptic } = useHaptic();
 
-  const styles = makeStyles(colors);
+  const insets = useSafeAreaInsets();
+  const styles = makeStyles(colors, insets);
 
   const toSettings = () => {
     triggerHaptic();
@@ -82,108 +82,109 @@ const ProfilePage: React.FC = () => {
   );
 
   return (
-    <View style={styles.main}>
-      <View style={[styles.container, { paddingTop: insets.top }]}>
-        <PageTitle
-          icon={
-            <Button
-              color="primary"
-              variant="text"
-              icon={<GearIcon size={32} />}
-              onClick={toSettings}
+    <SafeLayout disableButton disableSides>
+      <View style={styles.main}>
+        <View style={styles.container}>
+          <PageTitle
+            icon={
+              <Button
+                color="primary"
+                variant="text"
+                icon={<GearIcon size={32} />}
+                onClick={toSettings}
+              />
+            }
+          >
+            {t("tabs.profile")}
+          </PageTitle>
+
+          {loading && (
+            <ActivityIndicator
+              size="large"
+              color={colors.BgContrast}
+              style={{ marginVertical: 24 }}
             />
-          }
+          )}
+
+          {!loading && problem && (
+            <View>
+              <Text style={styles.problemTitle}>{t(`profile.${problem}.title`)}</Text>
+              <Text style={styles.problemText}>{t(`profile.${problem}.text`)}</Text>
+              <Button
+                color="primary"
+                onClick={() => {
+                  triggerHaptic();
+                  void reload();
+                }}
+                text={t("common.retry")}
+              />
+            </View>
+          )}
+
+          {!loading && profile?.email && (
+            <Pressable onPress={toEditProfile}>
+              <ProfileItem
+                avatar={profile?.avatar_url}
+                name={profile?.name ?? ""}
+                email={profile?.email ?? ""}
+              />
+            </Pressable>
+          )}
+
+          {!loading && state?.kind === "signedOut" && (
+            <View>
+              <Text
+                style={{
+                  ...Typography.regularDefault,
+                  color: colors.TextSecondary,
+                  marginBottom: 16,
+                }}
+              >
+                {t("profile.signInPrompt", { app: process.env.APP_NAME })}
+              </Text>
+
+              <Button
+                color="primary"
+                onClick={() => {
+                  AsyncStorage.removeItem(IS_WELCOME_PAGE);
+                  forceReset();
+                }}
+                text={t("profile.signInButton")}
+              />
+            </View>
+          )}
+        </View>
+
+        <ScrollView
+          contentContainerStyle={styles.contentContainer}
+          showsVerticalScrollIndicator={false}
+          style={styles.content}
         >
-          {t("tabs.profile")}
-        </PageTitle>
-
-        {loading && (
-          <ActivityIndicator
-            size="large"
-            color={colors.BgContrast}
-            style={{ marginVertical: 24 }}
-          />
-        )}
-
-        {!loading && problem && (
-          <View>
-            <Text style={styles.problemTitle}>{t(`profile.${problem}.title`)}</Text>
-            <Text style={styles.problemText}>{t(`profile.${problem}.text`)}</Text>
-            <Button
-              color="primary"
-              onClick={() => {
-                triggerHaptic();
-                void reload();
-              }}
-              text={t("common.retry")}
-            />
-          </View>
-        )}
-
-        {!loading && profile?.email && (
-          <Pressable onPress={toEditProfile}>
-            <ProfileItem
-              avatar={profile?.avatar_url}
-              name={profile?.name ?? ""}
-              email={profile?.email ?? ""}
-            />
-          </Pressable>
-        )}
-
-        {!loading && state?.kind === "signedOut" && (
-          <View>
-            <Text
-              style={{
-                ...Typography.regularDefault,
-                color: colors.TextSecondary,
-                maxWidth: 300,
-                marginBottom: 16,
-              }}
-            >
-              {t("profile.signInPrompt", { app: process.env.APP_NAME })}
-            </Text>
-
-            <Button
-              color="primary"
-              onClick={() => {
-                AsyncStorage.removeItem(IS_WELCOME_PAGE);
-                forceReset();
-              }}
-              text={t("profile.signInButton")}
-            />
-          </View>
-        )}
+          {widgetsLoaded && process.env.APP_SLUG === "kana-master" && widgets.statistics && (
+            <ProfileWidgetFrame onHide={() => setWidget("statistics", false)}>
+              <PracticeHeatmap data={days} />
+            </ProfileWidgetFrame>
+          )}
+          {widgetsLoaded && widgets.social && (
+            <ProfileWidgetFrame onHide={() => setWidget("social", false)}>
+              <SocialMediaProfile />
+            </ProfileWidgetFrame>
+          )}
+        </ScrollView>
       </View>
-
-      <ScrollView
-        contentContainerStyle={styles.contentContainer}
-        showsVerticalScrollIndicator={false}
-        style={styles.content}
-      >
-        {widgetsLoaded && process.env.APP_SLUG === "kana-master" && widgets.statistics && (
-          <ProfileWidgetFrame onHide={() => setWidget("statistics", false)}>
-            <PracticeHeatmap data={days} />
-          </ProfileWidgetFrame>
-        )}
-        {widgetsLoaded && widgets.social && (
-          <ProfileWidgetFrame onHide={() => setWidget("social", false)}>
-            <SocialMediaProfile />
-          </ProfileWidgetFrame>
-        )}
-      </ScrollView>
-    </View>
+    </SafeLayout>
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
   StyleSheet.create({
     main: {
       flex: 1,
       backgroundColor: colors.BgSecondary,
     },
     container: {
-      paddingLeft: 16,
-      paddingRight: 16,
+      paddingLeft: insets.left + 16,
+      paddingRight: insets.right + 16,
       paddingBottom: 16,
       borderBottomLeftRadius: 24,
       borderBottomRightRadius: 24,
@@ -202,13 +203,14 @@ const makeStyles = (colors: ColorsType) =>
     },
     content: {
       paddingTop: 16,
-      paddingHorizontal: 16,
     },
     contentContainer: {
       width: "100%",
-      maxWidth: TABLET_WIDTH,
+      maxWidth: TABLET_WIDTH + insets.left + insets.right + 32,
       alignSelf: "center",
       gap: 8,
+      paddingLeft: insets.left + 16,
+      paddingRight: insets.right + 16,
     },
   });
 

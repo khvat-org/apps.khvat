@@ -2,9 +2,10 @@ import React, { useRef, useState } from "react";
 
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { ILetter } from "@nihongo/core/shared/data/lettersTable";
+import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
 import Button from "@nihongo/core/shared/ui/button";
 import { useTranslation } from "react-i18next";
-import { LayoutChangeEvent, StyleSheet, useWindowDimensions, View } from "react-native";
+import { LayoutChangeEvent, StyleSheet, View } from "react-native";
 import { GestureHandlerRootView, ScrollView } from "react-native-gesture-handler";
 
 import LetterSoundHeader from "@/entities/kana/letter-sound-header/letter-sound-header";
@@ -34,7 +35,7 @@ const PracticeDrawKana: React.FC<PracticeDrawKanaProps> = ({
   onProgress,
 }) => {
   const { t } = useTranslation();
-  const { width, height } = useWindowDimensions();
+  const { width, height } = useContentDimensions();
 
   const [areaHeight, setAreaHeight] = useState(0);
   const drawRef = useRef<DrawHandle>(null);

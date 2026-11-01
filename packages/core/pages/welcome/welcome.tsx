@@ -7,6 +7,7 @@ import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import useSetLanguage from "@nihongo/core/shared/lib/i18n/hooks/useSetLanguage";
 import { Typography } from "@nihongo/core/shared/typography";
+import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { useTranslation } from "react-i18next";
@@ -60,40 +61,48 @@ const WelcomePage: React.FC = () => {
   };
 
   return (
-    <View style={styles.page}>
-      <View style={styles.header}>
-        <Image style={styles.logo} source={welcomeLogo} />
-        <Text style={styles.title}>{t("common.welcome")}</Text>
-      </View>
+    <SafeLayout disableButton disableSides>
+      <View style={styles.page}>
+        <View style={styles.header}>
+          <Image style={styles.logo} source={welcomeLogo} />
+          <Text style={styles.title}>{t("common.welcome")}</Text>
+        </View>
 
-      <ScrollView
-        style={styles.languageContainer}
-        contentContainerStyle={styles.languageList}
-        showsVerticalScrollIndicator={true}
-      >
-        {languageList.map((item) => (
-          <Pressable
-            key={item.key}
-            style={({ pressed }) => [
-              styles.languageItem,
-              { backgroundColor: pressed ? colors.BgLightGray : colors.BgPrimary },
-            ]}
-            onPress={() => confirmLanguage(item.key)}
-          >
-            <View style={[styles.languageView, { justifyContent: "space-between", width: "100%" }]}>
-              <View style={styles.languageView}>
-                <CountryFlag style={styles.languageFlag} isoCode={getIsoCode(item.key)} size={24} />
-                <Text style={styles.languageTitle}>{item.title}</Text>
+        <ScrollView
+          style={styles.languageContainer}
+          contentContainerStyle={styles.languageList}
+          showsVerticalScrollIndicator={true}
+        >
+          {languageList.map((item) => (
+            <Pressable
+              key={item.key}
+              style={({ pressed }) => [
+                styles.languageItem,
+                { backgroundColor: pressed ? colors.BgLightGray : colors.BgPrimary },
+              ]}
+              onPress={() => confirmLanguage(item.key)}
+            >
+              <View
+                style={[styles.languageView, { justifyContent: "space-between", width: "100%" }]}
+              >
+                <View style={styles.languageView}>
+                  <CountryFlag
+                    style={styles.languageFlag}
+                    isoCode={getIsoCode(item.key)}
+                    size={24}
+                  />
+                  <Text style={styles.languageTitle}>{item.title}</Text>
+                </View>
+
+                {item.key !== ShortLanguage.EN && item.key !== ShortLanguage.RU && (
+                  <Text style={styles.textBeta}>βeta</Text>
+                )}
               </View>
-
-              {item.key !== ShortLanguage.EN && item.key !== ShortLanguage.RU && (
-                <Text style={styles.textBeta}>βeta</Text>
-              )}
-            </View>
-          </Pressable>
-        ))}
-      </ScrollView>
-    </View>
+            </Pressable>
+          ))}
+        </ScrollView>
+      </View>
+    </SafeLayout>
   );
 };
 
@@ -104,16 +113,13 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
       width: "100%",
       height: "100%",
       flex: 1,
-
-      paddingBottom: insets.bottom,
     },
     header: {
       backgroundColor: colors.BgPrimary,
       width: "100%",
 
-      paddingTop: insets.top + 32,
+      paddingTop: 32,
       paddingBottom: 32,
-      marginBottom: 16,
 
       flexDirection: "column",
       justifyContent: "center",
@@ -139,14 +145,17 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
 
     languageContainer: {
       flex: 1,
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
     },
 
     languageList: {
       width: "100%",
-      maxWidth: TABLET_WIDTH,
+      maxWidth: TABLET_WIDTH + insets.left + insets.right + 32,
       alignSelf: "center",
+
+      paddingTop: 16,
+      paddingBottom: insets.bottom + 8,
+      paddingLeft: insets.left + 16,
+      paddingRight: insets.right + 16,
     },
 
     languageItem: {

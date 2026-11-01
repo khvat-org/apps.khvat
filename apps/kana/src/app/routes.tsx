@@ -19,6 +19,7 @@ import WelcomePage from "@nihongo/core/pages/welcome/welcome";
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
 import { ModalProvider } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { TabBarButton } from "@nihongo/core/shared/ui/bottom-tap";
+import { TabScreenInsets } from "@nihongo/core/shared/ui/bottom-tap/tab-screen-insets";
 import {
   BottomTabBarProps,
   BottomTabTypeBag,
@@ -63,6 +64,7 @@ const modal = <P extends object>(Component: React.ComponentType<P>) => ({
 const tabBar = (props: BottomTabBarProps) => (
   <TabBarButton
     {...props}
+    allowSide
     tabs={{
       [ROUTES.LEARNING_ROOT]: { title: "tabs.learning", icon: GraduationCapIcon },
       [ROUTES.PRACTICE_ROOT]: { title: "tabs.practice", icon: CardsThreeIcon },
@@ -80,6 +82,7 @@ const tabNavigator = (screens: TabScreens) => {
       tabBar,
       screens,
       screenOptions,
+      screenLayout: ({ children }) => <TabScreenInsets>{children}</TabScreenInsets>,
     }),
     options: screenOptions,
   };

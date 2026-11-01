@@ -12,14 +12,26 @@ type SequenceProps = {
   sequence: string[];
 
   onFinish?: (isCorrect: boolean, picked: string[]) => void;
+  onProgress?: (picked: string[]) => void;
   onError?: () => void;
 };
 
-const SequenceUi: React.FC<SequenceProps> = ({ sequence, onFinish, onError }) => {
+const EMPTY_LETTER = "\u00A0";
+
+const SequenceUi: React.FC<SequenceProps> = ({ sequence, onFinish, onProgress, onError }) => {
   const { colors } = useThemeContext();
 
   const [_, setTick] = useState(0);
-  const updateTick = () => setTick((i) => i + 1);
+
+  const onProgressRef = useRef(onProgress);
+  onProgressRef.current = onProgress;
+  const engineHolder = useRef<Sequence | null>(null);
+
+  const updateTick = () => {
+    setTick((i) => i + 1);
+    const picked = engineHolder.current?.sequence.filter((item): item is string => item !== null);
+    if (picked) onProgressRef.current?.(picked);
+  };
 
   const { triggerHaptic } = useHaptic();
 
@@ -36,6 +48,7 @@ const SequenceUi: React.FC<SequenceProps> = ({ sequence, onFinish, onError }) =>
   );
 
   const sequenceCurrent = engineRef.current;
+  engineHolder.current = sequenceCurrent;
 
   useEffect(() => {
     if (transliterationRef.current !== sequence.join("")) {
@@ -64,7 +77,7 @@ const SequenceUi: React.FC<SequenceProps> = ({ sequence, onFinish, onError }) =>
             style={styles.letterContainer}
           >
             <Text style={[Typography.regularDefault, { color: colors.TextPrimary }]}>
-              {(letter ?? "").toUpperCase()}
+              {letter ? letter.toUpperCase() : EMPTY_LETTER}
             </Text>
 
             <View style={[styles.letterLine, getLetterStyle(index)]} />

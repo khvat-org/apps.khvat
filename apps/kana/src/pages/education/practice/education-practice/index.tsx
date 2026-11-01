@@ -50,6 +50,7 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   const { showModal, hideModal } = useModal();
   const { openReport } = useReport();
   const [isReporting, setIsReporting] = useState(false);
+  const [isConfirmingExit, setIsConfirmingExit] = useState(false);
 
   const navigation = useNavigation<ScreenNavigationProp>();
 
@@ -74,9 +75,10 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
 
   React.useEffect(() => {
     const onBackPress = () => {
+      setIsConfirmingExit(true);
       showModal({
         closeOnBackdrop: false,
-        onClose: () => {},
+        onClose: () => setIsConfirmingExit(false),
         content: (
           <ConfirmationModal
             title={t("alert.exitConformation.title")}
@@ -168,109 +170,116 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   if (question === null) return <View></View>;
 
   return (
-    <SafeLayout style={styles.container}>
-      <View>
-        {questions.length !== 0 && currentIndex <= questions.length && (
-          <LinearProgressBar
-            close={navigation.goBack}
-            onReport={() => {
-              setIsReporting(true);
-              openReport({
-                tags: REPORT_TAGS,
-                context: getPracticeReportContext(question),
-                onClose: () => setIsReporting(false),
-              });
-            }}
-            current={currentIndex}
-            all={questions.length}
-          />
-        )}
+    <SafeLayout>
+      <View style={styles.container}>
+        <View>
+          {questions.length !== 0 && currentIndex <= questions.length && (
+            <LinearProgressBar
+              close={navigation.goBack}
+              onCloseConfirm={setIsConfirmingExit}
+              onReport={() => {
+                setIsReporting(true);
+                openReport({
+                  tags: REPORT_TAGS,
+                  context: getPracticeReportContext(question),
+                  onClose: () => setIsReporting(false),
+                });
+              }}
+              current={currentIndex}
+              all={questions.length}
+            />
+          )}
 
-        {preferences.timerModes.includes(question.type) && (
-          <MemoTimer
-            index={currentIndex}
-            key={timerKey}
-            initial={preferences.timerSeconds}
-            isFreeze={isFreeze || isReporting}
-            onTimerEnd={() =>
-              onSubmit({ isCorrectAnswer: false, userSelect: partialSelect.current })
-            }
-          />
-        )}
-      </View>
+          {preferences.timerModes.includes(question.type) && (
+            <MemoTimer
+              index={currentIndex}
+              key={timerKey}
+              initial={preferences.timerSeconds}
+              isFreeze={isFreeze || isReporting || isConfirmingExit}
+              onTimerEnd={() =>
+                onSubmit({ isCorrectAnswer: false, userSelect: partialSelect.current })
+              }
+            />
+          )}
+        </View>
 
-      <View
-        style={{ flex: 1, width: "100%", justifyContent: "space-between", alignItems: "center" }}
-      >
-        {question.type === PracticeType.Testing && question.testing && (
-          <EducationPracticeSelectAnswers
-            question={question.testing.question}
-            answers={question.testing.answers}
-            questionKana={question.testing.questionKana}
-            answersKana={question.testing.answersKana}
-            currentIndex={currentIndex}
-            onCompleted={onSubmit}
-          />
-        )}
+        <View
+          pointerEvents={isFreeze ? "none" : "auto"}
+          style={{ flex: 1, width: "100%", justifyContent: "space-between", alignItems: "center" }}
+        >
+          {question.type === PracticeType.Testing && question.testing && (
+            <EducationPracticeSelectAnswers
+              question={question.testing.question}
+              answers={question.testing.answers}
+              questionKana={question.testing.questionKana}
+              answersKana={question.testing.answersKana}
+              currentIndex={currentIndex}
+              onCompleted={onSubmit}
+            />
+          )}
 
-        {question.type === PracticeType.Drawing && question.drawing && (
-          <PracticeDrawKana
-            symbol={question.drawing.question}
-            kana={question.drawing.questionKana}
-            onCompleted={onSubmit}
-            onProgress={(userSelect) => {
-              partialSelect.current = userSelect;
-            }}
-          />
-        )}
+          {question.type === PracticeType.Drawing && question.drawing && (
+            <PracticeDrawKana
+              symbol={question.drawing.question}
+              kana={question.drawing.questionKana}
+              onCompleted={onSubmit}
+              onProgress={(userSelect) => {
+                partialSelect.current = userSelect;
+              }}
+            />
+          )}
 
-        {question.type === PracticeType.Listening && question.listening && (
-          <PracticeAudio
-            answers={question.listening?.answers}
-            answersKana={question.listening?.answersKana}
-            question={question.listening?.question}
-            onCompleted={onSubmit}
-          />
-        )}
+          {question.type === PracticeType.Listening && question.listening && (
+            <PracticeAudio
+              answers={question.listening?.answers}
+              answersKana={question.listening?.answersKana}
+              question={question.listening?.question}
+              onCompleted={onSubmit}
+            />
+          )}
 
-        {question.type === PracticeType.MultipleChoice && question.multipleChoice && (
-          <EducationPracticeChooseValue
-            word={question.multipleChoice.word}
-            answers={question.multipleChoice.answers}
-            onCompleted={onSubmit}
-          />
-        )}
+          {question.type === PracticeType.MultipleChoice && question.multipleChoice && (
+            <EducationPracticeChooseValue
+              word={question.multipleChoice.word}
+              answers={question.multipleChoice.answers}
+              onCompleted={onSubmit}
+            />
+          )}
 
-        {question.type === PracticeType.MatchingPairs && question.matchingPairs && (
-          <EducationPracticeFindPair
-            kana={question.matchingPairs.questionKana}
-            words={question.matchingPairs.pairs}
-            currentIndex={currentIndex}
-            onCompleted={onSubmit}
-            onProgress={(userSelect) => {
-              partialSelect.current = userSelect;
-            }}
-          />
-        )}
+          {question.type === PracticeType.MatchingPairs && question.matchingPairs && (
+            <EducationPracticeFindPair
+              kana={question.matchingPairs.questionKana}
+              words={question.matchingPairs.pairs}
+              currentIndex={currentIndex}
+              onCompleted={onSubmit}
+              onProgress={(userSelect) => {
+                partialSelect.current = userSelect;
+              }}
+            />
+          )}
 
-        {question.type === PracticeType.WordBuilding && question.wordBuilding && (
-          <EducationPracticeChooseLetters
-            title={question.wordBuilding.title}
-            subtitle={question.wordBuilding.subtitle}
-            sequence={question.wordBuilding.sequence}
-            kana={question.wordBuilding.kana}
-            onCompleted={onSubmit}
-          />
-        )}
+          {question.type === PracticeType.WordBuilding && question.wordBuilding && (
+            <EducationPracticeChooseLetters
+              title={question.wordBuilding.title}
+              subtitle={question.wordBuilding.subtitle}
+              sequence={question.wordBuilding.sequence}
+              kana={question.wordBuilding.kana}
+              onCompleted={onSubmit}
+              onProgress={(userSelect) => {
+                partialSelect.current = userSelect;
+              }}
+            />
+          )}
 
-        {question.type === PracticeType.Typing && question.typing && (
-          <PracticeTypeKana
-            key={currentIndex}
-            symbol={question.typing.question}
-            kana={question.typing.questionKana}
-            onCompleted={onSubmit}
-          />
-        )}
+          {question.type === PracticeType.Typing && question.typing && (
+            <PracticeTypeKana
+              key={currentIndex}
+              symbol={question.typing.question}
+              kana={question.typing.questionKana}
+              onCompleted={onSubmit}
+            />
+          )}
+        </View>
       </View>
     </SafeLayout>
   );
@@ -283,6 +292,8 @@ const makeStyles = (colors: ColorsType) =>
       justifyContent: "space-between",
       alignItems: "center",
       backgroundColor: colors.BgPrimary,
+
+      paddingHorizontal: 16,
     },
   });
 

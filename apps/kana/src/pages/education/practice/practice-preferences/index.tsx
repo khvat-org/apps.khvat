@@ -98,6 +98,17 @@ export const PracticePreferencesPage: React.FC = () => {
       : `${selectedLettersHiragana} ${t("kana.hiragana")}, ${selectedLettersKatakana} ${t("kana.katakana")}`;
 
   const [draft, setDraft] = useState(preferences);
+  const [isSliding, setIsSliding] = useState(false);
+
+  const onSlideStart = () => {
+    setIsSliding(true);
+    navigation.setOptions({ gestureEnabled: false });
+  };
+
+  const onSlideEnd = () => {
+    setIsSliding(false);
+    navigation.setOptions({ gestureEnabled: true });
+  };
 
   const change = (patch: Partial<PracticePreferences>) =>
     setDraft((prev) => ({ ...prev, ...patch }));
@@ -139,7 +150,11 @@ export const PracticePreferencesPage: React.FC = () => {
           }}
         />
 
-        <ScrollView contentContainerStyle={{ gap: 16, paddingBottom: insets.bottom + 16 }}>
+        <ScrollView
+          scrollEnabled={!isSliding}
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{ gap: 16, paddingBottom: insets.bottom + 16 }}
+        >
           <SettingsSection>
             <SettingItem
               leftIcon={<SwatchesIcon {...iconProps} />}
@@ -169,6 +184,8 @@ export const PracticePreferencesPage: React.FC = () => {
                 max={QUESTIONS_COUNT.max}
                 step={QUESTIONS_COUNT.step}
                 onChange={(value) => change({ questionsCount: value })}
+                onSlideStart={onSlideStart}
+                onSlideEnd={onSlideEnd}
               />
             </PreferenceBlock>
 
@@ -194,6 +211,8 @@ export const PracticePreferencesPage: React.FC = () => {
                 max={TIMER_SECONDS.max}
                 step={TIMER_SECONDS.step}
                 onChange={(value) => change({ timerSeconds: value })}
+                onSlideStart={onSlideStart}
+                onSlideEnd={onSlideEnd}
               />
             </PreferenceBlock>
 

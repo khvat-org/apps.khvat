@@ -15,6 +15,7 @@ import {
   baseFlatLettersId,
 } from "@nihongo/core/shared/data/lettersTable";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
+import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
 import { ChecksIcon, MinusIcon, PlusIcon, XIcon } from "phosphor-react-native";
 import { View, StyleSheet, useWindowDimensions, FlatList } from "react-native";
 
@@ -68,12 +69,13 @@ const normalizeRow = (row: ILetter[]): (ILetter | null)[] => {
 };
 
 const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({ kana, alphabetType }) => {
-  const { width, height } = useWindowDimensions();
+  const { width: windowWidth } = useWindowDimensions();
+  const { width, height } = useContentDimensions();
   const { colors } = useThemeContext();
   const { getRomaji } = useGetRomaji();
   const { triggerHaptic } = useHaptic();
 
-  const isTablet = width > 750;
+  const isTablet = windowWidth > 750;
 
   const { selected: selectedFromStorage, fill } = useKanaContext();
   const selectedLetters = selectedFromStorage[alphabetType][kana];
@@ -237,6 +239,7 @@ const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({ kana, a
 
       <FlatList
         data={DATA}
+        showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
           <View style={styles.rowButtons} key={item.key}>
             <PlusCell

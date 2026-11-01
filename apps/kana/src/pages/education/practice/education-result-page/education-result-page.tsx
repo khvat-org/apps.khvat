@@ -3,13 +3,15 @@ import React, { useCallback, useEffect, useState } from "react";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
+import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
+import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import { RouteProp, useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { useTranslation } from "react-i18next";
-import { View, Text, ScrollView, StyleSheet, BackHandler, useWindowDimensions } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { View, Text, ScrollView, StyleSheet, BackHandler } from "react-native";
+import { useSafeAreaInsets, EdgeInsets } from "react-native-safe-area-context";
 import { Svg, Path } from "react-native-svg";
 
 import formatResultAnswer, {
@@ -78,7 +80,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
   const { colors } = useThemeContext();
   const navigation = useNavigation<LearnResultsNavigationProp>();
 
-  const { width } = useWindowDimensions();
+  const { width } = useContentDimensions();
 
   useEffect(() => {
     navigation.setOptions({
@@ -121,7 +123,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
       userSelect,
     }));
 
-  const styles = makeStyles(colors);
+  const styles = makeStyles(colors, insets);
 
   const [widgetsWidth, setWidgetsWidth] = useState(0);
   const widgetWidth = (widgetsWidth - WIDGETS_GAP * 2) / 3;
@@ -299,115 +301,114 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
   };
 
   return (
-    <View
-      style={[
-        {
-          marginTop: insets.top,
-        },
-        styles.layout,
-      ]}
-    >
-      <View style={styles.header}>
-        <View style={styles.header__content}>
-          <Text style={styles.title}>{t("result.title")}</Text>
+    <SafeLayout disableButton disableSides>
+      <View style={styles.layout}>
+        <View style={styles.header}>
+          <View style={styles.header__content}>
+            <Text style={styles.title}>{t("result.title")}</Text>
 
-          <View
-            style={styles.header_widgets}
-            onLayout={(e) => setWidgetsWidth(e.nativeEvent.layout.width)}
+            <View
+              style={styles.header_widgets}
+              onLayout={(e) => setWidgetsWidth(e.nativeEvent.layout.width)}
+            >
+              <View style={widgetStyle}>
+                <Text style={styles.header_widget__title} numberOfLines={1} adjustsFontSizeToFit>
+                  {((data.correctAnswers / data.totalQuestions) * 100).toFixed(0)}%
+                </Text>
+                <Text style={styles.header_widget__subtitle} numberOfLines={1} adjustsFontSizeToFit>
+                  {t("result.percent")}
+                </Text>
+              </View>
+              <View style={widgetStyle}>
+                <Text style={styles.header_widget__title} numberOfLines={1} adjustsFontSizeToFit>
+                  {data.correctAnswers} / {data.totalQuestions}
+                </Text>
+                <Text style={styles.header_widget__subtitle} numberOfLines={1} adjustsFontSizeToFit>
+                  {t("result.score")}
+                </Text>
+              </View>
+              <View style={widgetStyle}>
+                <Text style={styles.header_widget__title} numberOfLines={1} adjustsFontSizeToFit>
+                  {totalTime.value}
+                </Text>
+                <Text style={styles.header_widget__subtitle} numberOfLines={1} adjustsFontSizeToFit>
+                  {totalTime.unit}
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+
+        <View style={[styles.scroll]}>
+          <ScrollView
+            style={{ flex: 1 }}
+            contentContainerStyle={styles.scrollContent}
+            showsVerticalScrollIndicator={false}
           >
-            <View style={widgetStyle}>
-              <Text style={styles.header_widget__title} numberOfLines={1} adjustsFontSizeToFit>
-                {((data.correctAnswers / data.totalQuestions) * 100).toFixed(0)}%
-              </Text>
-              <Text style={styles.header_widget__subtitle} numberOfLines={1} adjustsFontSizeToFit>
-                {t("result.percent")}
-              </Text>
-            </View>
-            <View style={widgetStyle}>
-              <Text style={styles.header_widget__title} numberOfLines={1} adjustsFontSizeToFit>
-                {data.correctAnswers} / {data.totalQuestions}
-              </Text>
-              <Text style={styles.header_widget__subtitle} numberOfLines={1} adjustsFontSizeToFit>
-                {t("result.score")}
-              </Text>
-            </View>
-            <View style={widgetStyle}>
-              <Text style={styles.header_widget__title} numberOfLines={1} adjustsFontSizeToFit>
-                {totalTime.value}
-              </Text>
-              <Text style={styles.header_widget__subtitle} numberOfLines={1} adjustsFontSizeToFit>
-                {totalTime.unit}
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
+            <View style={styles.answers}>
+              {answers.map((answer, index) => {
+                const { question } = answer;
+                if (question === null) return null;
 
-      <View style={[styles.scroll]}>
-        <ScrollView style={{ flex: 1 }} showsVerticalScrollIndicator={false}>
-          <View style={styles.answers}>
-            {answers.map((answer, index) => {
-              const { question } = answer;
-              if (question === null) return null;
+                const isErrorsCard =
+                  question.type === PracticeType.MatchingPairs ||
+                  question.type === PracticeType.WordBuilding ||
+                  question.type === PracticeType.Typing;
 
-              const isErrorsCard =
-                question.type === PracticeType.MatchingPairs ||
-                question.type === PracticeType.WordBuilding ||
-                question.type === PracticeType.Typing;
+                const shortNumber = t("result.questionNumber", { number: index + 1 });
+                const number = isMixedPractice
+                  ? `${t(`practice.modes.${question.type}.title`)} / ${shortNumber}`
+                  : shortNumber;
 
-              const shortNumber = t("result.questionNumber", { number: index + 1 });
-              const number = isMixedPractice
-                ? `${t(`practice.modes.${question.type}.title`)} / ${shortNumber}`
-                : shortNumber;
+                return (
+                  <View key={index} style={styles.answer}>
+                    <View style={styles.answer__header}>
+                      {isErrorsCard ? (
+                        <Text
+                          style={[
+                            styles.answer__errors,
+                            {
+                              color: answer.errors === 0 ? colors.TextSuccess : colors.TextDanger,
+                            },
+                          ]}
+                        >
+                          {t("result.errors", { count: answer.errors })}
+                        </Text>
+                      ) : (
+                        <View style={styles.answer__heading}>
+                          <ResultStatusIcon
+                            size={20}
+                            isCorrect={answer.isCorrectAnswer}
+                            colors={colors}
+                          />
+                          <Text style={styles.answer__title}>{answer.title}</Text>
+                        </View>
+                      )}
 
-              return (
-                <View key={index} style={styles.answer}>
-                  <View style={styles.answer__header}>
-                    {isErrorsCard ? (
-                      <Text
-                        style={[
-                          styles.answer__errors,
-                          {
-                            color: answer.errors === 0 ? colors.TextSuccess : colors.TextDanger,
-                          },
-                        ]}
-                      >
-                        {t("result.errors", { count: answer.errors })}
-                      </Text>
-                    ) : (
-                      <View style={styles.answer__heading}>
-                        <ResultStatusIcon
-                          size={20}
-                          isCorrect={answer.isCorrectAnswer}
-                          colors={colors}
-                        />
-                        <Text style={styles.answer__title}>{answer.title}</Text>
-                      </View>
-                    )}
+                      <Text style={styles.answer__number}>{number}</Text>
+                    </View>
 
-                    <Text style={styles.answer__number}>{number}</Text>
+                    {renderAnswerBody(answer, index)}
                   </View>
+                );
+              })}
+            </View>
+          </ScrollView>
+        </View>
 
-                  {renderAnswerBody(answer, index)}
-                </View>
-              );
-            })}
+        <View style={[styles.footer, { marginBottom: insets.bottom }]}>
+          <View style={styles.done}>
+            <Button color="primary" isHapticFeedback text={t("result.done")} onClick={home} />
           </View>
-        </ScrollView>
-      </View>
-
-      <View style={{ marginBottom: insets.bottom, marginTop: 16, paddingHorizontal: 16 }}>
-        <View style={styles.done}>
-          <Button color="primary" isHapticFeedback text={t("result.done")} onClick={home} />
         </View>
       </View>
-    </View>
+    </SafeLayout>
   );
 };
 
 const WIDGETS_GAP = 16;
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
   StyleSheet.create({
     layout: {
       flex: 1,
@@ -417,11 +418,11 @@ const makeStyles = (colors: ColorsType) =>
     header: {
       backgroundColor: colors.BgPrimary,
       flexDirection: "column",
-      paddingTop: 8,
       borderBottomLeftRadius: 24,
       borderBottomRightRadius: 24,
       paddingBottom: 16,
-      paddingHorizontal: 16,
+      paddingLeft: insets.left + 16,
+      paddingRight: insets.right + 16,
     },
 
     header__content: {
@@ -470,11 +471,17 @@ const makeStyles = (colors: ColorsType) =>
 
     scroll: {
       flex: 1,
+    },
 
-      padding: 16,
+    scrollContent: {
+      paddingLeft: insets.left + 16,
+      paddingRight: insets.right + 16,
+    },
 
-      paddingTop: 0,
-      paddingBottom: 0,
+    footer: {
+      marginTop: 16,
+      paddingLeft: insets.left + 16,
+      paddingRight: insets.right + 16,
     },
 
     answers: {

@@ -24,6 +24,7 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import { useGatewayUrl } from "@nihongo/core/shared/lib/api-gateway";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
+import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -39,7 +40,6 @@ import {
   ScrollView,
   useWindowDimensions,
 } from "react-native";
-import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import appleLogoBlack from "../../../shared/assets/auth/apple-logo-black.png";
 import appleLogoWhite from "../../../shared/assets/auth/apple-logo-white.png";
@@ -48,8 +48,6 @@ import googleIcon from "../../../shared/assets/auth/google.png";
 
 type LoginNavigationProp = StackNavigationProp<AuthParamList, typeof AUTH_ROUTES.PREVIEW>;
 
-// ! Нужно тут вынести компонент Google OAuth кнопка и логика, что бы я мог вставить кнопку входа по google и в другой экран
-
 export const LoginPage: React.FC = () => {
   const navigation = useNavigation<LoginNavigationProp>();
 
@@ -57,12 +55,11 @@ export const LoginPage: React.FC = () => {
   const { showModal, hideModal } = useModal();
 
   const { colors } = useThemeContext();
-  const insets = useSafeAreaInsets();
+  const isDark = colors._theme === "dark";
   const { width } = useWindowDimensions();
 
   const imageSize = width > TABLET_WIDTH ? 344 : 192;
-  const styles = makeStyles(colors, insets, imageSize);
-  const onDarkTheme = isDarkColor(colors.BgPrimary);
+  const styles = makeStyles(colors, imageSize);
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -211,179 +208,169 @@ export const LoginPage: React.FC = () => {
   );
 
   return (
-    <View style={styles.page}>
-      <Button
-        color="primary"
-        variant="text"
-        isHapticFeedback
-        icon={<CaretLeftIcon size={32} />}
-        onClick={goBack}
-        style={{
-          position: "absolute",
-          left: insets.left + 16,
-          top: insets.top + 16,
-          zIndex: 1,
-        }}
-      />
-
-      <ScrollView
-        style={styles.scroll}
-        contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
-      >
-        <Image style={styles.image} source={authLogo} />
-        <Text style={styles.title}>{t("auth.welcome.firstStep")}</Text>
-
-        <View style={styles.subtitle}>
-          <Text
-            style={{
-              height: 20,
-              margin: 0,
-              padding: 0,
-              alignItems: "center",
-              color: colors.TextPrimary,
-              ...Typography.regularLabel,
-            }}
-          >
-            {t("auth.agreement.prefix")}
-          </Text>
-
-          <Button
-            color="primary"
-            variant="text"
-            size="sm"
-            isHapticFeedback
-            text={t("auth.agreement.terms")}
-            onClick={() => {
-              if (termsUrl) Linking.openURL(termsUrl);
-            }}
-            style={{ height: 20 }}
-          />
-
-          <Text
-            style={{
-              height: 20,
-              margin: 0,
-              padding: 0,
-              alignItems: "center",
-              color: colors.TextPrimary,
-              ...Typography.regularLabel,
-            }}
-          >
-            {" & "}
-          </Text>
-
-          <Button
-            color="primary"
-            variant="text"
-            size="sm"
-            isHapticFeedback
-            text={t("auth.agreement.privacy")}
-            onClick={() => {
-              if (privacyPolicyUrl) Linking.openURL(privacyPolicyUrl);
-            }}
-            style={{ height: 20 }}
-          />
-        </View>
-
-        <View style={styles.buttons}>
-          <Pressable
-            onPress={continueWithGoogle}
-            disabled={googleLoading}
-            accessibilityRole="button"
-            style={({ pressed }) => [
-              styles.providerButton,
-              onDarkTheme ? styles.googleButtonLight : styles.googleButtonDark,
-              (pressed || googleLoading) && styles.providerButtonPressed,
-            ]}
-          >
-            <Image style={styles.googleLogo} source={googleIcon} />
-            <Text
-              style={[
-                styles.button_text,
-                onDarkTheme ? styles.googleTextLight : styles.googleTextDark,
-              ]}
-            >
-              {t("auth.continueWithGoogle")}
-            </Text>
-          </Pressable>
-
-          {appleAvailable && (
-            <Pressable
-              onPress={continueWithApple}
-              disabled={appleLoading}
-              accessibilityRole="button"
-              style={({ pressed }) => [
-                styles.providerButton,
-                styles.appleButton,
-                onDarkTheme ? styles.appleButtonWhite : styles.appleButtonBlack,
-                (pressed || appleLoading) && styles.providerButtonPressed,
-              ]}
-            >
-              <Image
-                style={styles.appleLogo}
-                source={onDarkTheme ? appleLogoBlack : appleLogoWhite}
-              />
-              <Text
-                style={[
-                  styles.button_text,
-                  onDarkTheme ? styles.appleTextBlack : styles.appleTextWhite,
-                ]}
-              >
-                {t("auth.continueWithApple")}
-              </Text>
-            </Pressable>
-          )}
-
-          <Button
-            color="secondary"
-            width="100%"
-            onClick={() => {
-              navigation.navigate(AUTH_ROUTES.SIGN_UP);
-            }}
-            style={{ marginTop: 8 }}
-            text={t("auth.signUpWithEmail")}
-          />
-
-          <View style={styles.buttonLink}>
-            <Text style={styles.buttonLinkText}>{t("auth.alreadyHaveAccount")}</Text>
-            <Button
-              color="primary"
-              variant="text"
-              isHapticFeedback
-              text={t("auth.login")}
-              onClick={() => {
-                navigation.navigate(AUTH_ROUTES.SIGN_IN);
-              }}
-            />
-          </View>
-        </View>
-
-        <View style={styles.spacer} />
-
+    <SafeLayout>
+      <View style={styles.page}>
         <Button
           color="primary"
           variant="text"
           isHapticFeedback
-          text={t("auth.continueWithoutLogin")}
-          onClick={skipAuth}
-          style={[styles.buttonLink, styles.skipLink]}
+          icon={<CaretLeftIcon size={32} />}
+          onClick={goBack}
+          style={{
+            position: "absolute",
+            left: 16,
+            top: 16,
+            zIndex: 1,
+          }}
         />
-      </ScrollView>
-    </View>
+
+        <ScrollView
+          style={styles.scroll}
+          contentContainerStyle={styles.content}
+          showsVerticalScrollIndicator={false}
+        >
+          <Image style={styles.image} source={authLogo} />
+          <Text style={styles.title}>{t("auth.welcome.firstStep")}</Text>
+
+          <View style={styles.subtitle}>
+            <Text
+              style={{
+                height: 20,
+                margin: 0,
+                padding: 0,
+                alignItems: "center",
+                color: colors.TextPrimary,
+                ...Typography.regularLabel,
+              }}
+            >
+              {t("auth.agreement.prefix")}
+            </Text>
+
+            <Button
+              color="primary"
+              variant="text"
+              size="sm"
+              isHapticFeedback
+              text={t("auth.agreement.terms")}
+              onClick={() => {
+                if (termsUrl) Linking.openURL(termsUrl);
+              }}
+              style={{ height: 20 }}
+            />
+
+            <Text
+              style={{
+                height: 20,
+                margin: 0,
+                padding: 0,
+                alignItems: "center",
+                color: colors.TextPrimary,
+                ...Typography.regularLabel,
+              }}
+            >
+              {" & "}
+            </Text>
+
+            <Button
+              color="primary"
+              variant="text"
+              size="sm"
+              isHapticFeedback
+              text={t("auth.agreement.privacy")}
+              onClick={() => {
+                if (privacyPolicyUrl) Linking.openURL(privacyPolicyUrl);
+              }}
+              style={{ height: 20 }}
+            />
+          </View>
+
+          <View style={styles.buttons}>
+            <Pressable
+              onPress={continueWithGoogle}
+              disabled={googleLoading}
+              accessibilityRole="button"
+              style={({ pressed }) => [
+                styles.providerButton,
+                isDark ? styles.googleButtonLight : styles.googleButtonDark,
+                (pressed || googleLoading) && styles.providerButtonPressed,
+              ]}
+            >
+              <Image style={styles.googleLogo} source={googleIcon} />
+              <Text
+                style={[
+                  styles.button_text,
+                  isDark ? styles.googleTextLight : styles.googleTextDark,
+                ]}
+              >
+                {t("auth.continueWithGoogle")}
+              </Text>
+            </Pressable>
+
+            {appleAvailable && (
+              <Pressable
+                onPress={continueWithApple}
+                disabled={appleLoading}
+                accessibilityRole="button"
+                style={({ pressed }) => [
+                  styles.providerButton,
+                  styles.appleButton,
+                  isDark ? styles.appleButtonWhite : styles.appleButtonBlack,
+                  (pressed || appleLoading) && styles.providerButtonPressed,
+                ]}
+              >
+                <Image style={styles.appleLogo} source={isDark ? appleLogoBlack : appleLogoWhite} />
+                <Text
+                  style={[
+                    styles.button_text,
+                    isDark ? styles.appleTextBlack : styles.appleTextWhite,
+                  ]}
+                >
+                  {t("auth.continueWithApple")}
+                </Text>
+              </Pressable>
+            )}
+
+            <Button
+              color="secondary"
+              width="100%"
+              onClick={() => {
+                navigation.navigate(AUTH_ROUTES.SIGN_UP);
+              }}
+              style={{ marginTop: 8 }}
+              text={t("auth.signUpWithEmail")}
+            />
+
+            <View style={styles.buttonLink}>
+              <Text style={styles.buttonLinkText}>{t("auth.alreadyHaveAccount")}</Text>
+              <Button
+                color="primary"
+                variant="text"
+                isHapticFeedback
+                text={t("auth.login")}
+                onClick={() => {
+                  navigation.navigate(AUTH_ROUTES.SIGN_IN);
+                }}
+              />
+            </View>
+          </View>
+
+          <View style={styles.spacer} />
+
+          <Button
+            color="primary"
+            variant="text"
+            isHapticFeedback
+            text={t("auth.continueWithoutLogin")}
+            onClick={skipAuth}
+            style={[styles.buttonLink, styles.skipLink]}
+          />
+        </ScrollView>
+      </View>
+    </SafeLayout>
   );
 };
 
-const isDarkColor = (hex: string): boolean => {
-  const value = hex.replace("#", "").slice(0, 6);
-  if (value.length !== 6) return false;
-  const r = parseInt(value.slice(0, 2), 16);
-  const g = parseInt(value.slice(2, 4), 16);
-  const b = parseInt(value.slice(4, 6), 16);
-  return 0.299 * r + 0.587 * g + 0.114 * b < 128;
-};
-
-const makeStyles = (colors: ColorsType, insets: EdgeInsets, imageSize: number) =>
+const makeStyles = (colors: ColorsType, imageSize: number) =>
   StyleSheet.create({
     page: {
       width: "100%",
@@ -393,10 +380,10 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets, imageSize: number) =
       flex: 1,
     },
     content: {
-      paddingTop: insets.top + 16,
-      paddingBottom: insets.bottom + 16,
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
+      paddingTop: 8,
+      paddingBottom: 16,
+      paddingLeft: 16,
+      paddingRight: 16,
 
       flexGrow: 1,
       alignItems: "center",

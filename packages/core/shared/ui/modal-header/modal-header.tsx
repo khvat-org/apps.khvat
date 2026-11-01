@@ -6,6 +6,7 @@ import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 import { ColorsType, useThemeContext } from "../../contexts/theme/theme-context";
 import { Typography } from "../../typography";
 import Button, { ButtonColor } from "../button";
+import { useInsideModelContainer } from "../model-container/model-container";
 
 interface ModalHeaderButton {
   onPress: () => void;
@@ -27,7 +28,11 @@ export const ModalHeader: React.FC<ModalHeaderProps> = ({ left, title, titleColo
   const insets = useSafeAreaInsets();
 
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors, insets);
+  const insideModelContainer = useInsideModelContainer();
+  const styles = makeStyles(
+    colors,
+    insideModelContainer ? { ...insets, left: 0, right: 0 } : insets,
+  );
 
   return (
     <View style={styles.header}>

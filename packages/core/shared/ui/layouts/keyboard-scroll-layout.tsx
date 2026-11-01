@@ -7,6 +7,8 @@ import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 import { TABLET_WIDTH } from "../../constants/sizes";
 import Button from "../button";
 
+import SafeLayout from "./safe-layout";
+
 interface KeyboardScrollLayoutProps {
   children: ReactNode;
   onBack?: () => void;
@@ -17,41 +19,43 @@ const KeyboardScrollLayout: React.FC<KeyboardScrollLayoutProps> = ({ children, o
   const styles = makeStyles(insets);
 
   return (
-    <View style={styles.page}>
-      {onBack && (
-        <Button
-          color="primary"
-          variant="text"
-          isHapticFeedback
-          icon={<CaretLeftIcon size={32} />}
-          onClick={onBack}
-          style={styles.back}
-        />
-      )}
+    <SafeLayout disableTop disableButton>
+      <View style={styles.page}>
+        {onBack && (
+          <Button
+            color="primary"
+            variant="text"
+            isHapticFeedback
+            icon={<CaretLeftIcon size={32} />}
+            onClick={onBack}
+            style={styles.back}
+          />
+        )}
 
-      <KeyboardAvoidingView
-        style={styles.flex}
-        behavior={Platform.OS === "ios" ? "padding" : undefined}
-      >
-        <ScrollView
+        <KeyboardAvoidingView
           style={styles.flex}
-          contentContainerStyle={styles.content}
-          keyboardShouldPersistTaps="handled"
-          keyboardDismissMode="on-drag"
-          showsVerticalScrollIndicator={false}
+          behavior={Platform.OS === "ios" ? "padding" : undefined}
         >
-          {children}
-        </ScrollView>
-      </KeyboardAvoidingView>
-    </View>
+          <ScrollView
+            style={styles.flex}
+            contentContainerStyle={styles.content}
+            keyboardShouldPersistTaps="handled"
+            keyboardDismissMode="on-drag"
+            showsVerticalScrollIndicator={false}
+          >
+            {children}
+          </ScrollView>
+        </KeyboardAvoidingView>
+      </View>
+    </SafeLayout>
   );
 };
 
 const makeStyles = (insets: EdgeInsets) =>
   StyleSheet.create({
     page: {
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
+      paddingLeft: 16,
+      paddingRight: 16,
 
       width: "100%",
       flex: 1,
@@ -59,7 +63,7 @@ const makeStyles = (insets: EdgeInsets) =>
 
     back: {
       position: "absolute",
-      left: insets.left + 16,
+      left: 16,
       top: insets.top + 16,
 
       // * Иначе скролл-контейнер, будучи поздним сиблингом, перекроет кнопку.

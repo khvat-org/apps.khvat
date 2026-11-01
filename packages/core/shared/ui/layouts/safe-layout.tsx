@@ -6,19 +6,15 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 interface SafeLayoutProps {
   disableButton?: boolean;
   disableTop?: boolean;
-  disableLeft?: boolean;
-  disableRight?: boolean;
+  disableSides?: boolean;
   style?: StyleProp<ViewStyle>;
   children: ReactNode;
-  additionalPaddingTop?: number;
 }
 
 const SafeLayout: React.FC<SafeLayoutProps> = ({
   disableButton = false,
   disableTop = false,
-  disableLeft = false,
-  disableRight = false,
-  additionalPaddingTop = 0,
+  disableSides = false,
   style = {},
   children,
 }) => {
@@ -28,10 +24,14 @@ const SafeLayout: React.FC<SafeLayoutProps> = ({
     <View
       style={[
         {
-          paddingTop: !disableTop ? insets.top + additionalPaddingTop : 0,
+          flex: 1,
+          paddingTop: !disableTop ? insets.top : 0,
           paddingBottom: !disableButton ? insets.bottom : 0,
-          paddingLeft: !disableLeft ? insets.left + 16 : 0,
-          paddingRight: !disableRight ? insets.right + 16 : 0,
+          paddingLeft: !disableSides ? insets.left : 0,
+          paddingRight: !disableSides ? insets.right : 0,
+
+          // borderWidth: 1,
+          // borderColor: "red",
         },
         style,
       ]}

@@ -15,6 +15,7 @@ interface PageTitleProps {
   style?: StyleProp<TextStyle>;
   containerStyle?: StyleProp<TextStyle>;
   isSaveArea?: boolean;
+  padded?: boolean;
 }
 
 const PageTitle: React.FC<PageTitleProps> = ({
@@ -24,9 +25,11 @@ const PageTitle: React.FC<PageTitleProps> = ({
   style = {},
   containerStyle = {},
   isSaveArea,
+  padded,
 }) => {
   const { colors } = useThemeContext();
   const insets = useSafeAreaInsets();
+  const sidePadding = padded ? 16 : 0;
 
   return (
     <View
@@ -36,18 +39,20 @@ const PageTitle: React.FC<PageTitleProps> = ({
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
-          paddingTop: 8,
+
           paddingBottom: 16,
         },
-        ...(isSaveArea
-          ? [
-              {
-                paddingLeft: insets.left + 16,
-                paddingRight: insets.right + 16,
-                paddingTop: insets.top + 8,
-              },
-            ]
-          : []),
+        isSaveArea
+          ? {
+              paddingLeft: insets.left + sidePadding,
+              paddingRight: insets.right + sidePadding,
+              paddingTop: insets.top + 8,
+            }
+          : {
+              paddingLeft: sidePadding,
+              paddingRight: sidePadding,
+              paddingTop: 8,
+            },
         containerStyle,
       ]}
     >

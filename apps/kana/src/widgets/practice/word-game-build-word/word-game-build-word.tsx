@@ -5,7 +5,10 @@ import { Typography } from "@nihongo/core/shared/typography";
 import { View, Text, StyleSheet } from "react-native";
 
 import { Sequence } from "@/entities/exercise";
-import { OnSubmit } from "@/pages/education/practice/education-practice/lib/types/questions";
+import {
+  OnSubmit,
+  PracticeUserSelect,
+} from "@/pages/education/practice/education-practice/lib/types/questions";
 import { Kana, PracticeType, TEST_DELAY } from "@/shared/constants/kana";
 import { useFirstClickHandler } from "@/shared/helpers/firstClickHandler";
 
@@ -16,6 +19,7 @@ interface ChooseLettersProps {
   kana: Kana;
 
   onCompleted: OnSubmit;
+  onProgress?: (userSelect: PracticeUserSelect) => void;
 }
 
 const EducationPracticeChooseLetters: React.FC<ChooseLettersProps> = ({
@@ -24,6 +28,7 @@ const EducationPracticeChooseLetters: React.FC<ChooseLettersProps> = ({
   subtitle,
 
   onCompleted,
+  onProgress,
 }) => {
   const { colors } = useThemeContext();
 
@@ -43,7 +48,12 @@ const EducationPracticeChooseLetters: React.FC<ChooseLettersProps> = ({
         <Text style={[styles.word__subtitle, { color: colors.TextSecondary }]}>({subtitle})</Text>
       </View>
 
-      <Sequence key={sequence.join(", ")} onFinish={onFinish} sequence={sequence} />
+      <Sequence
+        key={sequence.join(", ")}
+        onFinish={onFinish}
+        onProgress={(picked) => onProgress?.({ type: PracticeType.WordBuilding, value: picked })}
+        sequence={sequence}
+      />
     </View>
   );
 };

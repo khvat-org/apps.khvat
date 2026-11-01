@@ -3,11 +3,12 @@ import React, { useRef, useReducer, useState, useEffect, useImperativeHandle } f
 import { getCanvasSize, TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { ILetter } from "@nihongo/core/shared/data/lettersTable";
+import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import { CircleIcon, FloppyDiskIcon, ScanIcon, XIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { View, Text, StyleSheet, useWindowDimensions } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import {
   GestureDetector,
   GestureHandlerRootView,
@@ -63,6 +64,8 @@ export const getDrawCanvasSize = (width: number, height: number, maxCanvasSize =
 
 export type DrawHandle = {
   check: () => void;
+  undo: () => void;
+  clear: () => void;
 };
 
 interface DrawProps {
@@ -74,6 +77,8 @@ interface DrawProps {
   isCheckButtonExternal?: boolean;
 
   maxCanvasSize?: number;
+  maxWidth?: number;
+  hideControls?: boolean;
 
   isCheck?: boolean;
 
@@ -97,10 +102,12 @@ const Draw: React.FC<DrawProps> = ({
   isTextRecognition,
   isFullHeight,
   maxCanvasSize = Infinity,
+  maxWidth = Infinity,
+  hideControls = false,
   onCompleted,
   onProgress,
 }) => {
-  const { width, height } = useWindowDimensions();
+  const { width, height } = useContentDimensions();
 
   const { colors } = useThemeContext();
   const { t } = useTranslation();
@@ -110,7 +117,7 @@ const Draw: React.FC<DrawProps> = ({
 
   const [, forceUpdate] = useReducer((x) => x + 1, 0);
 
-  const canvasSize = getDrawCanvasSize(width, height, maxCanvasSize);
+  const canvasSize = Math.min(getDrawCanvasSize(width, height, maxCanvasSize), maxWidth);
 
   const { settings } = useDrawSettings();
 
@@ -231,11 +238,23 @@ const Draw: React.FC<DrawProps> = ({
     }
   }, 400);
 
-  useImperativeHandle(ref, () => ({ check: detectSymbol }), [detectSymbol]);
+  useImperativeHandle(ref, () => ({
+    check: detectSymbol,
+    undo: () => {
+      handleClearStepButtonClick();
+      notifyProgress();
+    },
+    clear: () => {
+      handleClearButtonClick();
+      notifyProgress();
+    },
+  }));
 
-  const controlsHeight = isCheckButtonExternal
-    ? DRAW_CONTROLS_HEIGHT_EXTERNAL_CHECK
-    : DRAW_CONTROLS_HEIGHT;
+  const controlsHeight = hideControls
+    ? 0
+    : isCheckButtonExternal
+      ? DRAW_CONTROLS_HEIGHT_EXTERNAL_CHECK
+      : DRAW_CONTROLS_HEIGHT;
 
   const IS_SAVE = false;
 
@@ -326,62 +345,64 @@ const Draw: React.FC<DrawProps> = ({
           </View>
         </GestureDetector>
 
-        <View
-          style={{
-            width: "100%",
-            maxWidth: width > canvasSize ? canvasSize : width - 32,
-          }}
-        >
-          <ClearButtons
-            clearFull={() => {
-              handleClearButtonClick();
-              notifyProgress();
+        {!hideControls && (
+          <View
+            style={{
+              width: "100%",
+              maxWidth: width > canvasSize ? canvasSize : width - 32,
             }}
-            clearStep={() => {
-              handleClearStepButtonClick();
-              notifyProgress();
-            }}
-          />
-          <View style={styles.buttonsContainer}>
-            <View style={styles.actionButtons}>
-              {isTextRecognition && (
-                <Button
-                  color="secondary"
-                  isHapticFeedback
-                  icon={<ScanIcon size={20} />}
-                  onClick={detectSymbol}
-                />
-              )}
+          >
+            <ClearButtons
+              clearFull={() => {
+                handleClearButtonClick();
+                notifyProgress();
+              }}
+              clearStep={() => {
+                handleClearStepButtonClick();
+                notifyProgress();
+              }}
+            />
+            <View style={styles.buttonsContainer}>
+              <View style={styles.actionButtons}>
+                {isTextRecognition && (
+                  <Button
+                    color="secondary"
+                    isHapticFeedback
+                    icon={<ScanIcon size={20} />}
+                    onClick={detectSymbol}
+                  />
+                )}
 
-              {IS_SAVE && (
-                <Button
-                  icon={<FloppyDiskIcon size={20} />}
-                  onClick={() => {
-                    const symbol = kana === KanaAlphabet.Hiragana ? letter.hi : letter.ka;
+                {IS_SAVE && (
+                  <Button
+                    icon={<FloppyDiskIcon size={20} />}
+                    onClick={() => {
+                      const symbol = kana === KanaAlphabet.Hiragana ? letter.hi : letter.ka;
 
-                    const points = shortenLines(
-                      normalizeCoordinates(processDrawing(pathsRef.current)),
-                    );
+                      const points = shortenLines(
+                        normalizeCoordinates(processDrawing(pathsRef.current)),
+                      );
 
-                    const reference = shortenLines(
-                      canvasCoordinates(processReference(pathsRef.current), canvasSize),
-                    );
+                      const reference = shortenLines(
+                        canvasCoordinates(processReference(pathsRef.current), canvasSize),
+                      );
 
-                    console.log("📦 Symbol points: ", `${symbol}: ${JSON.stringify(points)},`);
-                    console.log(
-                      "🖌️ Reference points: ",
-                      `${symbol}: ${JSON.stringify(reference)},`,
-                    );
-                  }}
-                />
-              )}
+                      console.log("📦 Symbol points: ", `${symbol}: ${JSON.stringify(points)},`);
+                      console.log(
+                        "🖌️ Reference points: ",
+                        `${symbol}: ${JSON.stringify(reference)},`,
+                      );
+                    }}
+                  />
+                )}
 
-              {!isCheck && <ToggleShowBorders />}
-              {!isCheck && <ToggleShowLetter />}
+                {!isCheck && <ToggleShowBorders />}
+                {!isCheck && <ToggleShowLetter />}
+              </View>
+              {!isCheck && <ToggleStrokeWidth />}
             </View>
-            {!isCheck && <ToggleStrokeWidth />}
           </View>
-        </View>
+        )}
 
         <View
           style={{

@@ -3,13 +3,14 @@ import React from "react";
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import Button from "@nihongo/core/shared/ui/button";
+import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { SlidersHorizontalIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { ScrollView, View, StyleSheet } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import {
   AccessibilityError,
@@ -41,7 +42,7 @@ const PracticeWelcomePage: React.FC = () => {
 
   const insets = useSafeAreaInsets();
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors);
+  const styles = makeStyles(colors, insets);
 
   const { selectedWords, selectedLettersHiragana, selectedLettersKatakana } = useKanaContext();
 
@@ -93,7 +94,7 @@ const PracticeWelcomePage: React.FC = () => {
   };
 
   return (
-    <View style={styles.main}>
+    <SafeLayout disableTop disableButton disableSides style={styles.main}>
       <View style={[styles.container, { paddingTop: insets.top }]}>
         <PageTitle
           icon={
@@ -114,7 +115,6 @@ const PracticeWelcomePage: React.FC = () => {
 
       <ScrollView
         showsVerticalScrollIndicator={false}
-        style={styles.scroll}
         contentContainerStyle={styles.scrollContainer}
       >
         <PracticeCard
@@ -174,31 +174,28 @@ const PracticeWelcomePage: React.FC = () => {
           image={practiceImageTyping}
         />
       </ScrollView>
-    </View>
+    </SafeLayout>
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
   StyleSheet.create({
     main: {
-      flex: 1,
       backgroundColor: colors.BgSecondary,
     },
     container: {
-      paddingLeft: 16,
-      paddingRight: 16,
+      paddingLeft: insets.left + 16,
+      paddingRight: insets.right + 16,
       paddingBottom: 16,
       borderBottomLeftRadius: 24,
       borderBottomRightRadius: 24,
       backgroundColor: colors.BgPrimary,
     },
-    scroll: {
-      paddingLeft: 16,
-      paddingRight: 16,
-    },
     scrollContainer: {
       paddingTop: 16,
       paddingBottom: 8,
+      paddingLeft: insets.left + 16,
+      paddingRight: insets.right + 16,
 
       flexDirection: "column",
       alignItems: "center",

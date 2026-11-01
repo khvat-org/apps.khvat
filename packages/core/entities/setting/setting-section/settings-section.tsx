@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 
-import { useWindowDimensions, View } from "react-native";
+import { View } from "react-native";
 
 import { TABLET_WIDTH } from "../../../shared/constants/sizes";
 import { useThemeContext } from "../../../shared/contexts/theme/theme-context";
@@ -11,7 +11,6 @@ interface SettingSectionProps {
 
 const SettingsSection: React.FC<SettingSectionProps> = ({ children }) => {
   const { colors } = useThemeContext();
-  const { width } = useWindowDimensions();
 
   return (
     <View
@@ -20,20 +19,20 @@ const SettingsSection: React.FC<SettingSectionProps> = ({ children }) => {
 
         flexDirection: "column",
         alignItems: "center",
+
+        paddingHorizontal: 16,
       }}
     >
       <View
         style={{
           width: "100%",
 
-          maxWidth: width > TABLET_WIDTH ? TABLET_WIDTH : width - 32,
+          maxWidth: TABLET_WIDTH,
 
           backgroundColor: colors.BgSecondary,
           borderRadius: 12,
 
           paddingLeft: 16,
-
-          marginHorizontal: 16,
         }}
       >
         {children}

@@ -5,7 +5,6 @@ import Button from "@nihongo/core/shared/ui/button";
 import { CaretLeftIcon, CaretRightIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { ScrollView, StyleSheet, useWindowDimensions, View } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { LearningTitle } from "../ui/title";
 
@@ -66,7 +65,6 @@ const InfoScreen: React.FC<InfoScreenProps> = ({
   isLast,
   isPassed,
 }) => {
-  const insets = useSafeAreaInsets();
   const { t } = useTranslation();
 
   const { width } = useWindowDimensions();
@@ -126,8 +124,8 @@ const InfoScreen: React.FC<InfoScreenProps> = ({
         style={[
           styles.btnsContainer,
           {
-            paddingLeft: width > TABLET_WIDTH ? 0 : insets.left + 16,
-            paddingRight: width > TABLET_WIDTH ? 0 : insets.right + 16,
+            paddingLeft: width > TABLET_WIDTH ? 0 : 16,
+            paddingRight: width > TABLET_WIDTH ? 0 : 16,
 
             width: "100%",
             maxWidth: TABLET_WIDTH,
@@ -228,8 +226,8 @@ const InfoScreen: React.FC<InfoScreenProps> = ({
         <MatchPairs
           onComplete={() => nextDelayed()}
           items={block.content.pairs.map(([left, right]) => ({
-            left: { text: left },
-            right: { text: right },
+            left: splitSubtitle(left),
+            right: splitSubtitle(right),
           }))}
           key={idx}
         />
@@ -263,12 +261,12 @@ const InfoScreen: React.FC<InfoScreenProps> = ({
             paddingBottom: SCROLL_PADDING,
           }}
           style={{
-            paddingLeft: insets.left + 16,
-            paddingRight: insets.right + 16,
+            paddingLeft: 16,
+            paddingRight: 16,
             width: "100%",
           }}
         >
-          <LearningTitle>{title}</LearningTitle>
+          <LearningTitle style={styles.title}>{title}</LearningTitle>
 
           <View style={styles.blocksContainer}>
             <View style={styles.blocks}>
@@ -287,6 +285,13 @@ const InfoScreen: React.FC<InfoScreenProps> = ({
 };
 
 export default InfoScreen;
+
+const SUBTITLE_PATTERN = /^(.*\S)\s*\(([^()]+)\)$/;
+
+const splitSubtitle = (value: string) => {
+  const match = value.trim().match(SUBTITLE_PATTERN);
+  return match ? { text: match[1], subtitle: match[2] } : { text: value };
+};
 
 const SCROLL_PADDING = 22;
 const BLOCK_MARGIN_TOP = 16;
@@ -312,6 +317,10 @@ const styles = StyleSheet.create({
   },
   spacer: {
     flex: 1,
+  },
+
+  title: {
+    marginBottom: 16,
   },
 
   blocksContainer: {

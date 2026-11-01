@@ -1,7 +1,8 @@
 import { useCallback, useState } from "react";
 
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
-import { LayoutChangeEvent, useWindowDimensions } from "react-native";
+import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
+import { LayoutChangeEvent } from "react-native";
 
 export const ANSWER_CARDS_GAP = 16;
 
@@ -10,7 +11,7 @@ const MAX_CARD_SIZE = (TABLET_WIDTH - 50) / 2;
 const LAYOUT_PADDING = 32;
 
 export const useAnswerCardSize = () => {
-  const window = useWindowDimensions();
+  const window = useContentDimensions();
   const [area, setArea] = useState<{ width: number; height: number } | null>(null);
 
   const onLayout = useCallback((event: LayoutChangeEvent) => {

@@ -2,7 +2,8 @@ import React from "react";
 
 import { getCanvasSize } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import { useWindowDimensions, View } from "react-native";
+import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
+import { View } from "react-native";
 
 import LetterSoundHeader from "@/entities/kana/letter-sound-header/letter-sound-header";
 import Symbol from "@/entities/kana/symbol/symbol";
@@ -18,7 +19,7 @@ type borderLetterProps = {
 const BorderLetter: React.FC<borderLetterProps> = ({ id, kana, marginTop }) => {
   const { colors } = useThemeContext();
 
-  const { width, height } = useWindowDimensions();
+  const { width, height } = useContentDimensions();
 
   const canvasSize = getCanvasSize(width, height);
 

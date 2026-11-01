@@ -14,6 +14,7 @@ import Button from "../../button";
 interface ProgressBarProp {
   close?: () => void;
   onReport?: () => void;
+  onCloseConfirm?: (isOpen: boolean) => void;
   requireConfirmation?: boolean;
   confirmationTitle?: string;
   confirmationSubtitle?: string;
@@ -25,6 +26,7 @@ interface ProgressBarProp {
 const LinearProgressBar: React.FC<ProgressBarProp> = ({
   close,
   onReport,
+  onCloseConfirm,
   requireConfirmation = true,
   confirmationTitle,
   confirmationSubtitle,
@@ -45,10 +47,11 @@ const LinearProgressBar: React.FC<ProgressBarProp> = ({
     ? confirmationSubtitle
     : t("alert.exitConformation.subtitle");
 
-  const confirmationCloseAlert = () =>
+  const confirmationCloseAlert = () => {
+    onCloseConfirm?.(true);
     showModal({
       closeOnBackdrop: false,
-      onClose: () => {},
+      onClose: () => onCloseConfirm?.(false),
       content: (
         <ConfirmationModal
           title={localizedConfirmationTitle}
@@ -63,6 +66,7 @@ const LinearProgressBar: React.FC<ProgressBarProp> = ({
         />
       ),
     });
+  };
 
   return (
     <View style={styles.progressBarContainer}>

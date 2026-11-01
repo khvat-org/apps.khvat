@@ -5,7 +5,9 @@ import { toDateKey } from "@nihongo/core/shared/contexts/study-activity/study-ac
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import { useTranslation } from "react-i18next";
-import { View, Text, StyleSheet, LayoutChangeEvent, useWindowDimensions } from "react-native";
+import { View, Text, StyleSheet, LayoutChangeEvent } from "react-native";
+
+import { useContentDimensions } from "../../../shared/lib/layout/use-content-dimensions";
 
 const DAY_SIZE = 14;
 const GAP = 2.5;
@@ -76,7 +78,7 @@ interface PracticeHeatmapProps {
 export const PracticeHeatmap: React.FC<PracticeHeatmapProps> = ({ data = {} }) => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
-  const { width: windowWidth } = useWindowDimensions();
+  const { width: windowWidth } = useContentDimensions();
   const [measuredWidth, setMeasuredWidth] = useState(0);
 
   const width =

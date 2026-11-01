@@ -1,12 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
-import {
-  ILetter,
-  dakuonFlatLettersId,
-  handakuonFlatLettersId,
-  yoonFlatLettersId,
-} from "@nihongo/core/shared/data/lettersTable";
+import { ILetter } from "@nihongo/core/shared/data/lettersTable";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, View } from "react-native";
@@ -16,6 +11,7 @@ import { OnSubmit } from "@/pages/education/practice/education-practice/lib/type
 import { useStatisticsContext } from "@/pages/kana/kana-table-list-page/model/hooks";
 import { Kana, KanaAlphabet, PracticeType, TEST_DELAY } from "@/shared/constants/kana";
 import { useFirstClickHandler } from "@/shared/helpers/firstClickHandler";
+import { getBaseRowFirstLetter, getRowLabel } from "@/shared/helpers/kana-letter";
 import {
   useAnswerCardSize,
   ANSWER_CARDS_GAP,
@@ -112,18 +108,6 @@ const EducationPracticeSelectAnswers = React.memo<Props>(function EducationPract
   // * useFirstClickHandler сам мемоизирован — просто оборачиваем стабильный обработчик.
   const pickAnswer = useFirstClickHandler(handlePick, 300);
 
-  const getTypeById = useCallback(
-    (id: string) =>
-      yoonFlatLettersId.includes(id)
-        ? t("kana.yoon")
-        : handakuonFlatLettersId.includes(id)
-          ? t("kana.handakuon")
-          : dakuonFlatLettersId.includes(id)
-            ? t("kana.dakuon")
-            : t("kana.basic"),
-    [t],
-  );
-
   const styles = useMemo(() => makeStyles(), []);
 
   const symbolLabel = useMemo(() => {
@@ -134,8 +118,12 @@ const EducationPracticeSelectAnswers = React.memo<Props>(function EducationPract
 
   const subTitle = useMemo(() => {
     const kanaText = t(`kana.${questionKana.toLowerCase()}`);
-    return `${kanaText} (${getTypeById(question.id)})`;
-  }, [questionKana, question.id, getTypeById, t]);
+    const rowFirstLetter = getBaseRowFirstLetter(question);
+    if (!rowFirstLetter) return kanaText;
+
+    const rowLabel = getRowLabel(getRomaji(rowFirstLetter)).toUpperCase();
+    return `${kanaText} (${t("kana.row", { row: rowLabel })})`;
+  }, [questionKana, question, getRomaji, t]);
 
   const getTextByKey = (answersKana: Kana, answer: ILetter) => {
     return answersKana === Kana.Hiragana

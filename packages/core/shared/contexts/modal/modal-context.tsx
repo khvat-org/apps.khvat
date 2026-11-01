@@ -1,7 +1,8 @@
-import React, { createContext, useCallback, useContext, useState, ReactNode } from "react";
+import React, { createContext, useCallback, useContext, useRef, useState, ReactNode } from "react";
 
 import { Modal, Pressable, StyleSheet, View, KeyboardAvoidingView, Platform } from "react-native";
 
+import SafeLayout from "../../ui/layouts/safe-layout";
 import { useHaptic } from "../haptic/haptic-context";
 import { ColorsType, useThemeContext } from "../theme/theme-context";
 
@@ -23,11 +24,13 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({ children }) =
 
   const [visible, setVisible] = useState(false);
   const [options, setOptions] = useState<ModalOptions | null>(null);
+  const optionsRef = useRef<ModalOptions | null>(null);
 
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
 
   const showModal = useCallback((opts: ModalOptions) => {
+    optionsRef.current = opts;
     setOptions(opts);
     setVisible(true);
   }, []);
@@ -35,10 +38,13 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({ children }) =
   const hideModal = useCallback(() => {
     triggerHaptic();
 
+    const current = optionsRef.current;
+    optionsRef.current = null;
+
     setVisible(false);
-    options?.onClose?.();
+    current?.onClose?.();
     setOptions(null);
-  }, [options, triggerHaptic]);
+  }, [triggerHaptic]);
 
   const handleBackdropPress = useCallback(() => {
     if (options?.closeOnBackdrop !== false) {
@@ -60,12 +66,12 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({ children }) =
           style={styles.flex}
           behavior={Platform.OS === "ios" ? "padding" : "height"}
         >
-          <View style={styles.overlay}>
+          <SafeLayout disableTop style={styles.overlay}>
             <Pressable style={styles.backdrop} onPress={handleBackdropPress} />
             <View style={styles.content} pointerEvents="box-none">
               {options?.content}
             </View>
-          </View>
+          </SafeLayout>
         </KeyboardAvoidingView>
       </Modal>
     </ModalContext.Provider>

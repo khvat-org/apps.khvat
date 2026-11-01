@@ -1,10 +1,11 @@
 import React from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import { useTranslation } from "react-i18next";
-import { StyleSheet, Text, useWindowDimensions, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 import { useKanaContext } from "@/pages/kana/kana-table-choice-letters-page/model/hooks";
 
@@ -15,7 +16,7 @@ interface EducationKanaSelectedCardProps {
 const EducationKanaSelectedCard: React.FC<EducationKanaSelectedCardProps> = ({ onSelectKana }) => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
-  const { width } = useWindowDimensions();
+  const { width } = useContentDimensions();
 
   const styles = makeStyles(colors);
 

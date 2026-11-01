@@ -8,6 +8,7 @@ import { useTransliterationsContext } from "@nihongo/core/shared/contexts/transl
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
+import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -116,105 +117,103 @@ const LearningList: React.FC = () => {
   };
 
   return (
-    <View style={styles.main}>
-      <View style={styles.container}>
-        <PageTitle
-          containerStyle={{
-            backgroundColor: colors.BgPrimary,
-          }}
-          icon={
-            loading && isShowChapters ? (
-              <ActivityIndicator size="small" color={colors.BgContrast} />
-            ) : null
-          }
-          isSaveArea
-        >
-          {t("tabs.learning")}
-        </PageTitle>
+    <SafeLayout disableButton>
+      <View style={styles.main}>
+        <View style={styles.container}>
+          <PageTitle
+            padded
+            containerStyle={styles.title}
+            icon={
+              loading && isShowChapters ? (
+                <ActivityIndicator size="small" color={colors.BgContrast} />
+              ) : null
+            }
+          >
+            {t("tabs.learning")}
+          </PageTitle>
 
-        <View style={{ width: "100%" }} />
-
-        <View style={styles.content}>
-          {(!!percentageProgress || percentageProgress === 0) && (
-            <View style={styles.progressBarContainer}>
-              <View style={styles.progressBarBack}>
-                <View
-                  style={[
-                    { width: `${percentageProgress}%` },
-                    styles.progressBarFilled,
-                    percentageProgress > 99 && {
-                      borderTopRightRadius: 2,
-                      borderBottomRightRadius: 2,
-                    },
-                  ]}
-                />
-                <View
-                  style={[
-                    styles.progressBarTextContainer,
-                    {
-                      left: `${percentageProgress}%`,
-                      marginLeft:
-                        percentageProgress > 83 ? -35 : percentageProgress < 17.5 ? 0 : -17.5,
-                    },
-                  ]}
-                >
-                  <Text style={styles.progressBarText}>{percentageProgress}%</Text>
+          <View style={styles.content}>
+            {(!!percentageProgress || percentageProgress === 0) && (
+              <View style={styles.progressBarContainer}>
+                <View style={styles.progressBarBack}>
+                  <View
+                    style={[
+                      { width: `${percentageProgress}%` },
+                      styles.progressBarFilled,
+                      percentageProgress > 99 && {
+                        borderTopRightRadius: 2,
+                        borderBottomRightRadius: 2,
+                      },
+                    ]}
+                  />
+                  <View
+                    style={[
+                      styles.progressBarTextContainer,
+                      {
+                        left: `${percentageProgress}%`,
+                        marginLeft:
+                          percentageProgress > 83 ? -35 : percentageProgress < 17.5 ? 0 : -17.5,
+                      },
+                    ]}
+                  >
+                    <Text style={styles.progressBarText}>{percentageProgress}%</Text>
+                  </View>
                 </View>
               </View>
-            </View>
-          )}
-        </View>
-
-        {!isShowChapters && (
-          <View style={styles.errorIcon}>
-            {loading ? (
-              <ActivityIndicator size="large" color={colors.BgContrast} />
-            ) : (
-              <SmileyMeltingIcon color={colors.BgContrast} size={64} />
-            )}
-
-            {!loading && (
-              <>
-                <Text
-                  style={{
-                    color: colors.TextPrimary,
-                    ...Typography.regularDefault,
-                    marginTop: 16,
-                    textAlign: "center",
-                    maxWidth: 300,
-                  }}
-                >
-                  {t("lessonsList.failedToLoadLessons")}
-                </Text>
-                <Button
-                  color="primary"
-                  onClick={retry}
-                  text={t("common.retry")}
-                  style={styles.retryButton}
-                />
-              </>
             )}
           </View>
-        )}
 
-        <View style={styles.scrollContainer}>
-          <View style={styles.scrollContainerCenter}>
-            {isShowChapters && (
-              <ScrollView showsVerticalScrollIndicator={false}>
-                {chapters.map((chapter) => (
-                  <Chapter
-                    title={chapter.title}
-                    lessons={chapter.lessons}
-                    key={chapter.id}
-                    startLesson={(lesson) => startLesson(lesson)}
+          {!isShowChapters && (
+            <View style={styles.errorIcon}>
+              {loading ? (
+                <ActivityIndicator size="large" color={colors.BgContrast} />
+              ) : (
+                <SmileyMeltingIcon color={colors.BgContrast} size={64} />
+              )}
+
+              {!loading && (
+                <>
+                  <Text
+                    style={{
+                      color: colors.TextPrimary,
+                      ...Typography.regularDefault,
+                      marginTop: 16,
+                      textAlign: "center",
+                      maxWidth: 300,
+                    }}
+                  >
+                    {t("lessonsList.failedToLoadLessons")}
+                  </Text>
+                  <Button
+                    color="primary"
+                    onClick={retry}
+                    text={t("common.retry")}
+                    style={styles.retryButton}
                   />
-                ))}
-              </ScrollView>
-            )}
+                </>
+              )}
+            </View>
+          )}
+
+          <View style={styles.scrollContainer}>
+            <View style={styles.scrollContainerCenter}>
+              {isShowChapters && (
+                <ScrollView showsVerticalScrollIndicator={false}>
+                  {chapters.map((chapter) => (
+                    <Chapter
+                      title={chapter.title}
+                      lessons={chapter.lessons}
+                      key={chapter.id}
+                      startLesson={(lesson) => startLesson(lesson)}
+                    />
+                  ))}
+                </ScrollView>
+              )}
+            </View>
           </View>
         </View>
       </View>
-    </View>
+    </SafeLayout>
   );
 };
 
@@ -222,6 +221,13 @@ export default LearningList;
 
 const makeStyles = (colors: ColorsType, width: number) =>
   StyleSheet.create({
+    container: {
+      flex: 1,
+      paddingBottom: 0,
+    },
+    title: {
+      backgroundColor: colors.BgPrimary,
+    },
     scrollContainer: {
       flex: 1,
       width: "100%",
@@ -241,10 +247,6 @@ const makeStyles = (colors: ColorsType, width: number) =>
     main: {
       flex: 1,
       backgroundColor: width > TABLET_WIDTH ? colors.BgSecondary : colors.BgPrimary,
-    },
-    container: {
-      flex: 1,
-      paddingBottom: 0,
     },
     content: {
       backgroundColor: colors.BgPrimary,

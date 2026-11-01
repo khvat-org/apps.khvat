@@ -1,19 +1,14 @@
 import React from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import {
-  dakuonFlatLettersId,
-  handakuonFlatLettersId,
-  ILetter,
-  yoonFlatLettersId,
-} from "@nihongo/core/shared/data/lettersTable";
+import { ILetter } from "@nihongo/core/shared/data/lettersTable";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
 import { Typography } from "@nihongo/core/shared/typography";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, Text, View } from "react-native";
 
 import { StatisticLevel } from "@/pages/kana/kana-table-list-page/model/types";
-import { getRowFirstLetterById, getRowLabel } from "@/shared/helpers/kana-letter";
+import { getBaseRowFirstLetter, getRowLabel } from "@/shared/helpers/kana-letter";
 
 interface SymbolHeaderProps {
   letter: ILetter;
@@ -21,11 +16,9 @@ interface SymbolHeaderProps {
   kana?: string;
 
   indicatorColor?: StatisticLevel | null;
-
-  isShowRow?: boolean;
 }
 
-const SymbolHeader: React.FC<SymbolHeaderProps> = ({ letter, kana, indicatorColor, isShowRow }) => {
+const SymbolHeader: React.FC<SymbolHeaderProps> = ({ letter, kana, indicatorColor }) => {
   const { colors } = useThemeContext();
   const { t } = useTranslation();
   const { getRomaji } = useGetRomaji();
@@ -45,16 +38,7 @@ const SymbolHeader: React.FC<SymbolHeaderProps> = ({ letter, kana, indicatorColo
     }
   };
 
-  const getTypeById = (id: string) => {
-    if (yoonFlatLettersId.includes(id)) return "kana.yoon";
-    if (handakuonFlatLettersId.includes(id)) return "kana.handakuon";
-    if (dakuonFlatLettersId.includes(id)) return "kana.dakuon";
-
-    return "kana.basic";
-  };
-
-  const isRowVisible = isShowRow && !handakuonFlatLettersId.includes(letter.id);
-  const rowFirstLetter = isRowVisible ? getRowFirstLetterById(letter.id) : undefined;
+  const rowFirstLetter = getBaseRowFirstLetter(letter);
   const rowLabel = rowFirstLetter ? getRowLabel(getRomaji(rowFirstLetter)).toUpperCase() : null;
 
   return (
@@ -79,8 +63,8 @@ const SymbolHeader: React.FC<SymbolHeaderProps> = ({ letter, kana, indicatorColo
 
       {kana && (
         <Text style={styles.kanaSub}>
-          {t(`kana.${kana}`)} ({t(getTypeById(letter.id))}
-          {rowLabel && ` / ${t("kana.row", { row: rowLabel })}`})
+          {t(`kana.${kana}`)}
+          {rowLabel && ` (${t("kana.row", { row: rowLabel })})`}
         </Text>
       )}
     </View>

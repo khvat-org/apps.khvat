@@ -2,6 +2,7 @@ export const TABLET_WIDTH = 564;
 
 const MIN_CANVAS_SIZE = 280;
 const MAX_CANVAS_SIZE = 564;
+const PAGE_PADDING = 16;
 
 const calculateCanvasSize = (width: number, height: number) => {
   const pagePadding = 16;
@@ -30,9 +31,10 @@ export const getCanvasSize = (
   options?: { min?: number; max?: number },
 ) => {
   const canvasSize = calculateCanvasSize(width, height);
+  const min = Math.min(options?.min ?? MIN_CANVAS_SIZE, width - PAGE_PADDING * 2);
 
-  if (canvasSize <= (options?.min ?? MIN_CANVAS_SIZE)) {
-    return options?.min ?? MIN_CANVAS_SIZE;
+  if (canvasSize <= min) {
+    return min;
   }
 
   if (canvasSize >= (options?.max ?? MAX_CANVAS_SIZE)) {

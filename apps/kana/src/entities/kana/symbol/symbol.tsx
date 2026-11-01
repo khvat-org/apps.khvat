@@ -2,7 +2,8 @@ import React from "react";
 
 import { getCanvasSize } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import { useWindowDimensions, View } from "react-native";
+import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
+import { View } from "react-native";
 
 import { KanaAlphabet } from "@/shared/constants/kana";
 import { getImage } from "@/shared/resources/svgs";
@@ -24,7 +25,7 @@ const Symbol: React.FC<SymbolProps> = ({
 
   isGray,
 }) => {
-  const { width, height } = useWindowDimensions();
+  const { width, height } = useContentDimensions();
   const { colors } = useThemeContext();
 
   const canvasSize = size ?? getCanvasSize(width, height);

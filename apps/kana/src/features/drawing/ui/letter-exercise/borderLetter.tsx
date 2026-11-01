@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 
 import { lettersTableBase } from "@nihongo/core/shared/data/lettersTable";
-import { useWindowDimensions, View } from "react-native";
+import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
+import { View } from "react-native";
 
 import LetterSoundHeader from "@/entities/kana/letter-sound-header/letter-sound-header";
 import Draw, {
@@ -50,7 +51,7 @@ const BorderLetterExercise: React.FC<borderLetterProps> = ({
         )
       : undefined;
 
-  const { width, height } = useWindowDimensions();
+  const { width, height } = useContentDimensions();
   const canvasSize = getDrawCanvasSize(width, height, maxCanvasSize);
 
   return (

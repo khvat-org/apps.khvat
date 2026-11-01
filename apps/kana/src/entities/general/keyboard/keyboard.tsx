@@ -6,10 +6,11 @@ import {
   Transliterations,
   useTransliterationsContext,
 } from "@nihongo/core/shared/contexts/transliteration/transliteration";
+import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
 import { Typography } from "@nihongo/core/shared/typography";
 import { ArrowFatLineUpIcon, BackspaceIcon, SmileyMeltingIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import { StyleSheet, View, Text, useWindowDimensions, Pressable } from "react-native";
+import { StyleSheet, View, Text, Pressable } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 interface KeyboardProps {
@@ -33,7 +34,7 @@ const russion = [
 
 const CustomKeyboard: React.FC<KeyboardProps> = ({ setValue, onSubmit, disable }) => {
   const insets = useSafeAreaInsets();
-  const { width } = useWindowDimensions();
+  const { width } = useContentDimensions();
   const { t } = useTranslation();
   const { colors } = useThemeContext();
   const styles = makeStyles();

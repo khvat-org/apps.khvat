@@ -1,13 +1,16 @@
 #!/usr/bin/env node
+import console from "node:console";
 import { readFileSync } from "node:fs";
 import { dirname, relative, resolve } from "node:path";
+import process from "node:process";
 import { fileURLToPath } from "node:url";
 
 const file = resolve(dirname(fileURLToPath(import.meta.url)), "../src/shared/data/words.ts");
 const source = readFileSync(file, "utf8");
 
 const lineAt = (index) => source.slice(0, index).split("\n").length;
-const field = (object, name) => object.match(new RegExp(`${name}:\\s*"((?:[^"\\\\]|\\\\.)*)"`))?.[1];
+const field = (object, name) =>
+  object.match(new RegExp(`${name}:\\s*"((?:[^"\\\\]|\\\\.)*)"`))?.[1];
 
 const byKana = new Map();
 

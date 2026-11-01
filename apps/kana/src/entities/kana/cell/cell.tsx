@@ -30,9 +30,12 @@ interface CellProps {
   indicator?: StatisticLevel;
 
   isTablet?: boolean;
+  isHeader?: boolean;
   screenWidth?: number;
   screenHeight?: number;
 }
+
+const TABLET_HEADER_HEIGHT = 32;
 
 const Cell: React.FC<CellProps> = ({
   onPress,
@@ -45,6 +48,7 @@ const Cell: React.FC<CellProps> = ({
   isStartOfLine,
   indicator,
   isTablet,
+  isHeader,
   screenWidth = 0,
   screenHeight = 0,
 }) => {
@@ -133,7 +137,7 @@ const Cell: React.FC<CellProps> = ({
           isTablet
             ? {
                 width: tabletCellSize,
-                height: tabletCellSize,
+                height: isHeader ? TABLET_HEADER_HEIGHT : tabletCellSize,
               }
             : {},
         ]}

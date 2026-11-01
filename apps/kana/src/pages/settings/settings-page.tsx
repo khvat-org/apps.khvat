@@ -19,6 +19,7 @@ import TermsAndConditions from "@nihongo/core/features/settings/terms-and-condit
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useIsLoggedIn } from "@nihongo/core/shared/lib/auth/use-is-logged-in";
 import Button from "@nihongo/core/shared/ui/button";
+import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -50,73 +51,75 @@ const SettingsPage: React.FC = () => {
   const goBack = () => navigation.goBack();
 
   return (
-    <View style={styles.container}>
-      <PageTitle
-        isSaveArea
-        leftIcon={
-          <Button
-            color="primary"
-            variant="text"
-            isHapticFeedback
-            icon={<CaretLeftIcon size={32} />}
-            onClick={goBack}
-          />
-        }
-      >
-        {t("tabs.settings")}
-      </PageTitle>
+    <SafeLayout disableButton>
+      <View style={styles.container}>
+        <PageTitle
+          padded
+          leftIcon={
+            <Button
+              color="primary"
+              variant="text"
+              isHapticFeedback
+              icon={<CaretLeftIcon size={32} />}
+              onClick={goBack}
+            />
+          }
+        >
+          {t("tabs.settings")}
+        </PageTitle>
 
-      <ScrollView contentContainerStyle={styles.scroll}>
-        {isLoggedIn === true && (
+        <ScrollView contentContainerStyle={styles.scroll}>
+          {isLoggedIn === true && (
+            <SettingsSection>
+              <SettingItem
+                leftIcon={<PencilSimpleIcon size={20} color={colors.BgContrast} />}
+                text={t("profile.edit.title")}
+                onClick={() => navigation.navigate(ROUTES.PROFILE_EDIT)}
+                isLast
+              />
+            </SettingsSection>
+          )}
+
           <SettingsSection>
-            <SettingItem
-              leftIcon={<PencilSimpleIcon size={20} color={colors.BgContrast} />}
-              text={t("profile.edit.title")}
-              onClick={() => navigation.navigate(ROUTES.PROFILE_EDIT)}
-              isLast
+            <SettingsStatistics />
+            <SettingsHaptic />
+            <SettingsTheme toThemeSettingPage={() => navigation.navigate(ROUTES.SETTINGS_THEME)} />
+          </SettingsSection>
+
+          <SettingsSection>
+            <SettingsLanguage
+              goToLanguageSettingsPage={() => navigation.navigate(ROUTES.SETTINGS_LANGUAGE)}
+            />
+            <SettingsTransliterations
+              goToTransliterationsSettingsPage={() =>
+                navigation.navigate(ROUTES.SETTINGS_TRANSLITERATION)
+              }
             />
           </SettingsSection>
-        )}
 
-        <SettingsSection>
-          <SettingsStatistics />
-          <SettingsHaptic />
-          <SettingsTheme toThemeSettingPage={() => navigation.navigate(ROUTES.SETTINGS_THEME)} />
-        </SettingsSection>
-
-        <SettingsSection>
-          <SettingsLanguage
-            goToLanguageSettingsPage={() => navigation.navigate(ROUTES.SETTINGS_LANGUAGE)}
+          <SettingsWidgetsSection
+            toWidgetsSettingPage={() => navigation.navigate(ROUTES.SETTINGS_WIDGETS)}
           />
-          <SettingsTransliterations
-            goToTransliterationsSettingsPage={() =>
-              navigation.navigate(ROUTES.SETTINGS_TRANSLITERATION)
-            }
-          />
-        </SettingsSection>
 
-        <SettingsWidgetsSection
-          toWidgetsSettingPage={() => navigation.navigate(ROUTES.SETTINGS_WIDGETS)}
-        />
+          <StoreReviewLink iosId="id6479753061" packageName={process.env.ANDROID_PACKAGE} />
 
-        <StoreReviewLink iosId="id6479753061" packageName={process.env.ANDROID_PACKAGE} />
-
-        <SettingsSection>
-          <PrivacyPolicy app="nihon-go-kana" />
-          <ContactSupport app="nihon-go-kana" />
-          <TermsAndConditions app="nihon-go-kana" />
-        </SettingsSection>
-
-        <DebugInfo />
-
-        {isLoggedIn !== null && (
           <SettingsSection>
-            {isLoggedIn === true && <AccountActions />}
-            {isLoggedIn === false && <RemoveData />}
+            <PrivacyPolicy app="nihon-go-kana" />
+            <ContactSupport app="nihon-go-kana" />
+            <TermsAndConditions app="nihon-go-kana" />
           </SettingsSection>
-        )}
-      </ScrollView>
-    </View>
+
+          <DebugInfo />
+
+          {isLoggedIn !== null && (
+            <SettingsSection>
+              {isLoggedIn === true && <AccountActions />}
+              {isLoggedIn === false && <RemoveData />}
+            </SettingsSection>
+          )}
+        </ScrollView>
+      </View>
+    </SafeLayout>
   );
 };
 

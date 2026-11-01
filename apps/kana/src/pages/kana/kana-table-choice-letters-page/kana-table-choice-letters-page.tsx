@@ -5,12 +5,12 @@ import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
+import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
 import Switcher from "@nihongo/core/shared/ui/switcher/switcher";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { useTranslation } from "react-i18next";
 import { View, Text, SectionList, StyleSheet } from "react-native";
-import { StatusBar } from "react-native";
 import { FlatList } from "react-native-gesture-handler";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -66,8 +66,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
   };
 
   return (
-    <View style={{ flex: 1 }}>
-      <StatusBar barStyle="light-content" />
+    <ModelContainer>
       <ModalHeader
         title={t("tabs.kana")}
         left={{
@@ -85,6 +84,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
         <SectionList
           sections={sections}
           style={{ flex: 1 }}
+          showsVerticalScrollIndicator={false}
           keyExtractor={(item, index) => item + index}
           renderItem={({ section }) => (
             <React.Suspense fallback={<View />}>
@@ -109,6 +109,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
         <FlatList
           data={sections}
           style={{ flex: 1 }}
+          showsVerticalScrollIndicator={false}
           keyExtractor={(item) => item.title}
           renderItem={({ item }) => (
             <React.Suspense fallback={<View />}>
@@ -152,7 +153,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
           }}
         />
       </View>
-    </View>
+    </ModelContainer>
   );
 };
 

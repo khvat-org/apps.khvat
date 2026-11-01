@@ -2,7 +2,8 @@ import React, { useMemo } from "react";
 
 import { dakuon, handakuon, base, yoon, ILetter } from "@nihongo/core/shared/data/lettersTable";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
-import { useWindowDimensions, View, StyleSheet } from "react-native";
+import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
+import { View, StyleSheet } from "react-native";
 
 import Cell from "@/entities/kana/cell/cell";
 import { useStatisticsContext } from "@/pages/kana/kana-table-list-page/model/hooks";
@@ -34,7 +35,7 @@ const EducationKanaTable: React.FC<EducationKanaTableProps> = ({
     }
   }, [type]);
 
-  const { width, height } = useWindowDimensions();
+  const { width, height } = useContentDimensions();
 
   const { statistics, isEnabled: isEnabledStats } = useStatisticsContext();
   const levels = statistics[kana];

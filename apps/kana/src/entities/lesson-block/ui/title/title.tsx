@@ -41,7 +41,7 @@ const makeStyles = (colors: ColorsType) =>
     },
     subtitle: {
       marginTop: 8,
-      ...Typography.boldDefault,
+      ...Typography.regularDefault,
       color: colors.TextSecondary,
     },
   });

@@ -19,6 +19,8 @@ import {
   IOSRootNavigation,
 } from "./routes";
 
+import { useOrientationLock } from "@/shared/lib/orientation/use-orientation-lock";
+
 SplashScreen.preventAutoHideAsync();
 
 if (Constants.executionEnvironment !== "storeClient") {
@@ -38,6 +40,8 @@ const Layout: React.FC = () => {
   const [appIsReady, setAppIsReady] = useState(false);
 
   const { colors } = useThemeContext();
+
+  useOrientationLock();
 
   const [isAuthorization, setIsAuthorization] = useState<boolean>(false);
 
