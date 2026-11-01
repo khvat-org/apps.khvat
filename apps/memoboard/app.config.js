@@ -43,6 +43,7 @@ const config = {
     supportsTablet: process.env.SUPPORT_TABLET === "true",
     userInterfaceStyle: "automatic",
     bundleIdentifier: process.env.IOS_BUNDLE_ID,
+    usesAppleSignIn: true,
     buildNumber: process.env.BUILD_NUMBER,
     infoPlist: {
       ITSAppUsesNonExemptEncryption: false,
@@ -82,6 +83,7 @@ const config = {
       },
     ],
     "expo-font",
+    "expo-apple-authentication",
     "expo-audio",
     [
       "expo-splash-screen",

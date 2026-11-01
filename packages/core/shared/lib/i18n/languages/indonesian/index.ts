@@ -218,7 +218,9 @@ const Indonesian = {
       privacy: "Kebijakan Privasi",
     },
     continueWithGoogle: "Lanjutkan dengan Google",
+    continueWithApple: "Lanjutkan dengan Apple",
     googleFailed: "Gagal masuk dengan Google",
+    appleFailed: "Gagal masuk dengan Apple",
     googleUnavailable: {
       title: "Masuk dengan Google tidak tersedia di Rusia",
       subtitle:
@@ -287,6 +289,7 @@ const Indonesian = {
       invalidCredentials: "Email atau kata sandi tidak valid",
       emailNotVerified: "Email belum diverifikasi",
       useGoogleToSignIn: "Akun ini menggunakan masuk dengan Google",
+      useAppleToSignIn: "Akun ini menggunakan masuk dengan Apple",
       invalidResetToken: "Sesi reset telah kedaluwarsa. Minta kode baru.",
       accountMigrating: "Akun sedang dipindahkan. Silakan coba lagi nanti.",
       serverUnavailable: "Server akunmu sedang tidak tersedia. Silakan coba lagi nanti.",

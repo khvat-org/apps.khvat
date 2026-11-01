@@ -214,7 +214,9 @@ const ChineseTW = {
       privacy: "隱私權政策",
     },
     continueWithGoogle: "使用 Google 繼續",
+    continueWithApple: "使用 Apple 繼續",
     googleFailed: "無法使用 Google 登入",
+    appleFailed: "無法使用 Apple 登入",
     googleUnavailable: {
       title: "俄羅斯境內無法使用 Google 登入",
       subtitle: "無法在俄羅斯使用 Google 登入。你的 IP 位址：{{ip}}。你可以改用電子郵件註冊。",
@@ -282,6 +284,7 @@ const ChineseTW = {
       invalidCredentials: "電子郵件或密碼錯誤",
       emailNotVerified: "電子郵件尚未驗證",
       useGoogleToSignIn: "此帳號使用 Google 登入",
+      useAppleToSignIn: "此帳號使用 Apple 登入",
       invalidResetToken: "重設工作階段已過期。請重新請求驗證碼。",
       accountMigrating: "帳號正在轉移中。請稍後再試。",
       serverUnavailable: "你的帳號所在伺服器暫時無法使用，請稍後再試。",

@@ -220,7 +220,9 @@ const Italian = {
       privacy: "Informativa sulla privacy",
     },
     continueWithGoogle: "Continua con Google",
+    continueWithApple: "Continua con Apple",
     googleFailed: "Impossibile accedere con Google",
+    appleFailed: "Impossibile accedere con Apple",
     googleUnavailable: {
       title: "L'accesso con Google non è disponibile in Russia",
       subtitle:
@@ -290,6 +292,7 @@ const Italian = {
       invalidCredentials: "Email o password non validi",
       emailNotVerified: "Email non verificata",
       useGoogleToSignIn: "Questo account usa l'accesso con Google",
+      useAppleToSignIn: "Questo account usa l'accesso con Apple",
       invalidResetToken: "Sessione di reimpostazione scaduta. Richiedi un nuovo codice.",
       accountMigrating: "Account in fase di trasferimento. Riprova più tardi.",
       serverUnavailable:

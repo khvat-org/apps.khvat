@@ -46,6 +46,16 @@ export const resendVerification = (email: string, region: string) =>
 export const oauthGoogle = (idToken: string) =>
   postJson("/api/v2/auth/oauth/google", { id_token: idToken });
 
+export type OAuthApplePayload = {
+  id_token: string;
+  authorization_code: string;
+  nonce: string;
+  name?: string;
+};
+
+export const oauthApple = (payload: OAuthApplePayload) =>
+  postJson("/api/v2/auth/oauth/apple", payload);
+
 export const GOOGLE_OAUTH_BLOCKED = "google_oauth_unavailable_in_country";
 
 export type GoogleOAuthAvailability = {

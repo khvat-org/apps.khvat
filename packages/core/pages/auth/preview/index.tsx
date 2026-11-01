@@ -3,8 +3,14 @@ import React, { useEffect, useState } from "react";
 import {
   checkGoogleOAuthAvailability,
   GOOGLE_OAUTH_BLOCKED,
+  oauthApple,
   oauthGoogle,
 } from "@nihongo/core/features/auth/api";
+import {
+  appleSignIn,
+  isAppleSignInAvailable,
+  isAppleSignInCancelled,
+} from "@nihongo/core/features/auth/lib/appleAuth";
 import { completeAuth } from "@nihongo/core/features/auth/lib/completeAuth";
 import { googleSignIn } from "@nihongo/core/features/auth/lib/googleAuth";
 import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
@@ -29,11 +35,14 @@ import {
   Image,
   StyleSheet,
   Linking,
+  Pressable,
   ScrollView,
   useWindowDimensions,
 } from "react-native";
 import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 
+import appleLogoBlack from "../../../shared/assets/auth/apple-logo-black.png";
+import appleLogoWhite from "../../../shared/assets/auth/apple-logo-white.png";
 import authLogo from "../../../shared/assets/auth/avatar.jpg";
 import googleIcon from "../../../shared/assets/auth/google.png";
 
@@ -53,6 +62,7 @@ export const LoginPage: React.FC = () => {
 
   const imageSize = width > TABLET_WIDTH ? 344 : 192;
   const styles = makeStyles(colors, insets, imageSize);
+  const onDarkTheme = isDarkColor(colors.BgPrimary);
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -70,6 +80,12 @@ export const LoginPage: React.FC = () => {
   };
 
   const [googleLoading, setGoogleLoading] = useState(false);
+  const [appleLoading, setAppleLoading] = useState(false);
+  const [appleAvailable, setAppleAvailable] = useState(false);
+
+  useEffect(() => {
+    isAppleSignInAvailable().then(setAppleAvailable);
+  }, []);
 
   const showGoogleUnavailable = (ip?: string) =>
     showModal({
@@ -136,6 +152,54 @@ export const LoginPage: React.FC = () => {
       if (error instanceof Error && error.message === "User cancelled flow") return;
     } finally {
       setGoogleLoading(false);
+    }
+  };
+
+  const showAppleFailed = (reason: string) =>
+    showModal({
+      closeOnBackdrop: true,
+      onClose: () => {},
+      content: (
+        <AlertModal
+          title={t("auth.appleFailed")}
+          subtitle={t(`auth.errors.${reason}`)}
+          button={t("alert.ok")}
+          onPress={hideModal}
+        />
+      ),
+    });
+
+  const continueWithApple = async () => {
+    if (appleLoading || googleLoading) return;
+    setAppleLoading(true);
+
+    try {
+      const credential = await appleSignIn();
+
+      const result = await oauthApple({
+        id_token: credential.idToken,
+        authorization_code: credential.authorizationCode,
+        nonce: credential.nonce,
+        name: credential.name || undefined,
+      }).catch(() => null);
+      if (!result) {
+        showAppleFailed("requestFailed");
+        return;
+      }
+      const { ok, status, body } = result;
+
+      if (ok && body.access_token && body.refresh_token) {
+        await completeAuth(body.access_token, body.refresh_token);
+        forceReset();
+        return;
+      }
+
+      showAppleFailed(commonAuthError(status, body.error) ?? "somethingWrong");
+    } catch (error) {
+      if (isAppleSignInCancelled(error)) return;
+      showAppleFailed("somethingWrong");
+    } finally {
+      setAppleLoading(false);
     }
   };
 
@@ -223,19 +287,53 @@ export const LoginPage: React.FC = () => {
         </View>
 
         <View style={styles.buttons}>
-          <Button
-            color="primary"
-            width="100%"
-            onClick={continueWithGoogle}
-            isDisabled={googleLoading}
-            icon={
-              <View>
-                <Image style={styles.button_image} source={googleIcon}></Image>
-              </View>
-            }
+          <Pressable
+            onPress={continueWithGoogle}
+            disabled={googleLoading}
+            accessibilityRole="button"
+            style={({ pressed }) => [
+              styles.providerButton,
+              onDarkTheme ? styles.googleButtonLight : styles.googleButtonDark,
+              (pressed || googleLoading) && styles.providerButtonPressed,
+            ]}
           >
-            <Text style={styles.button_text}>{t("auth.continueWithGoogle")}</Text>
-          </Button>
+            <Image style={styles.googleLogo} source={googleIcon} />
+            <Text
+              style={[
+                styles.button_text,
+                onDarkTheme ? styles.googleTextLight : styles.googleTextDark,
+              ]}
+            >
+              {t("auth.continueWithGoogle")}
+            </Text>
+          </Pressable>
+
+          {appleAvailable && (
+            <Pressable
+              onPress={continueWithApple}
+              disabled={appleLoading}
+              accessibilityRole="button"
+              style={({ pressed }) => [
+                styles.providerButton,
+                styles.appleButton,
+                onDarkTheme ? styles.appleButtonWhite : styles.appleButtonBlack,
+                (pressed || appleLoading) && styles.providerButtonPressed,
+              ]}
+            >
+              <Image
+                style={styles.appleLogo}
+                source={onDarkTheme ? appleLogoBlack : appleLogoWhite}
+              />
+              <Text
+                style={[
+                  styles.button_text,
+                  onDarkTheme ? styles.appleTextBlack : styles.appleTextWhite,
+                ]}
+              >
+                {t("auth.continueWithApple")}
+              </Text>
+            </Pressable>
+          )}
 
           <Button
             color="secondary"
@@ -274,6 +372,15 @@ export const LoginPage: React.FC = () => {
       </ScrollView>
     </View>
   );
+};
+
+const isDarkColor = (hex: string): boolean => {
+  const value = hex.replace("#", "").slice(0, 6);
+  if (value.length !== 6) return false;
+  const r = parseInt(value.slice(0, 2), 16);
+  const g = parseInt(value.slice(2, 4), 16);
+  const b = parseInt(value.slice(4, 6), 16);
+  return 0.299 * r + 0.587 * g + 0.114 * b < 128;
 };
 
 const makeStyles = (colors: ColorsType, insets: EdgeInsets, imageSize: number) =>
@@ -338,9 +445,57 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets, imageSize: number) =
 
       marginTop: 32,
     },
-    button_image: {
+    providerButton: {
+      width: "100%",
+      height: 48,
+      paddingHorizontal: 16,
+      borderRadius: 12,
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    providerButtonPressed: {
+      opacity: 0.8,
+    },
+    googleButtonLight: {
+      backgroundColor: "#FFFFFF",
+      borderWidth: 1,
+      borderColor: "#747775",
+    },
+    googleButtonDark: {
+      backgroundColor: "#131314",
+      borderWidth: 1,
+      borderColor: "#8E918F",
+    },
+    googleLogo: {
       width: 20,
-      height: 20,
+      aspectRatio: 200 / 204,
+      marginRight: 12,
+    },
+    googleTextLight: {
+      color: "#1F1F1F",
+    },
+    googleTextDark: {
+      color: "#E3E3E3",
+    },
+    appleButton: {
+      marginTop: 8,
+    },
+    appleButtonWhite: {
+      backgroundColor: "#FFFFFF",
+    },
+    appleButtonBlack: {
+      backgroundColor: "#000000",
+    },
+    appleLogo: {
+      width: 31,
+      height: 44,
+    },
+    appleTextWhite: {
+      color: "#FFFFFF",
+    },
+    appleTextBlack: {
+      color: "#000000",
     },
     button_text: {
       ...Typography.boldDefault,

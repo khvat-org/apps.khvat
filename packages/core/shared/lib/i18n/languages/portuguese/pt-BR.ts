@@ -219,7 +219,9 @@ const PortugueseBR = {
       privacy: "Política de Privacidade",
     },
     continueWithGoogle: "Continuar com o Google",
+    continueWithApple: "Continuar com a Apple",
     googleFailed: "Não foi possível entrar com o Google",
+    appleFailed: "Não foi possível entrar com a Apple",
     googleUnavailable: {
       title: "O login com o Google não está disponível na Rússia",
       subtitle:
@@ -288,6 +290,7 @@ const PortugueseBR = {
       invalidCredentials: "E-mail ou senha inválidos",
       emailNotVerified: "E-mail não verificado",
       useGoogleToSignIn: "Esta conta usa login com Google",
+      useAppleToSignIn: "Esta conta usa login com Apple",
       invalidResetToken: "Sessão de redefinição expirada. Solicite um novo código.",
       accountMigrating: "A conta está sendo transferida. Tente novamente mais tarde.",
       serverUnavailable:

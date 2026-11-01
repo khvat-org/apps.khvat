@@ -50,6 +50,8 @@ const mapSignInError = (status: number, code?: string): Record<string, string> =
       return { email: "emailNotVerified" };
     case "use_google_to_sign_in":
       return { email: "useGoogleToSignIn" };
+    case "use_apple_to_sign_in":
+      return { email: "useAppleToSignIn" };
     case "user_not_found":
       return { email: "userNotFound" };
     case "too_many_attempts":

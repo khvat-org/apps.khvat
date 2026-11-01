@@ -219,7 +219,9 @@ const PortuguesePT = {
       privacy: "Política de Privacidade",
     },
     continueWithGoogle: "Continuar com Google",
+    continueWithApple: "Continuar com Apple",
     googleFailed: "Não foi possível iniciar sessão com o Google",
+    appleFailed: "Não foi possível iniciar sessão com a Apple",
     googleUnavailable: {
       title: "O início de sessão com a Google não está disponível na Rússia",
       subtitle:
@@ -289,6 +291,7 @@ const PortuguesePT = {
       invalidCredentials: "E-mail ou palavra-passe inválidos",
       emailNotVerified: "O e-mail não está verificado",
       useGoogleToSignIn: "Esta conta utiliza o início de sessão com Google",
+      useAppleToSignIn: "Esta conta utiliza o início de sessão com Apple",
       invalidResetToken: "A sessão de reposição expirou. Solicite um novo código.",
       accountMigrating: "A conta está a ser transferida. Tente novamente mais tarde.",
       serverUnavailable:

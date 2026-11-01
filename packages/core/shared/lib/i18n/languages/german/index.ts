@@ -218,7 +218,9 @@ const German = {
       privacy: "Datenschutzerklärung",
     },
     continueWithGoogle: "Mit Google fortfahren",
+    continueWithApple: "Mit Apple fortfahren",
     googleFailed: "Anmeldung mit Google fehlgeschlagen",
+    appleFailed: "Anmeldung mit Apple fehlgeschlagen",
     googleUnavailable: {
       title: "Google-Anmeldung ist in Russland nicht verfügbar",
       subtitle:
@@ -289,6 +291,7 @@ const German = {
       invalidCredentials: "Ungültige E-Mail oder Passwort",
       emailNotVerified: "E-Mail ist nicht bestätigt",
       useGoogleToSignIn: "Dieses Konto verwendet die Google-Anmeldung",
+      useAppleToSignIn: "Dieses Konto verwendet die Apple-Anmeldung",
       invalidResetToken: "Zurücksetzungs-Sitzung abgelaufen. Fordere einen neuen Code an.",
       accountMigrating: "Konto wird übertragen. Bitte versuche es später erneut.",
       serverUnavailable:

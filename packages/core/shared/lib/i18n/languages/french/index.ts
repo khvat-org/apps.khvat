@@ -221,7 +221,9 @@ const French = {
       privacy: "Politique de confidentialité",
     },
     continueWithGoogle: "Continuer avec Google",
+    continueWithApple: "Continuer avec Apple",
     googleFailed: "Impossible de se connecter avec Google",
+    appleFailed: "Impossible de se connecter avec Apple",
     googleUnavailable: {
       title: "La connexion Google n'est pas disponible en Russie",
       subtitle:
@@ -290,6 +292,7 @@ const French = {
       invalidCredentials: "E-mail ou mot de passe invalide",
       emailNotVerified: "E-mail non vérifié",
       useGoogleToSignIn: "Ce compte utilise la connexion Google",
+      useAppleToSignIn: "Ce compte utilise la connexion Apple",
       invalidResetToken: "La session de réinitialisation a expiré. Demandez un nouveau code.",
       accountMigrating: "Le compte est en cours de transfert. Veuillez réessayer plus tard.",
       serverUnavailable:

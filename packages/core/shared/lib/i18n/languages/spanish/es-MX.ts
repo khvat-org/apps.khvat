@@ -221,7 +221,9 @@ const SpanishMX = {
       privacy: "Política de privacidad",
     },
     continueWithGoogle: "Continuar con Google",
+    continueWithApple: "Continuar con Apple",
     googleFailed: "No se pudo iniciar sesión con Google",
+    appleFailed: "No se pudo iniciar sesión con Apple",
     googleUnavailable: {
       title: "El inicio de sesión con Google no está disponible en Rusia",
       subtitle:
@@ -290,6 +292,7 @@ const SpanishMX = {
       invalidCredentials: "Correo electrónico o contraseña incorrectos",
       emailNotVerified: "El correo electrónico no está verificado",
       useGoogleToSignIn: "Esta cuenta usa inicio de sesión con Google",
+      useAppleToSignIn: "Esta cuenta usa inicio de sesión con Apple",
       invalidResetToken: "La sesión de restablecimiento ha expirado. Solicita un nuevo código.",
       accountMigrating: "La cuenta se está transfiriendo. Intenta de nuevo más tarde.",
       serverUnavailable:

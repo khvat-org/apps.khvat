@@ -220,7 +220,9 @@ const Russian = {
       privacy: "Политику конфиденциальности",
     },
     continueWithGoogle: "Продолжить с Google",
+    continueWithApple: "Продолжить с Apple",
     googleFailed: "Не удалось войти через Google",
+    appleFailed: "Не удалось войти через Apple",
     googleUnavailable: {
       title: "Вход через Google недоступен в России",
       subtitle:
@@ -289,6 +291,7 @@ const Russian = {
       invalidCredentials: "Неверный email или пароль",
       emailNotVerified: "Email не подтверждён",
       useGoogleToSignIn: "Этот аккаунт входит через Google",
+      useAppleToSignIn: "Этот аккаунт входит через Apple",
       invalidResetToken: "Сессия сброса истекла. Запросите код заново.",
       accountMigrating: "Идёт перенос аккаунта. Попробуйте позже.",
       serverUnavailable: "Сервер вашего аккаунта временно недоступен. Попробуйте позже.",

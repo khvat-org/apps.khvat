@@ -217,7 +217,9 @@ const English = {
       privacy: "Privacy Policy",
     },
     continueWithGoogle: "Continue with Google",
+    continueWithApple: "Continue with Apple",
     googleFailed: "Couldn't sign in with Google",
+    appleFailed: "Couldn't sign in with Apple",
     googleUnavailable: {
       title: "Google sign-in is unavailable in Russia",
       subtitle:
@@ -286,6 +288,7 @@ const English = {
       invalidCredentials: "Invalid email or password",
       emailNotVerified: "Email is not verified",
       useGoogleToSignIn: "This account uses Google sign-in",
+      useAppleToSignIn: "This account uses Apple sign-in",
       invalidResetToken: "Reset session expired. Request a new code.",
       accountMigrating: "Account is being transferred. Please try again later.",
       serverUnavailable:

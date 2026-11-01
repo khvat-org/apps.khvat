@@ -52,6 +52,8 @@ const mapServerError = (status: number, code?: string): Record<string, string> =
       return { password: "weakPassword" };
     case "use_google_to_sign_in":
       return { oldPassword: "useGoogleToSignIn" };
+    case "use_apple_to_sign_in":
+      return { oldPassword: "useAppleToSignIn" };
   }
   return { password2: commonAuthError(status, code) ?? "somethingWrong" };
 };

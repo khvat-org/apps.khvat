@@ -215,7 +215,9 @@ const Korean = {
       privacy: "개인정보 처리방침",
     },
     continueWithGoogle: "Google로 계속하기",
+    continueWithApple: "Apple로 계속하기",
     googleFailed: "Google로 로그인하지 못했습니다",
+    appleFailed: "Apple로 로그인하지 못했습니다",
     googleUnavailable: {
       title: "러시아에서는 Google 로그인을 사용할 수 없습니다",
       subtitle:
@@ -284,6 +286,7 @@ const Korean = {
       invalidCredentials: "이메일 또는 비밀번호가 올바르지 않습니다",
       emailNotVerified: "이메일이 인증되지 않았습니다",
       useGoogleToSignIn: "이 계정은 Google로 로그인합니다",
+      useAppleToSignIn: "이 계정은 Apple로 로그인합니다",
       invalidResetToken: "재설정 세션이 만료되었습니다. 코드를 다시 요청하세요.",
       accountMigrating: "계정 이전 중입니다. 나중에 다시 시도해 주세요.",
       serverUnavailable: "계정 서버를 일시적으로 사용할 수 없습니다. 나중에 다시 시도해 주세요.",

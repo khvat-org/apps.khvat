@@ -214,7 +214,9 @@ const ChineseCN = {
       privacy: "隐私政策",
     },
     continueWithGoogle: "使用 Google 继续",
+    continueWithApple: "使用 Apple 继续",
     googleFailed: "无法使用 Google 登录",
+    appleFailed: "无法使用 Apple 登录",
     googleUnavailable: {
       title: "俄罗斯境内无法使用 Google 登录",
       subtitle: "无法在俄罗斯使用 Google 登录。你的 IP 地址：{{ip}}。你可以改用邮箱注册。",
@@ -282,6 +284,7 @@ const ChineseCN = {
       invalidCredentials: "邮箱或密码错误",
       emailNotVerified: "邮箱未验证",
       useGoogleToSignIn: "此账户使用 Google 登录",
+      useAppleToSignIn: "此账户使用 Apple 登录",
       invalidResetToken: "重置会话已过期，请重新获取验证码。",
       accountMigrating: "账户正在迁移中，请稍后再试。",
       serverUnavailable: "你的账户所在服务器暂时不可用，请稍后再试。",
