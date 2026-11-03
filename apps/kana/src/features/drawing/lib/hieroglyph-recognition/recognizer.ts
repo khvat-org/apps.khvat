@@ -207,14 +207,21 @@ class Recognizer {
     return this.templates.find((item) => item.name === name && item.strokes.length === strokeCount);
   }
 
-  maxLengthExcess(drawnStrokes: Stroke[], name: string): number {
+  hasOverlongStroke(
+    drawnStrokes: Stroke[],
+    name: string,
+    maxExcess: number,
+    maxRatio: number,
+  ): boolean {
     const input = prepareStrokes(drawnStrokes);
     const template = this.findTemplate(name, input.length);
-    if (!template) return Infinity;
+    if (!template) return true;
 
-    return Math.max(
-      ...input.map((stroke, i) => strokeLength(stroke) - strokeLength(template.strokes[i])),
-    );
+    return input.some((stroke, i) => {
+      const drawn = strokeLength(stroke);
+      const expected = strokeLength(template.strokes[i]);
+      return drawn - expected > maxExcess && drawn > expected * maxRatio;
+    });
   }
 
   crossingDifference(drawnStrokes: Stroke[], name: string): { extra: number; missing: number } {

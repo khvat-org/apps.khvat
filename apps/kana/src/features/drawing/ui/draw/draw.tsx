@@ -205,21 +205,10 @@ const Draw: React.FC<DrawProps> = ({
 
     const target = kana === KanaAlphabet.Hiragana ? letter.hi : letter.ka;
 
-    const degub = false;
-
-    if (degub) {
-      console.log(
-        "[draw-debug]",
-        JSON.stringify({
-          target,
-          strokes: shortenLines(normalizeCoordinates(processDrawing(pathsRef.current))),
-        }),
-      );
-    }
-
     const ABS_THRESHOLD = 0.25;
     const RANK_MARGIN = 0.4;
     const MAX_LENGTH_EXCESS = 0.4;
+    const MAX_LENGTH_RATIO = 1.5;
     const MAX_CROSSING_EXCESS = 0.25;
     const MAX_CROSSING_MISSING = 0.3;
 
@@ -227,17 +216,40 @@ const Draw: React.FC<DrawProps> = ({
     const targetMatch = result.find((symbol) => templateName(symbol.name) === target);
 
     const crossing = targetMatch && recognizer.crossingDifference(strokes, targetMatch.name);
+    const isOverlong =
+      !targetMatch ||
+      recognizer.hasOverlongStroke(strokes, targetMatch.name, MAX_LENGTH_EXCESS, MAX_LENGTH_RATIO);
+    const isOrderCorrect =
+      !!targetMatch && recognizer.isStrokeOrderCorrect(strokes, targetMatch.name);
 
     const isSomeKana =
       !!best &&
       !!targetMatch &&
       targetMatch.score <= ABS_THRESHOLD &&
       targetMatch.score <= best.score * (1 + RANK_MARGIN) &&
-      recognizer.maxLengthExcess(strokes, targetMatch.name) <= MAX_LENGTH_EXCESS &&
+      !isOverlong &&
       !!crossing &&
       crossing.extra <= MAX_CROSSING_EXCESS &&
       crossing.missing <= MAX_CROSSING_MISSING &&
-      recognizer.isStrokeOrderCorrect(strokes, targetMatch.name);
+      isOrderCorrect;
+
+    const degub = false;
+
+    if (degub) {
+      console.log(
+        "[draw-debug]",
+        JSON.stringify({
+          target,
+          isSomeKana,
+          best: best && { name: best.name, score: +best.score.toFixed(3) },
+          score: targetMatch && +targetMatch.score.toFixed(3),
+          isOverlong,
+          crossing,
+          isOrderCorrect,
+          strokes: shortenLines(normalizeCoordinates(processDrawing(pathsRef.current))),
+        }),
+      );
+    }
 
     const drawing = getSnapshot();
 
