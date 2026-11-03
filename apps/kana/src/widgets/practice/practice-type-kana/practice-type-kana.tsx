@@ -11,7 +11,10 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Sequence from "./practice-type-kana-engine";
 
 import CustomKeyboard from "@/entities/general/keyboard/keyboard";
-import { OnSubmit } from "@/pages/education/practice/education-practice/lib/types/questions";
+import {
+  OnSubmit,
+  PracticeUserSelect,
+} from "@/pages/education/practice/education-practice/lib/types/questions";
 import { useStatisticsContext } from "@/pages/kana/kana-table-list-page/model/hooks";
 import { Kana, KanaAlphabet, PracticeType } from "@/shared/constants/kana";
 import { getBaseRowFirstLetter, getRowLabel } from "@/shared/helpers/kana-letter";
@@ -21,9 +24,15 @@ interface PracticeTypeKanaProps {
   symbol: ILetter;
   kana: Kana;
   onCompleted: OnSubmit;
+  onProgress?: (userSelect: PracticeUserSelect) => void;
 }
 
-const PracticeTypeKana: React.FC<PracticeTypeKanaProps> = ({ symbol, kana, onCompleted }) => {
+const PracticeTypeKana: React.FC<PracticeTypeKanaProps> = ({
+  symbol,
+  kana,
+  onCompleted,
+  onProgress,
+}) => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
   const { getRomaji } = useGetRomaji();
@@ -63,16 +72,28 @@ const PracticeTypeKana: React.FC<PracticeTypeKanaProps> = ({ symbol, kana, onCom
     sequence.setNextWord(transliteration, updateTick);
   }, [sequence, symbol, kana, transliterations]);
 
+  const notifyProgress = () =>
+    onProgress?.({
+      type: PracticeType.Typing,
+      value: sequence.sequence.map((char) => char ?? "").join(""),
+    });
+
+  const removeLetter = () => {
+    sequence.removeOne(updateTick);
+    notifyProgress();
+  };
+
   const setVal = (val: string) => {
     if (!val) return false;
 
     if (val === "del") {
-      sequence.removeOne(updateTick);
+      removeLetter();
       return true;
     }
     if (val === "del-long" || val === "space") return true;
 
     sequence.addItem(val, updateTick);
+    notifyProgress();
   };
 
   const getLetterStyle = (idx: number) => {
@@ -94,10 +115,7 @@ const PracticeTypeKana: React.FC<PracticeTypeKanaProps> = ({ symbol, kana, onCom
         <View>
           <Header title={title} subtitle={subtitle} />
 
-          <TouchableOpacity
-            onPress={() => sequence.removeOne(updateTick)}
-            style={styles.wordContainer}
-          >
+          <TouchableOpacity onPress={removeLetter} style={styles.wordContainer}>
             {sequence.sequence.map((letter, index) => (
               <View key={`letter-${index}`} style={[styles.letterContainer, getLetterStyle(index)]}>
                 <Text style={[styles.letter, Typography.regularDefault]}>

@@ -42,6 +42,8 @@ interface LearnScreenProps {
 
 const MemoTimer = React.memo(EducationPracticeTimer);
 
+const TIMER_END_GRACE_MS = 300;
+
 const REPORT_TAGS = ["answer_marked_wrong", "incorrect_character", "interface_error", "other"];
 
 const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
@@ -72,6 +74,9 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   const [, forceUpdate] = useReducer((x) => x + 1, 0);
   const [timerKey, setTimerKey] = useState(0);
   const partialSelect = useRef<PracticeUserSelect | undefined>(undefined);
+  const timerEndGrace = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+
+  useEffect(() => () => clearTimeout(timerEndGrace.current), []);
 
   React.useEffect(() => {
     const onBackPress = () => {
@@ -200,9 +205,12 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
               key={timerKey}
               initial={preferences.timerSeconds}
               isFreeze={isFreeze || isReporting || isConfirmingExit}
-              onTimerEnd={() =>
-                onSubmit({ isCorrectAnswer: false, userSelect: partialSelect.current })
-              }
+              onTimerEnd={() => {
+                timerEndGrace.current = setTimeout(
+                  () => onSubmit({ isCorrectAnswer: false, userSelect: partialSelect.current }),
+                  TIMER_END_GRACE_MS,
+                );
+              }}
             />
           )}
         </View>
@@ -287,6 +295,9 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
               symbol={question.typing.question}
               kana={question.typing.questionKana}
               onCompleted={onSubmit}
+              onProgress={(userSelect) => {
+                partialSelect.current = userSelect;
+              }}
             />
           )}
         </View>
