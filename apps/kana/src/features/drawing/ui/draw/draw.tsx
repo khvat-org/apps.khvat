@@ -205,17 +205,39 @@ const Draw: React.FC<DrawProps> = ({
 
     const target = kana === KanaAlphabet.Hiragana ? letter.hi : letter.ka;
 
+    const degub = false;
+
+    if (degub) {
+      console.log(
+        "[draw-debug]",
+        JSON.stringify({
+          target,
+          strokes: shortenLines(normalizeCoordinates(processDrawing(pathsRef.current))),
+        }),
+      );
+    }
+
     const ABS_THRESHOLD = 0.25;
-    const RANK_MARGIN = 0.1;
+    const RANK_MARGIN = 0.4;
+    const MAX_LENGTH_EXCESS = 0.4;
+    const MAX_CROSSING_EXCESS = 0.25;
+    const MAX_CROSSING_MISSING = 0.3;
 
     const best = result[0];
     const targetMatch = result.find((symbol) => templateName(symbol.name) === target);
+
+    const crossing = targetMatch && recognizer.crossingDifference(strokes, targetMatch.name);
 
     const isSomeKana =
       !!best &&
       !!targetMatch &&
       targetMatch.score <= ABS_THRESHOLD &&
-      targetMatch.score <= best.score * (1 + RANK_MARGIN);
+      targetMatch.score <= best.score * (1 + RANK_MARGIN) &&
+      recognizer.maxLengthExcess(strokes, targetMatch.name) <= MAX_LENGTH_EXCESS &&
+      !!crossing &&
+      crossing.extra <= MAX_CROSSING_EXCESS &&
+      crossing.missing <= MAX_CROSSING_MISSING &&
+      recognizer.isStrokeOrderCorrect(strokes, targetMatch.name);
 
     const drawing = getSnapshot();
 

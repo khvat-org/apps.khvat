@@ -105,6 +105,67 @@ function dtwDistance(a: Stroke, b: Stroke): number {
   return prev[m] / Math.max(n, m);
 }
 
+function strokeLength(stroke: Stroke): number {
+  let length = 0;
+  for (let i = 1; i < stroke.length; i++) {
+    length += euclidean(stroke[i - 1], stroke[i]);
+  }
+  return length;
+}
+
+function centerStroke(stroke: Stroke): Stroke {
+  const centerX = stroke.reduce((sum, point) => sum + point[0], 0) / stroke.length;
+  const centerY = stroke.reduce((sum, point) => sum + point[1], 0) / stroke.length;
+  return stroke.map((point) => [point[0] - centerX, point[1] - centerY]);
+}
+
+function segmentIntersection(a: Point, b: Point, c: Point, d: Point): [number, number] | null {
+  const abX = b[0] - a[0];
+  const abY = b[1] - a[1];
+  const cdX = d[0] - c[0];
+  const cdY = d[1] - c[1];
+  const cross = abX * cdY - abY * cdX;
+  if (Math.abs(cross) < 1e-9) return null;
+
+  const onAb = ((c[0] - a[0]) * cdY - (c[1] - a[1]) * cdX) / cross;
+  const onCd = ((c[0] - a[0]) * abY - (c[1] - a[1]) * abX) / cross;
+
+  return onAb >= 0 && onAb <= 1 && onCd >= 0 && onCd <= 1 ? [onAb, onCd] : null;
+}
+
+function cumulativeLengths(stroke: Stroke): number[] {
+  const lengths = [0];
+  for (let i = 1; i < stroke.length; i++) {
+    lengths.push(lengths[i - 1] + euclidean(stroke[i - 1], stroke[i]));
+  }
+  return lengths;
+}
+
+function crossingDepth(a: Stroke, b: Stroke): number {
+  const lengthsA = cumulativeLengths(a);
+  const lengthsB = cumulativeLengths(b);
+  const totalA = lengthsA[lengthsA.length - 1];
+  const totalB = lengthsB[lengthsB.length - 1];
+
+  let depth = 0;
+  for (let i = 1; i < a.length; i++) {
+    for (let j = 1; j < b.length; j++) {
+      const hit = segmentIntersection(a[i - 1], a[i], b[j - 1], b[j]);
+      if (!hit) continue;
+
+      const positionA = lengthsA[i - 1] + hit[0] * (lengthsA[i] - lengthsA[i - 1]);
+      const positionB = lengthsB[j - 1] + hit[1] * (lengthsB[j] - lengthsB[j - 1]);
+
+      depth = Math.max(
+        depth,
+        Math.min(positionA, totalA - positionA, positionB, totalB - positionB),
+      );
+    }
+  }
+
+  return depth;
+}
+
 class Recognizer {
   private templates: { name: string; strokes: Stroke[] }[] = [];
 
@@ -140,6 +201,64 @@ class Recognizer {
     }
 
     return results.sort((a, b) => a.score - b.score);
+  }
+
+  private findTemplate(name: string, strokeCount: number) {
+    return this.templates.find((item) => item.name === name && item.strokes.length === strokeCount);
+  }
+
+  maxLengthExcess(drawnStrokes: Stroke[], name: string): number {
+    const input = prepareStrokes(drawnStrokes);
+    const template = this.findTemplate(name, input.length);
+    if (!template) return Infinity;
+
+    return Math.max(
+      ...input.map((stroke, i) => strokeLength(stroke) - strokeLength(template.strokes[i])),
+    );
+  }
+
+  crossingDifference(drawnStrokes: Stroke[], name: string): { extra: number; missing: number } {
+    const input = prepareStrokes(drawnStrokes);
+    const template = this.findTemplate(name, input.length);
+    if (!template) return { extra: Infinity, missing: Infinity };
+
+    let extra = 0;
+    let missing = 0;
+    for (let i = 0; i < input.length; i++) {
+      for (let j = i + 1; j < input.length; j++) {
+        const drawn = crossingDepth(input[i], input[j]);
+        const expected = crossingDepth(template.strokes[i], template.strokes[j]);
+        extra = Math.max(extra, drawn - expected);
+        missing = Math.max(missing, expected - drawn);
+      }
+    }
+
+    return { extra, missing };
+  }
+
+  isStrokeOrderCorrect(drawnStrokes: Stroke[], name: string): boolean {
+    const input = prepareStrokes(drawnStrokes);
+    const template = this.findTemplate(name, input.length);
+    if (!template) return false;
+
+    const expected = template.strokes;
+
+    const isDirectionCorrect = input.every((stroke, i) => {
+      const drawn = centerStroke(stroke);
+      const target = centerStroke(expected[i]);
+      return dtwDistance(drawn, target) <= dtwDistance([...drawn].reverse(), target);
+    });
+    if (!isDirectionCorrect) return false;
+
+    for (let i = 0; i < input.length; i++) {
+      for (let j = i + 1; j < input.length; j++) {
+        const inOrder = dtwDistance(input[i], expected[i]) + dtwDistance(input[j], expected[j]);
+        const swapped = dtwDistance(input[i], expected[j]) + dtwDistance(input[j], expected[i]);
+        if (swapped < inOrder) return false;
+      }
+    }
+
+    return true;
   }
 }
 
