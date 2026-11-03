@@ -90,7 +90,7 @@ const PracticeWelcomePage: React.FC = () => {
       );
     }
 
-    navigation.navigate(ROUTES.PRACTICE_TESTING, { mode: modes });
+    navigation.navigate(ROUTES.PRACTICE_PAGE, { mode: modes });
   };
 
   return (

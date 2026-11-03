@@ -100,9 +100,9 @@ const RootStack = {
 
     [ROUTES.SETTINGS_ROOT]: SettingsPage,
 
-    [ROUTES.PRACTICE_TESTING]: EducationPracticePage,
-
+    [ROUTES.PRACTICE_PAGE]: EducationPracticePage,
     [ROUTES.LESSON_PAGE]: LessonPage,
+
     [ROUTES.RESULTS]: EducationResultPage,
 
     [ROUTES.KANA_INFO]: modal(KanaLetterPage),

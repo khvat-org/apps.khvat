@@ -16,7 +16,7 @@ export enum ROUTES {
   LESSON_PAGE = "LessonPage",
 
   // practice
-  PRACTICE_TESTING = "EducationPractice",
+  PRACTICE_PAGE = "EducationPractice",
 
   // results of practice
   RESULTS = "Results",
@@ -62,7 +62,7 @@ export type RootStackParamList = {
   // Lesson page
   [ROUTES.LESSON_PAGE]: { lesson: Lesson };
   // practice
-  [ROUTES.PRACTICE_TESTING]: { mode: PracticeType[] };
+  [ROUTES.PRACTICE_PAGE]: { mode: PracticeType[] };
   // results of practice
   [ROUTES.RESULTS]: PracticeResultData;
   // bottom tab navigator

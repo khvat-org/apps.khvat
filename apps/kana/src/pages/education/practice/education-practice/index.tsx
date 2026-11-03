@@ -34,8 +34,8 @@ import EducationPracticeChooseLetters from "@/widgets/practice/word-game-build-w
 import EducationPracticeChooseValue from "@/widgets/practice/word-game-choose-value/word-game-choose-value";
 import EducationPracticeFindPair from "@/widgets/practice/word-game-find-pair/education-practice-find-pair";
 
-type ScreenNavigationProp = StackNavigationProp<RootStackParamList, typeof ROUTES.PRACTICE_TESTING>;
-type LearnScreenRouteProp = RouteProp<RootStackParamList, typeof ROUTES.PRACTICE_TESTING>;
+type ScreenNavigationProp = StackNavigationProp<RootStackParamList, typeof ROUTES.PRACTICE_PAGE>;
+type LearnScreenRouteProp = RouteProp<RootStackParamList, typeof ROUTES.PRACTICE_PAGE>;
 interface LearnScreenProps {
   route: LearnScreenRouteProp;
 }

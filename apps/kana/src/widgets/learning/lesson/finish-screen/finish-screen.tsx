@@ -1,12 +1,10 @@
 import React, { useRef } from "react";
 
-import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import { useTranslation } from "react-i18next";
-import { StyleSheet, View } from "react-native";
-
-import { LearningTitle } from "../ui/title";
+import { StyleSheet, View, Text } from "react-native";
 
 import { requestHuaweiStoreReview } from "@/shared/lib/promotions/huawei-store-review";
 import { requestRustoreStoreReview } from "@/shared/lib/promotions/rustore-store-review";
@@ -50,13 +48,13 @@ const FinishScreen: React.FC<FinishScreenProps> = ({ next, retry }) => {
     retry();
   };
 
+  const styles = makeStyles(colors);
+
   return (
     <View style={styles.container}>
       <View style={styles.titleContainer}>
-        <LearningTitle style={[Typography.H3]}>{t("lesson.learningComplete")}</LearningTitle>
-        <LearningTitle style={[Typography.regularDefault, { color: colors.TextSecondary }]}>
-          {t("lesson.practiceEveryDay")}
-        </LearningTitle>
+        <Text style={styles.title}>{t("lesson.learningComplete")}</Text>
+        <Text style={styles.subtitle}>{t("lesson.practiceEveryDay")}</Text>
       </View>
 
       <View style={styles.buttonsContainer}>
@@ -81,23 +79,40 @@ const FinishScreen: React.FC<FinishScreenProps> = ({ next, retry }) => {
 
 export default FinishScreen;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "space-between",
-    alignItems: "flex-start",
-  },
-  titleContainer: {
-    width: "100%",
-    flex: 1,
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  buttonsContainer: {
-    width: "100%",
-    gap: 16,
+const makeStyles = (colors: ColorsType) =>
+  StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: "space-between",
+      alignItems: "flex-start",
+    },
+    titleContainer: {
+      width: "100%",
+      flex: 1,
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    buttonsContainer: {
+      width: "100%",
+      gap: 8,
 
-    height: 116,
-  },
-});
+      height: 116,
+    },
+
+    title: {
+      ...Typography.H3,
+      marginBottom: 8,
+      color: colors.TextPrimary,
+      textAlign: "center",
+
+      paddingHorizontal: 16,
+    },
+    subtitle: {
+      ...Typography.regularDefault,
+      color: colors.TextSecondary,
+      textAlign: "center",
+
+      paddingHorizontal: 16,
+    },
+  });
