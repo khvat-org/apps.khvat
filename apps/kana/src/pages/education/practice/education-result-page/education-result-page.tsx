@@ -576,7 +576,7 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
     },
 
     line__question: {
-      ...Typography.regularDefault,
+      ...Typography.boldDefault,
       color: colors.TextPrimary,
     },
 
