@@ -122,6 +122,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     gap: 5,
+    marginTop: 16,
   },
   letterContainer: {
     minWidth: 22,
@@ -145,7 +146,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexWrap: "wrap",
     gap: 9,
-    marginTop: 30,
+    marginTop: 32,
   },
   emptyButton: {
     width: 50,

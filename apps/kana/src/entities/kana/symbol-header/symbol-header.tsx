@@ -84,7 +84,7 @@ const makeStyles = (colors: ColorsType) =>
       ...Typography.H2,
     },
     kanaSub: {
-      ...Typography.boldDefault,
+      ...Typography.regularDefault,
       color: colors.TextSecondary,
     },
   });

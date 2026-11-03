@@ -73,6 +73,8 @@ const styles = StyleSheet.create({
 
     flexDirection: "column",
     alignItems: "center",
+
+    paddingTop: 16,
   },
   answers: {
     width: "100%",

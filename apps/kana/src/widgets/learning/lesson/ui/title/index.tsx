@@ -18,7 +18,7 @@ export const LearningTitle: React.FC<LearningTitleProps> = ({ children, style })
         Typography.H4,
         {
           color: colors.TextPrimary,
-          marginBottom: 32,
+          paddingBottom: 16,
           textAlign: "center",
         },
         style,

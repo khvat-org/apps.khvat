@@ -91,7 +91,7 @@ const PracticeTypeKana: React.FC<PracticeTypeKanaProps> = ({ symbol, kana, onCom
   return (
     <View style={styles.container}>
       <View style={{ height: "100%", flexDirection: "column", justifyContent: "space-between" }}>
-        <View style={{ paddingLeft: 16, paddingRight: 16 }}>
+        <View>
           <Header title={title} subtitle={subtitle} />
 
           <TouchableOpacity
@@ -132,8 +132,8 @@ const makeStyles = (colors: ColorsType) =>
       flexDirection: "row",
       justifyContent: "center",
       alignItems: "center",
-      gap: 5,
-      marginTop: 32,
+      gap: 4,
+      marginTop: 16,
     },
     letterContainer: {
       width: 22,

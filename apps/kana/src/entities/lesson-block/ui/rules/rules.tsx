@@ -39,6 +39,8 @@ const makeStyles = (colors: ColorsType) =>
       paddingLeft: 16,
       paddingRight: 16,
       backgroundColor: colors.BgSecondary,
+
+      marginBottom: 16,
     },
     textContainer: {
       paddingTop: 10,

@@ -49,7 +49,7 @@ const EducationPracticeFindPair: React.FC<EducationPracticeFindPairProps> = ({
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <Text style={[styles.question, { color: colors.TextPrimary, marginBottom: 32 }]}>
+        <Text style={[styles.question, { color: colors.TextPrimary }]}>
           {kana === Kana.Hiragana
             ? t("lesson.matchHiraganaWithTransliteration")
             : t("lesson.matchKatakanaWithTransliteration")}
@@ -89,7 +89,9 @@ const styles = StyleSheet.create({
     width: "100%",
     textAlign: "center",
     ...Typography.boldDefault,
-    marginTop: 32,
+
+    paddingTop: 16,
+    paddingBottom: 16,
   },
 });
 

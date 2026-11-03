@@ -202,6 +202,8 @@ const makeStyles = (colors: ColorsType) =>
     container: {
       width: "100%",
       gap: 8,
+
+      paddingTop: 16,
     },
     row: {
       flexDirection: "row",

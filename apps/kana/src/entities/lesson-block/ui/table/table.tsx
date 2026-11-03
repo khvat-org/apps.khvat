@@ -56,6 +56,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     borderRadius: 12,
     overflow: "hidden",
+
+    marginBottom: 16,
   },
   column: {},
   cell: {

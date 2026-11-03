@@ -19,7 +19,6 @@ type borderLetterProps = {
   id: string;
   kana: KanaAlphabet;
 
-  marginTop?: number;
   viewportBottom?: number | null;
 
   isStencil?: boolean;
@@ -31,7 +30,6 @@ const BorderLetterExercise: React.FC<borderLetterProps> = ({
   ref,
   id,
   kana,
-  marginTop,
   viewportBottom,
   isStencil,
   onComplete,
@@ -58,14 +56,7 @@ const BorderLetterExercise: React.FC<borderLetterProps> = ({
     <View>
       <LetterSoundHeader kana={kana} id={id} width={canvasSize} />
 
-      <View
-        ref={drawRef}
-        onLayout={measureDrawTop}
-        style={{
-          borderRadius: 12,
-          marginTop: marginTop !== undefined ? marginTop : 16,
-        }}
-      >
+      <View ref={drawRef} onLayout={measureDrawTop}>
         <Draw
           ref={ref}
           maxCanvasSize={maxCanvasSize}

@@ -1,10 +1,9 @@
 import React from "react";
 
-import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
-import { Typography } from "@nihongo/core/shared/typography";
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
 
 import { Sequence } from "@/entities/exercise";
+import Title from "@/entities/lesson-block/ui/title/title";
 import {
   OnSubmit,
   PracticeUserSelect,
@@ -30,8 +29,6 @@ const EducationPracticeChooseLetters: React.FC<ChooseLettersProps> = ({
   onCompleted,
   onProgress,
 }) => {
-  const { colors } = useThemeContext();
-
   const onFinish = useFirstClickHandler(
     (isCorrect: boolean, picked: string[]) =>
       onCompleted({
@@ -43,10 +40,7 @@ const EducationPracticeChooseLetters: React.FC<ChooseLettersProps> = ({
 
   return (
     <View style={styles.container}>
-      <View style={styles.word}>
-        <Text style={[styles.word__title, { color: colors.TextPrimary }]}>{title}</Text>
-        <Text style={[styles.word__subtitle, { color: colors.TextSecondary }]}>({subtitle})</Text>
-      </View>
+      <Title title={title} subtitle={subtitle} />
 
       <Sequence
         key={sequence.join(", ")}
@@ -70,15 +64,5 @@ const styles = StyleSheet.create({
   word: {
     alignItems: "center",
     gap: 8,
-    marginBottom: 32,
-  },
-  word__title: {
-    marginTop: 32,
-    ...Typography.H2,
-    textAlign: "center",
-  },
-  word__subtitle: {
-    ...Typography.regularDefault,
-    textAlign: "center",
   },
 });

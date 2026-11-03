@@ -193,7 +193,7 @@ const makeStyles = (colors: ColorsType) =>
       color: colors.TextPrimary,
 
       textAlign: "center",
-      marginTop: 32,
+      marginTop: 16,
       marginBottom: 32,
     },
   });

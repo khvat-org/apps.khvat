@@ -31,6 +31,9 @@ const makeStyles = (colors: ColorsType) =>
       justifyContent: "center",
       alignItems: "center",
       flexDirection: "column",
+
+      paddingTop: 16,
+      paddingBottom: 16,
     },
     title: {
       width: "100%",
@@ -38,9 +41,10 @@ const makeStyles = (colors: ColorsType) =>
 
       ...Typography.H2,
       color: colors.TextPrimary,
+
+      marginBottom: 8,
     },
     subtitle: {
-      marginTop: 8,
       ...Typography.regularDefault,
       color: colors.TextSecondary,
     },

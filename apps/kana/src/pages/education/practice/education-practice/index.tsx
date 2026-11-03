@@ -172,7 +172,11 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   return (
     <SafeLayout>
       <View style={styles.container}>
-        <View>
+        <View
+          style={{
+            paddingBottom: 16,
+          }}
+        >
           {questions.length !== 0 && currentIndex <= questions.length && (
             <LinearProgressBar
               close={navigation.goBack}
@@ -205,7 +209,13 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
 
         <View
           pointerEvents={isFreeze ? "none" : "auto"}
-          style={{ flex: 1, width: "100%", justifyContent: "space-between", alignItems: "center" }}
+          style={{
+            flex: 1,
+
+            width: "100%",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
         >
           {question.type === PracticeType.Testing && question.testing && (
             <EducationPracticeSelectAnswers

@@ -25,5 +25,6 @@ export default BlockText;
 const styles = StyleSheet.create({
   blockText: {
     ...Typography.regularDefault,
+    paddingBottom: 16,
   },
 });

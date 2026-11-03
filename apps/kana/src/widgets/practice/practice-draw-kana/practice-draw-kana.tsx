@@ -55,7 +55,7 @@ const PracticeDrawKana: React.FC<PracticeDrawKanaProps> = ({
 
   return (
     <View style={styles.screen}>
-      <View style={styles.header}>
+      <View>
         <LetterSoundHeader id={symbol.id} kana={kanaAlphabet} width={canvasSize} />
       </View>
 
@@ -98,10 +98,6 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     width: "100%",
-    gap: 16,
-  },
-  header: {
-    marginTop: 20,
   },
   container: {
     flex: 1,

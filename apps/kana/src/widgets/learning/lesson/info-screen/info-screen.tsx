@@ -245,13 +245,6 @@ const InfoScreen: React.FC<InfoScreenProps> = ({
     }
   };
 
-  const getBlockMarginTop = (block: AnyLessonBlock, idx: number) => {
-    if (idx === 0) return 0;
-    if (blockType.isLetter(block) || blockType.isLetterExercise(block))
-      return LETTER_BLOCK_MARGIN_TOP;
-    return BLOCK_MARGIN_TOP;
-  };
-
   return (
     <View style={styles.container}>
       <View style={styles.viewport} ref={viewportRef} onLayout={measureViewport}>
@@ -266,14 +259,12 @@ const InfoScreen: React.FC<InfoScreenProps> = ({
             width: "100%",
           }}
         >
-          <LearningTitle style={styles.title}>{title}</LearningTitle>
+          <LearningTitle>{title}</LearningTitle>
 
           <View style={styles.blocksContainer}>
             <View style={styles.blocks}>
               {blocks.map((block, idx) => (
-                <View key={idx} style={{ marginTop: getBlockMarginTop(block, idx) }}>
-                  {renderBlock(block, idx)}
-                </View>
+                <View key={idx}>{renderBlock(block, idx)}</View>
               ))}
             </View>
           </View>
@@ -294,8 +285,6 @@ const splitSubtitle = (value: string) => {
 };
 
 const SCROLL_PADDING = 22;
-const BLOCK_MARGIN_TOP = 16;
-const LETTER_BLOCK_MARGIN_TOP = 32;
 
 const styles = StyleSheet.create({
   container: {
@@ -317,10 +306,6 @@ const styles = StyleSheet.create({
   },
   spacer: {
     flex: 1,
-  },
-
-  title: {
-    marginBottom: 16,
   },
 
   blocksContainer: {

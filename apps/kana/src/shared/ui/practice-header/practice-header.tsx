@@ -9,7 +9,7 @@ const Header = ({ title, subtitle }: { title: string; subtitle: string }) => {
   const styles = makeStyles(colors);
 
   return (
-    <View>
+    <View style={styles.container}>
       <Text style={styles.symbol}>{title}</Text>
       <Text style={styles.subText}>{subtitle}</Text>
     </View>
@@ -20,14 +20,19 @@ export default Header;
 
 const makeStyles = (colors: ColorsType) =>
   StyleSheet.create({
+    container: {
+      paddingTop: 16,
+      paddingBottom: 16,
+
+      width: "100%",
+    },
     symbol: {
       ...Typography.H1,
       textAlign: "center",
       color: colors.TextPrimary,
-      marginTop: 32,
     },
     subText: {
-      ...Typography.boldDefault,
+      ...Typography.regularDefault,
       color: colors.TextSecondary,
       textAlign: "center",
     },

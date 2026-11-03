@@ -32,10 +32,13 @@ const styles = StyleSheet.create({
   container: {
     alignSelf: "center",
     justifyContent: "center",
+
+    paddingTop: 16,
+    paddingBottom: 16,
   },
   sound: {
     position: "absolute",
     right: 0,
-    bottom: 0,
+    bottom: 16,
   },
 });
