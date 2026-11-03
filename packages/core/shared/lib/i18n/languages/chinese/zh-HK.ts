@@ -436,6 +436,10 @@ const ChineseHK = {
   report: {
     title: "報告錯誤",
     subtitle: "這條題目有甚麼問題？我們會盡快修正。",
+    settings: {
+      title: "報告錯誤",
+      subtitle: "遇到甚麼問題？我們會盡快修正。",
+    },
     placeholder: "內容",
     upload: "上載",
     send: "傳送",

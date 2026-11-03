@@ -446,6 +446,10 @@ const PortuguesePT = {
   report: {
     title: "Comunicar um erro",
     subtitle: "O que está errado nesta pergunta? Vamos corrigir de imediato.",
+    settings: {
+      title: "Comunicar um erro",
+      subtitle: "O que correu mal? Vamos corrigir de imediato.",
+    },
     placeholder: "Texto",
     upload: "Carregar",
     send: "Enviar",

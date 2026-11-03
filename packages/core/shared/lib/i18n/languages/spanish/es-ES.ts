@@ -449,6 +449,10 @@ const SpanishES = {
   report: {
     title: "Informar de un error",
     subtitle: "¿Qué falla en esta pregunta? Lo corregiremos enseguida.",
+    settings: {
+      title: "Informar de un error",
+      subtitle: "¿Qué ha fallado? Lo corregiremos enseguida.",
+    },
     placeholder: "Texto",
     upload: "Subir",
     send: "Enviar",

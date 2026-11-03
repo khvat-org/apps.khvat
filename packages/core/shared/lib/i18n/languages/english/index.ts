@@ -442,6 +442,10 @@ const English = {
   report: {
     title: "Report an error",
     subtitle: "What's wrong with this question? We'll fix it right away.",
+    settings: {
+      title: "Report",
+      subtitle: "What went wrong? We'll fix it right away.",
+    },
     placeholder: "Text",
     upload: "Upload",
     send: "Send report",

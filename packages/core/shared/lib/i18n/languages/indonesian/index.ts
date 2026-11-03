@@ -442,6 +442,10 @@ const Indonesian = {
   report: {
     title: "Laporkan kesalahan",
     subtitle: "Apa yang salah dengan pertanyaan ini? Kami akan segera memperbaikinya.",
+    settings: {
+      title: "Laporkan kesalahan",
+      subtitle: "Apa yang salah? Kami akan segera memperbaikinya.",
+    },
     placeholder: "Teks",
     upload: "Unggah",
     send: "Kirim",

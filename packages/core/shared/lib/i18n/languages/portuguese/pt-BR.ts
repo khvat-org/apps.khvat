@@ -444,6 +444,10 @@ const PortugueseBR = {
   report: {
     title: "Relatar um erro",
     subtitle: "O que há de errado com esta pergunta? Vamos corrigir rapidinho.",
+    settings: {
+      title: "Relatar um erro",
+      subtitle: "O que deu errado? Vamos corrigir rapidinho.",
+    },
     placeholder: "Texto",
     upload: "Enviar imagem",
     send: "Enviar",

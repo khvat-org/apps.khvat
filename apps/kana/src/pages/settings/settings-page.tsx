@@ -9,6 +9,7 @@ import ContactSupport from "@nihongo/core/features/settings/contact-support/cont
 import DebugInfo from "@nihongo/core/features/settings/debug-info/debug-info";
 import PrivacyPolicy from "@nihongo/core/features/settings/privacy-policy/privacy-policy";
 import RemoveData from "@nihongo/core/features/settings/remove-data/remove-data";
+import ReportLink from "@nihongo/core/features/settings/report-link/report-link";
 import SettingsHaptic from "@nihongo/core/features/settings/settings-haptic/settings-haptic";
 import SettingsLanguage from "@nihongo/core/features/settings/settings-language/settings-language";
 import SettingsTheme from "@nihongo/core/features/settings/settings-theme/settings-theme";
@@ -101,7 +102,10 @@ const SettingsPage: React.FC = () => {
             toWidgetsSettingPage={() => navigation.navigate(ROUTES.SETTINGS_WIDGETS)}
           />
 
-          <StoreReviewLink iosId="id6479753061" packageName={process.env.ANDROID_PACKAGE} />
+          <SettingsSection>
+            <StoreReviewLink iosId="id6479753061" packageName={process.env.ANDROID_PACKAGE} />
+            <ReportLink goToReportPage={() => navigation.navigate(ROUTES.SETTINGS_REPORT)} />
+          </SettingsSection>
 
           <SettingsSection>
             <PrivacyPolicy app="nihon-go-kana" />

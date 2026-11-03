@@ -447,6 +447,10 @@ const Italian = {
   report: {
     title: "Segnala un errore",
     subtitle: "Cosa non va in questa domanda? Lo correggeremo subito.",
+    settings: {
+      title: "Segnala un errore",
+      subtitle: "Cosa non va? Lo correggeremo subito.",
+    },
     placeholder: "Testo",
     upload: "Carica",
     send: "Invia",

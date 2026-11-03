@@ -447,6 +447,10 @@ const German = {
   report: {
     title: "Fehler melden",
     subtitle: "Was stimmt mit dieser Frage nicht? Wir beheben es sofort.",
+    settings: {
+      title: "Fehler melden",
+      subtitle: "Was ist schiefgelaufen? Wir beheben es sofort.",
+    },
     placeholder: "Text",
     upload: "Hochladen",
     send: "Senden",

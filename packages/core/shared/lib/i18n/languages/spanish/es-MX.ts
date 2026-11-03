@@ -448,6 +448,10 @@ const SpanishMX = {
   report: {
     title: "Reportar un error",
     subtitle: "¿Qué está mal en esta pregunta? Lo corregiremos de inmediato.",
+    settings: {
+      title: "Reportar un error",
+      subtitle: "¿Qué salió mal? Lo corregiremos de inmediato.",
+    },
     placeholder: "Texto",
     upload: "Subir",
     send: "Enviar",

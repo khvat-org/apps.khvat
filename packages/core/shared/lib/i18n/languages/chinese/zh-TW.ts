@@ -436,6 +436,10 @@ const ChineseTW = {
   report: {
     title: "回報錯誤",
     subtitle: "這題有什麼問題？我們會盡快修正。",
+    settings: {
+      title: "回報錯誤",
+      subtitle: "遇到什麼問題？我們會盡快修正。",
+    },
     placeholder: "內容",
     upload: "上傳",
     send: "送出",

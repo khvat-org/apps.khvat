@@ -448,6 +448,10 @@ const French = {
   report: {
     title: "Signaler une erreur",
     subtitle: "Qu'est-ce qui ne va pas avec cette question ? Nous corrigerons rapidement.",
+    settings: {
+      title: "Signaler une erreur",
+      subtitle: "Qu'est-ce qui ne va pas ? Nous corrigerons rapidement.",
+    },
     placeholder: "Texte",
     upload: "Ajouter",
     send: "Envoyer",

@@ -436,6 +436,10 @@ const ChineseCN = {
   report: {
     title: "报告错误",
     subtitle: "这道题有什么问题？我们会尽快修正。",
+    settings: {
+      title: "报告错误",
+      subtitle: "遇到了什么问题？我们会尽快修正。",
+    },
     placeholder: "内容",
     upload: "上传",
     send: "发送",

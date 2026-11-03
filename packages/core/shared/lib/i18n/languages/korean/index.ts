@@ -439,6 +439,10 @@ const Korean = {
   report: {
     title: "오류 신고",
     subtitle: "이 문제에 어떤 문제가 있나요? 바로 고치겠습니다.",
+    settings: {
+      title: "오류 신고",
+      subtitle: "어떤 문제가 있나요? 바로 고치겠습니다.",
+    },
     placeholder: "내용",
     upload: "업로드",
     send: "신고 보내기",

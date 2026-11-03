@@ -1,7 +1,6 @@
 import React from "react";
 
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
-import SettingsSection from "@nihongo/core/entities/setting/setting-section/settings-section";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import * as StoreReview from "expo-store-review";
 import { StarIcon } from "phosphor-react-native";
@@ -38,15 +37,12 @@ const StoreReviewLink: React.FC<StoreReviewLinkProps> = ({ iosId, packageName })
   };
 
   return (
-    <SettingsSection>
-      <SettingItem
-        isLast
-        leftIcon={<StarIcon size={20} color={colors.BgContrast} />}
-        text={t("settings.rateApp.title")}
-        subText={t("settings.rateApp.subtitle")}
-        onClick={openStoreReview}
-      />
-    </SettingsSection>
+    <SettingItem
+      leftIcon={<StarIcon size={20} color={colors.BgContrast} />}
+      text={t("settings.rateApp.title")}
+      subText={t("settings.rateApp.subtitle")}
+      onClick={openStoreReview}
+    />
   );
 };
 

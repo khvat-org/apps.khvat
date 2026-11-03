@@ -34,6 +34,7 @@ export enum ROUTES {
   SETTINGS_TRANSLITERATION = "SettingTransliterations",
   SETTINGS_THEME = "SettingTheme",
   SETTINGS_WIDGETS = "SettingWidgets",
+  SETTINGS_REPORT = "SettingReport",
 
   // * Auth section
   WELCOME = "WelcomePage",
@@ -77,6 +78,7 @@ export type RootStackParamList = {
   [ROUTES.SETTINGS_TRANSLITERATION]: undefined;
   [ROUTES.SETTINGS_THEME]: undefined;
   [ROUTES.SETTINGS_WIDGETS]: undefined;
+  [ROUTES.SETTINGS_REPORT]: undefined;
 
   // * Auth section
   [ROUTES.WELCOME]: undefined;
