@@ -116,10 +116,12 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
   const active = lettersTableById[letterId];
   const activeIndex = flatLetters.findIndex((element) => element === active.id);
 
-  const prevLetter = () => activeIndex !== 0 && setLetterId(flatLetters[activeIndex - 1]);
+  const isFirstLetter = activeIndex === 0;
+  const isLastLetter = activeIndex === flatLetters.length - 1;
 
-  const nextLetter = () =>
-    flatLetters.length !== activeIndex + 1 && setLetterId(flatLetters[activeIndex + 1]);
+  const prevLetter = () => !isFirstLetter && setLetterId(flatLetters[activeIndex - 1]);
+
+  const nextLetter = () => !isLastLetter && setLetterId(flatLetters[activeIndex + 1]);
 
   const letter = lettersTableById[letterId];
 
@@ -262,6 +264,7 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
                   color="secondary"
                   isHapticFeedback
                   icon={leftIcon}
+                  isDisabled={isFirstLetter}
                   onClick={() => prevLetter()}
                 />
 
@@ -277,6 +280,7 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
                   color="secondary"
                   isHapticFeedback
                   icon={rightIcon}
+                  isDisabled={isLastLetter}
                   onClick={() => nextLetter()}
                 />
               </View>
