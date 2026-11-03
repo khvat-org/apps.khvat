@@ -398,14 +398,7 @@ const Draw: React.FC<DrawProps> = ({
             />
             <View style={styles.buttonsContainer}>
               <View style={styles.actionButtons}>
-                {isTextRecognition && (
-                  <Button
-                    color="secondary"
-                    isHapticFeedback
-                    icon={<ScanIcon size={20} />}
-                    onClick={detectSymbol}
-                  />
-                )}
+                {!isCheck && <ToggleStrokeWidth />}
 
                 {IS_SAVE && (
                   <Button
@@ -433,7 +426,14 @@ const Draw: React.FC<DrawProps> = ({
                 {!isCheck && <ToggleShowBorders />}
                 {!isCheck && <ToggleShowLetter />}
               </View>
-              {!isCheck && <ToggleStrokeWidth />}
+              {isTextRecognition && (
+                <Button
+                  color="secondary"
+                  isHapticFeedback
+                  icon={<ScanIcon size={20} />}
+                  onClick={detectSymbol}
+                />
+              )}
             </View>
           </View>
         )}
