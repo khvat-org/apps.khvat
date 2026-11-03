@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
+
 interface PreviewSettingOptions<T> {
   current: T;
   preview: (value: T) => void;
@@ -7,6 +9,8 @@ interface PreviewSettingOptions<T> {
 }
 
 const usePreviewSetting = <T>({ current, preview, commit }: PreviewSettingOptions<T>) => {
+  const { triggerHaptic } = useHaptic();
+
   const initial = useRef(current);
 
   const [selected, setSelected] = useState<T>(current);
@@ -19,10 +23,14 @@ const usePreviewSetting = <T>({ current, preview, commit }: PreviewSettingOption
 
   const isSettled = useRef(false);
 
-  const select = useCallback((value: T) => {
-    setSelected(value);
-    previewRef.current(value);
-  }, []);
+  const select = useCallback(
+    (value: T) => {
+      triggerHaptic();
+      setSelected(value);
+      previewRef.current(value);
+    },
+    [triggerHaptic],
+  );
 
   const isDirty = selected !== initial.current;
 
