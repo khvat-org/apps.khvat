@@ -8,7 +8,7 @@ export const dumpRu = {
           expanded_title: "Информация",
           icon: "4f99e07e-fa33-404a-9dfe-f0914dbdfade.jpg",
           id: "2feae61c-0bac-433f-9089-fe38e9cf6607",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/introduction",
           lesson_order: 1,
           minimum_version: "2.5.0",
@@ -204,7 +204,7 @@ export const dumpRu = {
           expanded_title: "Хирагана: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "37a3d605-c9ea-4875-86b8-4acb1604c2a2.jpg",
           id: "ade2818d-6726-44cd-bbce-41ddb7767fa7",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&a",
           lesson_order: 2,
           minimum_version: "2.5.0",
@@ -243,7 +243,7 @@ export const dumpRu = {
               ],
               id: "6f42d4f4-e926-5716-b8c2-2c3ae37d3907",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -261,7 +261,7 @@ export const dumpRu = {
               ],
               id: "ba6ad35e-39df-501f-ba6b-ec5585b19bd2",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -297,7 +297,7 @@ export const dumpRu = {
               ],
               id: "25d24c1f-4e98-53a0-8a2b-60430158aa62",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -315,7 +315,7 @@ export const dumpRu = {
               ],
               id: "cda3f9d3-56ae-5910-be2d-9ec29d9ebf02",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -369,7 +369,7 @@ export const dumpRu = {
               ],
               id: "e8230173-a71d-52bb-9855-894722abea0f",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -387,7 +387,7 @@ export const dumpRu = {
               ],
               id: "ae207d21-6fcb-53cf-a48c-354a0d920442",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -478,7 +478,7 @@ export const dumpRu = {
               ],
               id: "c4650e96-7106-5a77-a7ce-50523f618499",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -496,7 +496,7 @@ export const dumpRu = {
               ],
               id: "9dc28e03-cd7d-5d76-b931-0ea146a9b42d",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -550,7 +550,7 @@ export const dumpRu = {
               ],
               id: "5e318c5b-c4cf-515b-bdb1-fb506e4e4317",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -568,7 +568,7 @@ export const dumpRu = {
               ],
               id: "5a571ff3-0d2e-50f0-9f1f-ccf7b3e5a303",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -727,11 +727,11 @@ export const dumpRu = {
           topic_id: "be0a2b7a-8fe5-4a1a-b9bf-909521e65d16",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:か",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:か.",
           expanded_title: "Хирагана: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "bea297c4-29a1-48d8-b13e-c30bae9d58ba.jpg",
           id: "5f20d41b-5472-4c8d-878f-4bc4df1b7214",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ka",
           lesson_order: 3,
           minimum_version: "2.5.0",
@@ -770,7 +770,7 @@ export const dumpRu = {
               ],
               id: "3e84ea54-9465-5b61-897a-4e67b12d2958",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -788,7 +788,7 @@ export const dumpRu = {
               ],
               id: "d102fef8-ec4b-52ba-954a-7cfc904f4e68",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -824,7 +824,7 @@ export const dumpRu = {
               ],
               id: "c0c7c686-c34b-5a94-8d8d-b38573191950",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -842,7 +842,7 @@ export const dumpRu = {
               ],
               id: "ad2f3632-dc8c-5322-b9d2-db8e7649ee1b",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -896,7 +896,7 @@ export const dumpRu = {
               ],
               id: "b55dbcc8-0da1-5e9d-8dae-5c892f555325",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -914,7 +914,7 @@ export const dumpRu = {
               ],
               id: "2fcd2a16-a553-5ef8-aedf-520a4ecfc6de",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1005,7 +1005,7 @@ export const dumpRu = {
               ],
               id: "c24fcadc-1f6b-57b9-b6b5-743c0b8de6ac",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1023,7 +1023,7 @@ export const dumpRu = {
               ],
               id: "a34fd84a-939a-5d1e-b2c5-598eb27eae3a",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1077,7 +1077,7 @@ export const dumpRu = {
               ],
               id: "81b8f4f5-387a-5a74-9b98-7387c2d5a9fb",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1095,7 +1095,7 @@ export const dumpRu = {
               ],
               id: "ebef52e9-6378-58d0-86a1-584b4e8b1245",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1254,11 +1254,11 @@ export const dumpRu = {
           topic_id: "be0a2b7a-8fe5-4a1a-b9bf-909521e65d16",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:さ",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:さ.",
           expanded_title: "Хирагана: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "d69655e1-1709-4601-8ce7-832165d7d556.jpg",
           id: "4f13d7e7-2e4b-4fc5-9992-98d114010068",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&sa",
           lesson_order: 4,
           minimum_version: "2.5.0",
@@ -1297,7 +1297,7 @@ export const dumpRu = {
               ],
               id: "154752d6-fa23-5fdb-a751-6ad53a59dea4",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1315,7 +1315,7 @@ export const dumpRu = {
               ],
               id: "e8473f45-09da-5466-92ea-973ff178a546",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1351,7 +1351,7 @@ export const dumpRu = {
               ],
               id: "fef46245-a879-5804-9737-f92c3d90377e",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1369,7 +1369,7 @@ export const dumpRu = {
               ],
               id: "c123ddab-c97c-5caa-8a42-1201fa4a207b",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1423,7 +1423,7 @@ export const dumpRu = {
               ],
               id: "16dfaa3a-38a1-5b50-9ab9-5fd20e3c1523",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1441,7 +1441,7 @@ export const dumpRu = {
               ],
               id: "3364a87c-16bf-56a8-8072-963766ed6ed2",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1532,7 +1532,7 @@ export const dumpRu = {
               ],
               id: "7d90371e-4708-5231-bfba-e76abb224769",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1550,7 +1550,7 @@ export const dumpRu = {
               ],
               id: "b9f17039-4480-5dce-a36d-6df5359ae950",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1604,7 +1604,7 @@ export const dumpRu = {
               ],
               id: "f1eb5673-1fb9-5867-b54b-393894de0add",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1622,7 +1622,7 @@ export const dumpRu = {
               ],
               id: "28e79ffc-ce39-5274-93f3-295eaf65d27f",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1781,11 +1781,11 @@ export const dumpRu = {
           topic_id: "be0a2b7a-8fe5-4a1a-b9bf-909521e65d16",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:た",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:た.",
           expanded_title: "Хирагана: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "cce66d6e-826a-4b29-8eaa-50df25e09c40.jpg",
           id: "b5e82508-800b-4d48-868e-a72c3dad09e8",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ta",
           lesson_order: 5,
           minimum_version: "2.5.0",
@@ -1824,7 +1824,7 @@ export const dumpRu = {
               ],
               id: "cd26a79e-cd57-52d3-bc34-af98ff438d70",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1842,7 +1842,7 @@ export const dumpRu = {
               ],
               id: "e3e571dd-b975-5d5c-abe6-9bd389ea9bd9",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1878,7 +1878,7 @@ export const dumpRu = {
               ],
               id: "4f5f4f59-2b3c-59fc-8bb0-822ea723b382",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1896,7 +1896,7 @@ export const dumpRu = {
               ],
               id: "6fd51693-15f6-5fac-9044-9d94e8617188",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1950,7 +1950,7 @@ export const dumpRu = {
               ],
               id: "1f95ab23-fe14-59d2-abab-496b4e9da713",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -1968,7 +1968,7 @@ export const dumpRu = {
               ],
               id: "50447442-b54a-534c-ac78-d5aba7dcd03c",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2059,7 +2059,7 @@ export const dumpRu = {
               ],
               id: "18192fc8-10c4-56f2-8525-07b0d07c40de",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2077,7 +2077,7 @@ export const dumpRu = {
               ],
               id: "49b899c7-a438-5dfc-b2fd-0a29fc235566",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2131,7 +2131,7 @@ export const dumpRu = {
               ],
               id: "ab753421-30ae-5ecd-9550-adaf08f99abf",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2149,7 +2149,7 @@ export const dumpRu = {
               ],
               id: "3b126aad-7a1f-56b1-8f07-7c45f9870327",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2308,11 +2308,11 @@ export const dumpRu = {
           topic_id: "be0a2b7a-8fe5-4a1a-b9bf-909521e65d16",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:な",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:な.",
           expanded_title: "Хирагана: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "80cbe968-4fae-45ab-a78b-d6cf17ad7d31.jpg",
           id: "3e375f9b-118d-411a-b5d4-12f0cc967fca",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&na",
           lesson_order: 6,
           minimum_version: "2.5.0",
@@ -2351,7 +2351,7 @@ export const dumpRu = {
               ],
               id: "4f5e74a9-6126-5db9-bc5f-dab4422b2b54",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2369,7 +2369,7 @@ export const dumpRu = {
               ],
               id: "23b88108-dab9-58ae-bb22-a616c9cf5fc0",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2405,7 +2405,7 @@ export const dumpRu = {
               ],
               id: "d5d0c92a-2542-5ba4-adc0-f76d2f9646f3",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2423,7 +2423,7 @@ export const dumpRu = {
               ],
               id: "d80169a1-24ac-5ba2-8edb-14898d513dae",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2477,7 +2477,7 @@ export const dumpRu = {
               ],
               id: "a26b22be-1d4d-5927-803a-2b2060b657c2",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2495,7 +2495,7 @@ export const dumpRu = {
               ],
               id: "c1099350-0e64-567a-95a4-74114c304495",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2586,7 +2586,7 @@ export const dumpRu = {
               ],
               id: "c1ed2afd-1401-5601-93bf-eec4dea61f18",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2604,7 +2604,7 @@ export const dumpRu = {
               ],
               id: "2aa2969d-ebcf-5d04-ae88-ed5af9e30733",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2658,7 +2658,7 @@ export const dumpRu = {
               ],
               id: "0d6f4afc-fbd4-57a0-83eb-1055bd78058e",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2676,7 +2676,7 @@ export const dumpRu = {
               ],
               id: "60f6d436-372c-5203-8169-334ce3184782",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2835,11 +2835,11 @@ export const dumpRu = {
           topic_id: "be0a2b7a-8fe5-4a1a-b9bf-909521e65d16",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:は",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:は.",
           expanded_title: "Хирагана: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "5ab5e704-d6ba-4fde-a6f3-36745e149ed9.jpg",
           id: "0db94500-cad2-4d63-8fb7-2e42ab830eae",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ha",
           lesson_order: 7,
           minimum_version: "2.5.0",
@@ -2878,7 +2878,7 @@ export const dumpRu = {
               ],
               id: "5ee53e05-18e0-5885-999a-7a1481374d9d",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2896,7 +2896,7 @@ export const dumpRu = {
               ],
               id: "25011bd9-2431-55bb-a115-1ddd17103772",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2932,7 +2932,7 @@ export const dumpRu = {
               ],
               id: "155b8a26-b250-5c9c-af2f-54757327b1ce",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -2950,7 +2950,7 @@ export const dumpRu = {
               ],
               id: "65daf55f-fa90-5a1d-b8e9-a366542b55d9",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3004,7 +3004,7 @@ export const dumpRu = {
               ],
               id: "cf0b60bd-cf7f-51fe-88b0-296e50d35815",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3022,7 +3022,7 @@ export const dumpRu = {
               ],
               id: "84a5c3ad-af10-50b0-b6f9-9e007f793074",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3113,7 +3113,7 @@ export const dumpRu = {
               ],
               id: "54383f76-bcfe-5d2c-9aca-8e3bec873930",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3131,7 +3131,7 @@ export const dumpRu = {
               ],
               id: "e4474e36-3145-57eb-90a0-8d15f3c9f2b6",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3185,7 +3185,7 @@ export const dumpRu = {
               ],
               id: "17deb3d6-c92f-5b0f-9f7c-49caf2947f6b",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3203,7 +3203,7 @@ export const dumpRu = {
               ],
               id: "8a66c067-9e86-567a-91d6-ea30133ef752",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3362,11 +3362,11 @@ export const dumpRu = {
           topic_id: "be0a2b7a-8fe5-4a1a-b9bf-909521e65d16",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:ま",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:ま.",
           expanded_title: "Хирагана: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "f53fde6a-ca94-4b15-8397-d567a3a17906.jpg",
           id: "c6a56d4d-f8a3-4d2a-ac58-9a66da627b9d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ma",
           lesson_order: 8,
           minimum_version: "2.5.0",
@@ -3405,7 +3405,7 @@ export const dumpRu = {
               ],
               id: "3d261589-a4b9-5c8b-9acb-ab998c2d401a",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3423,7 +3423,7 @@ export const dumpRu = {
               ],
               id: "66a6d753-ebbb-5825-9395-f31437378151",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3459,7 +3459,7 @@ export const dumpRu = {
               ],
               id: "93189ab9-b0ac-527d-9085-dafb2eb277a5",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3477,7 +3477,7 @@ export const dumpRu = {
               ],
               id: "6f448fa2-0ad9-578f-a9c5-7d1aca3c1228",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3531,7 +3531,7 @@ export const dumpRu = {
               ],
               id: "d27729d4-a826-5b34-a27e-81899c72e8ba",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3549,7 +3549,7 @@ export const dumpRu = {
               ],
               id: "40c122e9-737b-507c-8fa9-99a0f8f6cc2d",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3640,7 +3640,7 @@ export const dumpRu = {
               ],
               id: "a97f2714-7769-5408-990a-252d213594b9",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3658,7 +3658,7 @@ export const dumpRu = {
               ],
               id: "e6a986e8-3596-537a-90c9-a1ef40887e99",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3712,7 +3712,7 @@ export const dumpRu = {
               ],
               id: "6f2b8531-1b22-5a39-aa56-3c3b353b0b14",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3730,7 +3730,7 @@ export const dumpRu = {
               ],
               id: "8911c337-22aa-5a2a-8f45-2b3fc3b795d2",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3889,11 +3889,11 @@ export const dumpRu = {
           topic_id: "be0a2b7a-8fe5-4a1a-b9bf-909521e65d16",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:や",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:や.",
           expanded_title: "Хирагана: tr:や, tr:ゆ, tr:よ",
-          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
+          icon: "998d7b1d-3751-407b-8909-da9dc7983cdb.jpg",
           id: "3d6fe091-1b3b-4a0c-b6a9-da0dcfc257b7",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ya",
           lesson_order: 9,
           minimum_version: "2.5.0",
@@ -3932,7 +3932,7 @@ export const dumpRu = {
               ],
               id: "5596db80-eb7a-5e3a-bb4c-507f84384927",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3950,7 +3950,7 @@ export const dumpRu = {
               ],
               id: "18a59d9b-3cc2-5956-96c9-7b974f364540",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -3986,7 +3986,7 @@ export const dumpRu = {
               ],
               id: "8c611d2d-2a3e-50c1-836c-f20c3e47e547",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4004,7 +4004,7 @@ export const dumpRu = {
               ],
               id: "a360402d-7272-56c4-80d7-ea9474537f25",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4058,7 +4058,7 @@ export const dumpRu = {
               ],
               id: "c110d7cb-68a7-510c-b22a-c2b04f32f46d",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4076,7 +4076,7 @@ export const dumpRu = {
               ],
               id: "a1aa8da8-85fb-576f-8432-6f7911e22320",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4290,11 +4290,11 @@ export const dumpRu = {
           topic_id: "be0a2b7a-8fe5-4a1a-b9bf-909521e65d16",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:ら",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:ら.",
           expanded_title: "Хирагана: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
-          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
+          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
           id: "50ab31d8-0a21-47c3-8de0-f6c24b062838",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ra",
           lesson_order: 10,
           minimum_version: "2.5.0",
@@ -4333,7 +4333,7 @@ export const dumpRu = {
               ],
               id: "a5f7bc9a-9bf5-54f8-8e51-662574367dd8",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4351,7 +4351,7 @@ export const dumpRu = {
               ],
               id: "262c0ae8-4351-54bc-8b18-8e67a8f8f5de",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4387,7 +4387,7 @@ export const dumpRu = {
               ],
               id: "d7d66d7a-1c48-5d4a-83eb-c3797fcdd9ae",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4405,7 +4405,7 @@ export const dumpRu = {
               ],
               id: "050437bb-380b-58dc-9438-23c24454e8d6",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4459,7 +4459,7 @@ export const dumpRu = {
               ],
               id: "dee6b9d5-169a-518a-9fb9-7a2ff7ba6425",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4477,7 +4477,7 @@ export const dumpRu = {
               ],
               id: "0162d890-026b-5043-a8a1-2f1eada84a25",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4568,7 +4568,7 @@ export const dumpRu = {
               ],
               id: "32b51fae-68f7-54c0-992c-59a089768c21",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4586,7 +4586,7 @@ export const dumpRu = {
               ],
               id: "3bdef193-e2e1-5968-b46a-b46c94a3edf6",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4640,7 +4640,7 @@ export const dumpRu = {
               ],
               id: "03d9024d-9227-5291-b35e-ca9f2d678586",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4658,7 +4658,7 @@ export const dumpRu = {
               ],
               id: "cc43fe80-869f-5975-b32e-7c581e52a834",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4819,9 +4819,9 @@ export const dumpRu = {
         {
           expanded_subtitle: "Научитель читать и писать слоги: tr:わ, tr:を, tr:ん.",
           expanded_title: "Хирагана: tr:わ, tr:を, tr:ん",
-          icon: "c4480f8f-71ee-4df0-886f-508b39912b4c.jpg",
+          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
           id: "08e179aa-188e-4e6e-9acb-e7fee778fb82",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&wa",
           lesson_order: 11,
           minimum_version: "2.5.0",
@@ -4860,7 +4860,7 @@ export const dumpRu = {
               ],
               id: "edab5e43-5ac8-556b-ac12-edc101a9185f",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4878,7 +4878,7 @@ export const dumpRu = {
               ],
               id: "1faf0934-e7ce-5814-9834-a2bcca5aff30",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4914,7 +4914,7 @@ export const dumpRu = {
               ],
               id: "c2adffba-020b-52f6-b92a-c675e2ff63ef",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4932,7 +4932,7 @@ export const dumpRu = {
               ],
               id: "b10f7828-29ff-5d72-81de-be4b609947bb",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -4986,7 +4986,7 @@ export const dumpRu = {
               ],
               id: "e44a88fa-9c13-51cb-b59a-f6f5deb60ca8",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5004,7 +5004,7 @@ export const dumpRu = {
               ],
               id: "0d5f8b8d-3c2f-5090-8e63-6236c8eac109",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5229,7 +5229,7 @@ export const dumpRu = {
           expanded_title: "Катакана: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "515f18bb-8797-4e60-b1b0-40f9b60aebcb.jpg",
           id: "6f0695c7-4b50-4015-8ba1-32331d7a16aa",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&a",
           lesson_order: 12,
           minimum_version: "2.5.0",
@@ -5268,7 +5268,7 @@ export const dumpRu = {
               ],
               id: "bf34fb22-6b7c-57ed-8b9e-2219be1f1846",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5286,7 +5286,7 @@ export const dumpRu = {
               ],
               id: "2b13d9f2-b724-542b-9a44-bdab95986a55",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5322,7 +5322,7 @@ export const dumpRu = {
               ],
               id: "8a11c63b-b8d3-5f3d-834f-2ce2084fd5ff",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5340,7 +5340,7 @@ export const dumpRu = {
               ],
               id: "174a43ef-2e93-5dcc-bb6a-6d6d29a3e44a",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5394,7 +5394,7 @@ export const dumpRu = {
               ],
               id: "fbb77a36-b9e9-5e69-aa6e-c9979be1d549",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5412,7 +5412,7 @@ export const dumpRu = {
               ],
               id: "04d1df2c-8c18-5bdd-8d9f-d180a4070a78",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5503,7 +5503,7 @@ export const dumpRu = {
               ],
               id: "1f7a6f93-9eca-55a9-9449-cd047dfd4a84",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5521,7 +5521,7 @@ export const dumpRu = {
               ],
               id: "e473c429-2783-5694-94d3-f3f822f53209",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5575,7 +5575,7 @@ export const dumpRu = {
               ],
               id: "148e0deb-7789-5eee-8f9f-d5cbc07a58ff",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5593,7 +5593,7 @@ export const dumpRu = {
               ],
               id: "de08ee12-3a95-51a5-9f8f-5abc03cdd425",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5752,11 +5752,11 @@ export const dumpRu = {
           topic_id: "2aa19bae-d74b-47ce-91c7-6c91403b9ee3",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:か",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:か.",
           expanded_title: "Катакана: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "655dcf64-0666-4be6-8c19-0993b1ac03ec.jpg",
           id: "67d6a464-30db-4800-82d0-0b9de107b795",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ka",
           lesson_order: 13,
           minimum_version: "2.5.0",
@@ -5795,7 +5795,7 @@ export const dumpRu = {
               ],
               id: "5a8c980c-27eb-5c55-8588-48c7eda01d9d",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5813,7 +5813,7 @@ export const dumpRu = {
               ],
               id: "b5b4e8f8-d955-58c0-a166-0d1dc05d9f9c",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5849,7 +5849,7 @@ export const dumpRu = {
               ],
               id: "40e6a8a9-1cd5-50aa-a7a3-66403f08031d",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5867,7 +5867,7 @@ export const dumpRu = {
               ],
               id: "25e4b317-4e48-50ed-a8f2-cf8ad848ac8d",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5921,7 +5921,7 @@ export const dumpRu = {
               ],
               id: "6708c5e9-04a5-5ae5-a806-c90468b5ee15",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -5939,7 +5939,7 @@ export const dumpRu = {
               ],
               id: "384a7825-56e3-5956-83db-3314e481dbef",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6030,7 +6030,7 @@ export const dumpRu = {
               ],
               id: "9b5026ec-d7f3-5692-930b-535734dedabb",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6048,7 +6048,7 @@ export const dumpRu = {
               ],
               id: "8745976b-480b-548e-874d-c396d11d348d",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6102,7 +6102,7 @@ export const dumpRu = {
               ],
               id: "77ae74fb-efed-556b-9c20-23508285b2df",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6120,7 +6120,7 @@ export const dumpRu = {
               ],
               id: "d7a01d23-0350-5d0f-926c-0e27b252969b",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6279,11 +6279,11 @@ export const dumpRu = {
           topic_id: "2aa19bae-d74b-47ce-91c7-6c91403b9ee3",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:さ",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:さ.",
           expanded_title: "Катакана: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "6a3e11ff-5864-4f25-846e-5f8ac4691c5f.jpg",
           id: "3cc54d81-f94a-4659-8d0f-f4e2c1e44154",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&sa",
           lesson_order: 14,
           minimum_version: "2.5.0",
@@ -6322,7 +6322,7 @@ export const dumpRu = {
               ],
               id: "e18f38c1-0f9f-5be0-b550-9f7d8d426872",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6340,7 +6340,7 @@ export const dumpRu = {
               ],
               id: "8e60b056-e8d7-54e9-a6e9-353931d059b5",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6376,7 +6376,7 @@ export const dumpRu = {
               ],
               id: "3007d3e1-b506-586e-b412-d0daff2485cc",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6394,7 +6394,7 @@ export const dumpRu = {
               ],
               id: "f20c4c73-b142-53f6-a658-1f951504e7d8",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6448,7 +6448,7 @@ export const dumpRu = {
               ],
               id: "b39c5d46-6912-51d0-8207-ec5feb5739e6",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6466,7 +6466,7 @@ export const dumpRu = {
               ],
               id: "c2cb58fd-3b5d-50d4-aa55-f16d8194ed44",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6557,7 +6557,7 @@ export const dumpRu = {
               ],
               id: "ef5a98a4-132b-53c7-b660-43cfc94592c0",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6575,7 +6575,7 @@ export const dumpRu = {
               ],
               id: "bbcfdf4c-fca6-5666-b044-e0d5595c73ae",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6629,7 +6629,7 @@ export const dumpRu = {
               ],
               id: "82618cc4-6593-5728-ae29-31bd32b2156c",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6647,7 +6647,7 @@ export const dumpRu = {
               ],
               id: "20f7b5b3-d3ec-5486-ab63-4625b6e2e8c2",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6806,11 +6806,11 @@ export const dumpRu = {
           topic_id: "2aa19bae-d74b-47ce-91c7-6c91403b9ee3",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:た",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:た.",
           expanded_title: "Катакана: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "2dc2bdaa-3088-4754-8d52-38dc208fe6e7.jpg",
           id: "7ea1c35c-56dd-46a1-ad79-36d6b4291946",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ta",
           lesson_order: 15,
           minimum_version: "2.5.0",
@@ -6849,7 +6849,7 @@ export const dumpRu = {
               ],
               id: "12c8c7d1-3637-54cc-8a38-9ae4e98519ad",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6867,7 +6867,7 @@ export const dumpRu = {
               ],
               id: "497374b7-3cf3-573d-abbe-40c14511e0c3",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6903,7 +6903,7 @@ export const dumpRu = {
               ],
               id: "a7cc627e-c7cb-5015-997a-5237c2d92eff",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6921,7 +6921,7 @@ export const dumpRu = {
               ],
               id: "35a14b33-fd08-54ae-89ac-19399826718e",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6975,7 +6975,7 @@ export const dumpRu = {
               ],
               id: "2f6dc9a7-9294-5b85-a862-d0189c8c86de",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -6993,7 +6993,7 @@ export const dumpRu = {
               ],
               id: "787ddc15-ae68-5b8e-b7e3-c14bbf9ec960",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7084,7 +7084,7 @@ export const dumpRu = {
               ],
               id: "73e61845-4963-5e0b-986f-4f16f84b9e0c",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7102,7 +7102,7 @@ export const dumpRu = {
               ],
               id: "9600bf74-95f1-5c7c-b82f-20d53a218a1d",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7156,7 +7156,7 @@ export const dumpRu = {
               ],
               id: "4d8b3aae-318a-5bd7-a24c-40ef2e9794de",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7174,7 +7174,7 @@ export const dumpRu = {
               ],
               id: "8b3116d2-0f37-52ee-8b6a-0bcb34af387e",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7333,11 +7333,11 @@ export const dumpRu = {
           topic_id: "2aa19bae-d74b-47ce-91c7-6c91403b9ee3",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:な",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:な.",
           expanded_title: "Катакана: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "3f4e712a-7fc7-4e81-acab-72bb0ef427e4.jpg",
           id: "7c5e620b-88ba-4de0-ba0a-9e8b3d594e8c",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&na",
           lesson_order: 16,
           minimum_version: "2.5.0",
@@ -7376,7 +7376,7 @@ export const dumpRu = {
               ],
               id: "1e94c8ad-91cd-5707-89a8-fcc8e7d50221",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7394,7 +7394,7 @@ export const dumpRu = {
               ],
               id: "bc5e5905-69fd-5047-a576-694352551e9a",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7430,7 +7430,7 @@ export const dumpRu = {
               ],
               id: "ef5596d7-3ca1-5bb6-93e1-862ac156bef3",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7448,7 +7448,7 @@ export const dumpRu = {
               ],
               id: "6ef58c86-ed52-53ff-8ead-08e60be04599",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7502,7 +7502,7 @@ export const dumpRu = {
               ],
               id: "39165894-f92d-57e5-9ee1-20fe529c4002",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7520,7 +7520,7 @@ export const dumpRu = {
               ],
               id: "b0e1bda9-66fc-588c-8eac-0646585100ca",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7611,7 +7611,7 @@ export const dumpRu = {
               ],
               id: "7a3a3d89-825b-5d76-af3f-c468c7dfe979",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7629,7 +7629,7 @@ export const dumpRu = {
               ],
               id: "67c243b0-f29f-57c2-9bae-fd4aeb51c94c",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7683,7 +7683,7 @@ export const dumpRu = {
               ],
               id: "e15b29c1-319b-54ec-8c51-1b656f059b90",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7701,7 +7701,7 @@ export const dumpRu = {
               ],
               id: "3e3541b6-74dc-54cf-bf3c-aa48459eecb4",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7860,11 +7860,11 @@ export const dumpRu = {
           topic_id: "2aa19bae-d74b-47ce-91c7-6c91403b9ee3",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:は",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:は.",
           expanded_title: "Катакана: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "a972e2ac-7362-4f98-801d-4389ba31e2f9.jpg",
           id: "6c9d673a-f4d4-4a16-8ab1-9e535b57c46d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ha",
           lesson_order: 17,
           minimum_version: "2.5.0",
@@ -7903,7 +7903,7 @@ export const dumpRu = {
               ],
               id: "044b8bdf-052d-5f77-aea9-90cb8680193e",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7921,7 +7921,7 @@ export const dumpRu = {
               ],
               id: "a9829312-f888-5504-8468-70ae6ad9a2b3",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7957,7 +7957,7 @@ export const dumpRu = {
               ],
               id: "04d6842f-d51f-5283-a36d-00598c4da2e3",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -7975,7 +7975,7 @@ export const dumpRu = {
               ],
               id: "5083cd5f-e464-5dae-92b7-c655c6fec963",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8029,7 +8029,7 @@ export const dumpRu = {
               ],
               id: "d629e8ac-9045-5772-b1d7-841ec6ad2e2e",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8047,7 +8047,7 @@ export const dumpRu = {
               ],
               id: "83f0745c-0e1a-5409-a375-94da2c2d78c0",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8138,7 +8138,7 @@ export const dumpRu = {
               ],
               id: "5353606c-be5e-5c34-b683-8ce1291b612b",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8156,7 +8156,7 @@ export const dumpRu = {
               ],
               id: "1c7e5031-1f46-59ff-b684-32a13d345e42",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8210,7 +8210,7 @@ export const dumpRu = {
               ],
               id: "ec796cd4-3f8e-5bf4-8efb-8d179d619e6b",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8228,7 +8228,7 @@ export const dumpRu = {
               ],
               id: "d7fb5d01-5aeb-52a0-8e10-fab572fbfa8b",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8387,11 +8387,11 @@ export const dumpRu = {
           topic_id: "2aa19bae-d74b-47ce-91c7-6c91403b9ee3",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:ま",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:ま.",
           expanded_title: "Катакана: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "07d0c986-1f16-4254-aa12-58aa2e0f9a49.jpg",
           id: "5f1dfd94-7e2a-4916-bc80-70b90bf685de",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ma",
           lesson_order: 18,
           minimum_version: "2.5.0",
@@ -8430,7 +8430,7 @@ export const dumpRu = {
               ],
               id: "0f205613-1f33-5858-9330-28bc570858cc",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8448,7 +8448,7 @@ export const dumpRu = {
               ],
               id: "9b3f046c-9cc7-5f47-a589-b6837fc2536e",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8484,7 +8484,7 @@ export const dumpRu = {
               ],
               id: "1611513d-f032-585a-b9ae-d40108b1a5e0",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8502,7 +8502,7 @@ export const dumpRu = {
               ],
               id: "af91bf5f-2558-50b2-b6db-761ce73a6ab0",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8556,7 +8556,7 @@ export const dumpRu = {
               ],
               id: "a1be5627-5602-536c-8a4b-8c0f876cd0db",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8574,7 +8574,7 @@ export const dumpRu = {
               ],
               id: "f6869738-f18f-51e2-b51e-cf88bcdd70be",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8665,7 +8665,7 @@ export const dumpRu = {
               ],
               id: "02965aa6-1d50-56a8-8a2e-cc6a0ddf33c2",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8683,7 +8683,7 @@ export const dumpRu = {
               ],
               id: "7fcdd290-6292-592c-a6e2-803bded8d817",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8737,7 +8737,7 @@ export const dumpRu = {
               ],
               id: "7bce5f25-5ea8-5596-87dd-b83562b89d04",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8755,7 +8755,7 @@ export const dumpRu = {
               ],
               id: "52557a1f-0233-5271-9076-9c12e934e1f2",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8914,11 +8914,11 @@ export const dumpRu = {
           topic_id: "2aa19bae-d74b-47ce-91c7-6c91403b9ee3",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:や",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:や.",
           expanded_title: "Катакана: tr:や, tr:ゆ, tr:よ",
           icon: "073066af-16d8-40c7-9b73-e9e75235fd1c.jpg",
           id: "99923d2a-71fc-4b00-8761-0bb57aafb7a7",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ya",
           lesson_order: 19,
           minimum_version: "2.5.0",
@@ -8957,7 +8957,7 @@ export const dumpRu = {
               ],
               id: "37d49f4e-86b3-58e4-8791-793ee6d00aa9",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -8975,7 +8975,7 @@ export const dumpRu = {
               ],
               id: "3e83cb0d-f416-5df8-acfd-106f4ac899a2",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9011,7 +9011,7 @@ export const dumpRu = {
               ],
               id: "5d17008e-87d9-54e9-9b7d-023ca33f7c66",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9029,7 +9029,7 @@ export const dumpRu = {
               ],
               id: "3442288b-defe-5a4c-8903-3414c2bec31e",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9083,7 +9083,7 @@ export const dumpRu = {
               ],
               id: "ff49cade-bc3f-57ac-a397-c64d4c5213f9",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9101,7 +9101,7 @@ export const dumpRu = {
               ],
               id: "0e782929-2773-5c3b-94a2-854da877ae49",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9315,11 +9315,11 @@ export const dumpRu = {
           topic_id: "2aa19bae-d74b-47ce-91c7-6c91403b9ee3",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:ら",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:ら.",
           expanded_title: "Катакана: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
           icon: "a6b62c7e-2ec8-44ed-b9a2-00bc4b099915.jpg",
           id: "31d5bf10-b493-4369-83c4-0a7d55fa2095",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ra",
           lesson_order: 20,
           minimum_version: "2.5.0",
@@ -9358,7 +9358,7 @@ export const dumpRu = {
               ],
               id: "606637c6-1fa8-57f6-8689-ace81aaa82df",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9376,7 +9376,7 @@ export const dumpRu = {
               ],
               id: "b278a55e-4970-553a-a269-a0ed0b9fcb81",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9412,7 +9412,7 @@ export const dumpRu = {
               ],
               id: "30244858-ed6f-59d3-880c-f3845d6b199f",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9430,7 +9430,7 @@ export const dumpRu = {
               ],
               id: "f064b4a3-0682-5a93-98b8-dbb0e5ab5318",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9484,7 +9484,7 @@ export const dumpRu = {
               ],
               id: "77f3a435-cf1e-5ed6-8357-459fd0d4b3e3",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9502,7 +9502,7 @@ export const dumpRu = {
               ],
               id: "b8f9fd61-0050-572d-8836-9f202cb946af",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9593,7 +9593,7 @@ export const dumpRu = {
               ],
               id: "bcf8587a-a68c-53ef-98cf-ba7547b2583a",
               screen_order: 14,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9611,7 +9611,7 @@ export const dumpRu = {
               ],
               id: "5ecb9bcd-c62a-5c4b-a10a-b5263792eac6",
               screen_order: 15,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9665,7 +9665,7 @@ export const dumpRu = {
               ],
               id: "0fdb6171-fb80-55fd-ab81-d4ac42f97fee",
               screen_order: 18,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9683,7 +9683,7 @@ export const dumpRu = {
               ],
               id: "ed02e7ea-123e-520b-93d9-cbf64dc30c93",
               screen_order: 19,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9842,11 +9842,11 @@ export const dumpRu = {
           topic_id: "2aa19bae-d74b-47ce-91c7-6c91403b9ee3",
         },
         {
-          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:わ",
+          expanded_subtitle: "Научитесь читать и писать слоги ряда tr:わ.",
           expanded_title: "Катакана: tr:わ, tr:を, tr:ん",
           icon: "b57e394a-8e74-4700-9171-e9129bc4de2e.jpg",
           id: "977b1ff4-7d1b-40f7-a69d-5742fd8ed948",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&wa",
           lesson_order: 21,
           minimum_version: "2.5.0",
@@ -9885,7 +9885,7 @@ export const dumpRu = {
               ],
               id: "018caf4c-3ae4-510c-b79d-28c873b4f421",
               screen_order: 2,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9903,7 +9903,7 @@ export const dumpRu = {
               ],
               id: "78b32101-b9bd-5b22-aed9-b3a87d13e367",
               screen_order: 3,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9939,7 +9939,7 @@ export const dumpRu = {
               ],
               id: "7b600a23-6c35-55f1-a994-38f2fb5b7d0c",
               screen_order: 5,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -9957,7 +9957,7 @@ export const dumpRu = {
               ],
               id: "9591dfbe-dc6d-5c76-859c-28e48beba52a",
               screen_order: 6,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -10011,7 +10011,7 @@ export const dumpRu = {
               ],
               id: "21f33067-1281-56d1-b434-f7c43cb15af1",
               screen_order: 9,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -10029,7 +10029,7 @@ export const dumpRu = {
               ],
               id: "f94bb00d-9894-50c7-9e11-6bbc9f2e8a7d",
               screen_order: 10,
-              title: "Напишите слог в правильном порядке.",
+              title: "Напишите слог правильно.",
             },
             {
               blocks: [
@@ -10254,7 +10254,7 @@ export const dumpRu = {
           expanded_title: "Информация",
           icon: "e55a6e88-4d4a-404c-9826-d5e88567ad8b.jpg",
           id: "7bbb3164-d227-4adc-bcc8-80228d85be8f",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&dakuon",
           lesson_order: 22,
           minimum_version: "2.5.0",
@@ -10786,7 +10786,7 @@ export const dumpRu = {
           expanded_title: "Информация",
           icon: "60466bc2-00e9-4920-ab2a-d65be847ab19.jpg",
           id: "2ff6c603-52ca-4ecc-9362-2db9dd7eaa2b",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longVowels",
           lesson_order: 23,
           minimum_version: "2.5.0",
@@ -10993,7 +10993,7 @@ export const dumpRu = {
           expanded_title: "Информация",
           icon: "35170a20-86ba-4c4e-bd01-d9be0d008026.jpg",
           id: "415767e8-8f8d-4da9-ba7d-c62e10a03368",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longConsonants",
           lesson_order: 24,
           minimum_version: "2.5.0",
@@ -11029,7 +11029,7 @@ export const dumpRu = {
                   content: {
                     rules: [
                       "かた (tr(かた)) - плечо",
-                      "かつた (tr(かつた)) - имя",
+                      "かつた (tr(かつた)) - фамилия Кацута",
                       "かった (tr(かった)) - выиграл",
                     ],
                   },
@@ -11132,7 +11132,7 @@ export const dumpRu = {
                   block_order: 3,
                   content: {
                     rules: [
-                      "こんにちは (tr(こんにちは)) - добрый день",
+                      "こんにちは (tr(こんにちわ)) - добрый день",
                       "こんばんは (tr(こんばんは)) - добрый вечер",
                     ],
                   },
@@ -11154,7 +11154,7 @@ export const dumpRu = {
           expanded_title: "Информация",
           icon: "bb3db32f-041c-4e39-9b7d-9c3515a0e3f8.jpg",
           id: "390aef95-8bed-4869-80a3-ad9553d747a7",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&yoon",
           lesson_order: 25,
           minimum_version: "2.5.0",
@@ -11555,7 +11555,7 @@ export const dumpRu = {
           expanded_title: "Информация",
           icon: "c5fda457-5b04-4ce9-979b-05f109fda391.jpg",
           id: "f05b0934-a93e-49ac-8bb8-7037e1c0d7a3",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&dakuonAndHandakuon",
           lesson_order: 26,
           minimum_version: "2.5.0",
@@ -12049,7 +12049,7 @@ export const dumpRu = {
           expanded_title: "Информация",
           icon: "7c7dc482-980c-492f-99d2-19a6d83d2f77.jpg",
           id: "d4fa2113-8627-4484-8f8f-16e83d5a2b9e",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longVowels",
           lesson_order: 27,
           minimum_version: "2.5.0",
@@ -12276,7 +12276,7 @@ export const dumpRu = {
           expanded_title: "Информация",
           icon: "2542ff58-d7f7-4f23-a669-1908f5d7adad.jpg",
           id: "52fa17d9-ea17-4f3f-a8cb-72259e12ba2d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longConsonants",
           lesson_order: 28,
           minimum_version: "2.5.0",
@@ -12423,11 +12423,11 @@ export const dumpRu = {
           topic_id: "343f6806-ff5b-4148-802e-90420ecad07b",
         },
         {
-          expanded_subtitle: "Здесь мы расскажем вам о дополнительных звуках в катакане",
+          expanded_subtitle: "Здесь мы расскажем вам о дополнительных звуках в катакане.",
           expanded_title: "Информация",
           icon: "f8402718-ad6a-495b-b429-c1f83c51d77f.jpg",
           id: "3f491578-5c4e-49af-b132-d6a50ecb9dab",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&additionalSounds",
           lesson_order: 29,
           minimum_version: "2.5.0",
@@ -12836,11 +12836,11 @@ export const dumpRu = {
           topic_id: "343f6806-ff5b-4148-802e-90420ecad07b",
         },
         {
-          expanded_subtitle: "Здесь мы расскажем вам о юон",
+          expanded_subtitle: "Здесь мы расскажем вам о юон.",
           expanded_title: "Информация",
           icon: "aafe6dcb-4193-4d5e-9d95-258ffb60314f.jpg",
           id: "ac5cf717-2dde-4533-a349-dbc46cf44807",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&yoon",
           lesson_order: 30,
           minimum_version: "2.5.0",
@@ -13230,11 +13230,11 @@ export const dumpRu = {
           topic_id: "343f6806-ff5b-4148-802e-90420ecad07b",
         },
         {
-          expanded_subtitle: "Здесь мы расскажем вам о том как дальше изучать японский",
+          expanded_subtitle: "Здесь мы расскажем вам о том, как дальше изучать японский.",
           expanded_title: "Информация",
           icon: "18800460-fe6b-4b37-bbb2-259253cdcbbb.jpg",
           id: "2cfb60b0-ca49-4f44-b5b5-a1c4a3df973f",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/whats-next",
           lesson_order: 31,
           minimum_version: "2.5.0",
@@ -13317,14 +13317,6 @@ export const dumpRu = {
                   id: "e77b8ba1-7a25-56c4-9301-05a850f9cc28",
                   type: "rule",
                 },
-                {
-                  block_order: 3,
-                  content: {
-                    text: "Большинство людей начинают с N5 и постепенно поднимаются выше.",
-                  },
-                  id: "631f72f4-1172-5caf-b68a-533e6c78da7f",
-                  type: "text",
-                },
               ],
               id: "f9934fa7-1016-5c9a-bf1e-af8658130bc9",
               screen_order: 3,
@@ -13335,7 +13327,7 @@ export const dumpRu = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Серия делится по уровням:",
+                    text: "Серия Minna no Nihongo делится по уровням:",
                   },
                   id: "0e02288a-1cb5-5173-aac8-a9c4fa890136",
                   type: "text",
@@ -13346,8 +13338,6 @@ export const dumpRu = {
                     rules: [
                       "**Minna no Nihongo Shokyuu I** (Beginner 1) — примерно уровень N5",
                       "**Minna no Nihongo Shokyuu II** (Beginner 2) — примерно уровень N4",
-                      "**Minna no Nihongo Chukyuu I** (Intermediate 1) — примерно уровень N3",
-                      "Дальше идут более продвинутые части серии",
                     ],
                   },
                   id: "082f9d1b-8720-516a-a3bb-426803bf39ec",
@@ -13356,15 +13346,23 @@ export const dumpRu = {
                 {
                   block_order: 3,
                   content: {
-                    text: "Рекомендуем начинать с Shokyuu I и идти по порядку. К каждому учебнику есть книга с упражнениями (Workbook) и перевод грамматики на русский или английский.",
+                    text: "Рекомендуем начинать с Shokyuu I и идти по порядку. К каждому учебнику есть книга с упражнениями (Workbook) и перевод грамматики на разные языки.",
                   },
                   id: "746a39d2-9a21-5a68-958d-07410760c631",
+                  type: "text",
+                },
+                {
+                  block_order: 4,
+                  content: {
+                    text: "После уровня N4 рекомендуем разобраться, какая серия учебников вам больше подойдёт.",
+                  },
+                  id: "fd39022c-3274-5f65-9bae-404b4a2ad3f8",
                   type: "text",
                 },
               ],
               id: "83f3e143-43e2-5697-ab5b-bf7c8fee2c31",
               screen_order: 4,
-              title: "Какие книги Minna no Nihongo брать",
+              title: "Какие книги брать",
             },
             {
               blocks: [
@@ -13455,7 +13453,7 @@ export const dumpRu = {
                   content: {
                     rules: [
                       "Различные онлайн словари",
-                      "Аудио к учебникам Minna no Nihongo",
+                      "Аудио к учебникам",
                       "Простые японские видео и подкасты для начинающих",
                     ],
                   },
@@ -13484,7 +13482,7 @@ export const dumpRu = {
               title: "Полезные ресурсы",
             },
           ],
-          subtitle: "Как дальше изучать японский ?",
+          subtitle: "Как дальше изучать японский?",
           title: "Что дальше",
           topic_id: "343f6806-ff5b-4148-802e-90420ecad07b",
         },

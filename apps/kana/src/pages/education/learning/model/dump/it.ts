@@ -8,7 +8,7 @@ export const dumpIt = {
           expanded_title: "Informazione",
           icon: "4f99e07e-fa33-404a-9dfe-f0914dbdfade.jpg",
           id: "0d0f0c0d-d62d-48de-b03b-ea724325c6f1",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/introduction",
           lesson_order: 1,
           minimum_version: "2.5.0",
@@ -204,7 +204,7 @@ export const dumpIt = {
           expanded_title: "Hiragana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "37a3d605-c9ea-4875-86b8-4acb1604c2a2.jpg",
           id: "3524bbdc-95b6-4402-8777-ca1437253137",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&a",
           lesson_order: 2,
           minimum_version: "2.5.0",
@@ -243,7 +243,7 @@ export const dumpIt = {
               ],
               id: "e9932d24-00ab-58d5-9004-7d71db0e31ef",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -261,7 +261,7 @@ export const dumpIt = {
               ],
               id: "e34e8e58-29cb-580c-8396-82614b4679d0",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -297,7 +297,7 @@ export const dumpIt = {
               ],
               id: "aec256f7-ac2a-5c3c-8810-59018a74df62",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -315,7 +315,7 @@ export const dumpIt = {
               ],
               id: "7ce031a1-d196-5653-813c-f81a197c0dd6",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -369,7 +369,7 @@ export const dumpIt = {
               ],
               id: "1906f2f7-2585-5f5b-84c0-a1b72f714372",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -387,7 +387,7 @@ export const dumpIt = {
               ],
               id: "4b8afa32-5f32-5100-9af2-3127e19a9a30",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -478,7 +478,7 @@ export const dumpIt = {
               ],
               id: "48944d0b-44e9-5813-bb76-54d13226bf4a",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -496,7 +496,7 @@ export const dumpIt = {
               ],
               id: "3d75add7-b506-5b9d-a0fe-425d9c3d4950",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -550,7 +550,7 @@ export const dumpIt = {
               ],
               id: "2d113cc3-3160-596d-81a2-e948c716a7e9",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -568,7 +568,7 @@ export const dumpIt = {
               ],
               id: "be752c49-6498-5f89-9c97-e861288936f1",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -731,7 +731,7 @@ export const dumpIt = {
           expanded_title: "Hiragana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "bea297c4-29a1-48d8-b13e-c30bae9d58ba.jpg",
           id: "c3fcfe43-9b00-4b74-aef8-f16187d11460",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ka",
           lesson_order: 3,
           minimum_version: "2.5.0",
@@ -770,7 +770,7 @@ export const dumpIt = {
               ],
               id: "d7d78cd1-a998-5beb-bb10-d31e8774d830",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -788,7 +788,7 @@ export const dumpIt = {
               ],
               id: "ec728096-bb1a-5a2a-980d-7d4ee4cbbfc0",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -824,7 +824,7 @@ export const dumpIt = {
               ],
               id: "4bbfcbfb-7fae-5b44-b437-fb3688d4b86a",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -842,7 +842,7 @@ export const dumpIt = {
               ],
               id: "5d87bd23-76f4-5a1f-8986-91d4e25674a7",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -896,7 +896,7 @@ export const dumpIt = {
               ],
               id: "1aed3d45-ce39-5a12-9656-cd19f9b4cbe7",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -914,7 +914,7 @@ export const dumpIt = {
               ],
               id: "6afd0d7a-2cc0-5479-b159-32250338e9b0",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1005,7 +1005,7 @@ export const dumpIt = {
               ],
               id: "49317480-bedd-5bde-af23-c39ad330e8b3",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1023,7 +1023,7 @@ export const dumpIt = {
               ],
               id: "72af3cb4-1104-5a19-ad37-110fe209370a",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1077,7 +1077,7 @@ export const dumpIt = {
               ],
               id: "22458767-d787-57c6-a9a5-b05e100b9bbb",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1095,7 +1095,7 @@ export const dumpIt = {
               ],
               id: "c9426935-59af-5eb5-9e24-984e6980d12d",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1258,7 +1258,7 @@ export const dumpIt = {
           expanded_title: "Hiragana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "d69655e1-1709-4601-8ce7-832165d7d556.jpg",
           id: "ff41f4cc-ca0d-4901-9d62-4d88d3d0bdff",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&sa",
           lesson_order: 4,
           minimum_version: "2.5.0",
@@ -1297,7 +1297,7 @@ export const dumpIt = {
               ],
               id: "8ed54899-2c9a-501e-b221-b1f096b6b14e",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1315,7 +1315,7 @@ export const dumpIt = {
               ],
               id: "13f68d69-9f16-5bbb-a824-f6ed2d3131ea",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1351,7 +1351,7 @@ export const dumpIt = {
               ],
               id: "c13f9a77-f884-5106-9293-f210fbe316cc",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1369,7 +1369,7 @@ export const dumpIt = {
               ],
               id: "d4fdd0ac-f8ed-5670-a68c-aee7e16f9de9",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1423,7 +1423,7 @@ export const dumpIt = {
               ],
               id: "b3feb58e-26c1-5741-8aa8-b63f17cc73cc",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1441,7 +1441,7 @@ export const dumpIt = {
               ],
               id: "93830283-75e3-5177-af83-dc8c07dd8059",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1532,7 +1532,7 @@ export const dumpIt = {
               ],
               id: "ec8151fc-9c88-58e6-bbca-95a13882ed67",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1550,7 +1550,7 @@ export const dumpIt = {
               ],
               id: "e20432cf-04aa-5326-8054-2b8622863559",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1604,7 +1604,7 @@ export const dumpIt = {
               ],
               id: "0fbc2f9c-d22e-5201-aea2-8361bb6aa773",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1622,7 +1622,7 @@ export const dumpIt = {
               ],
               id: "6c9d449f-cddf-5d42-a9de-f31e00e1711f",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1785,7 +1785,7 @@ export const dumpIt = {
           expanded_title: "Hiragana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "cce66d6e-826a-4b29-8eaa-50df25e09c40.jpg",
           id: "ad60f7ad-a2a0-47df-adb3-00079c67f874",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ta",
           lesson_order: 5,
           minimum_version: "2.5.0",
@@ -1824,7 +1824,7 @@ export const dumpIt = {
               ],
               id: "79ec7546-0be0-597a-8369-77296825c0b6",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1842,7 +1842,7 @@ export const dumpIt = {
               ],
               id: "42af61a6-ab6e-5f0a-8e24-845590f28225",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1878,7 +1878,7 @@ export const dumpIt = {
               ],
               id: "911ca09c-f6d3-5b10-a26d-f8226926effd",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1896,7 +1896,7 @@ export const dumpIt = {
               ],
               id: "04eb3a7e-37c5-570a-bb04-a6aa53b4199d",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1950,7 +1950,7 @@ export const dumpIt = {
               ],
               id: "c559dc80-03e9-582f-a1b5-ef130a294f02",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -1968,7 +1968,7 @@ export const dumpIt = {
               ],
               id: "c1910d6b-6152-5130-a58e-c08367749062",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2059,7 +2059,7 @@ export const dumpIt = {
               ],
               id: "d012f270-2e2f-5196-a681-058889a0de4a",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2077,7 +2077,7 @@ export const dumpIt = {
               ],
               id: "9432774c-c734-50eb-b1d1-a6db682c0dce",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2131,7 +2131,7 @@ export const dumpIt = {
               ],
               id: "23cd4cc7-edbf-5eb7-ba18-13e497392b1b",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2149,7 +2149,7 @@ export const dumpIt = {
               ],
               id: "3e49d162-35c3-51d2-98be-5b9f4039c43c",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2312,7 +2312,7 @@ export const dumpIt = {
           expanded_title: "Hiragana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "80cbe968-4fae-45ab-a78b-d6cf17ad7d31.jpg",
           id: "f7868e39-275b-4660-b060-08e1ceb6c3df",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&na",
           lesson_order: 6,
           minimum_version: "2.5.0",
@@ -2351,7 +2351,7 @@ export const dumpIt = {
               ],
               id: "19b69b82-0c67-56a7-9f8f-fe594b7e2807",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2369,7 +2369,7 @@ export const dumpIt = {
               ],
               id: "7c575f9e-4f8f-5e4c-b722-3a2a23e5b495",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2405,7 +2405,7 @@ export const dumpIt = {
               ],
               id: "fbdda70f-4aad-5971-9ae9-0712da4e3afe",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2423,7 +2423,7 @@ export const dumpIt = {
               ],
               id: "99b65cc8-43c1-5a47-8056-c20093aaaaa9",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2477,7 +2477,7 @@ export const dumpIt = {
               ],
               id: "72ae009b-f99d-50f5-af79-a2362cb8c199",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2495,7 +2495,7 @@ export const dumpIt = {
               ],
               id: "74129520-ce2e-5d29-8ae8-e51a746fafeb",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2586,7 +2586,7 @@ export const dumpIt = {
               ],
               id: "8056bff9-c7b1-531d-b964-39c7db26ac89",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2604,7 +2604,7 @@ export const dumpIt = {
               ],
               id: "dcc333a8-ac82-5585-aa32-82d334d5dca3",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2658,7 +2658,7 @@ export const dumpIt = {
               ],
               id: "a8afffe2-2b1b-55cc-9ff9-f1d64666fedd",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2676,7 +2676,7 @@ export const dumpIt = {
               ],
               id: "3909b9b3-19d5-5f49-892e-5deb7bcc3df4",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2839,7 +2839,7 @@ export const dumpIt = {
           expanded_title: "Hiragana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "5ab5e704-d6ba-4fde-a6f3-36745e149ed9.jpg",
           id: "13c3442f-3dbf-490c-aea9-4f5aecba2ace",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ha",
           lesson_order: 7,
           minimum_version: "2.5.0",
@@ -2878,7 +2878,7 @@ export const dumpIt = {
               ],
               id: "d1a7f1f8-e8cc-5896-aa1c-45c5f85ce664",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2896,7 +2896,7 @@ export const dumpIt = {
               ],
               id: "31cd6735-c6d2-5274-91d0-432605280379",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2932,7 +2932,7 @@ export const dumpIt = {
               ],
               id: "63a7040b-8944-5490-bb11-824b06c2b8b5",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -2950,7 +2950,7 @@ export const dumpIt = {
               ],
               id: "5e747ce3-0805-5100-b1e2-95de0289a6f7",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3004,7 +3004,7 @@ export const dumpIt = {
               ],
               id: "3dec070d-856b-5bfa-a7dd-0df87826ce89",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3022,7 +3022,7 @@ export const dumpIt = {
               ],
               id: "6b8570c2-a08d-58cf-a744-6ce6d328f624",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3113,7 +3113,7 @@ export const dumpIt = {
               ],
               id: "88591748-7d1e-5155-8652-b6b23a496185",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3131,7 +3131,7 @@ export const dumpIt = {
               ],
               id: "7199bf3d-f1f6-55ee-8523-29fa8858ddb9",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3185,7 +3185,7 @@ export const dumpIt = {
               ],
               id: "ec16b64e-ff16-5251-a0af-0a08bbc494f2",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3203,7 +3203,7 @@ export const dumpIt = {
               ],
               id: "b95f4be0-627b-5cc1-b842-62afa2e651fe",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3366,7 +3366,7 @@ export const dumpIt = {
           expanded_title: "Hiragana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "f53fde6a-ca94-4b15-8397-d567a3a17906.jpg",
           id: "e00d27bd-5eec-4f47-b528-7986e4509521",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ma",
           lesson_order: 8,
           minimum_version: "2.5.0",
@@ -3405,7 +3405,7 @@ export const dumpIt = {
               ],
               id: "efbb67cf-5d76-5c26-bb95-ee7999951454",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3423,7 +3423,7 @@ export const dumpIt = {
               ],
               id: "f57a1603-5050-5a41-9ba8-17e358be53be",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3459,7 +3459,7 @@ export const dumpIt = {
               ],
               id: "c06ea087-a503-5a78-a7be-ca75ac066f3f",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3477,7 +3477,7 @@ export const dumpIt = {
               ],
               id: "969e4160-e8bf-550c-8cb6-aba651c39b2e",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3531,7 +3531,7 @@ export const dumpIt = {
               ],
               id: "729f07e2-69ae-5c36-a9dd-af6a40b81287",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3549,7 +3549,7 @@ export const dumpIt = {
               ],
               id: "a3d99613-6533-5a5e-a32a-468c1d96d516",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3640,7 +3640,7 @@ export const dumpIt = {
               ],
               id: "0eacc1aa-ec77-5603-adb1-dd2012f27572",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3658,7 +3658,7 @@ export const dumpIt = {
               ],
               id: "c03c1910-6add-520e-aae0-d8603e247027",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3712,7 +3712,7 @@ export const dumpIt = {
               ],
               id: "2ccda2a9-cc61-5b61-891f-4e1d11696b2b",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3730,7 +3730,7 @@ export const dumpIt = {
               ],
               id: "1f77d6fe-0b9e-5a11-8e69-ec86dd3df8c2",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3891,9 +3891,9 @@ export const dumpIt = {
         {
           expanded_subtitle: "Impara a leggere e scrivere le sillabe nella riga tr:や.",
           expanded_title: "Hiragana: tr:や, tr:ゆ, tr:よ",
-          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
+          icon: "998d7b1d-3751-407b-8909-da9dc7983cdb.jpg",
           id: "ff783156-3eee-4f19-88b6-1340e445ac34",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ya",
           lesson_order: 9,
           minimum_version: "2.5.0",
@@ -3932,7 +3932,7 @@ export const dumpIt = {
               ],
               id: "8710c958-1c6d-5dfc-97cd-a2bc55ae69ae",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3950,7 +3950,7 @@ export const dumpIt = {
               ],
               id: "85afa3cc-738a-5ef6-b2dd-ed13deaaa4e3",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -3986,7 +3986,7 @@ export const dumpIt = {
               ],
               id: "4d0bd234-2ede-5165-b1b4-8db5faa81951",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4004,7 +4004,7 @@ export const dumpIt = {
               ],
               id: "e23a9a9f-ce95-53ff-bbf6-34f5b9308e9b",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4058,7 +4058,7 @@ export const dumpIt = {
               ],
               id: "32c23903-f589-50de-98f8-b7f2ed06f55a",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4076,7 +4076,7 @@ export const dumpIt = {
               ],
               id: "8800379b-fdc4-54b5-81f5-0f0a42f82751",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4292,9 +4292,9 @@ export const dumpIt = {
         {
           expanded_subtitle: "Impara a leggere e scrivere le sillabe nella riga tr:ら.",
           expanded_title: "Hiragana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
-          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
+          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
           id: "9f56b812-2f4e-4450-b1df-8e335127b241",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ra",
           lesson_order: 10,
           minimum_version: "2.5.0",
@@ -4333,7 +4333,7 @@ export const dumpIt = {
               ],
               id: "da89c84f-1185-55e8-89ac-975c716d2e7e",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4351,7 +4351,7 @@ export const dumpIt = {
               ],
               id: "a2ecdb6b-cfc3-5f4c-b543-277874146304",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4387,7 +4387,7 @@ export const dumpIt = {
               ],
               id: "55cc8815-597a-5123-8e19-ff058f9de198",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4405,7 +4405,7 @@ export const dumpIt = {
               ],
               id: "0610bd51-4eb6-5d68-8e64-a9a42de86952",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4459,7 +4459,7 @@ export const dumpIt = {
               ],
               id: "fc67aa0a-cbca-5621-a493-451567cba6c7",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4477,7 +4477,7 @@ export const dumpIt = {
               ],
               id: "13398904-ac96-5b6a-94d5-fb09e1381523",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4568,7 +4568,7 @@ export const dumpIt = {
               ],
               id: "27545096-e7f7-51e2-969f-58d59d5f7c69",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4586,7 +4586,7 @@ export const dumpIt = {
               ],
               id: "f1a64f04-9a74-5a27-bb02-d55a3d2c7a1d",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4640,7 +4640,7 @@ export const dumpIt = {
               ],
               id: "01ec570e-611c-5851-873d-249b317d4522",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4658,7 +4658,7 @@ export const dumpIt = {
               ],
               id: "7275b3d9-d8ca-5cea-9c0b-f01b181d0b53",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4819,9 +4819,9 @@ export const dumpIt = {
         {
           expanded_subtitle: "Impara a leggere e scrivere le sillabe: tr:わ, tr:を, tr:ん.",
           expanded_title: "Hiragana: tr:わ, tr:を, tr:ん",
-          icon: "c4480f8f-71ee-4df0-886f-508b39912b4c.jpg",
+          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
           id: "61f758d4-d246-45a2-9b95-39144e7e21ee",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&wa",
           lesson_order: 11,
           minimum_version: "2.5.0",
@@ -4860,7 +4860,7 @@ export const dumpIt = {
               ],
               id: "05d77d09-c0fa-5215-9289-65635ebd8948",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4878,7 +4878,7 @@ export const dumpIt = {
               ],
               id: "cd0cc667-7bc8-589c-9317-41fd8fba3849",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4914,7 +4914,7 @@ export const dumpIt = {
               ],
               id: "942d551a-d1a8-5506-8704-f06a584b7c7c",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4932,7 +4932,7 @@ export const dumpIt = {
               ],
               id: "b1642012-e760-5664-80f0-8814ecd6c2fb",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -4986,7 +4986,7 @@ export const dumpIt = {
               ],
               id: "408dd2e6-9259-59c7-97f7-98c2e2f0acfd",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5004,7 +5004,7 @@ export const dumpIt = {
               ],
               id: "df2913d2-d590-5895-a9c4-9eab7d831eaf",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5229,7 +5229,7 @@ export const dumpIt = {
           expanded_title: "Katakana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "515f18bb-8797-4e60-b1b0-40f9b60aebcb.jpg",
           id: "12a15a83-4ac4-44c9-974b-7b483c236a5f",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&a",
           lesson_order: 12,
           minimum_version: "2.5.0",
@@ -5268,7 +5268,7 @@ export const dumpIt = {
               ],
               id: "4e557b23-1b33-59ef-9a66-56ec3216b72d",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5286,7 +5286,7 @@ export const dumpIt = {
               ],
               id: "cca95b10-74f6-5153-bfa6-18abae5b54b5",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5322,7 +5322,7 @@ export const dumpIt = {
               ],
               id: "87d30bc6-5b39-5160-8ac9-2ffb5b74113a",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5340,7 +5340,7 @@ export const dumpIt = {
               ],
               id: "2ce84fc9-93a7-502e-bb8c-0554852896e5",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5394,7 +5394,7 @@ export const dumpIt = {
               ],
               id: "e3a9704d-73c4-5ac4-9ff2-b95151f1a05f",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5412,7 +5412,7 @@ export const dumpIt = {
               ],
               id: "21a8d76d-1cfb-576a-9043-fbefeb68998f",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5503,7 +5503,7 @@ export const dumpIt = {
               ],
               id: "39374631-7f31-5030-bf08-674b50c5c8b9",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5521,7 +5521,7 @@ export const dumpIt = {
               ],
               id: "45eefc65-2d2d-51e8-9ef5-e15318779f6f",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5575,7 +5575,7 @@ export const dumpIt = {
               ],
               id: "58434250-816b-5198-a92b-f2fdf6a15b39",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5593,7 +5593,7 @@ export const dumpIt = {
               ],
               id: "896e8972-1363-5062-b572-cd2231d1741a",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5756,7 +5756,7 @@ export const dumpIt = {
           expanded_title: "Katakana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "655dcf64-0666-4be6-8c19-0993b1ac03ec.jpg",
           id: "0bf6b88f-c0b4-4495-bfa5-5a5de5fd0f9c",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ka",
           lesson_order: 13,
           minimum_version: "2.5.0",
@@ -5795,7 +5795,7 @@ export const dumpIt = {
               ],
               id: "53f93e57-1e62-5da8-8a48-d370d11ae661",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5813,7 +5813,7 @@ export const dumpIt = {
               ],
               id: "470d774e-99db-5c63-bf81-f854960c1720",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5849,7 +5849,7 @@ export const dumpIt = {
               ],
               id: "cf730803-c873-5e83-9f93-5f4722ef7201",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5867,7 +5867,7 @@ export const dumpIt = {
               ],
               id: "97ca0810-c2ac-535e-9016-9c4afcf924a4",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5921,7 +5921,7 @@ export const dumpIt = {
               ],
               id: "85bf3537-ef7a-5069-825a-7afc9d2bd266",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -5939,7 +5939,7 @@ export const dumpIt = {
               ],
               id: "57561873-8bf2-5b2a-9ac0-76b341e865f9",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6030,7 +6030,7 @@ export const dumpIt = {
               ],
               id: "e7164518-bbc6-50b9-8a62-ccff095f9057",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6048,7 +6048,7 @@ export const dumpIt = {
               ],
               id: "5e3578d3-00ae-5a1e-9686-def162b8cfb3",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6102,7 +6102,7 @@ export const dumpIt = {
               ],
               id: "d2cafc4f-2b4e-5278-8444-deb3867e58c6",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6120,7 +6120,7 @@ export const dumpIt = {
               ],
               id: "b9b68528-6aaf-5748-bf05-ef8b8d83606d",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6283,7 +6283,7 @@ export const dumpIt = {
           expanded_title: "Katakana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "6a3e11ff-5864-4f25-846e-5f8ac4691c5f.jpg",
           id: "add4f0ac-08f2-45e9-9dad-dd1b6557e277",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&sa",
           lesson_order: 14,
           minimum_version: "2.5.0",
@@ -6322,7 +6322,7 @@ export const dumpIt = {
               ],
               id: "e55740e2-bd82-5a45-8ffc-e5a81ad1916c",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6340,7 +6340,7 @@ export const dumpIt = {
               ],
               id: "0e1ad6a4-703c-5c86-9151-d4fecf1abfbe",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6376,7 +6376,7 @@ export const dumpIt = {
               ],
               id: "b768b202-13a2-5dd0-8853-35a11f0ce9fd",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6394,7 +6394,7 @@ export const dumpIt = {
               ],
               id: "e2b865ad-0642-5874-bbd3-4b8580d6129f",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6448,7 +6448,7 @@ export const dumpIt = {
               ],
               id: "c6a7bc6d-9c80-556c-87ee-caddd351529a",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6466,7 +6466,7 @@ export const dumpIt = {
               ],
               id: "d5700f57-cb61-5d52-8224-5856c942d286",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6557,7 +6557,7 @@ export const dumpIt = {
               ],
               id: "33064088-833d-5d29-9b0a-8cc03b830992",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6575,7 +6575,7 @@ export const dumpIt = {
               ],
               id: "1f138381-d396-55d7-9d3a-cccf42cc0537",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6629,7 +6629,7 @@ export const dumpIt = {
               ],
               id: "51d140a0-c373-5bff-bd75-ec84733f1f80",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6647,7 +6647,7 @@ export const dumpIt = {
               ],
               id: "0bdecba3-0b7c-5860-99cf-38f76a2a7c11",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6810,7 +6810,7 @@ export const dumpIt = {
           expanded_title: "Katakana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "2dc2bdaa-3088-4754-8d52-38dc208fe6e7.jpg",
           id: "12133503-9e02-465c-8805-db1b939fa1dd",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ta",
           lesson_order: 15,
           minimum_version: "2.5.0",
@@ -6849,7 +6849,7 @@ export const dumpIt = {
               ],
               id: "4a627314-1507-586c-8bf2-144bf78e426c",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6867,7 +6867,7 @@ export const dumpIt = {
               ],
               id: "bed53ad7-2bbd-5c6f-8f0d-f0ff50ae6adb",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6903,7 +6903,7 @@ export const dumpIt = {
               ],
               id: "11eda34c-2dde-5bcc-be81-5ea713659bff",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6921,7 +6921,7 @@ export const dumpIt = {
               ],
               id: "0e222ba1-164a-569d-88bb-c58a2e6af4ae",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6975,7 +6975,7 @@ export const dumpIt = {
               ],
               id: "8d58e353-9f6e-570e-9fec-98871f4a7ac6",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -6993,7 +6993,7 @@ export const dumpIt = {
               ],
               id: "e6fff2bd-ebdf-54e2-b057-7c162449c786",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7084,7 +7084,7 @@ export const dumpIt = {
               ],
               id: "9a5d2217-aec2-5ad7-b29c-05cad87ace4a",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7102,7 +7102,7 @@ export const dumpIt = {
               ],
               id: "85cf442c-5958-5876-b58d-6d03481e6718",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7156,7 +7156,7 @@ export const dumpIt = {
               ],
               id: "1c1b8aba-21e0-57fd-b234-6eaee6633b16",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7174,7 +7174,7 @@ export const dumpIt = {
               ],
               id: "7efd5995-c5cc-54dd-b2e3-972be84565e9",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7337,7 +7337,7 @@ export const dumpIt = {
           expanded_title: "Katakana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "3f4e712a-7fc7-4e81-acab-72bb0ef427e4.jpg",
           id: "c85c6819-14f4-4063-bb81-a7f33bce7477",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&na",
           lesson_order: 16,
           minimum_version: "2.5.0",
@@ -7376,7 +7376,7 @@ export const dumpIt = {
               ],
               id: "b390d858-94e7-570f-a605-98a5337a7293",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7394,7 +7394,7 @@ export const dumpIt = {
               ],
               id: "60dfeb6a-73d6-54cc-ad1e-1a5afdfa8905",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7430,7 +7430,7 @@ export const dumpIt = {
               ],
               id: "6c208aca-3d35-5e97-8411-31c28ff7bc75",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7448,7 +7448,7 @@ export const dumpIt = {
               ],
               id: "dfdcfeff-2461-54dd-89a5-cd6af85bb441",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7502,7 +7502,7 @@ export const dumpIt = {
               ],
               id: "005c4f51-f681-5925-a6b7-f34c4f0447d0",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7520,7 +7520,7 @@ export const dumpIt = {
               ],
               id: "f122c66b-ffd1-5770-9347-b97134c43e4a",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7611,7 +7611,7 @@ export const dumpIt = {
               ],
               id: "d5d37e11-8c27-51a0-90ef-7da1ec06dbda",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7629,7 +7629,7 @@ export const dumpIt = {
               ],
               id: "983a1304-5a7e-5f4e-864a-3dd0be2b9588",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7683,7 +7683,7 @@ export const dumpIt = {
               ],
               id: "5c91dcc7-8c66-5967-8ede-0454db3d81cf",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7701,7 +7701,7 @@ export const dumpIt = {
               ],
               id: "7e8714a0-5d7a-54e0-92bb-0304f7369b78",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7864,7 +7864,7 @@ export const dumpIt = {
           expanded_title: "Katakana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "a972e2ac-7362-4f98-801d-4389ba31e2f9.jpg",
           id: "e51609ca-bb5a-4f22-a1b3-244f621ed70e",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ha",
           lesson_order: 17,
           minimum_version: "2.5.0",
@@ -7903,7 +7903,7 @@ export const dumpIt = {
               ],
               id: "da5f806e-353b-5e59-b070-bc87dd9520e2",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7921,7 +7921,7 @@ export const dumpIt = {
               ],
               id: "9e2bb262-f778-540a-b373-ec4c21b0ba4a",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7957,7 +7957,7 @@ export const dumpIt = {
               ],
               id: "0b9dc5a6-755a-5ecd-a6f9-f4ada6e0ad70",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -7975,7 +7975,7 @@ export const dumpIt = {
               ],
               id: "c030b8bf-0a50-5194-a6b5-611c2642e040",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8029,7 +8029,7 @@ export const dumpIt = {
               ],
               id: "263473cc-7811-5b15-9b40-c2f77b419b27",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8047,7 +8047,7 @@ export const dumpIt = {
               ],
               id: "e8c0eddc-5b65-5d3e-bd32-745db68cc226",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8138,7 +8138,7 @@ export const dumpIt = {
               ],
               id: "b731f1b7-d09c-55c5-8e6b-ca83a2779b74",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8156,7 +8156,7 @@ export const dumpIt = {
               ],
               id: "100e1a8d-788e-5a53-8b3c-3dd4a4d60064",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8210,7 +8210,7 @@ export const dumpIt = {
               ],
               id: "aa411473-2cff-5731-93b2-9ef9084bca15",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8228,7 +8228,7 @@ export const dumpIt = {
               ],
               id: "7952dacb-0a3f-5975-babb-4877a0f241a6",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8391,7 +8391,7 @@ export const dumpIt = {
           expanded_title: "Katakana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "07d0c986-1f16-4254-aa12-58aa2e0f9a49.jpg",
           id: "2ca3a0b6-ee39-4d09-8dd4-79703e392c6d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ma",
           lesson_order: 18,
           minimum_version: "2.5.0",
@@ -8430,7 +8430,7 @@ export const dumpIt = {
               ],
               id: "98c0c904-0769-58e5-8b34-4c4774128c3c",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8448,7 +8448,7 @@ export const dumpIt = {
               ],
               id: "5b716a1b-c235-5fc2-a118-99299f485826",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8484,7 +8484,7 @@ export const dumpIt = {
               ],
               id: "58e75e5a-2e93-5d80-b104-1bd635b15401",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8502,7 +8502,7 @@ export const dumpIt = {
               ],
               id: "233ecd45-ba69-59df-913a-cb5bc4b7f13b",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8556,7 +8556,7 @@ export const dumpIt = {
               ],
               id: "892f4a50-e5b0-5fef-a3f4-4d52def42aa3",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8574,7 +8574,7 @@ export const dumpIt = {
               ],
               id: "8188a83c-07b8-5d53-b7a9-6e5294f4c9a2",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8665,7 +8665,7 @@ export const dumpIt = {
               ],
               id: "f484c936-d035-5c8b-9864-ee06cb384ea1",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8683,7 +8683,7 @@ export const dumpIt = {
               ],
               id: "e3e943ee-14c7-58c7-9b9e-717bcd684770",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8737,7 +8737,7 @@ export const dumpIt = {
               ],
               id: "90573004-fec8-5bfc-a29a-ade63a197cdc",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8755,7 +8755,7 @@ export const dumpIt = {
               ],
               id: "1fa19276-e5ef-5d1d-8805-08dbbd8cbc62",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8918,7 +8918,7 @@ export const dumpIt = {
           expanded_title: "Katakana: tr:や, tr:ゆ, tr:よ",
           icon: "073066af-16d8-40c7-9b73-e9e75235fd1c.jpg",
           id: "78a6d4bd-7138-422a-bb53-cc6e8cc57f5d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ya",
           lesson_order: 19,
           minimum_version: "2.5.0",
@@ -8957,7 +8957,7 @@ export const dumpIt = {
               ],
               id: "ac78af65-6928-530a-b1a8-72e2261c20b3",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -8975,7 +8975,7 @@ export const dumpIt = {
               ],
               id: "2378956f-b7cb-53cc-86fb-a458ae32faa7",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9011,7 +9011,7 @@ export const dumpIt = {
               ],
               id: "254a3aa5-2a78-5828-bc3d-f5b302308249",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9029,7 +9029,7 @@ export const dumpIt = {
               ],
               id: "12d5b269-b4bc-5c78-8952-bfb8a96d60b9",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9083,7 +9083,7 @@ export const dumpIt = {
               ],
               id: "dd816fff-f637-5275-9aa4-a3edcb589919",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9101,7 +9101,7 @@ export const dumpIt = {
               ],
               id: "992bd71d-d53d-5ebc-baea-063434543d28",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9319,7 +9319,7 @@ export const dumpIt = {
           expanded_title: "Katakana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
           icon: "a6b62c7e-2ec8-44ed-b9a2-00bc4b099915.jpg",
           id: "3ce4276d-26ba-41fa-b5fb-d6ac0499b25e",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ra",
           lesson_order: 20,
           minimum_version: "2.5.0",
@@ -9358,7 +9358,7 @@ export const dumpIt = {
               ],
               id: "5d39adef-8557-53e0-a6a1-41f95afe8f69",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9376,7 +9376,7 @@ export const dumpIt = {
               ],
               id: "2f0e28bd-c132-5333-8112-67dccbf1d82a",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9412,7 +9412,7 @@ export const dumpIt = {
               ],
               id: "859711d4-1ddf-5c58-b061-281b738b5148",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9430,7 +9430,7 @@ export const dumpIt = {
               ],
               id: "b5313bf7-735f-51d2-8bcc-7c44e860714c",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9484,7 +9484,7 @@ export const dumpIt = {
               ],
               id: "15e6d7e3-3b65-580d-82d2-0b3fbda05950",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9502,7 +9502,7 @@ export const dumpIt = {
               ],
               id: "b3c98bae-b078-5131-a5a7-ca0613135d6a",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9593,7 +9593,7 @@ export const dumpIt = {
               ],
               id: "5d969868-1925-554b-8ecb-7d9ee386a690",
               screen_order: 14,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9611,7 +9611,7 @@ export const dumpIt = {
               ],
               id: "58198802-1bfe-5943-9b78-9695299adbd6",
               screen_order: 15,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9665,7 +9665,7 @@ export const dumpIt = {
               ],
               id: "16d2f15c-3369-5a10-8fb1-789c4f8cee88",
               screen_order: 18,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9683,7 +9683,7 @@ export const dumpIt = {
               ],
               id: "5681d9a6-b5f3-52c8-ada2-e0b75a98bff8",
               screen_order: 19,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9846,7 +9846,7 @@ export const dumpIt = {
           expanded_title: "Katakana: tr:わ, tr:を, tr:ん",
           icon: "b57e394a-8e74-4700-9171-e9129bc4de2e.jpg",
           id: "115789bb-3be8-4388-b1a1-ab629ab8ff4f",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&wa",
           lesson_order: 21,
           minimum_version: "2.5.0",
@@ -9885,7 +9885,7 @@ export const dumpIt = {
               ],
               id: "63c7b212-04cd-5795-9da3-633aacf1f112",
               screen_order: 2,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9903,7 +9903,7 @@ export const dumpIt = {
               ],
               id: "ea5e03ed-8ad9-5c73-ac52-f413db7372da",
               screen_order: 3,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9939,7 +9939,7 @@ export const dumpIt = {
               ],
               id: "3d35cbf4-4371-5751-876f-c33422209db4",
               screen_order: 5,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -9957,7 +9957,7 @@ export const dumpIt = {
               ],
               id: "b2520e78-e892-56dd-ae69-b3662c456912",
               screen_order: 6,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -10011,7 +10011,7 @@ export const dumpIt = {
               ],
               id: "b1d89f49-85e4-5fa9-ac4c-0c6d70cc4141",
               screen_order: 9,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -10029,7 +10029,7 @@ export const dumpIt = {
               ],
               id: "2f3285ef-466e-5d48-aa81-77a895c2da33",
               screen_order: 10,
-              title: "Scrivi la sillaba nell’ordine corretto dei tratti.",
+              title: "Scrivi la sillaba correttamente.",
             },
             {
               blocks: [
@@ -10254,7 +10254,7 @@ export const dumpIt = {
           expanded_title: "Informazioni",
           icon: "e55a6e88-4d4a-404c-9826-d5e88567ad8b.jpg",
           id: "d56587e5-14a4-4a66-93f3-4dabfba3edd6",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&dakuon",
           lesson_order: 22,
           minimum_version: "2.5.0",
@@ -10786,7 +10786,7 @@ export const dumpIt = {
           expanded_title: "Informazioni",
           icon: "60466bc2-00e9-4920-ab2a-d65be847ab19.jpg",
           id: "cbf2991f-f35b-4890-a742-5ccb3059b623",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longVowels",
           lesson_order: 23,
           minimum_version: "2.5.0",
@@ -10993,7 +10993,7 @@ export const dumpIt = {
           expanded_title: "Informazione",
           icon: "35170a20-86ba-4c4e-bd01-d9be0d008026.jpg",
           id: "19f1ff83-61d1-4740-9688-bdd68ce6fb29",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longConsonants",
           lesson_order: 24,
           minimum_version: "2.5.0",
@@ -11029,7 +11029,7 @@ export const dumpIt = {
                   content: {
                     rules: [
                       "かた (tr(かた)) - spalla",
-                      "かつた (tr(かつた)) - nome",
+                      "かつた (tr(かつた)) - cognome Katsuta",
                       "かった (tr(かった)) - vinto",
                     ],
                   },
@@ -11132,7 +11132,7 @@ export const dumpIt = {
                   block_order: 3,
                   content: {
                     rules: [
-                      "こんにちは (tr(こんにちは)) - buon pomeriggio",
+                      "こんにちは (tr(こんにちわ)) - buon pomeriggio",
                       "こんばんは (tr(こんばんは)) - buona sera",
                     ],
                   },
@@ -11154,7 +11154,7 @@ export const dumpIt = {
           expanded_title: "Informazioni",
           icon: "bb3db32f-041c-4e39-9b7d-9c3515a0e3f8.jpg",
           id: "8150c02a-0815-41bb-a065-87b2483344f8",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&yoon",
           lesson_order: 25,
           minimum_version: "2.5.0",
@@ -11555,7 +11555,7 @@ export const dumpIt = {
           expanded_title: "Informazioni",
           icon: "c5fda457-5b04-4ce9-979b-05f109fda391.jpg",
           id: "9bd7af00-397f-4671-a186-d783f388b77e",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&dakuonAndHandakuon",
           lesson_order: 26,
           minimum_version: "2.5.0",
@@ -12049,7 +12049,7 @@ export const dumpIt = {
           expanded_title: "Informazioni",
           icon: "7c7dc482-980c-492f-99d2-19a6d83d2f77.jpg",
           id: "55f8c976-9bab-4d82-90f4-b22ef705e645",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longVowels",
           lesson_order: 27,
           minimum_version: "2.5.0",
@@ -12276,7 +12276,7 @@ export const dumpIt = {
           expanded_title: "Informazioni",
           icon: "2542ff58-d7f7-4f23-a669-1908f5d7adad.jpg",
           id: "5a142b16-6ec8-42e5-a030-86933fd0837f",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longConsonants",
           lesson_order: 28,
           minimum_version: "2.5.0",
@@ -12423,11 +12423,11 @@ export const dumpIt = {
           topic_id: "1bcd6475-f860-4ef3-8121-0148f9c73e86",
         },
         {
-          expanded_subtitle: "Qui vi parleremo dei suoni aggiuntivi in katakana",
+          expanded_subtitle: "Qui vi parleremo dei suoni aggiuntivi in katakana.",
           expanded_title: "Informazioni",
           icon: "f8402718-ad6a-495b-b429-c1f83c51d77f.jpg",
           id: "eb1a243b-2642-438e-bb06-32e6a804a18c",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&additionalSounds",
           lesson_order: 29,
           minimum_version: "2.5.0",
@@ -12836,11 +12836,11 @@ export const dumpIt = {
           topic_id: "1bcd6475-f860-4ef3-8121-0148f9c73e86",
         },
         {
-          expanded_subtitle: "Qui vi parleremo di yo-on",
+          expanded_subtitle: "Qui vi parleremo di yo-on.",
           expanded_title: "Informazioni",
           icon: "aafe6dcb-4193-4d5e-9d95-258ffb60314f.jpg",
           id: "fac9e893-54a4-475e-a005-0669b19a595d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&yoon",
           lesson_order: 30,
           minimum_version: "2.5.0",
@@ -13235,11 +13235,11 @@ export const dumpIt = {
           topic_id: "1bcd6475-f860-4ef3-8121-0148f9c73e86",
         },
         {
-          expanded_subtitle: "Qui vi spiegheremo come continuare a studiare il giapponese",
+          expanded_subtitle: "Qui vi spiegheremo come continuare a studiare il giapponese.",
           expanded_title: "Informazioni",
           icon: "18800460-fe6b-4b37-bbb2-259253cdcbbb.jpg",
           id: "ed087764-777a-4077-b1f6-fff2d85e1995",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/whats-next",
           lesson_order: 31,
           minimum_version: "2.5.0",
@@ -13322,14 +13322,6 @@ export const dumpIt = {
                   id: "bc2a9f14-6a6a-5834-b428-0af09365e085",
                   type: "rule",
                 },
-                {
-                  block_order: 3,
-                  content: {
-                    text: "La maggior parte delle persone inizia dall'N5 e sale gradualmente.",
-                  },
-                  id: "b8e3f9f5-d138-5aac-a431-68c32ceac164",
-                  type: "text",
-                },
               ],
               id: "29bec14a-0dfc-589a-b0f9-fc9ce6f2e05d",
               screen_order: 3,
@@ -13340,7 +13332,7 @@ export const dumpIt = {
                 {
                   block_order: 1,
                   content: {
-                    text: "La serie è suddivisa per livelli:",
+                    text: "La serie Minna no Nihongo è suddivisa per livelli:",
                   },
                   id: "94c1e949-c59c-5ceb-8410-d4c69e00afb1",
                   type: "text",
@@ -13351,8 +13343,6 @@ export const dumpIt = {
                     rules: [
                       "**Minna no Nihongo Shokyuu I** (Beginner 1) — circa livello N5",
                       "**Minna no Nihongo Shokyuu II** (Beginner 2) — circa livello N4",
-                      "**Minna no Nihongo Chukyuu I** (Intermediate 1) — circa livello N3",
-                      "Seguono poi i volumi più avanzati della serie",
                     ],
                   },
                   id: "2056be2a-9c87-5bc2-89a2-192947584739",
@@ -13361,15 +13351,23 @@ export const dumpIt = {
                 {
                   block_order: 3,
                   content: {
-                    text: "Vi consigliamo di iniziare da Shokyuu I e di procedere in ordine. Per ogni libro di testo esistono un eserciziario (Workbook) e una traduzione della grammatica, anche in italiano e in inglese.",
+                    text: "Vi consigliamo di iniziare da Shokyuu I e di procedere in ordine. Per ogni libro di testo esistono un eserciziario (Workbook) e una traduzione della grammatica in varie lingue.",
                   },
                   id: "92fa719a-8d17-5543-b15d-e5237ee09c57",
+                  type: "text",
+                },
+                {
+                  block_order: 4,
+                  content: {
+                    text: "Dopo il livello N4, vi consigliamo di capire quale serie di libri di testo fa più al caso vostro.",
+                  },
+                  id: "da017ce7-04d9-5cdb-adb2-2d4b998fdb66",
                   type: "text",
                 },
               ],
               id: "cdf40114-fceb-542d-8757-7d53b848f5c3",
               screen_order: 4,
-              title: "Quali libri di Minna no Nihongo scegliere",
+              title: "Quali libri scegliere",
             },
             {
               blocks: [
@@ -13460,7 +13458,7 @@ export const dumpIt = {
                   content: {
                     rules: [
                       "Vari dizionari online",
-                      "Gli audio dei libri di testo Minna no Nihongo",
+                      "Gli audio dei libri di testo",
                       "Video e podcast in giapponese semplice per principianti",
                     ],
                   },

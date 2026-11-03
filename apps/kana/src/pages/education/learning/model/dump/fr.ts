@@ -8,7 +8,7 @@ export const dumpFr = {
           expanded_title: "Information",
           icon: "4f99e07e-fa33-404a-9dfe-f0914dbdfade.jpg",
           id: "59803778-e035-46ed-9c97-27795eda4cc5",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/introduction",
           lesson_order: 1,
           minimum_version: "2.5.0",
@@ -204,7 +204,7 @@ export const dumpFr = {
           expanded_title: "Hiragana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "37a3d605-c9ea-4875-86b8-4acb1604c2a2.jpg",
           id: "99a6c797-47e5-49ce-81f4-42cc3ba0cc97",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&a",
           lesson_order: 2,
           minimum_version: "2.5.0",
@@ -243,7 +243,7 @@ export const dumpFr = {
               ],
               id: "9275f280-c478-5e27-87b9-030bc723710f",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -261,7 +261,7 @@ export const dumpFr = {
               ],
               id: "5f856d78-20a8-5865-ad4c-a36260df6b7e",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -297,7 +297,7 @@ export const dumpFr = {
               ],
               id: "68c2840d-350c-5e7c-8660-28da633eb9ba",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -315,7 +315,7 @@ export const dumpFr = {
               ],
               id: "7f1ddf99-e8c4-5828-9158-2469d15175cd",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -369,7 +369,7 @@ export const dumpFr = {
               ],
               id: "8f4cdb9c-8ea6-5021-8536-398ed9278268",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -387,7 +387,7 @@ export const dumpFr = {
               ],
               id: "dabbb80d-7b2f-58ed-a49e-fb983b2ba8e1",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -478,7 +478,7 @@ export const dumpFr = {
               ],
               id: "bb4ce89a-9a76-5ac3-afe8-8c3d51068db9",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -496,7 +496,7 @@ export const dumpFr = {
               ],
               id: "00712bae-907b-5ce8-bdb2-3513d01d1076",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -550,7 +550,7 @@ export const dumpFr = {
               ],
               id: "0191ec12-f529-517f-891f-5b3c0800efa5",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -568,7 +568,7 @@ export const dumpFr = {
               ],
               id: "85e96cab-7c97-5695-855d-f6935b0e6cd3",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -731,7 +731,7 @@ export const dumpFr = {
           expanded_title: "Hiragana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "bea297c4-29a1-48d8-b13e-c30bae9d58ba.jpg",
           id: "6672dda6-d54f-424a-b7d3-daaa60e2cddd",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ka",
           lesson_order: 3,
           minimum_version: "2.5.0",
@@ -770,7 +770,7 @@ export const dumpFr = {
               ],
               id: "93917127-8a01-589b-a537-6e6a5223a8c8",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -788,7 +788,7 @@ export const dumpFr = {
               ],
               id: "6728d295-4c89-5782-9ac9-13df7d79dbeb",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -824,7 +824,7 @@ export const dumpFr = {
               ],
               id: "48ea386f-65cd-5d47-93bc-96a81a3fd4b9",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -842,7 +842,7 @@ export const dumpFr = {
               ],
               id: "599e8c36-2f74-5f94-a86c-a68a1261ba47",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -896,7 +896,7 @@ export const dumpFr = {
               ],
               id: "038c83a4-d85d-5d86-9f4f-e7499e2af149",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -914,7 +914,7 @@ export const dumpFr = {
               ],
               id: "57f6f42c-ced3-5bc7-9846-a32317253fae",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1005,7 +1005,7 @@ export const dumpFr = {
               ],
               id: "9e099f5b-9677-5a3d-9e75-1e4c2a1faa59",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1023,7 +1023,7 @@ export const dumpFr = {
               ],
               id: "e61cd6d1-bddf-590a-ba18-54412f386fa4",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1077,7 +1077,7 @@ export const dumpFr = {
               ],
               id: "ae8e27a5-458e-568b-be74-353537787e2d",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1095,7 +1095,7 @@ export const dumpFr = {
               ],
               id: "17e53681-d7a4-52ed-848d-56b087b08f2e",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1258,7 +1258,7 @@ export const dumpFr = {
           expanded_title: "Hiragana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "d69655e1-1709-4601-8ce7-832165d7d556.jpg",
           id: "59047f70-eaf3-477c-987f-b5021e42e071",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&sa",
           lesson_order: 4,
           minimum_version: "2.5.0",
@@ -1297,7 +1297,7 @@ export const dumpFr = {
               ],
               id: "102ef201-0369-5456-8441-0b02f777ee89",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1315,7 +1315,7 @@ export const dumpFr = {
               ],
               id: "1d1bc3bf-7114-5ba4-bd01-ba30ddd16cbe",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1351,7 +1351,7 @@ export const dumpFr = {
               ],
               id: "c14bb021-32f3-5079-91ac-73071594051d",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1369,7 +1369,7 @@ export const dumpFr = {
               ],
               id: "ae6f0765-6bfe-5111-8115-e235e5a80287",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1423,7 +1423,7 @@ export const dumpFr = {
               ],
               id: "b403036c-6668-5767-a5ca-1ce64c1444c4",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1441,7 +1441,7 @@ export const dumpFr = {
               ],
               id: "0e1f0fd8-af6c-58ba-9dd7-d101c593efda",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1532,7 +1532,7 @@ export const dumpFr = {
               ],
               id: "556175ee-b049-5953-ba78-f4f72b55ac8a",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1550,7 +1550,7 @@ export const dumpFr = {
               ],
               id: "a2e1a2c0-bd52-5c28-984d-3e9f7ef47ddf",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1604,7 +1604,7 @@ export const dumpFr = {
               ],
               id: "d5dc26f2-af1c-5529-afc3-572069cd7100",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1622,7 +1622,7 @@ export const dumpFr = {
               ],
               id: "baf354e9-a1ce-58cd-85a3-87d60231698f",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1785,7 +1785,7 @@ export const dumpFr = {
           expanded_title: "Hiragana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "cce66d6e-826a-4b29-8eaa-50df25e09c40.jpg",
           id: "a8d2c89e-d513-44a8-b658-836f7e4cf202",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ta",
           lesson_order: 5,
           minimum_version: "2.5.0",
@@ -1824,7 +1824,7 @@ export const dumpFr = {
               ],
               id: "9c5810f8-6d50-519c-8fbb-b067e3a0e0bd",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1842,7 +1842,7 @@ export const dumpFr = {
               ],
               id: "b0697407-d651-55aa-a7ed-8dd946463dd2",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1878,7 +1878,7 @@ export const dumpFr = {
               ],
               id: "9ccfcf93-3800-513a-b1ba-f2dc154472e5",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1896,7 +1896,7 @@ export const dumpFr = {
               ],
               id: "661357fc-1211-5036-b829-3a16441e68f0",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1950,7 +1950,7 @@ export const dumpFr = {
               ],
               id: "73b91b62-98c5-523c-b04d-d46da57d390b",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -1968,7 +1968,7 @@ export const dumpFr = {
               ],
               id: "65c525c5-19aa-525f-a60a-7fa5b4459923",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2059,7 +2059,7 @@ export const dumpFr = {
               ],
               id: "e67a28d2-a9ff-5b4e-a9c7-9cc76cee4ad0",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2077,7 +2077,7 @@ export const dumpFr = {
               ],
               id: "0db6b479-6683-5988-aec3-ebefd3457324",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2131,7 +2131,7 @@ export const dumpFr = {
               ],
               id: "d6632b60-3cb8-50ff-8b8f-39098ea52572",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2149,7 +2149,7 @@ export const dumpFr = {
               ],
               id: "81fe462a-a36b-504f-8874-d5f445550aaf",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2312,7 +2312,7 @@ export const dumpFr = {
           expanded_title: "Hiragana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "80cbe968-4fae-45ab-a78b-d6cf17ad7d31.jpg",
           id: "a66e366f-a2aa-40c9-849f-5f211b7f74ff",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&na",
           lesson_order: 6,
           minimum_version: "2.5.0",
@@ -2351,7 +2351,7 @@ export const dumpFr = {
               ],
               id: "d4927f49-27b7-5673-9170-2b0b77fb8ecb",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2369,7 +2369,7 @@ export const dumpFr = {
               ],
               id: "0478b25e-97d2-5b02-8481-8b1ddee71012",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2405,7 +2405,7 @@ export const dumpFr = {
               ],
               id: "545f6694-0715-5715-b94a-32385bd1b4c8",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2423,7 +2423,7 @@ export const dumpFr = {
               ],
               id: "4fc98d6e-26bc-5f98-badc-3bf52f3790c7",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2477,7 +2477,7 @@ export const dumpFr = {
               ],
               id: "85b51e8d-8404-55b9-943a-c23597e6d18e",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2495,7 +2495,7 @@ export const dumpFr = {
               ],
               id: "ae325c78-1825-5c10-ac62-403cb43442bc",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2586,7 +2586,7 @@ export const dumpFr = {
               ],
               id: "1eb7a068-b2c6-5194-a812-1a284d79f882",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2604,7 +2604,7 @@ export const dumpFr = {
               ],
               id: "4a862856-893f-5d54-a72b-0b800f5fe661",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2658,7 +2658,7 @@ export const dumpFr = {
               ],
               id: "b5ab287a-7faa-550a-8120-8ccbb7c9373e",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2676,7 +2676,7 @@ export const dumpFr = {
               ],
               id: "064fdb34-25d4-55f8-aa7d-914c60f58012",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2839,7 +2839,7 @@ export const dumpFr = {
           expanded_title: "Hiragana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "5ab5e704-d6ba-4fde-a6f3-36745e149ed9.jpg",
           id: "bedd6de6-985b-41ab-917e-3125c889cc71",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ha",
           lesson_order: 7,
           minimum_version: "2.5.0",
@@ -2878,7 +2878,7 @@ export const dumpFr = {
               ],
               id: "8888efcc-13d6-5eea-a886-d6ef4272290f",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2896,7 +2896,7 @@ export const dumpFr = {
               ],
               id: "1a7ad3c4-123d-5d6d-b2cb-5711ba868661",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2932,7 +2932,7 @@ export const dumpFr = {
               ],
               id: "60f8c7ae-5134-5a34-a476-99d1929d8058",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -2950,7 +2950,7 @@ export const dumpFr = {
               ],
               id: "800ca1c0-f18d-5ced-894f-0dde29b054c6",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3004,7 +3004,7 @@ export const dumpFr = {
               ],
               id: "20608de1-335e-59e6-9467-6244280c48a0",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3022,7 +3022,7 @@ export const dumpFr = {
               ],
               id: "6467d756-7bd7-552a-ad04-3cc7ab3df259",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3113,7 +3113,7 @@ export const dumpFr = {
               ],
               id: "aa1e3045-691c-5381-8976-276eaef6e7e6",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3131,7 +3131,7 @@ export const dumpFr = {
               ],
               id: "1f92ddc8-8eb9-53bd-9658-b556d563d6be",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3185,7 +3185,7 @@ export const dumpFr = {
               ],
               id: "4b3503ff-38e3-5e37-895e-5b100c7d38f7",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3203,7 +3203,7 @@ export const dumpFr = {
               ],
               id: "8a3a1c28-00d3-5499-b4d3-3ee196659ab3",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3366,7 +3366,7 @@ export const dumpFr = {
           expanded_title: "Hiragana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "f53fde6a-ca94-4b15-8397-d567a3a17906.jpg",
           id: "674fb60d-41a4-48f8-b751-46d227ee61be",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ma",
           lesson_order: 8,
           minimum_version: "2.5.0",
@@ -3405,7 +3405,7 @@ export const dumpFr = {
               ],
               id: "8e76c531-59f0-55ff-ab79-ede731c6828f",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3423,7 +3423,7 @@ export const dumpFr = {
               ],
               id: "8a0206a9-4d1c-5a1c-a1d0-04ff9d09781a",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3459,7 +3459,7 @@ export const dumpFr = {
               ],
               id: "07e41b78-4e68-555e-af96-d9798e64df9e",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3477,7 +3477,7 @@ export const dumpFr = {
               ],
               id: "0601cc9d-b1c3-5664-838b-68390ae9ec94",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3531,7 +3531,7 @@ export const dumpFr = {
               ],
               id: "891dde85-6062-5230-9d80-3098b1674019",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3549,7 +3549,7 @@ export const dumpFr = {
               ],
               id: "06657863-47ac-57ea-b385-78884e4f1953",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3640,7 +3640,7 @@ export const dumpFr = {
               ],
               id: "004f2eda-e2c8-5d05-840c-3e113dc690d8",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3658,7 +3658,7 @@ export const dumpFr = {
               ],
               id: "794f05e1-9c76-5b2e-9907-f33e45d5902e",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3712,7 +3712,7 @@ export const dumpFr = {
               ],
               id: "003687a4-6300-56b7-badb-87786b2d58f7",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3730,7 +3730,7 @@ export const dumpFr = {
               ],
               id: "fcb21de7-8d71-5f37-9238-807060f6f7b4",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3891,9 +3891,9 @@ export const dumpFr = {
         {
           expanded_subtitle: "Apprenez à lire et à écrire les syllabes de la rangée tr:や.",
           expanded_title: "Hiragana: tr:や, tr:ゆ, tr:よ",
-          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
+          icon: "998d7b1d-3751-407b-8909-da9dc7983cdb.jpg",
           id: "645370d3-ca8b-4a6f-8631-9b67e71a74df",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ya",
           lesson_order: 9,
           minimum_version: "2.5.0",
@@ -3932,7 +3932,7 @@ export const dumpFr = {
               ],
               id: "5755d19a-7ec3-55dd-af43-49dbe01e2bcf",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3950,7 +3950,7 @@ export const dumpFr = {
               ],
               id: "5f5dc6f6-99f0-5e80-8269-815a5d90112f",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -3986,7 +3986,7 @@ export const dumpFr = {
               ],
               id: "c1d3d48f-b40d-5641-ab07-4e3a12e85d79",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4004,7 +4004,7 @@ export const dumpFr = {
               ],
               id: "8b76e027-3fe3-55ad-a5a2-2dc2e3e3b22f",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4058,7 +4058,7 @@ export const dumpFr = {
               ],
               id: "065fadec-a4b2-5937-867a-84b212f7bbf4",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4076,7 +4076,7 @@ export const dumpFr = {
               ],
               id: "3909885e-ece1-545c-92d4-2fced0737f6e",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4292,9 +4292,9 @@ export const dumpFr = {
         {
           expanded_subtitle: "Apprenez à lire et à écrire les syllabes de la rangée tr:ら.",
           expanded_title: "Hiragana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
-          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
+          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
           id: "290cf2ca-502a-4f3e-8769-98680d7b8f10",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ra",
           lesson_order: 10,
           minimum_version: "2.5.0",
@@ -4333,7 +4333,7 @@ export const dumpFr = {
               ],
               id: "0cf610b0-0692-56d7-8f22-365bcc6136b9",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4351,7 +4351,7 @@ export const dumpFr = {
               ],
               id: "5742ce2c-8254-5597-a194-ddb7b83b47e3",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4387,7 +4387,7 @@ export const dumpFr = {
               ],
               id: "44ac721b-01e2-533d-b391-4906f13820c2",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4405,7 +4405,7 @@ export const dumpFr = {
               ],
               id: "ef7c8475-6b72-546a-8318-09f23436ddb0",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4459,7 +4459,7 @@ export const dumpFr = {
               ],
               id: "d07ad6f3-53bf-50a5-abc8-29e8de93d2e8",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4477,7 +4477,7 @@ export const dumpFr = {
               ],
               id: "0fab50ff-973d-5220-b002-a39bfc53a27c",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4568,7 +4568,7 @@ export const dumpFr = {
               ],
               id: "a7b5c1d3-b145-55a6-bd83-0f97ba506a7c",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4586,7 +4586,7 @@ export const dumpFr = {
               ],
               id: "0b32bede-25c6-560f-8aca-390221a575e3",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4640,7 +4640,7 @@ export const dumpFr = {
               ],
               id: "67414765-6d7c-5662-9a6b-96f3a32eec60",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4658,7 +4658,7 @@ export const dumpFr = {
               ],
               id: "3e69023a-d0ae-53c7-a315-b59f59e524fe",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4819,9 +4819,9 @@ export const dumpFr = {
         {
           expanded_subtitle: "Apprenez à lire et à écrire les syllabes: tr:わ, tr:を, tr:ん.",
           expanded_title: "Hiragana: tr:わ, tr:を, tr:ん",
-          icon: "c4480f8f-71ee-4df0-886f-508b39912b4c.jpg",
+          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
           id: "10a91c15-dfbd-42a9-a74d-2ad15c6d0944",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&wa",
           lesson_order: 11,
           minimum_version: "2.5.0",
@@ -4860,7 +4860,7 @@ export const dumpFr = {
               ],
               id: "dd6b2370-d9bb-5b5f-aecb-b6c5f909e4e0",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4878,7 +4878,7 @@ export const dumpFr = {
               ],
               id: "7c4fc1c4-4e96-5a3f-b339-15745694807f",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4914,7 +4914,7 @@ export const dumpFr = {
               ],
               id: "f65b0281-ac24-5ca1-bd0d-9c88367c81be",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4932,7 +4932,7 @@ export const dumpFr = {
               ],
               id: "24339863-f87b-59a0-bbe8-6ff5a655ced0",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -4986,7 +4986,7 @@ export const dumpFr = {
               ],
               id: "a1edc650-2851-5c7f-8e88-8c13a5be45c9",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5004,7 +5004,7 @@ export const dumpFr = {
               ],
               id: "d224ee4f-5daa-587b-b922-8b87894fa9a0",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5229,7 +5229,7 @@ export const dumpFr = {
           expanded_title: "Katakana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "515f18bb-8797-4e60-b1b0-40f9b60aebcb.jpg",
           id: "b0f70d88-8709-48ec-9ac6-dc001bd6bafd",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&a",
           lesson_order: 12,
           minimum_version: "2.5.0",
@@ -5268,7 +5268,7 @@ export const dumpFr = {
               ],
               id: "fe618e9f-5c0c-5244-a35c-7f8bf40e97eb",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5286,7 +5286,7 @@ export const dumpFr = {
               ],
               id: "4d967653-07ef-5370-af35-79930af88de0",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5322,7 +5322,7 @@ export const dumpFr = {
               ],
               id: "4fd55084-b827-501b-bb2f-b907166fe932",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5340,7 +5340,7 @@ export const dumpFr = {
               ],
               id: "053156a8-3d09-5e46-b3bf-6d41fbdd6b35",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5394,7 +5394,7 @@ export const dumpFr = {
               ],
               id: "f82ef91c-49e3-504a-acf2-37410efc03e1",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5412,7 +5412,7 @@ export const dumpFr = {
               ],
               id: "d3811a5a-6bbc-5835-8052-5be9c58bd3c1",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5503,7 +5503,7 @@ export const dumpFr = {
               ],
               id: "9e4bbcf7-3481-583a-82ea-6510fb73c72c",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5521,7 +5521,7 @@ export const dumpFr = {
               ],
               id: "33b6e594-732b-5658-bfb3-69da26f8f0d5",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5575,7 +5575,7 @@ export const dumpFr = {
               ],
               id: "8ae950da-34bc-5f63-8d36-7fe903849e8e",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5593,7 +5593,7 @@ export const dumpFr = {
               ],
               id: "b49c5f56-e2e7-59e9-873a-998b9725ff9b",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5756,7 +5756,7 @@ export const dumpFr = {
           expanded_title: "Katakana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "655dcf64-0666-4be6-8c19-0993b1ac03ec.jpg",
           id: "be72f83b-7278-4725-a78e-111afe0db83d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ka",
           lesson_order: 13,
           minimum_version: "2.5.0",
@@ -5795,7 +5795,7 @@ export const dumpFr = {
               ],
               id: "dc22e152-700c-5658-b0c3-bfb9ea8ad171",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5813,7 +5813,7 @@ export const dumpFr = {
               ],
               id: "fc63ccc2-e41b-5ade-932b-c21020b97cb6",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5849,7 +5849,7 @@ export const dumpFr = {
               ],
               id: "d7cee7a3-7a4b-58ba-befc-1770e6d2283e",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5867,7 +5867,7 @@ export const dumpFr = {
               ],
               id: "ef81318a-6c2d-5c1b-8872-4cddc7b5338a",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5921,7 +5921,7 @@ export const dumpFr = {
               ],
               id: "b85935ff-5b6c-550f-ae5e-8a03efb29d10",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -5939,7 +5939,7 @@ export const dumpFr = {
               ],
               id: "d5dfce7a-a6b6-5802-89b9-9f359b0b6b22",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6030,7 +6030,7 @@ export const dumpFr = {
               ],
               id: "e37d0c31-c4c1-55d3-abe1-64554a21e83c",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6048,7 +6048,7 @@ export const dumpFr = {
               ],
               id: "f675a0bd-0b96-56f4-a409-d88962dc9623",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6102,7 +6102,7 @@ export const dumpFr = {
               ],
               id: "5262e6ec-a3b5-5f63-a666-f55f4af42eb6",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6120,7 +6120,7 @@ export const dumpFr = {
               ],
               id: "40b7393a-cb12-579c-ab5c-271b3c687b97",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6283,7 +6283,7 @@ export const dumpFr = {
           expanded_title: "Katakana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "6a3e11ff-5864-4f25-846e-5f8ac4691c5f.jpg",
           id: "d19edcce-9dab-445f-9ca8-f9d10073ecef",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&sa",
           lesson_order: 14,
           minimum_version: "2.5.0",
@@ -6322,7 +6322,7 @@ export const dumpFr = {
               ],
               id: "4c8f11a6-e9ef-5bd8-a072-b97cac2da67c",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6340,7 +6340,7 @@ export const dumpFr = {
               ],
               id: "2f9c179d-36f3-5bdb-8838-bcc5ba014af2",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6376,7 +6376,7 @@ export const dumpFr = {
               ],
               id: "cc271f50-833e-557e-9f37-301f1c1a24cf",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6394,7 +6394,7 @@ export const dumpFr = {
               ],
               id: "00d3bb5e-444a-5123-a826-2511ccacda8e",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6448,7 +6448,7 @@ export const dumpFr = {
               ],
               id: "7817171b-1add-5a82-8a72-45e8321e801b",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6466,7 +6466,7 @@ export const dumpFr = {
               ],
               id: "edbd01b0-ca65-5c42-82d4-514e490addef",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6557,7 +6557,7 @@ export const dumpFr = {
               ],
               id: "c3046732-b544-51f2-9df6-5e698085438a",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6575,7 +6575,7 @@ export const dumpFr = {
               ],
               id: "0efb5b68-ecb4-5c67-abe8-ec21137bc74d",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6629,7 +6629,7 @@ export const dumpFr = {
               ],
               id: "38532dd6-618b-53d2-b181-539e2775947a",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6647,7 +6647,7 @@ export const dumpFr = {
               ],
               id: "5a85bf1a-f51d-534c-a356-2fc01044cad7",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6810,7 +6810,7 @@ export const dumpFr = {
           expanded_title: "Katakana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "2dc2bdaa-3088-4754-8d52-38dc208fe6e7.jpg",
           id: "81877f7d-a03a-4921-9cfd-5407f94fadd3",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ta",
           lesson_order: 15,
           minimum_version: "2.5.0",
@@ -6849,7 +6849,7 @@ export const dumpFr = {
               ],
               id: "d514fd4b-b110-5271-8a80-e2427b30db8b",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6867,7 +6867,7 @@ export const dumpFr = {
               ],
               id: "0ab83935-c9b0-5fc0-adf7-f5b75ad9ff45",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6903,7 +6903,7 @@ export const dumpFr = {
               ],
               id: "0326f767-c7f2-582d-ba5b-f3b978204d32",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6921,7 +6921,7 @@ export const dumpFr = {
               ],
               id: "0f9a66d3-9587-5ef2-9d3a-c5516dd1ea05",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6975,7 +6975,7 @@ export const dumpFr = {
               ],
               id: "b4cc3dd5-4e04-592e-a9fa-fb6ecc7b0f86",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -6993,7 +6993,7 @@ export const dumpFr = {
               ],
               id: "45695234-ac55-5ab5-96db-9d26608096eb",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7084,7 +7084,7 @@ export const dumpFr = {
               ],
               id: "e5901e2e-f399-53b3-a97f-d5e0ca860690",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7102,7 +7102,7 @@ export const dumpFr = {
               ],
               id: "28ec15c3-78ff-506c-b18f-cdb50fecd7db",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7156,7 +7156,7 @@ export const dumpFr = {
               ],
               id: "6a8a314c-4f9d-5b5f-8bd9-6719a7c85b88",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7174,7 +7174,7 @@ export const dumpFr = {
               ],
               id: "fbad5766-d3c2-57de-bfa1-14a0c29ca1ef",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7337,7 +7337,7 @@ export const dumpFr = {
           expanded_title: "Katakana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "3f4e712a-7fc7-4e81-acab-72bb0ef427e4.jpg",
           id: "de1ae7bc-3331-456f-9cd7-a01f3bfbf9d3",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&na",
           lesson_order: 16,
           minimum_version: "2.5.0",
@@ -7376,7 +7376,7 @@ export const dumpFr = {
               ],
               id: "85f09407-4d48-5200-9c24-6e4d2b904f8a",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7394,7 +7394,7 @@ export const dumpFr = {
               ],
               id: "24f1220a-8109-530b-b144-93c8cbd5cd80",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7430,7 +7430,7 @@ export const dumpFr = {
               ],
               id: "fceaee9d-8c0a-574d-bc46-477fc70e95ce",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7448,7 +7448,7 @@ export const dumpFr = {
               ],
               id: "5d9b9e18-cd4c-51a1-bcbf-3f42d4479957",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7502,7 +7502,7 @@ export const dumpFr = {
               ],
               id: "cc4c245c-0fa4-531f-be74-77a894672e81",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7520,7 +7520,7 @@ export const dumpFr = {
               ],
               id: "16f148b6-cc8f-51f7-b349-9aaaba110f77",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7611,7 +7611,7 @@ export const dumpFr = {
               ],
               id: "17d65162-d165-5c9d-b687-98660546464c",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7629,7 +7629,7 @@ export const dumpFr = {
               ],
               id: "c45f52e2-83f7-5f87-a35c-43cb28bce896",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7683,7 +7683,7 @@ export const dumpFr = {
               ],
               id: "2a9da884-4915-578c-8539-e094eb0e909e",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7701,7 +7701,7 @@ export const dumpFr = {
               ],
               id: "f22bc4eb-0b54-51be-867e-421f97336889",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7864,7 +7864,7 @@ export const dumpFr = {
           expanded_title: "Katakana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "a972e2ac-7362-4f98-801d-4389ba31e2f9.jpg",
           id: "ab5d49b6-3ada-43bf-84c3-17b75b63c2c6",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ha",
           lesson_order: 17,
           minimum_version: "2.5.0",
@@ -7903,7 +7903,7 @@ export const dumpFr = {
               ],
               id: "8bce84ae-808c-5a49-b8a2-c9089235e517",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7921,7 +7921,7 @@ export const dumpFr = {
               ],
               id: "18d9361a-163f-57f7-8b29-a8da8b7275c3",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7957,7 +7957,7 @@ export const dumpFr = {
               ],
               id: "29aa228a-c962-5477-b4cc-577f2d41dd38",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -7975,7 +7975,7 @@ export const dumpFr = {
               ],
               id: "36ade7ad-547b-5782-b3d5-43516b7680df",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8029,7 +8029,7 @@ export const dumpFr = {
               ],
               id: "d1f28bde-ebff-5df1-a602-175b7e27a683",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8047,7 +8047,7 @@ export const dumpFr = {
               ],
               id: "16b93b15-6b18-5663-905d-177aa6b13fc5",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8138,7 +8138,7 @@ export const dumpFr = {
               ],
               id: "ede8125f-e704-51c9-bf39-30bba0c75c39",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8156,7 +8156,7 @@ export const dumpFr = {
               ],
               id: "f714780e-e3d8-55ca-b578-f978ca143c87",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8210,7 +8210,7 @@ export const dumpFr = {
               ],
               id: "2488b8a8-3a0a-5839-aea4-107001c5f40a",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8228,7 +8228,7 @@ export const dumpFr = {
               ],
               id: "fe067e3f-e68d-51ee-a2e6-2b89aad1dbeb",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8391,7 +8391,7 @@ export const dumpFr = {
           expanded_title: "Katakana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "07d0c986-1f16-4254-aa12-58aa2e0f9a49.jpg",
           id: "b1379ac7-2365-44b3-91e1-e10c4ed7a4d3",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ma",
           lesson_order: 18,
           minimum_version: "2.5.0",
@@ -8430,7 +8430,7 @@ export const dumpFr = {
               ],
               id: "4c7c5db6-96a5-5f6c-a7ce-cef6d26b8119",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8448,7 +8448,7 @@ export const dumpFr = {
               ],
               id: "e2d775ef-51bd-5e70-91fe-57da42c8decb",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8484,7 +8484,7 @@ export const dumpFr = {
               ],
               id: "39db0369-af32-59d7-b43a-f680843b3a54",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8502,7 +8502,7 @@ export const dumpFr = {
               ],
               id: "ff5ee48a-8bd6-53bb-a72d-0b72f7621e8d",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8556,7 +8556,7 @@ export const dumpFr = {
               ],
               id: "ac60ef9e-570e-5883-90ac-58ea664f321f",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8574,7 +8574,7 @@ export const dumpFr = {
               ],
               id: "190958f4-610d-53ce-8032-1680ccc2b7f0",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8665,7 +8665,7 @@ export const dumpFr = {
               ],
               id: "4b0d9de7-070e-5841-9f06-26aa8e0af730",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8683,7 +8683,7 @@ export const dumpFr = {
               ],
               id: "e9575b91-d725-585f-9d3c-17a570e6920c",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8737,7 +8737,7 @@ export const dumpFr = {
               ],
               id: "a17c4667-db82-5050-9143-8ce70f53343c",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8755,7 +8755,7 @@ export const dumpFr = {
               ],
               id: "2e66d6e2-b423-56ad-9f62-17c0ea83674a",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8918,7 +8918,7 @@ export const dumpFr = {
           expanded_title: "Katakana: tr:や, tr:ゆ, tr:よ",
           icon: "073066af-16d8-40c7-9b73-e9e75235fd1c.jpg",
           id: "b4b5ed37-1e85-4baa-ace8-3fe83573198a",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ya",
           lesson_order: 19,
           minimum_version: "2.5.0",
@@ -8957,7 +8957,7 @@ export const dumpFr = {
               ],
               id: "f25a0056-b039-5fd5-9efd-07e94ac57b4d",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -8975,7 +8975,7 @@ export const dumpFr = {
               ],
               id: "d57b5cea-831f-5e9b-9266-9219c9928c5f",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9011,7 +9011,7 @@ export const dumpFr = {
               ],
               id: "fb9b4622-270e-525d-be3a-283c3474af86",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9029,7 +9029,7 @@ export const dumpFr = {
               ],
               id: "5e4234b3-178c-55c9-8435-c466669e972d",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9083,7 +9083,7 @@ export const dumpFr = {
               ],
               id: "ec996548-48c7-59cb-b184-ba54cadab18a",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9101,7 +9101,7 @@ export const dumpFr = {
               ],
               id: "c27f1cb8-05db-555a-a14b-8474f5df9c76",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9319,7 +9319,7 @@ export const dumpFr = {
           expanded_title: "Katakana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
           icon: "a6b62c7e-2ec8-44ed-b9a2-00bc4b099915.jpg",
           id: "802e25e9-f4e5-4384-a287-3356be57321e",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ra",
           lesson_order: 20,
           minimum_version: "2.5.0",
@@ -9358,7 +9358,7 @@ export const dumpFr = {
               ],
               id: "4e5ab9b4-af81-5474-8b35-8e56882d160c",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9376,7 +9376,7 @@ export const dumpFr = {
               ],
               id: "6e50a9ee-73e4-5a1a-92ae-32715d1c6991",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9412,7 +9412,7 @@ export const dumpFr = {
               ],
               id: "36fd0c6e-25e0-5c5b-8d62-491633e17590",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9430,7 +9430,7 @@ export const dumpFr = {
               ],
               id: "7a9acc18-9034-5878-8750-2b73f7a93026",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9484,7 +9484,7 @@ export const dumpFr = {
               ],
               id: "31f5c2b1-887c-54e6-b38d-2a78d19908af",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9502,7 +9502,7 @@ export const dumpFr = {
               ],
               id: "1ca2206f-8409-503f-bb6a-a7cbbf95e9cd",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9593,7 +9593,7 @@ export const dumpFr = {
               ],
               id: "3ad979a3-c9a5-5129-bd1d-ea391226bd7c",
               screen_order: 14,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9611,7 +9611,7 @@ export const dumpFr = {
               ],
               id: "2a13b055-0f0d-5c24-b59e-81fa429fcc82",
               screen_order: 15,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9665,7 +9665,7 @@ export const dumpFr = {
               ],
               id: "ca0324ee-4957-5c82-a3bc-4395bf6acae1",
               screen_order: 18,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9683,7 +9683,7 @@ export const dumpFr = {
               ],
               id: "7e86fdee-7f02-5938-934a-7ad4520063aa",
               screen_order: 19,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9846,7 +9846,7 @@ export const dumpFr = {
           expanded_title: "Katakana: tr:わ, tr:を, tr:ん",
           icon: "b57e394a-8e74-4700-9171-e9129bc4de2e.jpg",
           id: "307a212d-7232-4574-bcfe-bcb5b8eb7fe4",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&wa",
           lesson_order: 21,
           minimum_version: "2.5.0",
@@ -9885,7 +9885,7 @@ export const dumpFr = {
               ],
               id: "2710eb76-2e17-5f49-96b4-a3b22669eebf",
               screen_order: 2,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9903,7 +9903,7 @@ export const dumpFr = {
               ],
               id: "6f56a89a-4000-5926-81ca-c5bf664330ab",
               screen_order: 3,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9939,7 +9939,7 @@ export const dumpFr = {
               ],
               id: "812d1761-fc47-566e-9a55-e72bd78bbed0",
               screen_order: 5,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -9957,7 +9957,7 @@ export const dumpFr = {
               ],
               id: "41039638-098e-5e98-8034-0b2b298d800f",
               screen_order: 6,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -10011,7 +10011,7 @@ export const dumpFr = {
               ],
               id: "8fe299f3-8bd1-5e99-9109-a305345e47b6",
               screen_order: 9,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -10029,7 +10029,7 @@ export const dumpFr = {
               ],
               id: "190401c7-4475-531d-bcd6-024782e31908",
               screen_order: 10,
-              title: "Écrivez la syllabe dans le bon ordre des traits.",
+              title: "Écrivez la syllabe correctement.",
             },
             {
               blocks: [
@@ -10254,7 +10254,7 @@ export const dumpFr = {
           expanded_title: "Information",
           icon: "e55a6e88-4d4a-404c-9826-d5e88567ad8b.jpg",
           id: "78842819-f859-4563-a4d2-926e1da06559",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&dakuon",
           lesson_order: 22,
           minimum_version: "2.5.0",
@@ -10786,7 +10786,7 @@ export const dumpFr = {
           expanded_title: "Information",
           icon: "60466bc2-00e9-4920-ab2a-d65be847ab19.jpg",
           id: "79abfab9-b413-43f4-b5df-664580243006",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longVowels",
           lesson_order: 23,
           minimum_version: "2.5.0",
@@ -10993,7 +10993,7 @@ export const dumpFr = {
           expanded_title: "Information",
           icon: "35170a20-86ba-4c4e-bd01-d9be0d008026.jpg",
           id: "21ff035e-c621-4888-84c8-0dedf53d1a72",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longConsonants",
           lesson_order: 24,
           minimum_version: "2.5.0",
@@ -11029,7 +11029,7 @@ export const dumpFr = {
                   content: {
                     rules: [
                       "かた (tr(かた)) - épaule",
-                      "かつた (tr(かつた)) - nom",
+                      "かつた (tr(かつた)) - nom de famille Katsuta",
                       "かった (tr(かった)) - a gagné",
                     ],
                   },
@@ -11132,7 +11132,7 @@ export const dumpFr = {
                   block_order: 3,
                   content: {
                     rules: [
-                      "こんにちは (tr(こんにちは)) - bonjour",
+                      "こんにちは (tr(こんにちわ)) - bonjour",
                       "こんばんは (tr(こんばんは)) - bonsoir",
                     ],
                   },
@@ -11154,7 +11154,7 @@ export const dumpFr = {
           expanded_title: "Information",
           icon: "bb3db32f-041c-4e39-9b7d-9c3515a0e3f8.jpg",
           id: "4ae1f6b2-40ba-4813-8f66-f70ffa57d88d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&yoon",
           lesson_order: 25,
           minimum_version: "2.5.0",
@@ -11555,7 +11555,7 @@ export const dumpFr = {
           expanded_title: "Information",
           icon: "c5fda457-5b04-4ce9-979b-05f109fda391.jpg",
           id: "402de91d-b760-4a57-aab0-156e63304748",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&dakuonAndHandakuon",
           lesson_order: 26,
           minimum_version: "2.5.0",
@@ -12049,7 +12049,7 @@ export const dumpFr = {
           expanded_title: "Information",
           icon: "7c7dc482-980c-492f-99d2-19a6d83d2f77.jpg",
           id: "a7a94584-3c35-4e43-a8b6-f987a0f2fad6",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longVowels",
           lesson_order: 27,
           minimum_version: "2.5.0",
@@ -12276,7 +12276,7 @@ export const dumpFr = {
           expanded_title: "Information",
           icon: "2542ff58-d7f7-4f23-a669-1908f5d7adad.jpg",
           id: "4471617d-7c59-4a68-b22a-3ffb1d18472c",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longConsonants",
           lesson_order: 28,
           minimum_version: "2.5.0",
@@ -12423,11 +12423,11 @@ export const dumpFr = {
           topic_id: "b4d36c9a-5343-4982-a691-3e769ef5c5b5",
         },
         {
-          expanded_subtitle: "Ici, nous vous parlerons des sons supplémentaires en katakana",
+          expanded_subtitle: "Ici, nous vous parlerons des sons supplémentaires en katakana.",
           expanded_title: "Information",
           icon: "f8402718-ad6a-495b-b429-c1f83c51d77f.jpg",
           id: "a7119363-82e7-4b92-804a-8211581d47f7",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&additionalSounds",
           lesson_order: 29,
           minimum_version: "2.5.0",
@@ -12836,11 +12836,11 @@ export const dumpFr = {
           topic_id: "b4d36c9a-5343-4982-a691-3e769ef5c5b5",
         },
         {
-          expanded_subtitle: "Ici, nous vous parlerons de yoon",
+          expanded_subtitle: "Ici, nous vous parlerons de yoon.",
           expanded_title: "Information",
           icon: "aafe6dcb-4193-4d5e-9d95-258ffb60314f.jpg",
           id: "3cab3bde-b0ba-4998-928e-277074b60459",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&yoon",
           lesson_order: 30,
           minimum_version: "2.5.0",
@@ -13231,11 +13231,11 @@ export const dumpFr = {
         },
         {
           expanded_subtitle:
-            "Ici, nous vous expliquerons comment continuer à apprendre le japonais",
+            "Ici, nous vous expliquerons comment continuer à apprendre le japonais.",
           expanded_title: "Information",
           icon: "18800460-fe6b-4b37-bbb2-259253cdcbbb.jpg",
           id: "6b07cc9b-3e21-488d-8940-774e61355cc4",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/whats-next",
           lesson_order: 31,
           minimum_version: "2.5.0",
@@ -13318,14 +13318,6 @@ export const dumpFr = {
                   id: "5f5f2e75-ae73-5f8e-be1f-55565ae6a77b",
                   type: "rule",
                 },
-                {
-                  block_order: 3,
-                  content: {
-                    text: "La plupart des gens commencent par le N5 et progressent peu à peu.",
-                  },
-                  id: "90f69afe-5b3d-5a84-8df2-6589a5710a86",
-                  type: "text",
-                },
               ],
               id: "2aa79331-1414-55b3-8ccb-3833f001710e",
               screen_order: 3,
@@ -13336,7 +13328,7 @@ export const dumpFr = {
                 {
                   block_order: 1,
                   content: {
-                    text: "La série est divisée par niveaux :",
+                    text: "La série Minna no Nihongo est divisée par niveaux :",
                   },
                   id: "7fe25a89-8296-5124-8a2f-e275e0c22ad4",
                   type: "text",
@@ -13347,8 +13339,6 @@ export const dumpFr = {
                     rules: [
                       "**Minna no Nihongo Shokyuu I** (Beginner 1) — environ niveau N5",
                       "**Minna no Nihongo Shokyuu II** (Beginner 2) — environ niveau N4",
-                      "**Minna no Nihongo Chukyuu I** (Intermediate 1) — environ niveau N3",
-                      "Viennent ensuite les volumes plus avancés de la série",
                     ],
                   },
                   id: "73aeef5f-04d9-5141-915a-a8f4feb79c4a",
@@ -13357,15 +13347,23 @@ export const dumpFr = {
                 {
                   block_order: 3,
                   content: {
-                    text: "Nous vous conseillons de commencer par Shokyuu I et de suivre l'ordre. Chaque manuel est accompagné d'un cahier d'exercices (Workbook) et d'une traduction de la grammaire, notamment en français et en anglais.",
+                    text: "Nous vous conseillons de commencer par Shokyuu I et de suivre l'ordre. Chaque manuel est accompagné d'un cahier d'exercices (Workbook) et d'une traduction de la grammaire dans différentes langues.",
                   },
                   id: "01795569-602d-5db7-8016-3ab169f01b89",
+                  type: "text",
+                },
+                {
+                  block_order: 4,
+                  content: {
+                    text: "Après le niveau N4, nous vous conseillons de déterminer quelle série de manuels vous convient le mieux.",
+                  },
+                  id: "7b083410-e267-5c92-a5b2-d418a48d64f8",
                   type: "text",
                 },
               ],
               id: "fdde6f92-d6f1-5b30-bb72-17f12a39412e",
               screen_order: 4,
-              title: "Quels livres Minna no Nihongo choisir",
+              title: "Quels livres choisir",
             },
             {
               blocks: [
@@ -13456,7 +13454,7 @@ export const dumpFr = {
                   content: {
                     rules: [
                       "Différents dictionnaires en ligne",
-                      "Les enregistrements audio des manuels Minna no Nihongo",
+                      "Les enregistrements audio des manuels",
                       "Des vidéos et podcasts japonais simples pour débutants",
                     ],
                   },

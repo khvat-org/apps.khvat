@@ -9,7 +9,7 @@ export const dumpDe = {
           expanded_title: "Informationen",
           icon: "4f99e07e-fa33-404a-9dfe-f0914dbdfade.jpg",
           id: "af20d950-674f-4bb2-9f97-f63a7b2e931b",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/introduction",
           lesson_order: 1,
           minimum_version: "2.5.0",
@@ -205,7 +205,7 @@ export const dumpDe = {
           expanded_title: "Hiragana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "37a3d605-c9ea-4875-86b8-4acb1604c2a2.jpg",
           id: "6a993b8f-d17d-467b-88ca-d39a4e55edb8",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&a",
           lesson_order: 2,
           minimum_version: "2.5.0",
@@ -244,7 +244,7 @@ export const dumpDe = {
               ],
               id: "86ccd991-2c59-5e24-b38c-0dfa17244b27",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -262,7 +262,7 @@ export const dumpDe = {
               ],
               id: "1e7ad867-7888-5cf6-b022-97386eae2312",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -298,7 +298,7 @@ export const dumpDe = {
               ],
               id: "a4f1e1a8-26bf-52f9-8149-b4f4c872c7db",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -316,7 +316,7 @@ export const dumpDe = {
               ],
               id: "4dce859c-79f4-5112-9534-75a542c7221b",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -370,7 +370,7 @@ export const dumpDe = {
               ],
               id: "ebe0367e-7e90-5772-b785-9c515978d1e0",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -388,7 +388,7 @@ export const dumpDe = {
               ],
               id: "8d0cbcae-2e83-5093-9d23-d16fc67dbf1a",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -479,7 +479,7 @@ export const dumpDe = {
               ],
               id: "5e474717-9922-5018-afaf-6654f172a172",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -497,7 +497,7 @@ export const dumpDe = {
               ],
               id: "8e803eb1-4e47-5e96-8aef-2e0d3093f931",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -551,7 +551,7 @@ export const dumpDe = {
               ],
               id: "6101c41d-f3e6-5f29-8bf8-c5eb004da97c",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -569,7 +569,7 @@ export const dumpDe = {
               ],
               id: "40fc26fe-3f49-5a10-bfe5-5762504cb2bb",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -732,7 +732,7 @@ export const dumpDe = {
           expanded_title: "Hiragana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "bea297c4-29a1-48d8-b13e-c30bae9d58ba.jpg",
           id: "17ceea60-0bde-441b-a58c-480496a36c0c",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ka",
           lesson_order: 3,
           minimum_version: "2.5.0",
@@ -771,7 +771,7 @@ export const dumpDe = {
               ],
               id: "cf894ded-602c-53b6-ac46-9bc3db2373cd",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -789,7 +789,7 @@ export const dumpDe = {
               ],
               id: "6c0438e6-145c-5300-beed-73f0bc694159",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -825,7 +825,7 @@ export const dumpDe = {
               ],
               id: "6f3ee881-df45-5c96-ab19-7939c403393d",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -843,7 +843,7 @@ export const dumpDe = {
               ],
               id: "542017ef-be70-5e22-85e7-a220a15738ce",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -897,7 +897,7 @@ export const dumpDe = {
               ],
               id: "211b30d8-576b-551d-9038-a9570b4819f2",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -915,7 +915,7 @@ export const dumpDe = {
               ],
               id: "c3a9104a-418f-5aa5-852e-c02b46396402",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1006,7 +1006,7 @@ export const dumpDe = {
               ],
               id: "414473a3-30d0-5b7c-9176-77ef922ae293",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1024,7 +1024,7 @@ export const dumpDe = {
               ],
               id: "8b0239c8-5925-502a-b133-3ddc04de6a73",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1078,7 +1078,7 @@ export const dumpDe = {
               ],
               id: "c7a5a21f-7282-5abe-9a2c-6cb0a2875df6",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1096,7 +1096,7 @@ export const dumpDe = {
               ],
               id: "12d64fa9-4e10-544f-844c-59a7d107f91e",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1259,7 +1259,7 @@ export const dumpDe = {
           expanded_title: "Hiragana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "d69655e1-1709-4601-8ce7-832165d7d556.jpg",
           id: "a85d0fc1-ced3-4785-8d89-b0127bafd34d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&sa",
           lesson_order: 4,
           minimum_version: "2.5.0",
@@ -1298,7 +1298,7 @@ export const dumpDe = {
               ],
               id: "3877ed76-9cd5-560f-916a-4b5639af676e",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1316,7 +1316,7 @@ export const dumpDe = {
               ],
               id: "3dd184c9-89ed-55db-b487-f465fe48b5f0",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1352,7 +1352,7 @@ export const dumpDe = {
               ],
               id: "f7007bff-d43c-57b8-8d82-2daf24ccd5d2",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1370,7 +1370,7 @@ export const dumpDe = {
               ],
               id: "9577868a-954a-519d-99ac-1af4bd2ac79a",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1424,7 +1424,7 @@ export const dumpDe = {
               ],
               id: "8fbe691e-4ebc-5aa2-9637-4eae0e336d55",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1442,7 +1442,7 @@ export const dumpDe = {
               ],
               id: "4314d8f7-e7b2-5a34-916b-1467ea0fdd01",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1533,7 +1533,7 @@ export const dumpDe = {
               ],
               id: "a690b708-c7e3-5160-95ee-6e636a24dc71",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1551,7 +1551,7 @@ export const dumpDe = {
               ],
               id: "1d6b6ae6-9e16-5cc5-b677-6624b397e46e",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1605,7 +1605,7 @@ export const dumpDe = {
               ],
               id: "710ff671-78b2-59f2-8658-e52a6d06304d",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1623,7 +1623,7 @@ export const dumpDe = {
               ],
               id: "63d385c5-bf70-5476-9a4a-72877851a220",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1786,7 +1786,7 @@ export const dumpDe = {
           expanded_title: "Hiragana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "cce66d6e-826a-4b29-8eaa-50df25e09c40.jpg",
           id: "754d71bf-b893-4a45-8584-4ca5cb7c4e16",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ta",
           lesson_order: 5,
           minimum_version: "2.5.0",
@@ -1825,7 +1825,7 @@ export const dumpDe = {
               ],
               id: "77e36298-fdde-57cf-99c1-dd973b914e4e",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1843,7 +1843,7 @@ export const dumpDe = {
               ],
               id: "9c2d827c-2979-51b1-8657-d08895804cce",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1879,7 +1879,7 @@ export const dumpDe = {
               ],
               id: "f4da678c-69ad-525a-a949-b413abea11da",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1897,7 +1897,7 @@ export const dumpDe = {
               ],
               id: "b8c98a62-47df-576a-b1bc-08d03af612c6",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1951,7 +1951,7 @@ export const dumpDe = {
               ],
               id: "63f5e0ab-f4a9-5138-a18b-cce50b8cb489",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -1969,7 +1969,7 @@ export const dumpDe = {
               ],
               id: "e9012d08-7705-5b9a-869b-224e0a1459a8",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2060,7 +2060,7 @@ export const dumpDe = {
               ],
               id: "8910cca3-a174-573e-830f-36db71d06b3b",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2078,7 +2078,7 @@ export const dumpDe = {
               ],
               id: "de661d80-4851-55ba-8d06-85d82ac16d43",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2132,7 +2132,7 @@ export const dumpDe = {
               ],
               id: "65c92ac6-1357-5543-b54a-2d1cf821b103",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2150,7 +2150,7 @@ export const dumpDe = {
               ],
               id: "668b9608-faf2-56de-ae06-62763f1b5570",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2313,7 +2313,7 @@ export const dumpDe = {
           expanded_title: "Hiragana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "80cbe968-4fae-45ab-a78b-d6cf17ad7d31.jpg",
           id: "39c7b705-fafe-4260-8745-cb0203381446",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&na",
           lesson_order: 6,
           minimum_version: "2.5.0",
@@ -2352,7 +2352,7 @@ export const dumpDe = {
               ],
               id: "abcf0a8f-0101-5cad-a9b8-c03653172502",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2370,7 +2370,7 @@ export const dumpDe = {
               ],
               id: "b8e29c4a-89c6-55e8-9ff2-3dc810ca9446",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2406,7 +2406,7 @@ export const dumpDe = {
               ],
               id: "5b5a1dd6-f120-59d8-bbd2-ffda9e98b37e",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2424,7 +2424,7 @@ export const dumpDe = {
               ],
               id: "5ad5d250-da5b-589b-bebc-b5b859f3ab1b",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2478,7 +2478,7 @@ export const dumpDe = {
               ],
               id: "69676836-97aa-57b7-aacd-76721ff4c4e8",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2496,7 +2496,7 @@ export const dumpDe = {
               ],
               id: "343d62a5-c0b1-567f-bcad-a12db0460e50",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2587,7 +2587,7 @@ export const dumpDe = {
               ],
               id: "c993931c-d8f0-502b-b23c-827f534ad63f",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2605,7 +2605,7 @@ export const dumpDe = {
               ],
               id: "a6c801f5-1e8a-5a25-98f2-2377eb45c533",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2659,7 +2659,7 @@ export const dumpDe = {
               ],
               id: "eae84184-d1ec-5a4f-96db-780074522542",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2677,7 +2677,7 @@ export const dumpDe = {
               ],
               id: "1fb4c0cd-23d5-5d86-8548-97515b36c3eb",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2840,7 +2840,7 @@ export const dumpDe = {
           expanded_title: "Hiragana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "5ab5e704-d6ba-4fde-a6f3-36745e149ed9.jpg",
           id: "4f7e49b9-50e9-4a38-9b42-4277d7b047a5",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ha",
           lesson_order: 7,
           minimum_version: "2.5.0",
@@ -2879,7 +2879,7 @@ export const dumpDe = {
               ],
               id: "67a9f051-ee28-5cd6-a8d5-02c78f0657dd",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2897,7 +2897,7 @@ export const dumpDe = {
               ],
               id: "14186a5c-63b3-541f-a5d3-f978493123e2",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2933,7 +2933,7 @@ export const dumpDe = {
               ],
               id: "3fd77c62-e369-5976-96b4-1d6667baf800",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -2951,7 +2951,7 @@ export const dumpDe = {
               ],
               id: "f19e6714-18b0-5989-ad41-f7323b12fae0",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3005,7 +3005,7 @@ export const dumpDe = {
               ],
               id: "6fa2b076-fa16-563c-a9c1-ef01996d7c46",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3023,7 +3023,7 @@ export const dumpDe = {
               ],
               id: "30812070-85a9-5612-a7c2-548d42608a5a",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3114,7 +3114,7 @@ export const dumpDe = {
               ],
               id: "4d4d4e29-f51a-5a77-9d0e-ef98e4a7a0ec",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3132,7 +3132,7 @@ export const dumpDe = {
               ],
               id: "276603da-4d85-520c-ba45-15ce8661e9f7",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3186,7 +3186,7 @@ export const dumpDe = {
               ],
               id: "6bc2b4ba-eeb5-590e-a69d-61548450b656",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3204,7 +3204,7 @@ export const dumpDe = {
               ],
               id: "4e462376-8897-58ee-a4ee-ec0fb222b53d",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3367,7 +3367,7 @@ export const dumpDe = {
           expanded_title: "Hiragana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "f53fde6a-ca94-4b15-8397-d567a3a17906.jpg",
           id: "dd257e1c-0177-4d2b-9b5d-ba127ac8ddb7",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ma",
           lesson_order: 8,
           minimum_version: "2.5.0",
@@ -3406,7 +3406,7 @@ export const dumpDe = {
               ],
               id: "a186eeb2-9a7e-5be7-8d71-36025b91d8a8",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3424,7 +3424,7 @@ export const dumpDe = {
               ],
               id: "2edf42c3-d62e-590e-8a05-bb01db058943",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3460,7 +3460,7 @@ export const dumpDe = {
               ],
               id: "30d0db3b-a63a-5fa4-8cc3-4210fed8cd29",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3478,7 +3478,7 @@ export const dumpDe = {
               ],
               id: "72202fb6-afe5-5915-b23f-bf491208d592",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3532,7 +3532,7 @@ export const dumpDe = {
               ],
               id: "6448344c-25a6-511b-aeb1-1f234526414f",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3550,7 +3550,7 @@ export const dumpDe = {
               ],
               id: "38ea13ab-4641-5be3-8f37-9420ba745f38",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3641,7 +3641,7 @@ export const dumpDe = {
               ],
               id: "51f6bf2b-e1b4-592e-9d40-69e4f063de77",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3659,7 +3659,7 @@ export const dumpDe = {
               ],
               id: "5aa248d8-7c2d-5a2e-a3c0-a54ec3fa949f",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3713,7 +3713,7 @@ export const dumpDe = {
               ],
               id: "5a5cae61-8815-59f4-b0ff-af9a8131f2c7",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3731,7 +3731,7 @@ export const dumpDe = {
               ],
               id: "bebdfd3d-462d-572e-8a4f-00e97d66697e",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3892,9 +3892,9 @@ export const dumpDe = {
         {
           expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:や zu lesen und zu schreiben.",
           expanded_title: "Hiragana: tr:や, tr:ゆ, tr:よ",
-          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
+          icon: "998d7b1d-3751-407b-8909-da9dc7983cdb.jpg",
           id: "e0511979-6635-41d9-b1e5-deccc81e5b52",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ya",
           lesson_order: 9,
           minimum_version: "2.5.0",
@@ -3933,7 +3933,7 @@ export const dumpDe = {
               ],
               id: "d0ac80ec-b41d-5be2-8d82-784d988e4432",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3951,7 +3951,7 @@ export const dumpDe = {
               ],
               id: "20c22ec0-f17e-54fe-a47e-cfb8ab708fde",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -3987,7 +3987,7 @@ export const dumpDe = {
               ],
               id: "031d2723-67a7-55aa-88e5-ec17674401c2",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4005,7 +4005,7 @@ export const dumpDe = {
               ],
               id: "e496836a-7564-536d-a342-3eb32372ca6c",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4059,7 +4059,7 @@ export const dumpDe = {
               ],
               id: "877d457a-0236-5e14-a5cd-f4083a8f5242",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4077,7 +4077,7 @@ export const dumpDe = {
               ],
               id: "8de42a32-59f2-59f2-8388-391244bcf465",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4293,9 +4293,9 @@ export const dumpDe = {
         {
           expanded_subtitle: "Lernen Sie, die Silben in der Reihe tr:ら zu lesen und zu schreiben.",
           expanded_title: "Hiragana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
-          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
+          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
           id: "0d9228dc-3eda-49e4-b8ad-5550f152e561",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ra",
           lesson_order: 10,
           minimum_version: "2.5.0",
@@ -4334,7 +4334,7 @@ export const dumpDe = {
               ],
               id: "f2c4d792-c041-5e54-8600-cc7dc4de42fd",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4352,7 +4352,7 @@ export const dumpDe = {
               ],
               id: "9007f190-e6ca-5c1e-abf6-89d0902c8a6d",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4388,7 +4388,7 @@ export const dumpDe = {
               ],
               id: "59e60366-d8fa-5d1f-abe8-091c5405f08e",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4406,7 +4406,7 @@ export const dumpDe = {
               ],
               id: "03eecd22-3838-5413-9d7b-fa752c6b5505",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4460,7 +4460,7 @@ export const dumpDe = {
               ],
               id: "a8871038-aad1-5ebd-abd0-59213c2497d6",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4478,7 +4478,7 @@ export const dumpDe = {
               ],
               id: "a0ffeb0e-143e-5333-8cdd-012c6968424e",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4569,7 +4569,7 @@ export const dumpDe = {
               ],
               id: "2acf8cef-81ac-5119-bc23-d939a975d7be",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4587,7 +4587,7 @@ export const dumpDe = {
               ],
               id: "c86821e5-1a11-5c90-8783-1b70dbc6a883",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4641,7 +4641,7 @@ export const dumpDe = {
               ],
               id: "ddb1ce93-194f-5eb2-bbb1-52277890a278",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4659,7 +4659,7 @@ export const dumpDe = {
               ],
               id: "5ae31fe4-cda2-508f-b9c1-73b1b31aae89",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4821,9 +4821,9 @@ export const dumpDe = {
           expanded_subtitle:
             "Lernen Sie, die Silben zu lesen und zu schreiben: tr:わ, tr:を, tr:ん.",
           expanded_title: "Hiragana: tr:わ, tr:を, tr:ん",
-          icon: "c4480f8f-71ee-4df0-886f-508b39912b4c.jpg",
+          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
           id: "e2256c89-10c6-4eac-aae7-07692db5028c",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&wa",
           lesson_order: 11,
           minimum_version: "2.5.0",
@@ -4862,7 +4862,7 @@ export const dumpDe = {
               ],
               id: "b9d83c96-3e1f-5d90-9165-7934ffdf1915",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4880,7 +4880,7 @@ export const dumpDe = {
               ],
               id: "6b7eb3c3-0515-5417-8f28-5a6af7fe5c70",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4916,7 +4916,7 @@ export const dumpDe = {
               ],
               id: "938dde70-431d-53d2-8b9e-36b403db7b58",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4934,7 +4934,7 @@ export const dumpDe = {
               ],
               id: "8e5fd263-d905-5c65-97d9-66b91bfcecbe",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -4988,7 +4988,7 @@ export const dumpDe = {
               ],
               id: "40f9fd42-4132-5397-8dba-203c8454e835",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5006,7 +5006,7 @@ export const dumpDe = {
               ],
               id: "50171366-39dc-5420-b832-b1ddfedb16e5",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5231,7 +5231,7 @@ export const dumpDe = {
           expanded_title: "Katakana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "515f18bb-8797-4e60-b1b0-40f9b60aebcb.jpg",
           id: "683cd8da-4a7c-46ab-b263-513850699b92",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&a",
           lesson_order: 12,
           minimum_version: "2.5.0",
@@ -5270,7 +5270,7 @@ export const dumpDe = {
               ],
               id: "7c8999f2-eb51-5216-aa72-194fee327685",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5288,7 +5288,7 @@ export const dumpDe = {
               ],
               id: "17d383de-95c6-5eb5-87a8-2dd5534d465d",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5324,7 +5324,7 @@ export const dumpDe = {
               ],
               id: "f0701064-db16-5993-ba42-357eebd34a31",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5342,7 +5342,7 @@ export const dumpDe = {
               ],
               id: "4135e09f-d51a-5b43-88b6-6a294d6ebc99",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5396,7 +5396,7 @@ export const dumpDe = {
               ],
               id: "1b69ada7-3204-5ab8-ab43-926eb793f455",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5414,7 +5414,7 @@ export const dumpDe = {
               ],
               id: "c0773f44-7b2b-5cf2-b084-9d4c9fa8ddf3",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5505,7 +5505,7 @@ export const dumpDe = {
               ],
               id: "b2d29a87-62fb-510b-8de6-8965f9c5104d",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5523,7 +5523,7 @@ export const dumpDe = {
               ],
               id: "1488fbd8-3c8d-5f98-8092-97f1b721724a",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5577,7 +5577,7 @@ export const dumpDe = {
               ],
               id: "ab14f5e3-42a9-56de-9d29-65f485e3c375",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5595,7 +5595,7 @@ export const dumpDe = {
               ],
               id: "6ab23cfa-5892-5b86-9642-d534aae2d066",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5758,7 +5758,7 @@ export const dumpDe = {
           expanded_title: "Katakana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "655dcf64-0666-4be6-8c19-0993b1ac03ec.jpg",
           id: "4adc1703-9d73-4686-80d5-405604c9e342",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ka",
           lesson_order: 13,
           minimum_version: "2.5.0",
@@ -5797,7 +5797,7 @@ export const dumpDe = {
               ],
               id: "00eca053-2f7c-5019-b322-3436d20cf071",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5815,7 +5815,7 @@ export const dumpDe = {
               ],
               id: "ad6d797e-e31e-5356-86bf-6d141c8bb3c1",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5851,7 +5851,7 @@ export const dumpDe = {
               ],
               id: "36ab6047-7984-567f-b4eb-50ea2b212f59",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5869,7 +5869,7 @@ export const dumpDe = {
               ],
               id: "7f8935ee-c446-551d-abb2-a10a7594d921",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5923,7 +5923,7 @@ export const dumpDe = {
               ],
               id: "d2c72597-36e6-57fb-814d-45a45f39e59a",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -5941,7 +5941,7 @@ export const dumpDe = {
               ],
               id: "b617fab4-e61f-5b08-828c-b9dec6c3a49d",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6032,7 +6032,7 @@ export const dumpDe = {
               ],
               id: "a58c749c-0bb8-5131-8733-67f99f570cf8",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6050,7 +6050,7 @@ export const dumpDe = {
               ],
               id: "0eb59d0e-3ba6-56d9-8d54-baa1c28317a5",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6104,7 +6104,7 @@ export const dumpDe = {
               ],
               id: "9bf28511-69f5-52b4-b9a7-8608407c906f",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6122,7 +6122,7 @@ export const dumpDe = {
               ],
               id: "e9570c2d-5b3a-55b4-bdc1-ca9fa7046088",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6285,7 +6285,7 @@ export const dumpDe = {
           expanded_title: "Katakana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "6a3e11ff-5864-4f25-846e-5f8ac4691c5f.jpg",
           id: "f9bbc311-dcc6-4a10-973e-4fbea708f2ea",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&sa",
           lesson_order: 14,
           minimum_version: "2.5.0",
@@ -6324,7 +6324,7 @@ export const dumpDe = {
               ],
               id: "6352e983-3378-5978-9245-06783ab4bb71",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6342,7 +6342,7 @@ export const dumpDe = {
               ],
               id: "11360db9-a3e0-5b72-bc60-76ac1dfea18a",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6378,7 +6378,7 @@ export const dumpDe = {
               ],
               id: "7947c7a5-543d-57e3-8982-b35244ec9279",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6396,7 +6396,7 @@ export const dumpDe = {
               ],
               id: "774c907e-3440-50f0-aff5-eb81dbd2ce1f",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6450,7 +6450,7 @@ export const dumpDe = {
               ],
               id: "98ad5765-31fc-58d6-850f-0234ec252502",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6468,7 +6468,7 @@ export const dumpDe = {
               ],
               id: "b16839ff-dca3-5e7f-97b5-7ce9db6904a4",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6559,7 +6559,7 @@ export const dumpDe = {
               ],
               id: "88a481a0-37d0-5a9d-854b-2eb4c766f673",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6577,7 +6577,7 @@ export const dumpDe = {
               ],
               id: "1524a650-32dd-53cc-980b-286b28aeb72c",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6631,7 +6631,7 @@ export const dumpDe = {
               ],
               id: "5b34f113-39ad-5308-a303-22700a1ac0c8",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6649,7 +6649,7 @@ export const dumpDe = {
               ],
               id: "81521bd6-aae6-5f7c-a964-373a5bb33eb3",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6812,7 +6812,7 @@ export const dumpDe = {
           expanded_title: "Katakana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "2dc2bdaa-3088-4754-8d52-38dc208fe6e7.jpg",
           id: "16a77c35-e0ab-4db1-9b97-957313478bc8",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ta",
           lesson_order: 15,
           minimum_version: "2.5.0",
@@ -6851,7 +6851,7 @@ export const dumpDe = {
               ],
               id: "fb00376a-21bc-512a-b906-062a134c15f6",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6869,7 +6869,7 @@ export const dumpDe = {
               ],
               id: "8e5c1f90-1253-5da5-a666-ab9183ca0fbc",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6905,7 +6905,7 @@ export const dumpDe = {
               ],
               id: "f16501d9-5a63-5816-90eb-f54af089ad47",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6923,7 +6923,7 @@ export const dumpDe = {
               ],
               id: "7d54c94e-d2bc-5621-8e1a-a931516623be",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6977,7 +6977,7 @@ export const dumpDe = {
               ],
               id: "1722eead-4344-5107-9400-05e42a855802",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -6995,7 +6995,7 @@ export const dumpDe = {
               ],
               id: "4774e08a-ed5d-5657-bb01-8e562f214cd5",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7086,7 +7086,7 @@ export const dumpDe = {
               ],
               id: "3176d3d0-4934-5c54-81e8-f6189c4d5c6c",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7104,7 +7104,7 @@ export const dumpDe = {
               ],
               id: "95b83148-c06a-5cbe-a1a4-b970c426a4bc",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7158,7 +7158,7 @@ export const dumpDe = {
               ],
               id: "2379b8ed-dee3-500c-8bb8-43e62e4d8859",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7176,7 +7176,7 @@ export const dumpDe = {
               ],
               id: "834cd521-85bb-5a07-ac4c-c6660fee0298",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7339,7 +7339,7 @@ export const dumpDe = {
           expanded_title: "Katakana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "3f4e712a-7fc7-4e81-acab-72bb0ef427e4.jpg",
           id: "66ad874d-11f8-40e8-8473-2b6d6d5e20fb",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&na",
           lesson_order: 16,
           minimum_version: "2.5.0",
@@ -7378,7 +7378,7 @@ export const dumpDe = {
               ],
               id: "bd9083af-63b1-5545-b8f6-c7ace4eb899b",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7396,7 +7396,7 @@ export const dumpDe = {
               ],
               id: "5ef404e6-81b6-531f-a536-b99ec8f90a07",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7432,7 +7432,7 @@ export const dumpDe = {
               ],
               id: "5b4304df-d016-51cb-b300-3541752e5eda",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7450,7 +7450,7 @@ export const dumpDe = {
               ],
               id: "dedc2d84-8e34-57eb-b629-379f3f1a0cdc",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7504,7 +7504,7 @@ export const dumpDe = {
               ],
               id: "c71afa69-3a6a-5af3-a7bf-dd49e1647c05",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7522,7 +7522,7 @@ export const dumpDe = {
               ],
               id: "67d4e211-cb86-5e89-b929-fc067e8673eb",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7613,7 +7613,7 @@ export const dumpDe = {
               ],
               id: "eba7a040-50a0-5b89-bf61-2b1c1e95c976",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7631,7 +7631,7 @@ export const dumpDe = {
               ],
               id: "e8eb6ae6-8414-5e72-921f-5d81a399752f",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7685,7 +7685,7 @@ export const dumpDe = {
               ],
               id: "c0335988-56b0-5be2-8c01-f8b6d4cc0cf8",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7703,7 +7703,7 @@ export const dumpDe = {
               ],
               id: "df5c6adb-fd22-5211-a12b-6a163767e363",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7866,7 +7866,7 @@ export const dumpDe = {
           expanded_title: "Katakana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "a972e2ac-7362-4f98-801d-4389ba31e2f9.jpg",
           id: "98a5083f-ca0a-4fa0-8176-7b248dc47c18",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ha",
           lesson_order: 17,
           minimum_version: "2.5.0",
@@ -7905,7 +7905,7 @@ export const dumpDe = {
               ],
               id: "f1e62ff2-fb8e-5eca-abe1-9b17b87a784f",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7923,7 +7923,7 @@ export const dumpDe = {
               ],
               id: "da50c82d-5bc3-525e-81c5-cbb622f3cdc9",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7959,7 +7959,7 @@ export const dumpDe = {
               ],
               id: "699cce6a-f347-54f6-bffa-5488933b0642",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -7977,7 +7977,7 @@ export const dumpDe = {
               ],
               id: "8f38e234-2984-51e6-acfd-fa8feb7e2460",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8031,7 +8031,7 @@ export const dumpDe = {
               ],
               id: "87d2a972-e3db-5c77-9168-f836252cafea",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8049,7 +8049,7 @@ export const dumpDe = {
               ],
               id: "5ec2d944-eef3-5023-97cf-b8ad00c5d4ca",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8140,7 +8140,7 @@ export const dumpDe = {
               ],
               id: "0ddeed09-13a6-5505-9f46-abaae04ffea0",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8158,7 +8158,7 @@ export const dumpDe = {
               ],
               id: "f2760697-e8ba-5888-88fe-e274fc382ee3",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8212,7 +8212,7 @@ export const dumpDe = {
               ],
               id: "7f08b7c5-f2c4-59f2-afdf-87f87b718715",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8230,7 +8230,7 @@ export const dumpDe = {
               ],
               id: "8fd52291-0d8c-51f3-8faa-ac1962c45313",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8393,7 +8393,7 @@ export const dumpDe = {
           expanded_title: "Katakana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "07d0c986-1f16-4254-aa12-58aa2e0f9a49.jpg",
           id: "bac1acbe-74ed-45a0-8782-1c732496a635",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ma",
           lesson_order: 18,
           minimum_version: "2.5.0",
@@ -8432,7 +8432,7 @@ export const dumpDe = {
               ],
               id: "66677763-2f36-52a6-85e0-d5d1e7e36411",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8450,7 +8450,7 @@ export const dumpDe = {
               ],
               id: "6b2502bc-be91-5968-81a3-3ffdc169d885",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8486,7 +8486,7 @@ export const dumpDe = {
               ],
               id: "603b3ff3-6cce-586b-8773-bd12ce6725a4",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8504,7 +8504,7 @@ export const dumpDe = {
               ],
               id: "ca2daa76-b4d6-5222-8bca-b81e6de0658f",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8558,7 +8558,7 @@ export const dumpDe = {
               ],
               id: "29639c17-455f-503e-b6dc-5ada42b480a4",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8576,7 +8576,7 @@ export const dumpDe = {
               ],
               id: "6ed517f9-cead-596b-8656-84cca612127e",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8667,7 +8667,7 @@ export const dumpDe = {
               ],
               id: "d2ff59de-9b04-554f-8789-54cb5a976187",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8685,7 +8685,7 @@ export const dumpDe = {
               ],
               id: "917a1c61-54e5-5731-bcc5-7ac35e0d53e5",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8739,7 +8739,7 @@ export const dumpDe = {
               ],
               id: "588dea52-c148-5584-a407-753a53a5378c",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8757,7 +8757,7 @@ export const dumpDe = {
               ],
               id: "f48d2ce3-1ccd-5d67-a377-fc221a38fa0b",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8920,7 +8920,7 @@ export const dumpDe = {
           expanded_title: "Katakana: tr:や, tr:ゆ, tr:よ",
           icon: "073066af-16d8-40c7-9b73-e9e75235fd1c.jpg",
           id: "ce7fcd71-814c-4f1b-bbbf-55256b717654",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ya",
           lesson_order: 19,
           minimum_version: "2.5.0",
@@ -8959,7 +8959,7 @@ export const dumpDe = {
               ],
               id: "4a1b62a3-fbd5-57b4-906c-d602aff0f68c",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -8977,7 +8977,7 @@ export const dumpDe = {
               ],
               id: "c5165d61-f9c2-5323-b4c9-6e75e2cd14c9",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9013,7 +9013,7 @@ export const dumpDe = {
               ],
               id: "9afc179e-b6c2-543a-a439-b5cc9a0adc18",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9031,7 +9031,7 @@ export const dumpDe = {
               ],
               id: "d0315ebb-f613-5cfe-9b80-9ce39f90a39c",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9085,7 +9085,7 @@ export const dumpDe = {
               ],
               id: "942f0976-7d79-5d34-a4c5-d73cbbd82822",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9103,7 +9103,7 @@ export const dumpDe = {
               ],
               id: "4f2285cc-2c9c-503d-b513-4bbcf2c3c9f3",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9321,7 +9321,7 @@ export const dumpDe = {
           expanded_title: "Katakana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
           icon: "a6b62c7e-2ec8-44ed-b9a2-00bc4b099915.jpg",
           id: "402ac82c-eb91-48bc-a2a1-998465e1e0b2",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ra",
           lesson_order: 20,
           minimum_version: "2.5.0",
@@ -9360,7 +9360,7 @@ export const dumpDe = {
               ],
               id: "afb76720-374c-526e-aac8-ebf7a7a452dc",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9378,7 +9378,7 @@ export const dumpDe = {
               ],
               id: "dacd6d97-7fff-574e-abfa-ba07ff7d44fc",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9414,7 +9414,7 @@ export const dumpDe = {
               ],
               id: "36d59679-efef-503b-9e18-71fa7db55d0d",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9432,7 +9432,7 @@ export const dumpDe = {
               ],
               id: "1a5f184b-5446-52b7-a95e-4ec7bfb18ec7",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9486,7 +9486,7 @@ export const dumpDe = {
               ],
               id: "2a1018c0-1445-50ba-a4b6-996c67c09eeb",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9504,7 +9504,7 @@ export const dumpDe = {
               ],
               id: "b6e43919-a99c-5c33-9fa3-1237c5934529",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9595,7 +9595,7 @@ export const dumpDe = {
               ],
               id: "21272492-df62-5cc5-b775-0dbb21c0b50d",
               screen_order: 14,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9613,7 +9613,7 @@ export const dumpDe = {
               ],
               id: "d8c85614-18d3-5c1e-b233-cefccecf1385",
               screen_order: 15,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9667,7 +9667,7 @@ export const dumpDe = {
               ],
               id: "1c17c6ce-d2d3-5f52-83b6-2ef45928e569",
               screen_order: 18,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9685,7 +9685,7 @@ export const dumpDe = {
               ],
               id: "a75558c0-5709-59c2-a3d8-7bfe0f91bcd2",
               screen_order: 19,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9848,7 +9848,7 @@ export const dumpDe = {
           expanded_title: "Katakana: tr:わ, tr:を, tr:ん",
           icon: "b57e394a-8e74-4700-9171-e9129bc4de2e.jpg",
           id: "30ea0de4-742f-48d9-90c0-29135c7e4266",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&wa",
           lesson_order: 21,
           minimum_version: "2.5.0",
@@ -9887,7 +9887,7 @@ export const dumpDe = {
               ],
               id: "c05dc465-405d-500c-9490-f8bf40694c35",
               screen_order: 2,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9905,7 +9905,7 @@ export const dumpDe = {
               ],
               id: "ba4db49d-fb72-5a6c-85a3-6838d9de0a02",
               screen_order: 3,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9941,7 +9941,7 @@ export const dumpDe = {
               ],
               id: "3c051730-796e-55bf-b3c4-99e176ecb1ba",
               screen_order: 5,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -9959,7 +9959,7 @@ export const dumpDe = {
               ],
               id: "49920b6f-c860-5c27-b3c4-67d91c7b11ae",
               screen_order: 6,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -10013,7 +10013,7 @@ export const dumpDe = {
               ],
               id: "474a43f2-5871-5f00-b6d7-bbd2c51c60f4",
               screen_order: 9,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -10031,7 +10031,7 @@ export const dumpDe = {
               ],
               id: "af561a38-6a17-5d68-9d15-46c26fb572d0",
               screen_order: 10,
-              title: "Schreiben Sie die Silbe in der richtigen Strichreihenfolge.",
+              title: "Schreiben Sie die Silbe richtig.",
             },
             {
               blocks: [
@@ -10256,7 +10256,7 @@ export const dumpDe = {
           expanded_title: "Information",
           icon: "e55a6e88-4d4a-404c-9826-d5e88567ad8b.jpg",
           id: "d8a72b96-2e28-442b-824c-c5c414bf647f",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&dakuon",
           lesson_order: 22,
           minimum_version: "2.5.0",
@@ -10788,7 +10788,7 @@ export const dumpDe = {
           expanded_title: "Information",
           icon: "60466bc2-00e9-4920-ab2a-d65be847ab19.jpg",
           id: "8eb64282-cd6b-4ae6-80e5-cca45aa16470",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longVowels",
           lesson_order: 23,
           minimum_version: "2.5.0",
@@ -10995,7 +10995,7 @@ export const dumpDe = {
           expanded_title: "Information",
           icon: "35170a20-86ba-4c4e-bd01-d9be0d008026.jpg",
           id: "2cd43441-15ce-4b04-ad4b-862a9d43ae1c",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longConsonants",
           lesson_order: 24,
           minimum_version: "2.5.0",
@@ -11031,7 +11031,7 @@ export const dumpDe = {
                   content: {
                     rules: [
                       "かた (tr(かた)) - Schulter",
-                      "かつた (tr(かつた)) - Name",
+                      "かつた (tr(かつた)) - Nachname Katsuta",
                       "かった (tr(かった)) - gewann",
                     ],
                   },
@@ -11134,7 +11134,7 @@ export const dumpDe = {
                   block_order: 3,
                   content: {
                     rules: [
-                      "こんにちは (tr(こんにちは)) - Guten Tag",
+                      "こんにちは (tr(こんにちわ)) - Guten Tag",
                       "こんばんは (tr(こんばんは)) - Guten Abend",
                     ],
                   },
@@ -11156,7 +11156,7 @@ export const dumpDe = {
           expanded_title: "Information",
           icon: "bb3db32f-041c-4e39-9b7d-9c3515a0e3f8.jpg",
           id: "e9aca9a2-cc52-4ad1-9ba8-245c701131ee",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&yoon",
           lesson_order: 25,
           minimum_version: "2.5.0",
@@ -11557,7 +11557,7 @@ export const dumpDe = {
           expanded_title: "Information",
           icon: "c5fda457-5b04-4ce9-979b-05f109fda391.jpg",
           id: "710f90ca-e97e-41f3-a77e-3af01b0704ab",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&dakuonAndHandakuon",
           lesson_order: 26,
           minimum_version: "2.5.0",
@@ -12051,7 +12051,7 @@ export const dumpDe = {
           expanded_title: "Information",
           icon: "7c7dc482-980c-492f-99d2-19a6d83d2f77.jpg",
           id: "22564cf4-be29-4a76-8202-c96d53fe9a72",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longVowels",
           lesson_order: 27,
           minimum_version: "2.5.0",
@@ -12278,7 +12278,7 @@ export const dumpDe = {
           expanded_title: "Informationen",
           icon: "2542ff58-d7f7-4f23-a669-1908f5d7adad.jpg",
           id: "bf7fe68b-503d-47a2-8de4-4c9ebebbe634",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longConsonants",
           lesson_order: 28,
           minimum_version: "2.5.0",
@@ -12425,11 +12425,11 @@ export const dumpDe = {
           topic_id: "f0ce3abb-3ec6-428c-87b8-5f9dcc72509a",
         },
         {
-          expanded_subtitle: "Hier erzählen wir Ihnen über die zusätzlichen Klänge in Katakana",
+          expanded_subtitle: "Hier erzählen wir Ihnen über die zusätzlichen Klänge in Katakana.",
           expanded_title: "Information",
           icon: "f8402718-ad6a-495b-b429-c1f83c51d77f.jpg",
           id: "bb884d2e-5aa6-460c-8cf4-dbe906b8f2a9",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&additionalSounds",
           lesson_order: 29,
           minimum_version: "2.5.0",
@@ -12838,11 +12838,11 @@ export const dumpDe = {
           topic_id: "f0ce3abb-3ec6-428c-87b8-5f9dcc72509a",
         },
         {
-          expanded_subtitle: "Hier erzählen wir Ihnen über Yoon",
+          expanded_subtitle: "Hier erzählen wir Ihnen über Yoon.",
           expanded_title: "Informationen",
           icon: "aafe6dcb-4193-4d5e-9d95-258ffb60314f.jpg",
           id: "84c69199-5b45-43f3-b50b-051d2c75ff6b",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&yoon",
           lesson_order: 30,
           minimum_version: "2.5.0",
@@ -13232,11 +13232,11 @@ export const dumpDe = {
           topic_id: "f0ce3abb-3ec6-428c-87b8-5f9dcc72509a",
         },
         {
-          expanded_subtitle: "Hier erzählen wir Ihnen, wie Sie weiter Japanisch lernen können",
+          expanded_subtitle: "Hier erzählen wir Ihnen, wie Sie weiter Japanisch lernen können.",
           expanded_title: "Informationen",
           icon: "18800460-fe6b-4b37-bbb2-259253cdcbbb.jpg",
           id: "5f7e1414-bded-4ddc-a7ab-7f6f06da8f18",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/whats-next",
           lesson_order: 31,
           minimum_version: "2.5.0",
@@ -13319,14 +13319,6 @@ export const dumpDe = {
                   id: "2e208d21-d148-58a6-bd54-214508e4ac8b",
                   type: "rule",
                 },
-                {
-                  block_order: 3,
-                  content: {
-                    text: "Die meisten beginnen mit N5 und arbeiten sich nach und nach nach oben.",
-                  },
-                  id: "db80f123-1828-5326-8054-cb69f713e3ee",
-                  type: "text",
-                },
               ],
               id: "e1c43b4e-0633-57af-b806-20b0c9adf34a",
               screen_order: 3,
@@ -13337,7 +13329,7 @@ export const dumpDe = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Die Reihe ist nach Niveaus aufgeteilt:",
+                    text: "Die Reihe Minna no Nihongo ist nach Niveaus aufgeteilt:",
                   },
                   id: "3a68d9e7-548d-580f-9173-0d43a9fc6c6e",
                   type: "text",
@@ -13348,8 +13340,6 @@ export const dumpDe = {
                     rules: [
                       "**Minna no Nihongo Shokyuu I** (Beginner 1) — etwa Niveau N5",
                       "**Minna no Nihongo Shokyuu II** (Beginner 2) — etwa Niveau N4",
-                      "**Minna no Nihongo Chukyuu I** (Intermediate 1) — etwa Niveau N3",
-                      "Danach folgen die fortgeschritteneren Teile der Reihe",
                     ],
                   },
                   id: "02e51a98-f538-536f-a0cd-db649d15ec14",
@@ -13358,15 +13348,23 @@ export const dumpDe = {
                 {
                   block_order: 3,
                   content: {
-                    text: "Wir empfehlen, mit Shokyuu I zu beginnen und der Reihe nach vorzugehen. Zu jedem Lehrbuch gibt es ein Übungsbuch (Workbook) und eine Grammatikübersetzung, unter anderem auf Deutsch und Englisch.",
+                    text: "Wir empfehlen, mit Shokyuu I zu beginnen und der Reihe nach vorzugehen. Zu jedem Lehrbuch gibt es ein Übungsbuch (Workbook) und eine Grammatikübersetzung in verschiedene Sprachen.",
                   },
                   id: "dd58d4bf-fb6d-5012-b9c9-11ecbe201446",
+                  type: "text",
+                },
+                {
+                  block_order: 4,
+                  content: {
+                    text: "Nach dem Niveau N4 empfehlen wir Ihnen, herauszufinden, welche Lehrbuchreihe am besten zu Ihnen passt.",
+                  },
+                  id: "385db794-ac95-5d9d-aea2-345b4a29cf2b",
                   type: "text",
                 },
               ],
               id: "b3eb18c4-5dc9-56d5-857c-708c290ebd6f",
               screen_order: 4,
-              title: "Welche Bücher von Minna no Nihongo Sie brauchen",
+              title: "Welche Bücher Sie brauchen",
             },
             {
               blocks: [
@@ -13457,7 +13455,7 @@ export const dumpDe = {
                   content: {
                     rules: [
                       "Verschiedene Online-Wörterbücher",
-                      "Audiomaterial zu den Lehrbüchern von Minna no Nihongo",
+                      "Audiomaterial zu den Lehrbüchern",
                       "Einfache japanische Videos und Podcasts für Anfänger",
                     ],
                   },

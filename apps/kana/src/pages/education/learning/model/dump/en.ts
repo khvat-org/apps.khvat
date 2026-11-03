@@ -8,7 +8,7 @@ export const dumpEn = {
           expanded_title: "Information",
           icon: "4f99e07e-fa33-404a-9dfe-f0914dbdfade.jpg",
           id: "b846e8c8-a182-4e08-99de-6407cfcce208",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/introduction",
           lesson_order: 1,
           minimum_version: "2.5.0",
@@ -204,7 +204,7 @@ export const dumpEn = {
           expanded_title: "Hiragana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "37a3d605-c9ea-4875-86b8-4acb1604c2a2.jpg",
           id: "67ad79ea-5228-434e-bb9f-a15069aa399e",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&a",
           lesson_order: 2,
           minimum_version: "2.5.0",
@@ -243,7 +243,7 @@ export const dumpEn = {
               ],
               id: "de368a95-4019-5769-8d0f-2b8ff670c5ec",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -261,7 +261,7 @@ export const dumpEn = {
               ],
               id: "53de6c5b-da70-594c-8437-07b0b9cba5f1",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -297,7 +297,7 @@ export const dumpEn = {
               ],
               id: "bfe49e09-d1f8-51c9-8f7e-fabcdcf621c3",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -315,7 +315,7 @@ export const dumpEn = {
               ],
               id: "53b90af4-2f1f-5ab3-84b0-19fcc025c296",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -369,7 +369,7 @@ export const dumpEn = {
               ],
               id: "2e4651c3-8551-59b5-a8b5-d08de003af1d",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -387,7 +387,7 @@ export const dumpEn = {
               ],
               id: "4d60121c-95af-5ca1-9ac9-a6efa18a22c0",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -478,7 +478,7 @@ export const dumpEn = {
               ],
               id: "a5199c89-2af9-5024-a16c-8eb31858a557",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -496,7 +496,7 @@ export const dumpEn = {
               ],
               id: "2c4e728b-8a6c-5d0d-af7f-4ea9c2817516",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -550,7 +550,7 @@ export const dumpEn = {
               ],
               id: "5960d697-16e5-5c0b-a67f-2e7df2ae4932",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -568,7 +568,7 @@ export const dumpEn = {
               ],
               id: "bad6060c-d5f9-5bed-814e-1fef01fc84dc",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -727,11 +727,11 @@ export const dumpEn = {
           topic_id: "dfa058e8-9179-460b-b978-967645483dbf",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:か",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:か.",
           expanded_title: "Hiragana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "bea297c4-29a1-48d8-b13e-c30bae9d58ba.jpg",
           id: "c8c4b23f-27f1-4054-8516-f279c76a508e",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ka",
           lesson_order: 3,
           minimum_version: "2.5.0",
@@ -770,7 +770,7 @@ export const dumpEn = {
               ],
               id: "24863a17-519a-5a22-8430-24feb934f141",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -788,7 +788,7 @@ export const dumpEn = {
               ],
               id: "1154865e-f716-5a7b-93fb-606c4e20045a",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -824,7 +824,7 @@ export const dumpEn = {
               ],
               id: "5d6b5ec2-11f6-525d-a9d6-de3e76b7f9e3",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -842,7 +842,7 @@ export const dumpEn = {
               ],
               id: "c520e4ba-b182-56a0-8f91-4cbf848ba8b9",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -896,7 +896,7 @@ export const dumpEn = {
               ],
               id: "131b9e5d-6de8-5410-ae3a-c52f4bf8c2f5",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -914,7 +914,7 @@ export const dumpEn = {
               ],
               id: "8318bab6-05c0-5b26-9b54-35f3c13c7af2",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1005,7 +1005,7 @@ export const dumpEn = {
               ],
               id: "8ca3af0c-3435-5d79-b98b-00ef03e88dac",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1023,7 +1023,7 @@ export const dumpEn = {
               ],
               id: "a7ef3b53-690e-5cdf-962b-75fd605afa4b",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1077,7 +1077,7 @@ export const dumpEn = {
               ],
               id: "4b4a6903-ff88-55b0-841b-d83d97c255fe",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1095,7 +1095,7 @@ export const dumpEn = {
               ],
               id: "d1237a68-54a2-5ed5-bf26-4b99ea880d30",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1254,11 +1254,11 @@ export const dumpEn = {
           topic_id: "dfa058e8-9179-460b-b978-967645483dbf",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:さ",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:さ.",
           expanded_title: "Hiragana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "d69655e1-1709-4601-8ce7-832165d7d556.jpg",
           id: "81918c2f-c98c-4a12-be38-b01d45c74baa",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&sa",
           lesson_order: 4,
           minimum_version: "2.5.0",
@@ -1297,7 +1297,7 @@ export const dumpEn = {
               ],
               id: "f3e1b3ef-b999-56c4-bf25-3d4e7c70a389",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1315,7 +1315,7 @@ export const dumpEn = {
               ],
               id: "79158203-9d04-579c-9900-11d7335147d3",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1351,7 +1351,7 @@ export const dumpEn = {
               ],
               id: "794786cb-5831-5579-81ec-d62ada13e7fb",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1369,7 +1369,7 @@ export const dumpEn = {
               ],
               id: "db059256-42fb-59c3-9b27-a950920847f9",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1423,7 +1423,7 @@ export const dumpEn = {
               ],
               id: "29e24184-09eb-56da-b722-3e81ae7ceca4",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1441,7 +1441,7 @@ export const dumpEn = {
               ],
               id: "ab1590c9-4836-5107-8525-11d2d9254b05",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1532,7 +1532,7 @@ export const dumpEn = {
               ],
               id: "79f9d8eb-7373-50b6-b6c2-ce0d50cbafef",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1550,7 +1550,7 @@ export const dumpEn = {
               ],
               id: "2f086073-0d3c-552f-89d0-fa6c5e8d8387",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1604,7 +1604,7 @@ export const dumpEn = {
               ],
               id: "f88e512b-7702-56b3-8497-15577a8876a3",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1622,7 +1622,7 @@ export const dumpEn = {
               ],
               id: "6b66b791-c5c4-5e97-95bc-1895ad4108fc",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1781,11 +1781,11 @@ export const dumpEn = {
           topic_id: "dfa058e8-9179-460b-b978-967645483dbf",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:た",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:た.",
           expanded_title: "Hiragana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "cce66d6e-826a-4b29-8eaa-50df25e09c40.jpg",
           id: "f6db5464-fc56-4825-82a7-c689fbc7599c",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ta",
           lesson_order: 5,
           minimum_version: "2.5.0",
@@ -1824,7 +1824,7 @@ export const dumpEn = {
               ],
               id: "7b7ed553-4930-5d7b-b65e-b1ce19c5e18e",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1842,7 +1842,7 @@ export const dumpEn = {
               ],
               id: "4f8115e9-3256-5813-8a07-a1a87c3b1afe",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1878,7 +1878,7 @@ export const dumpEn = {
               ],
               id: "913b920a-5f77-5653-a1bd-4e42f3e5efa8",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1896,7 +1896,7 @@ export const dumpEn = {
               ],
               id: "fd90db2b-d6f1-5ab9-bb37-83d2ab311717",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1950,7 +1950,7 @@ export const dumpEn = {
               ],
               id: "ef253030-626f-5260-9d56-ff15f8c1904b",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -1968,7 +1968,7 @@ export const dumpEn = {
               ],
               id: "025722ea-8a31-56c0-b91a-1266be364271",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2059,7 +2059,7 @@ export const dumpEn = {
               ],
               id: "ab618e2b-e8e1-5959-af2d-b543e8f31ce1",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2077,7 +2077,7 @@ export const dumpEn = {
               ],
               id: "cd9e1a7d-4559-58d8-b11c-9c35ceedcdad",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2131,7 +2131,7 @@ export const dumpEn = {
               ],
               id: "4a0bb831-001a-58d2-afee-ad0c078d970d",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2149,7 +2149,7 @@ export const dumpEn = {
               ],
               id: "b85ef6de-a60c-5c77-9fd4-64cb41e2c28d",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2308,11 +2308,11 @@ export const dumpEn = {
           topic_id: "dfa058e8-9179-460b-b978-967645483dbf",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:な",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:な.",
           expanded_title: "Hiragana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "80cbe968-4fae-45ab-a78b-d6cf17ad7d31.jpg",
           id: "82f106ff-27a5-4d76-a0b4-470335de4545",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&na",
           lesson_order: 6,
           minimum_version: "2.5.0",
@@ -2351,7 +2351,7 @@ export const dumpEn = {
               ],
               id: "537aaf0f-c626-5183-8b9b-1a0935d403ad",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2369,7 +2369,7 @@ export const dumpEn = {
               ],
               id: "0b32dcfa-4483-58c1-8a3b-e3c27eab4a8b",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2405,7 +2405,7 @@ export const dumpEn = {
               ],
               id: "7e68626a-7ab0-5175-8bad-88d6f316e4b2",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2423,7 +2423,7 @@ export const dumpEn = {
               ],
               id: "5ec2bfac-9cf9-5a05-b433-3bc81b469dfd",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2477,7 +2477,7 @@ export const dumpEn = {
               ],
               id: "7a44cf72-6ac4-50b3-9e63-30899b6bcbcc",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2495,7 +2495,7 @@ export const dumpEn = {
               ],
               id: "78acf73a-fabc-5a32-9054-5155a32afef7",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2586,7 +2586,7 @@ export const dumpEn = {
               ],
               id: "1c26384c-c61b-5813-abfe-21b6860a84a3",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2604,7 +2604,7 @@ export const dumpEn = {
               ],
               id: "e8d39e67-c58e-52a9-8b1d-5d1ede726fcb",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2658,7 +2658,7 @@ export const dumpEn = {
               ],
               id: "df1946cf-b571-55e1-a305-d5526ae170a4",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2676,7 +2676,7 @@ export const dumpEn = {
               ],
               id: "9903c828-441c-5aa3-a255-0d9c014ff6bb",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2835,11 +2835,11 @@ export const dumpEn = {
           topic_id: "dfa058e8-9179-460b-b978-967645483dbf",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:は",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:は.",
           expanded_title: "Hiragana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "5ab5e704-d6ba-4fde-a6f3-36745e149ed9.jpg",
           id: "f6d52a0b-ca75-40f6-a8aa-2b2e53faa613",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ha",
           lesson_order: 7,
           minimum_version: "2.5.0",
@@ -2878,7 +2878,7 @@ export const dumpEn = {
               ],
               id: "ce361520-6c6f-5b4d-b4ba-07f3a9c37692",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2896,7 +2896,7 @@ export const dumpEn = {
               ],
               id: "4e932c64-0def-55c4-aebc-dc30bc5c57da",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2932,7 +2932,7 @@ export const dumpEn = {
               ],
               id: "a8c16513-a2e2-5003-9236-729af87c8042",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -2950,7 +2950,7 @@ export const dumpEn = {
               ],
               id: "ea2fc877-55e6-55de-841e-d5b83d3ce0d2",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3004,7 +3004,7 @@ export const dumpEn = {
               ],
               id: "957f811f-2749-5681-8169-ae1196dc4d96",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3022,7 +3022,7 @@ export const dumpEn = {
               ],
               id: "d1883be4-b296-5ec7-a45f-f2afe33cdcd8",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3113,7 +3113,7 @@ export const dumpEn = {
               ],
               id: "ae082266-dc6a-546d-a153-357bd6d0fcdb",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3131,7 +3131,7 @@ export const dumpEn = {
               ],
               id: "1aaf90b6-ed71-5dc2-b8c3-0b5f46792df4",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3185,7 +3185,7 @@ export const dumpEn = {
               ],
               id: "be3b66ab-d52c-57f9-b499-319390bbd402",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3203,7 +3203,7 @@ export const dumpEn = {
               ],
               id: "642f7580-3efa-5e69-9d6d-344423ce4524",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3362,11 +3362,11 @@ export const dumpEn = {
           topic_id: "dfa058e8-9179-460b-b978-967645483dbf",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:ま",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:ま.",
           expanded_title: "Hiragana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "f53fde6a-ca94-4b15-8397-d567a3a17906.jpg",
           id: "b825740c-1ee3-4a3a-b54b-64bd9e306f8c",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ma",
           lesson_order: 8,
           minimum_version: "2.5.0",
@@ -3405,7 +3405,7 @@ export const dumpEn = {
               ],
               id: "5d2b86a9-3c25-5bd2-89d0-853d26769dfa",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3423,7 +3423,7 @@ export const dumpEn = {
               ],
               id: "54d26ce8-5e78-578c-a6ce-523456698de7",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3459,7 +3459,7 @@ export const dumpEn = {
               ],
               id: "0fbe2bd9-aef8-59c2-9cc5-4206050eeccf",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3477,7 +3477,7 @@ export const dumpEn = {
               ],
               id: "06b42897-a795-56f3-9bb5-a24d7a927826",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3531,7 +3531,7 @@ export const dumpEn = {
               ],
               id: "56d1bf99-6393-5371-a975-a537d33dedcf",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3549,7 +3549,7 @@ export const dumpEn = {
               ],
               id: "3a8f23a5-9c77-54b1-807c-0d1109601c59",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3640,7 +3640,7 @@ export const dumpEn = {
               ],
               id: "0ef75f79-7e38-5bf1-9f6f-af628a3ef333",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3658,7 +3658,7 @@ export const dumpEn = {
               ],
               id: "d11619df-d0f3-56d2-b713-f988cd1ef618",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3712,7 +3712,7 @@ export const dumpEn = {
               ],
               id: "e5d70e79-4cef-5797-84fb-6e630a60475c",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3730,7 +3730,7 @@ export const dumpEn = {
               ],
               id: "c5dcfa5c-5eb3-513c-b6e8-fce90a9fc351",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3889,11 +3889,11 @@ export const dumpEn = {
           topic_id: "dfa058e8-9179-460b-b978-967645483dbf",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:や",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:や.",
           expanded_title: "Hiragana: tr:や, tr:ゆ, tr:よ",
-          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
+          icon: "998d7b1d-3751-407b-8909-da9dc7983cdb.jpg",
           id: "997d12f5-320f-4bef-a7ba-1e4f7c126e98",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ya",
           lesson_order: 9,
           minimum_version: "2.5.0",
@@ -3932,7 +3932,7 @@ export const dumpEn = {
               ],
               id: "7cce959e-8506-5575-9176-ccf1587d94c8",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3950,7 +3950,7 @@ export const dumpEn = {
               ],
               id: "31053ee5-1c26-5964-889a-369a3434a4ad",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -3986,7 +3986,7 @@ export const dumpEn = {
               ],
               id: "f2616499-748a-5706-b6f0-bc5bd0908b96",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4004,7 +4004,7 @@ export const dumpEn = {
               ],
               id: "87917d0b-a27e-554d-9f36-3515cf48a5e6",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4058,7 +4058,7 @@ export const dumpEn = {
               ],
               id: "ba75b9a2-6041-5893-91f1-8bd2fac05bea",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4076,7 +4076,7 @@ export const dumpEn = {
               ],
               id: "77aeb898-d976-5bca-9233-7fd0dc3ff824",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4290,11 +4290,11 @@ export const dumpEn = {
           topic_id: "dfa058e8-9179-460b-b978-967645483dbf",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:ら",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:ら.",
           expanded_title: "Hiragana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
-          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
+          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
           id: "1849737e-9227-4d2a-bb01-7de945152d4e",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ra",
           lesson_order: 10,
           minimum_version: "2.5.0",
@@ -4333,7 +4333,7 @@ export const dumpEn = {
               ],
               id: "ab2b1d85-c574-5dcf-9dfb-104ef470e9ff",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4351,7 +4351,7 @@ export const dumpEn = {
               ],
               id: "9d2809c5-d3ee-5843-867a-0fb489b48bfe",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4387,7 +4387,7 @@ export const dumpEn = {
               ],
               id: "87406548-9cf6-5e0f-a9c4-26e45847ed96",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4405,7 +4405,7 @@ export const dumpEn = {
               ],
               id: "31f4ea9f-6a06-59db-84c5-8a47e39c04c3",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4459,7 +4459,7 @@ export const dumpEn = {
               ],
               id: "39ecc7fa-d804-5159-a51f-bd41eb066714",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4477,7 +4477,7 @@ export const dumpEn = {
               ],
               id: "e14b62ba-ef81-5c37-8bce-5fb0b5d4ff8a",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4568,7 +4568,7 @@ export const dumpEn = {
               ],
               id: "7cbc69f8-23c2-5469-b0b4-e496a1014024",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4586,7 +4586,7 @@ export const dumpEn = {
               ],
               id: "0cd1c1af-4d89-5efa-b5b9-18c1c7a48594",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4640,7 +4640,7 @@ export const dumpEn = {
               ],
               id: "47d70fa7-2464-5024-a152-1df047500cb4",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4658,7 +4658,7 @@ export const dumpEn = {
               ],
               id: "ded97c17-93c3-5da5-be6d-d2ca1455481c",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4819,9 +4819,9 @@ export const dumpEn = {
         {
           expanded_subtitle: "Learn to read and write the syllables: tr:わ, tr:を, tr:ん.",
           expanded_title: "Hiragana: tr:わ, tr:を, tr:ん",
-          icon: "c4480f8f-71ee-4df0-886f-508b39912b4c.jpg",
+          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
           id: "48b433aa-4794-4711-b9cf-efaea67b1e81",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&wa",
           lesson_order: 11,
           minimum_version: "2.5.0",
@@ -4860,7 +4860,7 @@ export const dumpEn = {
               ],
               id: "34d52ea2-532c-5dd4-ba83-300680f84597",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4878,7 +4878,7 @@ export const dumpEn = {
               ],
               id: "9fdde6d2-5c9c-5dd9-b7af-b08079ed9338",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4914,7 +4914,7 @@ export const dumpEn = {
               ],
               id: "14ced2e9-0773-519f-a232-d2b99004fd41",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4932,7 +4932,7 @@ export const dumpEn = {
               ],
               id: "7ad90f85-a2c6-5ed7-9783-13ac825b34ce",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -4986,7 +4986,7 @@ export const dumpEn = {
               ],
               id: "bd90a151-3ce1-5976-b726-bdbdb94af2e5",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5004,7 +5004,7 @@ export const dumpEn = {
               ],
               id: "d55e0787-6b59-5fc6-be14-57cb69c9f737",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5229,7 +5229,7 @@ export const dumpEn = {
           expanded_title: "Katakana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "515f18bb-8797-4e60-b1b0-40f9b60aebcb.jpg",
           id: "9c4ced7d-2482-4850-8593-55c7261a4570",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&a",
           lesson_order: 12,
           minimum_version: "2.5.0",
@@ -5268,7 +5268,7 @@ export const dumpEn = {
               ],
               id: "6115da5c-ad48-5692-8a5c-841a70b8080c",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5286,7 +5286,7 @@ export const dumpEn = {
               ],
               id: "a71794dc-e94d-5694-9d55-f666acdba384",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5322,7 +5322,7 @@ export const dumpEn = {
               ],
               id: "87344550-bf8a-5477-857b-460fc755bea8",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5340,7 +5340,7 @@ export const dumpEn = {
               ],
               id: "df9b1f2f-9090-51be-ab24-0d9ff368819b",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5394,7 +5394,7 @@ export const dumpEn = {
               ],
               id: "3703b99c-28b1-5e9f-b2a0-16ce4135d0e3",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5412,7 +5412,7 @@ export const dumpEn = {
               ],
               id: "fdc881f6-1cb9-51b0-96c4-066a291952f5",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5503,7 +5503,7 @@ export const dumpEn = {
               ],
               id: "c0919129-365c-55e3-ba13-2db947210088",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5521,7 +5521,7 @@ export const dumpEn = {
               ],
               id: "37c6426c-4f22-51ea-a6c8-88faaa92ed3f",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5575,7 +5575,7 @@ export const dumpEn = {
               ],
               id: "2023dcf2-4d5a-56e4-8c09-b274fcd68bb8",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5593,7 +5593,7 @@ export const dumpEn = {
               ],
               id: "ef60f45b-0a5f-5af8-ac74-4dc077228cf6",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5752,11 +5752,11 @@ export const dumpEn = {
           topic_id: "c7f34721-d278-4344-a61a-12cde5220c3b",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:か",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:か.",
           expanded_title: "Katakana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "655dcf64-0666-4be6-8c19-0993b1ac03ec.jpg",
           id: "978e9493-bc86-46ca-b712-95131fdcff67",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ka",
           lesson_order: 13,
           minimum_version: "2.5.0",
@@ -5795,7 +5795,7 @@ export const dumpEn = {
               ],
               id: "dc0b6f14-93c3-5c62-88ac-1b6219d41109",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5813,7 +5813,7 @@ export const dumpEn = {
               ],
               id: "ab0f7e23-3822-5df8-a953-127ae24cef93",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5849,7 +5849,7 @@ export const dumpEn = {
               ],
               id: "a25a2e1b-064c-5e28-bb6d-f2ae766dbcdc",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5867,7 +5867,7 @@ export const dumpEn = {
               ],
               id: "cea06d82-acfd-5b39-82b6-590a6810a968",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5921,7 +5921,7 @@ export const dumpEn = {
               ],
               id: "25a5aff4-5b59-5306-a7f1-0e45b2020a1d",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -5939,7 +5939,7 @@ export const dumpEn = {
               ],
               id: "e40f5db2-0e23-5026-a92c-9cacc913d85a",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6030,7 +6030,7 @@ export const dumpEn = {
               ],
               id: "63e344f1-7e13-5fed-b0f9-3f3940bec274",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6048,7 +6048,7 @@ export const dumpEn = {
               ],
               id: "ec2413aa-7d88-5e59-bedc-b42118a49b68",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6102,7 +6102,7 @@ export const dumpEn = {
               ],
               id: "48689ec6-a3fb-5088-be74-b9edf1f1620c",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6120,7 +6120,7 @@ export const dumpEn = {
               ],
               id: "77799df7-0844-530f-980b-9f87aeaf98f1",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6279,11 +6279,11 @@ export const dumpEn = {
           topic_id: "c7f34721-d278-4344-a61a-12cde5220c3b",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:さ",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:さ.",
           expanded_title: "Katakana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "6a3e11ff-5864-4f25-846e-5f8ac4691c5f.jpg",
           id: "5205e2a4-0bef-4d82-91be-fa9685050a02",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&sa",
           lesson_order: 14,
           minimum_version: "2.5.0",
@@ -6322,7 +6322,7 @@ export const dumpEn = {
               ],
               id: "69ad0dc5-5033-5bf8-ae42-6c697b6eceed",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6340,7 +6340,7 @@ export const dumpEn = {
               ],
               id: "6af0e6fa-17ec-5621-962a-35ec4e293447",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6376,7 +6376,7 @@ export const dumpEn = {
               ],
               id: "fc180d4f-140b-501b-9fb4-c1a3a8fb08d2",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6394,7 +6394,7 @@ export const dumpEn = {
               ],
               id: "bd1f321b-1c2d-54f9-ba2a-3fdaefba07e8",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6448,7 +6448,7 @@ export const dumpEn = {
               ],
               id: "c14f9a1a-c1c6-549f-b9da-fc08c6c794cb",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6466,7 +6466,7 @@ export const dumpEn = {
               ],
               id: "ff02fca8-831f-554a-af75-d2b37e628af8",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6557,7 +6557,7 @@ export const dumpEn = {
               ],
               id: "6b7357d6-a4ba-5bc6-9934-088b3be5ca81",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6575,7 +6575,7 @@ export const dumpEn = {
               ],
               id: "17b84772-16d2-5b18-8b05-a1da0350b399",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6629,7 +6629,7 @@ export const dumpEn = {
               ],
               id: "a982b23b-e164-5094-9fc7-b43e30ba1d21",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6647,7 +6647,7 @@ export const dumpEn = {
               ],
               id: "e555eb92-5108-5388-bba3-7edf6ef5e1ee",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6806,11 +6806,11 @@ export const dumpEn = {
           topic_id: "c7f34721-d278-4344-a61a-12cde5220c3b",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:た",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:た.",
           expanded_title: "Katakana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "2dc2bdaa-3088-4754-8d52-38dc208fe6e7.jpg",
           id: "3248f9e0-840e-4a7e-b482-57243a6dd957",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ta",
           lesson_order: 15,
           minimum_version: "2.5.0",
@@ -6849,7 +6849,7 @@ export const dumpEn = {
               ],
               id: "4c07d440-482d-5a90-a3e7-3e9b078717aa",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6867,7 +6867,7 @@ export const dumpEn = {
               ],
               id: "69b8ce7f-a81a-5f3f-b537-f97e5a9efb49",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6903,7 +6903,7 @@ export const dumpEn = {
               ],
               id: "ad2c2d4e-a585-5223-875b-bbb3627b3d7d",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6921,7 +6921,7 @@ export const dumpEn = {
               ],
               id: "dc2162f0-47ac-5a8d-8cc3-45b7f0cdc1a7",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6975,7 +6975,7 @@ export const dumpEn = {
               ],
               id: "fbcf639a-18c7-5ce4-8905-f0a0d0aef1da",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -6993,7 +6993,7 @@ export const dumpEn = {
               ],
               id: "021f807f-f90e-503e-a2ce-4b9d60b1b0b0",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7084,7 +7084,7 @@ export const dumpEn = {
               ],
               id: "89a9a044-0485-569d-844e-43a28499e44f",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7102,7 +7102,7 @@ export const dumpEn = {
               ],
               id: "88e8f7b6-a4ce-5a0a-be73-16a5654db4e9",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7156,7 +7156,7 @@ export const dumpEn = {
               ],
               id: "056cd0b3-0320-59a7-95b7-694479e6fcde",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7174,7 +7174,7 @@ export const dumpEn = {
               ],
               id: "3e2561ee-726e-55a7-a37b-29a23b0cce67",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7333,11 +7333,11 @@ export const dumpEn = {
           topic_id: "c7f34721-d278-4344-a61a-12cde5220c3b",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:な",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:な.",
           expanded_title: "Katakana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "3f4e712a-7fc7-4e81-acab-72bb0ef427e4.jpg",
           id: "14617a8a-ed00-4bc7-8f0c-5a54f37375fc",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&na",
           lesson_order: 16,
           minimum_version: "2.5.0",
@@ -7376,7 +7376,7 @@ export const dumpEn = {
               ],
               id: "ad1aa930-9289-5827-8f1a-c133b9b2110b",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7394,7 +7394,7 @@ export const dumpEn = {
               ],
               id: "d7101888-3cb5-5997-a857-03714baa7563",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7430,7 +7430,7 @@ export const dumpEn = {
               ],
               id: "4a9026d7-6eeb-5613-97e0-77860ce51b0a",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7448,7 +7448,7 @@ export const dumpEn = {
               ],
               id: "6b7acf72-015d-515a-bb46-a69c7d671bb7",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7502,7 +7502,7 @@ export const dumpEn = {
               ],
               id: "3fae6f9d-65c4-5ce2-b24f-c352dae5d7b7",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7520,7 +7520,7 @@ export const dumpEn = {
               ],
               id: "1eedd7f8-6260-52d9-9da5-dd6c4f9bff2f",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7611,7 +7611,7 @@ export const dumpEn = {
               ],
               id: "8ad9160e-e5bd-5e5d-95b3-48cf6e3ee070",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7629,7 +7629,7 @@ export const dumpEn = {
               ],
               id: "96b9d0f2-3c4c-5c74-b185-65837a1b7e74",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7683,7 +7683,7 @@ export const dumpEn = {
               ],
               id: "cd306aa5-e572-57ca-88be-3b6063c5ebae",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7701,7 +7701,7 @@ export const dumpEn = {
               ],
               id: "09feef1a-d101-504d-b4ec-343c61112395",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7860,11 +7860,11 @@ export const dumpEn = {
           topic_id: "c7f34721-d278-4344-a61a-12cde5220c3b",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:は",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:は.",
           expanded_title: "Katakana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "a972e2ac-7362-4f98-801d-4389ba31e2f9.jpg",
           id: "b7de3ae6-e8ed-49ad-9a25-8ec02993c117",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ha",
           lesson_order: 17,
           minimum_version: "2.5.0",
@@ -7903,7 +7903,7 @@ export const dumpEn = {
               ],
               id: "1dbd8fa9-63ad-5f7e-b3fb-a74b2285f166",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7921,7 +7921,7 @@ export const dumpEn = {
               ],
               id: "08014fdb-2be3-59ba-872c-9cbf80d2f287",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7957,7 +7957,7 @@ export const dumpEn = {
               ],
               id: "3fddf0c3-2ef2-51fd-8ae5-8b819699b907",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -7975,7 +7975,7 @@ export const dumpEn = {
               ],
               id: "70e62e5b-8184-589e-8a91-ac13f345077d",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8029,7 +8029,7 @@ export const dumpEn = {
               ],
               id: "5c935133-9545-52f5-9976-bb63fb776ee4",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8047,7 +8047,7 @@ export const dumpEn = {
               ],
               id: "654def97-50a9-58de-bca1-dde791989934",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8138,7 +8138,7 @@ export const dumpEn = {
               ],
               id: "52230609-c7cd-5e8c-a712-a20120488c84",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8156,7 +8156,7 @@ export const dumpEn = {
               ],
               id: "e6d4630f-c78a-5632-9b83-32f8394441f1",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8210,7 +8210,7 @@ export const dumpEn = {
               ],
               id: "f459cf7a-df9b-53c5-a26e-9935b33f23d6",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8228,7 +8228,7 @@ export const dumpEn = {
               ],
               id: "55a1eb6a-af6b-593b-835d-5f6edb56f623",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8387,11 +8387,11 @@ export const dumpEn = {
           topic_id: "c7f34721-d278-4344-a61a-12cde5220c3b",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:ま",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:ま.",
           expanded_title: "Katakana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "07d0c986-1f16-4254-aa12-58aa2e0f9a49.jpg",
           id: "9d30e82c-0032-47f2-92a1-900d335787e4",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ma",
           lesson_order: 18,
           minimum_version: "2.5.0",
@@ -8430,7 +8430,7 @@ export const dumpEn = {
               ],
               id: "415af25b-210c-51ad-9626-602e1a74ee26",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8448,7 +8448,7 @@ export const dumpEn = {
               ],
               id: "65ec1a50-984f-530c-baac-0074d08266c3",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8484,7 +8484,7 @@ export const dumpEn = {
               ],
               id: "10e27689-df97-55fe-866d-885e6ea54b8b",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8502,7 +8502,7 @@ export const dumpEn = {
               ],
               id: "2f29b496-a770-5696-a757-851ab46d7f0a",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8556,7 +8556,7 @@ export const dumpEn = {
               ],
               id: "9cc1c44c-11fb-5ea3-8705-9199b39f97e5",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8574,7 +8574,7 @@ export const dumpEn = {
               ],
               id: "1bfa23b6-dcdc-5d08-991e-d86c4a3506ee",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8665,7 +8665,7 @@ export const dumpEn = {
               ],
               id: "6b6c8e8b-42fb-549b-a58e-200284f20fd1",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8683,7 +8683,7 @@ export const dumpEn = {
               ],
               id: "38deba5d-f6c9-5014-b873-fc200f1932f6",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8737,7 +8737,7 @@ export const dumpEn = {
               ],
               id: "d0d1f202-fafb-5127-b88f-3b2a11d0948f",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8755,7 +8755,7 @@ export const dumpEn = {
               ],
               id: "713559ae-1397-58a6-810c-3e046fd30f24",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8914,11 +8914,11 @@ export const dumpEn = {
           topic_id: "c7f34721-d278-4344-a61a-12cde5220c3b",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:や",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:や.",
           expanded_title: "Katakana: tr:や, tr:ゆ, tr:よ",
           icon: "073066af-16d8-40c7-9b73-e9e75235fd1c.jpg",
           id: "339f6a0e-a235-424f-b06f-fbdf94df202f",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ya",
           lesson_order: 19,
           minimum_version: "2.5.0",
@@ -8957,7 +8957,7 @@ export const dumpEn = {
               ],
               id: "e5776120-e7ca-5231-a05f-98295cb6f4ef",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -8975,7 +8975,7 @@ export const dumpEn = {
               ],
               id: "9f7ffa0d-cbf3-5229-8abc-93a2f1403ca3",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9011,7 +9011,7 @@ export const dumpEn = {
               ],
               id: "0e3dc54a-2962-50f9-b3c9-4b4b9fe5a2c1",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9029,7 +9029,7 @@ export const dumpEn = {
               ],
               id: "e984b2d6-90f0-5172-ab70-caa9126e37f1",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9083,7 +9083,7 @@ export const dumpEn = {
               ],
               id: "8156c1a0-1441-51c2-9c9a-b87c9168b12a",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9101,7 +9101,7 @@ export const dumpEn = {
               ],
               id: "41e212be-f95f-5894-bcab-1109e2aa1ed9",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9315,11 +9315,11 @@ export const dumpEn = {
           topic_id: "c7f34721-d278-4344-a61a-12cde5220c3b",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:ら",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:ら.",
           expanded_title: "Katakana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
           icon: "a6b62c7e-2ec8-44ed-b9a2-00bc4b099915.jpg",
           id: "6eb90299-6f49-4ac7-bfd9-13c75ad7aeb8",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ra",
           lesson_order: 20,
           minimum_version: "2.5.0",
@@ -9358,7 +9358,7 @@ export const dumpEn = {
               ],
               id: "41bdce80-a9b6-59a6-9d2a-5eba9ea42284",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9376,7 +9376,7 @@ export const dumpEn = {
               ],
               id: "7f824f0f-59d0-5008-8432-ebecf98ce033",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9412,7 +9412,7 @@ export const dumpEn = {
               ],
               id: "f50225a4-eb31-56af-956a-eb0a85caa803",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9430,7 +9430,7 @@ export const dumpEn = {
               ],
               id: "51aa352b-5040-5cdc-abe2-4a3b942cba4f",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9484,7 +9484,7 @@ export const dumpEn = {
               ],
               id: "d0ff4bc3-39f4-508e-ab65-8b086bd13092",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9502,7 +9502,7 @@ export const dumpEn = {
               ],
               id: "ef3f71d7-933a-5dc2-b28a-a2025e3db144",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9593,7 +9593,7 @@ export const dumpEn = {
               ],
               id: "b6049aa3-ee38-5ba1-ba0e-62762479dcdd",
               screen_order: 14,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9611,7 +9611,7 @@ export const dumpEn = {
               ],
               id: "6dcc6e23-f224-55ad-807f-793ccf0dc92b",
               screen_order: 15,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9665,7 +9665,7 @@ export const dumpEn = {
               ],
               id: "150ac7d3-968e-5e1c-a15a-17d49b4e4ea0",
               screen_order: 18,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9683,7 +9683,7 @@ export const dumpEn = {
               ],
               id: "b3017088-1a09-524e-a82b-25e00246253e",
               screen_order: 19,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9842,11 +9842,11 @@ export const dumpEn = {
           topic_id: "c7f34721-d278-4344-a61a-12cde5220c3b",
         },
         {
-          expanded_subtitle: "Learn to read and write the syllables in the row tr:わ",
+          expanded_subtitle: "Learn to read and write the syllables in the row tr:わ.",
           expanded_title: "Katakana: tr:わ, tr:を, tr:ん",
           icon: "b57e394a-8e74-4700-9171-e9129bc4de2e.jpg",
           id: "91f88d3b-f1f6-4ed8-bfe2-dec0f67805d0",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&wa",
           lesson_order: 21,
           minimum_version: "2.5.0",
@@ -9885,7 +9885,7 @@ export const dumpEn = {
               ],
               id: "e55adbaf-35b4-5b6f-adcd-88965714ac60",
               screen_order: 2,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9903,7 +9903,7 @@ export const dumpEn = {
               ],
               id: "9dbef4b1-3fda-5b2d-88ce-e8bbe652fecd",
               screen_order: 3,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9939,7 +9939,7 @@ export const dumpEn = {
               ],
               id: "aee38ed6-d0ec-5e50-91f2-4f68d599850e",
               screen_order: 5,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -9957,7 +9957,7 @@ export const dumpEn = {
               ],
               id: "f1c08291-bcea-5768-a3d2-4e194087171a",
               screen_order: 6,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -10011,7 +10011,7 @@ export const dumpEn = {
               ],
               id: "9f63f37b-b39b-5421-b0d5-e6775332c57a",
               screen_order: 9,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -10029,7 +10029,7 @@ export const dumpEn = {
               ],
               id: "851137fd-bc7e-5521-a061-8ff3eac58c17",
               screen_order: 10,
-              title: "Write the syllable in the correct stroke order.",
+              title: "Write the syllable correctly.",
             },
             {
               blocks: [
@@ -10254,7 +10254,7 @@ export const dumpEn = {
           expanded_title: "Information",
           icon: "e55a6e88-4d4a-404c-9826-d5e88567ad8b.jpg",
           id: "0e04d651-09fc-4c0a-b0bb-6a8395880f92",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&dakuon",
           lesson_order: 22,
           minimum_version: "2.5.0",
@@ -10786,7 +10786,7 @@ export const dumpEn = {
           expanded_title: "Information",
           icon: "60466bc2-00e9-4920-ab2a-d65be847ab19.jpg",
           id: "c9a3ea6d-6941-4801-8d51-e2daf5bae4ba",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longVowels",
           lesson_order: 23,
           minimum_version: "2.5.0",
@@ -10993,7 +10993,7 @@ export const dumpEn = {
           expanded_title: "Information",
           icon: "35170a20-86ba-4c4e-bd01-d9be0d008026.jpg",
           id: "70eb2b7b-37d8-4d13-9a0a-3014e837ebfe",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longConsonants",
           lesson_order: 24,
           minimum_version: "2.5.0",
@@ -11029,7 +11029,7 @@ export const dumpEn = {
                   content: {
                     rules: [
                       "かた (tr(かた)) - shoulder",
-                      "かつた (tr(かつた)) - name",
+                      "かつた (tr(かつた)) - surname Katsuta",
                       "かった (tr(かった)) - won",
                     ],
                   },
@@ -11132,7 +11132,7 @@ export const dumpEn = {
                   block_order: 3,
                   content: {
                     rules: [
-                      "こんにちは (tr(こんにちは)) - good afternoon",
+                      "こんにちは (tr(こんにちわ)) - good afternoon",
                       "こんばんは (tr(こんばんは)) - good evening",
                     ],
                   },
@@ -11154,7 +11154,7 @@ export const dumpEn = {
           expanded_title: "Information",
           icon: "bb3db32f-041c-4e39-9b7d-9c3515a0e3f8.jpg",
           id: "0d4e009f-d55a-471f-87d4-b3135e23ae91",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&yoon",
           lesson_order: 25,
           minimum_version: "2.5.0",
@@ -11555,7 +11555,7 @@ export const dumpEn = {
           expanded_title: "Information",
           icon: "c5fda457-5b04-4ce9-979b-05f109fda391.jpg",
           id: "f26e813b-7e1f-41a4-b6b2-a23bba4e90ac",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&dakuonAndHandakuon",
           lesson_order: 26,
           minimum_version: "2.5.0",
@@ -12049,7 +12049,7 @@ export const dumpEn = {
           expanded_title: "Information",
           icon: "7c7dc482-980c-492f-99d2-19a6d83d2f77.jpg",
           id: "8960c89f-6626-4605-b4fc-2839de76b3f4",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longVowels",
           lesson_order: 27,
           minimum_version: "2.5.0",
@@ -12276,7 +12276,7 @@ export const dumpEn = {
           expanded_title: "Information",
           icon: "2542ff58-d7f7-4f23-a669-1908f5d7adad.jpg",
           id: "591f7d4d-2062-4f7b-9832-0cb77a210107",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longConsonants",
           lesson_order: 28,
           minimum_version: "2.5.0",
@@ -12423,11 +12423,11 @@ export const dumpEn = {
           topic_id: "b1e4ae5d-8c92-43e5-acd3-5ee9d1386a6c",
         },
         {
-          expanded_subtitle: "Here, we'll tell you about additional sounds in Katakana",
+          expanded_subtitle: "Here, we'll tell you about additional sounds in Katakana.",
           expanded_title: "Information",
           icon: "f8402718-ad6a-495b-b429-c1f83c51d77f.jpg",
           id: "ef0d6984-2a3c-46b6-83e6-55f18f6e7906",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&additionalSounds",
           lesson_order: 29,
           minimum_version: "2.5.0",
@@ -12836,11 +12836,11 @@ export const dumpEn = {
           topic_id: "b1e4ae5d-8c92-43e5-acd3-5ee9d1386a6c",
         },
         {
-          expanded_subtitle: "Here we will tell you about yoon",
+          expanded_subtitle: "Here we will tell you about yoon.",
           expanded_title: "Information",
           icon: "aafe6dcb-4193-4d5e-9d95-258ffb60314f.jpg",
           id: "8ea3ac9f-803b-48a1-8c9f-78715a3cbed0",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&yoon",
           lesson_order: 30,
           minimum_version: "2.5.0",
@@ -13235,11 +13235,11 @@ export const dumpEn = {
           topic_id: "b1e4ae5d-8c92-43e5-acd3-5ee9d1386a6c",
         },
         {
-          expanded_subtitle: "Here we will tell you how to keep learning Japanese",
+          expanded_subtitle: "Here we will tell you how to keep learning Japanese.",
           expanded_title: "Information",
           icon: "18800460-fe6b-4b37-bbb2-259253cdcbbb.jpg",
           id: "3470a4d2-d9b3-47b9-9cbb-a53763ff06ec",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/whats-next",
           lesson_order: 31,
           minimum_version: "2.5.0",
@@ -13322,14 +13322,6 @@ export const dumpEn = {
                   id: "d9a0d5f8-6510-5057-8a19-0ea7621a826f",
                   type: "rule",
                 },
-                {
-                  block_order: 3,
-                  content: {
-                    text: "Most people start with N5 and gradually work their way up.",
-                  },
-                  id: "20ae429b-aa99-52c0-a3e2-08069b9debcc",
-                  type: "text",
-                },
               ],
               id: "e8da2f5e-9a94-5d39-9693-60caa3214bf3",
               screen_order: 3,
@@ -13340,7 +13332,7 @@ export const dumpEn = {
                 {
                   block_order: 1,
                   content: {
-                    text: "The series is divided by level:",
+                    text: "The Minna no Nihongo series is divided by level:",
                   },
                   id: "f8cd7c51-af16-5879-8395-4a8ed9624399",
                   type: "text",
@@ -13351,8 +13343,6 @@ export const dumpEn = {
                     rules: [
                       "**Minna no Nihongo Shokyuu I** (Beginner 1) — roughly N5 level",
                       "**Minna no Nihongo Shokyuu II** (Beginner 2) — roughly N4 level",
-                      "**Minna no Nihongo Chukyuu I** (Intermediate 1) — roughly N3 level",
-                      "After that come the more advanced parts of the series",
                     ],
                   },
                   id: "1cd22624-d235-505c-b320-dbad539e890c",
@@ -13361,15 +13351,23 @@ export const dumpEn = {
                 {
                   block_order: 3,
                   content: {
-                    text: "We recommend starting with Shokyuu I and going in order. Each textbook has an exercise book (Workbook) and a grammar translation in English and many other languages.",
+                    text: "We recommend starting with Shokyuu I and going in order. Each textbook has an exercise book (Workbook) and a grammar translation in various languages.",
                   },
                   id: "544ed020-a649-54a8-a4b5-ea1fc42b4d05",
+                  type: "text",
+                },
+                {
+                  block_order: 4,
+                  content: {
+                    text: "After N4, we recommend working out which textbook series suits you best.",
+                  },
+                  id: "16d11d9b-8161-59aa-bd34-63276ce7716a",
                   type: "text",
                 },
               ],
               id: "519814b1-ec16-524d-a821-d628aa588dee",
               screen_order: 4,
-              title: "Which Minna no Nihongo books to get",
+              title: "Which books to get",
             },
             {
               blocks: [
@@ -13460,7 +13458,7 @@ export const dumpEn = {
                   content: {
                     rules: [
                       "Various online dictionaries",
-                      "Audio for the Minna no Nihongo textbooks",
+                      "Audio for textbooks",
                       "Simple Japanese videos and podcasts for beginners",
                     ],
                   },

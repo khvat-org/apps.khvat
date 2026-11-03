@@ -8,7 +8,7 @@ export const dumpId = {
           expanded_title: "Informasi",
           icon: "4f99e07e-fa33-404a-9dfe-f0914dbdfade.jpg",
           id: "02b59bfb-c872-4e91-b76a-5b5b25fa6e75",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/introduction",
           lesson_order: 1,
           minimum_version: "2.5.0",
@@ -204,7 +204,7 @@ export const dumpId = {
           expanded_title: "Hiragana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "37a3d605-c9ea-4875-86b8-4acb1604c2a2.jpg",
           id: "483cdaff-1ec3-4b52-ae8b-e3defdedfcc9",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&a",
           lesson_order: 2,
           minimum_version: "2.5.0",
@@ -243,7 +243,7 @@ export const dumpId = {
               ],
               id: "4104ea76-5b49-5ebe-9607-c6222fd479a6",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -261,7 +261,7 @@ export const dumpId = {
               ],
               id: "5497c972-203e-5fb5-9b30-6761bec7aad7",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -297,7 +297,7 @@ export const dumpId = {
               ],
               id: "f691b7b5-b7dd-5194-9ecb-b48c5603ae4d",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -315,7 +315,7 @@ export const dumpId = {
               ],
               id: "643bca55-ab13-5ef4-9349-95d68a6ad401",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -369,7 +369,7 @@ export const dumpId = {
               ],
               id: "f9e9f101-f510-5861-8076-80c5f8610f65",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -387,7 +387,7 @@ export const dumpId = {
               ],
               id: "2c7cc766-765b-56b2-a947-f9512e940c5a",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -478,7 +478,7 @@ export const dumpId = {
               ],
               id: "846a04ec-2739-591b-83b6-6c3f67d2ea90",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -496,7 +496,7 @@ export const dumpId = {
               ],
               id: "862389b5-1494-5ee1-919e-ed4d42906811",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -550,7 +550,7 @@ export const dumpId = {
               ],
               id: "48d0f180-04b6-5806-8306-0bfb5252cb00",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -568,7 +568,7 @@ export const dumpId = {
               ],
               id: "bf58a020-7d1a-5c8e-a5b8-18c44646f67f",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -731,7 +731,7 @@ export const dumpId = {
           expanded_title: "Hiragana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "bea297c4-29a1-48d8-b13e-c30bae9d58ba.jpg",
           id: "a6ce2cf2-49c8-4028-aa7b-17fb7050d02b",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ka",
           lesson_order: 3,
           minimum_version: "2.5.0",
@@ -770,7 +770,7 @@ export const dumpId = {
               ],
               id: "cbcde04d-3e72-550c-9311-064a49466276",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -788,7 +788,7 @@ export const dumpId = {
               ],
               id: "beadb794-d5fc-551a-82a2-6304c5df40be",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -824,7 +824,7 @@ export const dumpId = {
               ],
               id: "ddb06bbe-b0b3-5fcd-8c90-e0affeb62082",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -842,7 +842,7 @@ export const dumpId = {
               ],
               id: "59856830-d315-57a4-ae5e-9efbe33c7fad",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -896,7 +896,7 @@ export const dumpId = {
               ],
               id: "64f5b28f-7aa3-58e0-a615-734b7ba11c10",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -914,7 +914,7 @@ export const dumpId = {
               ],
               id: "cfb921b0-de53-567a-93b8-58a32db03380",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1005,7 +1005,7 @@ export const dumpId = {
               ],
               id: "7e178cc3-8bb4-5214-ba99-9fea4be585d5",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1023,7 +1023,7 @@ export const dumpId = {
               ],
               id: "fa0e69c7-accf-509c-8aeb-5d4a7d9e627a",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1077,7 +1077,7 @@ export const dumpId = {
               ],
               id: "bea0be66-50ba-5118-8cb9-90e3ac04fa74",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1095,7 +1095,7 @@ export const dumpId = {
               ],
               id: "42766865-4700-592a-b3d0-f1ce757b17ba",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1258,7 +1258,7 @@ export const dumpId = {
           expanded_title: "Hiragana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "d69655e1-1709-4601-8ce7-832165d7d556.jpg",
           id: "af01bfde-78bd-4971-ab89-cce753936e7f",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&sa",
           lesson_order: 4,
           minimum_version: "2.5.0",
@@ -1297,7 +1297,7 @@ export const dumpId = {
               ],
               id: "2115f4bf-c90a-5c21-ae71-7967473a67a3",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1315,7 +1315,7 @@ export const dumpId = {
               ],
               id: "f361b07a-8b85-57ae-a097-f51640f7d53d",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1351,7 +1351,7 @@ export const dumpId = {
               ],
               id: "4498fc0a-32d8-5a22-a557-c1d60f9b9dfe",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1369,7 +1369,7 @@ export const dumpId = {
               ],
               id: "60ee1519-9dc9-5f98-86b0-c6e439f959fa",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1423,7 +1423,7 @@ export const dumpId = {
               ],
               id: "4a328033-9d42-52d3-9361-3185d61ee25f",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1441,7 +1441,7 @@ export const dumpId = {
               ],
               id: "772cb396-c4b0-59c1-9d90-5effb6d51fe7",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1532,7 +1532,7 @@ export const dumpId = {
               ],
               id: "35c5cc48-8c48-5173-940a-99dbd58ee9c1",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1550,7 +1550,7 @@ export const dumpId = {
               ],
               id: "26efb27b-f8f3-5c4e-8fe3-dd7c3baddf01",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1604,7 +1604,7 @@ export const dumpId = {
               ],
               id: "ebb09195-e2ec-57a5-a2b4-24ce62062368",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1622,7 +1622,7 @@ export const dumpId = {
               ],
               id: "73c6e0a5-de09-5f9c-9334-a689ec4a357c",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1785,7 +1785,7 @@ export const dumpId = {
           expanded_title: "Hiragana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "cce66d6e-826a-4b29-8eaa-50df25e09c40.jpg",
           id: "b15c8ea4-f6d8-4c29-ad37-fe325f6d1da4",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ta",
           lesson_order: 5,
           minimum_version: "2.5.0",
@@ -1824,7 +1824,7 @@ export const dumpId = {
               ],
               id: "c75f6dab-c65c-5eb6-8433-8e5e224f6e87",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1842,7 +1842,7 @@ export const dumpId = {
               ],
               id: "9a285f02-814b-50d0-b8e3-d1337b78e660",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1878,7 +1878,7 @@ export const dumpId = {
               ],
               id: "38a9b353-aff0-544f-8308-859dbcb96ef3",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1896,7 +1896,7 @@ export const dumpId = {
               ],
               id: "77f10776-c061-597e-ad74-468b8aa6752a",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1950,7 +1950,7 @@ export const dumpId = {
               ],
               id: "7156806c-b992-53be-8859-8f0964a38666",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -1968,7 +1968,7 @@ export const dumpId = {
               ],
               id: "67eb304f-c2eb-517b-bcf8-15304b8bedf0",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2059,7 +2059,7 @@ export const dumpId = {
               ],
               id: "7515ebb3-eea5-5981-bc81-aee345fbf7ab",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2077,7 +2077,7 @@ export const dumpId = {
               ],
               id: "6113d3f2-1aa7-5b6a-bca5-4f063e2970f6",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2131,7 +2131,7 @@ export const dumpId = {
               ],
               id: "4f7b4e88-e009-5f54-b126-6fd553aa7dfe",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2149,7 +2149,7 @@ export const dumpId = {
               ],
               id: "58ff08d9-9938-5dd0-89fd-741c835d073e",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2312,7 +2312,7 @@ export const dumpId = {
           expanded_title: "Hiragana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "80cbe968-4fae-45ab-a78b-d6cf17ad7d31.jpg",
           id: "547af9b0-044e-4b38-8895-2c9d84763326",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&na",
           lesson_order: 6,
           minimum_version: "2.5.0",
@@ -2351,7 +2351,7 @@ export const dumpId = {
               ],
               id: "e90cace6-a8d2-5ce2-9349-e7cbefa43396",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2369,7 +2369,7 @@ export const dumpId = {
               ],
               id: "324e3d1e-021a-50f7-bf78-9ff7403a544a",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2405,7 +2405,7 @@ export const dumpId = {
               ],
               id: "349174a2-787f-5fcb-aa7e-1ed8240db83d",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2423,7 +2423,7 @@ export const dumpId = {
               ],
               id: "55601dce-0df6-5ca3-962e-297c89fc1913",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2477,7 +2477,7 @@ export const dumpId = {
               ],
               id: "0c629980-7da4-5f2d-b7dc-631ee81d365d",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2495,7 +2495,7 @@ export const dumpId = {
               ],
               id: "3f098f5a-dcd6-5ee4-9073-558db0f310a8",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2586,7 +2586,7 @@ export const dumpId = {
               ],
               id: "ea070cf7-f0c9-5641-b9bf-186743b41e8e",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2604,7 +2604,7 @@ export const dumpId = {
               ],
               id: "29aefaaf-9082-5a1b-883c-82d3f50d05ce",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2658,7 +2658,7 @@ export const dumpId = {
               ],
               id: "ed1c48c3-a68b-5751-aa63-73cc91e09ad2",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2676,7 +2676,7 @@ export const dumpId = {
               ],
               id: "c510a9f7-cc64-56a7-b4d9-49222e7ff136",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2839,7 +2839,7 @@ export const dumpId = {
           expanded_title: "Hiragana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "5ab5e704-d6ba-4fde-a6f3-36745e149ed9.jpg",
           id: "356a464e-8b80-47d8-90e3-2df9977fc301",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ha",
           lesson_order: 7,
           minimum_version: "2.5.0",
@@ -2878,7 +2878,7 @@ export const dumpId = {
               ],
               id: "647ad693-6fa6-5181-841c-4204c77fa340",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2896,7 +2896,7 @@ export const dumpId = {
               ],
               id: "50b2c375-5e8a-5b3a-8328-a991bf7d0a58",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2932,7 +2932,7 @@ export const dumpId = {
               ],
               id: "17656b28-b960-521c-9b96-ed1e6200c9a0",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -2950,7 +2950,7 @@ export const dumpId = {
               ],
               id: "24a13680-ac32-5e61-bd81-b77fa7b0ac5b",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3004,7 +3004,7 @@ export const dumpId = {
               ],
               id: "032e63d1-8143-5755-9a51-34ff06616ac7",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3022,7 +3022,7 @@ export const dumpId = {
               ],
               id: "60013d7f-fbc2-58df-943a-1dc840c12db0",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3113,7 +3113,7 @@ export const dumpId = {
               ],
               id: "c633df27-e8ec-5591-b27c-317eaf53079d",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3131,7 +3131,7 @@ export const dumpId = {
               ],
               id: "1dbd1482-a66a-5803-a360-e68c910dfebd",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3185,7 +3185,7 @@ export const dumpId = {
               ],
               id: "1ff5a39c-7e84-5cfb-857f-536ee6e88383",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3203,7 +3203,7 @@ export const dumpId = {
               ],
               id: "6db149ec-5355-571e-9ba6-de891eecf71b",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3366,7 +3366,7 @@ export const dumpId = {
           expanded_title: "Hiragana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "f53fde6a-ca94-4b15-8397-d567a3a17906.jpg",
           id: "c19c841d-03f7-4e22-8267-a8593c9fc35d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ma",
           lesson_order: 8,
           minimum_version: "2.5.0",
@@ -3405,7 +3405,7 @@ export const dumpId = {
               ],
               id: "f5a00db2-624d-5649-a12e-c2b63a5cb1e3",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3423,7 +3423,7 @@ export const dumpId = {
               ],
               id: "535229e9-057a-53db-82b4-79f55100eb6b",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3459,7 +3459,7 @@ export const dumpId = {
               ],
               id: "ede9d30a-650b-5e8d-9e9c-dffb91dc8036",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3477,7 +3477,7 @@ export const dumpId = {
               ],
               id: "e66e8c29-2973-53f3-9b68-305ba22acc92",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3531,7 +3531,7 @@ export const dumpId = {
               ],
               id: "07dca8a6-13fb-5dd8-9469-e49003ee44cb",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3549,7 +3549,7 @@ export const dumpId = {
               ],
               id: "11bf7be9-e792-5b62-8a4c-5ecaf8be6597",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3640,7 +3640,7 @@ export const dumpId = {
               ],
               id: "2fafef22-5e7a-5d24-b568-8f62c4e18934",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3658,7 +3658,7 @@ export const dumpId = {
               ],
               id: "c8e703d3-9af6-5bf5-85db-2c4ec4ddcd9f",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3712,7 +3712,7 @@ export const dumpId = {
               ],
               id: "7cd80ebd-7cbd-56a1-a012-0009e16d9deb",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3730,7 +3730,7 @@ export const dumpId = {
               ],
               id: "a8cd0d77-d927-5cd2-a6b5-dd4cc12489df",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3891,9 +3891,9 @@ export const dumpId = {
         {
           expanded_subtitle: "Pelajari cara membaca dan menulis suku kata dalam baris tr:や.",
           expanded_title: "Hiragana: tr:や, tr:ゆ, tr:よ",
-          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
+          icon: "998d7b1d-3751-407b-8909-da9dc7983cdb.jpg",
           id: "766e2a9d-8cf5-42e3-832c-fc5d503d241a",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ya",
           lesson_order: 9,
           minimum_version: "2.5.0",
@@ -3932,7 +3932,7 @@ export const dumpId = {
               ],
               id: "f64db01f-281b-5e9e-ac5b-3cc7b8e3043a",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3950,7 +3950,7 @@ export const dumpId = {
               ],
               id: "5b78ffdc-144a-52a6-a370-729e67c8b943",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -3986,7 +3986,7 @@ export const dumpId = {
               ],
               id: "fa9ac861-b68a-57c1-a8b3-5039b8150b62",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4004,7 +4004,7 @@ export const dumpId = {
               ],
               id: "fa81aa42-417d-5128-9df0-4ec8683006e6",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4058,7 +4058,7 @@ export const dumpId = {
               ],
               id: "8845a5af-008e-5ccf-b11d-7d97d60b3fc0",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4076,7 +4076,7 @@ export const dumpId = {
               ],
               id: "1066329b-11c4-57f3-9305-55fc2a2d7732",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4292,9 +4292,9 @@ export const dumpId = {
         {
           expanded_subtitle: "Pelajari cara membaca dan menulis suku kata dalam baris tr:ら.",
           expanded_title: "Hiragana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
-          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
+          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
           id: "94df7331-1e60-4430-83e4-c1aa65cb40be",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ra",
           lesson_order: 10,
           minimum_version: "2.5.0",
@@ -4333,7 +4333,7 @@ export const dumpId = {
               ],
               id: "3511560e-f46a-5482-bb12-9d40bf9db1a4",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4351,7 +4351,7 @@ export const dumpId = {
               ],
               id: "a1985edc-b28a-5256-9606-0bdbd6b0760c",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4387,7 +4387,7 @@ export const dumpId = {
               ],
               id: "28a445e3-2f06-55d8-ad84-bd29059f70f4",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4405,7 +4405,7 @@ export const dumpId = {
               ],
               id: "d031c325-cc3d-5b16-b1b4-a7cd64769a76",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4459,7 +4459,7 @@ export const dumpId = {
               ],
               id: "f9d3f9b3-5479-5d45-bf4c-519e8e145d30",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4477,7 +4477,7 @@ export const dumpId = {
               ],
               id: "cfca09f4-6153-5aa0-b0d4-3ad41a6062d2",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4568,7 +4568,7 @@ export const dumpId = {
               ],
               id: "d5987bd9-054f-5c77-bb91-38e26714cbb9",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4586,7 +4586,7 @@ export const dumpId = {
               ],
               id: "1de483b6-89f2-5411-8403-6e96741965fd",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4640,7 +4640,7 @@ export const dumpId = {
               ],
               id: "0d6282a3-831c-5740-b6c1-4efc6a548eea",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4658,7 +4658,7 @@ export const dumpId = {
               ],
               id: "fd8b01ae-5909-5c3c-a161-c2efc63b8754",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4819,9 +4819,9 @@ export const dumpId = {
         {
           expanded_subtitle: "Pelajari cara membaca dan menulis suku kata: tr:わ, tr:を, tr:ん.",
           expanded_title: "Hiragana: tr:わ, tr:を, tr:ん",
-          icon: "c4480f8f-71ee-4df0-886f-508b39912b4c.jpg",
+          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
           id: "625d2438-da68-43e9-8430-9dce4e0e4178",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&wa",
           lesson_order: 11,
           minimum_version: "2.5.0",
@@ -4860,7 +4860,7 @@ export const dumpId = {
               ],
               id: "c32d4faa-cfb4-51b9-bdcd-66d0d7c55c6a",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4878,7 +4878,7 @@ export const dumpId = {
               ],
               id: "67618283-2b1e-545b-b635-80196c56a5fc",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4914,7 +4914,7 @@ export const dumpId = {
               ],
               id: "1cf83b01-11e7-51c1-9a60-625dfd92b9ea",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4932,7 +4932,7 @@ export const dumpId = {
               ],
               id: "690ffa7d-3e52-5895-90aa-7f200de31a8b",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -4986,7 +4986,7 @@ export const dumpId = {
               ],
               id: "fd8bfaf7-7951-5b44-a803-06d419cd3f0e",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5004,7 +5004,7 @@ export const dumpId = {
               ],
               id: "eb60086f-8991-5e03-bd72-1c1a2cb1c458",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5229,7 +5229,7 @@ export const dumpId = {
           expanded_title: "Katakana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "515f18bb-8797-4e60-b1b0-40f9b60aebcb.jpg",
           id: "5ea7d53c-934f-4398-a228-25c766971fe4",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&a",
           lesson_order: 12,
           minimum_version: "2.5.0",
@@ -5268,7 +5268,7 @@ export const dumpId = {
               ],
               id: "6ef42749-c6f6-559d-8b30-bd0fec4db3cf",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5286,7 +5286,7 @@ export const dumpId = {
               ],
               id: "ad28cffe-da31-5438-bae1-e33bc33c6e48",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5322,7 +5322,7 @@ export const dumpId = {
               ],
               id: "f4a83ca7-b9d7-5b25-8c7f-c92bb94a2126",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5340,7 +5340,7 @@ export const dumpId = {
               ],
               id: "aeb66e6a-357d-502a-9971-8cfd0c18300e",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5394,7 +5394,7 @@ export const dumpId = {
               ],
               id: "801f1d69-6a5a-5b36-a54d-c44ecb676d5c",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5412,7 +5412,7 @@ export const dumpId = {
               ],
               id: "ebed34d6-49b5-5774-9358-fdacbff52eef",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5503,7 +5503,7 @@ export const dumpId = {
               ],
               id: "269d0b1d-a1c7-5c04-8246-e08103d0644a",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5521,7 +5521,7 @@ export const dumpId = {
               ],
               id: "c72b2646-b6c0-5b37-b6b6-cb8a814d162b",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5575,7 +5575,7 @@ export const dumpId = {
               ],
               id: "60392a41-5b50-547b-8054-f7e5a04c2c8e",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5593,7 +5593,7 @@ export const dumpId = {
               ],
               id: "5fff6777-c830-51f5-8e61-71210475adf7",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5756,7 +5756,7 @@ export const dumpId = {
           expanded_title: "Katakana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "655dcf64-0666-4be6-8c19-0993b1ac03ec.jpg",
           id: "5abdae62-baa4-47be-8987-b07ad6246d8d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ka",
           lesson_order: 13,
           minimum_version: "2.5.0",
@@ -5795,7 +5795,7 @@ export const dumpId = {
               ],
               id: "9f19e784-a5a7-5cf5-80a8-57b32b4781ef",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5813,7 +5813,7 @@ export const dumpId = {
               ],
               id: "d2bbc39b-4846-5a86-b6f1-26e9227c2ea8",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5849,7 +5849,7 @@ export const dumpId = {
               ],
               id: "26d3deaa-c7dc-58c0-8c4d-3130db3053ee",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5867,7 +5867,7 @@ export const dumpId = {
               ],
               id: "35183332-e4a1-57e2-9148-ede9c4902fef",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5921,7 +5921,7 @@ export const dumpId = {
               ],
               id: "9c2c24d0-00d8-5336-882a-211da340de63",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -5939,7 +5939,7 @@ export const dumpId = {
               ],
               id: "5f36bb6a-26b7-5700-98c9-a959009d7927",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6030,7 +6030,7 @@ export const dumpId = {
               ],
               id: "04ab71dd-150a-5b86-8405-cf8790513ba1",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6048,7 +6048,7 @@ export const dumpId = {
               ],
               id: "204f7193-6a30-5590-8f50-43ace021b4e1",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6102,7 +6102,7 @@ export const dumpId = {
               ],
               id: "7353e14f-8c57-542b-b7af-533e54723870",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6120,7 +6120,7 @@ export const dumpId = {
               ],
               id: "e603dd52-15bd-5e66-a15f-c64412c5cbfa",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6283,7 +6283,7 @@ export const dumpId = {
           expanded_title: "Katakana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "6a3e11ff-5864-4f25-846e-5f8ac4691c5f.jpg",
           id: "c19dd5eb-84c4-4e95-a1e8-69f08f976cee",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&sa",
           lesson_order: 14,
           minimum_version: "2.5.0",
@@ -6322,7 +6322,7 @@ export const dumpId = {
               ],
               id: "ca15de94-f834-53c1-893d-4cbc6850f9b8",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6340,7 +6340,7 @@ export const dumpId = {
               ],
               id: "3dd06b1d-13e1-5858-8907-4b4736ae9be6",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6376,7 +6376,7 @@ export const dumpId = {
               ],
               id: "b1a92c8e-d3d2-552d-858c-c48ebfd31f2f",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6394,7 +6394,7 @@ export const dumpId = {
               ],
               id: "7c8bb30c-28a6-5eb5-bcff-c5a226ee9f81",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6448,7 +6448,7 @@ export const dumpId = {
               ],
               id: "96359075-26ad-535e-9aff-5251e8e05c47",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6466,7 +6466,7 @@ export const dumpId = {
               ],
               id: "904d2404-ad35-5b90-a2f6-3630c1195386",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6557,7 +6557,7 @@ export const dumpId = {
               ],
               id: "49a925b1-9a3c-5b16-9e17-c1d96d03856d",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6575,7 +6575,7 @@ export const dumpId = {
               ],
               id: "69bf9d01-a14d-593d-9135-a711c3d5ea26",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6629,7 +6629,7 @@ export const dumpId = {
               ],
               id: "7526ca63-a6d6-5cc5-ad23-f4850c430f55",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6647,7 +6647,7 @@ export const dumpId = {
               ],
               id: "78c482fc-bc0b-56b9-b439-45fbe53dcbeb",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6810,7 +6810,7 @@ export const dumpId = {
           expanded_title: "Katakana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "2dc2bdaa-3088-4754-8d52-38dc208fe6e7.jpg",
           id: "696e0498-8884-4abe-b466-bc706887a304",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ta",
           lesson_order: 15,
           minimum_version: "2.5.0",
@@ -6849,7 +6849,7 @@ export const dumpId = {
               ],
               id: "39194a48-c989-53ec-8ac0-cfa4280676fd",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6867,7 +6867,7 @@ export const dumpId = {
               ],
               id: "0cc0d2c5-48a8-5f71-bf25-143810ce59b5",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6903,7 +6903,7 @@ export const dumpId = {
               ],
               id: "3c24a12e-fa36-5614-8c3e-11a2f6b7ee79",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6921,7 +6921,7 @@ export const dumpId = {
               ],
               id: "7b59661c-624e-5cc5-b415-ba7c90b62948",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6975,7 +6975,7 @@ export const dumpId = {
               ],
               id: "fc82112b-af40-50ae-8ce7-1314d977edb1",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -6993,7 +6993,7 @@ export const dumpId = {
               ],
               id: "e5e32c66-39ef-5ffb-b42e-f65d243aeba8",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7084,7 +7084,7 @@ export const dumpId = {
               ],
               id: "6a96947b-c48d-5ff7-80e3-08f4e1ca5c70",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7102,7 +7102,7 @@ export const dumpId = {
               ],
               id: "c16c2d5f-d62d-5369-b551-7f5cbafed701",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7156,7 +7156,7 @@ export const dumpId = {
               ],
               id: "0ff9e20e-d04d-5fa2-a0d0-2478f97e3348",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7174,7 +7174,7 @@ export const dumpId = {
               ],
               id: "3706e36b-9a8f-5e70-936f-ec8441a55e63",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7337,7 +7337,7 @@ export const dumpId = {
           expanded_title: "Katakana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "3f4e712a-7fc7-4e81-acab-72bb0ef427e4.jpg",
           id: "503f6dfc-bb12-4b7a-966d-2b26e87c95a7",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&na",
           lesson_order: 16,
           minimum_version: "2.5.0",
@@ -7376,7 +7376,7 @@ export const dumpId = {
               ],
               id: "470f346f-4c5b-5855-945e-9e8739cd12ac",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7394,7 +7394,7 @@ export const dumpId = {
               ],
               id: "f69b9900-037e-53d6-8487-e102eb2043e6",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7430,7 +7430,7 @@ export const dumpId = {
               ],
               id: "9ac1343d-a129-53c8-a4e7-652b35b245dc",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7448,7 +7448,7 @@ export const dumpId = {
               ],
               id: "fc19f7f5-1d0e-5bf7-8d36-c2781050c44a",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7502,7 +7502,7 @@ export const dumpId = {
               ],
               id: "6a187ff6-0e93-5591-ad7c-57ee45f82a7d",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7520,7 +7520,7 @@ export const dumpId = {
               ],
               id: "0b81afb2-ccd1-5686-ad7d-d1164cc34b33",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7611,7 +7611,7 @@ export const dumpId = {
               ],
               id: "97b4c41d-a3b1-5d77-b665-17fe5cd8659f",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7629,7 +7629,7 @@ export const dumpId = {
               ],
               id: "2378bd4e-50cc-55d9-b541-6af240ff7b50",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7683,7 +7683,7 @@ export const dumpId = {
               ],
               id: "1a661719-8a7b-5c61-ae0e-185d950b4156",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7701,7 +7701,7 @@ export const dumpId = {
               ],
               id: "b708eca0-38b8-5657-9389-cca801df09d8",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7864,7 +7864,7 @@ export const dumpId = {
           expanded_title: "Katakana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "a972e2ac-7362-4f98-801d-4389ba31e2f9.jpg",
           id: "8f89007a-aebe-45db-a2c1-d10386131c0c",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ha",
           lesson_order: 17,
           minimum_version: "2.5.0",
@@ -7903,7 +7903,7 @@ export const dumpId = {
               ],
               id: "f6ce694b-ea4a-5783-ad30-afcb83f4b052",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7921,7 +7921,7 @@ export const dumpId = {
               ],
               id: "525afb4d-5614-572e-b52b-da1ea2ffffef",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7957,7 +7957,7 @@ export const dumpId = {
               ],
               id: "5f8c985a-ab07-54b2-9b35-c69cf0a5a598",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -7975,7 +7975,7 @@ export const dumpId = {
               ],
               id: "fd5ec0cb-5451-5545-a1b8-a4f05dba7202",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8029,7 +8029,7 @@ export const dumpId = {
               ],
               id: "80d9eba7-79e8-58b5-8303-bc3f52824623",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8047,7 +8047,7 @@ export const dumpId = {
               ],
               id: "153ad0c9-30f6-5f57-9540-459b401ef786",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8138,7 +8138,7 @@ export const dumpId = {
               ],
               id: "d63267b7-3e16-5e5e-9a3a-0755211f7fe0",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8156,7 +8156,7 @@ export const dumpId = {
               ],
               id: "21b5bb08-5bfb-5049-8433-85d15a0df87e",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8210,7 +8210,7 @@ export const dumpId = {
               ],
               id: "3d25e582-00e6-5673-babc-282a1169c86d",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8228,7 +8228,7 @@ export const dumpId = {
               ],
               id: "e440feda-665e-549e-8dc7-0019879123db",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8391,7 +8391,7 @@ export const dumpId = {
           expanded_title: "Katakana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "07d0c986-1f16-4254-aa12-58aa2e0f9a49.jpg",
           id: "8cf4ae84-c896-42f2-8374-5175c3309e09",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ma",
           lesson_order: 18,
           minimum_version: "2.5.0",
@@ -8430,7 +8430,7 @@ export const dumpId = {
               ],
               id: "3303af49-f650-5b41-bda7-402af54f7d7e",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8448,7 +8448,7 @@ export const dumpId = {
               ],
               id: "407b3fbb-a830-5cdd-8434-2615ca40842e",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8484,7 +8484,7 @@ export const dumpId = {
               ],
               id: "bdc5676d-a71c-5320-9a17-2f7ff27d3adc",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8502,7 +8502,7 @@ export const dumpId = {
               ],
               id: "78c579a4-205e-599c-b8bf-0fd1694be54e",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8556,7 +8556,7 @@ export const dumpId = {
               ],
               id: "6f8b0e63-5b96-590d-b78d-b954501c7063",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8574,7 +8574,7 @@ export const dumpId = {
               ],
               id: "e83e0211-35e1-513d-9881-745395cce823",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8665,7 +8665,7 @@ export const dumpId = {
               ],
               id: "b19caa8e-daf6-5e52-911b-ec7eab60dbb7",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8683,7 +8683,7 @@ export const dumpId = {
               ],
               id: "f9e3714e-a290-54bb-a86e-b54569ed4205",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8737,7 +8737,7 @@ export const dumpId = {
               ],
               id: "1b1e3873-b139-55b1-b9b9-66b2a7dab21f",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8755,7 +8755,7 @@ export const dumpId = {
               ],
               id: "2ac0a60e-39fb-54c9-83e0-65c2387961ca",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8918,7 +8918,7 @@ export const dumpId = {
           expanded_title: "Katakana: tr:や, tr:ゆ, tr:よ",
           icon: "073066af-16d8-40c7-9b73-e9e75235fd1c.jpg",
           id: "efb5e6f9-a707-4a3f-982c-ca03d9d431ea",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ya",
           lesson_order: 19,
           minimum_version: "2.5.0",
@@ -8957,7 +8957,7 @@ export const dumpId = {
               ],
               id: "304db49f-b04a-56ff-86e1-7ee28de39dd2",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -8975,7 +8975,7 @@ export const dumpId = {
               ],
               id: "2a534f91-a519-5e09-acd4-170fa3cf4059",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9011,7 +9011,7 @@ export const dumpId = {
               ],
               id: "25c46bde-c72a-5a34-960b-fedd48e69d3a",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9029,7 +9029,7 @@ export const dumpId = {
               ],
               id: "9c6a8cf2-a980-5743-9e0c-7f43f62008f6",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9083,7 +9083,7 @@ export const dumpId = {
               ],
               id: "19e5e910-69b5-559a-a960-1e8b063478b4",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9101,7 +9101,7 @@ export const dumpId = {
               ],
               id: "53b190d9-66b7-5fb3-b3d0-4a2456df12f6",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9319,7 +9319,7 @@ export const dumpId = {
           expanded_title: "Katakana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
           icon: "a6b62c7e-2ec8-44ed-b9a2-00bc4b099915.jpg",
           id: "9e46b2dc-2735-4219-a694-4972dd94a041",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ra",
           lesson_order: 20,
           minimum_version: "2.5.0",
@@ -9358,7 +9358,7 @@ export const dumpId = {
               ],
               id: "65cb64e1-c982-515f-b5f5-948e34f5f0e7",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9376,7 +9376,7 @@ export const dumpId = {
               ],
               id: "bf0e04fb-b552-5c7a-aca6-4f31743d6fe7",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9412,7 +9412,7 @@ export const dumpId = {
               ],
               id: "377b351b-67b4-55b5-8435-22f26fc22758",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9430,7 +9430,7 @@ export const dumpId = {
               ],
               id: "253fd65c-d7d9-5801-b783-fd8f12fecbae",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9484,7 +9484,7 @@ export const dumpId = {
               ],
               id: "399893e0-db92-58b5-80a3-d7b0d350d374",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9502,7 +9502,7 @@ export const dumpId = {
               ],
               id: "e40695e8-0aaa-57f7-ae5e-73608a26e119",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9593,7 +9593,7 @@ export const dumpId = {
               ],
               id: "9156ede0-0f8d-53bc-85c2-9dd0df10126a",
               screen_order: 14,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9611,7 +9611,7 @@ export const dumpId = {
               ],
               id: "d8fa9904-77ae-583e-a360-2a303410dc1c",
               screen_order: 15,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9665,7 +9665,7 @@ export const dumpId = {
               ],
               id: "570a8937-353a-5250-b538-e9152528455d",
               screen_order: 18,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9683,7 +9683,7 @@ export const dumpId = {
               ],
               id: "8703869b-16f1-5c24-9455-325dcec489f1",
               screen_order: 19,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9846,7 +9846,7 @@ export const dumpId = {
           expanded_title: "Katakana: tr:わ, tr:を, tr:ん",
           icon: "b57e394a-8e74-4700-9171-e9129bc4de2e.jpg",
           id: "e00ece18-e55c-4659-92c6-5364b616e6bf",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&wa",
           lesson_order: 21,
           minimum_version: "2.5.0",
@@ -9885,7 +9885,7 @@ export const dumpId = {
               ],
               id: "c364f654-b00f-5897-993d-9f332be66ece",
               screen_order: 2,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9903,7 +9903,7 @@ export const dumpId = {
               ],
               id: "3314664a-9197-50b3-a51f-fbbf0d32b72f",
               screen_order: 3,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9939,7 +9939,7 @@ export const dumpId = {
               ],
               id: "f8a93802-4913-5e78-90aa-6dc7d446ce81",
               screen_order: 5,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -9957,7 +9957,7 @@ export const dumpId = {
               ],
               id: "e4c13e4a-8321-55d3-a910-2daccafec8ca",
               screen_order: 6,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -10011,7 +10011,7 @@ export const dumpId = {
               ],
               id: "212e5ef7-9edd-568f-9c9f-0a9c11081077",
               screen_order: 9,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -10029,7 +10029,7 @@ export const dumpId = {
               ],
               id: "d91ef14e-8217-5280-adca-1d11f11e752d",
               screen_order: 10,
-              title: "Tulis suku kata dalam urutan yang benar.",
+              title: "Tulis suku kata dengan benar.",
             },
             {
               blocks: [
@@ -10254,7 +10254,7 @@ export const dumpId = {
           expanded_title: "Informasi",
           icon: "e55a6e88-4d4a-404c-9826-d5e88567ad8b.jpg",
           id: "01afe51a-2483-4d36-a409-799c41dac8f1",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&dakuon",
           lesson_order: 22,
           minimum_version: "2.5.0",
@@ -10786,7 +10786,7 @@ export const dumpId = {
           expanded_title: "Informasi",
           icon: "60466bc2-00e9-4920-ab2a-d65be847ab19.jpg",
           id: "ce1e3b5d-defa-404b-9906-6799c119b949",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longVowels",
           lesson_order: 23,
           minimum_version: "2.5.0",
@@ -10993,7 +10993,7 @@ export const dumpId = {
           expanded_title: "Informasi",
           icon: "35170a20-86ba-4c4e-bd01-d9be0d008026.jpg",
           id: "8171203a-4bba-4b36-8322-8fa2b2ad4d8e",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longConsonants",
           lesson_order: 24,
           minimum_version: "2.5.0",
@@ -11029,7 +11029,7 @@ export const dumpId = {
                   content: {
                     rules: [
                       "かた (tr(かた)) - bahu",
-                      "かつた (tr(かつた)) - nama",
+                      "かつた (tr(かつた)) - nama keluarga Katsuta",
                       "かった (tr(かった)) - menang",
                     ],
                   },
@@ -11132,7 +11132,7 @@ export const dumpId = {
                   block_order: 3,
                   content: {
                     rules: [
-                      "こんにちは (tr(こんにちは)) - selamat siang",
+                      "こんにちは (tr(こんにちわ)) - selamat siang",
                       "こんばんは (tr(こんばんは)) - selamat malam",
                     ],
                   },
@@ -11154,7 +11154,7 @@ export const dumpId = {
           expanded_title: "Informasi",
           icon: "bb3db32f-041c-4e39-9b7d-9c3515a0e3f8.jpg",
           id: "11074192-216f-4969-b890-60bf9e4dfaea",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&yoon",
           lesson_order: 25,
           minimum_version: "2.5.0",
@@ -11556,7 +11556,7 @@ export const dumpId = {
           expanded_title: "Informasi",
           icon: "c5fda457-5b04-4ce9-979b-05f109fda391.jpg",
           id: "7d62c5d1-76ed-47ac-b0b0-a10d06378308",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&dakuonAndHandakuon",
           lesson_order: 26,
           minimum_version: "2.5.0",
@@ -12050,7 +12050,7 @@ export const dumpId = {
           expanded_title: "Informasi",
           icon: "7c7dc482-980c-492f-99d2-19a6d83d2f77.jpg",
           id: "cbecc5ce-015c-45f3-8345-339659fcf09f",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longVowels",
           lesson_order: 27,
           minimum_version: "2.5.0",
@@ -12278,7 +12278,7 @@ export const dumpId = {
           expanded_title: "Informasi",
           icon: "2542ff58-d7f7-4f23-a669-1908f5d7adad.jpg",
           id: "45801722-3cda-4044-9f7d-61a36694e4f1",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longConsonants",
           lesson_order: 28,
           minimum_version: "2.5.0",
@@ -12426,11 +12426,11 @@ export const dumpId = {
         },
         {
           expanded_subtitle:
-            "Di sini kami akan menjelaskan kepada Anda tentang bunyi tambahan dalam katakana",
+            "Di sini kami akan menjelaskan kepada Anda tentang bunyi tambahan dalam katakana.",
           expanded_title: "Informasi",
           icon: "f8402718-ad6a-495b-b429-c1f83c51d77f.jpg",
           id: "7116cbc1-27f5-492f-b383-3a29610deb39",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&additionalSounds",
           lesson_order: 29,
           minimum_version: "2.5.0",
@@ -12839,11 +12839,11 @@ export const dumpId = {
           topic_id: "4c68fcc3-bc3f-414a-b5b5-8eb466a9a70b",
         },
         {
-          expanded_subtitle: "Di sini kami akan menjelaskan tentang yōon",
+          expanded_subtitle: "Di sini kami akan menjelaskan tentang yōon.",
           expanded_title: "Informasi",
           icon: "aafe6dcb-4193-4d5e-9d95-258ffb60314f.jpg",
           id: "b3e53d4d-85ae-4cea-be30-63890643d29b",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&yoon",
           lesson_order: 30,
           minimum_version: "2.5.0",
@@ -13233,11 +13233,12 @@ export const dumpId = {
           topic_id: "4c68fcc3-bc3f-414a-b5b5-8eb466a9a70b",
         },
         {
-          expanded_subtitle: "Di sini kami akan menjelaskan cara melanjutkan belajar bahasa Jepang",
+          expanded_subtitle:
+            "Di sini kami akan menjelaskan cara melanjutkan belajar bahasa Jepang.",
           expanded_title: "Informasi",
           icon: "18800460-fe6b-4b37-bbb2-259253cdcbbb.jpg",
           id: "fb170111-edc9-4440-a707-63ec10bdeeb8",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/whats-next",
           lesson_order: 31,
           minimum_version: "2.5.0",
@@ -13320,14 +13321,6 @@ export const dumpId = {
                   id: "19ef4a11-5cab-5489-9d0f-379b7f78101e",
                   type: "rule",
                 },
-                {
-                  block_order: 3,
-                  content: {
-                    text: "Kebanyakan orang mulai dari N5 lalu naik secara bertahap.",
-                  },
-                  id: "d08226f8-143a-5258-a2c5-53f0f53d6e42",
-                  type: "text",
-                },
               ],
               id: "4f12f5fb-777f-5f9a-b0d4-becfabb531cd",
               screen_order: 3,
@@ -13338,7 +13331,7 @@ export const dumpId = {
                 {
                   block_order: 1,
                   content: {
-                    text: "Seri ini dibagi berdasarkan tingkatan:",
+                    text: "Seri Minna no Nihongo dibagi berdasarkan tingkatan:",
                   },
                   id: "acd89907-52b6-5408-9618-38f013f4af7d",
                   type: "text",
@@ -13349,8 +13342,6 @@ export const dumpId = {
                     rules: [
                       "**Minna no Nihongo Shokyuu I** (Beginner 1) — kira-kira tingkat N5",
                       "**Minna no Nihongo Shokyuu II** (Beginner 2) — kira-kira tingkat N4",
-                      "**Minna no Nihongo Chukyuu I** (Intermediate 1) — kira-kira tingkat N3",
-                      "Setelah itu ada bagian seri yang lebih lanjut",
                     ],
                   },
                   id: "564f12af-e929-5d2f-8a38-852e2a746b34",
@@ -13359,15 +13350,23 @@ export const dumpId = {
                 {
                   block_order: 3,
                   content: {
-                    text: "Kami menyarankan untuk mulai dari Shokyuu I dan belajar secara berurutan. Setiap buku pelajaran dilengkapi buku latihan (Workbook) dan terjemahan tata bahasa, antara lain dalam bahasa Indonesia dan bahasa Inggris.",
+                    text: "Kami menyarankan untuk mulai dari Shokyuu I dan belajar secara berurutan. Setiap buku pelajaran dilengkapi buku latihan (Workbook) dan terjemahan tata bahasa ke berbagai bahasa.",
                   },
                   id: "02d707c2-30a3-517d-979c-67e5268b3c86",
+                  type: "text",
+                },
+                {
+                  block_order: 4,
+                  content: {
+                    text: "Setelah tingkat N4, kami menyarankan untuk mencari tahu seri buku pelajaran mana yang paling cocok untuk Anda.",
+                  },
+                  id: "5685699f-fab2-5de6-a336-7e2d35c3774c",
                   type: "text",
                 },
               ],
               id: "37e2991f-bffe-53a2-9907-eeeb9b530b31",
               screen_order: 4,
-              title: "Buku Minna no Nihongo mana yang dipilih",
+              title: "Buku mana yang dipilih",
             },
             {
               blocks: [
@@ -13458,7 +13457,7 @@ export const dumpId = {
                   content: {
                     rules: [
                       "Berbagai kamus daring",
-                      "Audio untuk buku pelajaran Minna no Nihongo",
+                      "Audio untuk buku pelajaran",
                       "Video dan podcast bahasa Jepang sederhana untuk pemula",
                     ],
                   },
@@ -13487,7 +13486,7 @@ export const dumpId = {
               title: "Sumber belajar yang berguna",
             },
           ],
-          subtitle: "Bagaimana melanjutkan belajar bahasa Jepang?",
+          subtitle: "Bagaimana lanjut belajar bahasa Jepang?",
           title: "Selanjutnya",
           topic_id: "4c68fcc3-bc3f-414a-b5b5-8eb466a9a70b",
         },

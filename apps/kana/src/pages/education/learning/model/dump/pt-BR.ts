@@ -8,7 +8,7 @@ export const dumpPtBR = {
           expanded_title: "Informações",
           icon: "4f99e07e-fa33-404a-9dfe-f0914dbdfade.jpg",
           id: "d494dc19-d9d6-469c-b6de-87b1494b4b94",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/introduction",
           lesson_order: 1,
           minimum_version: "2.5.0",
@@ -204,7 +204,7 @@ export const dumpPtBR = {
           expanded_title: "Hiragana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "37a3d605-c9ea-4875-86b8-4acb1604c2a2.jpg",
           id: "1e35cfe7-283d-4938-8579-c4fb97adc076",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&a",
           lesson_order: 2,
           minimum_version: "2.5.0",
@@ -243,7 +243,7 @@ export const dumpPtBR = {
               ],
               id: "2c595204-9a80-540c-8135-7143825a2d7c",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -261,7 +261,7 @@ export const dumpPtBR = {
               ],
               id: "c67e3888-594f-5339-9d91-e3d3df4cf4fb",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -297,7 +297,7 @@ export const dumpPtBR = {
               ],
               id: "88618fca-a381-5df9-8a70-e0f496cd0c38",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -315,7 +315,7 @@ export const dumpPtBR = {
               ],
               id: "163c65fd-97bf-58a0-9e4b-99c91d8620a9",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -369,7 +369,7 @@ export const dumpPtBR = {
               ],
               id: "ced0c037-5fe4-57b9-a233-ba8a8c4fe384",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -387,7 +387,7 @@ export const dumpPtBR = {
               ],
               id: "c83a177c-a28b-5da1-87c4-fa8a7f5c71c9",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -478,7 +478,7 @@ export const dumpPtBR = {
               ],
               id: "c668ac82-bd81-5c87-8a7d-8f80343f2c86",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -496,7 +496,7 @@ export const dumpPtBR = {
               ],
               id: "6d3d8284-44eb-5768-9aea-80580eae10ca",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -550,7 +550,7 @@ export const dumpPtBR = {
               ],
               id: "42ea0525-3108-5cdc-802e-0a483068036e",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -568,7 +568,7 @@ export const dumpPtBR = {
               ],
               id: "82daaad3-33a6-5d97-924a-a7ef4744ea05",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -731,7 +731,7 @@ export const dumpPtBR = {
           expanded_title: "Hiragana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "bea297c4-29a1-48d8-b13e-c30bae9d58ba.jpg",
           id: "1166b5d4-1300-4263-9c4c-ed38ebe1681e",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ka",
           lesson_order: 3,
           minimum_version: "2.5.0",
@@ -770,7 +770,7 @@ export const dumpPtBR = {
               ],
               id: "5bab02ba-5e7f-5e49-92b5-1095ae94bfb7",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -788,7 +788,7 @@ export const dumpPtBR = {
               ],
               id: "b392b567-56ed-5d30-a56f-b47d6586262c",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -824,7 +824,7 @@ export const dumpPtBR = {
               ],
               id: "2e612618-313d-50fd-b8ed-ce953c5e3f4b",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -842,7 +842,7 @@ export const dumpPtBR = {
               ],
               id: "60b71c90-7195-5092-9111-e9577fbace96",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -896,7 +896,7 @@ export const dumpPtBR = {
               ],
               id: "25e40b48-b5fb-57ad-861a-633a659b4955",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -914,7 +914,7 @@ export const dumpPtBR = {
               ],
               id: "edb10dc1-5b33-5010-8b04-0978613f7c05",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1005,7 +1005,7 @@ export const dumpPtBR = {
               ],
               id: "efe75496-6194-5b4f-b21d-7604f92f1de5",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1023,7 +1023,7 @@ export const dumpPtBR = {
               ],
               id: "056bfd81-1296-5cdb-a498-512d5bd9ee7b",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1077,7 +1077,7 @@ export const dumpPtBR = {
               ],
               id: "9f6203a4-67f3-5ac6-9595-d84d92c8ca7f",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1095,7 +1095,7 @@ export const dumpPtBR = {
               ],
               id: "b4d131dd-13d4-5b4c-ad1c-4cf554355c9d",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1258,7 +1258,7 @@ export const dumpPtBR = {
           expanded_title: "Hiragana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "d69655e1-1709-4601-8ce7-832165d7d556.jpg",
           id: "178e75e8-7fb6-42f4-a875-b48ce8561e77",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&sa",
           lesson_order: 4,
           minimum_version: "2.5.0",
@@ -1297,7 +1297,7 @@ export const dumpPtBR = {
               ],
               id: "ba6de59d-b6b2-5764-aae4-2ebe7b65b59a",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1315,7 +1315,7 @@ export const dumpPtBR = {
               ],
               id: "0471e5fc-45b3-5741-b15a-2d81079da5cb",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1351,7 +1351,7 @@ export const dumpPtBR = {
               ],
               id: "3b08ad1c-7184-5ec0-b777-ab716049ac44",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1369,7 +1369,7 @@ export const dumpPtBR = {
               ],
               id: "a9817ce2-aa78-5071-a370-b80623785639",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1423,7 +1423,7 @@ export const dumpPtBR = {
               ],
               id: "673c62b1-738b-549f-a8b4-9cf3acf33650",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1441,7 +1441,7 @@ export const dumpPtBR = {
               ],
               id: "b04554ce-660a-597c-beb2-aaa4da63fc8c",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1532,7 +1532,7 @@ export const dumpPtBR = {
               ],
               id: "1bebe462-fa41-502d-8564-1c607c8ab04a",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1550,7 +1550,7 @@ export const dumpPtBR = {
               ],
               id: "41709637-5cd9-5a8e-87b3-a821c5f5e43e",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1604,7 +1604,7 @@ export const dumpPtBR = {
               ],
               id: "c349a2f6-2638-5cbf-943f-1b9a4fbb2abc",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1622,7 +1622,7 @@ export const dumpPtBR = {
               ],
               id: "e64791ad-189f-576f-b0e3-c975731881c2",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1785,7 +1785,7 @@ export const dumpPtBR = {
           expanded_title: "Hiragana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "cce66d6e-826a-4b29-8eaa-50df25e09c40.jpg",
           id: "d5001871-47cb-4a75-84f5-eb31680cd968",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ta",
           lesson_order: 5,
           minimum_version: "2.5.0",
@@ -1824,7 +1824,7 @@ export const dumpPtBR = {
               ],
               id: "1997e36c-2a9d-57f0-8efc-80727486a2f5",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1842,7 +1842,7 @@ export const dumpPtBR = {
               ],
               id: "43f56867-313c-5552-8c02-a72a851658a3",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1878,7 +1878,7 @@ export const dumpPtBR = {
               ],
               id: "9524b08f-72db-5d97-82fb-db23abd116c8",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1896,7 +1896,7 @@ export const dumpPtBR = {
               ],
               id: "d416213c-8826-5172-a00c-d33d5d7477b9",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1950,7 +1950,7 @@ export const dumpPtBR = {
               ],
               id: "624d83f6-dcc7-5dc0-90de-edbc18491229",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -1968,7 +1968,7 @@ export const dumpPtBR = {
               ],
               id: "fb318220-6832-5e48-90f2-74b46fb0ee7d",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2059,7 +2059,7 @@ export const dumpPtBR = {
               ],
               id: "6ad4ab4d-8f6e-5d03-be87-afa67faf76c0",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2077,7 +2077,7 @@ export const dumpPtBR = {
               ],
               id: "fa5124f7-2440-5795-baff-34f9a96fa806",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2131,7 +2131,7 @@ export const dumpPtBR = {
               ],
               id: "38a0fcd3-5c29-54d4-87d5-bf5a89f9b51c",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2149,7 +2149,7 @@ export const dumpPtBR = {
               ],
               id: "5e9ab969-4841-56d6-bc38-496b340ca4b4",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2312,7 +2312,7 @@ export const dumpPtBR = {
           expanded_title: "Hiragana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "80cbe968-4fae-45ab-a78b-d6cf17ad7d31.jpg",
           id: "31ead44f-c13a-4039-b15a-119278aeb29d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&na",
           lesson_order: 6,
           minimum_version: "2.5.0",
@@ -2351,7 +2351,7 @@ export const dumpPtBR = {
               ],
               id: "6a171083-1466-52e2-b985-5d917ea3e8b0",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2369,7 +2369,7 @@ export const dumpPtBR = {
               ],
               id: "4962b941-efac-5616-a0ae-d2b25c211349",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2405,7 +2405,7 @@ export const dumpPtBR = {
               ],
               id: "f7bfaa20-d37c-59c9-b912-c64b43c85cbf",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2423,7 +2423,7 @@ export const dumpPtBR = {
               ],
               id: "757cde7f-d578-5990-ba8f-546f82a369d1",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2477,7 +2477,7 @@ export const dumpPtBR = {
               ],
               id: "aa2f4366-5a2b-5d24-af5f-23db2b4a211d",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2495,7 +2495,7 @@ export const dumpPtBR = {
               ],
               id: "e193a71c-9f6c-5503-8e66-75e22ff824e3",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2586,7 +2586,7 @@ export const dumpPtBR = {
               ],
               id: "0aa4ce44-de48-5d4f-87fc-389e7fbb6d6e",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2604,7 +2604,7 @@ export const dumpPtBR = {
               ],
               id: "dd549e22-0c88-5ca1-9d8c-5aeeb07b7060",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2658,7 +2658,7 @@ export const dumpPtBR = {
               ],
               id: "5b115d0f-457c-52dd-899d-3004dec8811a",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2676,7 +2676,7 @@ export const dumpPtBR = {
               ],
               id: "22404ca7-822e-5b7b-b24d-f8510fdba175",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2839,7 +2839,7 @@ export const dumpPtBR = {
           expanded_title: "Hiragana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "5ab5e704-d6ba-4fde-a6f3-36745e149ed9.jpg",
           id: "3104bfc7-5a65-4160-a01b-17b31af8c8ae",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ha",
           lesson_order: 7,
           minimum_version: "2.5.0",
@@ -2878,7 +2878,7 @@ export const dumpPtBR = {
               ],
               id: "360185aa-a50f-5462-a4dd-27bceffd9555",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2896,7 +2896,7 @@ export const dumpPtBR = {
               ],
               id: "dbfb49e6-c7f9-54bf-aec7-c5757ce669d6",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2932,7 +2932,7 @@ export const dumpPtBR = {
               ],
               id: "857f3334-06cd-5b08-9764-78dfccc363a5",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -2950,7 +2950,7 @@ export const dumpPtBR = {
               ],
               id: "1ffe4d9e-e495-5b5a-bd65-f07f1bba0e7d",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3004,7 +3004,7 @@ export const dumpPtBR = {
               ],
               id: "82e1146c-1e8b-559a-a281-77ec8ca07e7e",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3022,7 +3022,7 @@ export const dumpPtBR = {
               ],
               id: "632e4ab9-e6d5-5445-8fff-e04bdcb5615f",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3113,7 +3113,7 @@ export const dumpPtBR = {
               ],
               id: "4514c2a1-91a4-5ed2-a7ba-322f6a039387",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3131,7 +3131,7 @@ export const dumpPtBR = {
               ],
               id: "37add13a-d6c5-52e4-80fe-47a5a2504f46",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3185,7 +3185,7 @@ export const dumpPtBR = {
               ],
               id: "fde9b0d6-9e8d-57be-8ea9-133ff9af4dd6",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3203,7 +3203,7 @@ export const dumpPtBR = {
               ],
               id: "1fc93e57-06f6-59ca-bee2-a54c7a8b981d",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3366,7 +3366,7 @@ export const dumpPtBR = {
           expanded_title: "Hiragana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "f53fde6a-ca94-4b15-8397-d567a3a17906.jpg",
           id: "fafd588c-c47e-4516-93d4-960d88615d8c",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ma",
           lesson_order: 8,
           minimum_version: "2.5.0",
@@ -3405,7 +3405,7 @@ export const dumpPtBR = {
               ],
               id: "4058d28d-9b0a-58c4-a51b-c671bd9ab834",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3423,7 +3423,7 @@ export const dumpPtBR = {
               ],
               id: "5d935d1f-43b6-5991-8037-6fa52afbb617",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3459,7 +3459,7 @@ export const dumpPtBR = {
               ],
               id: "2aaa926e-8874-5913-8d41-d52310fa89c7",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3477,7 +3477,7 @@ export const dumpPtBR = {
               ],
               id: "1dd02d4f-7cea-51d5-a319-bf99f2722f73",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3531,7 +3531,7 @@ export const dumpPtBR = {
               ],
               id: "c4ec7670-994e-5cea-ac9b-994ed9a4bca0",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3549,7 +3549,7 @@ export const dumpPtBR = {
               ],
               id: "84df2f8b-0934-53d0-abad-776ffb2fec98",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3640,7 +3640,7 @@ export const dumpPtBR = {
               ],
               id: "a08ff72a-8d83-5eb9-821b-951762271477",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3658,7 +3658,7 @@ export const dumpPtBR = {
               ],
               id: "3d82ee8b-fdd7-54ad-9eff-3754ef8c4c19",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3712,7 +3712,7 @@ export const dumpPtBR = {
               ],
               id: "fb9ccefc-0fa3-5f5d-9c41-1f3502f0daf6",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3730,7 +3730,7 @@ export const dumpPtBR = {
               ],
               id: "fb7b1d43-4cae-525f-8425-167c9a9f5bd2",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3891,9 +3891,9 @@ export const dumpPtBR = {
         {
           expanded_subtitle: "Aprenda a ler e escrever as sílabas da linha tr:や.",
           expanded_title: "Hiragana: tr:や, tr:ゆ, tr:よ",
-          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
+          icon: "998d7b1d-3751-407b-8909-da9dc7983cdb.jpg",
           id: "226d4c05-b243-49bc-90ec-61aaf72f9e1a",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ya",
           lesson_order: 9,
           minimum_version: "2.5.0",
@@ -3932,7 +3932,7 @@ export const dumpPtBR = {
               ],
               id: "0c586ab0-8d72-5f38-847f-cf201e030889",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3950,7 +3950,7 @@ export const dumpPtBR = {
               ],
               id: "30c60909-581a-581e-b984-dfc6e5577a62",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -3986,7 +3986,7 @@ export const dumpPtBR = {
               ],
               id: "0a44fab3-ed25-5786-a99f-7f39643f9815",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4004,7 +4004,7 @@ export const dumpPtBR = {
               ],
               id: "b0fcd4af-c879-5d59-a19b-222e3d8cd78f",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4058,7 +4058,7 @@ export const dumpPtBR = {
               ],
               id: "972e0d43-7001-5d5b-8faf-55979936ebfb",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4076,7 +4076,7 @@ export const dumpPtBR = {
               ],
               id: "dfec5acb-de65-5c26-aff4-53656bbe91d0",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4292,9 +4292,9 @@ export const dumpPtBR = {
         {
           expanded_subtitle: "Aprenda a ler e escrever as sílabas da linha tr:ら.",
           expanded_title: "Hiragana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
-          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
+          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
           id: "ea788a0e-5877-4717-980b-41dca46feaca",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ra",
           lesson_order: 10,
           minimum_version: "2.5.0",
@@ -4333,7 +4333,7 @@ export const dumpPtBR = {
               ],
               id: "0b830804-9790-524b-a368-18b8984434c4",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4351,7 +4351,7 @@ export const dumpPtBR = {
               ],
               id: "45c0bf03-1d59-58d6-808f-181633c39045",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4387,7 +4387,7 @@ export const dumpPtBR = {
               ],
               id: "11b8edd2-826e-5213-ae99-f66ccb3bc199",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4405,7 +4405,7 @@ export const dumpPtBR = {
               ],
               id: "b0654e0e-2584-5ca7-ae77-ba204d279f4b",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4459,7 +4459,7 @@ export const dumpPtBR = {
               ],
               id: "2ac35f56-06d5-5534-a50f-cf9d9ec6bd35",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4477,7 +4477,7 @@ export const dumpPtBR = {
               ],
               id: "2d63addf-6c35-5e7d-a19f-aebecba47422",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4568,7 +4568,7 @@ export const dumpPtBR = {
               ],
               id: "b64e68f0-d115-5a74-9ea5-a71eeba72a07",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4586,7 +4586,7 @@ export const dumpPtBR = {
               ],
               id: "e7a7a4fd-f427-53d7-a360-779ad6fca68c",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4640,7 +4640,7 @@ export const dumpPtBR = {
               ],
               id: "2f1a8dd9-901e-54a3-8ccb-2e07b2a86a9f",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4658,7 +4658,7 @@ export const dumpPtBR = {
               ],
               id: "09ab4ff6-72a4-5697-8e65-ede89b11bc2d",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4819,9 +4819,9 @@ export const dumpPtBR = {
         {
           expanded_subtitle: "Aprenda a ler e escrever as sílabas: tr:わ, tr:を, tr:ん.",
           expanded_title: "Hiragana: tr:わ, tr:を, tr:ん",
-          icon: "c4480f8f-71ee-4df0-886f-508b39912b4c.jpg",
+          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
           id: "8247af36-4123-4e49-8dda-e60e2b9b93d7",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&wa",
           lesson_order: 11,
           minimum_version: "2.5.0",
@@ -4860,7 +4860,7 @@ export const dumpPtBR = {
               ],
               id: "4b86776a-437e-5ec9-8757-bd60ff6adbc5",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4878,7 +4878,7 @@ export const dumpPtBR = {
               ],
               id: "d4e42a62-0f89-5b9e-8b6e-265397d63d4e",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4914,7 +4914,7 @@ export const dumpPtBR = {
               ],
               id: "49e8285a-6796-54e6-a6f2-8e088a5cd41b",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4932,7 +4932,7 @@ export const dumpPtBR = {
               ],
               id: "79b2e3c1-f80a-50ba-911d-223cd700b034",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -4986,7 +4986,7 @@ export const dumpPtBR = {
               ],
               id: "4fa85a02-bce7-54da-b2a6-756498922d5e",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5004,7 +5004,7 @@ export const dumpPtBR = {
               ],
               id: "ce78a899-6860-5f3c-b556-4f01ba65fa1b",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5229,7 +5229,7 @@ export const dumpPtBR = {
           expanded_title: "Katakana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "515f18bb-8797-4e60-b1b0-40f9b60aebcb.jpg",
           id: "c04ffaed-7605-4d5b-a8de-454d410d0ce3",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&a",
           lesson_order: 12,
           minimum_version: "2.5.0",
@@ -5268,7 +5268,7 @@ export const dumpPtBR = {
               ],
               id: "95bdf1f1-9987-5c59-84ac-444632c1423c",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5286,7 +5286,7 @@ export const dumpPtBR = {
               ],
               id: "0b6f42ec-d703-5235-9089-4e7b44788787",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5322,7 +5322,7 @@ export const dumpPtBR = {
               ],
               id: "044ba909-1b5b-55b8-92ae-b2c16b353908",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5340,7 +5340,7 @@ export const dumpPtBR = {
               ],
               id: "8c7a1dfb-c1b1-5348-b5a0-708435086d34",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5394,7 +5394,7 @@ export const dumpPtBR = {
               ],
               id: "d019bd5b-1108-5fa4-9a2f-abb8da08105c",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5412,7 +5412,7 @@ export const dumpPtBR = {
               ],
               id: "0f1bf30e-fcd7-5d9c-862f-d5080676cda2",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5503,7 +5503,7 @@ export const dumpPtBR = {
               ],
               id: "2a7e19e2-ca94-54c4-ba16-9c7a7c0395ac",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5521,7 +5521,7 @@ export const dumpPtBR = {
               ],
               id: "a2f58e9a-735b-5170-844b-e96b29cfe456",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5575,7 +5575,7 @@ export const dumpPtBR = {
               ],
               id: "97029e9d-2e8e-5578-b826-0ea58ba4daad",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5593,7 +5593,7 @@ export const dumpPtBR = {
               ],
               id: "211a4911-dbce-53c5-8f84-dc39eafb5a04",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5756,7 +5756,7 @@ export const dumpPtBR = {
           expanded_title: "Katakana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "655dcf64-0666-4be6-8c19-0993b1ac03ec.jpg",
           id: "e36e0591-0795-4653-bd58-b18d1ae897f9",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ka",
           lesson_order: 13,
           minimum_version: "2.5.0",
@@ -5795,7 +5795,7 @@ export const dumpPtBR = {
               ],
               id: "9cbc7ceb-ac79-5411-ab01-7d57595b57fd",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5813,7 +5813,7 @@ export const dumpPtBR = {
               ],
               id: "9f97f1a7-cc89-5f51-ad3a-45f976f60b79",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5849,7 +5849,7 @@ export const dumpPtBR = {
               ],
               id: "a0b475da-710d-5123-bd3b-444eda105883",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5867,7 +5867,7 @@ export const dumpPtBR = {
               ],
               id: "13ea1f60-4920-555e-92a9-0d5df92af9ae",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5921,7 +5921,7 @@ export const dumpPtBR = {
               ],
               id: "05a6bd80-c919-5fd7-bcbe-e86e5ec1871e",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -5939,7 +5939,7 @@ export const dumpPtBR = {
               ],
               id: "48af6ebe-cec9-52ac-84cf-aa933d08552b",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6030,7 +6030,7 @@ export const dumpPtBR = {
               ],
               id: "5e90598e-220e-575a-b3e0-e8f7871fcb31",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6048,7 +6048,7 @@ export const dumpPtBR = {
               ],
               id: "c8d08161-a2ff-57ec-a2b0-320aa0c6af5f",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6102,7 +6102,7 @@ export const dumpPtBR = {
               ],
               id: "67562431-cc6a-580d-99f3-94481dd930cf",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6120,7 +6120,7 @@ export const dumpPtBR = {
               ],
               id: "d99c1422-3d02-5615-806a-08375ef6ff4e",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6283,7 +6283,7 @@ export const dumpPtBR = {
           expanded_title: "Katakana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "6a3e11ff-5864-4f25-846e-5f8ac4691c5f.jpg",
           id: "70f34811-2ae1-48ba-866e-8a657bffb505",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&sa",
           lesson_order: 14,
           minimum_version: "2.5.0",
@@ -6322,7 +6322,7 @@ export const dumpPtBR = {
               ],
               id: "7d421ed1-13d1-51f2-9ff9-815df096c32f",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6340,7 +6340,7 @@ export const dumpPtBR = {
               ],
               id: "39fba3ef-6316-5604-a7e9-3e99d6be135e",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6376,7 +6376,7 @@ export const dumpPtBR = {
               ],
               id: "21773883-8910-567d-9015-c7eb985bdbbb",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6394,7 +6394,7 @@ export const dumpPtBR = {
               ],
               id: "baab600b-f0ee-51c4-9b1d-d17ade025f5d",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6448,7 +6448,7 @@ export const dumpPtBR = {
               ],
               id: "107585c8-0689-574f-906c-27587838ca5f",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6466,7 +6466,7 @@ export const dumpPtBR = {
               ],
               id: "9cc1aa5e-8f13-5a65-bd55-45213c8f24f0",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6557,7 +6557,7 @@ export const dumpPtBR = {
               ],
               id: "de20ad7b-0aec-563a-9a4c-2461516fbc4e",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6575,7 +6575,7 @@ export const dumpPtBR = {
               ],
               id: "30c98941-03d6-59fe-932e-d4a870d450fa",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6629,7 +6629,7 @@ export const dumpPtBR = {
               ],
               id: "d106c890-73b8-5c16-9810-1f6ed5d686a7",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6647,7 +6647,7 @@ export const dumpPtBR = {
               ],
               id: "f1459711-4040-5626-b10b-d0b6bb84a3b4",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6810,7 +6810,7 @@ export const dumpPtBR = {
           expanded_title: "Katakana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "2dc2bdaa-3088-4754-8d52-38dc208fe6e7.jpg",
           id: "2bef09b9-3207-4c6f-b8d4-123ce5dffb93",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ta",
           lesson_order: 15,
           minimum_version: "2.5.0",
@@ -6849,7 +6849,7 @@ export const dumpPtBR = {
               ],
               id: "641b5e3e-c108-5aba-a3ec-0fab7d290e92",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6867,7 +6867,7 @@ export const dumpPtBR = {
               ],
               id: "61229e3b-5a2e-5e33-85be-eca7b46b1e6c",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6903,7 +6903,7 @@ export const dumpPtBR = {
               ],
               id: "301b4b61-b085-5481-ac26-2a6f290dec24",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6921,7 +6921,7 @@ export const dumpPtBR = {
               ],
               id: "95723a95-a730-5260-a9c6-b2031a6fdf05",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6975,7 +6975,7 @@ export const dumpPtBR = {
               ],
               id: "2d8578dd-17d2-5b33-9ecb-6ec864192b84",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -6993,7 +6993,7 @@ export const dumpPtBR = {
               ],
               id: "22beea87-f783-565b-8945-14721b8184fa",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7084,7 +7084,7 @@ export const dumpPtBR = {
               ],
               id: "87887199-0b7c-5342-8fa7-86138cc93828",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7102,7 +7102,7 @@ export const dumpPtBR = {
               ],
               id: "01879b5f-9e05-5972-a546-1a78ad61f16f",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7156,7 +7156,7 @@ export const dumpPtBR = {
               ],
               id: "da1acc5a-9967-5941-ba07-a4058979e828",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7174,7 +7174,7 @@ export const dumpPtBR = {
               ],
               id: "42960f4f-4d2e-5f83-aacd-9a5e7b1238df",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7337,7 +7337,7 @@ export const dumpPtBR = {
           expanded_title: "Katakana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "3f4e712a-7fc7-4e81-acab-72bb0ef427e4.jpg",
           id: "31ea0eef-2842-4a62-a632-d8608df3b217",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&na",
           lesson_order: 16,
           minimum_version: "2.5.0",
@@ -7376,7 +7376,7 @@ export const dumpPtBR = {
               ],
               id: "c2dbfcac-c091-5fee-bf3d-a4ef7df4c0ca",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7394,7 +7394,7 @@ export const dumpPtBR = {
               ],
               id: "073349e8-ef21-5841-9d5b-d432519633af",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7430,7 +7430,7 @@ export const dumpPtBR = {
               ],
               id: "c84fd4eb-a05e-5052-8bdc-018e347cd0e3",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7448,7 +7448,7 @@ export const dumpPtBR = {
               ],
               id: "15edf603-b904-507d-8e13-45728f04b9d1",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7502,7 +7502,7 @@ export const dumpPtBR = {
               ],
               id: "7fe37439-7204-551b-854e-0989bc1d34b3",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7520,7 +7520,7 @@ export const dumpPtBR = {
               ],
               id: "e9fb6711-cb45-56a0-b585-d84a3893a202",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7611,7 +7611,7 @@ export const dumpPtBR = {
               ],
               id: "d1821bd8-3d30-53aa-9db5-f85c069222b5",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7629,7 +7629,7 @@ export const dumpPtBR = {
               ],
               id: "09e5739b-3f10-5f38-a309-c98bad346fba",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7683,7 +7683,7 @@ export const dumpPtBR = {
               ],
               id: "4cc3162e-0e35-5daa-b9f9-8838570f7d1d",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7701,7 +7701,7 @@ export const dumpPtBR = {
               ],
               id: "0cbd8972-7765-588c-95a1-8635e37543c7",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7864,7 +7864,7 @@ export const dumpPtBR = {
           expanded_title: "Katakana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "a972e2ac-7362-4f98-801d-4389ba31e2f9.jpg",
           id: "d960a09f-6f39-4b47-b76f-e2c289a0ef9f",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ha",
           lesson_order: 17,
           minimum_version: "2.5.0",
@@ -7903,7 +7903,7 @@ export const dumpPtBR = {
               ],
               id: "59a7655a-0c78-595f-a1d5-c52169b6e84e",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7921,7 +7921,7 @@ export const dumpPtBR = {
               ],
               id: "43af6563-7ef7-52e7-9b7e-03e52d6297d0",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7957,7 +7957,7 @@ export const dumpPtBR = {
               ],
               id: "aaec1065-f9e4-5512-9f4f-5463ea72c632",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -7975,7 +7975,7 @@ export const dumpPtBR = {
               ],
               id: "4d7d82ae-68f0-5f84-a54d-a6d0c05ec289",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8029,7 +8029,7 @@ export const dumpPtBR = {
               ],
               id: "d4f32598-6539-5659-a708-2b0df318d7ad",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8047,7 +8047,7 @@ export const dumpPtBR = {
               ],
               id: "1b52dfc9-1359-503b-9b5d-c2b1f5099d86",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8138,7 +8138,7 @@ export const dumpPtBR = {
               ],
               id: "522d00cf-543f-5134-8575-a69072d1e5a6",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8156,7 +8156,7 @@ export const dumpPtBR = {
               ],
               id: "d2d4e95d-a0f0-5435-bb9c-003354ee6e8b",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8210,7 +8210,7 @@ export const dumpPtBR = {
               ],
               id: "c0bde6c0-f3a9-50dd-9398-2fa82c58c90e",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8228,7 +8228,7 @@ export const dumpPtBR = {
               ],
               id: "ee85023a-cd42-5042-b710-caab668b04dd",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8391,7 +8391,7 @@ export const dumpPtBR = {
           expanded_title: "Katakana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "07d0c986-1f16-4254-aa12-58aa2e0f9a49.jpg",
           id: "56dd7eba-6c73-4c99-bd27-8f520111a344",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ma",
           lesson_order: 18,
           minimum_version: "2.5.0",
@@ -8430,7 +8430,7 @@ export const dumpPtBR = {
               ],
               id: "c0a3739d-c00c-5d5d-9bd9-07fd7cd520d9",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8448,7 +8448,7 @@ export const dumpPtBR = {
               ],
               id: "b37c81f5-5fb5-5ab7-9255-36c0ac104f1f",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8484,7 +8484,7 @@ export const dumpPtBR = {
               ],
               id: "59460fce-994e-5512-b1c1-cd0255e9422a",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8502,7 +8502,7 @@ export const dumpPtBR = {
               ],
               id: "0c24ec12-ad2b-5e39-b96e-0b949e0d77ef",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8556,7 +8556,7 @@ export const dumpPtBR = {
               ],
               id: "359158ab-59a0-5329-bf30-aa46d8814508",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8574,7 +8574,7 @@ export const dumpPtBR = {
               ],
               id: "b70fd91a-89e6-52e9-94b0-650ab3879c8f",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8665,7 +8665,7 @@ export const dumpPtBR = {
               ],
               id: "e41f1a64-17cb-5dde-ab35-fc5245a856b3",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8683,7 +8683,7 @@ export const dumpPtBR = {
               ],
               id: "ae0ce54e-415f-5030-b5ee-62bd09093488",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8737,7 +8737,7 @@ export const dumpPtBR = {
               ],
               id: "4db80b90-ed26-59f3-b0f4-3a82605edebb",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8755,7 +8755,7 @@ export const dumpPtBR = {
               ],
               id: "978ba83b-a2ac-536a-b6c8-872e062f6718",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8918,7 +8918,7 @@ export const dumpPtBR = {
           expanded_title: "Katakana: tr:や, tr:ゆ, tr:よ",
           icon: "073066af-16d8-40c7-9b73-e9e75235fd1c.jpg",
           id: "99a7c285-ef5e-48ca-9d84-c4c5daad436d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ya",
           lesson_order: 19,
           minimum_version: "2.5.0",
@@ -8957,7 +8957,7 @@ export const dumpPtBR = {
               ],
               id: "ce8b9af1-14db-5dd1-ae07-383a35b1b600",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -8975,7 +8975,7 @@ export const dumpPtBR = {
               ],
               id: "d11038ad-f7db-559c-9c88-859e84c8e49e",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9011,7 +9011,7 @@ export const dumpPtBR = {
               ],
               id: "995b8444-46a0-5bee-9871-5c93f71cdcbf",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9029,7 +9029,7 @@ export const dumpPtBR = {
               ],
               id: "aeb9d9a0-b036-552a-9166-f474687b2f92",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9083,7 +9083,7 @@ export const dumpPtBR = {
               ],
               id: "a6b2947e-0136-54d7-a4e2-38eca312b021",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9101,7 +9101,7 @@ export const dumpPtBR = {
               ],
               id: "2bedf248-41f9-553d-877d-2e6ace75af98",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9319,7 +9319,7 @@ export const dumpPtBR = {
           expanded_title: "Katakana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
           icon: "a6b62c7e-2ec8-44ed-b9a2-00bc4b099915.jpg",
           id: "9bfc9827-b646-416b-a415-f5c0b31f1327",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ra",
           lesson_order: 20,
           minimum_version: "2.5.0",
@@ -9358,7 +9358,7 @@ export const dumpPtBR = {
               ],
               id: "7e41c2c9-6706-524e-9514-5d899f8e173e",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9376,7 +9376,7 @@ export const dumpPtBR = {
               ],
               id: "e5f64814-7850-5bbf-91ab-cedb8643c009",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9412,7 +9412,7 @@ export const dumpPtBR = {
               ],
               id: "6242e48c-3b09-5c92-9c91-baf328707ac6",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9430,7 +9430,7 @@ export const dumpPtBR = {
               ],
               id: "5838a87f-20c9-5796-8b45-d494792697e5",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9484,7 +9484,7 @@ export const dumpPtBR = {
               ],
               id: "02c685b3-737e-5074-a2b6-8edc9d328849",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9502,7 +9502,7 @@ export const dumpPtBR = {
               ],
               id: "401b8c1b-c834-5bd6-8bca-1f4fd79ffe9a",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9593,7 +9593,7 @@ export const dumpPtBR = {
               ],
               id: "054d9497-8c89-5212-b9d9-2e4bc1adccfd",
               screen_order: 14,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9611,7 +9611,7 @@ export const dumpPtBR = {
               ],
               id: "c333e3ce-0165-545a-86c0-8bb0d30cf604",
               screen_order: 15,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9665,7 +9665,7 @@ export const dumpPtBR = {
               ],
               id: "780098e2-a829-5f0e-b17d-06cf85735380",
               screen_order: 18,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9683,7 +9683,7 @@ export const dumpPtBR = {
               ],
               id: "b8d28532-c566-5a2f-989e-7c75c3141f9a",
               screen_order: 19,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9846,7 +9846,7 @@ export const dumpPtBR = {
           expanded_title: "Katakana: tr:わ, tr:を, tr:ん",
           icon: "b57e394a-8e74-4700-9171-e9129bc4de2e.jpg",
           id: "ecd83fea-884a-4f35-a208-2c80da93eef9",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&wa",
           lesson_order: 21,
           minimum_version: "2.5.0",
@@ -9885,7 +9885,7 @@ export const dumpPtBR = {
               ],
               id: "ca36f658-e1e2-5851-91db-dee48f293216",
               screen_order: 2,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9903,7 +9903,7 @@ export const dumpPtBR = {
               ],
               id: "f158b792-321a-5f9c-9ec1-cdc74df7351e",
               screen_order: 3,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9939,7 +9939,7 @@ export const dumpPtBR = {
               ],
               id: "5b51f2d9-2190-5f79-a080-d478cf760b11",
               screen_order: 5,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -9957,7 +9957,7 @@ export const dumpPtBR = {
               ],
               id: "aad79a02-3caa-5bba-9c02-a30c75f8521a",
               screen_order: 6,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -10011,7 +10011,7 @@ export const dumpPtBR = {
               ],
               id: "ba1e2146-749c-51b3-b62b-1c7cbdfcd178",
               screen_order: 9,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -10029,7 +10029,7 @@ export const dumpPtBR = {
               ],
               id: "242d37af-2f25-5147-8906-de4ae351be9b",
               screen_order: 10,
-              title: "Escreva a sílaba na ordem correta dos traços.",
+              title: "Escreva a sílaba corretamente.",
             },
             {
               blocks: [
@@ -10254,7 +10254,7 @@ export const dumpPtBR = {
           expanded_title: "Informações",
           icon: "e55a6e88-4d4a-404c-9826-d5e88567ad8b.jpg",
           id: "8625597f-f3a3-4350-9628-2774e322b2cf",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&dakuon",
           lesson_order: 22,
           minimum_version: "2.5.0",
@@ -10786,7 +10786,7 @@ export const dumpPtBR = {
           expanded_title: "Informações",
           icon: "60466bc2-00e9-4920-ab2a-d65be847ab19.jpg",
           id: "84117723-0147-4595-afce-23066a29be87",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longVowels",
           lesson_order: 23,
           minimum_version: "2.5.0",
@@ -10993,7 +10993,7 @@ export const dumpPtBR = {
           expanded_title: "Informação",
           icon: "35170a20-86ba-4c4e-bd01-d9be0d008026.jpg",
           id: "15e362d8-a238-410e-910c-dcafd02633d7",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longConsonants",
           lesson_order: 24,
           minimum_version: "2.5.0",
@@ -11029,7 +11029,7 @@ export const dumpPtBR = {
                   content: {
                     rules: [
                       "かた (tr(かた)) - ombro",
-                      "かつた (tr(かつた)) - nome",
+                      "かつた (tr(かつた)) - sobrenome Katsuta",
                       "かった (tr(かった)) - venceu",
                     ],
                   },
@@ -11132,7 +11132,7 @@ export const dumpPtBR = {
                   block_order: 3,
                   content: {
                     rules: [
-                      "こんにちは (tr(こんにちは)) - boa tarde",
+                      "こんにちは (tr(こんにちわ)) - boa tarde",
                       "こんばんは (tr(こんばんは)) - boa noite",
                     ],
                   },
@@ -11154,7 +11154,7 @@ export const dumpPtBR = {
           expanded_title: "Informações",
           icon: "bb3db32f-041c-4e39-9b7d-9c3515a0e3f8.jpg",
           id: "dc11d1a0-abfb-4135-86b9-383933103751",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&yoon",
           lesson_order: 25,
           minimum_version: "2.5.0",
@@ -11555,7 +11555,7 @@ export const dumpPtBR = {
           expanded_title: "Informações",
           icon: "c5fda457-5b04-4ce9-979b-05f109fda391.jpg",
           id: "0114d625-37e9-42ec-b9d2-8a3eee593cb6",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&dakuonAndHandakuon",
           lesson_order: 26,
           minimum_version: "2.5.0",
@@ -12049,7 +12049,7 @@ export const dumpPtBR = {
           expanded_title: "Informações",
           icon: "7c7dc482-980c-492f-99d2-19a6d83d2f77.jpg",
           id: "c2288107-3856-4618-a107-f7210544e815",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longVowels",
           lesson_order: 27,
           minimum_version: "2.5.0",
@@ -12276,7 +12276,7 @@ export const dumpPtBR = {
           expanded_title: "Informações",
           icon: "2542ff58-d7f7-4f23-a669-1908f5d7adad.jpg",
           id: "f6fc3d02-74fa-480a-a746-d2ab9c4fe212",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longConsonants",
           lesson_order: 28,
           minimum_version: "2.5.0",
@@ -12423,11 +12423,11 @@ export const dumpPtBR = {
           topic_id: "a5cc2a53-29c5-415b-9606-fbf5e638dcfe",
         },
         {
-          expanded_subtitle: "Aqui explicaremos os sons adicionais em katakana",
+          expanded_subtitle: "Aqui explicaremos os sons adicionais em katakana.",
           expanded_title: "Informações",
           icon: "f8402718-ad6a-495b-b429-c1f83c51d77f.jpg",
           id: "d52e95c5-6957-4efd-a73e-a3e1ebedaeea",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&additionalSounds",
           lesson_order: 29,
           minimum_version: "2.5.0",
@@ -12836,11 +12836,11 @@ export const dumpPtBR = {
           topic_id: "a5cc2a53-29c5-415b-9606-fbf5e638dcfe",
         },
         {
-          expanded_subtitle: "Aqui falaremos sobre o yōon",
+          expanded_subtitle: "Aqui falaremos sobre o yōon.",
           expanded_title: "Informações",
           icon: "aafe6dcb-4193-4d5e-9d95-258ffb60314f.jpg",
           id: "b5dc43e7-d4cb-472c-b28d-45ae3b9cb1eb",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&yoon",
           lesson_order: 30,
           minimum_version: "2.5.0",
@@ -13235,11 +13235,11 @@ export const dumpPtBR = {
           topic_id: "a5cc2a53-29c5-415b-9606-fbf5e638dcfe",
         },
         {
-          expanded_subtitle: "Aqui contamos como continuar estudando japonês",
+          expanded_subtitle: "Aqui contamos como continuar estudando japonês.",
           expanded_title: "Informações",
           icon: "18800460-fe6b-4b37-bbb2-259253cdcbbb.jpg",
           id: "b5367140-b686-4766-9009-e834e90a28c9",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/whats-next",
           lesson_order: 31,
           minimum_version: "2.5.0",
@@ -13322,14 +13322,6 @@ export const dumpPtBR = {
                   id: "61c3100e-84df-5c3a-86c1-31369d546b3f",
                   type: "rule",
                 },
-                {
-                  block_order: 3,
-                  content: {
-                    text: "A maioria das pessoas começa pelo N5 e vai subindo aos poucos.",
-                  },
-                  id: "1fa67ded-473b-5000-80af-93a6293f4990",
-                  type: "text",
-                },
               ],
               id: "faed635c-1945-5210-8f22-14571168e809",
               screen_order: 3,
@@ -13340,7 +13332,7 @@ export const dumpPtBR = {
                 {
                   block_order: 1,
                   content: {
-                    text: "A série é dividida por níveis:",
+                    text: "A série Minna no Nihongo é dividida por níveis:",
                   },
                   id: "fbc30a12-a27a-53fe-9b0a-76b8afb06010",
                   type: "text",
@@ -13351,8 +13343,6 @@ export const dumpPtBR = {
                     rules: [
                       "**Minna no Nihongo Shokyuu I** (Beginner 1) — aproximadamente nível N5",
                       "**Minna no Nihongo Shokyuu II** (Beginner 2) — aproximadamente nível N4",
-                      "**Minna no Nihongo Chukyuu I** (Intermediate 1) — aproximadamente nível N3",
-                      "Depois vêm as partes mais avançadas da série",
                     ],
                   },
                   id: "49892219-a0d8-5064-b413-fc9c741d8bad",
@@ -13361,15 +13351,23 @@ export const dumpPtBR = {
                 {
                   block_order: 3,
                   content: {
-                    text: "Recomendamos começar pelo Shokyuu I e seguir a ordem. Cada livro tem um caderno de exercícios (Workbook) e uma tradução da gramática, inclusive em português e em inglês.",
+                    text: "Recomendamos começar pelo Shokyuu I e seguir a ordem. Cada livro tem um caderno de exercícios (Workbook) e uma tradução da gramática para vários idiomas.",
                   },
                   id: "2b87eb53-9bbb-5b85-b49a-773cb9c5b4aa",
+                  type: "text",
+                },
+                {
+                  block_order: 4,
+                  content: {
+                    text: "Depois do nível N4, recomendamos descobrir qual série de livros combina mais com você.",
+                  },
+                  id: "fe10e98b-301e-55c8-836e-44f308880260",
                   type: "text",
                 },
               ],
               id: "4f48294e-f61a-575a-92e6-b459cdf7e438",
               screen_order: 4,
-              title: "Quais livros do Minna no Nihongo escolher",
+              title: "Quais livros escolher",
             },
             {
               blocks: [
@@ -13460,7 +13458,7 @@ export const dumpPtBR = {
                   content: {
                     rules: [
                       "Vários dicionários on-line",
-                      "Os áudios dos livros Minna no Nihongo",
+                      "Os áudios dos livros",
                       "Vídeos e podcasts simples em japonês para iniciantes",
                     ],
                   },

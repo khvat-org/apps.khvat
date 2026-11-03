@@ -8,7 +8,7 @@ export const dumpEsES = {
           expanded_title: "Información",
           icon: "4f99e07e-fa33-404a-9dfe-f0914dbdfade.jpg",
           id: "bce22075-2312-4ddd-b3a0-df5ba68c6472",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/introduction",
           lesson_order: 1,
           minimum_version: "2.5.0",
@@ -204,7 +204,7 @@ export const dumpEsES = {
           expanded_title: "Hiragana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "37a3d605-c9ea-4875-86b8-4acb1604c2a2.jpg",
           id: "79741283-0066-4641-9201-e32c71258048",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&a",
           lesson_order: 2,
           minimum_version: "2.5.0",
@@ -243,7 +243,7 @@ export const dumpEsES = {
               ],
               id: "44dd0b8a-cf64-57a7-af52-b22bfe988f95",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -261,7 +261,7 @@ export const dumpEsES = {
               ],
               id: "dced16e5-cb2e-5314-b5d9-94658582d76a",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -297,7 +297,7 @@ export const dumpEsES = {
               ],
               id: "70cb224b-b5d8-5cc1-a06f-fd3503266599",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -315,7 +315,7 @@ export const dumpEsES = {
               ],
               id: "4d3172e6-cff5-5f9c-8973-d27198b2228c",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -369,7 +369,7 @@ export const dumpEsES = {
               ],
               id: "c4a28334-9de8-598e-8059-bbf31cde9133",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -387,7 +387,7 @@ export const dumpEsES = {
               ],
               id: "f471c5a0-e397-5390-b26a-0cb03c08bfad",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -478,7 +478,7 @@ export const dumpEsES = {
               ],
               id: "4ffa3e30-d4ab-59b1-8f92-41696e9652ea",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -496,7 +496,7 @@ export const dumpEsES = {
               ],
               id: "1599d5a8-cd93-5020-91e7-f11c7d4c559f",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -550,7 +550,7 @@ export const dumpEsES = {
               ],
               id: "ef36c0d4-0109-50a6-b377-68a3940d8ccb",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -568,7 +568,7 @@ export const dumpEsES = {
               ],
               id: "04acd7e3-0556-5512-aa17-3df4dcec45c5",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -731,7 +731,7 @@ export const dumpEsES = {
           expanded_title: "Hiragana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "bea297c4-29a1-48d8-b13e-c30bae9d58ba.jpg",
           id: "1fd5dab9-b0dc-4be6-a25f-60fc706d7612",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ka",
           lesson_order: 3,
           minimum_version: "2.5.0",
@@ -770,7 +770,7 @@ export const dumpEsES = {
               ],
               id: "05a7669e-07c5-537a-9a19-c4871bf0b62b",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -788,7 +788,7 @@ export const dumpEsES = {
               ],
               id: "00fd24c0-f523-5c40-a633-8cc086455647",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -824,7 +824,7 @@ export const dumpEsES = {
               ],
               id: "c9346fee-e9e4-5445-9851-06069e93fba6",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -842,7 +842,7 @@ export const dumpEsES = {
               ],
               id: "c7d5290f-2d28-55d0-b059-c0d222ae32e2",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -896,7 +896,7 @@ export const dumpEsES = {
               ],
               id: "9d598d8f-3660-5349-8752-6927c04d379a",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -914,7 +914,7 @@ export const dumpEsES = {
               ],
               id: "9a13ab40-7c34-5caa-bb0e-9a5b74bcebb5",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1005,7 +1005,7 @@ export const dumpEsES = {
               ],
               id: "be911f48-6868-5ff3-a9f1-a04e29ec553a",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1023,7 +1023,7 @@ export const dumpEsES = {
               ],
               id: "0f6c04c6-2f60-51f3-90d0-a6b04e46b3e4",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1077,7 +1077,7 @@ export const dumpEsES = {
               ],
               id: "446db0f0-67ae-5d98-bf45-67e87bbaa87e",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1095,7 +1095,7 @@ export const dumpEsES = {
               ],
               id: "9cd2a327-45c2-5cf3-b2f8-ab7035d5cc4f",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1258,7 +1258,7 @@ export const dumpEsES = {
           expanded_title: "Hiragana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "d69655e1-1709-4601-8ce7-832165d7d556.jpg",
           id: "c903eeea-bef2-4886-a652-05eaadb5d078",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&sa",
           lesson_order: 4,
           minimum_version: "2.5.0",
@@ -1297,7 +1297,7 @@ export const dumpEsES = {
               ],
               id: "2731bd2a-9b55-5073-8b6e-8984603dee73",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1315,7 +1315,7 @@ export const dumpEsES = {
               ],
               id: "37ab6280-fecf-538a-87fd-e4855f2fa123",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1351,7 +1351,7 @@ export const dumpEsES = {
               ],
               id: "72063686-717c-5bbd-a295-0d009e2019d8",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1369,7 +1369,7 @@ export const dumpEsES = {
               ],
               id: "0328468b-5122-54b2-b2cc-fe72de52445f",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1423,7 +1423,7 @@ export const dumpEsES = {
               ],
               id: "368f5405-fb33-5db6-b68a-ed30e53b3435",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1441,7 +1441,7 @@ export const dumpEsES = {
               ],
               id: "2f3e466b-7f08-5365-9300-7604d1f6319b",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1532,7 +1532,7 @@ export const dumpEsES = {
               ],
               id: "ee72edde-aa6e-5879-9ee7-8479adf033e0",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1550,7 +1550,7 @@ export const dumpEsES = {
               ],
               id: "080b61fb-2446-5c8f-8717-f1ea6dd750d5",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1604,7 +1604,7 @@ export const dumpEsES = {
               ],
               id: "958e7b6e-193c-5530-bb3f-eb39137e2573",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1622,7 +1622,7 @@ export const dumpEsES = {
               ],
               id: "4f916922-5a59-5511-8d40-2336314a66c6",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1785,7 +1785,7 @@ export const dumpEsES = {
           expanded_title: "Hiragana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "cce66d6e-826a-4b29-8eaa-50df25e09c40.jpg",
           id: "2c199414-a5cf-4450-a186-2c240a2d2722",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ta",
           lesson_order: 5,
           minimum_version: "2.5.0",
@@ -1824,7 +1824,7 @@ export const dumpEsES = {
               ],
               id: "0141546a-65e9-55c7-bab4-fe6499bf2d4c",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1842,7 +1842,7 @@ export const dumpEsES = {
               ],
               id: "20db3706-64e2-5efc-a620-ee2d52154f0f",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1878,7 +1878,7 @@ export const dumpEsES = {
               ],
               id: "4cc2bc69-db8b-5258-a15f-ff0224172aac",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1896,7 +1896,7 @@ export const dumpEsES = {
               ],
               id: "a28b6ffd-56fe-5a14-a9c8-2cf8488439fa",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1950,7 +1950,7 @@ export const dumpEsES = {
               ],
               id: "6c8f000f-42d9-5f6e-8a37-c0117e7fdba1",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -1968,7 +1968,7 @@ export const dumpEsES = {
               ],
               id: "d02a26a9-ceff-5600-9e59-105a44bf8a1f",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2059,7 +2059,7 @@ export const dumpEsES = {
               ],
               id: "32eeb218-567b-5cc9-b961-08d2d55b2ad5",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2077,7 +2077,7 @@ export const dumpEsES = {
               ],
               id: "d94205d5-b20e-59a5-b9de-d3ad7369c7cb",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2131,7 +2131,7 @@ export const dumpEsES = {
               ],
               id: "e9e4d4d5-abad-56dc-bfdc-be8e6e8c84b4",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2149,7 +2149,7 @@ export const dumpEsES = {
               ],
               id: "05bc433f-dfe8-5330-8cc7-cc52f8adea71",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2312,7 +2312,7 @@ export const dumpEsES = {
           expanded_title: "Hiragana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "80cbe968-4fae-45ab-a78b-d6cf17ad7d31.jpg",
           id: "a496aabb-64f2-433c-b4bf-62362a4e36f5",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&na",
           lesson_order: 6,
           minimum_version: "2.5.0",
@@ -2351,7 +2351,7 @@ export const dumpEsES = {
               ],
               id: "d23a3865-7146-5621-8358-04138e32afdd",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2369,7 +2369,7 @@ export const dumpEsES = {
               ],
               id: "c3f3e9a8-8e1e-5c9e-8784-50b11b5776f8",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2405,7 +2405,7 @@ export const dumpEsES = {
               ],
               id: "ad4f5b8f-d79f-568d-8e45-3650677f4e1b",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2423,7 +2423,7 @@ export const dumpEsES = {
               ],
               id: "8a8bee62-9d5b-591d-b5cb-3104f31fc54a",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2477,7 +2477,7 @@ export const dumpEsES = {
               ],
               id: "98bf5c37-ae91-54b4-8544-d06aaa4bd781",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2495,7 +2495,7 @@ export const dumpEsES = {
               ],
               id: "f99ef7b9-18ae-5c3c-9f88-67da38892390",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2586,7 +2586,7 @@ export const dumpEsES = {
               ],
               id: "764aa890-f2d5-5fda-a4d4-88e69a1f7100",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2604,7 +2604,7 @@ export const dumpEsES = {
               ],
               id: "2838d696-2dba-5a4b-ab2b-200b78c3a094",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2658,7 +2658,7 @@ export const dumpEsES = {
               ],
               id: "0a41d912-d95b-530f-9730-8fca00c8ce58",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2676,7 +2676,7 @@ export const dumpEsES = {
               ],
               id: "2a83f268-589f-56d5-9539-2f8063a737e0",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2839,7 +2839,7 @@ export const dumpEsES = {
           expanded_title: "Hiragana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "5ab5e704-d6ba-4fde-a6f3-36745e149ed9.jpg",
           id: "566cc308-c7f6-46d5-8b73-52276d72cce0",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ha",
           lesson_order: 7,
           minimum_version: "2.5.0",
@@ -2878,7 +2878,7 @@ export const dumpEsES = {
               ],
               id: "60bafae9-0089-5093-a6bb-e230dadadab4",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2896,7 +2896,7 @@ export const dumpEsES = {
               ],
               id: "bb13fa9e-ea27-5cac-8573-bd3c16fff9f6",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2932,7 +2932,7 @@ export const dumpEsES = {
               ],
               id: "8d9b595a-5416-5df5-9bf7-7c9fc7d6ca09",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -2950,7 +2950,7 @@ export const dumpEsES = {
               ],
               id: "6949ffc0-ece6-5b75-aa51-c2c083668f66",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3004,7 +3004,7 @@ export const dumpEsES = {
               ],
               id: "8f36aa2f-e5c1-52d5-9e11-0303cb5a7636",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3022,7 +3022,7 @@ export const dumpEsES = {
               ],
               id: "156ef98c-8998-5ba0-af93-c9efcee0971b",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3113,7 +3113,7 @@ export const dumpEsES = {
               ],
               id: "16a783af-e472-5562-aacf-97d54fab9ccc",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3131,7 +3131,7 @@ export const dumpEsES = {
               ],
               id: "364184b6-8f70-576a-a3f1-c759571ade18",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3185,7 +3185,7 @@ export const dumpEsES = {
               ],
               id: "6c1da071-49c4-5e20-9b5f-7d1c9a8466bb",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3203,7 +3203,7 @@ export const dumpEsES = {
               ],
               id: "8f87d2c3-bda7-5b5d-b9bf-5b398950760a",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3366,7 +3366,7 @@ export const dumpEsES = {
           expanded_title: "Hiragana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "f53fde6a-ca94-4b15-8397-d567a3a17906.jpg",
           id: "4e545c6e-7a69-44fb-a278-299b8481c569",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ma",
           lesson_order: 8,
           minimum_version: "2.5.0",
@@ -3405,7 +3405,7 @@ export const dumpEsES = {
               ],
               id: "a27e8aa1-786f-5a3f-85e2-8a40b79dacb2",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3423,7 +3423,7 @@ export const dumpEsES = {
               ],
               id: "7e6c4f16-5f53-5ade-97e8-f14fb16f9f0f",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3459,7 +3459,7 @@ export const dumpEsES = {
               ],
               id: "3b4badcc-08aa-50d2-b7fc-133401d69ada",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3477,7 +3477,7 @@ export const dumpEsES = {
               ],
               id: "20c65ae2-ad63-522f-9d17-cbcd0408b75e",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3531,7 +3531,7 @@ export const dumpEsES = {
               ],
               id: "df2fb38d-f960-5aa0-8e9c-72ddb87ddd1f",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3549,7 +3549,7 @@ export const dumpEsES = {
               ],
               id: "299ba39b-64c3-5d3e-bca4-656d4801f1c5",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3640,7 +3640,7 @@ export const dumpEsES = {
               ],
               id: "85a9dd20-d608-59fc-8a01-807bb5b0312b",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3658,7 +3658,7 @@ export const dumpEsES = {
               ],
               id: "7b11a9b0-e8fb-5ddb-b4c8-7422a6471800",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3712,7 +3712,7 @@ export const dumpEsES = {
               ],
               id: "f929a9d5-b234-516d-b3f7-541a2ed89d54",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3730,7 +3730,7 @@ export const dumpEsES = {
               ],
               id: "7cf4e463-9c30-5d08-a441-e61515a5a15c",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3891,9 +3891,9 @@ export const dumpEsES = {
         {
           expanded_subtitle: "Aprende a leer y escribir las sílabas de la fila tr:や.",
           expanded_title: "Hiragana: tr:や, tr:ゆ, tr:よ",
-          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
+          icon: "998d7b1d-3751-407b-8909-da9dc7983cdb.jpg",
           id: "7aa2f4f5-b9e8-44b1-8cb4-b8dba92f6431",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ya",
           lesson_order: 9,
           minimum_version: "2.5.0",
@@ -3932,7 +3932,7 @@ export const dumpEsES = {
               ],
               id: "27114af5-2d91-54e9-b797-41dbbd72a3ca",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3950,7 +3950,7 @@ export const dumpEsES = {
               ],
               id: "9c3fd56f-82a3-56b0-855a-7b09a3f6f3fb",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -3986,7 +3986,7 @@ export const dumpEsES = {
               ],
               id: "aab08085-74b2-5d9f-b1e1-c3158a4787ef",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4004,7 +4004,7 @@ export const dumpEsES = {
               ],
               id: "2e0e06b9-d5d1-50e5-b2a6-8ee9ed783dd0",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4058,7 +4058,7 @@ export const dumpEsES = {
               ],
               id: "f25c0621-ef7c-5a2e-a3ce-4b7c84ebd782",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4076,7 +4076,7 @@ export const dumpEsES = {
               ],
               id: "d2fbe8d0-0305-599f-b28d-ba288dc6eed8",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4292,9 +4292,9 @@ export const dumpEsES = {
         {
           expanded_subtitle: "Aprende a leer y escribir las sílabas de la fila tr:ら.",
           expanded_title: "Hiragana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
-          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
+          icon: "81ffc270-d7b5-4936-8640-77b11171740e.jpg",
           id: "f6f979f9-1f37-44c7-b78c-0e5e15d76e24",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&ra",
           lesson_order: 10,
           minimum_version: "2.5.0",
@@ -4333,7 +4333,7 @@ export const dumpEsES = {
               ],
               id: "5d62c091-edf0-507d-ab97-f49845de4a43",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4351,7 +4351,7 @@ export const dumpEsES = {
               ],
               id: "c0d04650-6d39-5581-a279-1bedccd468b3",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4387,7 +4387,7 @@ export const dumpEsES = {
               ],
               id: "e9f0ce59-0226-55ce-9106-91f917733792",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4405,7 +4405,7 @@ export const dumpEsES = {
               ],
               id: "75735996-3afb-53dd-91b5-6b56b04c0c43",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4459,7 +4459,7 @@ export const dumpEsES = {
               ],
               id: "ac75452c-b0ca-57ae-b8d7-fda9254ec63e",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4477,7 +4477,7 @@ export const dumpEsES = {
               ],
               id: "5b4214e1-bd8d-5e13-97ec-1eb3cb892f21",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4568,7 +4568,7 @@ export const dumpEsES = {
               ],
               id: "fac38f39-b650-5ed8-9378-c8647516468e",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4586,7 +4586,7 @@ export const dumpEsES = {
               ],
               id: "1053eef2-dd2a-5515-ae4c-dd918b04fb58",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4640,7 +4640,7 @@ export const dumpEsES = {
               ],
               id: "40a778ac-cc56-5aa4-823c-5f95260dbbae",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4658,7 +4658,7 @@ export const dumpEsES = {
               ],
               id: "5cc23c39-2a6d-5007-b690-afc52993a0ea",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4819,9 +4819,9 @@ export const dumpEsES = {
         {
           expanded_subtitle: "Aprende a leer y escribir las sílabas: tr:わ, tr:を, tr:ん.",
           expanded_title: "Hiragana: tr:わ, tr:を, tr:ん",
-          icon: "c4480f8f-71ee-4df0-886f-508b39912b4c.jpg",
+          icon: "ea8751ac-3342-4005-82c9-5271126536f2.jpg",
           id: "b7307190-bdcd-49dd-ba84-263a1bcb0360",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&wa",
           lesson_order: 11,
           minimum_version: "2.5.0",
@@ -4860,7 +4860,7 @@ export const dumpEsES = {
               ],
               id: "84b356be-7837-5495-8ad8-52090cf25b06",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4878,7 +4878,7 @@ export const dumpEsES = {
               ],
               id: "3ac4e2d2-f8af-53a7-b264-0717ed3dc8e8",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4914,7 +4914,7 @@ export const dumpEsES = {
               ],
               id: "2fefef74-d1f0-54ac-8571-ea55d3b71bfd",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4932,7 +4932,7 @@ export const dumpEsES = {
               ],
               id: "1a63b617-30bb-556a-a503-42d9e7a914ae",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -4986,7 +4986,7 @@ export const dumpEsES = {
               ],
               id: "dd942adc-265c-512e-b58c-3f7f28d621f0",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5004,7 +5004,7 @@ export const dumpEsES = {
               ],
               id: "83866f43-1367-58f3-b5b8-c6fb8568b4d2",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5229,7 +5229,7 @@ export const dumpEsES = {
           expanded_title: "Katakana: tr:あ, tr:い, tr:う, tr:え, tr:お",
           icon: "515f18bb-8797-4e60-b1b0-40f9b60aebcb.jpg",
           id: "256f01ae-1186-4e6a-83f6-138d941f6afd",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&a",
           lesson_order: 12,
           minimum_version: "2.5.0",
@@ -5268,7 +5268,7 @@ export const dumpEsES = {
               ],
               id: "52854c00-e18a-5ff2-9af1-58565c2d28d9",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5286,7 +5286,7 @@ export const dumpEsES = {
               ],
               id: "7cd7c95d-fe18-5156-b560-6bcd0289b761",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5322,7 +5322,7 @@ export const dumpEsES = {
               ],
               id: "618a8d7e-2167-5c41-811e-d9bb402510b2",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5340,7 +5340,7 @@ export const dumpEsES = {
               ],
               id: "655466a2-64aa-5e37-b9f8-17db2b340d4f",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5394,7 +5394,7 @@ export const dumpEsES = {
               ],
               id: "c2a38780-f980-5823-9e10-b84317ff9974",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5412,7 +5412,7 @@ export const dumpEsES = {
               ],
               id: "1aaf2719-0ffa-55b2-b568-f93d593dbb32",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5503,7 +5503,7 @@ export const dumpEsES = {
               ],
               id: "c1d1953f-9461-50ed-b883-b8dd70afdf41",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5521,7 +5521,7 @@ export const dumpEsES = {
               ],
               id: "06aad4b5-086b-5dfd-a511-9068ec5a6b97",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5575,7 +5575,7 @@ export const dumpEsES = {
               ],
               id: "e548f7a2-a094-53bd-8fcc-b51b75242575",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5593,7 +5593,7 @@ export const dumpEsES = {
               ],
               id: "df768c88-81f0-52c4-a58d-f0055e0662b9",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5756,7 +5756,7 @@ export const dumpEsES = {
           expanded_title: "Katakana: tr:か, tr:き, tr:く, tr:け, tr:こ",
           icon: "655dcf64-0666-4be6-8c19-0993b1ac03ec.jpg",
           id: "5e3dfe90-5756-42e2-9df8-172e2ebd47c8",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ka",
           lesson_order: 13,
           minimum_version: "2.5.0",
@@ -5795,7 +5795,7 @@ export const dumpEsES = {
               ],
               id: "1b5c3811-ccb0-52a4-9233-de6acf4b5281",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5813,7 +5813,7 @@ export const dumpEsES = {
               ],
               id: "8565e4e2-d931-525f-a255-23733e9f66b5",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5849,7 +5849,7 @@ export const dumpEsES = {
               ],
               id: "741e38c1-12d9-5354-9ad3-a04c03291e5b",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5867,7 +5867,7 @@ export const dumpEsES = {
               ],
               id: "1027e759-3e4e-5a72-984d-b4ee5d8dfa37",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5921,7 +5921,7 @@ export const dumpEsES = {
               ],
               id: "f5c3799e-33d7-5ef6-b724-f56f4f25ae18",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -5939,7 +5939,7 @@ export const dumpEsES = {
               ],
               id: "475fd4a2-90b5-569a-a45f-4296c22a84c6",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6030,7 +6030,7 @@ export const dumpEsES = {
               ],
               id: "34d1f5a1-0d75-57a3-861c-054c4b4b78f9",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6048,7 +6048,7 @@ export const dumpEsES = {
               ],
               id: "489f718c-c326-5e51-9a53-7bb794e16989",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6102,7 +6102,7 @@ export const dumpEsES = {
               ],
               id: "dcb1cc4b-6d5a-53a9-8a67-41e32dc15a70",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6120,7 +6120,7 @@ export const dumpEsES = {
               ],
               id: "e42255f0-126e-5f63-83cf-63356c8804f8",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6283,7 +6283,7 @@ export const dumpEsES = {
           expanded_title: "Katakana: tr:さ, tr:し, tr:す, tr:せ, tr:そ",
           icon: "6a3e11ff-5864-4f25-846e-5f8ac4691c5f.jpg",
           id: "1ee82369-0253-4a87-86f7-aa10df03086b",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&sa",
           lesson_order: 14,
           minimum_version: "2.5.0",
@@ -6322,7 +6322,7 @@ export const dumpEsES = {
               ],
               id: "f4cfb542-ec2f-5205-ae49-1b98b75189e3",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6340,7 +6340,7 @@ export const dumpEsES = {
               ],
               id: "10fbb067-8de1-5866-a0a0-afe11830ae91",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6376,7 +6376,7 @@ export const dumpEsES = {
               ],
               id: "68a132b2-a41a-5cc6-9a9f-970aadcdefce",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6394,7 +6394,7 @@ export const dumpEsES = {
               ],
               id: "617e748f-0805-5f23-be02-187d640c016d",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6448,7 +6448,7 @@ export const dumpEsES = {
               ],
               id: "b0ce1d24-39f6-5159-8868-6b2b79983b7c",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6466,7 +6466,7 @@ export const dumpEsES = {
               ],
               id: "68c6976c-da49-58ac-ba1b-2b127dc87d8e",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6557,7 +6557,7 @@ export const dumpEsES = {
               ],
               id: "693fb68a-3f41-50f5-9b58-761d6e189b14",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6575,7 +6575,7 @@ export const dumpEsES = {
               ],
               id: "22db1b9c-0a19-58a4-a7c0-97a8cf5a7f8b",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6629,7 +6629,7 @@ export const dumpEsES = {
               ],
               id: "713510b4-55d8-58a1-b348-b78c6286c217",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6647,7 +6647,7 @@ export const dumpEsES = {
               ],
               id: "b4d29241-17f4-583d-be7e-6010db0228f2",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6810,7 +6810,7 @@ export const dumpEsES = {
           expanded_title: "Katakana: tr:た, tr:ち, tr:つ, tr:て, tr:と",
           icon: "2dc2bdaa-3088-4754-8d52-38dc208fe6e7.jpg",
           id: "906179b6-b8ac-4cae-b2ac-63b8b0111780",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ta",
           lesson_order: 15,
           minimum_version: "2.5.0",
@@ -6849,7 +6849,7 @@ export const dumpEsES = {
               ],
               id: "d5bb5ad5-6a2a-50ef-a74e-2a7439c20885",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6867,7 +6867,7 @@ export const dumpEsES = {
               ],
               id: "bbd934c6-9e4d-5efc-bfdc-430af7aebb86",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6903,7 +6903,7 @@ export const dumpEsES = {
               ],
               id: "8e5d8387-fd06-5752-8489-ef84857b7e3f",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6921,7 +6921,7 @@ export const dumpEsES = {
               ],
               id: "fdea9353-5ce2-5f85-8549-172dd010ac98",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6975,7 +6975,7 @@ export const dumpEsES = {
               ],
               id: "dfccb3cb-e3ef-578c-958f-fe21fcc15474",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -6993,7 +6993,7 @@ export const dumpEsES = {
               ],
               id: "c588bb7f-9592-5786-96b6-69976c15109d",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7084,7 +7084,7 @@ export const dumpEsES = {
               ],
               id: "ed27c96e-bdce-5fa3-8073-cc5b3e6c9cc2",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7102,7 +7102,7 @@ export const dumpEsES = {
               ],
               id: "74fa08a8-e11c-5e01-a6be-e9a0d258fad8",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7156,7 +7156,7 @@ export const dumpEsES = {
               ],
               id: "4e801135-7743-580d-92e0-d3c7573aa9af",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7174,7 +7174,7 @@ export const dumpEsES = {
               ],
               id: "fbf108f5-76c4-5d16-a1c3-e03fe9ae52fe",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7337,7 +7337,7 @@ export const dumpEsES = {
           expanded_title: "Katakana: tr:な, tr:に, tr:ぬ, tr:ね, tr:の",
           icon: "3f4e712a-7fc7-4e81-acab-72bb0ef427e4.jpg",
           id: "d15587cd-c7af-41da-877c-ddcc74d5db19",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&na",
           lesson_order: 16,
           minimum_version: "2.5.0",
@@ -7376,7 +7376,7 @@ export const dumpEsES = {
               ],
               id: "6be1ca91-91fc-58d6-bde6-3d48468c6314",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7394,7 +7394,7 @@ export const dumpEsES = {
               ],
               id: "3aebe422-b0fc-5b1e-b70e-0cb3f8be0b4d",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7430,7 +7430,7 @@ export const dumpEsES = {
               ],
               id: "f7edc74f-4111-5d0c-8abc-46f3d36a8e5b",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7448,7 +7448,7 @@ export const dumpEsES = {
               ],
               id: "c082fbd0-33b6-5873-8815-c2eaf5e5ca9e",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7502,7 +7502,7 @@ export const dumpEsES = {
               ],
               id: "493ef20b-1c59-541a-a5ed-6a8c2a6290a7",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7520,7 +7520,7 @@ export const dumpEsES = {
               ],
               id: "0d33f852-3d2a-5810-805a-6d40864f4b01",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7611,7 +7611,7 @@ export const dumpEsES = {
               ],
               id: "83e69616-739d-53fc-97bd-9c06976afe45",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7629,7 +7629,7 @@ export const dumpEsES = {
               ],
               id: "c3390965-6233-552b-a610-33906e7430ae",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7683,7 +7683,7 @@ export const dumpEsES = {
               ],
               id: "53396200-59d0-59a5-943c-bfa2064f3f52",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7701,7 +7701,7 @@ export const dumpEsES = {
               ],
               id: "c28638d6-d45c-51fd-9c47-bbc5d21cadc2",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7864,7 +7864,7 @@ export const dumpEsES = {
           expanded_title: "Katakana: tr:は, tr:ひ, tr:ふ, tr:へ, tr:ほ",
           icon: "a972e2ac-7362-4f98-801d-4389ba31e2f9.jpg",
           id: "a2b99f88-a1f6-4335-8a3e-957742cb6855",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ha",
           lesson_order: 17,
           minimum_version: "2.5.0",
@@ -7903,7 +7903,7 @@ export const dumpEsES = {
               ],
               id: "2e9e2103-34e0-5ed1-b61f-b99ccf50ef3f",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7921,7 +7921,7 @@ export const dumpEsES = {
               ],
               id: "1b266be3-733e-56f4-ad88-d538d3558f9f",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7957,7 +7957,7 @@ export const dumpEsES = {
               ],
               id: "9520525a-0527-58a2-921d-93e53ce0b2a1",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -7975,7 +7975,7 @@ export const dumpEsES = {
               ],
               id: "f3c2266d-51a2-5142-8315-3d00b2af9a61",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8029,7 +8029,7 @@ export const dumpEsES = {
               ],
               id: "d1d12ea3-aade-52ce-8bb0-cc62ecf60c81",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8047,7 +8047,7 @@ export const dumpEsES = {
               ],
               id: "7506d606-8e02-5ff9-92dd-9cce0ef37601",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8138,7 +8138,7 @@ export const dumpEsES = {
               ],
               id: "a59710b2-ccca-587e-9c9c-b98b56c3b441",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8156,7 +8156,7 @@ export const dumpEsES = {
               ],
               id: "18e9a383-0bcc-5fdb-b8d6-fccde73a9421",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8210,7 +8210,7 @@ export const dumpEsES = {
               ],
               id: "442ab5bc-f901-535b-9e33-50ab8fd46007",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8228,7 +8228,7 @@ export const dumpEsES = {
               ],
               id: "621df570-cfcb-50ba-b484-7b6628308e14",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8391,7 +8391,7 @@ export const dumpEsES = {
           expanded_title: "Katakana: tr:ま, tr:み, tr:む, tr:め, tr:も",
           icon: "07d0c986-1f16-4254-aa12-58aa2e0f9a49.jpg",
           id: "7fe30631-a7cc-41df-9361-d7bc6141b226",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ma",
           lesson_order: 18,
           minimum_version: "2.5.0",
@@ -8430,7 +8430,7 @@ export const dumpEsES = {
               ],
               id: "4799658e-627e-54e7-8c20-83516f7c16b9",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8448,7 +8448,7 @@ export const dumpEsES = {
               ],
               id: "9c90155a-b380-56ab-9c3e-9fb64c46b620",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8484,7 +8484,7 @@ export const dumpEsES = {
               ],
               id: "7856ce10-e722-54a0-be58-e40fe80e4ff8",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8502,7 +8502,7 @@ export const dumpEsES = {
               ],
               id: "468a8224-9ec3-5a6a-a5f3-eeef7cd2dee6",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8556,7 +8556,7 @@ export const dumpEsES = {
               ],
               id: "ca86b8f0-9040-50ca-b03e-95b99861370f",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8574,7 +8574,7 @@ export const dumpEsES = {
               ],
               id: "cc5ce2af-4f56-56fb-9063-3eeba348fe41",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8665,7 +8665,7 @@ export const dumpEsES = {
               ],
               id: "80746117-b298-5728-bc3f-621e5a03b02e",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8683,7 +8683,7 @@ export const dumpEsES = {
               ],
               id: "88e720d6-c988-5f54-80b1-dbe355014cbd",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8737,7 +8737,7 @@ export const dumpEsES = {
               ],
               id: "5060443d-adeb-5275-8def-8f8c73e24ef6",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8755,7 +8755,7 @@ export const dumpEsES = {
               ],
               id: "fa78cdd0-50dc-5e2a-ad05-c8dffa0abf82",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8918,7 +8918,7 @@ export const dumpEsES = {
           expanded_title: "Katakana: tr:や, tr:ゆ, tr:よ",
           icon: "073066af-16d8-40c7-9b73-e9e75235fd1c.jpg",
           id: "641164db-ee20-4129-87b1-ef85ea15037d",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ya",
           lesson_order: 19,
           minimum_version: "2.5.0",
@@ -8957,7 +8957,7 @@ export const dumpEsES = {
               ],
               id: "1a9eda1e-6fa1-5fe6-b27b-473b07f36a48",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -8975,7 +8975,7 @@ export const dumpEsES = {
               ],
               id: "e5f570ec-e24c-56d7-936d-7ecf3c7cac74",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9011,7 +9011,7 @@ export const dumpEsES = {
               ],
               id: "f3c75696-55cb-57c7-9ab7-8162dcfcb130",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9029,7 +9029,7 @@ export const dumpEsES = {
               ],
               id: "9d397845-6b85-5ea3-aa6d-59acabab20ed",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9083,7 +9083,7 @@ export const dumpEsES = {
               ],
               id: "25a1f4f6-1569-5c62-9942-77b289dac976",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9101,7 +9101,7 @@ export const dumpEsES = {
               ],
               id: "e7c0b89a-42e3-502b-88bc-d3ab93808aca",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9319,7 +9319,7 @@ export const dumpEsES = {
           expanded_title: "Katakana: tr:ら, tr:り, tr:る, tr:れ, tr:ろ",
           icon: "a6b62c7e-2ec8-44ed-b9a2-00bc4b099915.jpg",
           id: "acac91f4-4a11-40e5-9e93-213e014e6910",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&ra",
           lesson_order: 20,
           minimum_version: "2.5.0",
@@ -9358,7 +9358,7 @@ export const dumpEsES = {
               ],
               id: "d9b71900-d60a-5c9c-b37f-0af720b6848c",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9376,7 +9376,7 @@ export const dumpEsES = {
               ],
               id: "67b13b00-99eb-5601-ab30-c936a48d2c85",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9412,7 +9412,7 @@ export const dumpEsES = {
               ],
               id: "1a7d98f4-9be1-501c-9f68-a47fe2418093",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9430,7 +9430,7 @@ export const dumpEsES = {
               ],
               id: "498a45eb-fd08-5df6-8592-62d97b181dd6",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9484,7 +9484,7 @@ export const dumpEsES = {
               ],
               id: "272b2ceb-d909-51e3-ad67-fdbef961811b",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9502,7 +9502,7 @@ export const dumpEsES = {
               ],
               id: "aabd4eb4-6a06-5f18-a581-d01329b9ed47",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9593,7 +9593,7 @@ export const dumpEsES = {
               ],
               id: "0fb6ace7-1d05-52e7-9548-d69906abea1d",
               screen_order: 14,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9611,7 +9611,7 @@ export const dumpEsES = {
               ],
               id: "e98900f5-b2e4-5443-a166-2e4495a8edbc",
               screen_order: 15,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9665,7 +9665,7 @@ export const dumpEsES = {
               ],
               id: "f778389c-6ca8-527e-94be-67a5cc084b45",
               screen_order: 18,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9683,7 +9683,7 @@ export const dumpEsES = {
               ],
               id: "caec7284-b3e5-546e-971c-73a246ff1033",
               screen_order: 19,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9846,7 +9846,7 @@ export const dumpEsES = {
           expanded_title: "Katakana: tr:わ, tr:を, tr:ん",
           icon: "b57e394a-8e74-4700-9171-e9129bc4de2e.jpg",
           id: "14e49301-1658-4b47-afe5-2a80cbed5e5a",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&wa",
           lesson_order: 21,
           minimum_version: "2.5.0",
@@ -9885,7 +9885,7 @@ export const dumpEsES = {
               ],
               id: "d5f22912-9348-55bf-869e-5ed4aef20398",
               screen_order: 2,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9903,7 +9903,7 @@ export const dumpEsES = {
               ],
               id: "a12abfba-8241-5184-abc8-bee04b68a805",
               screen_order: 3,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9939,7 +9939,7 @@ export const dumpEsES = {
               ],
               id: "09e09369-6b0e-5063-b240-6a3a80e10e01",
               screen_order: 5,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -9957,7 +9957,7 @@ export const dumpEsES = {
               ],
               id: "659f99c1-9754-5b26-8694-f5ba151d9126",
               screen_order: 6,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -10011,7 +10011,7 @@ export const dumpEsES = {
               ],
               id: "0cbbf586-e86b-5847-b639-f7da3d710f0d",
               screen_order: 9,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -10029,7 +10029,7 @@ export const dumpEsES = {
               ],
               id: "f5c07e22-4708-5c21-ba55-1fa7917aad7f",
               screen_order: 10,
-              title: "Escribe la sílaba en el orden correcto de los trazos.",
+              title: "Escribe la sílaba correctamente.",
             },
             {
               blocks: [
@@ -10254,7 +10254,7 @@ export const dumpEsES = {
           expanded_title: "Información",
           icon: "e55a6e88-4d4a-404c-9826-d5e88567ad8b.jpg",
           id: "0bd3d66b-78e8-427c-9e8b-210c5fe933d2",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&dakuon",
           lesson_order: 22,
           minimum_version: "2.5.0",
@@ -10786,7 +10786,7 @@ export const dumpEsES = {
           expanded_title: "Información",
           icon: "60466bc2-00e9-4920-ab2a-d65be847ab19.jpg",
           id: "8b220dd4-a656-4fb2-b198-7094bae63575",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longVowels",
           lesson_order: 23,
           minimum_version: "2.5.0",
@@ -10993,7 +10993,7 @@ export const dumpEsES = {
           expanded_title: "Información",
           icon: "35170a20-86ba-4c4e-bd01-d9be0d008026.jpg",
           id: "8b9b4b5e-f8c4-4b7b-b8c8-00ade4caff7a",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&longConsonants",
           lesson_order: 24,
           minimum_version: "2.5.0",
@@ -11029,7 +11029,7 @@ export const dumpEsES = {
                   content: {
                     rules: [
                       "かた (tr(かた)) - hombro",
-                      "かつた (tr(かつた)) - nombre",
+                      "かつた (tr(かつた)) - apellido Katsuta",
                       "かった (tr(かった)) - ganó",
                     ],
                   },
@@ -11132,7 +11132,7 @@ export const dumpEsES = {
                   block_order: 3,
                   content: {
                     rules: [
-                      "こんにちは (tr(こんにちは)) - hola",
+                      "こんにちは (tr(こんにちわ)) - hola",
                       "こんばんは (tr(こんばんは)) - buenas noches",
                     ],
                   },
@@ -11154,7 +11154,7 @@ export const dumpEsES = {
           expanded_title: "Información",
           icon: "bb3db32f-041c-4e39-9b7d-9c3515a0e3f8.jpg",
           id: "cdac9fa5-bb50-492e-9d38-66741ef69017",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/hiragana&yoon",
           lesson_order: 25,
           minimum_version: "2.5.0",
@@ -11555,7 +11555,7 @@ export const dumpEsES = {
           expanded_title: "Información",
           icon: "c5fda457-5b04-4ce9-979b-05f109fda391.jpg",
           id: "da46b6ca-e271-415e-9a9f-c5e68e414d6f",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&dakuonAndHandakuon",
           lesson_order: 26,
           minimum_version: "2.5.0",
@@ -12049,7 +12049,7 @@ export const dumpEsES = {
           expanded_title: "Información",
           icon: "7c7dc482-980c-492f-99d2-19a6d83d2f77.jpg",
           id: "16c67b47-c1a6-43ad-9386-565f1404e7e7",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longVowels",
           lesson_order: 27,
           minimum_version: "2.5.0",
@@ -12276,7 +12276,7 @@ export const dumpEsES = {
           expanded_title: "Información",
           icon: "2542ff58-d7f7-4f23-a669-1908f5d7adad.jpg",
           id: "00276b82-20c0-4ea2-a07a-e0f1e6fc8135",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&longConsonants",
           lesson_order: 28,
           minimum_version: "2.5.0",
@@ -12423,11 +12423,11 @@ export const dumpEsES = {
           topic_id: "a101d0a8-c609-4319-91f3-d406bd608be8",
         },
         {
-          expanded_subtitle: "Aquí te hablaremos de los sonidos adicionales en katakana",
+          expanded_subtitle: "Aquí te hablaremos de los sonidos adicionales en katakana.",
           expanded_title: "Información",
           icon: "f8402718-ad6a-495b-b429-c1f83c51d77f.jpg",
           id: "53559c42-dbbb-454a-9818-6ddb39c66997",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&additionalSounds",
           lesson_order: 29,
           minimum_version: "2.5.0",
@@ -12836,11 +12836,11 @@ export const dumpEsES = {
           topic_id: "a101d0a8-c609-4319-91f3-d406bd608be8",
         },
         {
-          expanded_subtitle: "Aquí te hablaremos sobre el yōon",
+          expanded_subtitle: "Aquí te hablaremos sobre el yōon.",
           expanded_title: "Información",
           icon: "aafe6dcb-4193-4d5e-9d95-258ffb60314f.jpg",
           id: "6b7c48e7-2c59-41d5-8599-bb1c0484c8e2",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/katakana&yoon",
           lesson_order: 30,
           minimum_version: "2.5.0",
@@ -13235,11 +13235,11 @@ export const dumpEsES = {
           topic_id: "a101d0a8-c609-4319-91f3-d406bd608be8",
         },
         {
-          expanded_subtitle: "Aquí te contamos cómo seguir aprendiendo japonés",
+          expanded_subtitle: "Aquí te contamos cómo seguir aprendiendo japonés.",
           expanded_title: "Información",
           icon: "18800460-fe6b-4b37-bbb2-259253cdcbbb.jpg",
           id: "cba40e95-0e49-4d11-8bdb-c958b86e1776",
-          last_updated: "2026-10-19T10:31:15.152Z",
+          last_updated: "2026-11-03T11:11:55.76Z",
           lesson_key: "alphabet/whats-next",
           lesson_order: 31,
           minimum_version: "2.5.0",
@@ -13322,14 +13322,6 @@ export const dumpEsES = {
                   id: "b696066a-bbee-5d14-b4d7-0aa937de6256",
                   type: "rule",
                 },
-                {
-                  block_order: 3,
-                  content: {
-                    text: "La mayoría de la gente empieza por el N5 y va subiendo poco a poco.",
-                  },
-                  id: "24ce525b-38ac-53e2-9c61-8b7ee7055d4f",
-                  type: "text",
-                },
               ],
               id: "3fe6ac00-fad3-544c-9190-63415f761873",
               screen_order: 3,
@@ -13340,7 +13332,7 @@ export const dumpEsES = {
                 {
                   block_order: 1,
                   content: {
-                    text: "La serie se divide por niveles:",
+                    text: "La serie Minna no Nihongo se divide por niveles:",
                   },
                   id: "5a47e9ad-19ad-590f-9349-f9fcfb6a395b",
                   type: "text",
@@ -13351,8 +13343,6 @@ export const dumpEsES = {
                     rules: [
                       "**Minna no Nihongo Shokyuu I** (Beginner 1) — aproximadamente nivel N5",
                       "**Minna no Nihongo Shokyuu II** (Beginner 2) — aproximadamente nivel N4",
-                      "**Minna no Nihongo Chukyuu I** (Intermediate 1) — aproximadamente nivel N3",
-                      "Después vienen las partes más avanzadas de la serie",
                     ],
                   },
                   id: "535fc25f-4012-51d6-9c6e-55a18f2fa27d",
@@ -13361,15 +13351,23 @@ export const dumpEsES = {
                 {
                   block_order: 3,
                   content: {
-                    text: "Te recomendamos empezar por Shokyuu I y seguir el orden. Cada manual tiene un cuaderno de ejercicios (Workbook) y una traducción de la gramática, también en español y en inglés.",
+                    text: "Te recomendamos empezar por Shokyuu I y seguir el orden. Cada manual tiene un cuaderno de ejercicios (Workbook) y una traducción de la gramática a distintos idiomas.",
                   },
                   id: "c9b7f92b-efff-5cf4-910d-1fd3f172c875",
+                  type: "text",
+                },
+                {
+                  block_order: 4,
+                  content: {
+                    text: "Después del nivel N4, te recomendamos averiguar qué serie de manuales se adapta mejor a ti.",
+                  },
+                  id: "c8abcb4e-8509-5e28-8bd3-f3c7daa81f3c",
                   type: "text",
                 },
               ],
               id: "ebe53d7e-135c-57d8-82dd-5427baa950e6",
               screen_order: 4,
-              title: "Qué libros de Minna no Nihongo comprar",
+              title: "Qué libros comprar",
             },
             {
               blocks: [
@@ -13460,7 +13458,7 @@ export const dumpEsES = {
                   content: {
                     rules: [
                       "Diferentes diccionarios en línea",
-                      "Los audios de los manuales Minna no Nihongo",
+                      "Los audios de los manuales",
                       "Vídeos y pódcast sencillos en japonés para principiantes",
                     ],
                   },
