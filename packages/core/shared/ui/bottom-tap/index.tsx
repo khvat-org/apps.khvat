@@ -40,7 +40,8 @@ export const TabBarButton = ({ state, navigation, tabs, allowSide }: TabBarButto
   if (!isVisible) return;
 
   const side = layout.position === "bottom" ? null : layout.position;
-  const outerPadding = layout.position === "bottom" ? 0 : layout.width - layout.reserve;
+  const outerPadding =
+    layout.position === "bottom" || layout.reserve === 0 ? 0 : layout.width - layout.reserve;
 
   return (
     <View
