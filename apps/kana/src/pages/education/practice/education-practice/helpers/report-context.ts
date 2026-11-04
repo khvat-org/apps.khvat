@@ -32,6 +32,12 @@ const getSubject = (question: PracticeQuestion): string => {
         : "";
     case PracticeType.WordBuilding:
       return question.wordBuilding ? `word:${question.wordBuilding.sequence.join("")}` : "";
+    case PracticeType.Captcha:
+      return question.captcha
+        ? `char:${question.captcha.question.hi}/fonts:${question.captcha.tiles
+            .map((tile) => tile.font)
+            .join(",")}`
+        : "";
     default:
       return "";
   }

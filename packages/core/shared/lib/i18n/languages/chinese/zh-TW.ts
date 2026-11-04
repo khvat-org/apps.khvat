@@ -26,6 +26,7 @@ const ChineseTW = {
   practice: {
     question: "問題",
 
+    new: "新",
     modes: {
       mixed: { title: "混合", subtitle: "一次全部" },
       testing: { title: "測驗", subtitle: "限時選擇答案" },
@@ -35,6 +36,18 @@ const ChineseTW = {
       matchingPairs: { title: "配對", subtitle: "配對單字" },
       wordBuilding: { title: "組詞", subtitle: "組成單字" },
       typing: { title: "輸入", subtitle: "輸入音節" },
+      captcha: { title: "驗證碼", subtitle: "選出所有相符的圖片" },
+    },
+
+    captcha: {
+      instruction: "選出所有包含此音節的圖片，然後點按「驗證」",
+      verify: "驗證",
+      info: "選出所有包含此音節的圖片，平假名和片假名都要選。",
+      consentTitle: "需要連上網路",
+      consentText: "此模式需要連上網路下載字型。",
+      loadSlow: "載入時間比平常久。請檢查網路連線。你可以繼續等待或取消。",
+      loading: "正在載入字型…",
+      loadFailed: "無法載入字型。請檢查網路連線後再試。",
     },
 
     playAudio: "播放音訊",

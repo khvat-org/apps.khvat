@@ -27,6 +27,7 @@ const sakuraLightTheme: Colors = {
   // Border
   BorderDefault: "#EACBCA",
   BorderContrast: "#392626",
+  BorderWarning: "#F5D170",
 
   // Text
   TextPrimary: "#2D2424",

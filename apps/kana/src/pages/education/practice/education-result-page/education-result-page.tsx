@@ -21,6 +21,7 @@ import formatResultAnswer, {
 import { PracticeResultData } from "../education-practice/lib/types/questions";
 
 import { ROUTES, RootStackParamList } from "@/app/routes.types";
+import CaptchaTile from "@/features/captcha/ui/captcha-tile";
 import DrawingPreview from "@/features/drawing/ui/drawing-preview/drawing-preview";
 import DrawingReference from "@/features/drawing/ui/drawing-reference/drawing-reference";
 import { Kana, KanaAlphabet, PracticeType } from "@/shared/constants/kana";
@@ -266,6 +267,34 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
               {drawing !== null && <DrawingPreview drawing={drawing} size={canvasSize} />}
             </View>
           </View>
+        </View>
+      );
+    }
+
+    if (question?.type === PracticeType.Captcha) {
+      const picked = userSelect?.type === PracticeType.Captcha ? userSelect.value : [];
+
+      return (
+        <View style={styles.captcha}>
+          {question[PracticeType.Captcha]!.tiles.map((tile, tileIndex) => {
+            const isPicked = picked.includes(tileIndex);
+            const state = isPicked
+              ? tile.isCorrect
+                ? "correct"
+                : "wrong"
+              : tile.isCorrect
+                ? "missed"
+                : "idle";
+
+            return (
+              <CaptchaTile
+                key={`${tile.text}:${tile.font}`}
+                tile={tile}
+                size={(answerContentWidth - 16) / 3}
+                state={state}
+              />
+            );
+          })}
         </View>
       );
     }
@@ -545,6 +574,11 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
       color: colors.TextPrimary,
     },
 
+    captcha: {
+      flexDirection: "row",
+      flexWrap: "wrap",
+      gap: 8,
+    },
     drawings: {
       flexDirection: "row",
       gap: 12,

@@ -28,7 +28,7 @@ import { usePracticePreferences } from "./model/hooks";
 
 import { RootStackParamList, ROUTES } from "@/app/routes.types";
 import { useKanaContext } from "@/pages/kana/kana-table-choice-letters-page/model/hooks";
-import { PracticeType } from "@/shared/constants/kana";
+import { MIX_PRACTICE_TYPES, PracticeType } from "@/shared/constants/kana";
 
 interface PreferenceBlockProps {
   icon: React.ReactNode;
@@ -70,7 +70,7 @@ const ModeChips: React.FC<ModeChipsProps> = ({ selected, onToggle }) => {
 
   return (
     <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-      {Object.values(PracticeType).map((mode) => (
+      {MIX_PRACTICE_TYPES.map((mode) => (
         <Chip
           key={mode}
           text={t(`practice.modes.${mode}.title`)}

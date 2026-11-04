@@ -26,6 +26,7 @@ const Indonesian = {
   practice: {
     question: "Pertanyaan",
 
+    new: "Baru",
     modes: {
       mixed: { title: "Campuran", subtitle: "Semuanya sekaligus" },
       testing: { title: "Tes", subtitle: "Jawab dengan batas waktu" },
@@ -35,6 +36,19 @@ const Indonesian = {
       matchingPairs: { title: "Pasangkan", subtitle: "Cocokkan pasangan kata" },
       wordBuilding: { title: "Membentuk Kata", subtitle: "Susun sebuah kata" },
       typing: { title: "Mengetik", subtitle: "Ketik suku kata" },
+      captcha: { title: "Captcha", subtitle: "Pilih semua gambar yang cocok" },
+    },
+
+    captcha: {
+      instruction: "Pilih semua gambar dengan suku kata ini, lalu ketuk Periksa",
+      verify: "Periksa",
+      info: "Pilih semua gambar dengan suku kata ini, baik hiragana maupun katakana.",
+      consentTitle: "Perlu internet",
+      consentText: "Mode ini memerlukan koneksi internet untuk mengunduh font.",
+      loadSlow:
+        "Proses ini lebih lama dari biasanya. Periksa koneksi Anda. Anda dapat menunggu atau membatalkan.",
+      loading: "Memuat font…",
+      loadFailed: "Gagal memuat font. Periksa koneksi Anda dan coba lagi.",
     },
 
     playAudio: "Putar Audio",

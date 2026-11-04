@@ -26,6 +26,7 @@ const SpanishMX = {
   practice: {
     question: "Pregunta",
 
+    new: "Nuevo",
     modes: {
       mixed: { title: "Mixto", subtitle: "Todo a la vez" },
       testing: { title: "Prueba", subtitle: "Responde contra el tiempo" },
@@ -35,6 +36,18 @@ const SpanishMX = {
       matchingPairs: { title: "Emparejar", subtitle: "Empareja pares de palabras" },
       wordBuilding: { title: "Formar palabra", subtitle: "Forma una palabra" },
       typing: { title: "Escritura", subtitle: "Escribe la sílaba" },
+      captcha: { title: "Captcha", subtitle: "Selecciona las imágenes correctas" },
+    },
+
+    captcha: {
+      instruction: "Selecciona todas las imágenes con esta sílaba y toca Verificar",
+      verify: "Verificar",
+      info: "Selecciona todas las imágenes con esta sílaba, tanto en hiragana como en katakana.",
+      consentTitle: "Se necesita internet",
+      consentText: "Este modo necesita conexión a internet para descargar las fuentes.",
+      loadSlow: "Está tardando más de lo normal. Revisa tu conexión. Puedes esperar o cancelar.",
+      loading: "Cargando fuentes…",
+      loadFailed: "No se pudieron cargar las fuentes. Revisa tu conexión e inténtalo de nuevo.",
     },
 
     playAudio: "Reproducir audio",

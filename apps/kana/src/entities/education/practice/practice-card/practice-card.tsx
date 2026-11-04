@@ -5,6 +5,7 @@ import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { AlertModal } from "@nihongo/core/shared/contexts/modal/presets/alert";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
+import Tag from "@nihongo/core/shared/ui/tag/tag";
 import { CaretRightIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, Text, View, Image, Pressable } from "react-native";
@@ -16,6 +17,9 @@ interface PracticeCardProps {
   image?: any;
   title: string;
   subtitle: string;
+
+  isNew?: boolean;
+
   onClick: () => void;
   isAvailable: () => { message: AccessibilityError; count: number };
 }
@@ -24,6 +28,7 @@ const PracticeCard: React.FC<PracticeCardProps> = ({
   title,
   subtitle,
   image,
+  isNew,
   onClick,
   isAvailable,
 }) => {
@@ -71,6 +76,12 @@ const PracticeCard: React.FC<PracticeCardProps> = ({
       style={({ pressed }) => [
         styles.card,
         { backgroundColor: pressed ? colors.BgLightGray : colors.BgPrimary },
+        isNew
+          ? {
+              borderWidth: 2,
+              borderColor: colors.BorderWarning,
+            }
+          : {},
       ]}
     >
       <View style={styles.content}>
@@ -79,7 +90,10 @@ const PracticeCard: React.FC<PracticeCardProps> = ({
         )}
 
         <View style={styles.description}>
-          <Text style={[{ color: colors.TextPrimary }, Typography.boldDefault]}>{title}</Text>
+          <View style={styles.descriptionLine}>
+            <Text style={[{ color: colors.TextPrimary }, Typography.boldDefault]}>{title}</Text>
+            {isNew && <Tag height={20} warning text={t("practice.new")} />}
+          </View>
           <Text style={[{ color: colors.TextSecondary }, Typography.regularLabel]}>{subtitle}</Text>
         </View>
       </View>
@@ -122,5 +136,10 @@ const styles = StyleSheet.create({
   description: {
     flexDirection: "column",
     gap: 4,
+  },
+  descriptionLine: {
+    flexDirection: "row",
+    gap: 8,
+    alignItems: "center",
   },
 });

@@ -26,6 +26,7 @@ const German = {
   practice: {
     question: "Frage",
 
+    new: "Neu",
     modes: {
       mixed: { title: "Gemischt", subtitle: "Alles auf einmal" },
       testing: { title: "Test", subtitle: "Antwort gegen die Zeit wählen" },
@@ -35,6 +36,21 @@ const German = {
       matchingPairs: { title: "Paare bilden", subtitle: "Wortpaare zusammenstellen" },
       wordBuilding: { title: "Wortbildung", subtitle: "Ein Wort bilden" },
       typing: { title: "Eingabe", subtitle: "Die Silbe schreiben" },
+      captcha: { title: "Captcha", subtitle: "Alle passenden Bilder auswählen" },
+    },
+
+    captcha: {
+      instruction: "Wähle alle Bilder mit dieser Silbe und tippe dann auf „Prüfen“",
+      verify: "Prüfen",
+      info: "Wähle alle Bilder mit dieser Silbe aus, sowohl Hiragana als auch Katakana.",
+      consentTitle: "Internet erforderlich",
+      consentText:
+        "Für diesen Modus wird eine Internetverbindung benötigt, um Schriftarten herunterzuladen.",
+      loadSlow:
+        "Das dauert länger als üblich. Prüfe deine Verbindung. Du kannst weiter warten oder abbrechen.",
+      loading: "Schriftarten werden geladen…",
+      loadFailed:
+        "Die Schriftarten konnten nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.",
     },
 
     playAudio: "Audio abspielen",

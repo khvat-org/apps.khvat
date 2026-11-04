@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FeatureFlagsService } from "@nihongo/core/shared/services/feature-flags-service/feature-flags-service";
+import { useFeatureFlag } from "@nihongo/core/shared/services/feature-flags-service/feature-flags-service";
 import { FlagIcon, XIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { View, Text, StyleSheet } from "react-native";
@@ -37,6 +37,7 @@ const LinearProgressBar: React.FC<ProgressBarProp> = ({
   const { t } = useTranslation();
   const { colors } = useThemeContext();
   const { showModal, hideModal } = useModal();
+  const isAskAIEnabled = useFeatureFlag("askAI");
 
   const styles = makeStyles(colors);
 
@@ -109,7 +110,7 @@ const LinearProgressBar: React.FC<ProgressBarProp> = ({
           {title ? title : t("practice.question")} {current + 1} / {all}
         </Text>
 
-        {FeatureFlagsService.isEnabled("askAI") && (
+        {isAskAIEnabled && (
           <Button
             color="primary"
             size="sm"

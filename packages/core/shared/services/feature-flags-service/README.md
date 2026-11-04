@@ -6,10 +6,14 @@ Allows you to hide functionality
 
 - `packages/core/shared/services/feature-flags-service/feature-flags-service.ts` - Flag checking service
 
-**Instructions**:
+**Where flags come from**:
 
-1. Add a flag for the feature to the file `feature-flags.ts`
-2. Add flag to `.env`
+1. `FEATURE_FLAGS` from `.env`, built into the app. Used until the app has received flags from the server.
+2. `feature_flags` from `/api/conf`, an array of strings. It fully replaces the flags from `.env`, so a flag can be turned off or on without a release. The last received value is kept on the device and is used offline.
+
+If `/api/conf` has no `feature_flags` key, or the value is not an array of strings, the flags from `.env` are used. To turn everything off, set `[]`.
+
+The config is requested at app start, on language change, and when the app returns to the foreground if the last successful request was more than 5 minutes ago.
 
 **Example of an entry in .env**:
 
@@ -19,12 +23,16 @@ FEATURE_FLAGS=["develop", "askAI"]
 
 **Example of use**:
 
-For example, if you need to hide something, you add the `qualificationRequirements` flag to the `feature-flags.ts` file and add a check:
+In components use the hook: it re-renders the component when flags change.
 
 ```js
-import { FeatureFlagsService } from 'apps/kana/src/shared/services/feature-flags-service/feature-flags-service';
+import { useFeatureFlag } from '@nihongo/core/shared/services/feature-flags-service/feature-flags-service';
 
-{FeatureFlagsService.isEnabled('qualificationRequirements') && (
+const isEnabled = useFeatureFlag('qualificationRequirements');
+
+{isEnabled && (
   ...
 )}
 ```
+
+Outside of components use `FeatureFlagsService.isEnabled('qualificationRequirements')`.

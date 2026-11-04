@@ -26,6 +26,7 @@ const French = {
   practice: {
     question: "Question",
 
+    new: "Nouveau",
     modes: {
       mixed: { title: "Mixte", subtitle: "Tout à la fois" },
       testing: { title: "Test", subtitle: "Répondez contre la montre" },
@@ -35,6 +36,19 @@ const French = {
       matchingPairs: { title: "Paires correspondantes", subtitle: "Associez les paires de mots" },
       wordBuilding: { title: "Construction de mot", subtitle: "Formez un mot" },
       typing: { title: "Saisie", subtitle: "Tapez la syllabe" },
+      captcha: { title: "Captcha", subtitle: "Sélectionnez les bonnes images" },
+    },
+
+    captcha: {
+      instruction: "Sélectionnez toutes les images avec cette syllabe, puis appuyez sur Vérifier",
+      verify: "Vérifier",
+      info: "Sélectionnez toutes les images avec cette syllabe, en hiragana comme en katakana.",
+      consentTitle: "Internet requis",
+      consentText: "Ce mode nécessite une connexion Internet pour télécharger les polices.",
+      loadSlow:
+        "Le chargement prend plus de temps que d'habitude. Vérifiez votre connexion. Vous pouvez patienter ou annuler.",
+      loading: "Chargement des polices…",
+      loadFailed: "Impossible de charger les polices. Vérifiez votre connexion et réessayez.",
     },
 
     playAudio: "Lire l'audio",

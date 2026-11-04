@@ -23,6 +23,7 @@ const darkTheme = {
   // Border
   BorderDefault: "#363636",
   BorderContrast: "#ECECEC",
+  BorderWarning: "#F2C450",
 
   // Text
   TextPrimary: "#FFFFFF",

@@ -27,6 +27,7 @@ const lightTheme: Colors = {
   // Border
   BorderDefault: "#ECECEC",
   BorderContrast: "#363636",
+  BorderWarning: "#F6CF6C",
 
   // Text
   TextPrimary: "#2A2A2A",

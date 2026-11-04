@@ -6,6 +6,16 @@ import { Word } from "@/shared/data/words";
 
 export type Maybe<T> = T | null;
 
+export type CaptchaTile = {
+  letter: ILetter;
+  kana: Kana;
+  text: string;
+  font: string;
+  path: string;
+  viewBox: number;
+  isCorrect: boolean;
+};
+
 // * Practice Question
 export type PracticeQuestion = {
   type: PracticeType;
@@ -62,6 +72,12 @@ export type PracticeQuestion = {
     questionKana: Kana;
     language: ShortLanguage;
   };
+
+  // * need to PracticeType.Captcha
+  [PracticeType.Captcha]?: {
+    question: ILetter;
+    tiles: CaptchaTile[];
+  };
 };
 
 export type Result = {
@@ -103,6 +119,7 @@ export type UserSelectByType = {
   [PracticeType.MatchingPairs]: MatchingPairAttempt[];
   [PracticeType.WordBuilding]: string[];
   [PracticeType.Typing]: string;
+  [PracticeType.Captcha]: number[];
 };
 
 export type PracticeUserSelect = {

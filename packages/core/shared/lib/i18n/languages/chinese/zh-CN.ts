@@ -26,6 +26,7 @@ const ChineseCN = {
   practice: {
     question: "问题",
 
+    new: "新",
     modes: {
       mixed: { title: "混合", subtitle: "全部一起" },
       testing: { title: "测试", subtitle: "限时选择答案" },
@@ -35,6 +36,18 @@ const ChineseCN = {
       matchingPairs: { title: "配对", subtitle: "匹配单词对" },
       wordBuilding: { title: "组词", subtitle: "组成单词" },
       typing: { title: "输入", subtitle: "输入音节" },
+      captcha: { title: "验证码", subtitle: "选出所有匹配的图片" },
+    },
+
+    captcha: {
+      instruction: "选出所有包含此音节的图片，然后点按“验证”",
+      verify: "验证",
+      info: "选出所有包含此音节的图片，平假名和片假名都要选。",
+      consentTitle: "需要联网",
+      consentText: "此模式需要联网下载字体。",
+      loadSlow: "加载时间比平时长。请检查网络连接。你可以继续等待或取消。",
+      loading: "正在加载字体…",
+      loadFailed: "无法加载字体。请检查网络连接后重试。",
     },
 
     playAudio: "播放音频",

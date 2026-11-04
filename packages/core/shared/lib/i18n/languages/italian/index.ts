@@ -26,6 +26,7 @@ const Italian = {
   practice: {
     question: "Domanda",
 
+    new: "Nuovo",
     modes: {
       mixed: { title: "Misto", subtitle: "Tutto insieme" },
       testing: { title: "Test", subtitle: "Scegli una risposta a tempo" },
@@ -35,6 +36,19 @@ const Italian = {
       matchingPairs: { title: "Abbinamento di coppie", subtitle: "Abbina le coppie di parole" },
       wordBuilding: { title: "Costruzione di parole", subtitle: "Forma una parola" },
       typing: { title: "Digitazione", subtitle: "Scrivi la sillaba" },
+      captcha: { title: "Captcha", subtitle: "Seleziona le immagini giuste" },
+    },
+
+    captcha: {
+      instruction: "Seleziona tutte le immagini con questa sillaba, poi tocca Verifica",
+      verify: "Verifica",
+      info: "Seleziona tutte le immagini con questa sillaba, sia hiragana sia katakana.",
+      consentTitle: "Serve Internet",
+      consentText: "Questa modalità richiede una connessione Internet per scaricare i font.",
+      loadSlow:
+        "Sta richiedendo più tempo del solito. Controlla la connessione. Puoi attendere o annullare.",
+      loading: "Caricamento dei font…",
+      loadFailed: "Impossibile caricare i font. Controlla la connessione e riprova.",
     },
 
     playAudio: "Riproduci audio",

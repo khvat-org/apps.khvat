@@ -27,6 +27,7 @@ const hokkaidoLightTheme: Colors = {
   // Border
   BorderDefault: "#CBE3EA",
   BorderContrast: "#27363B",
+  BorderWarning: "#F6BF6D",
 
   // Text
   TextPrimary: "#1F292D",

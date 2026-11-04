@@ -27,6 +27,7 @@ const osakaLightTheme: Colors = {
   // Border
   BorderDefault: "#EBE8CA",
   BorderContrast: "#3A3B28",
+  BorderWarning: "#F5D76C",
 
   // Text
   TextPrimary: "#2C2C26",

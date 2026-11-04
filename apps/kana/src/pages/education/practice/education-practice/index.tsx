@@ -23,10 +23,14 @@ import { getKatakanaLetters, getHiraganaLetters } from "./selectors/kanaSelector
 
 import { ROUTES, RootStackParamList } from "@/app/routes.types";
 import EducationPracticeTimer from "@/entities/education/practice/practice-timer/practice-timer";
+import { useCaptchaFonts } from "@/features/captcha/model/use-captcha-fonts";
+import { useCaptchaPacks } from "@/features/captcha/model/use-captcha-packs";
+import CaptchaLoading from "@/features/captcha/ui/captcha-loading";
 import { usePracticePreferences } from "@/pages/education/practice/practice-preferences/model/hooks";
 import { useKanaContext } from "@/pages/kana/kana-table-choice-letters-page/model/hooks";
 import { PracticeType, TEST_DELAY } from "@/shared/constants/kana";
 import PracticeAudio from "@/widgets/practice/practice-audio/practice-audio";
+import PracticeCaptcha from "@/widgets/practice/practice-captcha/practice-captcha";
 import PracticeDrawKana from "@/widgets/practice/practice-draw-kana/practice-draw-kana";
 import EducationPracticeSelectAnswers from "@/widgets/practice/practice-pick-answers/practice-pick-answers";
 import PracticeTypeKana from "@/widgets/practice/practice-type-kana/practice-type-kana";
@@ -59,6 +63,10 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   const { transliterations } = useTransliterationsContext();
 
   const { mode } = route.params;
+  const isCaptcha = mode.includes(PracticeType.Captcha);
+  const captchaFonts = useCaptchaFonts();
+  const captchaPacks = useCaptchaPacks(captchaFonts, isCaptcha);
+  const [isCaptchaFailed, setIsCaptchaFailed] = useState(false);
 
   const { colors } = useThemeContext();
   const styles = makeStyles(colors);
@@ -122,6 +130,8 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   const question = engine.currentQuestion;
 
   useEffect(() => {
+    if (isCaptcha && !captchaPacks.packs) return undefined;
+
     const { questions } = wrapperQuestionGenerate({
       katakanaLetters,
       hiraganaLetters,
@@ -129,18 +139,21 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
       modes: mode,
       language,
       transliterations,
+      captchaPacks: captchaPacks.packs ?? undefined,
     });
 
     if (questions && questions.length > 0) {
       engine.setQuestions(questions);
       forceUpdate();
+    } else if (isCaptcha) {
+      setIsCaptchaFailed(true);
     }
 
     return () => {
       engine.reset();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps -- инициализация один раз при монтировании: katakana/hiragana-массивы пересоздаются каждый рендер, добавление в deps дало бы бесконечную регенерацию вопросов
-  }, []);
+  }, [captchaPacks.packs]);
 
   const onSubmit = useCallback<OnSubmit>(
     ({ isCorrectAnswer, userSelect }) => {
@@ -172,7 +185,22 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
     [engine, forceUpdate, navigation, registerStudyDay],
   );
 
-  if (question === null) return <View></View>;
+  if (question === null) {
+    if (isCaptcha) {
+      return (
+        <CaptchaLoading
+          done={captchaPacks.done}
+          total={captchaPacks.total}
+          isSlow={captchaPacks.isSlow}
+          isFailed={captchaPacks.isFailed || isCaptchaFailed}
+          onRetry={captchaPacks.retry}
+          onClose={navigation.goBack}
+        />
+      );
+    }
+
+    return <View></View>;
+  }
 
   return (
     <SafeLayout>
@@ -298,6 +326,15 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
               onProgress={(userSelect) => {
                 partialSelect.current = userSelect;
               }}
+            />
+          )}
+
+          {question.type === PracticeType.Captcha && question.captcha && (
+            <PracticeCaptcha
+              key={currentIndex}
+              question={question.captcha.question}
+              tiles={question.captcha.tiles}
+              onCompleted={onSubmit}
             />
           )}
         </View>

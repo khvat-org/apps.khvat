@@ -26,6 +26,7 @@ const PortugueseBR = {
   practice: {
     question: "Pergunta",
 
+    new: "Novo",
     modes: {
       mixed: { title: "Misto", subtitle: "Tudo de uma vez" },
       testing: { title: "Teste", subtitle: "Responda contra o tempo" },
@@ -35,6 +36,19 @@ const PortugueseBR = {
       matchingPairs: { title: "Emparelhar pares", subtitle: "Combine pares de palavras" },
       wordBuilding: { title: "Construção de palavra", subtitle: "Forme uma palavra" },
       typing: { title: "Digitação", subtitle: "Digite a sílaba" },
+      captcha: { title: "Captcha", subtitle: "Selecione as imagens certas" },
+    },
+
+    captcha: {
+      instruction: "Selecione todas as imagens com esta sílaba e toque em Verificar",
+      verify: "Verificar",
+      info: "Selecione todas as imagens com esta sílaba, tanto em hiragana quanto em katakana.",
+      consentTitle: "Internet necessária",
+      consentText: "Este modo precisa de conexão com a internet para baixar as fontes.",
+      loadSlow:
+        "Está demorando mais do que o normal. Verifique sua conexão. Você pode aguardar ou cancelar.",
+      loading: "Carregando fontes…",
+      loadFailed: "Não foi possível carregar as fontes. Verifique sua conexão e tente novamente.",
     },
 
     playAudio: "Reproduzir áudio",

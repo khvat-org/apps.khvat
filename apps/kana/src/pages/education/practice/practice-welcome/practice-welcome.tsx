@@ -1,10 +1,14 @@
 import React from "react";
 
+import { CAPTCHA_DOWNLOAD_ACCEPTED } from "@nihongo/core/shared/constants/storageKeys";
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
+import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
+import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import Button from "@nihongo/core/shared/ui/button";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { SlidersHorizontalIcon } from "phosphor-react-native";
@@ -20,9 +24,10 @@ import {
 import { ROUTES, RootStackParamList } from "@/app/routes.types";
 import EducationKanaSelectedCard from "@/entities/education/practice/education-select-letters/education-select-letters";
 import PracticeCard from "@/entities/education/practice/practice-card/practice-card";
+import { useCaptchaFonts } from "@/features/captcha/model/use-captcha-fonts";
 import { usePracticePreferences } from "@/pages/education/practice/practice-preferences/model/hooks";
 import { useKanaContext } from "@/pages/kana/kana-table-choice-letters-page/model/hooks";
-import { PracticeType } from "@/shared/constants/kana";
+import { MIX_PRACTICE_TYPES, PracticeType } from "@/shared/constants/kana";
 import practiceImageMixed from "@/shared/resources/practice/1.jpg";
 import practiceImageTesting from "@/shared/resources/practice/2.jpg";
 import practiceImageDrawing from "@/shared/resources/practice/3.jpg";
@@ -31,6 +36,7 @@ import practiceImageMultipleChoice from "@/shared/resources/practice/5.jpg";
 import practiceImageMatchingPairs from "@/shared/resources/practice/6.jpg";
 import practiceImageWordBuilding from "@/shared/resources/practice/7.jpg";
 import practiceImageTyping from "@/shared/resources/practice/8.jpg";
+import practiceImageCaptcha from "@/shared/resources/practice/9.jpg";
 
 type PracticeNavigationProp = StackNavigationProp<RootStackParamList, typeof ROUTES.PRACTICE_ROOT>;
 
@@ -49,6 +55,9 @@ const PracticeWelcomePage: React.FC = () => {
   const {
     preferences: { questionsCount, mixModes },
   } = usePracticePreferences();
+
+  const captchaFonts = useCaptchaFonts();
+  const { showModal, hideModal } = useModal();
 
   const wordsCount = selectedWords.hiragana.length + selectedWords.katakana.length;
 
@@ -78,7 +87,7 @@ const PracticeWelcomePage: React.FC = () => {
     if (type) {
       modes = Array.from({ length: questionsCount }, () => type);
     } else {
-      const available = Object.values(PracticeType).filter(
+      const available = MIX_PRACTICE_TYPES.filter(
         (practice) => isAvailable[practice]().message === AccessibilityError.Available,
       );
       const mixed = available.filter((practice) => mixModes.includes(practice));
@@ -91,6 +100,32 @@ const PracticeWelcomePage: React.FC = () => {
     }
 
     navigation.navigate(ROUTES.PRACTICE_PAGE, { mode: modes });
+  };
+
+  const startCaptcha = async () => {
+    const isAccepted = await AsyncStorage.getItem(CAPTCHA_DOWNLOAD_ACCEPTED).catch(() => null);
+
+    if (isAccepted) {
+      start(PracticeType.Captcha);
+      return;
+    }
+
+    showModal({
+      closeOnBackdrop: true,
+      content: (
+        <ConfirmationModal
+          title={t("practice.captcha.consentTitle")}
+          subtitle={t("practice.captcha.consentText")}
+          confirmText={t("common.start")}
+          onCancel={hideModal}
+          onConfirm={() => {
+            hideModal();
+            AsyncStorage.setItem(CAPTCHA_DOWNLOAD_ACCEPTED, "1").catch(() => {});
+            start(PracticeType.Captcha);
+          }}
+        />
+      ),
+    });
   };
 
   return (
@@ -173,6 +208,16 @@ const PracticeWelcomePage: React.FC = () => {
           subtitle={t("practice.modes.typing.subtitle")}
           image={practiceImageTyping}
         />
+        {captchaFonts && (
+          <PracticeCard
+            isNew
+            onClick={startCaptcha}
+            isAvailable={isAvailable[PracticeType.Captcha]}
+            title={t("practice.modes.captcha.title")}
+            subtitle={t("practice.modes.captcha.subtitle")}
+            image={practiceImageCaptcha}
+          />
+        )}
       </ScrollView>
     </SafeLayout>
   );

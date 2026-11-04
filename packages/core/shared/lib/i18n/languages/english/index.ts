@@ -26,6 +26,7 @@ const English = {
   practice: {
     question: "Question",
 
+    new: "New",
     modes: {
       mixed: { title: "Mixed", subtitle: "All at once" },
       testing: { title: "Test", subtitle: "Answer against the clock" },
@@ -35,6 +36,19 @@ const English = {
       matchingPairs: { title: "Matching Pairs", subtitle: "Match word pairs" },
       wordBuilding: { title: "Word Building", subtitle: "Form a word" },
       typing: { title: "Typing", subtitle: "Type the syllable" },
+      captcha: { title: "Captcha", subtitle: "Select all matching images" },
+    },
+
+    captcha: {
+      instruction: "Select all images with this syllable, then tap Verify",
+      verify: "Verify",
+      info: "Select all images with this syllable, both hiragana and katakana.",
+      consentTitle: "Internet required",
+      consentText: "This mode needs an internet connection to download fonts.",
+      loadSlow:
+        "This is taking longer than usual. Check your connection. You can keep waiting or cancel.",
+      loading: "Loading fonts…",
+      loadFailed: "Couldn't load the fonts. Check your connection and try again.",
     },
 
     playAudio: "Play Audio",

@@ -6,7 +6,12 @@ export enum PracticeType {
   MatchingPairs = "matchingPairs",
   WordBuilding = "wordBuilding",
   Typing = "typing",
+  Captcha = "captcha",
 }
+
+export const MIX_PRACTICE_TYPES = Object.values(PracticeType).filter(
+  (type) => type !== PracticeType.Captcha,
+);
 
 export enum Kana {
   Hiragana = "Hiragana",

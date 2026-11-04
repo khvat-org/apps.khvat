@@ -9,16 +9,34 @@ interface TagProps {
   icon?: React.JSX.Element;
   text: string;
 
+  height?: number;
+
   isUpperCase?: boolean;
   isLowerCase?: boolean;
 
   primary?: boolean;
+  warning?: boolean;
 }
 
-const Tag: React.FC<TagProps> = ({ text, icon, isUpperCase, isLowerCase, primary }) => {
+const Tag: React.FC<TagProps> = ({
+  text,
+  icon,
+  height,
+  isUpperCase,
+  isLowerCase,
+  primary,
+  warning,
+}) => {
   const { colors } = useThemeContext();
 
-  const styles = makeStyles(colors, isUpperCase || false, isLowerCase || false, primary || false);
+  const styles = makeStyles(
+    colors,
+    isUpperCase || false,
+    isLowerCase || false,
+    primary || false,
+    warning || false,
+    height,
+  );
 
   return (
     <View style={styles.tag}>
@@ -33,10 +51,14 @@ const makeStyles = (
   isUpperCase: boolean,
   isLowerCase: boolean,
   primary: boolean,
+  warning: boolean,
+  height?: number,
 ) =>
   StyleSheet.create({
     tag: {
       width: "auto",
+
+      ...(height ? { height: height } : {}),
 
       borderRadius: 12,
       paddingLeft: 8,
@@ -44,7 +66,11 @@ const makeStyles = (
       paddingBottom: 2,
       paddingTop: 2,
 
-      backgroundColor: primary ? colors.BgDarkGray : colors.BgLightGray,
+      backgroundColor: warning
+        ? colors.BgWarning
+        : primary
+          ? colors.BgDarkGray
+          : colors.BgLightGray,
 
       flexDirection: "row",
       alignItems: "center",
@@ -52,7 +78,7 @@ const makeStyles = (
       gap: 2,
     },
     text: {
-      color: primary ? colors.TextContrast : colors.TextPrimary,
+      color: warning ? colors.TextWhite : primary ? colors.TextContrast : colors.TextPrimary,
       ...Typography.regularCaption,
 
       textTransform: isUpperCase ? "uppercase" : isLowerCase ? "lowercase" : "capitalize",

@@ -182,6 +182,16 @@ const formatResultAnswer = ({
       };
     }
 
+    case PracticeType.Captcha: {
+      const data = question[PracticeType.Captcha]!;
+
+      return {
+        ...empty,
+        question: { type: PracticeType.Captcha, [PracticeType.Captcha]: data },
+        title: letterText(data.question, Kana.Romaji, transliterations),
+      };
+    }
+
     default:
       return { ...empty, question: null };
   }

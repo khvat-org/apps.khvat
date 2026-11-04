@@ -3,7 +3,7 @@ import React, { createContext, ReactNode, useCallback, useEffect, useState } fro
 import { PRACTICE_PREFERENCES } from "@nihongo/core/shared/constants/storageKeys";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-import { PracticeType } from "@/shared/constants/kana";
+import { MIX_PRACTICE_TYPES, PracticeType } from "@/shared/constants/kana";
 
 export const QUESTIONS_COUNT = { min: 8, max: 40, step: 4 };
 export const TIMER_SECONDS = { min: 3, max: 12, step: 1 };
@@ -21,7 +21,7 @@ const DEFAULT_PREFERENCES: PracticePreferences = {
   questionsCount: 16,
   timerModes: [PracticeType.Testing],
   timerSeconds: 5,
-  mixModes: Object.values(PracticeType),
+  mixModes: MIX_PRACTICE_TYPES,
 };
 
 type PracticePreferencesContextType = {

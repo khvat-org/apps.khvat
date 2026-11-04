@@ -27,6 +27,7 @@ const jiraiKeiDark: Colors = {
   // Border
   BorderDefault: "#3A3538",
   BorderContrast: "#EADFE3",
+  BorderWarning: "#F2CF73",
 
   // Text
   TextPrimary: "#FFFFFF",

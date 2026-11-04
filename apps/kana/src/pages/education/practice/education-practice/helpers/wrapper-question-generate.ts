@@ -3,6 +3,7 @@ import { ILetter, lettersTableById } from "@nihongo/core/shared/data/lettersTabl
 
 import { DEMO_QUESTION } from "../default_data/demo";
 
+import questionGenerateCaptcha from "./question-generate-captcha";
 import questionGenerateDrawing from "./question-generate-drawing";
 import questionGenerateListening from "./question-generate-listening";
 import questionGenerateMatchingPairs from "./question-generate-matching-pairs";
@@ -11,6 +12,7 @@ import questionGenerateTesting from "./question-generate-testing";
 import questionGenerateTyping from "./question-generate-typing";
 import questionGenerateWordBuilding from "./question-generate-word-building";
 
+import { CaptchaPack } from "@/features/captcha/model/captcha-fonts";
 import { composeReference } from "@/features/drawing/lib/hieroglyph-recognition/compose-reference";
 import { PracticeQuestion } from "@/pages/education/practice/education-practice/lib/types/questions";
 import { Kana, KanaAlphabet, PracticeType } from "@/shared/constants/kana";
@@ -27,6 +29,7 @@ interface State {
   };
   language: string;
   transliterations: number;
+  captchaPacks?: CaptchaPack[];
 }
 
 function generateWordsKanaTemplate(
@@ -114,6 +117,7 @@ const wrapperQuestionGenerate = ({
   selectedWords,
   language,
   transliterations,
+  captchaPacks = [],
 }: State) => {
   const questions: PracticeQuestion[] = [];
   const questionsLength = modes.length;
@@ -130,6 +134,7 @@ const wrapperQuestionGenerate = ({
   const addedKatakanaLetters: string[] = [];
 
   const addedKanaWords: string[] = [];
+  const addedCaptchaLetters: string[] = [];
 
   hiraganaLetters.forEach((item) => {
     const letter = lettersTableById[item];
@@ -320,6 +325,22 @@ const wrapperQuestionGenerate = ({
       if (question) {
         addLetterInAdded(questionKana, question?.question.id);
         questions.push({ type: mode, [PracticeType.Typing]: question });
+      }
+    }
+
+    // * Captcha
+    if (mode === PracticeType.Captcha) {
+      const question = questionGenerateCaptcha({
+        hiraganaLetters: availableHiraganaLetters,
+        katakanaLetters: availableKatakanaLetters,
+        addedLetters: addedCaptchaLetters,
+        packs: captchaPacks,
+        transliterations,
+      });
+
+      if (question) {
+        addedCaptchaLetters.push(question.question.id);
+        questions.push({ type: mode, [PracticeType.Captcha]: question });
       }
     }
   }

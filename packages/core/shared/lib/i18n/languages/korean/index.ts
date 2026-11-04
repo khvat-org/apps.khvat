@@ -26,6 +26,7 @@ const Korean = {
   practice: {
     question: "문제",
 
+    new: "신규",
     modes: {
       mixed: { title: "혼합", subtitle: "모두 한꺼번에" },
       testing: { title: "테스트", subtitle: "시간 제한으로 답 선택" },
@@ -35,6 +36,19 @@ const Korean = {
       matchingPairs: { title: "짝 맞추기", subtitle: "단어 짝 맞추기" },
       wordBuilding: { title: "단어 만들기", subtitle: "단어 구성하기" },
       typing: { title: "입력", subtitle: "음절 입력하기" },
+      captcha: { title: "캡차", subtitle: "알맞은 이미지를 모두 선택하기" },
+    },
+
+    captcha: {
+      instruction: "이 음절이 있는 이미지를 모두 선택한 다음 확인을 누르세요",
+      verify: "확인",
+      info: "히라가나와 가타카나 모두, 이 음절이 있는 이미지를 전부 선택하세요.",
+      consentTitle: "인터넷 연결 필요",
+      consentText: "이 모드는 글꼴을 다운로드하기 위해 인터넷 연결이 필요합니다.",
+      loadSlow:
+        "평소보다 오래 걸리고 있습니다. 연결을 확인하세요. 계속 기다리거나 취소할 수 있습니다.",
+      loading: "글꼴을 불러오는 중…",
+      loadFailed: "글꼴을 불러오지 못했습니다. 연결을 확인하고 다시 시도하세요.",
     },
 
     playAudio: "오디오 재생",

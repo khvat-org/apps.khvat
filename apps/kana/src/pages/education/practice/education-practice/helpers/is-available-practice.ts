@@ -84,5 +84,13 @@ export const isAvailablePractice = (data: isAvailablePracticeProps) => {
 
       return { message: AccessibilityError.Available, count: questionsLength };
     },
+
+    [PracticeType.Captcha]: () => {
+      if (hiraganaLength < questionsLength && katakanaLength < questionsLength) {
+        return { message: AccessibilityError.insufficientKanaSelected, count: questionsLength };
+      }
+
+      return { message: AccessibilityError.Available, count: questionsLength };
+    },
   };
 };

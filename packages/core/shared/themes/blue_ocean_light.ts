@@ -27,6 +27,7 @@ const blueOceanLightTheme: Colors = {
   // Border
   BorderDefault: "#D6DFE9",
   BorderContrast: "#242E3A",
+  BorderWarning: "#F5DD64",
 
   // Text
   TextPrimary: "#141E2B",
