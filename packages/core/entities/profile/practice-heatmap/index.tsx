@@ -1,11 +1,11 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { toDateKey } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { Typography } from "@nihongo/core/shared/typography";
 import { useTranslation } from "react-i18next";
-import { View, Text, StyleSheet, LayoutChangeEvent } from "react-native";
+import { AppState, View, Text, StyleSheet, LayoutChangeEvent } from "react-native";
 
 import { useContentDimensions } from "../../../shared/lib/layout/use-content-dimensions";
 
@@ -15,6 +15,7 @@ const DAYS_IN_WEEK = 7;
 const MAX_WEEKS = 53;
 const PAGE_PADDING = 16;
 const CONTAINER_PADDING = 16;
+const TODAY_CHECK_INTERVAL = 60_000;
 
 function withAlpha(hex: string, alpha: number) {
   const raw = hex.replace("#", "").trim();
@@ -68,6 +69,29 @@ function buildWeeks(weeksCount: number, today: Date) {
   return weeks;
 }
 
+function useToday() {
+  const [today, setToday] = useState(() => new Date());
+
+  useEffect(() => {
+    const update = () => {
+      const now = new Date();
+      setToday((current) => (toDateKey(current) === toDateKey(now) ? current : now));
+    };
+
+    const interval = setInterval(update, TODAY_CHECK_INTERVAL);
+    const subscription = AppState.addEventListener("change", (state) => {
+      if (state === "active") update();
+    });
+
+    return () => {
+      clearInterval(interval);
+      subscription.remove();
+    };
+  }, []);
+
+  return today;
+}
+
 interface PracticeHeatmapProps {
   // { "2026-09-14": 12, "2026-09-10": 2 }
   data?: {
@@ -80,6 +104,7 @@ export const PracticeHeatmap: React.FC<PracticeHeatmapProps> = ({ data = {} }) =
   const { colors } = useThemeContext();
   const { width: windowWidth } = useContentDimensions();
   const [measuredWidth, setMeasuredWidth] = useState(0);
+  const today = useToday();
 
   const width =
     measuredWidth > 0
@@ -98,8 +123,8 @@ export const PracticeHeatmap: React.FC<PracticeHeatmapProps> = ({ data = {} }) =
   const graphHeight = DAYS_IN_WEEK * daySize + (DAYS_IN_WEEK - 1) * GAP;
 
   const weeks = useMemo(
-    () => (weeksCount > 0 ? buildWeeks(weeksCount, new Date()) : []),
-    [weeksCount],
+    () => (weeksCount > 0 ? buildWeeks(weeksCount, today) : []),
+    [weeksCount, today],
   );
 
   const { max, daysCount, practiceCount } = useMemo(() => {
