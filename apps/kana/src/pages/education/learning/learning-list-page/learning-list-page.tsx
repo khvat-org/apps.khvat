@@ -29,6 +29,14 @@ import { Lesson as LessonInterface } from "../model/types";
 import { ROUTES, RootStackParamList } from "@/app/routes.types";
 import Chapter from "@/widgets/learning/lesson/chapter/chapter";
 
+const getProgressLabelLayout = (progress: number) => {
+  if (progress === 100) return { width: 44, marginLeft: -44 };
+  if (progress > 83) return { width: 35, marginLeft: -35 };
+  if (progress < 17.5) return { width: 35, marginLeft: 0 };
+
+  return { width: 35, marginLeft: -17.5 };
+};
+
 function isVersionCompatible(appVersion: string, minVersion: string) {
   const appParts = appVersion.split(".").map(Number);
   const minParts = minVersion.split(".").map(Number);
@@ -151,8 +159,7 @@ const LearningList: React.FC = () => {
                       styles.progressBarTextContainer,
                       {
                         left: `${percentageProgress}%`,
-                        marginLeft:
-                          percentageProgress > 83 ? -35 : percentageProgress < 17.5 ? 0 : -17.5,
+                        ...getProgressLabelLayout(percentageProgress),
                       },
                     ]}
                   >
