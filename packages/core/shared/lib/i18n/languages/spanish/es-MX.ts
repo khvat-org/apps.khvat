@@ -32,7 +32,7 @@ const SpanishMX = {
       testing: { title: "Prueba", subtitle: "Responde contra el tiempo" },
       drawing: { title: "Dibujo", subtitle: "Dibuja hiragana / katakana" },
       listening: { title: "Audición", subtitle: "Elige la respuesta correcta" },
-      multipleChoice: { title: "Selección de palabra", subtitle: "Elige la respuesta correcta" },
+      multipleChoice: { title: "Elegir palabra", subtitle: "Elige la respuesta correcta" },
       matchingPairs: { title: "Emparejar", subtitle: "Empareja pares de palabras" },
       wordBuilding: { title: "Formar palabra", subtitle: "Forma una palabra" },
       typing: { title: "Escritura", subtitle: "Escribe la sílaba" },
@@ -324,7 +324,7 @@ const SpanishMX = {
 
     stats: {
       daysOfStudy: "días de estudio",
-      timesOfPractice: "sesiones de práctica",
+      timesOfPractice: "prácticas",
     },
 
     avatar: {
