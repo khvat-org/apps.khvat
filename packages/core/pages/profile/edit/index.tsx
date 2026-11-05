@@ -8,6 +8,7 @@ import { PROFILE_ROUTES, ProfileParamList } from "@nihongo/core/pages/profile/ro
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useUserGatewayUrl } from "@nihongo/core/shared/lib/api-gateway";
 import { getProfile, Profile } from "@nihongo/core/shared/lib/auth";
+import { openSheet } from "@nihongo/core/shared/lib/navigation/sheet-transition-guard";
 import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
@@ -106,12 +107,12 @@ const ProfileEditPage: React.FC = () => {
               leftIcon={<UserListIcon size={20} color={colors.BgContrast} />}
               text={t("profile.edit.name")}
               subText={profile?.name}
-              onClick={() => navigation.navigate(PROFILE_ROUTES.EDIT_NAME)}
+              onClick={() => openSheet(() => navigation.navigate(PROFILE_ROUTES.EDIT_NAME))}
             />
             <SettingItem
               leftIcon={<PasswordIcon size={20} color={colors.BgContrast} />}
               text={t("profile.edit.password")}
-              onClick={() => navigation.navigate(PROFILE_ROUTES.EDIT_PASSWORD)}
+              onClick={() => openSheet(() => navigation.navigate(PROFILE_ROUTES.EDIT_PASSWORD))}
               isLast
             />
           </SettingsSection>

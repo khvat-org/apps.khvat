@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
 import SettingsSection from "@nihongo/core/entities/setting/setting-section/settings-section";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { openSheet } from "@nihongo/core/shared/lib/navigation/sheet-transition-guard";
 import { Typography } from "@nihongo/core/shared/typography";
 import Chip from "@nihongo/core/shared/ui/chip/chip";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
@@ -161,7 +162,9 @@ export const PracticePreferencesPage: React.FC = () => {
               leftIcon={<SwatchesIcon {...iconProps} />}
               text={t("selectKana.chooseKana")}
               subText={selectedKana}
-              onClick={() => navigation.navigate(ROUTES.KANA_SELECT, { title: "" })}
+              onClick={() =>
+                openSheet(() => navigation.navigate(ROUTES.KANA_SELECT, { title: "" }))
+              }
               isLast
             />
           </SettingsSection>

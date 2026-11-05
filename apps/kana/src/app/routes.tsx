@@ -19,6 +19,7 @@ import SettingsWidgetsPage from "@nihongo/core/pages/settings/settings-widgets/s
 import WelcomePage from "@nihongo/core/pages/welcome/welcome";
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
 import { ModalProvider } from "@nihongo/core/shared/contexts/modal/modal-context";
+import { sheetTransitionListeners } from "@nihongo/core/shared/lib/navigation/sheet-transition-guard";
 import { TabBarButton } from "@nihongo/core/shared/ui/bottom-tap";
 import { useSideRailInsets } from "@nihongo/core/shared/ui/bottom-tap/side-rail-insets-context";
 import { TabScreenInsets } from "@nihongo/core/shared/ui/bottom-tap/tab-screen-insets";
@@ -162,7 +163,12 @@ const AuthStack = {
 };
 
 export const AndroidRootNavigation = createStaticNavigation(createStackNavigator(RootStack));
-export const IOSRootNavigation = createStaticNavigation(createNativeStackNavigator(RootStack));
+export const IOSRootNavigation = createStaticNavigation(
+  createNativeStackNavigator({
+    ...RootStack,
+    screenListeners: sheetTransitionListeners,
+  }),
+);
 
 export const AndroidAuthNavigation = createStaticNavigation(createStackNavigator(AuthStack));
 export const IOSAuthNavigation = createStaticNavigation(createNativeStackNavigator(AuthStack));

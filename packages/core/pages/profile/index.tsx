@@ -13,6 +13,7 @@ import { useStudyActivity } from "@nihongo/core/shared/contexts/study-activity/s
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { loadProfile, ProfileState } from "@nihongo/core/shared/lib/auth";
 import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
+import { openSheet } from "@nihongo/core/shared/lib/navigation/sheet-transition-guard";
 import { useProfileWidgets } from "@nihongo/core/shared/lib/settings/useProfileWidgets";
 import { Typography } from "@nihongo/core/shared/typography";
 import { useSideRailInsets } from "@nihongo/core/shared/ui/bottom-tap/side-rail-insets-context";
@@ -52,7 +53,7 @@ const ProfilePage: React.FC = () => {
 
   const toEditProfile = () => {
     triggerHaptic();
-    navigation.navigate(PROFILE_ROUTES.EDIT);
+    openSheet(() => navigation.navigate(PROFILE_ROUTES.EDIT));
   };
 
   const [state, setState] = useState<ProfileState | null>(null);

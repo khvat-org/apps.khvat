@@ -1,6 +1,7 @@
 import React from "react";
 
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { openSheet } from "@nihongo/core/shared/lib/navigation/sheet-transition-guard";
 import SideRailButton from "@nihongo/core/shared/ui/bottom-tap/side-rail-button";
 import { useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -17,7 +18,7 @@ const PreferencesSideButton: React.FC = () => {
   return (
     <SideRailButton
       label={t("practice.preferences.title")}
-      onPress={() => navigation.navigate(ROUTES.PRACTICE_PREFERENCES)}
+      onPress={() => openSheet(() => navigation.navigate(ROUTES.PRACTICE_PREFERENCES))}
     >
       <SlidersHorizontalIcon size={24} color={colors.TextPrimary} />
     </SideRailButton>

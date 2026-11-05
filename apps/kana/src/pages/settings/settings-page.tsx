@@ -19,6 +19,7 @@ import StoreReviewLink from "@nihongo/core/features/settings/store-review-link/s
 import TermsAndConditions from "@nihongo/core/features/settings/terms-and-conditions/terms-and-conditions";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useIsLoggedIn } from "@nihongo/core/shared/lib/auth/use-is-logged-in";
+import { openSheet } from "@nihongo/core/shared/lib/navigation/sheet-transition-guard";
 import SideRailBackButton from "@nihongo/core/shared/ui/bottom-tap/side-rail-back-button";
 import { useHasSideRailActions } from "@nihongo/core/shared/ui/bottom-tap/side-rail-insets-context";
 import Button from "@nihongo/core/shared/ui/button";
@@ -81,7 +82,7 @@ const SettingsPage: React.FC = () => {
               <SettingItem
                 leftIcon={<PencilSimpleIcon size={20} color={colors.BgContrast} />}
                 text={t("profile.edit.title")}
-                onClick={() => navigation.navigate(ROUTES.PROFILE_EDIT)}
+                onClick={() => openSheet(() => navigation.navigate(ROUTES.PROFILE_EDIT))}
                 isLast
               />
             </SettingsSection>
@@ -90,27 +91,35 @@ const SettingsPage: React.FC = () => {
           <SettingsSection>
             <SettingsStatistics />
             <SettingsHaptic />
-            <SettingsTheme toThemeSettingPage={() => navigation.navigate(ROUTES.SETTINGS_THEME)} />
+            <SettingsTheme
+              toThemeSettingPage={() => openSheet(() => navigation.navigate(ROUTES.SETTINGS_THEME))}
+            />
           </SettingsSection>
 
           <SettingsSection>
             <SettingsLanguage
-              goToLanguageSettingsPage={() => navigation.navigate(ROUTES.SETTINGS_LANGUAGE)}
+              goToLanguageSettingsPage={() =>
+                openSheet(() => navigation.navigate(ROUTES.SETTINGS_LANGUAGE))
+              }
             />
             <SettingsTransliterations
               goToTransliterationsSettingsPage={() =>
-                navigation.navigate(ROUTES.SETTINGS_TRANSLITERATION)
+                openSheet(() => navigation.navigate(ROUTES.SETTINGS_TRANSLITERATION))
               }
             />
           </SettingsSection>
 
           <SettingsWidgetsSection
-            toWidgetsSettingPage={() => navigation.navigate(ROUTES.SETTINGS_WIDGETS)}
+            toWidgetsSettingPage={() =>
+              openSheet(() => navigation.navigate(ROUTES.SETTINGS_WIDGETS))
+            }
           />
 
           <SettingsSection>
             <StoreReviewLink iosId="id6479753061" packageName={process.env.ANDROID_PACKAGE} />
-            <ReportLink goToReportPage={() => navigation.navigate(ROUTES.SETTINGS_REPORT)} />
+            <ReportLink
+              goToReportPage={() => openSheet(() => navigation.navigate(ROUTES.SETTINGS_REPORT))}
+            />
           </SettingsSection>
 
           <SettingsSection>

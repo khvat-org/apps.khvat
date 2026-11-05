@@ -6,6 +6,7 @@ import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
+import { openSheet } from "@nihongo/core/shared/lib/navigation/sheet-transition-guard";
 import { useTabContentBottomInset } from "@nihongo/core/shared/ui/bottom-tap/tab-screen-insets";
 import { useTabBarLayout } from "@nihongo/core/shared/ui/bottom-tap/use-tab-bar-layout";
 import Button from "@nihongo/core/shared/ui/button";
@@ -81,7 +82,7 @@ const PracticeWelcomePage: React.FC = () => {
     triggerHaptic();
 
     setTimeout(() => {
-      navigation.navigate(ROUTES.KANA_SELECT, { title: "" });
+      openSheet(() => navigation.navigate(ROUTES.KANA_SELECT, { title: "" }));
     }, 0);
   };
 
@@ -145,7 +146,7 @@ const PracticeWelcomePage: React.FC = () => {
                 variant="text"
                 isHapticFeedback
                 icon={<SlidersHorizontalIcon size={32} />}
-                onClick={() => navigation.navigate(ROUTES.PRACTICE_PREFERENCES)}
+                onClick={() => openSheet(() => navigation.navigate(ROUTES.PRACTICE_PREFERENCES))}
               />
             ) : undefined
           }

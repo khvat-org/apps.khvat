@@ -3,6 +3,7 @@ import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
+import { openSheet } from "@nihongo/core/shared/lib/navigation/sheet-transition-guard";
 import { Typography } from "@nihongo/core/shared/typography";
 import { useTabContentBottomInset } from "@nihongo/core/shared/ui/bottom-tap/tab-screen-insets";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
@@ -71,11 +72,13 @@ export const KanaTableListPage: React.FC<KanaInfoProps> = () => {
     (id: string) => {
       const modalTitle = `${activeTab === KanaAlphabet.Hiragana ? t("kana.hiragana") : t("kana.katakana")} (${t(getTypeById(id))})`;
 
-      navigation.navigate(ROUTES.KANA_INFO, {
-        id: id,
-        kana: activeTab,
-        title: modalTitle,
-      });
+      openSheet(() =>
+        navigation.navigate(ROUTES.KANA_INFO, {
+          id: id,
+          kana: activeTab,
+          title: modalTitle,
+        }),
+      );
     },
     [activeTab, navigation, t],
   );
