@@ -241,6 +241,11 @@ const PortugueseBR = {
       subtitle:
         "Não é possível usar o login com o Google a partir da Rússia. Seu endereço IP: {{ip}}. Você pode se cadastrar com seu e-mail.",
     },
+    appleUnavailable: {
+      title: "O login com o Apple não está disponível na Rússia",
+      subtitle:
+        "Não é possível usar o login com o Apple a partir da Rússia. Seu endereço IP: {{ip}}. Você pode se cadastrar com seu e-mail.",
+    },
     signUpWithEmail: "Cadastrar-se com e-mail",
     alreadyHaveAccount: "Já tem uma conta?",
     login: "Entrar",

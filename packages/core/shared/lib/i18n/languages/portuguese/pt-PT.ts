@@ -242,6 +242,11 @@ const PortuguesePT = {
       subtitle:
         "Não é possível utilizar o início de sessão com a Google a partir da Rússia. O seu endereço IP: {{ip}}. Pode registar-se com o seu e-mail.",
     },
+    appleUnavailable: {
+      title: "O início de sessão com a Apple não está disponível na Rússia",
+      subtitle:
+        "Não é possível utilizar o início de sessão com a Apple a partir da Rússia. O seu endereço IP: {{ip}}. Pode registar-se com o seu e-mail.",
+    },
     signUpWithEmail: "Registar-se com e-mail",
     alreadyHaveAccount: "Já tem uma conta?",
     login: "Iniciar sessão",

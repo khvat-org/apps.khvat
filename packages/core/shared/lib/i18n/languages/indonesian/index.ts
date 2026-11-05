@@ -240,6 +240,11 @@ const Indonesian = {
       subtitle:
         "Masuk dengan Google tidak dapat digunakan dari Rusia. Alamat IP Anda: {{ip}}. Anda dapat mendaftar dengan email.",
     },
+    appleUnavailable: {
+      title: "Masuk dengan Apple tidak tersedia di Rusia",
+      subtitle:
+        "Masuk dengan Apple tidak dapat digunakan dari Rusia. Alamat IP Anda: {{ip}}. Anda dapat mendaftar dengan email.",
+    },
     signUpWithEmail: "Daftar dengan email",
     alreadyHaveAccount: "Sudah punya akun?",
     login: "Masuk",

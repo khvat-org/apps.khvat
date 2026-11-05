@@ -234,6 +234,10 @@ const ChineseTW = {
       title: "俄羅斯境內無法使用 Google 登入",
       subtitle: "無法在俄羅斯使用 Google 登入。你的 IP 位址：{{ip}}。你可以改用電子郵件註冊。",
     },
+    appleUnavailable: {
+      title: "俄羅斯境內無法使用 Apple 登入",
+      subtitle: "無法在俄羅斯使用 Apple 登入。你的 IP 位址：{{ip}}。你可以改用電子郵件註冊。",
+    },
     signUpWithEmail: "使用電子郵件註冊",
     alreadyHaveAccount: "已經有帳號了嗎？",
     login: "登入",

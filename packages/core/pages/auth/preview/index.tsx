@@ -157,6 +157,20 @@ export const LoginPage: React.FC = () => {
     }
   };
 
+  const showAppleUnavailable = (ip?: string) =>
+    showModal({
+      closeOnBackdrop: true,
+      onClose: () => {},
+      content: (
+        <AlertModal
+          title={t("auth.appleUnavailable.title")}
+          subtitle={t("auth.appleUnavailable.subtitle", { ip: ip ?? "—" })}
+          button={t("alert.ok")}
+          onPress={hideModal}
+        />
+      ),
+    });
+
   const showAppleFailed = (reason: string) =>
     showModal({
       closeOnBackdrop: true,
@@ -176,6 +190,13 @@ export const LoginPage: React.FC = () => {
     setAppleLoading(true);
 
     try {
+      const availability = await checkGoogleOAuthAvailability().catch(() => null);
+
+      if (availability && !availability.available) {
+        showAppleUnavailable(availability.ip);
+        return;
+      }
+
       const credential = await appleSignIn();
 
       const result = await oauthApple({

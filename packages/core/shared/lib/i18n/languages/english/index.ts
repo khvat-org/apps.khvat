@@ -239,6 +239,11 @@ const English = {
       subtitle:
         "Google sign-in can't be used from Russia. Your IP address: {{ip}}. You can sign up with email instead.",
     },
+    appleUnavailable: {
+      title: "Apple sign-in is unavailable in Russia",
+      subtitle:
+        "Apple sign-in can't be used from Russia. Your IP address: {{ip}}. You can sign up with email instead.",
+    },
     signUpWithEmail: "Sign up with email",
     alreadyHaveAccount: "Already have an account?",
     login: "Log in",

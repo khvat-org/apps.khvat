@@ -237,6 +237,11 @@ const Korean = {
       subtitle:
         "러시아에서는 Google 로그인을 사용할 수 없습니다. IP 주소: {{ip}}. 대신 이메일로 가입할 수 있습니다.",
     },
+    appleUnavailable: {
+      title: "러시아에서는 Apple 로그인을 사용할 수 없습니다",
+      subtitle:
+        "러시아에서는 Apple 로그인을 사용할 수 없습니다. IP 주소: {{ip}}. 대신 이메일로 가입할 수 있습니다.",
+    },
     signUpWithEmail: "이메일로 가입하기",
     alreadyHaveAccount: "이미 계정이 있으신가요?",
     login: "로그인",

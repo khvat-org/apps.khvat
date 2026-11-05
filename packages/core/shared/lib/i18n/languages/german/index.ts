@@ -242,6 +242,11 @@ const German = {
       subtitle:
         "Die Google-Anmeldung kann aus Russland nicht genutzt werden. Deine IP-Adresse: {{ip}}. Du kannst dich stattdessen mit E-Mail registrieren.",
     },
+    appleUnavailable: {
+      title: "Apple-Anmeldung ist in Russland nicht verfügbar",
+      subtitle:
+        "Die Apple-Anmeldung kann aus Russland nicht genutzt werden. Deine IP-Adresse: {{ip}}. Du kannst dich stattdessen mit E-Mail registrieren.",
+    },
     signUpWithEmail: "Mit E-Mail registrieren",
     alreadyHaveAccount: "Hast du bereits ein Konto?",
     login: "Anmelden",
