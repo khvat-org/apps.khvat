@@ -20,6 +20,7 @@ import WelcomePage from "@nihongo/core/pages/welcome/welcome";
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
 import { ModalProvider } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { TabBarButton } from "@nihongo/core/shared/ui/bottom-tap";
+import { useSideRailInsets } from "@nihongo/core/shared/ui/bottom-tap/side-rail-insets-context";
 import { TabScreenInsets } from "@nihongo/core/shared/ui/bottom-tap/tab-screen-insets";
 import {
   BottomTabBarProps,
@@ -38,11 +39,13 @@ import LessonPage from "@/pages/education/learning/lesson-page/lesson-page";
 import EducationPracticePage from "@/pages/education/practice/education-practice";
 import EducationResultPage from "@/pages/education/practice/education-result-page/education-result-page";
 import PracticePreferencesPage from "@/pages/education/practice/practice-preferences";
+import PreferencesSideButton from "@/pages/education/practice/practice-preferences/ui/preferences-side-button";
 import PracticeWelcomePage from "@/pages/education/practice/practice-welcome/practice-welcome";
 import KanaLetterPage from "@/pages/kana/kana-letter-page/kana-letter-page";
 import KanaTableChoiceLettersPage from "@/pages/kana/kana-table-choice-letters-page/kana-table-choice-letters-page";
 import KanaTableListPage from "@/pages/kana/kana-table-list-page/kana-table-list-page";
 import SettingsPage from "@/pages/settings/settings-page";
+import SettingsSideButton from "@/pages/settings/ui/settings-side-button";
 
 const screenOptions = { headerShown: false };
 
@@ -62,18 +65,34 @@ const modal = <P extends object>(Component: React.ComponentType<P>) => ({
   } as const,
 });
 
-const tabBar = (props: BottomTabBarProps) => (
-  <TabBarButton
-    {...props}
-    allowSide
-    tabs={{
-      [ROUTES.LEARNING_ROOT]: { title: "tabs.learning", icon: GraduationCapIcon },
-      [ROUTES.PRACTICE_ROOT]: { title: "tabs.practice", icon: CardsThreeIcon },
-      [ROUTES.KANA_TABLE_ROOT]: { title: "tabs.kana", icon: SwatchesIcon },
-      [ROUTES.PROFILE_ROOT]: { title: "tabs.profile", icon: UserIcon },
-    }}
-  />
-);
+const TabBar = (props: BottomTabBarProps) => {
+  const sideInsets = useSideRailInsets();
+
+  return (
+    <TabBarButton
+      {...props}
+      allowSide
+      sideTopInset={sideInsets?.top}
+      sideBottomInset={sideInsets?.bottom}
+      tabs={{
+        [ROUTES.LEARNING_ROOT]: { title: "tabs.learning", icon: GraduationCapIcon },
+        [ROUTES.PRACTICE_ROOT]: {
+          title: "tabs.practice",
+          icon: CardsThreeIcon,
+          sideContent: <PreferencesSideButton />,
+        },
+        [ROUTES.KANA_TABLE_ROOT]: { title: "tabs.kana", icon: SwatchesIcon },
+        [ROUTES.PROFILE_ROOT]: {
+          title: "tabs.profile",
+          icon: UserIcon,
+          sideContent: <SettingsSideButton />,
+        },
+      }}
+    />
+  );
+};
+
+const tabBar = (props: BottomTabBarProps) => <TabBar {...props} />;
 
 type TabScreens = NonNullable<StaticConfig<BottomTabTypeBag>["screens"]>;
 

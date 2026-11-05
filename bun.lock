@@ -69,6 +69,7 @@
         "react-native-country-flag": "^2.0.2",
         "react-native-gesture-handler": "~3.3.0",
         "react-native-in-app-review": "^4.4.2",
+        "react-native-reserved-regions": "0.2.0",
         "react-native-rustore-review": "git+https://gitflic.ru/project/rustore/react-native-rustore-review-sdk.git",
         "react-native-safe-area-context": "~5.10.1",
         "react-native-screens": "~4.30.0",
@@ -169,6 +170,7 @@
       "version": "1.0.0",
       "dependencies": {
         "@formatjs/intl-pluralrules": "^6.3.15",
+        "@react-native-community/datetimepicker": "9.2.1",
         "expo-apple-authentication": "~58.0.2",
         "expo-application": "~58.1.2",
         "expo-crypto": "~58.0.7",
@@ -179,7 +181,6 @@
         "expo-notifications": "~58.1.7",
         "expo-store-review": "~58.0.2",
         "i18next": "25.10.10",
-        "react-native-date-picker": "^5.0.13",
         "vitest": "^4.1.10",
         "zod": "^4.4.3",
       },
@@ -211,9 +212,6 @@
         "toggle-switch-react-native": "^3.3.0",
       },
     },
-  },
-  "patchedDependencies": {
-    "react-native-date-picker@5.0.13": "patches/react-native-date-picker@5.0.13.patch",
   },
   "overrides": {
     "i18next": "25.10.10",
@@ -523,6 +521,8 @@
     "@oxc-project/types": ["@oxc-project/types@0.151.0", "", {}, "sha512-J1yXrIlNDZVzE3ada310xeAw7nH8yCAyLPuUIsjKatFPmfn5bS1oW+cM+QsGOtVWd5nhSpbwZWx/rue+r5Z+PA=="],
 
     "@react-native-async-storage/async-storage": ["@react-native-async-storage/async-storage@2.2.0", "", { "dependencies": { "merge-options": "^3.0.4" }, "peerDependencies": { "react-native": "^0.0.0-0 || >=0.65 <1.0" } }, "sha512-gvRvjR5JAaUZF8tv2Kcq/Gbt3JHwbKFYfmb445rhOj6NUMx3qPLixmDx5pZAyb9at1bYvJ4/eTUipU5aki45xw=="],
+
+    "@react-native-community/datetimepicker": ["@react-native-community/datetimepicker@9.2.1", "", { "dependencies": { "invariant": "^2.2.4" }, "peerDependencies": { "expo": ">=52.0.0", "react": "*", "react-native": "*", "react-native-windows": "*" }, "optionalPeers": ["expo", "react-native-windows"] }, "sha512-P2dir8EcPYuS6g7N/E4jImugB99h2+e1kzNX6Ihg+2T2v5IZ5dB+4afLisG6rdua4YZ1mADYCZ2iqI34sPjIKA=="],
 
     "@react-native/asset-utils": ["@react-native/asset-utils@0.88.1", "", {}, "sha512-BLb5FF7NgggGYiCsA7KKkK2qFhn0K+6iGXOI+4Ucd+G7Robzw9Gt4WsWwxLt+Od+G+/hyqfz8ASokyWFZ6VcLw=="],
 
@@ -1524,13 +1524,13 @@
 
     "react-native-country-flag": ["react-native-country-flag@2.0.2", "", {}, "sha512-5LMWxS79ZQ0Q9ntYgDYzWp794+HcQGXQmzzZNBR1AT7z5HcJHtX7rlk8RHi7RVzfp5gW6plWSZ4dKjRpu/OafQ=="],
 
-    "react-native-date-picker": ["react-native-date-picker@5.0.13", "", { "peerDependencies": { "react": ">= 17.0.1", "react-native": ">= 0.64.3" } }, "sha512-qCLUODZVsJetO5zuoXjw1D39K527XWqBG8sOfhWdHyPzf13h8RXR1/RSKd1N0fdRDi5GdyizYmB0lPAK12/hbw=="],
-
     "react-native-dotenv": ["react-native-dotenv@3.4.12", "", { "dependencies": { "dotenv": "^17.4.2" }, "peerDependencies": { "@babel/runtime": "^7.20.6" } }, "sha512-CEHSiLTaE1vwW/TgI5CIp/AXi2/O2Lz6oZwbxHGMRNLr50cUXMaR5ThHW/FIFWnrNK5VRCWB2YmFzk6p3csVkg=="],
 
     "react-native-gesture-handler": ["react-native-gesture-handler@3.3.0", "", { "dependencies": { "@types/react-test-renderer": "^19.1.0", "invariant": "^2.2.4" }, "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-ZCTlJ09nE3GPbm7J74lvwpxmx1TQ/7MDlHZNLARVYTN82k21mJUJ7BmI9eWjEi8eevHiAudI5O1Cpnt0rJfoJA=="],
 
     "react-native-in-app-review": ["react-native-in-app-review@4.4.2", "", {}, "sha512-iUoZnP4cgpbiNMLpqPgK40AcT7xluJhlwEPKFEfcCZsWT4MzGygS8p1dxf6e1NH/LUgUEtjsZQ8ka/SbF1pE8Q=="],
+
+    "react-native-reserved-regions": ["react-native-reserved-regions@0.2.0", "", { "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-pmpZaKD3JTE/Iwn9cfIEnzTGrUwASOJaQC70fCux0fMTpGgCZQpbviscOZxzKW+MsuBO3BDLPUmAN0OOrsTfsg=="],
 
     "react-native-rustore-review": ["react-native-rustore-review@git+https://gitflic.ru/project/rustore/react-native-rustore-review-sdk.git#e04fc922ea753640d7fa68c5fdcd1f9e746a52a8", { "peerDependencies": { "react": "*", "react-native": "*" } }, "e04fc922ea753640d7fa68c5fdcd1f9e746a52a8"],
 

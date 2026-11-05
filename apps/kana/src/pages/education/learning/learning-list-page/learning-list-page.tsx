@@ -7,6 +7,7 @@ import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme
 import { useTransliterationsContext } from "@nihongo/core/shared/contexts/transliteration/transliteration";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
 import { Typography } from "@nihongo/core/shared/typography";
+import { useTabContentBottomInset } from "@nihongo/core/shared/ui/bottom-tap/tab-screen-insets";
 import Button from "@nihongo/core/shared/ui/button";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
@@ -59,6 +60,7 @@ const LearningList: React.FC = () => {
   const { showModal, hideModal } = useModal();
 
   const { width } = useWindowDimensions();
+  const tabContentBottomInset = useTabContentBottomInset();
 
   const { colors } = useThemeContext();
   const styles = makeStyles(colors, width);
@@ -205,7 +207,10 @@ const LearningList: React.FC = () => {
           <View style={styles.scrollContainer}>
             <View style={styles.scrollContainerCenter}>
               {isShowChapters && (
-                <ScrollView showsVerticalScrollIndicator={false}>
+                <ScrollView
+                  showsVerticalScrollIndicator={false}
+                  contentContainerStyle={{ paddingBottom: tabContentBottomInset }}
+                >
                   {chapters.map((chapter) => (
                     <Chapter
                       title={chapter.title}
@@ -238,6 +243,7 @@ const makeStyles = (colors: ColorsType, width: number) =>
     scrollContainer: {
       flex: 1,
       width: "100%",
+      marginTop: width > TABLET_WIDTH ? 16 : 0,
       flexDirection: "column",
       alignItems: "center",
     },

@@ -2,6 +2,7 @@ import React from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import { useTranslation } from "react-i18next";
@@ -17,12 +18,13 @@ const EducationKanaSelectedCard: React.FC<EducationKanaSelectedCardProps> = ({ o
   const { t } = useTranslation();
   const { colors } = useThemeContext();
   const { width } = useContentDimensions();
+  const pagePadding = usePagePadding();
 
   const styles = makeStyles(colors);
 
   const { selectedLettersHiragana, selectedLettersKatakana, selectedWords } = useKanaContext();
 
-  const widthCard = width / 2 - 24;
+  const widthCard = width / 2 - pagePadding - 8;
 
   return (
     <View>

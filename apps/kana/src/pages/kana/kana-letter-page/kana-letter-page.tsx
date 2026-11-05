@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useRef } from "react";
 
-import { getCanvasSize } from "@nihongo/core/shared/constants/sizes";
+import { getMaxCanvasSize, TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import {
   baseFlatLettersId,
@@ -11,6 +11,8 @@ import {
 } from "@nihongo/core/shared/data/lettersTable";
 import { getAsymmetricSide } from "@nihongo/core/shared/lib/layout/get-asymmetric-side";
 import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
+import { PAGE_PADDING, usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
+import { useSideRailInsets } from "@nihongo/core/shared/ui/bottom-tap/side-rail-insets-context";
 import Button from "@nihongo/core/shared/ui/button";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
@@ -60,10 +62,10 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
 
   const { colors } = useThemeContext();
 
+  const pagePadding = usePagePadding();
+  const sideRail = useSideRailInsets();
   const { width, height } = useContentDimensions();
   const drawRef = useRef<DrawHandle>(null);
-  const [containerTop, setContainerTop] = useState(0);
-  const [canvasTop, setCanvasTop] = useState(0);
 
   const [viewportHeight, setViewportHeight] = useState(0);
   const [viewportWidth, setViewportWidth] = useState(0);
@@ -75,8 +77,8 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
     setViewportWidth((prev) => (prev === nextWidth ? prev : nextWidth));
   };
 
-  const availableWidth = viewportWidth > 0 ? viewportWidth - 32 : Infinity;
-  const canvasSize = Math.min(getCanvasSize(width, height), availableWidth);
+  const availableWidth = viewportWidth > 0 ? viewportWidth - pagePadding * 2 : Infinity;
+  const canvasSize = Math.min(getMaxCanvasSize(width, height), availableWidth);
 
   const onHeaderLayout = (event: LayoutChangeEvent) => {
     const { height: next } = event.nativeEvent.layout;
@@ -143,14 +145,17 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
     setLetterKana(KanaAlphabet.Hiragana);
   };
 
-  const controlsSide = currentScreen === Screen.Draw ? getAsymmetricSide(insets) : null;
+  const isTablet = width >= TABLET_WIDTH;
+  const railSide = getAsymmetricSide(insets);
+  const controlsSide = currentScreen === Screen.Draw ? railSide : null;
 
-  const controlsHeight =
-    currentScreen === Screen.Draw
-      ? controlsSide
-        ? 0
-        : DRAW_CONTROLS_HEIGHT
-      : SYMBOL_BUTTONS_HEIGHT;
+  const isShortWindow = height < SHORT_WINDOW_HEIGHT;
+  const footerBottom = Math.max(insets.bottom, PAGE_PADDING);
+  const sideControlsBottom =
+    sideRail?.bottom ?? (isShortWindow ? SHORT_WINDOW_BOTTOM : footerBottom);
+
+  const hasDrawControlsBelow = !railSide && (currentScreen === Screen.Draw || isTablet);
+  const controlsHeight = hasDrawControlsBelow ? DRAW_CONTROLS_HEIGHT : SYMBOL_BUTTONS_HEIGHT;
   const fitSize =
     viewportHeight > 0
       ? Math.max(
@@ -164,19 +169,19 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
       <ModalHeader
         left={{
           text: currentScreen === Screen.Draw ? t("common.back") : t("common.close"),
+          kind: currentScreen === Screen.Draw ? "back" : "close",
           onPress: switchScreen,
         }}
         title={headerTitle}
       />
-      <View
-        style={styles.container}
-        onLayout={(event) => setContainerTop(event.nativeEvent.layout.y)}
-      >
-        <ScrollView
-          onLayout={onViewportLayout}
-          contentContainerStyle={controlsSide ? styles.centeredContent : undefined}
-        >
-          <View style={[styles.symbolContainer, controlsSide && styles.centeredSymbol]}>
+      <View style={styles.container}>
+        <ScrollView onLayout={onViewportLayout}>
+          <View
+            style={[
+              styles.symbolContainer,
+              { paddingLeft: pagePadding, paddingRight: pagePadding },
+            ]}
+          >
             <View
               onLayout={onHeaderLayout}
               style={{
@@ -192,10 +197,7 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
               />
             </View>
 
-            <View
-              style={{ marginTop: CONTENT_GAP, justifyContent: "center" }}
-              onLayout={(event) => setCanvasTop(event.nativeEvent.layout.y)}
-            >
+            <View style={{ marginTop: CONTENT_GAP, justifyContent: "center" }}>
               {currentScreen === Screen.Symbol && (
                 <View
                   style={{
@@ -223,7 +225,7 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
             <View
               style={{
                 width: "100%",
-                maxWidth: width > fitSize ? fitSize : width - 32,
+                maxWidth: width > fitSize ? fitSize : width - pagePadding * 2,
                 marginTop: CONTENT_GAP,
               }}
             >
@@ -251,13 +253,13 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "row",
-            paddingBottom: insets.bottom,
-            paddingLeft: 16,
-            paddingRight: 16,
+            paddingBottom: footerBottom,
+            paddingLeft: pagePadding,
+            paddingRight: pagePadding,
             marginTop: 16,
           }}
         >
-          <View style={{ width: "100%", maxWidth: canvasSize }}>
+          <View style={{ width: "100%", maxWidth: isTablet ? fitSize : canvasSize }}>
             {!isOnlyDrawing && (
               <View style={[styles.buttons]}>
                 <Button
@@ -292,7 +294,8 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
         <DrawSideControls
           side={controlsSide}
           width={insets[controlsSide]}
-          top={containerTop + canvasTop}
+          bottomInset={sideControlsBottom}
+          isCompact={isShortWindow}
           onUndo={() => drawRef.current?.undo()}
           onClear={() => drawRef.current?.clear()}
           onScan={() => drawRef.current?.check()}
@@ -305,6 +308,8 @@ const KanaLetterPage: React.FC<KanaInfoProps> = ({ route, customProps, isOnlyDra
 export default KanaLetterPage;
 
 const CONTENT_GAP = 16;
+const SHORT_WINDOW_HEIGHT = 500;
+const SHORT_WINDOW_BOTTOM = 8;
 const SYMBOL_BUTTONS_HEIGHT = 50;
 
 const styles = StyleSheet.create({
@@ -313,17 +318,9 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "flex-start",
   },
-  centeredContent: {
-    flexGrow: 1,
-  },
-  centeredSymbol: {
-    justifyContent: "center",
-  },
   symbolContainer: {
     flexDirection: "column",
     alignItems: "center",
-    paddingLeft: 16,
-    paddingRight: 16,
 
     flex: 1,
   },

@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
@@ -47,7 +48,8 @@ const BoardsPage: React.FC = () => {
 
   const { colors } = useThemeContext();
 
-  const styles = makeStyles(colors);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   const { t } = useTranslation();
 
@@ -104,7 +106,7 @@ const BoardsPage: React.FC = () => {
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     sectionTitle: {
       ...Typography.boldLabel,
@@ -135,7 +137,7 @@ const makeStyles = (colors: ColorsType) =>
     scroll: {
       gap: 16,
       paddingBottom: 32,
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
     },
     title: {
       ...Typography.H4,

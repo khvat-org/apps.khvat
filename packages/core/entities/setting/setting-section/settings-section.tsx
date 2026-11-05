@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { View } from "react-native";
 
 import { TABLET_WIDTH } from "../../../shared/constants/sizes";
@@ -11,6 +12,7 @@ interface SettingSectionProps {
 
 const SettingsSection: React.FC<SettingSectionProps> = ({ children }) => {
   const { colors } = useThemeContext();
+  const pagePadding = usePagePadding();
 
   return (
     <View
@@ -20,7 +22,7 @@ const SettingsSection: React.FC<SettingSectionProps> = ({ children }) => {
         flexDirection: "column",
         alignItems: "center",
 
-        paddingHorizontal: 16,
+        paddingHorizontal: pagePadding,
       }}
     >
       <View

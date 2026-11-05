@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-item";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import Input from "@nihongo/core/shared/ui/input";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
@@ -17,7 +18,8 @@ const CreateBoardPage: React.FC = () => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
 
-  const styles = makeStyles(colors);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   const [title, setTitle] = useState("");
   const [isPublic, setIsPublic] = useState(false);
@@ -76,13 +78,13 @@ const CreateBoardPage: React.FC = () => {
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     container: {
       flex: 1,
     },
     content: {
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
       paddingTop: 16,
       gap: 16,
     },

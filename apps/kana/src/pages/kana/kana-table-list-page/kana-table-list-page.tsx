@@ -2,18 +2,29 @@ import React, { useCallback, useEffect, useMemo, useState } from "react";
 
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
+import { useTabContentBottomInset } from "@nihongo/core/shared/ui/bottom-tap/tab-screen-insets";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
 import Switcher from "@nihongo/core/shared/ui/switcher/switcher";
 import { RouteProp, useNavigation } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { useTranslation } from "react-i18next";
-import { SectionList, StyleSheet, Text, useWindowDimensions, View } from "react-native";
+import {
+  LayoutChangeEvent,
+  SectionList,
+  StyleSheet,
+  Text,
+  useWindowDimensions,
+  View,
+} from "react-native";
 
 import { ROUTES, RootStackParamList } from "@/app/routes.types";
 import EducationKanaTable from "@/features/education/education-kana-table/education-kana-table";
-import EducationKanaTableForTablet from "@/features/education/education-kana-table-for-tablet/education-kana-table-for-tablet";
+import EducationKanaTableForTablet, {
+  getKanaTableCellSize,
+} from "@/features/education/education-kana-table-for-tablet/education-kana-table-for-tablet";
 import { Alphabet, KanaAlphabet } from "@/shared/constants/kana";
 import { getTypeById } from "@/shared/helpers/kana-letter";
 
@@ -42,8 +53,19 @@ export const KanaTableListPage: React.FC<KanaInfoProps> = () => {
   }, [navigation]);
 
   const { t } = useTranslation();
+  const pagePadding = usePagePadding();
+  const tabContentBottomInset = useTabContentBottomInset();
 
   const [activeTab, setActiveTab] = useState<KanaAlphabet>(KanaAlphabet.Hiragana);
+  const [tableAreaHeight, setTableAreaHeight] = useState(0);
+
+  const onTableAreaLayout = (event: LayoutChangeEvent) => {
+    const { height: next } = event.nativeEvent.layout;
+    setTableAreaHeight((prev) => (prev === next ? prev : next));
+  };
+
+  const tableBottomMargin = Math.max(TABLE_BOTTOM_MARGIN, tabContentBottomInset);
+  const tableCellSize = getKanaTableCellSize(tableAreaHeight, tableBottomMargin);
 
   const openModal = useCallback(
     (id: string) => {
@@ -73,7 +95,12 @@ export const KanaTableListPage: React.FC<KanaInfoProps> = () => {
       <PageTitle padded>{t("tabs.kana")}</PageTitle>
 
       <View style={{ flex: 1, backgroundColor: colors.BgPrimary }}>
-        <View style={{ paddingBottom: isAndroid ? 20 : 6, paddingHorizontal: 16 }}>
+        <View
+          style={{
+            paddingBottom: isHorizontal ? 0 : isAndroid ? 20 : 6,
+            paddingHorizontal: pagePadding,
+          }}
+        >
           <Switcher<KanaAlphabet>
             activeTab={activeTab}
             setActiveTab={setActiveTab}
@@ -83,24 +110,28 @@ export const KanaTableListPage: React.FC<KanaInfoProps> = () => {
         </View>
 
         {isHorizontal && (
-          <SectionList
-            sections={sections}
-            showsVerticalScrollIndicator={false}
-            keyExtractor={(item, index) => item + index}
-            horizontal={isHorizontal}
-            renderItem={({ item }) => (
-              <React.Suspense fallback={<View />}>
-                {isHorizontal && (
-                  <MemoizedEducationKanaTableForTablet
-                    type={item as Alphabet}
-                    kana={activeTab}
-                    onClick={openModal}
-                    last={item === "yoon"}
-                  />
+          <View style={{ flex: 1 }} onLayout={onTableAreaLayout}>
+            {tableAreaHeight > 0 && (
+              <SectionList
+                sections={sections}
+                showsVerticalScrollIndicator={false}
+                keyExtractor={(item, index) => item + index}
+                horizontal={isHorizontal}
+                renderItem={({ item }) => (
+                  <React.Suspense fallback={<View />}>
+                    <MemoizedEducationKanaTableForTablet
+                      type={item as Alphabet}
+                      kana={activeTab}
+                      cellSize={tableCellSize}
+                      bottomMargin={tableBottomMargin}
+                      onClick={openModal}
+                      last={item === "yoon"}
+                    />
+                  </React.Suspense>
                 )}
-              </React.Suspense>
+              />
             )}
-          />
+          </View>
         )}
 
         {!isHorizontal && (
@@ -109,6 +140,7 @@ export const KanaTableListPage: React.FC<KanaInfoProps> = () => {
             showsVerticalScrollIndicator={false}
             keyExtractor={(item, index) => item + index}
             horizontal={isHorizontal}
+            contentContainerStyle={{ paddingBottom: tabContentBottomInset }}
             renderItem={({ item }) => (
               <React.Suspense fallback={<View />}>
                 <MemoizedEducationKanaTable
@@ -120,7 +152,16 @@ export const KanaTableListPage: React.FC<KanaInfoProps> = () => {
               </React.Suspense>
             )}
             renderSectionHeader={({ section: { title } }) => (
-              <View style={[styles.nameContainer, { backgroundColor: colors.BgPrimary }]}>
+              <View
+                style={[
+                  styles.nameContainer,
+                  {
+                    paddingLeft: pagePadding,
+                    paddingRight: pagePadding,
+                    backgroundColor: colors.BgPrimary,
+                  },
+                ]}
+              >
                 <Text style={[Typography.H4, { color: colors.TextPrimary }]}>{title}</Text>
               </View>
             )}
@@ -133,13 +174,13 @@ export const KanaTableListPage: React.FC<KanaInfoProps> = () => {
 
 export default KanaTableListPage;
 
+const TABLE_BOTTOM_MARGIN = 32;
+
 const styles = StyleSheet.create({
   title: {
     marginLeft: 20,
   },
   nameContainer: {
-    paddingLeft: 16,
-    paddingRight: 16,
     paddingTop: 10,
     paddingBottom: 16,
   },

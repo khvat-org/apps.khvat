@@ -43,3 +43,8 @@ export const getCanvasSize = (
 
   return canvasSize;
 };
+
+export const getMaxCanvasSize = (width: number, height: number) =>
+  width < TABLET_WIDTH
+    ? getCanvasSize(width, height)
+    : Math.min(MAX_CANVAS_SIZE, width - PAGE_PADDING * 2);

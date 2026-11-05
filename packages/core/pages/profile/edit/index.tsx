@@ -64,6 +64,7 @@ const ProfileEditPage: React.FC = () => {
           title={t("profile.edit.title")}
           left={{
             text: t("common.back"),
+            kind: "back",
             onPress: () => navigation.goBack(),
           }}
         />

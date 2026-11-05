@@ -4,6 +4,7 @@ import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { PROFILE_ROUTES, ProfileParamList } from "@nihongo/core/pages/profile/routes";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { updateProfile } from "@nihongo/core/shared/lib/auth";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import Input from "@nihongo/core/shared/ui/input";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
@@ -36,6 +37,7 @@ const ProfileChangeNamePage: React.FC = () => {
   const navigation = useNavigation<NavigationProp>();
 
   const { t } = useTranslation();
+  const pagePadding = usePagePadding();
 
   const [name, setName] = useState("");
   const [serverError, setServerError] = useState<string | undefined>(undefined);
@@ -88,6 +90,7 @@ const ProfileChangeNamePage: React.FC = () => {
           title={t("profile.edit.changeName")}
           left={{
             text: t("common.back"),
+            kind: "back",
             onPress: () => navigation.goBack(),
           }}
           right={{
@@ -97,7 +100,7 @@ const ProfileChangeNamePage: React.FC = () => {
           }}
         />
 
-        <View style={styles.content}>
+        <View style={[styles.content, { paddingHorizontal: pagePadding }]}>
           <Input
             placeholder={t("auth.fields.newName")}
             value={name}
@@ -113,8 +116,6 @@ const ProfileChangeNamePage: React.FC = () => {
 
 const styles = StyleSheet.create({
   content: {
-    paddingHorizontal: 16,
-
     gap: 8,
 
     width: "100%",

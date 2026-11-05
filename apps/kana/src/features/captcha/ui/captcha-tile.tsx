@@ -6,19 +6,18 @@ import { Path, Svg } from "react-native-svg";
 
 import { CaptchaTile as CaptchaTileData } from "@/pages/education/practice/education-practice/lib/types/questions";
 
-const TILE_PADDING = 0.14;
+const GLYPH_SIZE = "72%";
 
 export type CaptchaTileState = "idle" | "selected" | "correct" | "wrong" | "missed";
 
 interface Props {
   tile: CaptchaTileData;
-  size: number;
   state: CaptchaTileState;
   index?: number;
   onPress?: (index: number) => void;
 }
 
-const CaptchaTile = React.memo<Props>(function CaptchaTile({ tile, size, state, index, onPress }) {
+const CaptchaTile = React.memo<Props>(function CaptchaTile({ tile, state, index, onPress }) {
   const { colors } = useThemeContext();
 
   const backgrounds: Record<CaptchaTileState, string> = {
@@ -29,7 +28,6 @@ const CaptchaTile = React.memo<Props>(function CaptchaTile({ tile, size, state, 
     missed: colors.BgLightGray,
   };
   const isFilled = state === "selected" || state === "correct" || state === "wrong";
-  const glyphSize = size * (1 - TILE_PADDING * 2);
 
   return (
     <Pressable
@@ -39,8 +37,8 @@ const CaptchaTile = React.memo<Props>(function CaptchaTile({ tile, size, state, 
       accessibilityLabel={tile.text}
       accessibilityState={{ checked: state !== "idle" && state !== "missed" }}
       style={{
-        width: size,
-        height: size,
+        flex: 1,
+        aspectRatio: 1,
         borderRadius: 12,
         alignItems: "center",
         justifyContent: "center",
@@ -49,7 +47,7 @@ const CaptchaTile = React.memo<Props>(function CaptchaTile({ tile, size, state, 
         borderColor: colors.BgSuccess,
       }}
     >
-      <Svg width={glyphSize} height={glyphSize} viewBox={`0 0 ${tile.viewBox} ${tile.viewBox}`}>
+      <Svg width={GLYPH_SIZE} height={GLYPH_SIZE} viewBox={`0 0 ${tile.viewBox} ${tile.viewBox}`}>
         <Path d={tile.path} fill={isFilled ? colors.TextWhite : colors.TextPrimary} />
       </Svg>
     </Pressable>

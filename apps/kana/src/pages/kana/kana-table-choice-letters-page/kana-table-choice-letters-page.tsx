@@ -3,6 +3,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import { isIOS } from "@nihongo/core/shared/constants/platformUtil";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
@@ -27,6 +28,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
   const { colors } = useThemeContext();
 
   const { t } = useTranslation();
+  const pagePadding = usePagePadding();
   const insets = useSafeAreaInsets();
 
   const { selected, selectedLettersHiragana, selectedLettersKatakana, replaceSelected } =
@@ -71,6 +73,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
         title={t("tabs.kana")}
         left={{
           text: t("alert.cancel"),
+          kind: "cancel",
           onPress: cancel,
         }}
         right={{
@@ -96,7 +99,16 @@ const KanaTableChoiceLettersPage: React.FC = () => {
             </React.Suspense>
           )}
           renderSectionHeader={({ section: { title } }) => (
-            <View style={[styles.nameContainer, { backgroundColor: colors.BgPrimary }]}>
+            <View
+              style={[
+                styles.nameContainer,
+                {
+                  paddingLeft: pagePadding,
+                  paddingRight: pagePadding,
+                  backgroundColor: colors.BgPrimary,
+                },
+              ]}
+            >
               <Text style={[Typography.H4, styles.name, { color: colors.TextPrimary }]}>
                 {title}
               </Text>
@@ -113,7 +125,12 @@ const KanaTableChoiceLettersPage: React.FC = () => {
           keyExtractor={(item) => item.title}
           renderItem={({ item }) => (
             <React.Suspense fallback={<View />}>
-              <View style={[styles.nameContainer]}>
+              <View
+                style={[
+                  styles.nameContainer,
+                  { paddingLeft: pagePadding, paddingRight: pagePadding },
+                ]}
+              >
                 <Text style={[Typography.H4, styles.name, { color: colors.TextPrimary }]}>
                   {item.title}
                 </Text>
@@ -132,6 +149,7 @@ const KanaTableChoiceLettersPage: React.FC = () => {
       <View
         style={[
           styles.switcherContainer,
+          { paddingHorizontal: pagePadding },
           {
             paddingBottom: 15 + insets.bottom,
             backgroundColor: colors.BgPrimary,
@@ -175,8 +193,6 @@ const styles = StyleSheet.create({
     paddingRight: 16,
   },
   nameContainer: {
-    paddingLeft: 16,
-    paddingRight: 16,
     paddingTop: 10,
     paddingBottom: 8,
     height: 46,
@@ -199,6 +215,5 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     justifyContent: "space-between",
     gap: 16,
-    paddingHorizontal: 16,
   },
 });

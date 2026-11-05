@@ -57,6 +57,7 @@ const SettingsWidgetsPage: React.FC = () => {
           title={t("settings.widgets.title")}
           left={{
             text: t("alert.cancel"),
+            kind: "cancel",
             onPress: () => navigation.goBack(),
           }}
           right={{

@@ -1,10 +1,13 @@
 import React, { ReactNode } from "react";
 
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { CaretLeftIcon } from "phosphor-react-native";
 import { KeyboardAvoidingView, Platform, ScrollView, StyleSheet, View } from "react-native";
 import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { TABLET_WIDTH } from "../../constants/sizes";
+import SideRailBackButton from "../bottom-tap/side-rail-back-button";
+import { useHasSideRailActions } from "../bottom-tap/side-rail-insets-context";
 import Button from "../button";
 
 import SafeLayout from "./safe-layout";
@@ -16,12 +19,14 @@ interface KeyboardScrollLayoutProps {
 
 const KeyboardScrollLayout: React.FC<KeyboardScrollLayoutProps> = ({ children, onBack }) => {
   const insets = useSafeAreaInsets();
-  const styles = makeStyles(insets);
+  const pagePadding = usePagePadding();
+  const hasSideBack = useHasSideRailActions();
+  const styles = makeStyles(insets, pagePadding);
 
   return (
     <SafeLayout disableTop disableButton>
       <View style={styles.page}>
-        {onBack && (
+        {onBack && !hasSideBack && (
           <Button
             color="primary"
             variant="text"
@@ -47,15 +52,17 @@ const KeyboardScrollLayout: React.FC<KeyboardScrollLayoutProps> = ({ children, o
           </ScrollView>
         </KeyboardAvoidingView>
       </View>
+
+      {onBack && <SideRailBackButton onPress={onBack} />}
     </SafeLayout>
   );
 };
 
-const makeStyles = (insets: EdgeInsets) =>
+const makeStyles = (insets: EdgeInsets, pagePadding: number) =>
   StyleSheet.create({
     page: {
-      paddingLeft: 16,
-      paddingRight: 16,
+      paddingLeft: pagePadding,
+      paddingRight: pagePadding,
 
       width: "100%",
       flex: 1,

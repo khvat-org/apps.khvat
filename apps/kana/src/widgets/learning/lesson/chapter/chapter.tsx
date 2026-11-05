@@ -3,6 +3,7 @@ import React from "react";
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useTransliterationsContext } from "@nihongo/core/shared/contexts/transliteration/transliteration";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import { useTranslation } from "react-i18next";
 import { StyleSheet, View } from "react-native";
@@ -21,7 +22,8 @@ type ChapterProps = {
 const Chapter: React.FC<ChapterProps> = ({ lessons, title, startLesson }) => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   const { triggerHaptic } = useHaptic();
 
@@ -81,18 +83,18 @@ const Chapter: React.FC<ChapterProps> = ({ lessons, title, startLesson }) => {
 
 export default Chapter;
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     title: {
       ...Typography.H4,
       color: colors.TextPrimary,
       marginTop: 22,
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
     },
     subtitle: {
       ...Typography.regularLabel,
       marginTop: 8,
       marginBottom: 16,
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
     },
   });

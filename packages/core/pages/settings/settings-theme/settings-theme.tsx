@@ -123,6 +123,7 @@ const SettingsThemePage: React.FC = () => {
           title={t("settings.theme.title")}
           left={{
             text: t("alert.cancel"),
+            kind: "cancel",
             onPress: onClose,
           }}
           right={{

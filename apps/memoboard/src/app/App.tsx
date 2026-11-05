@@ -15,6 +15,7 @@ import { ThemeProvider } from "@nihongo/core/shared/contexts/theme/theme-context
 import { UiStateProvider } from "@nihongo/core/shared/contexts/ui-state/ui-state-context";
 import { ApiGatewayProvider } from "@nihongo/core/shared/lib/api-gateway";
 import { SavedLanguageGate } from "@nihongo/core/shared/lib/i18n/saved-language-gate";
+import { PageInsetsProvider } from "@nihongo/core/shared/lib/layout/page-insets-provider";
 import NotificationsWrapper from "@nihongo/core/shared/lib/notifications";
 import AppWrapper from "@nihongo/core/shared/ui/layouts/app-wrapper";
 import { Providers } from "@nihongo/core/shared/ui/providers";
@@ -40,6 +41,7 @@ const App: React.FC = () => {
             [SavedLanguageGate],
             [RemoteConfigProvider],
             [SafeAreaProvider],
+            [PageInsetsProvider],
             [EraseDataProvider],
             [StudyActivityProvider],
             [ModalProvider],

@@ -6,6 +6,7 @@ import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import useSetLanguage from "@nihongo/core/shared/lib/i18n/hooks/useSetLanguage";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import { useNavigation } from "@react-navigation/native";
@@ -26,7 +27,8 @@ const WelcomePage: React.FC = () => {
   const insets = useSafeAreaInsets();
 
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors, insets);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, insets, pagePadding);
   const { t } = useTranslation();
 
   const { set } = useSetLanguage();
@@ -61,7 +63,7 @@ const WelcomePage: React.FC = () => {
   };
 
   return (
-    <SafeLayout disableButton disableSides>
+    <SafeLayout disableButton>
       <View style={styles.page}>
         <View style={styles.header}>
           <Image style={styles.logo} source={welcomeLogo} />
@@ -106,7 +108,7 @@ const WelcomePage: React.FC = () => {
   );
 };
 
-const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
+const makeStyles = (colors: ColorsType, insets: EdgeInsets, pagePadding: number) =>
   StyleSheet.create({
     page: {
       backgroundColor: colors.BgSecondary,
@@ -149,13 +151,13 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
 
     languageList: {
       width: "100%",
-      maxWidth: TABLET_WIDTH + insets.left + insets.right + 32,
+      maxWidth: TABLET_WIDTH + pagePadding * 2,
       alignSelf: "center",
 
       paddingTop: 16,
       paddingBottom: insets.bottom + 8,
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
+      paddingLeft: pagePadding,
+      paddingRight: pagePadding,
     },
 
     languageItem: {

@@ -1,22 +1,13 @@
 import React, { useState } from "react";
 
 import { EyeIcon, EyeSlashIcon } from "phosphor-react-native";
-import { TextInput, View, StyleSheet, Pressable, Text } from "react-native";
+import { Platform, TextInput, View, StyleSheet, Pressable, Text } from "react-native";
 
 import { isExpoGo } from "../../constants/environment";
 import { ColorsType, useThemeContext } from "../../contexts/theme/theme-context";
 import { Typography } from "../../typography";
 
-type DatePickerComponent = typeof import("react-native-date-picker").default;
-
-const loadDatePicker = (): DatePickerComponent | null => {
-  try {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    return (require("react-native-date-picker") as { default: DatePickerComponent }).default;
-  } catch {
-    return null;
-  }
-};
+import { IOSBirthDatePicker, openAndroidBirthDatePicker } from "./birth-date-picker";
 
 const MIN_YEAR = 1900;
 
@@ -119,32 +110,36 @@ const Input: React.FC<InputProps> = ({
   }
 
   if (isAge) {
-    const DatePicker = loadDatePicker();
+    const confirmDate = (selected: Date) => {
+      setDate(selected);
+      onChange?.(selected.toString());
+      setIsOpenAge(false);
+    };
+
+    const openDatePicker = () => {
+      if (Platform.OS === "android") {
+        openAndroidBirthDatePicker(date, confirmDate);
+        return;
+      }
+
+      setIsOpenAge(true);
+    };
 
     return (
       <>
         <View style={styles.container}>
-          <Pressable style={styles.input} onPress={() => setIsOpenAge(true)}>
+          <Pressable style={styles.input} onPress={openDatePicker}>
             <Text style={[styles.text, date !== null && styles.textActive]}>
               {date === null && placeholder}
               {date !== null && formatDate(date)}
             </Text>
           </Pressable>
         </View>
-        {DatePicker && (
-          <DatePicker
-            modal
-            open={isOpenAge}
-            date={date ?? new Date()}
-            mode="date"
-            maximumDate={new Date()}
-            minimumDate={new Date(MIN_YEAR, 0, 1)}
-            onConfirm={(date) => {
-              setDate(date);
-              onChange?.(date.toString());
-              setIsOpenAge(false);
-            }}
-            onCancel={() => setIsOpenAge(false)}
+        {isOpenAge && (
+          <IOSBirthDatePicker
+            value={date}
+            onConfirm={confirmDate}
+            onClose={() => setIsOpenAge(false)}
           />
         )}
         {error && <Text style={styles.error}>{error}</Text>}

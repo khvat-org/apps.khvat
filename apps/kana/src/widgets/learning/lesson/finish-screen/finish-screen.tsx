@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import { useTranslation } from "react-i18next";
@@ -48,7 +49,8 @@ const FinishScreen: React.FC<FinishScreenProps> = ({ next, retry }) => {
     retry();
   };
 
-  const styles = makeStyles(colors);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   return (
     <View style={styles.container}>
@@ -79,7 +81,7 @@ const FinishScreen: React.FC<FinishScreenProps> = ({ next, retry }) => {
 
 export default FinishScreen;
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     container: {
       flex: 1,
@@ -106,13 +108,13 @@ const makeStyles = (colors: ColorsType) =>
       color: colors.TextPrimary,
       textAlign: "center",
 
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
     },
     subtitle: {
       ...Typography.regularDefault,
       color: colors.TextSecondary,
       textAlign: "center",
 
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
     },
   });

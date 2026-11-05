@@ -19,6 +19,8 @@ import StoreReviewLink from "@nihongo/core/features/settings/store-review-link/s
 import TermsAndConditions from "@nihongo/core/features/settings/terms-and-conditions/terms-and-conditions";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useIsLoggedIn } from "@nihongo/core/shared/lib/auth/use-is-logged-in";
+import SideRailBackButton from "@nihongo/core/shared/ui/bottom-tap/side-rail-back-button";
+import { useHasSideRailActions } from "@nihongo/core/shared/ui/bottom-tap/side-rail-insets-context";
 import Button from "@nihongo/core/shared/ui/button";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
@@ -43,6 +45,8 @@ const SettingsPage: React.FC = () => {
 
   const styles = makeStyles(colors);
 
+  const hasSideBack = useHasSideRailActions();
+
   useEffect(() => {
     navigation.setOptions({
       headerShown: false,
@@ -57,13 +61,15 @@ const SettingsPage: React.FC = () => {
         <PageTitle
           padded
           leftIcon={
-            <Button
-              color="primary"
-              variant="text"
-              isHapticFeedback
-              icon={<CaretLeftIcon size={32} />}
-              onClick={goBack}
-            />
+            hasSideBack ? undefined : (
+              <Button
+                color="primary"
+                variant="text"
+                isHapticFeedback
+                icon={<CaretLeftIcon size={32} />}
+                onClick={goBack}
+              />
+            )
           }
         >
           {t("tabs.settings")}
@@ -123,6 +129,8 @@ const SettingsPage: React.FC = () => {
           )}
         </ScrollView>
       </View>
+
+      <SideRailBackButton onPress={goBack} />
     </SafeLayout>
   );
 };

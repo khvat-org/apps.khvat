@@ -6,6 +6,7 @@ import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { AlertModal } from "@nihongo/core/shared/contexts/modal/presets/alert";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
@@ -30,7 +31,8 @@ const SCROLL_TO_INPUT_DELAY = 250;
 const SettingsReportPage: React.FC = () => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   const insets = useSafeAreaInsets();
   const navigation = useNavigation();
@@ -79,6 +81,7 @@ const SettingsReportPage: React.FC = () => {
           title={t("report.settings.title")}
           left={{
             text: t("common.back"),
+            kind: "back",
             onPress: () => navigation.goBack(),
           }}
         />
@@ -110,7 +113,7 @@ const SettingsReportPage: React.FC = () => {
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     scroll: {
       flex: 1,
@@ -119,7 +122,7 @@ const makeStyles = (colors: ColorsType) =>
       width: "100%",
       maxWidth: TABLET_WIDTH + 32,
       alignSelf: "center",
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
     },
     subtitle: {
       ...Typography.regularDefault,
@@ -129,7 +132,7 @@ const makeStyles = (colors: ColorsType) =>
       width: "100%",
       maxWidth: TABLET_WIDTH + 32,
       alignSelf: "center",
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
       paddingTop: 16,
       paddingBottom: 16,
     },

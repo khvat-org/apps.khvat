@@ -4,6 +4,7 @@ import SettingItem from "@nihongo/core/entities/setting/setting-item/setting-ite
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import Input from "@nihongo/core/shared/ui/input";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
@@ -44,7 +45,8 @@ const BoardSettingsPage: React.FC = () => {
   const { colors } = useThemeContext();
   const { showModal, hideModal } = useModal();
 
-  const styles = makeStyles(colors);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   const [title, setTitle] = useState("");
   const [isPublic, setIsPublic] = useState(false);
@@ -210,13 +212,13 @@ const BoardSettingsPage: React.FC = () => {
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     container: {
       flex: 1,
     },
     content: {
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
       paddingTop: 16,
       paddingBottom: 32,
       gap: 16,

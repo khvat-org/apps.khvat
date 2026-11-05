@@ -12,8 +12,11 @@ import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-c
 import { useStudyActivity } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { loadProfile, ProfileState } from "@nihongo/core/shared/lib/auth";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { useProfileWidgets } from "@nihongo/core/shared/lib/settings/useProfileWidgets";
 import { Typography } from "@nihongo/core/shared/typography";
+import { useSideRailInsets } from "@nihongo/core/shared/ui/bottom-tap/side-rail-insets-context";
+import { useTabContentBottomInset } from "@nihongo/core/shared/ui/bottom-tap/tab-screen-insets";
 import Button from "@nihongo/core/shared/ui/button";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
@@ -23,12 +26,12 @@ import { StackNavigationProp } from "@react-navigation/stack";
 import { GearIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { ActivityIndicator, View, StyleSheet, Pressable, Text, ScrollView } from "react-native";
-import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
 
 type NavigationProp = StackNavigationProp<ProfileParamList, typeof PROFILE_ROUTES.PROFILE>;
 
 const ProfilePage: React.FC = () => {
   const navigation = useNavigation<NavigationProp>();
+  const sideRail = useSideRailInsets();
 
   const { t } = useTranslation();
   const { colors } = useThemeContext();
@@ -38,8 +41,9 @@ const ProfilePage: React.FC = () => {
   const { widgets, loaded: widgetsLoaded, setWidget } = useProfileWidgets();
   const { triggerHaptic } = useHaptic();
 
-  const insets = useSafeAreaInsets();
-  const styles = makeStyles(colors, insets);
+  const tabContentBottomInset = useTabContentBottomInset();
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   const toSettings = () => {
     triggerHaptic();
@@ -82,17 +86,19 @@ const ProfilePage: React.FC = () => {
   );
 
   return (
-    <SafeLayout disableButton disableSides>
+    <SafeLayout disableButton>
       <View style={styles.main}>
         <View style={styles.container}>
           <PageTitle
             icon={
-              <Button
-                color="primary"
-                variant="text"
-                icon={<GearIcon size={32} />}
-                onClick={toSettings}
-              />
+              sideRail ? undefined : (
+                <Button
+                  color="primary"
+                  variant="text"
+                  icon={<GearIcon size={32} />}
+                  onClick={toSettings}
+                />
+              )
             }
           >
             {t("tabs.profile")}
@@ -156,7 +162,10 @@ const ProfilePage: React.FC = () => {
         </View>
 
         <ScrollView
-          contentContainerStyle={styles.contentContainer}
+          contentContainerStyle={[
+            styles.contentContainer,
+            { paddingBottom: tabContentBottomInset },
+          ]}
           showsVerticalScrollIndicator={false}
           style={styles.content}
         >
@@ -176,15 +185,15 @@ const ProfilePage: React.FC = () => {
   );
 };
 
-const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     main: {
       flex: 1,
       backgroundColor: colors.BgSecondary,
     },
     container: {
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
+      paddingLeft: pagePadding,
+      paddingRight: pagePadding,
       paddingBottom: 16,
       borderBottomLeftRadius: 24,
       borderBottomRightRadius: 24,
@@ -206,11 +215,11 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
     },
     contentContainer: {
       width: "100%",
-      maxWidth: TABLET_WIDTH + insets.left + insets.right + 32,
+      maxWidth: TABLET_WIDTH + pagePadding * 2,
       alignSelf: "center",
       gap: 8,
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
+      paddingLeft: pagePadding,
+      paddingRight: pagePadding,
     },
   });
 

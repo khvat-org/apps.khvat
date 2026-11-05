@@ -4,6 +4,7 @@ import { languageList, ShortLanguage } from "@nihongo/core/shared/constants/lang
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import useSetLanguage from "@nihongo/core/shared/lib/i18n/hooks/useSetLanguage";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import usePreviewSetting from "@nihongo/core/shared/lib/settings/usePreviewSetting";
 import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
@@ -23,7 +24,8 @@ type ItemProps = {
 };
 
 const Item = ({ title, lang, colors, onPress, active }: ItemProps) => {
-  const styles = makeStyles(colors);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   const getIsoCode = (key: ShortLanguage) => {
     if (key === ShortLanguage.EN) return "us";
@@ -65,7 +67,8 @@ const SettingsLanguagePage: React.FC = () => {
   const { colors } = useThemeContext();
 
   const insets = useSafeAreaInsets();
-  const styles = makeStyles(colors);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   const { set } = useSetLanguage();
 
@@ -99,6 +102,7 @@ const SettingsLanguagePage: React.FC = () => {
           title={t("settings.language")}
           left={{
             text: t("alert.cancel"),
+            kind: "cancel",
             onPress: onClose,
           }}
           right={{
@@ -133,14 +137,14 @@ const SettingsLanguagePage: React.FC = () => {
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     content: {
       flex: 1,
       width: "100%",
       maxWidth: TABLET_WIDTH + 32,
       alignSelf: "center",
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
     },
     item__active: {
       marginBottom: 8,

@@ -4,6 +4,7 @@ import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
 import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
@@ -21,7 +22,7 @@ import formatResultAnswer, {
 import { PracticeResultData } from "../education-practice/lib/types/questions";
 
 import { ROUTES, RootStackParamList } from "@/app/routes.types";
-import CaptchaTile from "@/features/captcha/ui/captcha-tile";
+import CaptchaGrid from "@/features/captcha/ui/captcha-grid";
 import DrawingPreview from "@/features/drawing/ui/drawing-preview/drawing-preview";
 import DrawingReference from "@/features/drawing/ui/drawing-reference/drawing-reference";
 import { Kana, KanaAlphabet, PracticeType } from "@/shared/constants/kana";
@@ -124,7 +125,8 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
       userSelect,
     }));
 
-  const styles = makeStyles(colors, insets);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, insets, pagePadding);
 
   const [widgetsWidth, setWidgetsWidth] = useState(0);
   const widgetWidth = (widgetsWidth - WIDGETS_GAP * 2) / 3;
@@ -163,7 +165,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
 
   const isMixedPractice = new Set(questions.map((question) => question.type)).size > 1;
 
-  const answerContentWidth = Math.min(width - 32, TABLET_WIDTH) - 32;
+  const answerContentWidth = Math.min(width - pagePadding * 2, TABLET_WIDTH) - 32;
   const optionWidth = (answerContentWidth - 8) / 2;
   const canvasSize = (answerContentWidth - 12) / 2;
 
@@ -275,27 +277,15 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
       const picked = userSelect?.type === PracticeType.Captcha ? userSelect.value : [];
 
       return (
-        <View style={styles.captcha}>
-          {question[PracticeType.Captcha]!.tiles.map((tile, tileIndex) => {
-            const isPicked = picked.includes(tileIndex);
-            const state = isPicked
-              ? tile.isCorrect
-                ? "correct"
-                : "wrong"
-              : tile.isCorrect
-                ? "missed"
-                : "idle";
+        <CaptchaGrid
+          style={{ width: answerContentWidth }}
+          tiles={question[PracticeType.Captcha]!.tiles}
+          stateOf={(tile, tileIndex) => {
+            if (picked.includes(tileIndex)) return tile.isCorrect ? "correct" : "wrong";
 
-            return (
-              <CaptchaTile
-                key={`${tile.text}:${tile.font}`}
-                tile={tile}
-                size={(answerContentWidth - 16) / 3}
-                state={state}
-              />
-            );
-          })}
-        </View>
+            return tile.isCorrect ? "missed" : "idle";
+          }}
+        />
       );
     }
 
@@ -437,7 +427,7 @@ const EducationResultPage: React.FC<EducationResultProps> = ({ route }) => {
 
 const WIDGETS_GAP = 16;
 
-const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
+const makeStyles = (colors: ColorsType, insets: EdgeInsets, pagePadding: number) =>
   StyleSheet.create({
     layout: {
       flex: 1,
@@ -450,8 +440,8 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
       borderBottomLeftRadius: 24,
       borderBottomRightRadius: 24,
       paddingBottom: 16,
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
+      paddingLeft: insets.left + pagePadding,
+      paddingRight: insets.right + pagePadding,
     },
 
     header__content: {
@@ -503,14 +493,14 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
     },
 
     scrollContent: {
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
+      paddingLeft: insets.left + pagePadding,
+      paddingRight: insets.right + pagePadding,
     },
 
     footer: {
       marginTop: 16,
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
+      paddingLeft: insets.left + pagePadding,
+      paddingRight: insets.right + pagePadding,
     },
 
     answers: {
@@ -574,11 +564,6 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
       color: colors.TextPrimary,
     },
 
-    captcha: {
-      flexDirection: "row",
-      flexWrap: "wrap",
-      gap: 8,
-    },
     drawings: {
       flexDirection: "row",
       gap: 12,

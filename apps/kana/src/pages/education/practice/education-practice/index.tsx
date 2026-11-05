@@ -6,6 +6,7 @@ import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/c
 import { useStudyActivity } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useTransliterationsContext } from "@nihongo/core/shared/contexts/transliteration/transliteration";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import LinearProgressBar from "@nihongo/core/shared/ui/progressbar/linear/linear-progress-bar";
 import { RouteProp } from "@react-navigation/native";
@@ -69,7 +70,8 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   const [isCaptchaFailed, setIsCaptchaFailed] = useState(false);
 
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   const engineRef = useRef(new QuestionsEducationPractice());
   const engine = engineRef.current;
@@ -343,7 +345,7 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     container: {
       flex: 1,
@@ -351,7 +353,7 @@ const makeStyles = (colors: ColorsType) =>
       alignItems: "center",
       backgroundColor: colors.BgPrimary,
 
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
     },
   });
 

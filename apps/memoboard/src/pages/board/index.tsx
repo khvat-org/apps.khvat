@@ -2,6 +2,7 @@ import React, { useCallback, useDeferredValue, useEffect, useMemo, useRef, useSt
 
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
@@ -36,6 +37,7 @@ const BoardPage = () => {
   const { id } = params;
 
   const { width } = useWindowDimensions();
+  const pagePadding = usePagePadding();
   const insets = useSafeAreaInsets();
 
   const { colors } = useThemeContext();
@@ -227,8 +229,8 @@ const BoardPage = () => {
             styles.header,
             {
               paddingTop: insets.top + 8,
-              paddingLeft: insets.left + 16,
-              paddingRight: insets.right + 16,
+              paddingLeft: insets.left + pagePadding,
+              paddingRight: insets.right + pagePadding,
             },
           ]}
         >
@@ -264,8 +266,8 @@ const BoardPage = () => {
             styles.header,
             {
               paddingTop: insets.top + 8,
-              paddingLeft: insets.left + 16,
-              paddingRight: insets.right + 16,
+              paddingLeft: insets.left + pagePadding,
+              paddingRight: insets.right + pagePadding,
             },
           ]}
         >

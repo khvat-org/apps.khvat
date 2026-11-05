@@ -16,6 +16,7 @@ import {
 } from "@nihongo/core/shared/data/lettersTable";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
 import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
+import { PAGE_PADDING, usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { ChecksIcon, MinusIcon, PlusIcon, XIcon } from "phosphor-react-native";
 import { View, StyleSheet, useWindowDimensions, FlatList } from "react-native";
 
@@ -70,7 +71,9 @@ const normalizeRow = (row: ILetter[]): (ILetter | null)[] => {
 
 const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({ kana, alphabetType }) => {
   const { width: windowWidth } = useWindowDimensions();
+  const pagePadding = usePagePadding();
   const { width, height } = useContentDimensions();
+  const cellScreenWidth = width - (pagePadding - PAGE_PADDING) * 2;
   const { colors } = useThemeContext();
   const { getRomaji } = useGetRomaji();
   const { triggerHaptic } = useHaptic();
@@ -190,11 +193,20 @@ const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({ kana, a
   );
 
   return (
-    <View style={styles.container}>
+    <View
+      style={[
+        styles.container,
+        {
+          maxWidth: TABLET_WIDTH + pagePadding * 2,
+          paddingLeft: pagePadding,
+          paddingRight: pagePadding,
+        },
+      ]}
+    >
       <View style={styles.rowButtons}>
         {alphabetType !== "handakuon" && (
           <PlusCell
-            screenWidth={width}
+            screenWidth={cellScreenWidth}
             screenHeight={height}
             isTablet={isTablet}
             onPress={() => {
@@ -215,7 +227,7 @@ const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({ kana, a
         {alphabetType !== "handakuon" &&
           letters[0]?.items.map((_, cellIndex) => (
             <PlusCell
-              screenWidth={width}
+              screenWidth={cellScreenWidth}
               screenHeight={height}
               isTablet={isTablet}
               isLong={alphabetType === "yoon"}
@@ -243,7 +255,7 @@ const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({ kana, a
         renderItem={({ item }) => (
           <View style={styles.rowButtons} key={item.key}>
             <PlusCell
-              screenWidth={width}
+              screenWidth={cellScreenWidth}
               screenHeight={height}
               isTablet={isTablet}
               onPress={() => {
@@ -263,7 +275,7 @@ const EducationKanaTableSelected: React.FC<EducationKanaTableProps> = ({ kana, a
 
             {item.items.map((cell, i) => (
               <DefaultCell
-                screenWidth={width}
+                screenWidth={cellScreenWidth}
                 screenHeight={height}
                 isTablet={isTablet}
                 key={`${item.rowIndex}-${i}`}
@@ -300,10 +312,7 @@ export default EducationKanaTableSelected;
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    maxWidth: TABLET_WIDTH + 32,
     alignSelf: "center",
-    paddingLeft: 16,
-    paddingRight: 16,
     marginBottom: 16,
   },
   rowButtons: {

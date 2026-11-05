@@ -1,6 +1,7 @@
 import React, { useMemo, useRef, useState } from "react";
 
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import Button from "@nihongo/core/shared/ui/button";
 import { CaretLeftIcon, CaretRightIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
@@ -65,6 +66,7 @@ const InfoScreen: React.FC<InfoScreenProps> = ({
   isLast,
   isPassed,
 }) => {
+  const pagePadding = usePagePadding();
   const { t } = useTranslation();
 
   const { width } = useWindowDimensions();
@@ -254,8 +256,8 @@ const InfoScreen: React.FC<InfoScreenProps> = ({
             paddingBottom: SCROLL_PADDING,
           }}
           style={{
-            paddingLeft: 16,
-            paddingRight: 16,
+            paddingLeft: pagePadding,
+            paddingRight: pagePadding,
             width: "100%",
           }}
         >

@@ -70,6 +70,7 @@ const makeStyles = (color: ColorsType) =>
     },
     items: {
       borderRadius: 12,
+      overflow: "hidden",
       padding: 0,
       paddingLeft: 16,
       backgroundColor: color.BgContrastSecondary,

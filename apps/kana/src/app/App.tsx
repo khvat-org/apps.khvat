@@ -17,10 +17,12 @@ import { ThemeProvider } from "@nihongo/core/shared/contexts/theme/theme-context
 import { TransliterationsProvider } from "@nihongo/core/shared/contexts/transliteration/transliteration";
 import { ApiGatewayProvider } from "@nihongo/core/shared/lib/api-gateway";
 import { SavedLanguageGate } from "@nihongo/core/shared/lib/i18n/saved-language-gate";
+import { PageInsetsProvider } from "@nihongo/core/shared/lib/layout/page-insets-provider";
 import NotificationsWrapper from "@nihongo/core/shared/lib/notifications";
 import AppWrapper from "@nihongo/core/shared/ui/layouts/app-wrapper";
 import { Providers } from "@nihongo/core/shared/ui/providers";
 import { AppRegistry, View } from "react-native";
+import { ReservedRegionsProvider } from "react-native-reserved-regions";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { enableScreens } from "react-native-screens";
 
@@ -30,6 +32,7 @@ import { LessonsProvider } from "@/pages/education/learning/model/context";
 import { PracticePreferencesProvider } from "@/pages/education/practice/practice-preferences/model/context";
 import { KanaProvider } from "@/pages/kana/kana-table-choice-letters-page/model/context";
 import { StatisticsProvider } from "@/pages/kana/kana-table-list-page/model/context";
+import { SideRailInsetsProvider } from "@/shared/lib/layout/side-rail-insets-provider";
 
 enableScreens();
 
@@ -45,6 +48,9 @@ const App: React.FC = () => {
             [SavedLanguageGate],
             [RemoteConfigProvider],
             [SafeAreaProvider],
+            [PageInsetsProvider],
+            [ReservedRegionsProvider, { style: { flex: 1 } }],
+            [SideRailInsetsProvider],
             [EraseDataProvider],
             [StudyActivityProvider],
             [TransliterationsProvider],

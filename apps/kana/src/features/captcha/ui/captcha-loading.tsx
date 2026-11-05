@@ -1,6 +1,7 @@
 import React from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
@@ -21,7 +22,8 @@ interface Props {
 const CaptchaLoading: React.FC<Props> = ({ done, total, isSlow, isFailed, onRetry, onClose }) => {
   const { t } = useTranslation();
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   if (isFailed) {
     return (
@@ -57,12 +59,12 @@ const CaptchaLoading: React.FC<Props> = ({ done, total, isSlow, isFailed, onRetr
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     container: {
       flex: 1,
       gap: 16,
-      padding: 16,
+      padding: pagePadding,
       alignItems: "center",
       justifyContent: "center",
       backgroundColor: colors.BgPrimary,

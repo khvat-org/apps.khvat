@@ -7,7 +7,7 @@ import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
 import { Typography } from "@nihongo/core/shared/typography";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
-const CELL_GAP = 9;
+export const CELL_GAP = 9;
 
 import { StatisticLevel } from "@/pages/kana/kana-table-list-page/model/types";
 import { KanaAlphabet } from "@/shared/constants/kana";
@@ -33,9 +33,10 @@ interface CellProps {
   isHeader?: boolean;
   screenWidth?: number;
   screenHeight?: number;
+  cellSize?: number;
 }
 
-const TABLET_HEADER_HEIGHT = 32;
+export const TABLET_HEADER_HEIGHT = 32;
 
 const Cell: React.FC<CellProps> = ({
   onPress,
@@ -51,16 +52,19 @@ const Cell: React.FC<CellProps> = ({
   isHeader,
   screenWidth = 0,
   screenHeight = 0,
+  cellSize,
 }) => {
   const { colors } = useThemeContext();
   const { getRomaji } = useGetRomaji();
   const { triggerHaptic } = useHaptic();
 
-  let tabletCellSize = isTablet ? screenHeight / 6 - 50 : screenWidth / 6 - 14;
+  const getCellSize = () => {
+    if (cellSize !== undefined) return cellSize;
 
-  if (tabletCellSize > 85) {
-    tabletCellSize = 85;
-  }
+    return Math.min(isTablet ? screenHeight / 6 - 50 : screenWidth / 6 - 14, 85);
+  };
+
+  const tabletCellSize = getCellSize();
 
   const widthLong = (tabletCellSize * 5 + CELL_GAP * 2) / 3;
 

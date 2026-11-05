@@ -5,6 +5,9 @@ import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
+import { useTabContentBottomInset } from "@nihongo/core/shared/ui/bottom-tap/tab-screen-insets";
+import { useTabBarLayout } from "@nihongo/core/shared/ui/bottom-tap/use-tab-bar-layout";
 import Button from "@nihongo/core/shared/ui/button";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import PageTitle from "@nihongo/core/shared/ui/page-title/page-title";
@@ -14,7 +17,7 @@ import { StackNavigationProp } from "@react-navigation/stack";
 import { SlidersHorizontalIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
 import { ScrollView, View, StyleSheet } from "react-native";
-import { EdgeInsets, useSafeAreaInsets } from "react-native-safe-area-context";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import {
   AccessibilityError,
@@ -47,8 +50,10 @@ const PracticeWelcomePage: React.FC = () => {
   const navigation = useNavigation<PracticeNavigationProp>();
 
   const insets = useSafeAreaInsets();
+  const tabContentBottomInset = useTabContentBottomInset();
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors, insets);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   const { selectedWords, selectedLettersHiragana, selectedLettersKatakana } = useKanaContext();
 
@@ -57,6 +62,7 @@ const PracticeWelcomePage: React.FC = () => {
   } = usePracticePreferences();
 
   const captchaFonts = useCaptchaFonts();
+  const { position: tabBarPosition } = useTabBarLayout();
   const { showModal, hideModal } = useModal();
 
   const wordsCount = selectedWords.hiragana.length + selectedWords.katakana.length;
@@ -129,17 +135,19 @@ const PracticeWelcomePage: React.FC = () => {
   };
 
   return (
-    <SafeLayout disableTop disableButton disableSides style={styles.main}>
+    <SafeLayout disableTop disableButton style={styles.main}>
       <View style={[styles.container, { paddingTop: insets.top }]}>
         <PageTitle
           icon={
-            <Button
-              color="primary"
-              variant="text"
-              isHapticFeedback
-              icon={<SlidersHorizontalIcon size={32} />}
-              onClick={() => navigation.navigate(ROUTES.PRACTICE_PREFERENCES)}
-            />
+            tabBarPosition === "bottom" ? (
+              <Button
+                color="primary"
+                variant="text"
+                isHapticFeedback
+                icon={<SlidersHorizontalIcon size={32} />}
+                onClick={() => navigation.navigate(ROUTES.PRACTICE_PREFERENCES)}
+              />
+            ) : undefined
           }
         >
           {t("tabs.practice")}
@@ -150,7 +158,10 @@ const PracticeWelcomePage: React.FC = () => {
 
       <ScrollView
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={styles.scrollContainer}
+        contentContainerStyle={[
+          styles.scrollContainer,
+          { paddingBottom: 8 + tabContentBottomInset },
+        ]}
       >
         <PracticeCard
           onClick={() => start()}
@@ -223,14 +234,14 @@ const PracticeWelcomePage: React.FC = () => {
   );
 };
 
-const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     main: {
       backgroundColor: colors.BgSecondary,
     },
     container: {
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
+      paddingLeft: pagePadding,
+      paddingRight: pagePadding,
       paddingBottom: 16,
       borderBottomLeftRadius: 24,
       borderBottomRightRadius: 24,
@@ -239,8 +250,8 @@ const makeStyles = (colors: ColorsType, insets: EdgeInsets) =>
     scrollContainer: {
       paddingTop: 16,
       paddingBottom: 8,
-      paddingLeft: insets.left + 16,
-      paddingRight: insets.right + 16,
+      paddingLeft: pagePadding,
+      paddingRight: pagePadding,
 
       flexDirection: "column",
       alignItems: "center",

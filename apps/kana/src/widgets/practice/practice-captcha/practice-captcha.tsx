@@ -10,17 +10,10 @@ import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import { InfoIcon } from "phosphor-react-native";
 import { useTranslation } from "react-i18next";
-import {
-  LayoutChangeEvent,
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  useWindowDimensions,
-  View,
-} from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 
-import CaptchaTile, { CaptchaTileState } from "@/features/captcha/ui/captcha-tile";
+import CaptchaGrid from "@/features/captcha/ui/captcha-grid";
+import { CaptchaTileState } from "@/features/captcha/ui/captcha-tile";
 import {
   CaptchaTile as CaptchaTileData,
   OnSubmit,
@@ -28,10 +21,8 @@ import {
 import { useStatisticsContext } from "@/pages/kana/kana-table-list-page/model/hooks";
 import { Kana, KanaAlphabet, PracticeType } from "@/shared/constants/kana";
 
-const COLUMNS = 3;
 const GAP = 8;
 const MAX_WIDTH = 480;
-const PAGE_PADDING = 16;
 
 interface Props {
   question: ILetter;
@@ -50,10 +41,6 @@ const PracticeCaptcha: React.FC<Props> = ({ question, tiles, onCompleted }) => {
 
   const [selected, setSelected] = useState<number[]>([]);
   const [isVerified, setIsVerified] = useState(false);
-  const { width: windowWidth } = useWindowDimensions();
-  const [width, setWidth] = useState(Math.min(windowWidth - PAGE_PADDING * 2, MAX_WIDTH));
-
-  const tileSize = (width - GAP * (COLUMNS + 1)) / COLUMNS;
 
   const toggle = useCallback(
     (index: number) => {
@@ -108,32 +95,24 @@ const PracticeCaptcha: React.FC<Props> = ({ question, tiles, onCompleted }) => {
     return tile.isCorrect ? "missed" : "idle";
   };
 
-  const onLayout = (event: LayoutChangeEvent) => setWidth(event.nativeEvent.layout.width);
-
   return (
     <ScrollView
       style={styles.scroll}
       contentContainerStyle={styles.scrollContent}
       showsVerticalScrollIndicator={false}
     >
-      <View style={styles.card} onLayout={onLayout}>
+      <View style={styles.card}>
         <View style={styles.header}>
           <Text style={styles.header__symbol}>{getRomaji(question)}</Text>
           <Text style={styles.header__text}>{t("practice.captcha.instruction")}</Text>
         </View>
 
-        <View style={styles.grid}>
-          {tiles.map((tile, index) => (
-            <CaptchaTile
-              key={`${tile.text}:${tile.font}`}
-              tile={tile}
-              index={index}
-              size={tileSize}
-              state={stateOf(tile, index)}
-              onPress={isVerified ? undefined : toggle}
-            />
-          ))}
-        </View>
+        <CaptchaGrid
+          style={styles.grid}
+          tiles={tiles}
+          stateOf={stateOf}
+          onPress={isVerified ? undefined : toggle}
+        />
 
         <View style={styles.footer}>
           <Pressable
@@ -187,9 +166,6 @@ const makeStyles = (colors: ColorsType) =>
       color: colors.TextWhite,
     },
     grid: {
-      flexDirection: "row",
-      flexWrap: "wrap",
-      gap: GAP,
       padding: GAP,
     },
     footer: {

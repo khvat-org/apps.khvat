@@ -4,16 +4,19 @@ import { InsetSide } from "@nihongo/core/shared/lib/layout/get-asymmetric-side";
 import Button from "@nihongo/core/shared/ui/button";
 import { ArrowBendUpLeftIcon, ArrowCounterClockwiseIcon, ScanIcon } from "phosphor-react-native";
 import { StyleSheet, View } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import ToggleShowBorders from "../buttons/toggle-show-borders";
 import ToggleShowLetter from "../buttons/toggle-show-letter";
 import ToggleStrokeWidth from "../buttons/toggle-stroke-width";
 
+const GAP = 8;
+const COMPACT_GAP = 4;
+
 interface DrawSideControlsProps {
   side: InsetSide;
   width: number;
-  top?: number;
+  bottomInset: number;
+  isCompact: boolean;
   onUndo: () => void;
   onClear: () => void;
   onScan?: () => void;
@@ -22,21 +25,18 @@ interface DrawSideControlsProps {
 const DrawSideControls: React.FC<DrawSideControlsProps> = ({
   side,
   width,
-  top,
+  bottomInset,
+  isCompact,
   onUndo,
   onClear,
   onScan,
 }) => {
-  const insets = useSafeAreaInsets();
-
   return (
     <View
+      pointerEvents="box-none"
       style={[
         styles.column,
-        { [side]: 0, width, paddingBottom: insets.bottom },
-        top !== undefined
-          ? { top, justifyContent: "flex-start" }
-          : { top: 0, justifyContent: "center", paddingTop: insets.top },
+        { [side]: 0, width, paddingBottom: bottomInset, gap: isCompact ? COMPACT_GAP : GAP },
       ]}
     >
       <Button
@@ -64,9 +64,10 @@ const DrawSideControls: React.FC<DrawSideControlsProps> = ({
 const styles = StyleSheet.create({
   column: {
     position: "absolute",
+    top: 0,
     bottom: 0,
     alignItems: "center",
-    gap: 8,
+    justifyContent: "flex-end",
   },
 });
 

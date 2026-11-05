@@ -141,6 +141,7 @@ export const PracticePreferencesPage: React.FC = () => {
           title={t("practice.preferences.title")}
           left={{
             text: t("alert.cancel"),
+            kind: "cancel",
             onPress: navigation.goBack,
           }}
           right={{

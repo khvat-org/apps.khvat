@@ -8,6 +8,7 @@ import {
   useTransliterationsContext,
 } from "@nihongo/core/shared/contexts/transliteration/transliteration";
 import { base, dakuon } from "@nihongo/core/shared/data/lettersTable";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import usePreviewSetting from "@nihongo/core/shared/lib/settings/usePreviewSetting";
 import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
@@ -22,7 +23,8 @@ const SettingsTransliterationsPage: React.FC = () => {
   const { transliterations, updateTransliterations } = useTransliterationsContext();
 
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
   const insets = useSafeAreaInsets();
 
   const navigation = useNavigation();
@@ -75,6 +77,7 @@ const SettingsTransliterationsPage: React.FC = () => {
           title={t("transliterationSystems.romaji")}
           left={{
             text: t("alert.cancel"),
+            kind: "cancel",
             onPress: onClose,
           }}
           right={{
@@ -122,13 +125,13 @@ const SettingsTransliterationsPage: React.FC = () => {
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     content: {
       width: "100%",
       maxWidth: TABLET_WIDTH + 32,
       alignSelf: "center",
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
     },
     title: {
       color: colors.TextPrimary,

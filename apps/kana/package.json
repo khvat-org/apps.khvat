@@ -55,6 +55,7 @@
     "react-native-country-flag": "^2.0.2",
     "react-native-gesture-handler": "~3.3.0",
     "react-native-in-app-review": "^4.4.2",
+    "react-native-reserved-regions": "0.2.0",
     "react-native-rustore-review": "git+https://gitflic.ru/project/rustore/react-native-rustore-review-sdk.git",
     "react-native-safe-area-context": "~5.10.1",
     "react-native-screens": "~4.30.0",

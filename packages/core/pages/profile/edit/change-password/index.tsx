@@ -4,6 +4,7 @@ import { commonAuthError } from "@nihongo/core/features/auth/lib/serverError";
 import { PROFILE_ROUTES, ProfileParamList } from "@nihongo/core/pages/profile/routes";
 import { TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
 import { changePassword } from "@nihongo/core/shared/lib/auth";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import Input from "@nihongo/core/shared/ui/input";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { ModelContainer } from "@nihongo/core/shared/ui/model-container/model-container";
@@ -64,6 +65,7 @@ const ProfileChangePasswordPage: React.FC = () => {
   const navigation = useNavigation<NavigationProp>();
 
   const { t } = useTranslation();
+  const pagePadding = usePagePadding();
 
   const [data, setData] = useState<Record<string, string>>({});
   const [serverErrors, setServerErrors] = useState<Record<string, string>>({});
@@ -121,6 +123,7 @@ const ProfileChangePasswordPage: React.FC = () => {
           title={t("profile.edit.changePassword")}
           left={{
             text: t("common.back"),
+            kind: "back",
             onPress: () => navigation.goBack(),
           }}
           right={{
@@ -130,7 +133,7 @@ const ProfileChangePasswordPage: React.FC = () => {
           }}
         />
 
-        <View style={styles.content}>
+        <View style={[styles.content, { paddingHorizontal: pagePadding }]}>
           <Input
             placeholder={t("auth.fields.oldPassword")}
             isSecure
@@ -158,8 +161,6 @@ const ProfileChangePasswordPage: React.FC = () => {
 
 const styles = StyleSheet.create({
   content: {
-    paddingHorizontal: 16,
-
     gap: 8,
 
     width: "100%",

@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
@@ -48,7 +49,8 @@ const CardPage = () => {
   const edit = useCardEdit(card);
 
   const { colors } = useThemeContext();
-  const styles = makeStyles(colors);
+  const pagePadding = usePagePadding();
+  const styles = makeStyles(colors, pagePadding);
 
   const { t } = useTranslation();
   const insets = useSafeAreaInsets();
@@ -129,7 +131,7 @@ const CardPage = () => {
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     screen: {
       flex: 1,
@@ -140,7 +142,7 @@ const makeStyles = (colors: ColorsType) =>
       justifyContent: "flex-start",
     },
     content: {
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
       paddingBottom: 16,
 
       paddingTop: 16,
@@ -171,8 +173,8 @@ const makeStyles = (colors: ColorsType) =>
     buttons: {
       flexDirection: "row",
       justifyContent: "space-between",
-      paddingLeft: 16,
-      paddingRight: 16,
+      paddingLeft: pagePadding,
+      paddingRight: pagePadding,
       marginTop: 16,
       gap: 16,
     },

@@ -1,9 +1,14 @@
 import React, { useRef, useReducer, useState, useEffect, useImperativeHandle } from "react";
 
-import { getCanvasSize, TABLET_WIDTH } from "@nihongo/core/shared/constants/sizes";
+import {
+  getCanvasSize,
+  getMaxCanvasSize,
+  TABLET_WIDTH,
+} from "@nihongo/core/shared/constants/sizes";
 import { useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { ILetter } from "@nihongo/core/shared/data/lettersTable";
 import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import Button from "@nihongo/core/shared/ui/button";
 import { CircleIcon, FloppyDiskIcon, ScanIcon, XIcon } from "phosphor-react-native";
@@ -58,9 +63,9 @@ export const DRAW_CONTROLS_HEIGHT_EXTERNAL_CHECK = 80;
 export const MIN_FIT_CANVAS_SIZE = 200;
 
 export const getDrawCanvasSize = (width: number, height: number, maxCanvasSize = Infinity) =>
-  width < TABLET_WIDTH
+  width < TABLET_WIDTH || maxCanvasSize === Infinity
     ? getCanvasSize(width, height)
-    : Math.min(getCanvasSize(width, height), maxCanvasSize);
+    : Math.min(getMaxCanvasSize(width, height), maxCanvasSize);
 
 export type DrawHandle = {
   check: () => void;
@@ -107,6 +112,7 @@ const Draw: React.FC<DrawProps> = ({
   onCompleted,
   onProgress,
 }) => {
+  const pagePadding = usePagePadding();
   const { width, height } = useContentDimensions();
 
   const { colors } = useThemeContext();
@@ -383,7 +389,7 @@ const Draw: React.FC<DrawProps> = ({
           <View
             style={{
               width: "100%",
-              maxWidth: width > canvasSize ? canvasSize : width - 32,
+              maxWidth: width > canvasSize ? canvasSize : width - pagePadding * 2,
             }}
           >
             <ClearButtons

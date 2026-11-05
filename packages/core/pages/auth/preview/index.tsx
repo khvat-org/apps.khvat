@@ -22,7 +22,10 @@ import { AlertModal } from "@nihongo/core/shared/contexts/modal/presets/alert";
 import { useResetApp } from "@nihongo/core/shared/contexts/reset-context/reset-context";
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
 import { useGatewayUrl } from "@nihongo/core/shared/lib/api-gateway";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
+import SideRailBackButton from "@nihongo/core/shared/ui/bottom-tap/side-rail-back-button";
+import { useHasSideRailActions } from "@nihongo/core/shared/ui/bottom-tap/side-rail-insets-context";
 import Button from "@nihongo/core/shared/ui/button";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -59,7 +62,9 @@ export const LoginPage: React.FC = () => {
   const { width } = useWindowDimensions();
 
   const imageSize = width > TABLET_WIDTH ? 344 : 192;
-  const styles = makeStyles(colors, imageSize);
+  const pagePadding = usePagePadding();
+  const hasSideBack = useHasSideRailActions();
+  const styles = makeStyles(colors, imageSize, pagePadding);
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -210,19 +215,21 @@ export const LoginPage: React.FC = () => {
   return (
     <SafeLayout>
       <View style={styles.page}>
-        <Button
-          color="primary"
-          variant="text"
-          isHapticFeedback
-          icon={<CaretLeftIcon size={32} />}
-          onClick={goBack}
-          style={{
-            position: "absolute",
-            left: 16,
-            top: 16,
-            zIndex: 1,
-          }}
-        />
+        {!hasSideBack && (
+          <Button
+            color="primary"
+            variant="text"
+            isHapticFeedback
+            icon={<CaretLeftIcon size={32} />}
+            onClick={goBack}
+            style={{
+              position: "absolute",
+              left: 16,
+              top: 16,
+              zIndex: 1,
+            }}
+          />
+        )}
 
         <ScrollView
           style={styles.scroll}
@@ -366,11 +373,13 @@ export const LoginPage: React.FC = () => {
           />
         </ScrollView>
       </View>
+
+      <SideRailBackButton onPress={goBack} />
     </SafeLayout>
   );
 };
 
-const makeStyles = (colors: ColorsType, imageSize: number) =>
+const makeStyles = (colors: ColorsType, imageSize: number, pagePadding: number) =>
   StyleSheet.create({
     page: {
       width: "100%",
@@ -382,8 +391,8 @@ const makeStyles = (colors: ColorsType, imageSize: number) =>
     content: {
       paddingTop: 8,
       paddingBottom: 16,
-      paddingLeft: 16,
-      paddingRight: 16,
+      paddingLeft: pagePadding,
+      paddingRight: pagePadding,
 
       flexGrow: 1,
       alignItems: "center",

@@ -5,6 +5,7 @@ import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
 import { useModal } from "@nihongo/core/shared/contexts/modal/modal-context";
 import { ConfirmationModal } from "@nihongo/core/shared/contexts/modal/presets/confirmation";
 import { useStudyActivity } from "@nihongo/core/shared/contexts/study-activity/study-activity-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import SafeLayout from "@nihongo/core/shared/ui/layouts/safe-layout";
 import LinearProgressBar from "@nihongo/core/shared/ui/progressbar/linear/linear-progress-bar";
 import { useNavigation } from "@react-navigation/native";
@@ -25,6 +26,7 @@ interface LessonProps {
 }
 
 const Lesson: React.FC<LessonProps> = ({ lesson }) => {
+  const pagePadding = usePagePadding();
   const { completeLesson } = useLessonsContext();
   const { registerStudyDay } = useStudyActivity();
   const { t } = useTranslation();
@@ -110,8 +112,8 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
     <SafeLayout style={styles.container}>
       <View
         style={{
-          paddingLeft: 16,
-          paddingRight: 16,
+          paddingLeft: pagePadding,
+          paddingRight: pagePadding,
         }}
       >
         {currentScreen?.title !== "finish" && (
@@ -130,7 +132,7 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
       </View>
 
       {currentScreen && currentScreen?.title === "finish" && (
-        <View style={[styles.container, { paddingLeft: 16, paddingRight: 16 }]}>
+        <View style={[styles.container, { paddingLeft: pagePadding, paddingRight: pagePadding }]}>
           <FinishScreen next={onComplete} retry={onRetry} />
         </View>
       )}

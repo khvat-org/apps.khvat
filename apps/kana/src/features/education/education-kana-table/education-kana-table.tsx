@@ -3,6 +3,7 @@ import React, { useMemo } from "react";
 import { dakuon, handakuon, base, yoon, ILetter } from "@nihongo/core/shared/data/lettersTable";
 import useGetRomaji from "@nihongo/core/shared/lib/i18n/hooks/useKey";
 import { useContentDimensions } from "@nihongo/core/shared/lib/layout/use-content-dimensions";
+import { PAGE_PADDING, usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { View, StyleSheet } from "react-native";
 
 import Cell from "@/entities/kana/cell/cell";
@@ -35,7 +36,9 @@ const EducationKanaTable: React.FC<EducationKanaTableProps> = ({
     }
   }, [type]);
 
+  const pagePadding = usePagePadding();
   const { width, height } = useContentDimensions();
+  const cellScreenWidth = width - (pagePadding - PAGE_PADDING) * 2;
 
   const { statistics, isEnabled: isEnabledStats } = useStatisticsContext();
   const levels = statistics[kana];
@@ -49,13 +52,19 @@ const EducationKanaTable: React.FC<EducationKanaTableProps> = ({
   const hasColumnHeader = letters && letters.length > 1;
 
   return (
-    <View style={[styles.container, hasColumnHeader && styles.containerWithColumnHeader]}>
+    <View
+      style={[
+        styles.container,
+        { paddingLeft: pagePadding, paddingRight: pagePadding },
+        hasColumnHeader && styles.containerWithColumnHeader,
+      ]}
+    >
       {hasColumnHeader && (
         <View style={styles.rowButtons}>
           <Cell
             key={"0/start_of_line"}
             isLong={false}
-            screenWidth={width}
+            screenWidth={cellScreenWidth}
             screenHeight={height}
             kana={kana}
             cell={null}
@@ -65,7 +74,7 @@ const EducationKanaTable: React.FC<EducationKanaTableProps> = ({
             <Cell
               key={`${cellIndex}/start_of_column`}
               isLong={letters[0].length === 3}
-              screenWidth={width}
+              screenWidth={cellScreenWidth}
               screenHeight={height}
               kana={kana}
               cell={null}
@@ -81,7 +90,7 @@ const EducationKanaTable: React.FC<EducationKanaTableProps> = ({
               <Cell
                 key={`${rowIndex}/start_of_line`}
                 isLong={false}
-                screenWidth={width}
+                screenWidth={cellScreenWidth}
                 screenHeight={height}
                 kana={kana}
                 cell={null}
@@ -100,7 +109,7 @@ const EducationKanaTable: React.FC<EducationKanaTableProps> = ({
                 key={`${rowIndex}/${cellIndex}`}
                 onPress={() => cell && onClick(cell.id)}
                 isLong={row.length === 3 && row[0].id !== "9e4e7b1b-2b3c-467d-8c24-be83a4ae5a89"}
-                screenWidth={width}
+                screenWidth={cellScreenWidth}
                 screenHeight={height}
                 kana={kana}
                 cell={cell}
@@ -117,8 +126,6 @@ export default EducationKanaTable;
 
 const styles = StyleSheet.create({
   container: {
-    paddingLeft: 16,
-    paddingRight: 16,
     paddingBottom: 20,
     gap: 9,
     width: "100%",

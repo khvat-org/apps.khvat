@@ -1,5 +1,6 @@
 import React from "react";
 
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { StyleProp, StyleSheet, TextStyle, View } from "react-native";
 import { Text } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -29,7 +30,8 @@ const PageTitle: React.FC<PageTitleProps> = ({
 }) => {
   const { colors } = useThemeContext();
   const insets = useSafeAreaInsets();
-  const sidePadding = padded ? 16 : 0;
+  const pagePadding = usePagePadding();
+  const sidePadding = padded ? pagePadding : 0;
 
   return (
     <View

@@ -1,6 +1,7 @@
 import React, { useCallback, useMemo } from "react";
 
 import { ColorsType, useThemeContext } from "@nihongo/core/shared/contexts/theme/theme-context";
+import { usePagePadding } from "@nihongo/core/shared/lib/layout/use-page-padding";
 import { Typography } from "@nihongo/core/shared/typography";
 import { ModalHeader } from "@nihongo/core/shared/ui/modal-header/modal-header";
 import { useNavigation } from "@react-navigation/native";
@@ -19,7 +20,8 @@ const SectionsPage: React.FC = () => {
   const navigation = useNavigation<SectionsNavProp>();
 
   const { colors } = useThemeContext();
-  const styles = useMemo(() => makeStyles(colors), [colors]);
+  const pagePadding = usePagePadding();
+  const styles = useMemo(() => makeStyles(colors, pagePadding), [colors, pagePadding]);
 
   const { t } = useTranslation();
   const insets = useSafeAreaInsets();
@@ -79,7 +81,7 @@ const SectionsPage: React.FC = () => {
   );
 };
 
-const makeStyles = (colors: ColorsType) =>
+const makeStyles = (colors: ColorsType, pagePadding: number) =>
   StyleSheet.create({
     container: {
       flex: 1,
@@ -88,7 +90,7 @@ const makeStyles = (colors: ColorsType) =>
     },
     content: {
       gap: 4,
-      paddingHorizontal: 16,
+      paddingHorizontal: pagePadding,
     },
     row: {
       flexDirection: "row",
