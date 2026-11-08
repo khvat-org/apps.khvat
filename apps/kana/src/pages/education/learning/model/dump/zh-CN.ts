@@ -221,7 +221,7 @@ export const dumpZhCN = {
               ],
               id: "542f6e52-3d80-5742-b8fd-befcba35dd4d",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -275,7 +275,7 @@ export const dumpZhCN = {
               ],
               id: "a44dc083-1136-5042-be50-1b78fec25811",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -347,7 +347,7 @@ export const dumpZhCN = {
               ],
               id: "cb675fa7-a45c-5b99-b736-67baecd5e05c",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -456,7 +456,7 @@ export const dumpZhCN = {
               ],
               id: "95c2e261-d967-5733-9adc-903da34a46e5",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -528,7 +528,7 @@ export const dumpZhCN = {
               ],
               id: "9623f84d-09ca-5efe-b94d-96bb0ac04982",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -748,7 +748,7 @@ export const dumpZhCN = {
               ],
               id: "37b75297-e8d1-568c-b660-37de9f9c6bd5",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -802,7 +802,7 @@ export const dumpZhCN = {
               ],
               id: "b020138c-1e26-5873-8cbb-bbe5834f9230",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -874,7 +874,7 @@ export const dumpZhCN = {
               ],
               id: "a13bc18d-1e0e-5b55-a67e-7271f0b3c350",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -983,7 +983,7 @@ export const dumpZhCN = {
               ],
               id: "38e2acb6-4def-5592-827b-d16262072fe1",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -1055,7 +1055,7 @@ export const dumpZhCN = {
               ],
               id: "2b8efe3f-89f1-51fa-90f7-3f6eaf4aae1a",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -1275,7 +1275,7 @@ export const dumpZhCN = {
               ],
               id: "4f5da47f-40e9-5720-931c-f325dae8e8f2",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -1329,7 +1329,7 @@ export const dumpZhCN = {
               ],
               id: "e4090209-cee6-5ddf-a75c-ad1012f1ae88",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -1401,7 +1401,7 @@ export const dumpZhCN = {
               ],
               id: "3f86dafb-87bf-5e07-9231-fd50ad779617",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -1510,7 +1510,7 @@ export const dumpZhCN = {
               ],
               id: "7c986498-08f1-5da5-a153-b9af71ab1531",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -1582,7 +1582,7 @@ export const dumpZhCN = {
               ],
               id: "499dff21-2643-5be9-9788-0507968139cf",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -1802,7 +1802,7 @@ export const dumpZhCN = {
               ],
               id: "7eca91e4-59fe-511d-bc31-a6f2e27b8746",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -1856,7 +1856,7 @@ export const dumpZhCN = {
               ],
               id: "2ab838cd-bda8-5bf4-b7fc-a48208867671",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -1928,7 +1928,7 @@ export const dumpZhCN = {
               ],
               id: "62b49342-c837-54a3-83ec-a0accb25ba41",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -2037,7 +2037,7 @@ export const dumpZhCN = {
               ],
               id: "f8b4780a-6ffc-57ff-b773-9b0d2864c41d",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -2109,7 +2109,7 @@ export const dumpZhCN = {
               ],
               id: "a081b4ee-4bd6-5dc4-9c77-f8d852221e43",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -2329,7 +2329,7 @@ export const dumpZhCN = {
               ],
               id: "f8d24dfb-2466-561f-ae26-22d943648766",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -2383,7 +2383,7 @@ export const dumpZhCN = {
               ],
               id: "ffb292dd-f9e1-5db4-b048-e52f599d97e6",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -2455,7 +2455,7 @@ export const dumpZhCN = {
               ],
               id: "0ddbf104-ac7c-59bc-bc1d-d43e2b512f86",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -2564,7 +2564,7 @@ export const dumpZhCN = {
               ],
               id: "97902ba6-8023-5ac9-83df-7f58c3527d5c",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -2636,7 +2636,7 @@ export const dumpZhCN = {
               ],
               id: "8de8c5a6-30c4-5119-a88a-888686788f9c",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -2856,7 +2856,7 @@ export const dumpZhCN = {
               ],
               id: "f64750bc-7829-5f8d-b5e2-94d100c93969",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -2910,7 +2910,7 @@ export const dumpZhCN = {
               ],
               id: "debec315-b010-548a-a032-c54681f7e689",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -2982,7 +2982,7 @@ export const dumpZhCN = {
               ],
               id: "8c1717c0-0a8a-5009-b17f-3648d35b33c9",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -3091,7 +3091,7 @@ export const dumpZhCN = {
               ],
               id: "09a27429-64ba-5dd2-9616-f9213822d339",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -3163,7 +3163,7 @@ export const dumpZhCN = {
               ],
               id: "3f2e8aaf-6dea-570e-bf5c-b9b1db413c50",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -3383,7 +3383,7 @@ export const dumpZhCN = {
               ],
               id: "c32b3ba1-49a6-500c-a0a8-4e7b39708fd7",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -3437,7 +3437,7 @@ export const dumpZhCN = {
               ],
               id: "63bf7b6c-9ceb-54bf-9936-71a9be4a5e32",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -3509,7 +3509,7 @@ export const dumpZhCN = {
               ],
               id: "803a6c94-8008-5827-81e6-42a5c50f643f",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -3618,7 +3618,7 @@ export const dumpZhCN = {
               ],
               id: "d1f3bffb-c501-5646-a142-667186bb9b08",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -3690,7 +3690,7 @@ export const dumpZhCN = {
               ],
               id: "5bfa023e-c4d7-57e3-a86a-e96225400d7f",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -3910,7 +3910,7 @@ export const dumpZhCN = {
               ],
               id: "b0ade645-7fa2-55cd-9bc8-af8f3ae9f19c",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -3964,7 +3964,7 @@ export const dumpZhCN = {
               ],
               id: "c455e0b5-c9af-534b-84b6-6eca1c08f724",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -4036,7 +4036,7 @@ export const dumpZhCN = {
               ],
               id: "32ec2acc-572f-5a19-959a-99d5ec08422c",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -4311,7 +4311,7 @@ export const dumpZhCN = {
               ],
               id: "6c80d1bc-0d40-50ca-a811-449e466bea32",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -4365,7 +4365,7 @@ export const dumpZhCN = {
               ],
               id: "b035557a-5c17-5bf5-8eed-beaea0c6e761",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -4437,7 +4437,7 @@ export const dumpZhCN = {
               ],
               id: "cd352745-7640-53ec-9b6c-64235c592d67",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -4546,7 +4546,7 @@ export const dumpZhCN = {
               ],
               id: "8e6f2c7a-a754-55f6-b9d8-dd25e11631e1",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -4618,7 +4618,7 @@ export const dumpZhCN = {
               ],
               id: "d8b10753-d4f3-56e9-9f1c-f122e62cedaf",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -4838,7 +4838,7 @@ export const dumpZhCN = {
               ],
               id: "005b9780-53a7-55c3-8046-71ed83f17488",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -4892,7 +4892,7 @@ export const dumpZhCN = {
               ],
               id: "8acfceb7-3e6b-563c-badb-05bb1b16bb1a",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -4964,7 +4964,7 @@ export const dumpZhCN = {
               ],
               id: "40e79663-b390-5de8-bd1d-85dc22a950fd",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -5246,7 +5246,7 @@ export const dumpZhCN = {
               ],
               id: "5539d523-7e40-530e-89c2-7c87f6b521a7",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -5300,7 +5300,7 @@ export const dumpZhCN = {
               ],
               id: "5c3107db-3b84-5fc0-9f3d-67afa8940c0f",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -5372,7 +5372,7 @@ export const dumpZhCN = {
               ],
               id: "42051da5-b58b-50c5-8652-f0e1f79339ac",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -5481,7 +5481,7 @@ export const dumpZhCN = {
               ],
               id: "ab59fd0a-192a-5d60-a036-756496050531",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -5553,7 +5553,7 @@ export const dumpZhCN = {
               ],
               id: "ad2d52d2-5f88-5095-b9bd-c09e3701ce7c",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -5773,7 +5773,7 @@ export const dumpZhCN = {
               ],
               id: "f4838206-8b61-575b-8840-d1a7f125d4c5",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -5827,7 +5827,7 @@ export const dumpZhCN = {
               ],
               id: "8b65f7d6-3641-58ec-a1ee-75fd1f10be91",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -5899,7 +5899,7 @@ export const dumpZhCN = {
               ],
               id: "ea7e0317-086a-5f4c-8faa-4892632c2926",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -6008,7 +6008,7 @@ export const dumpZhCN = {
               ],
               id: "ac350b4b-2bf7-531d-bde7-c49e4a5749fb",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -6080,7 +6080,7 @@ export const dumpZhCN = {
               ],
               id: "201646b2-f209-59ea-acaf-a48fe6c5270c",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -6300,7 +6300,7 @@ export const dumpZhCN = {
               ],
               id: "70690c60-c35b-55fd-af02-a0b05dfd7c0d",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -6354,7 +6354,7 @@ export const dumpZhCN = {
               ],
               id: "e2b7892e-3a23-5200-989c-010b13a3c732",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -6426,7 +6426,7 @@ export const dumpZhCN = {
               ],
               id: "d3cc804e-d5ea-5af0-8258-5e5dbb08172b",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -6535,7 +6535,7 @@ export const dumpZhCN = {
               ],
               id: "d0cff95d-76e5-5a82-91e3-dec1b86ae240",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -6607,7 +6607,7 @@ export const dumpZhCN = {
               ],
               id: "ab0a7509-1891-5301-81a1-c1d3fa481f31",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -6827,7 +6827,7 @@ export const dumpZhCN = {
               ],
               id: "7a22d659-7f64-54d2-9720-5dfe2d6c31ab",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -6881,7 +6881,7 @@ export const dumpZhCN = {
               ],
               id: "0d330822-d282-56eb-b597-179657552ae7",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -6953,7 +6953,7 @@ export const dumpZhCN = {
               ],
               id: "e9488864-ee2d-59d8-a478-0db989c5966b",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -7062,7 +7062,7 @@ export const dumpZhCN = {
               ],
               id: "a9fa1193-33ca-57aa-9101-a7971d9c98b8",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -7134,7 +7134,7 @@ export const dumpZhCN = {
               ],
               id: "b5c22905-2316-5581-8e65-f1b9ecdeb09a",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -7354,7 +7354,7 @@ export const dumpZhCN = {
               ],
               id: "45827647-1bc1-5196-9ed3-eea83b310bf1",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -7408,7 +7408,7 @@ export const dumpZhCN = {
               ],
               id: "6a85db4a-4499-5c24-958c-005ba25f1366",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -7480,7 +7480,7 @@ export const dumpZhCN = {
               ],
               id: "84579a39-d25e-5184-ae99-455990e96d04",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -7589,7 +7589,7 @@ export const dumpZhCN = {
               ],
               id: "1b5181d3-cfbb-55af-bc2d-17635c2a5cee",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -7661,7 +7661,7 @@ export const dumpZhCN = {
               ],
               id: "7bf1d9fd-5dd4-554c-b181-05c905485edb",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -7881,7 +7881,7 @@ export const dumpZhCN = {
               ],
               id: "2ee1ccd8-7a7d-5963-a341-2d7f54f533bb",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -7935,7 +7935,7 @@ export const dumpZhCN = {
               ],
               id: "eb755290-8a5b-5f41-a39c-7bd5d8370cb8",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -8007,7 +8007,7 @@ export const dumpZhCN = {
               ],
               id: "74fe70de-0025-553a-ae3b-504cafb9bea6",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -8116,7 +8116,7 @@ export const dumpZhCN = {
               ],
               id: "675bef57-b99f-5df2-bb12-9926113c6874",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -8188,7 +8188,7 @@ export const dumpZhCN = {
               ],
               id: "0db12618-577f-5ffc-9d1e-dd279eb774ef",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -8408,7 +8408,7 @@ export const dumpZhCN = {
               ],
               id: "af513fa2-b206-59e4-ab52-3cc6deccf72d",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -8462,7 +8462,7 @@ export const dumpZhCN = {
               ],
               id: "211b9f38-1d5c-5765-b9ef-3f2a4522f171",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -8534,7 +8534,7 @@ export const dumpZhCN = {
               ],
               id: "bab1fdac-ef70-5ca1-9a1c-8e8b9be1ecfc",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -8643,7 +8643,7 @@ export const dumpZhCN = {
               ],
               id: "0b0c1545-2d11-5600-a040-e675e162c636",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -8715,7 +8715,7 @@ export const dumpZhCN = {
               ],
               id: "5aea181b-3d89-550f-860f-a901f093bca4",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -8935,7 +8935,7 @@ export const dumpZhCN = {
               ],
               id: "82ccac56-98a1-5f46-a210-db3f8c0ecdc8",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -8989,7 +8989,7 @@ export const dumpZhCN = {
               ],
               id: "4b8e7336-778e-5b7e-a952-e74e66498b7c",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -9061,7 +9061,7 @@ export const dumpZhCN = {
               ],
               id: "2e7342ae-b3c8-5a70-b4b3-bceef251deeb",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -9336,7 +9336,7 @@ export const dumpZhCN = {
               ],
               id: "15ff6df4-7da9-5c49-b53c-55953a5c12d9",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -9390,7 +9390,7 @@ export const dumpZhCN = {
               ],
               id: "26169a2f-e60c-5c87-a4fc-9ccdb1028b9d",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -9462,7 +9462,7 @@ export const dumpZhCN = {
               ],
               id: "32f5d1c8-a894-562c-a629-f9226dde0f55",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -9571,7 +9571,7 @@ export const dumpZhCN = {
               ],
               id: "b8503c38-45f0-57e2-8baa-73a8491dad15",
               screen_order: 13,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -9643,7 +9643,7 @@ export const dumpZhCN = {
               ],
               id: "64c3a13f-4e3f-5ee0-86a1-ac56c4e8cf59",
               screen_order: 17,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -9863,7 +9863,7 @@ export const dumpZhCN = {
               ],
               id: "0638d748-9833-553d-850f-627b072e310f",
               screen_order: 1,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -9917,7 +9917,7 @@ export const dumpZhCN = {
               ],
               id: "c2325ac3-5038-5a15-a718-06fe02635e3b",
               screen_order: 4,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [
@@ -9989,7 +9989,7 @@ export const dumpZhCN = {
               ],
               id: "9523ce30-e53f-5af6-9bf6-2493431dc04c",
               screen_order: 8,
-              title: "记住这个音节的笔顺和发音。",
+              title: "记住笔顺和发音。",
             },
             {
               blocks: [

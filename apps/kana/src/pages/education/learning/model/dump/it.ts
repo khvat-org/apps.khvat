@@ -225,7 +225,7 @@ export const dumpIt = {
               ],
               id: "0bdc05c7-3791-560b-859d-251398d37051",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -279,7 +279,7 @@ export const dumpIt = {
               ],
               id: "bdad1d4b-9049-50d1-b3dd-8d7b0d255e29",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -351,7 +351,7 @@ export const dumpIt = {
               ],
               id: "f9d58133-f6fd-56c5-956e-1a865c498b6a",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -460,7 +460,7 @@ export const dumpIt = {
               ],
               id: "02c6a69c-3c31-54f5-836d-e297e200be73",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -532,7 +532,7 @@ export const dumpIt = {
               ],
               id: "ae8b2ef3-f25c-570f-b580-db7ab90bc9e8",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -752,7 +752,7 @@ export const dumpIt = {
               ],
               id: "230535c9-5982-5134-8915-2821177150f3",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -806,7 +806,7 @@ export const dumpIt = {
               ],
               id: "1d344c10-1d41-5dd2-8395-2ddb3d67db36",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -878,7 +878,7 @@ export const dumpIt = {
               ],
               id: "660eab32-018f-5ca0-9094-7935087d399d",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -987,7 +987,7 @@ export const dumpIt = {
               ],
               id: "cd741211-bb36-540d-be83-5a2faa60572f",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -1059,7 +1059,7 @@ export const dumpIt = {
               ],
               id: "0f94b4a5-2985-5b1e-9317-5dbf60d8f2cf",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -1279,7 +1279,7 @@ export const dumpIt = {
               ],
               id: "c70505e9-819f-528a-bcac-5254a1aebd57",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -1333,7 +1333,7 @@ export const dumpIt = {
               ],
               id: "69363461-d66f-539e-acbe-47468a429f31",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -1405,7 +1405,7 @@ export const dumpIt = {
               ],
               id: "c96c49d2-192c-5278-8b2c-514b3b6a9f5f",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -1514,7 +1514,7 @@ export const dumpIt = {
               ],
               id: "df587825-cf34-546f-90ce-ff9f8bbe3dc8",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -1586,7 +1586,7 @@ export const dumpIt = {
               ],
               id: "e2212ea4-3ffa-5a1b-9259-166c8ae26383",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -1806,7 +1806,7 @@ export const dumpIt = {
               ],
               id: "f563ce10-2b2f-5877-8ffa-5fed5dafc2ac",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -1860,7 +1860,7 @@ export const dumpIt = {
               ],
               id: "41c69ff7-54da-58c3-b0a7-40294238cf1b",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -1932,7 +1932,7 @@ export const dumpIt = {
               ],
               id: "2cf01b33-76e9-514c-a090-9a196c3bee02",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -2041,7 +2041,7 @@ export const dumpIt = {
               ],
               id: "8f5bab4c-c94d-5687-a794-63a6e4d98e9e",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -2113,7 +2113,7 @@ export const dumpIt = {
               ],
               id: "390e85d3-c8dd-5cdb-a2f1-bfa034a0bb4f",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -2333,7 +2333,7 @@ export const dumpIt = {
               ],
               id: "fb35871a-6474-598f-857a-94efc74edb54",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -2387,7 +2387,7 @@ export const dumpIt = {
               ],
               id: "004a6d43-f14c-5918-875d-e71201cd64dd",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -2459,7 +2459,7 @@ export const dumpIt = {
               ],
               id: "80dd41a9-4845-532d-a3bf-f4f06cee0ec4",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -2568,7 +2568,7 @@ export const dumpIt = {
               ],
               id: "61362d0e-2524-5c33-af16-b6136f7d9e01",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -2640,7 +2640,7 @@ export const dumpIt = {
               ],
               id: "8733743f-e200-5466-aad7-71aa4098b39e",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -2860,7 +2860,7 @@ export const dumpIt = {
               ],
               id: "10c8feb0-dfd0-58c0-8fc7-df7b58a1a597",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -2914,7 +2914,7 @@ export const dumpIt = {
               ],
               id: "4b0cdf02-1ba8-5a20-b5a1-5d0d88a630fd",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -2986,7 +2986,7 @@ export const dumpIt = {
               ],
               id: "621e6c6a-d026-56ac-9bbe-befdf1c0301e",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -3095,7 +3095,7 @@ export const dumpIt = {
               ],
               id: "fe5e4dec-0501-5112-9965-6e403bd004fc",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -3167,7 +3167,7 @@ export const dumpIt = {
               ],
               id: "e163efbf-3461-5207-9910-467a8eba0498",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -3387,7 +3387,7 @@ export const dumpIt = {
               ],
               id: "070a5501-8eb1-5899-aa88-b3d2c5210996",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -3441,7 +3441,7 @@ export const dumpIt = {
               ],
               id: "39034b64-b249-5f07-ae61-8406a46a885c",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -3513,7 +3513,7 @@ export const dumpIt = {
               ],
               id: "01b6992b-9bff-57d4-965b-b84c623235a4",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -3622,7 +3622,7 @@ export const dumpIt = {
               ],
               id: "28ae4b3b-a7f7-541e-b19b-11fb91aae916",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -3694,7 +3694,7 @@ export const dumpIt = {
               ],
               id: "fb1272f5-2270-55f0-90f6-24fbb68740e0",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -3914,7 +3914,7 @@ export const dumpIt = {
               ],
               id: "df6a15a4-3d0f-5a13-8c04-b18682db3837",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -3968,7 +3968,7 @@ export const dumpIt = {
               ],
               id: "cdece0b9-6532-531e-9ddb-7225b29f949d",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -4040,7 +4040,7 @@ export const dumpIt = {
               ],
               id: "5b918bb2-8635-5b5c-a5a4-8936d1831ac2",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -4315,7 +4315,7 @@ export const dumpIt = {
               ],
               id: "c10fbfa2-0ca7-583f-8c38-fcb87c25a2f4",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -4369,7 +4369,7 @@ export const dumpIt = {
               ],
               id: "95542f43-ed88-5022-8262-7278627825cd",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -4441,7 +4441,7 @@ export const dumpIt = {
               ],
               id: "335beebc-312e-5b4f-bf19-3360734b7625",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -4550,7 +4550,7 @@ export const dumpIt = {
               ],
               id: "0fafb4eb-d279-5029-9667-3ce9401d88a2",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -4622,7 +4622,7 @@ export const dumpIt = {
               ],
               id: "c667a6a5-b73b-564a-9ea1-b531354d8257",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -4842,7 +4842,7 @@ export const dumpIt = {
               ],
               id: "739c32d6-72d7-5375-8a49-df12a28c75bf",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -4896,7 +4896,7 @@ export const dumpIt = {
               ],
               id: "ea8373da-7721-5787-8381-02fd37441a15",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -4968,7 +4968,7 @@ export const dumpIt = {
               ],
               id: "f3dc27a6-431f-501c-8896-b994f4a9e2dd",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -5250,7 +5250,7 @@ export const dumpIt = {
               ],
               id: "cf8a4419-2dac-59a1-806e-4e5c7372403f",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -5304,7 +5304,7 @@ export const dumpIt = {
               ],
               id: "a1be80f1-626c-5f85-b49d-5459b6831346",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -5376,7 +5376,7 @@ export const dumpIt = {
               ],
               id: "dfc8d8a0-b4c2-53b2-a675-a18693a3a904",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -5485,7 +5485,7 @@ export const dumpIt = {
               ],
               id: "5e241c8e-388e-5df1-8361-10e39b178e32",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -5557,7 +5557,7 @@ export const dumpIt = {
               ],
               id: "6be2250e-29ff-5dc2-9148-6adda6be43f8",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -5777,7 +5777,7 @@ export const dumpIt = {
               ],
               id: "acf86d15-03dd-5721-b375-885eb69914fb",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -5831,7 +5831,7 @@ export const dumpIt = {
               ],
               id: "a766411d-33d2-5eba-9178-5b0aab53e5b0",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -5903,7 +5903,7 @@ export const dumpIt = {
               ],
               id: "be6ab9b1-0bb4-58df-93a4-4c584f25b364",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -6012,7 +6012,7 @@ export const dumpIt = {
               ],
               id: "535505b8-efff-5ae9-8779-f7fa27f1ccaa",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -6084,7 +6084,7 @@ export const dumpIt = {
               ],
               id: "7dd8fd62-f77a-59a1-9087-700ba4977d56",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -6304,7 +6304,7 @@ export const dumpIt = {
               ],
               id: "b7e01828-d598-504b-b8c9-4331b5601c43",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -6358,7 +6358,7 @@ export const dumpIt = {
               ],
               id: "15ae94c9-3b46-56b5-ac52-27b0cf92c2cd",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -6430,7 +6430,7 @@ export const dumpIt = {
               ],
               id: "a5330e6e-abaf-5dec-8de3-54f3d433c065",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -6539,7 +6539,7 @@ export const dumpIt = {
               ],
               id: "22a7a071-7918-5fcc-bd6d-b0c0fc455f21",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -6611,7 +6611,7 @@ export const dumpIt = {
               ],
               id: "054d1c94-29ee-58f9-9fe5-389750bca48d",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -6831,7 +6831,7 @@ export const dumpIt = {
               ],
               id: "36e6e055-7f25-53f3-b9ff-54e123d996f1",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -6885,7 +6885,7 @@ export const dumpIt = {
               ],
               id: "69fd301b-6df7-586b-ab3e-ebd88c6b7865",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -6957,7 +6957,7 @@ export const dumpIt = {
               ],
               id: "1f6a2164-3f6b-5d3b-9d53-32112e4d6cc4",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -7066,7 +7066,7 @@ export const dumpIt = {
               ],
               id: "becbc760-1109-5899-a0d8-de6166d77b87",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -7138,7 +7138,7 @@ export const dumpIt = {
               ],
               id: "d59e2b2e-855e-55f4-88da-bcb6e4f8a6f4",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -7358,7 +7358,7 @@ export const dumpIt = {
               ],
               id: "3b215dab-2af9-56ec-a24d-ea035a0cadea",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -7412,7 +7412,7 @@ export const dumpIt = {
               ],
               id: "e0209bb5-5f20-5898-ac94-8ba5a8adc7e1",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -7484,7 +7484,7 @@ export const dumpIt = {
               ],
               id: "eb313648-86de-5c5d-a0a7-8dc3897a8306",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -7593,7 +7593,7 @@ export const dumpIt = {
               ],
               id: "ac2c7b36-872e-5ad9-9cf6-fdf0dc99d865",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -7665,7 +7665,7 @@ export const dumpIt = {
               ],
               id: "f2f3a31c-85d0-52be-b6da-644bdb7d5544",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -7885,7 +7885,7 @@ export const dumpIt = {
               ],
               id: "88e1bfa3-b5bb-5944-bb90-83c1bd01b115",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -7939,7 +7939,7 @@ export const dumpIt = {
               ],
               id: "97676263-307a-5509-a770-96f45319ae5b",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -8011,7 +8011,7 @@ export const dumpIt = {
               ],
               id: "1965ab90-36fd-5ae4-84f7-33e8f3573ad2",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -8120,7 +8120,7 @@ export const dumpIt = {
               ],
               id: "a268f200-fea9-532b-af9c-cdf1eee3a713",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -8192,7 +8192,7 @@ export const dumpIt = {
               ],
               id: "cd811438-ab1a-50b3-80b3-b71f47104037",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -8412,7 +8412,7 @@ export const dumpIt = {
               ],
               id: "181e7473-6d4a-5454-9d90-8409338fd46d",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -8466,7 +8466,7 @@ export const dumpIt = {
               ],
               id: "7dbd4516-d889-5612-8933-984daaa859ad",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -8538,7 +8538,7 @@ export const dumpIt = {
               ],
               id: "ede05e26-cbe4-55b3-afc7-956127781851",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -8647,7 +8647,7 @@ export const dumpIt = {
               ],
               id: "9c3388c0-dc3b-5056-a77d-75d179e23cd7",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -8719,7 +8719,7 @@ export const dumpIt = {
               ],
               id: "1f244e92-d650-5d15-a617-d69ba41a0d7e",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -8939,7 +8939,7 @@ export const dumpIt = {
               ],
               id: "42cf7b33-6180-5f51-bbae-096e28abb109",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -8993,7 +8993,7 @@ export const dumpIt = {
               ],
               id: "7f7d2e2c-9532-521a-b515-3c4ff4c5aeed",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -9065,7 +9065,7 @@ export const dumpIt = {
               ],
               id: "d3bfadb5-1b88-5b94-9fa9-d9f88aba0344",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -9340,7 +9340,7 @@ export const dumpIt = {
               ],
               id: "02d4b477-65c3-5bb4-a559-4af2517493f8",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -9394,7 +9394,7 @@ export const dumpIt = {
               ],
               id: "61ab6149-c921-58bf-8bd8-546e2a10d5ab",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -9466,7 +9466,7 @@ export const dumpIt = {
               ],
               id: "92047fe2-8d4b-592b-8988-fe2d74813a04",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -9575,7 +9575,7 @@ export const dumpIt = {
               ],
               id: "7164ae50-c58c-5895-bf27-86c2343a4428",
               screen_order: 13,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -9647,7 +9647,7 @@ export const dumpIt = {
               ],
               id: "4745a51c-e3a6-5582-8bb3-90600f2988b6",
               screen_order: 17,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -9867,7 +9867,7 @@ export const dumpIt = {
               ],
               id: "741bfef0-521d-50a3-894a-d6f736290ff8",
               screen_order: 1,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -9921,7 +9921,7 @@ export const dumpIt = {
               ],
               id: "553fde35-90a1-5ffb-b4a5-fcf88ea2fe57",
               screen_order: 4,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [
@@ -9993,7 +9993,7 @@ export const dumpIt = {
               ],
               id: "ebd6b801-397c-5f10-84e9-ba95e18c9e0a",
               screen_order: 8,
-              title: "Ricorda l’ordine dei tratti e la pronuncia di questa sillaba.",
+              title: "Ricorda i tratti e il suono.",
             },
             {
               blocks: [

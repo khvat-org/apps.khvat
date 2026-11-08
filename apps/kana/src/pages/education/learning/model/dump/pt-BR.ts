@@ -225,7 +225,7 @@ export const dumpPtBR = {
               ],
               id: "2bc63dec-08c6-53c9-b695-ab59bf88e52d",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -279,7 +279,7 @@ export const dumpPtBR = {
               ],
               id: "5dbd07f0-8549-59a4-926f-b24c88c17883",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -351,7 +351,7 @@ export const dumpPtBR = {
               ],
               id: "f9b4f48c-0070-56db-b99b-1d682e9e1034",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -460,7 +460,7 @@ export const dumpPtBR = {
               ],
               id: "32a29455-8593-5dd5-b5b3-65260a4f576c",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -532,7 +532,7 @@ export const dumpPtBR = {
               ],
               id: "2c5c450f-1d9f-5ccd-9e52-6e57be169307",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -752,7 +752,7 @@ export const dumpPtBR = {
               ],
               id: "0e9e090e-6a9c-5176-a92a-399f249c00a0",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -806,7 +806,7 @@ export const dumpPtBR = {
               ],
               id: "ff11b34c-92ff-58f6-824f-ca46358c1847",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -878,7 +878,7 @@ export const dumpPtBR = {
               ],
               id: "0e312173-485a-557a-a3c2-284efc8d6a0c",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -987,7 +987,7 @@ export const dumpPtBR = {
               ],
               id: "07056321-4433-580c-85a0-1a94241cfe25",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -1059,7 +1059,7 @@ export const dumpPtBR = {
               ],
               id: "0ba83533-81b6-5117-85c4-1e673e5e9888",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -1279,7 +1279,7 @@ export const dumpPtBR = {
               ],
               id: "1e925f40-2603-5c7b-963f-bf4731b4e23b",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -1333,7 +1333,7 @@ export const dumpPtBR = {
               ],
               id: "50585d17-821c-55bf-ab47-62142eccd1c9",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -1405,7 +1405,7 @@ export const dumpPtBR = {
               ],
               id: "8f2238d7-18ee-5d94-8b15-f8e64171fcd7",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -1514,7 +1514,7 @@ export const dumpPtBR = {
               ],
               id: "31158cc6-a428-5909-8b2c-de0883c59702",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -1586,7 +1586,7 @@ export const dumpPtBR = {
               ],
               id: "0bc13db7-0482-5ae6-9c01-064a4719fec4",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -1806,7 +1806,7 @@ export const dumpPtBR = {
               ],
               id: "9afcd985-ef7c-5dc8-b389-f222c54c4303",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -1860,7 +1860,7 @@ export const dumpPtBR = {
               ],
               id: "1291f283-7cb1-50a7-8368-47a4e842b4c4",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -1932,7 +1932,7 @@ export const dumpPtBR = {
               ],
               id: "400def8d-ac72-5668-b15d-f36a4b30477b",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -2041,7 +2041,7 @@ export const dumpPtBR = {
               ],
               id: "13d4621d-1f69-5270-875a-2bc6ab17e143",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -2113,7 +2113,7 @@ export const dumpPtBR = {
               ],
               id: "5f23e493-e336-510a-8564-2ec0cc60d154",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -2333,7 +2333,7 @@ export const dumpPtBR = {
               ],
               id: "bfad5c6c-1736-5c22-b3f7-f0e28b14e846",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -2387,7 +2387,7 @@ export const dumpPtBR = {
               ],
               id: "eb222315-275a-552c-995e-397608c8dfff",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -2459,7 +2459,7 @@ export const dumpPtBR = {
               ],
               id: "ce1f0ffc-ede0-51e0-a646-45575969ec71",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -2568,7 +2568,7 @@ export const dumpPtBR = {
               ],
               id: "105830a3-9bf2-5f1a-ace0-eb709a0eda57",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -2640,7 +2640,7 @@ export const dumpPtBR = {
               ],
               id: "2593400c-21e6-5709-917d-082f01bf4987",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -2860,7 +2860,7 @@ export const dumpPtBR = {
               ],
               id: "0240254c-2b3e-50d0-a980-b31715d2f9b5",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -2914,7 +2914,7 @@ export const dumpPtBR = {
               ],
               id: "02dcc5a6-93c8-5465-81ab-fca0d8e4cdd3",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -2986,7 +2986,7 @@ export const dumpPtBR = {
               ],
               id: "c1675dc4-7d77-579b-8bd0-c37ce14f072a",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -3095,7 +3095,7 @@ export const dumpPtBR = {
               ],
               id: "e7333e36-ba16-5a3a-b548-5190cebe6e0c",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -3167,7 +3167,7 @@ export const dumpPtBR = {
               ],
               id: "a0b3c7b9-7753-5365-a516-09698caabc8b",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -3387,7 +3387,7 @@ export const dumpPtBR = {
               ],
               id: "9d6b02b8-9087-580f-8e76-a89dd0a01c44",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -3441,7 +3441,7 @@ export const dumpPtBR = {
               ],
               id: "9d4f608e-506f-52b0-9d1c-0b9dba3c8219",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -3513,7 +3513,7 @@ export const dumpPtBR = {
               ],
               id: "23c804e5-f849-5dd9-bb56-911946c3daa1",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -3622,7 +3622,7 @@ export const dumpPtBR = {
               ],
               id: "2794fb01-39e2-57ea-8c8f-90b6a7060e91",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -3694,7 +3694,7 @@ export const dumpPtBR = {
               ],
               id: "8fa57423-351e-5c5e-af1d-c814ce89cf71",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -3914,7 +3914,7 @@ export const dumpPtBR = {
               ],
               id: "52b10754-90c0-51aa-86a8-0d8e9d4e594f",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -3968,7 +3968,7 @@ export const dumpPtBR = {
               ],
               id: "c4d48b03-e0c1-5c46-b16f-3f56246c2b5c",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -4040,7 +4040,7 @@ export const dumpPtBR = {
               ],
               id: "a6ffc785-3a1b-539f-aa8c-dd8442023a4e",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -4315,7 +4315,7 @@ export const dumpPtBR = {
               ],
               id: "c565eed9-ec5f-5353-a561-62697ba2519a",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -4369,7 +4369,7 @@ export const dumpPtBR = {
               ],
               id: "8363f8df-f092-54cd-999c-cf60ad6cf4ce",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -4441,7 +4441,7 @@ export const dumpPtBR = {
               ],
               id: "eb7a48d2-cb01-5acb-b56d-3036f056ff62",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -4550,7 +4550,7 @@ export const dumpPtBR = {
               ],
               id: "6ac9ebda-a163-5fcb-b464-f90054a16f8f",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -4622,7 +4622,7 @@ export const dumpPtBR = {
               ],
               id: "0fe03539-3c3d-53df-986c-5c293a9705be",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -4842,7 +4842,7 @@ export const dumpPtBR = {
               ],
               id: "99983d38-1fc5-5f91-a3a5-ccce81989b0c",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -4896,7 +4896,7 @@ export const dumpPtBR = {
               ],
               id: "4b1aed55-2e39-5000-acae-9acb81719e34",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -4968,7 +4968,7 @@ export const dumpPtBR = {
               ],
               id: "781f52b1-4094-5f3d-ad57-c513bfa74b46",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -5250,7 +5250,7 @@ export const dumpPtBR = {
               ],
               id: "1589c9cf-f3df-5cdc-8b9d-33f3464896ac",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -5304,7 +5304,7 @@ export const dumpPtBR = {
               ],
               id: "4121fb68-f671-5f36-8d58-ae0ef1d8cc82",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -5376,7 +5376,7 @@ export const dumpPtBR = {
               ],
               id: "ccdc414e-a67c-5669-a575-b976dfecfe5c",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -5485,7 +5485,7 @@ export const dumpPtBR = {
               ],
               id: "afef9ff3-734d-51fe-b5e6-f35b96af7e36",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -5557,7 +5557,7 @@ export const dumpPtBR = {
               ],
               id: "0c784e10-7be7-5bf1-951f-2898f5191f65",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -5777,7 +5777,7 @@ export const dumpPtBR = {
               ],
               id: "989006d6-057b-5ef6-85ec-89a7232316cb",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -5831,7 +5831,7 @@ export const dumpPtBR = {
               ],
               id: "249d23f1-a9f0-503f-b17a-6cb02617b7a8",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -5903,7 +5903,7 @@ export const dumpPtBR = {
               ],
               id: "df2310cc-20ff-57d2-939b-ba6adaeec87d",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -6012,7 +6012,7 @@ export const dumpPtBR = {
               ],
               id: "f4e1014e-3714-5f9f-bb47-b91f63a4351a",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -6084,7 +6084,7 @@ export const dumpPtBR = {
               ],
               id: "4819b03c-313d-5d72-ad6a-5ab94b5be220",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -6304,7 +6304,7 @@ export const dumpPtBR = {
               ],
               id: "4e78b653-0e2b-55b5-8b08-2bb0306ee001",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -6358,7 +6358,7 @@ export const dumpPtBR = {
               ],
               id: "8e3cd646-5513-55cf-b215-fd77b8bd24c7",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -6430,7 +6430,7 @@ export const dumpPtBR = {
               ],
               id: "8eb4c80a-80cb-5d9d-ad2f-f9e46eb8a88c",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -6539,7 +6539,7 @@ export const dumpPtBR = {
               ],
               id: "916251b6-cdd9-5cf3-bbd9-96de6c188718",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -6611,7 +6611,7 @@ export const dumpPtBR = {
               ],
               id: "cc9bbadb-eaa5-509a-9c97-07c6d7726efb",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -6831,7 +6831,7 @@ export const dumpPtBR = {
               ],
               id: "e79d3085-7a56-56e2-a10d-b68122806067",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -6885,7 +6885,7 @@ export const dumpPtBR = {
               ],
               id: "5e0e1c59-23bd-5c35-b935-53231413c7ff",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -6957,7 +6957,7 @@ export const dumpPtBR = {
               ],
               id: "4201b640-7c87-5ba3-9942-7b011726609c",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -7066,7 +7066,7 @@ export const dumpPtBR = {
               ],
               id: "6c36a6b0-a61b-54cd-bebb-d5161fd4aff1",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -7138,7 +7138,7 @@ export const dumpPtBR = {
               ],
               id: "91c640e9-8f5b-5e31-8818-a4059f3297c7",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -7358,7 +7358,7 @@ export const dumpPtBR = {
               ],
               id: "3704839e-6a4d-5c54-906c-1037baad8b97",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -7412,7 +7412,7 @@ export const dumpPtBR = {
               ],
               id: "60b025ea-af0a-577a-b677-6428eb446fc6",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -7484,7 +7484,7 @@ export const dumpPtBR = {
               ],
               id: "19e3428d-605b-5369-901f-fb174b520977",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -7593,7 +7593,7 @@ export const dumpPtBR = {
               ],
               id: "4ec9a4e5-2143-54d7-97e6-49c7274192e7",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -7665,7 +7665,7 @@ export const dumpPtBR = {
               ],
               id: "c499f23b-c6cb-5547-8105-fdf112593799",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -7885,7 +7885,7 @@ export const dumpPtBR = {
               ],
               id: "51dd2f90-1a82-51c4-84b6-c4013d5780c8",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -7939,7 +7939,7 @@ export const dumpPtBR = {
               ],
               id: "6161154a-a664-5707-93d3-caa1c2418ffb",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -8011,7 +8011,7 @@ export const dumpPtBR = {
               ],
               id: "b0c681bf-b184-50ac-bdc6-95a7b945cfa3",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -8120,7 +8120,7 @@ export const dumpPtBR = {
               ],
               id: "4a0b0a6f-58ed-57f2-96d0-870fc2c22fc0",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -8192,7 +8192,7 @@ export const dumpPtBR = {
               ],
               id: "fa0a75d3-048d-5b0b-af9c-25338e2245f3",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -8412,7 +8412,7 @@ export const dumpPtBR = {
               ],
               id: "0f4af8c4-da77-5ae8-ae9a-4c6511d45786",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -8466,7 +8466,7 @@ export const dumpPtBR = {
               ],
               id: "c5747bea-3e32-520c-b5e1-13280118c602",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -8538,7 +8538,7 @@ export const dumpPtBR = {
               ],
               id: "87cea0c7-6346-5354-b839-2ee9dbdc5e73",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -8647,7 +8647,7 @@ export const dumpPtBR = {
               ],
               id: "c15aeb5b-f259-518c-94d0-a7e68b34d7d3",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -8719,7 +8719,7 @@ export const dumpPtBR = {
               ],
               id: "fed0e148-3f5d-5d41-ad18-333507e20bcc",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -8939,7 +8939,7 @@ export const dumpPtBR = {
               ],
               id: "e479049a-9aeb-5525-8061-68464b1a921d",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -8993,7 +8993,7 @@ export const dumpPtBR = {
               ],
               id: "2ed79b62-97bc-521d-bdf9-46ec8e08da4a",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -9065,7 +9065,7 @@ export const dumpPtBR = {
               ],
               id: "89939d09-a59d-548e-92eb-b42bf0ee9c10",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -9340,7 +9340,7 @@ export const dumpPtBR = {
               ],
               id: "50a5ca72-9af7-534a-8148-1b5b9cbe014b",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -9394,7 +9394,7 @@ export const dumpPtBR = {
               ],
               id: "1801f699-eb23-5a57-91a3-6ae97b822f73",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -9466,7 +9466,7 @@ export const dumpPtBR = {
               ],
               id: "8b679674-c578-56aa-89a9-a12f2f20d761",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -9575,7 +9575,7 @@ export const dumpPtBR = {
               ],
               id: "6af050a0-870b-57c9-8e07-9186e7f8ca59",
               screen_order: 13,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -9647,7 +9647,7 @@ export const dumpPtBR = {
               ],
               id: "5769291e-c84c-5ec3-9212-a1fa0d75030e",
               screen_order: 17,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -9867,7 +9867,7 @@ export const dumpPtBR = {
               ],
               id: "8cc66ee9-d6c8-5c1e-832f-c28fafcdf7f6",
               screen_order: 1,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -9921,7 +9921,7 @@ export const dumpPtBR = {
               ],
               id: "36d99c21-aab3-5b98-a919-22cf41db1aaa",
               screen_order: 4,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [
@@ -9993,7 +9993,7 @@ export const dumpPtBR = {
               ],
               id: "4321d88c-1fc4-5e45-8b5a-063b84684481",
               screen_order: 8,
-              title: "Lembre-se da ordem dos traços e da pronúncia desta sílaba.",
+              title: "Lembre-se dos traços e do som.",
             },
             {
               blocks: [

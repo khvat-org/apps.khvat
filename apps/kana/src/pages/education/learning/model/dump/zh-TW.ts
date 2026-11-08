@@ -221,7 +221,7 @@ export const dumpZhTW = {
               ],
               id: "e566f7be-6ce1-5595-8470-12f5a86944c9",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -275,7 +275,7 @@ export const dumpZhTW = {
               ],
               id: "9c8aff6b-ef30-5411-b1f7-7fde48c0c8b9",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -347,7 +347,7 @@ export const dumpZhTW = {
               ],
               id: "4937488e-a29a-51fd-aa43-c5076017bdd3",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -456,7 +456,7 @@ export const dumpZhTW = {
               ],
               id: "042dc212-ea02-5357-b56d-1e2ee24bc4ea",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -528,7 +528,7 @@ export const dumpZhTW = {
               ],
               id: "15e6dd81-6fe5-5ac6-a034-5b5325519220",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -748,7 +748,7 @@ export const dumpZhTW = {
               ],
               id: "bb61bc3d-f74b-5e47-b0c6-bf785d85d573",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -802,7 +802,7 @@ export const dumpZhTW = {
               ],
               id: "ccdcc077-9369-5c46-bed7-25cb34320445",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -874,7 +874,7 @@ export const dumpZhTW = {
               ],
               id: "48bd944f-f6cb-5970-9617-c3605eda4125",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -983,7 +983,7 @@ export const dumpZhTW = {
               ],
               id: "0a3ee605-690a-5443-8f8d-b8e70916162a",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -1055,7 +1055,7 @@ export const dumpZhTW = {
               ],
               id: "8a94ebb0-40bb-5fcb-8cc6-f988f3a682d8",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -1275,7 +1275,7 @@ export const dumpZhTW = {
               ],
               id: "2b017549-6b3d-5e60-8ac9-4b9ffb88be6b",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -1329,7 +1329,7 @@ export const dumpZhTW = {
               ],
               id: "4d75cf6a-4f4e-544e-991f-5fac3ca266ee",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -1401,7 +1401,7 @@ export const dumpZhTW = {
               ],
               id: "e1281876-0819-5a4f-aeb4-05e0c6ce519c",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -1510,7 +1510,7 @@ export const dumpZhTW = {
               ],
               id: "fee96d08-8a51-5d3b-8109-3d755f88ac0e",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -1582,7 +1582,7 @@ export const dumpZhTW = {
               ],
               id: "dfd3cf81-9bff-5171-8949-3bd8dacd6840",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -1802,7 +1802,7 @@ export const dumpZhTW = {
               ],
               id: "f51eca61-95eb-5338-bb97-60c590bf714b",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -1856,7 +1856,7 @@ export const dumpZhTW = {
               ],
               id: "91b40ee5-6fe9-5718-ac54-24d7038dcdef",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -1928,7 +1928,7 @@ export const dumpZhTW = {
               ],
               id: "c764bc9a-0cb2-5ac8-b895-98384d174eb6",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -2037,7 +2037,7 @@ export const dumpZhTW = {
               ],
               id: "dccaa59d-2c08-5600-ae52-c0349dc8aa2e",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -2109,7 +2109,7 @@ export const dumpZhTW = {
               ],
               id: "fcf2a35e-82e4-5e4b-8adc-5e8e23218160",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -2329,7 +2329,7 @@ export const dumpZhTW = {
               ],
               id: "3cc1dfb5-a1d4-52e1-b169-560d57bb6851",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -2383,7 +2383,7 @@ export const dumpZhTW = {
               ],
               id: "1060342e-4940-5974-afe0-2c3c76b39067",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -2455,7 +2455,7 @@ export const dumpZhTW = {
               ],
               id: "88d5a88d-9a98-55b3-ba45-392587598c5e",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -2564,7 +2564,7 @@ export const dumpZhTW = {
               ],
               id: "068805c7-4471-5f9b-87a6-2e7e2ec6ceff",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -2636,7 +2636,7 @@ export const dumpZhTW = {
               ],
               id: "7e6c77a3-13ef-523f-af23-2db3a983bc53",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -2856,7 +2856,7 @@ export const dumpZhTW = {
               ],
               id: "178ea382-3492-55d8-ad1f-bd609a54c8bf",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -2910,7 +2910,7 @@ export const dumpZhTW = {
               ],
               id: "b6a80c0d-8b29-5f8d-8f06-f8d2400d8ada",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -2982,7 +2982,7 @@ export const dumpZhTW = {
               ],
               id: "48e7b19d-e0ed-53d1-a23d-d851ed6fb8f2",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -3091,7 +3091,7 @@ export const dumpZhTW = {
               ],
               id: "57b7bb73-b7be-54b2-bbd0-402c0db98e3d",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -3163,7 +3163,7 @@ export const dumpZhTW = {
               ],
               id: "ab014f57-e946-5ec9-b7a9-8585fffae480",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -3383,7 +3383,7 @@ export const dumpZhTW = {
               ],
               id: "9b82cd29-694b-580e-9fe9-6b9232b6f982",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -3437,7 +3437,7 @@ export const dumpZhTW = {
               ],
               id: "3c9a7ac7-ad26-5eb2-ad37-7d46ecb3f190",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -3509,7 +3509,7 @@ export const dumpZhTW = {
               ],
               id: "8d28d34e-b526-5ffe-9b2f-5772df841c51",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -3618,7 +3618,7 @@ export const dumpZhTW = {
               ],
               id: "b08e2dc2-7093-5f3f-9789-8a10db1ecf79",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -3690,7 +3690,7 @@ export const dumpZhTW = {
               ],
               id: "a7b303e4-465a-5aba-a1c4-ca96d88e010a",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -3910,7 +3910,7 @@ export const dumpZhTW = {
               ],
               id: "18b410cc-7c54-59b1-b6a6-3b9dabb1e04e",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -3964,7 +3964,7 @@ export const dumpZhTW = {
               ],
               id: "ab0abeb1-0e32-5914-9f4d-f706a2b6b175",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -4036,7 +4036,7 @@ export const dumpZhTW = {
               ],
               id: "183a9224-32dd-5ab6-a65a-bbffa93088a3",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -4311,7 +4311,7 @@ export const dumpZhTW = {
               ],
               id: "b491171f-f480-539e-a642-105a0554debb",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -4365,7 +4365,7 @@ export const dumpZhTW = {
               ],
               id: "b5058d65-607b-5346-9387-dd2e31dbf44a",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -4437,7 +4437,7 @@ export const dumpZhTW = {
               ],
               id: "fa5ee9a9-6b64-5527-9c50-94a23c7f0f28",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -4546,7 +4546,7 @@ export const dumpZhTW = {
               ],
               id: "8946c684-1b4e-5c1e-8d47-beec5a0b3816",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -4618,7 +4618,7 @@ export const dumpZhTW = {
               ],
               id: "b7bbcbff-61b3-520b-aa99-473ca2eadc75",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -4838,7 +4838,7 @@ export const dumpZhTW = {
               ],
               id: "e6274b64-4e9f-55c1-b60e-77ccf62a8ae1",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -4892,7 +4892,7 @@ export const dumpZhTW = {
               ],
               id: "bc2ccc0d-4f7a-5175-b6d2-426e1d40b328",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -4964,7 +4964,7 @@ export const dumpZhTW = {
               ],
               id: "532566ed-1564-562c-8382-b30f61a574aa",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -5246,7 +5246,7 @@ export const dumpZhTW = {
               ],
               id: "1c1cc5fc-1fea-57c1-ac31-3e745ad9e898",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -5300,7 +5300,7 @@ export const dumpZhTW = {
               ],
               id: "8c4aea69-bd78-5d96-b887-1bd29a0d44b5",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -5372,7 +5372,7 @@ export const dumpZhTW = {
               ],
               id: "600cf070-fa05-516b-aac6-907623d730e5",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -5481,7 +5481,7 @@ export const dumpZhTW = {
               ],
               id: "0d4ca552-0b09-56fe-9643-ccd62c34079c",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -5553,7 +5553,7 @@ export const dumpZhTW = {
               ],
               id: "63750d4d-c108-54fa-8fb2-8931b754dd6a",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -5773,7 +5773,7 @@ export const dumpZhTW = {
               ],
               id: "e81a0180-b341-575c-8e88-1ba07c0c9390",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -5827,7 +5827,7 @@ export const dumpZhTW = {
               ],
               id: "f5469eb3-47e4-55c5-b31a-b6fc3e2cadf1",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -5899,7 +5899,7 @@ export const dumpZhTW = {
               ],
               id: "ebd5ff41-d54b-5a8c-b4ce-6007c8f059e7",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -6008,7 +6008,7 @@ export const dumpZhTW = {
               ],
               id: "7e2fa34b-0d6f-5da8-826e-d594a694312a",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -6080,7 +6080,7 @@ export const dumpZhTW = {
               ],
               id: "96a02941-08a0-5fd6-bd8e-5f676cf2b427",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -6300,7 +6300,7 @@ export const dumpZhTW = {
               ],
               id: "82f05381-401c-5e8a-b630-9c02f22393f7",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -6354,7 +6354,7 @@ export const dumpZhTW = {
               ],
               id: "11379f26-432c-5711-9235-71b9a668f0d2",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -6426,7 +6426,7 @@ export const dumpZhTW = {
               ],
               id: "c87e0645-4dd1-53d6-8f2f-add5e8f197b9",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -6535,7 +6535,7 @@ export const dumpZhTW = {
               ],
               id: "ef6b5679-3eee-5c52-a1af-c4d806f72ac2",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -6607,7 +6607,7 @@ export const dumpZhTW = {
               ],
               id: "933914da-d393-5506-90cd-a408de770478",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -6827,7 +6827,7 @@ export const dumpZhTW = {
               ],
               id: "c5be298f-5a49-5c07-a834-2e3d5ea3c8d3",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -6881,7 +6881,7 @@ export const dumpZhTW = {
               ],
               id: "0b87ee8a-b37e-5ecd-82d1-3843f1552ace",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -6953,7 +6953,7 @@ export const dumpZhTW = {
               ],
               id: "34996179-fd50-51c1-8e88-4bc4ac4d2324",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -7062,7 +7062,7 @@ export const dumpZhTW = {
               ],
               id: "3c5ceb87-7130-58df-82f9-71a4b252d2b0",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -7134,7 +7134,7 @@ export const dumpZhTW = {
               ],
               id: "10cb3d93-11d5-5972-a8ff-41ea8cdc08c4",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -7354,7 +7354,7 @@ export const dumpZhTW = {
               ],
               id: "206c21ef-c388-59bd-9240-a203bd3ade6c",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -7408,7 +7408,7 @@ export const dumpZhTW = {
               ],
               id: "4f8fdb0a-ab29-5fb0-ada0-26a3a53eb209",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -7480,7 +7480,7 @@ export const dumpZhTW = {
               ],
               id: "f4c6c2c1-e784-572e-9fd7-c7eda4cc05f6",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -7589,7 +7589,7 @@ export const dumpZhTW = {
               ],
               id: "de946ba7-40dd-5ca0-ae59-9d9c2309060b",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -7661,7 +7661,7 @@ export const dumpZhTW = {
               ],
               id: "0eccd8ec-613b-5b36-b472-31583c0d4766",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -7881,7 +7881,7 @@ export const dumpZhTW = {
               ],
               id: "bcf7b6fd-a826-56a9-9385-d51891227942",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -7935,7 +7935,7 @@ export const dumpZhTW = {
               ],
               id: "49a75e32-3b05-5911-99c1-955c3ba3f482",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -8007,7 +8007,7 @@ export const dumpZhTW = {
               ],
               id: "3ce86194-4e54-5f1d-adf2-43c9191b741c",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -8116,7 +8116,7 @@ export const dumpZhTW = {
               ],
               id: "cbb6280a-e85a-5af2-b9bd-a4e032289d20",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -8188,7 +8188,7 @@ export const dumpZhTW = {
               ],
               id: "0ceb2350-732d-562d-a35e-88fc8ff5ec18",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -8408,7 +8408,7 @@ export const dumpZhTW = {
               ],
               id: "fb83dbbe-7354-5fde-b312-e4fb5b283499",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -8462,7 +8462,7 @@ export const dumpZhTW = {
               ],
               id: "ef981052-d120-5b71-91b2-0e4754ee95e0",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -8534,7 +8534,7 @@ export const dumpZhTW = {
               ],
               id: "221d0066-683b-523c-9795-93a8a4e2c579",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -8643,7 +8643,7 @@ export const dumpZhTW = {
               ],
               id: "04ee4e79-4ad0-5e13-9cb4-c8decd02da5f",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -8715,7 +8715,7 @@ export const dumpZhTW = {
               ],
               id: "0a8814df-20b0-547b-aaa6-208121a40bd9",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -8935,7 +8935,7 @@ export const dumpZhTW = {
               ],
               id: "97eef9c0-eb1e-55f8-b08c-372904b55d9b",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -8989,7 +8989,7 @@ export const dumpZhTW = {
               ],
               id: "edf987c8-d97a-59f3-8776-8ad6d5ba8ee9",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -9061,7 +9061,7 @@ export const dumpZhTW = {
               ],
               id: "8173c733-1577-5b5f-920e-b93bdce381ad",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -9336,7 +9336,7 @@ export const dumpZhTW = {
               ],
               id: "6c658e3d-2590-5a84-944e-497e576de9d1",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -9390,7 +9390,7 @@ export const dumpZhTW = {
               ],
               id: "033900ca-ab02-5dbb-833a-d3081e60f04e",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -9462,7 +9462,7 @@ export const dumpZhTW = {
               ],
               id: "30c58d31-ece8-5bd3-9a0d-401f3d93614f",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -9571,7 +9571,7 @@ export const dumpZhTW = {
               ],
               id: "b5a25700-7d1c-58c3-9c44-adcdc3ea9852",
               screen_order: 13,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -9643,7 +9643,7 @@ export const dumpZhTW = {
               ],
               id: "bd555fe9-cb93-5844-bc4a-2980179ecf4f",
               screen_order: 17,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -9863,7 +9863,7 @@ export const dumpZhTW = {
               ],
               id: "c13b1c27-e295-5beb-ad83-b461addc88a6",
               screen_order: 1,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -9917,7 +9917,7 @@ export const dumpZhTW = {
               ],
               id: "f7db95d8-215e-580b-94db-5b78c4bccc7d",
               screen_order: 4,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [
@@ -9989,7 +9989,7 @@ export const dumpZhTW = {
               ],
               id: "0c71ee4c-a3f7-543b-84de-b8c360a997da",
               screen_order: 8,
-              title: "記住這個音節的筆順和發音。",
+              title: "記住筆順和發音。",
             },
             {
               blocks: [

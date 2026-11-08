@@ -226,7 +226,7 @@ export const dumpDe = {
               ],
               id: "2133ffad-2ea7-523f-8d45-4f4c2d939450",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -280,7 +280,7 @@ export const dumpDe = {
               ],
               id: "9c34185e-da18-5282-9fc6-b009abd897d5",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -352,7 +352,7 @@ export const dumpDe = {
               ],
               id: "78144268-e8cc-50d2-945a-d0c41396e454",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -461,7 +461,7 @@ export const dumpDe = {
               ],
               id: "23641689-52ee-5fdf-934b-ea2144d629e9",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -533,7 +533,7 @@ export const dumpDe = {
               ],
               id: "7b50340c-81eb-570a-8918-ba6aa2d0f1cb",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -753,7 +753,7 @@ export const dumpDe = {
               ],
               id: "261e547a-45b0-5fa4-ab82-14a131243d5c",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -807,7 +807,7 @@ export const dumpDe = {
               ],
               id: "52c15b20-7434-56b8-a035-9b1d79841004",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -879,7 +879,7 @@ export const dumpDe = {
               ],
               id: "52d56c2d-254a-5cdf-a743-15fbaa565ec1",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -988,7 +988,7 @@ export const dumpDe = {
               ],
               id: "388859e1-5338-543d-af14-1beb5cd00f18",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -1060,7 +1060,7 @@ export const dumpDe = {
               ],
               id: "e01244c1-62df-57da-b42e-8118f462be9b",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -1280,7 +1280,7 @@ export const dumpDe = {
               ],
               id: "d487a27e-1d19-554e-a304-f54b14859b36",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -1334,7 +1334,7 @@ export const dumpDe = {
               ],
               id: "d78cc412-5b57-5922-a37f-e94b4998fa78",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -1406,7 +1406,7 @@ export const dumpDe = {
               ],
               id: "c6fd8feb-d040-5104-b263-2bb21b261c4a",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -1515,7 +1515,7 @@ export const dumpDe = {
               ],
               id: "f6ee25cb-61fb-5f7c-ab5f-719c68873069",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -1587,7 +1587,7 @@ export const dumpDe = {
               ],
               id: "84010fea-c517-56a6-99b0-f779f960a0e6",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -1807,7 +1807,7 @@ export const dumpDe = {
               ],
               id: "1b956270-b928-51da-b712-8171f763b3ed",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -1861,7 +1861,7 @@ export const dumpDe = {
               ],
               id: "7f3b836f-dee0-59c6-aea4-bc02d92711d8",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -1933,7 +1933,7 @@ export const dumpDe = {
               ],
               id: "ae08100e-3658-551e-a395-840e32b9319b",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -2042,7 +2042,7 @@ export const dumpDe = {
               ],
               id: "9e83a712-c3b3-59a9-b2f0-d1f035895c42",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -2114,7 +2114,7 @@ export const dumpDe = {
               ],
               id: "7264b7ed-3c02-51e6-93bb-ea9a0ccd584c",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -2334,7 +2334,7 @@ export const dumpDe = {
               ],
               id: "33c80e1d-20b4-5009-924d-8d5bc0357351",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -2388,7 +2388,7 @@ export const dumpDe = {
               ],
               id: "7ef5a947-a4fa-54b3-90c8-f074ce547754",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -2460,7 +2460,7 @@ export const dumpDe = {
               ],
               id: "71873d09-4ec4-51f1-a455-03d3dd710c2e",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -2569,7 +2569,7 @@ export const dumpDe = {
               ],
               id: "4592f8a4-32c2-545e-b514-8cff3e3cf232",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -2641,7 +2641,7 @@ export const dumpDe = {
               ],
               id: "467918b9-c0e9-5748-b1e8-09eb018d1bf9",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -2861,7 +2861,7 @@ export const dumpDe = {
               ],
               id: "a89ee88f-9f22-5f9a-9a4a-021348516d99",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -2915,7 +2915,7 @@ export const dumpDe = {
               ],
               id: "f2b5d5b5-573e-5c6a-89a2-ca356750c4b3",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -2987,7 +2987,7 @@ export const dumpDe = {
               ],
               id: "06385ce8-c14e-58fa-9cb7-b3b707bd738d",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -3096,7 +3096,7 @@ export const dumpDe = {
               ],
               id: "ae67a5d5-30f1-5ec9-bf7d-6e8c2fed341a",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -3168,7 +3168,7 @@ export const dumpDe = {
               ],
               id: "96230f5e-7cf5-56e0-a522-a73cd1dbca87",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -3388,7 +3388,7 @@ export const dumpDe = {
               ],
               id: "e3b8fb37-c3a7-53c9-8673-eaf1920dcd27",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -3442,7 +3442,7 @@ export const dumpDe = {
               ],
               id: "2b86c9a9-83ae-5c9d-95a9-e861575ed834",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -3514,7 +3514,7 @@ export const dumpDe = {
               ],
               id: "0535284f-29ce-59e5-bce5-8cc02dd7aa8f",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -3623,7 +3623,7 @@ export const dumpDe = {
               ],
               id: "f09fe612-9200-58df-80ce-57550f90cfe8",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -3695,7 +3695,7 @@ export const dumpDe = {
               ],
               id: "3bdc24fe-bcfb-5025-a555-a24d0c340e1c",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -3915,7 +3915,7 @@ export const dumpDe = {
               ],
               id: "4c9d4f4e-86e9-59f8-880e-e7d918435b15",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -3969,7 +3969,7 @@ export const dumpDe = {
               ],
               id: "2a507b55-ad36-518a-87fb-10ecb4f1c463",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -4041,7 +4041,7 @@ export const dumpDe = {
               ],
               id: "e06e4e24-585b-572b-8c4e-48cef72b1a3e",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -4316,7 +4316,7 @@ export const dumpDe = {
               ],
               id: "51a86bc4-010e-5e95-bd67-d20cfbb742f4",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -4370,7 +4370,7 @@ export const dumpDe = {
               ],
               id: "3b40bb44-92d1-5ca8-aff6-02431f441bc1",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -4442,7 +4442,7 @@ export const dumpDe = {
               ],
               id: "5f556b90-f8d7-5788-bd0a-75e6ccf58cce",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -4551,7 +4551,7 @@ export const dumpDe = {
               ],
               id: "9701e6ab-5c2e-5e61-bf23-ff261f11a594",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -4623,7 +4623,7 @@ export const dumpDe = {
               ],
               id: "24679973-c038-5a53-b6b4-6f2974a40ac8",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -4844,7 +4844,7 @@ export const dumpDe = {
               ],
               id: "7d023ae3-237a-5709-9ec2-2462472517f5",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -4898,7 +4898,7 @@ export const dumpDe = {
               ],
               id: "2d93711a-363c-52d4-bcdc-7ca31f5cc6a6",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -4970,7 +4970,7 @@ export const dumpDe = {
               ],
               id: "1e2ab05a-e556-582f-8494-708775196d17",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -5252,7 +5252,7 @@ export const dumpDe = {
               ],
               id: "2720cda7-d26d-546e-8b63-a35e5bc0022c",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -5306,7 +5306,7 @@ export const dumpDe = {
               ],
               id: "102afa2c-a0dd-59ab-9b98-3155f9758d4f",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -5378,7 +5378,7 @@ export const dumpDe = {
               ],
               id: "84afc94e-2d30-5c7f-ba0e-f522c2bd3c71",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -5487,7 +5487,7 @@ export const dumpDe = {
               ],
               id: "abf17664-8676-5854-b986-b9a7471f6841",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -5559,7 +5559,7 @@ export const dumpDe = {
               ],
               id: "365fde69-4a39-59aa-aee1-720301b2440e",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -5779,7 +5779,7 @@ export const dumpDe = {
               ],
               id: "43b9b75a-cfeb-5a0f-8af5-f135c4a8e31f",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -5833,7 +5833,7 @@ export const dumpDe = {
               ],
               id: "ef48d581-c69b-5eef-864d-fca2d3c5a5dd",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -5905,7 +5905,7 @@ export const dumpDe = {
               ],
               id: "2b83fab6-e64c-5ccb-9906-5387ba3cd614",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -6014,7 +6014,7 @@ export const dumpDe = {
               ],
               id: "04ce585e-3815-54ab-9ea9-a3ebdc81ffb2",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -6086,7 +6086,7 @@ export const dumpDe = {
               ],
               id: "127b190f-dcdc-5321-afdc-371c2d8f0f0f",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -6306,7 +6306,7 @@ export const dumpDe = {
               ],
               id: "981d05aa-2964-59e6-8709-9129d30cb9f9",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -6360,7 +6360,7 @@ export const dumpDe = {
               ],
               id: "b0a26db4-db0e-5d64-a522-b2c3743062d3",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -6432,7 +6432,7 @@ export const dumpDe = {
               ],
               id: "3e374c33-1af6-5ae8-a30e-238d253f90ae",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -6541,7 +6541,7 @@ export const dumpDe = {
               ],
               id: "16f97b7d-eaff-5388-ac0d-5181f6807546",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -6613,7 +6613,7 @@ export const dumpDe = {
               ],
               id: "329560d8-fef7-5ce7-b8d9-bf4a19617bac",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -6833,7 +6833,7 @@ export const dumpDe = {
               ],
               id: "aa6e5214-926f-5344-8d65-6cadb885c6c4",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -6887,7 +6887,7 @@ export const dumpDe = {
               ],
               id: "07f6157a-7aa9-501c-bb64-5424a349dd94",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -6959,7 +6959,7 @@ export const dumpDe = {
               ],
               id: "4f3dca43-ff4a-5925-9b50-f8b5744ef731",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -7068,7 +7068,7 @@ export const dumpDe = {
               ],
               id: "2c46ae54-1957-5267-bcb1-a8c3babe840d",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -7140,7 +7140,7 @@ export const dumpDe = {
               ],
               id: "7b66fbe4-362d-5ed2-b049-eb50c5e6952c",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -7360,7 +7360,7 @@ export const dumpDe = {
               ],
               id: "a5bf57f4-fa26-57f6-8051-08bb1b8fc8af",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -7414,7 +7414,7 @@ export const dumpDe = {
               ],
               id: "22fc8b9d-9369-553d-9214-b4c6da3b6008",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -7486,7 +7486,7 @@ export const dumpDe = {
               ],
               id: "f54086eb-7099-5d27-b805-27710cac1ebd",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -7595,7 +7595,7 @@ export const dumpDe = {
               ],
               id: "459da8cd-052a-5410-b77a-c8898f484114",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -7667,7 +7667,7 @@ export const dumpDe = {
               ],
               id: "86af3566-416e-5835-af47-bfe1277ba5ed",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -7887,7 +7887,7 @@ export const dumpDe = {
               ],
               id: "2bd35a19-6cd0-5f23-b447-c7b1dd046f61",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -7941,7 +7941,7 @@ export const dumpDe = {
               ],
               id: "9b470fc2-a914-5388-88e9-919c6907d686",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -8013,7 +8013,7 @@ export const dumpDe = {
               ],
               id: "3cac85d7-9b04-5c3d-bd46-e4fbfad22a52",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -8122,7 +8122,7 @@ export const dumpDe = {
               ],
               id: "88920d3a-f47e-51d9-a6fa-dacf802245c5",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -8194,7 +8194,7 @@ export const dumpDe = {
               ],
               id: "2ce7719a-d9c7-51e4-9703-9a5f58d8d4ee",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -8414,7 +8414,7 @@ export const dumpDe = {
               ],
               id: "a107f4fc-4832-50e4-8ed9-903b540e1f90",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -8468,7 +8468,7 @@ export const dumpDe = {
               ],
               id: "6811b346-3bba-5cd8-824a-d3d1bfc5939d",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -8540,7 +8540,7 @@ export const dumpDe = {
               ],
               id: "052ba006-905f-5f64-ac57-61d1267614c9",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -8649,7 +8649,7 @@ export const dumpDe = {
               ],
               id: "ab1bef30-0327-5631-9bec-9f4aa629a063",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -8721,7 +8721,7 @@ export const dumpDe = {
               ],
               id: "ad0701c0-1799-5a82-9f20-6325c3fb5360",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -8941,7 +8941,7 @@ export const dumpDe = {
               ],
               id: "99805d0a-4d2c-571e-b7e4-5232eaf3d442",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -8995,7 +8995,7 @@ export const dumpDe = {
               ],
               id: "5b27ca90-ffad-5aeb-a583-9499c7bf4960",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -9067,7 +9067,7 @@ export const dumpDe = {
               ],
               id: "ac2a4ef9-9083-509e-bfde-77e6013fafa8",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -9342,7 +9342,7 @@ export const dumpDe = {
               ],
               id: "3ded22a1-badd-59db-8d2f-c21dd33f466c",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -9396,7 +9396,7 @@ export const dumpDe = {
               ],
               id: "bbbb49d8-e16b-55c5-81be-6dce89395c4d",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -9468,7 +9468,7 @@ export const dumpDe = {
               ],
               id: "79652705-f349-5a79-a7fd-17f21e833d06",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -9577,7 +9577,7 @@ export const dumpDe = {
               ],
               id: "4d70b3b2-d9f5-54f3-ad82-296bd5d17af6",
               screen_order: 13,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -9649,7 +9649,7 @@ export const dumpDe = {
               ],
               id: "f46b76a3-2abb-5552-aaff-117d71fec6e9",
               screen_order: 17,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -9869,7 +9869,7 @@ export const dumpDe = {
               ],
               id: "703bf84e-acb7-5d46-b35a-b31eb820cf8b",
               screen_order: 1,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -9923,7 +9923,7 @@ export const dumpDe = {
               ],
               id: "d3ad314c-8a2b-5cd0-a818-8cdd8abae4e2",
               screen_order: 4,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [
@@ -9995,7 +9995,7 @@ export const dumpDe = {
               ],
               id: "ed33f736-7011-5399-b94a-24a305e37122",
               screen_order: 8,
-              title: "Merken Sie sich die Strichreihenfolge und Aussprache dieser Silbe.",
+              title: "Strichfolge und Laut merken.",
             },
             {
               blocks: [

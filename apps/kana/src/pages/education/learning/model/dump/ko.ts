@@ -225,7 +225,7 @@ export const dumpKo = {
               ],
               id: "8bfcb83e-6fca-5e12-8733-705753699dfd",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -279,7 +279,7 @@ export const dumpKo = {
               ],
               id: "760a6e77-7c7d-56ed-a5c2-7cb1452f363d",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -351,7 +351,7 @@ export const dumpKo = {
               ],
               id: "f11e24f6-37d7-55a9-b69a-eeb8fbe4922c",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -460,7 +460,7 @@ export const dumpKo = {
               ],
               id: "60dcfcb1-0ead-546a-9ed8-d8b19ddef133",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -532,7 +532,7 @@ export const dumpKo = {
               ],
               id: "b7773a27-7935-57e8-ba69-765366fdbbf2",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -752,7 +752,7 @@ export const dumpKo = {
               ],
               id: "cc1d433b-04aa-59a6-abcf-0e1e4070061e",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -806,7 +806,7 @@ export const dumpKo = {
               ],
               id: "b22478c2-a7bf-5bf0-8c6c-cd02e5361bf5",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -878,7 +878,7 @@ export const dumpKo = {
               ],
               id: "57b1bf12-fc2b-5e8d-82a8-56afe3eb4703",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -987,7 +987,7 @@ export const dumpKo = {
               ],
               id: "0b628418-c6ab-5469-aff2-2e9c29f797c1",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -1059,7 +1059,7 @@ export const dumpKo = {
               ],
               id: "baff8ee9-2c2c-5c2e-982b-203174c7bfca",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -1279,7 +1279,7 @@ export const dumpKo = {
               ],
               id: "d493088c-8eff-517c-89c8-b5d079ca6f1f",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -1333,7 +1333,7 @@ export const dumpKo = {
               ],
               id: "4a001c62-b4c5-50fb-87a6-a855db9807f9",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -1405,7 +1405,7 @@ export const dumpKo = {
               ],
               id: "bd847bb6-b731-5275-9b70-fbb031b243e1",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -1514,7 +1514,7 @@ export const dumpKo = {
               ],
               id: "09f43268-9583-58df-82af-329d98b17fa2",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -1586,7 +1586,7 @@ export const dumpKo = {
               ],
               id: "449f5716-c81e-5d70-aaae-fa4d724975cc",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -1806,7 +1806,7 @@ export const dumpKo = {
               ],
               id: "2431f1d6-2ad0-56d4-88c8-4bc298274e29",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -1860,7 +1860,7 @@ export const dumpKo = {
               ],
               id: "eb221024-b25f-5b17-b0bc-3af4228487e1",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -1932,7 +1932,7 @@ export const dumpKo = {
               ],
               id: "2122748a-369a-52b7-8f07-47ef91928e63",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -2041,7 +2041,7 @@ export const dumpKo = {
               ],
               id: "ea7c3c58-f5b6-5957-b906-c0812935cf59",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -2113,7 +2113,7 @@ export const dumpKo = {
               ],
               id: "07cc5cca-9257-560b-8bcc-b9e22868d518",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -2333,7 +2333,7 @@ export const dumpKo = {
               ],
               id: "c83c97d5-8866-590d-9419-425c2ce79851",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -2387,7 +2387,7 @@ export const dumpKo = {
               ],
               id: "15a899cf-2beb-570b-88fd-11f1d2463744",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -2459,7 +2459,7 @@ export const dumpKo = {
               ],
               id: "891b172c-fcf7-52d9-ade2-282fafe09c7e",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -2568,7 +2568,7 @@ export const dumpKo = {
               ],
               id: "75c61281-8289-5bf4-ab99-978a3b43c2eb",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -2640,7 +2640,7 @@ export const dumpKo = {
               ],
               id: "ffae3c92-8230-5372-8efc-808a02e65187",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -2860,7 +2860,7 @@ export const dumpKo = {
               ],
               id: "f64a438b-f948-54c6-acf4-198a62137648",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -2914,7 +2914,7 @@ export const dumpKo = {
               ],
               id: "3cdbab81-a895-5d99-932f-d2ebdf1b34e6",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -2986,7 +2986,7 @@ export const dumpKo = {
               ],
               id: "e3558c2b-8b99-5c9c-bc09-973250020db9",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -3095,7 +3095,7 @@ export const dumpKo = {
               ],
               id: "377182db-46db-5843-8fed-15502c0edb76",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -3167,7 +3167,7 @@ export const dumpKo = {
               ],
               id: "475c4e0a-d79c-5079-9b47-c113063a7534",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -3387,7 +3387,7 @@ export const dumpKo = {
               ],
               id: "29710423-3dde-54e8-8ed5-50d909d8f368",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -3441,7 +3441,7 @@ export const dumpKo = {
               ],
               id: "82175c26-dbda-5e07-9d93-6acc73f3525c",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -3513,7 +3513,7 @@ export const dumpKo = {
               ],
               id: "f652b7ca-0598-5945-a2a1-112c75bda9fb",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -3622,7 +3622,7 @@ export const dumpKo = {
               ],
               id: "1e9e7b88-6ba5-51b2-baf1-46380ad6b380",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -3694,7 +3694,7 @@ export const dumpKo = {
               ],
               id: "a0637f31-778f-5680-882d-ba992c7e6d64",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -3914,7 +3914,7 @@ export const dumpKo = {
               ],
               id: "5c0c0fbf-f025-54a4-a1da-312753482d7d",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -3968,7 +3968,7 @@ export const dumpKo = {
               ],
               id: "1f958f34-da0e-5fbc-99bb-20216e0b2bb0",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -4040,7 +4040,7 @@ export const dumpKo = {
               ],
               id: "bd0675dd-28eb-5049-930c-967e2b8b0834",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -4315,7 +4315,7 @@ export const dumpKo = {
               ],
               id: "9ca1a139-b977-5323-924c-4cbf8c32b864",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -4369,7 +4369,7 @@ export const dumpKo = {
               ],
               id: "1705baf7-40ad-5a68-b941-b1a940e8c663",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -4441,7 +4441,7 @@ export const dumpKo = {
               ],
               id: "e6b17b92-7e29-58c6-83d5-2702bdaab59b",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -4550,7 +4550,7 @@ export const dumpKo = {
               ],
               id: "cb8e606f-65e3-5385-b65d-0248e0b6467d",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -4622,7 +4622,7 @@ export const dumpKo = {
               ],
               id: "2050f439-2ab2-5626-a141-300441b0313a",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -4842,7 +4842,7 @@ export const dumpKo = {
               ],
               id: "4fb45dfa-c208-5d60-876c-7e7aa6aaf0a4",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -4896,7 +4896,7 @@ export const dumpKo = {
               ],
               id: "0fe63a24-fc82-5ab4-bfa1-637c3f82ae0e",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -4968,7 +4968,7 @@ export const dumpKo = {
               ],
               id: "87c61078-6851-535c-8894-870d4148d64e",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -5250,7 +5250,7 @@ export const dumpKo = {
               ],
               id: "0f5e8600-56a7-5f5c-b6cd-52327b2cef19",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -5304,7 +5304,7 @@ export const dumpKo = {
               ],
               id: "033df22a-f960-52b6-b1ac-993092145f40",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -5376,7 +5376,7 @@ export const dumpKo = {
               ],
               id: "02359f2b-b82e-5c48-9a8a-8308fec2ac06",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -5485,7 +5485,7 @@ export const dumpKo = {
               ],
               id: "33494744-a550-5fa8-bca4-02676440d4d9",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -5557,7 +5557,7 @@ export const dumpKo = {
               ],
               id: "cb8692a6-c877-5029-a407-db2707791cd9",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -5777,7 +5777,7 @@ export const dumpKo = {
               ],
               id: "27844d1b-72be-512a-8d50-7fcdfb813bbc",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -5831,7 +5831,7 @@ export const dumpKo = {
               ],
               id: "839256d1-cb85-5e0c-9444-48c59e752f0e",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -5903,7 +5903,7 @@ export const dumpKo = {
               ],
               id: "f3cf9f32-be8e-57d3-8ccb-20b4192e1b16",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -6012,7 +6012,7 @@ export const dumpKo = {
               ],
               id: "5eff2872-1bcc-5c6d-ae0b-90db2b757be5",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -6084,7 +6084,7 @@ export const dumpKo = {
               ],
               id: "5928f500-34d2-5663-bb0d-0fca8d2eee7f",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -6304,7 +6304,7 @@ export const dumpKo = {
               ],
               id: "29479fe4-54ed-53c5-9c48-b15d2c97786c",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -6358,7 +6358,7 @@ export const dumpKo = {
               ],
               id: "7af04c61-769d-5194-8e04-ed046ef30763",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -6430,7 +6430,7 @@ export const dumpKo = {
               ],
               id: "841992ee-f20d-5c21-896e-19aff92b115f",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -6539,7 +6539,7 @@ export const dumpKo = {
               ],
               id: "97861a76-74fc-5d34-84c4-323e2d666940",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -6611,7 +6611,7 @@ export const dumpKo = {
               ],
               id: "e2a70445-c2d5-54b6-b332-a771d98deba8",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -6831,7 +6831,7 @@ export const dumpKo = {
               ],
               id: "a4a008f6-9a5a-567a-b34f-62f29e7e4267",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -6885,7 +6885,7 @@ export const dumpKo = {
               ],
               id: "85ae9c44-445f-590d-b21a-a440113469c1",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -6957,7 +6957,7 @@ export const dumpKo = {
               ],
               id: "03887bb0-b221-52a0-99b9-ebb12ab3a542",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -7066,7 +7066,7 @@ export const dumpKo = {
               ],
               id: "d08a238f-2d08-5a41-8d93-57e5bf4a635a",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -7138,7 +7138,7 @@ export const dumpKo = {
               ],
               id: "552fb7e2-bd91-5ead-a558-a6f9c49f61cc",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -7358,7 +7358,7 @@ export const dumpKo = {
               ],
               id: "d06da9a2-21d9-54ce-827d-5d83106589e8",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -7412,7 +7412,7 @@ export const dumpKo = {
               ],
               id: "b9e9e1b7-568c-5a55-a972-e9438db5d57c",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -7484,7 +7484,7 @@ export const dumpKo = {
               ],
               id: "f6111d22-66d4-5364-ae2b-7c0c209c74da",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -7593,7 +7593,7 @@ export const dumpKo = {
               ],
               id: "1f887f64-a9a2-5042-ac91-ba90d682dca0",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -7665,7 +7665,7 @@ export const dumpKo = {
               ],
               id: "bf3e546d-5ed8-5580-b42e-e31f8ab79d1d",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -7885,7 +7885,7 @@ export const dumpKo = {
               ],
               id: "70e2d9c7-2abe-5549-a8a5-00a152c54d92",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -7939,7 +7939,7 @@ export const dumpKo = {
               ],
               id: "b3d9b57f-5e5e-5588-b0ed-ce160f884742",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -8011,7 +8011,7 @@ export const dumpKo = {
               ],
               id: "6685ed1a-4360-5bd0-9e09-6d6432d7dcc9",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -8120,7 +8120,7 @@ export const dumpKo = {
               ],
               id: "1f328626-a358-55b8-9af6-ee2843f945d0",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -8192,7 +8192,7 @@ export const dumpKo = {
               ],
               id: "43c72735-9f1e-5af5-83f8-bdd6550b3fa9",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -8412,7 +8412,7 @@ export const dumpKo = {
               ],
               id: "eae1c871-83d8-53df-84c9-24fb37498a0a",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -8466,7 +8466,7 @@ export const dumpKo = {
               ],
               id: "85091df6-e7d8-5e87-95d1-0f39b38ec0be",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -8538,7 +8538,7 @@ export const dumpKo = {
               ],
               id: "2fec3396-f367-5763-900e-04bd1a438084",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -8647,7 +8647,7 @@ export const dumpKo = {
               ],
               id: "57763f3f-508d-5749-84f2-55508a487754",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -8719,7 +8719,7 @@ export const dumpKo = {
               ],
               id: "b8cc9c95-6f38-55e6-bec8-297fd5db50a3",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -8939,7 +8939,7 @@ export const dumpKo = {
               ],
               id: "48fc3ad4-ee75-507e-a1c1-685934905787",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -8993,7 +8993,7 @@ export const dumpKo = {
               ],
               id: "06e818dc-49f0-5233-b135-9f527d79a267",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -9065,7 +9065,7 @@ export const dumpKo = {
               ],
               id: "7dca9072-3a92-5601-8f4e-33a651417890",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -9340,7 +9340,7 @@ export const dumpKo = {
               ],
               id: "fb83d624-36f3-5ebf-94e2-b8043bca56db",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -9394,7 +9394,7 @@ export const dumpKo = {
               ],
               id: "570fbda8-cf11-5e39-bf80-3cf6eee881d4",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -9466,7 +9466,7 @@ export const dumpKo = {
               ],
               id: "22c57727-9875-5fc4-aa5e-91021ff87d35",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -9575,7 +9575,7 @@ export const dumpKo = {
               ],
               id: "30c29248-1821-56bc-ac69-04323003a83b",
               screen_order: 13,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -9647,7 +9647,7 @@ export const dumpKo = {
               ],
               id: "32389336-cda0-513e-9e1b-76ce2f27994c",
               screen_order: 17,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -9867,7 +9867,7 @@ export const dumpKo = {
               ],
               id: "62a0711b-7c47-54e2-a459-8f806e7a11e5",
               screen_order: 1,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -9921,7 +9921,7 @@ export const dumpKo = {
               ],
               id: "0084e31c-d8b3-5be3-8a0d-80530cef84ed",
               screen_order: 4,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [
@@ -9993,7 +9993,7 @@ export const dumpKo = {
               ],
               id: "7096ccfa-9878-52de-949a-32dc4d49f3b7",
               screen_order: 8,
-              title: "이 음절의 획순과 발음을 기억하세요.",
+              title: "획순과 발음을 기억하세요.",
             },
             {
               blocks: [

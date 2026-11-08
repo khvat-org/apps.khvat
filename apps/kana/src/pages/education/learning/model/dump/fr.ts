@@ -225,7 +225,7 @@ export const dumpFr = {
               ],
               id: "e7ab3c3e-5b92-5a56-ae49-9e86e42ac9ea",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -279,7 +279,7 @@ export const dumpFr = {
               ],
               id: "93139756-1afc-597a-a222-48aa75ce795c",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -351,7 +351,7 @@ export const dumpFr = {
               ],
               id: "359a2076-4674-5167-9312-72e5f45975e3",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -460,7 +460,7 @@ export const dumpFr = {
               ],
               id: "29c39e76-ffd5-5efa-bc60-06386536b9b6",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -532,7 +532,7 @@ export const dumpFr = {
               ],
               id: "d157e962-8f3a-5009-b3c8-c3d4d75d6be9",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -752,7 +752,7 @@ export const dumpFr = {
               ],
               id: "c05ca244-49de-5f30-a5f2-d36ded64a370",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -806,7 +806,7 @@ export const dumpFr = {
               ],
               id: "f3107634-7d9d-5e51-94e3-0ee7fbb9f5db",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -878,7 +878,7 @@ export const dumpFr = {
               ],
               id: "4414156c-9351-59d5-b15a-7d75dd4f0129",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -987,7 +987,7 @@ export const dumpFr = {
               ],
               id: "a99c3ebf-3e89-5988-9cdc-612113c63a1b",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -1059,7 +1059,7 @@ export const dumpFr = {
               ],
               id: "2ee84923-461c-5bac-9f86-6ce513221783",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -1279,7 +1279,7 @@ export const dumpFr = {
               ],
               id: "8159f205-8038-51e0-871d-eafa92f56cfa",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -1333,7 +1333,7 @@ export const dumpFr = {
               ],
               id: "5d326669-7e46-5b84-9e5e-a499795d241e",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -1405,7 +1405,7 @@ export const dumpFr = {
               ],
               id: "3710850b-9da4-546f-a0a6-f304c3eb11bf",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -1514,7 +1514,7 @@ export const dumpFr = {
               ],
               id: "54fb4512-b576-5d91-bc01-18380ddb559c",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -1586,7 +1586,7 @@ export const dumpFr = {
               ],
               id: "45e86090-68dd-5b43-9624-30f75becc241",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -1806,7 +1806,7 @@ export const dumpFr = {
               ],
               id: "d885f956-e51e-55d1-8ee5-c8ed4941fec4",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -1860,7 +1860,7 @@ export const dumpFr = {
               ],
               id: "891ada45-d1fe-519d-b661-67d1f5a5ad76",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -1932,7 +1932,7 @@ export const dumpFr = {
               ],
               id: "e12ea5f2-cace-5a0e-afc0-2f3bb27935f0",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -2041,7 +2041,7 @@ export const dumpFr = {
               ],
               id: "76ec7ad2-df48-51e9-8e75-730a6f5eea47",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -2113,7 +2113,7 @@ export const dumpFr = {
               ],
               id: "c87087c9-06ef-5f75-ae7d-8d7e320c70d3",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -2333,7 +2333,7 @@ export const dumpFr = {
               ],
               id: "f98fc845-757b-55ed-af4d-6a86ddcab405",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -2387,7 +2387,7 @@ export const dumpFr = {
               ],
               id: "32202d7c-2b76-5052-8abd-c0db648f347d",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -2459,7 +2459,7 @@ export const dumpFr = {
               ],
               id: "65390726-b066-59af-b3ae-54dd9d474e04",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -2568,7 +2568,7 @@ export const dumpFr = {
               ],
               id: "6c1f2dfc-4f59-582d-a8fa-a1c62c9a5a78",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -2640,7 +2640,7 @@ export const dumpFr = {
               ],
               id: "3e7dbe9d-b3c6-56e3-9b6d-050904a93935",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -2860,7 +2860,7 @@ export const dumpFr = {
               ],
               id: "db799c92-368d-55c3-902b-f04359beb86b",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -2914,7 +2914,7 @@ export const dumpFr = {
               ],
               id: "dd387d67-823c-5a51-bb2a-f19c0ea19f16",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -2986,7 +2986,7 @@ export const dumpFr = {
               ],
               id: "cd02ed9e-7e68-5705-acb6-a95094f4e272",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -3095,7 +3095,7 @@ export const dumpFr = {
               ],
               id: "a44defcf-fad1-54dd-a9ce-fc2ef8e186d9",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -3167,7 +3167,7 @@ export const dumpFr = {
               ],
               id: "d2f17881-cb03-52d5-8037-92ac1cfb4be9",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -3387,7 +3387,7 @@ export const dumpFr = {
               ],
               id: "27fb2768-eb28-5ca8-bbb7-6df31f1e3926",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -3441,7 +3441,7 @@ export const dumpFr = {
               ],
               id: "91c28145-b92b-519b-b0c8-99c4305d4f5f",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -3513,7 +3513,7 @@ export const dumpFr = {
               ],
               id: "95a7a974-adc8-5fee-a008-b373ea519367",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -3622,7 +3622,7 @@ export const dumpFr = {
               ],
               id: "bd9b726b-5878-5269-b808-f9d53aa482e7",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -3694,7 +3694,7 @@ export const dumpFr = {
               ],
               id: "d0e43889-ac9c-5837-82ba-f72f352af6d4",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -3914,7 +3914,7 @@ export const dumpFr = {
               ],
               id: "76fff2f0-09d5-5a02-b8c5-40e640b6ce76",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -3968,7 +3968,7 @@ export const dumpFr = {
               ],
               id: "6dcfb500-304f-54a6-91e6-b67e593fd58e",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -4040,7 +4040,7 @@ export const dumpFr = {
               ],
               id: "4ece28bd-32e4-546b-8134-3e3d2b05af72",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -4315,7 +4315,7 @@ export const dumpFr = {
               ],
               id: "83bb5e75-ab0b-5a35-82a3-96061cebce33",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -4369,7 +4369,7 @@ export const dumpFr = {
               ],
               id: "918a6dfc-c3c0-5194-ad1d-6818268084b2",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -4441,7 +4441,7 @@ export const dumpFr = {
               ],
               id: "f817b6b1-315f-5b23-b328-c0bfb3fe54be",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -4550,7 +4550,7 @@ export const dumpFr = {
               ],
               id: "c998fb33-cd28-50c0-a606-7f963e728f7b",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -4622,7 +4622,7 @@ export const dumpFr = {
               ],
               id: "7b2657c6-aca4-59dc-a28b-d6c690d46258",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -4842,7 +4842,7 @@ export const dumpFr = {
               ],
               id: "16ab81cf-d105-5c7e-8957-92ffa0cf3b2f",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -4896,7 +4896,7 @@ export const dumpFr = {
               ],
               id: "dbeaf8ae-f6cb-54fd-af56-09ea54f29ca3",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -4968,7 +4968,7 @@ export const dumpFr = {
               ],
               id: "a75a6c32-2a41-59ed-b02b-94f8abf4f159",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -5250,7 +5250,7 @@ export const dumpFr = {
               ],
               id: "05a6f7b0-86bc-5bb6-bdb8-c5628d161954",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -5304,7 +5304,7 @@ export const dumpFr = {
               ],
               id: "d52fb0c7-7e26-5d38-93e9-00f71fbe396d",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -5376,7 +5376,7 @@ export const dumpFr = {
               ],
               id: "0dbdf54f-3aa1-519e-a706-d615cafb1faa",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -5485,7 +5485,7 @@ export const dumpFr = {
               ],
               id: "c1ae4544-f5b4-577b-b5ff-34161f40c4d9",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -5557,7 +5557,7 @@ export const dumpFr = {
               ],
               id: "623a0aae-0232-553b-9017-d4985dd364ca",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -5777,7 +5777,7 @@ export const dumpFr = {
               ],
               id: "3f13e571-6c88-527b-90b9-223051e78880",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -5831,7 +5831,7 @@ export const dumpFr = {
               ],
               id: "cfc637aa-fe27-58f8-b856-b93eb542a5d3",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -5903,7 +5903,7 @@ export const dumpFr = {
               ],
               id: "b77c23cc-b1d8-5df5-a1c4-32eefd93ca87",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -6012,7 +6012,7 @@ export const dumpFr = {
               ],
               id: "ae8d26d2-c1d7-590d-b326-d62974df2ee5",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -6084,7 +6084,7 @@ export const dumpFr = {
               ],
               id: "219bb0b3-241a-5b8a-bc40-8dc70e6163b2",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -6304,7 +6304,7 @@ export const dumpFr = {
               ],
               id: "9f3ebe5e-e484-5566-9bd1-f8e329398995",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -6358,7 +6358,7 @@ export const dumpFr = {
               ],
               id: "13f30639-e153-557c-9475-71ca666f0d54",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -6430,7 +6430,7 @@ export const dumpFr = {
               ],
               id: "2ce227e1-58b6-5346-bb7a-d8db99c0498c",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -6539,7 +6539,7 @@ export const dumpFr = {
               ],
               id: "f9147dbc-4d52-572e-ad0e-c7f679713abf",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -6611,7 +6611,7 @@ export const dumpFr = {
               ],
               id: "70798235-2538-5472-9cdd-3e37ee81ac4d",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -6831,7 +6831,7 @@ export const dumpFr = {
               ],
               id: "0c8a7553-395f-522c-b715-e6e370bfc2da",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -6885,7 +6885,7 @@ export const dumpFr = {
               ],
               id: "47d98bec-3dfe-5049-8896-a58b8c669d08",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -6957,7 +6957,7 @@ export const dumpFr = {
               ],
               id: "a7dbcd88-0d11-5dee-944c-c74d006a957c",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -7066,7 +7066,7 @@ export const dumpFr = {
               ],
               id: "e3ceb589-ab91-53e7-b4b7-9ea3488e1461",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -7138,7 +7138,7 @@ export const dumpFr = {
               ],
               id: "35fd2db0-62fb-5619-a58a-e55d54a933d2",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -7358,7 +7358,7 @@ export const dumpFr = {
               ],
               id: "d9581510-4300-5e04-9140-7e13b2d9b534",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -7412,7 +7412,7 @@ export const dumpFr = {
               ],
               id: "ce815ff9-5048-58c7-b6c4-ecb524f34bf5",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -7484,7 +7484,7 @@ export const dumpFr = {
               ],
               id: "5874c9b5-ca65-58c4-ba13-7f7d067b0839",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -7593,7 +7593,7 @@ export const dumpFr = {
               ],
               id: "ca675778-986a-5080-8a83-270447833242",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -7665,7 +7665,7 @@ export const dumpFr = {
               ],
               id: "7e1079a2-d28a-5674-bcdf-f367d3d9ef8b",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -7885,7 +7885,7 @@ export const dumpFr = {
               ],
               id: "6b968d12-9320-5d68-a215-90836f7564c6",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -7939,7 +7939,7 @@ export const dumpFr = {
               ],
               id: "5a64a05d-6127-5f71-afcf-b4ee0b70b8c4",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -8011,7 +8011,7 @@ export const dumpFr = {
               ],
               id: "e67d3b73-8233-5b4f-9420-41d5f45d6804",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -8120,7 +8120,7 @@ export const dumpFr = {
               ],
               id: "62304ea3-7273-5670-9b90-1067432fc1a3",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -8192,7 +8192,7 @@ export const dumpFr = {
               ],
               id: "be38d24b-e7c2-5eca-ac23-46b85baa806f",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -8412,7 +8412,7 @@ export const dumpFr = {
               ],
               id: "6a40b9be-8ae2-5742-aedb-0d63d05e360f",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -8466,7 +8466,7 @@ export const dumpFr = {
               ],
               id: "ff192915-4e59-59fb-8508-ed1a8cef1446",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -8538,7 +8538,7 @@ export const dumpFr = {
               ],
               id: "c9b71d8d-2a58-5718-a3b8-5709e3320c0b",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -8647,7 +8647,7 @@ export const dumpFr = {
               ],
               id: "9e2491da-fc40-5006-811e-2bd53a6cc659",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -8719,7 +8719,7 @@ export const dumpFr = {
               ],
               id: "a0fd5d9a-3ae9-5280-8845-0142160bd8f0",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -8939,7 +8939,7 @@ export const dumpFr = {
               ],
               id: "a6dfb0d2-ff9e-5b37-bd09-b02f57f1f57e",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -8993,7 +8993,7 @@ export const dumpFr = {
               ],
               id: "52ce187b-01ea-5564-9217-df14a0bb3b0d",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -9065,7 +9065,7 @@ export const dumpFr = {
               ],
               id: "37433c93-d50f-5025-926b-60bbef8a580d",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -9340,7 +9340,7 @@ export const dumpFr = {
               ],
               id: "22186b56-016d-501b-b2fe-8847a7841c13",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -9394,7 +9394,7 @@ export const dumpFr = {
               ],
               id: "3846ee9e-ff45-5ba2-9859-1820c0e6918e",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -9466,7 +9466,7 @@ export const dumpFr = {
               ],
               id: "0aae41a9-91e0-5f0a-ac18-44b3b194e1e4",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -9575,7 +9575,7 @@ export const dumpFr = {
               ],
               id: "93c27500-84c8-557e-b51a-226a31f0d282",
               screen_order: 13,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -9647,7 +9647,7 @@ export const dumpFr = {
               ],
               id: "cc38e21d-97a0-5ef2-aa0d-0f16a955d738",
               screen_order: 17,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -9867,7 +9867,7 @@ export const dumpFr = {
               ],
               id: "375bc11a-c4f6-5b2a-a9f6-9fc8523b9f77",
               screen_order: 1,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -9921,7 +9921,7 @@ export const dumpFr = {
               ],
               id: "1873f8aa-b3f9-5f74-86e3-f45959306605",
               screen_order: 4,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [
@@ -9993,7 +9993,7 @@ export const dumpFr = {
               ],
               id: "d1ab0443-d023-5384-b352-88d334443fcd",
               screen_order: 8,
-              title: "Mémorisez l’ordre des traits et la prononciation de cette syllabe.",
+              title: "Mémorisez les traits et le son.",
             },
             {
               blocks: [

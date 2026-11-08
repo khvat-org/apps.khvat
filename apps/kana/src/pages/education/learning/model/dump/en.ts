@@ -225,7 +225,7 @@ export const dumpEn = {
               ],
               id: "987e7161-c0c8-594e-8ce4-8781489380ea",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -279,7 +279,7 @@ export const dumpEn = {
               ],
               id: "0b59d70f-d239-5c00-bdf5-c80f867b852c",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -351,7 +351,7 @@ export const dumpEn = {
               ],
               id: "c1ee437c-c94f-5825-a159-090bf3f707aa",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -460,7 +460,7 @@ export const dumpEn = {
               ],
               id: "e5175bd1-6495-5410-8088-b93b3461120b",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -532,7 +532,7 @@ export const dumpEn = {
               ],
               id: "d852f2c0-f755-5e3e-89d4-e47945f0d012",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -752,7 +752,7 @@ export const dumpEn = {
               ],
               id: "2d89d3e1-8c89-520b-89a6-fd8fafd2a89e",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -806,7 +806,7 @@ export const dumpEn = {
               ],
               id: "e218e4fd-d5c4-51a3-a7fa-098150fe975a",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -878,7 +878,7 @@ export const dumpEn = {
               ],
               id: "c5af5762-59b8-58a1-94d4-6b71ed4fccb8",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -987,7 +987,7 @@ export const dumpEn = {
               ],
               id: "5dd538d1-9e5c-5c06-9ef4-42e32e7e1816",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -1059,7 +1059,7 @@ export const dumpEn = {
               ],
               id: "9e11afd6-924f-5dc5-a16d-fa0b562654db",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -1279,7 +1279,7 @@ export const dumpEn = {
               ],
               id: "58da4cb4-7f5c-5326-b13d-15ff9e4ad053",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -1333,7 +1333,7 @@ export const dumpEn = {
               ],
               id: "4bdea0a7-93c3-55c3-ab7e-7d077a23b068",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -1405,7 +1405,7 @@ export const dumpEn = {
               ],
               id: "823cea46-b78c-5910-9469-881c7d16eae1",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -1514,7 +1514,7 @@ export const dumpEn = {
               ],
               id: "e1e9a656-1801-5122-8de8-6b06a4434d71",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -1586,7 +1586,7 @@ export const dumpEn = {
               ],
               id: "cb8f96e1-585a-568f-9db1-18684039eff7",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -1806,7 +1806,7 @@ export const dumpEn = {
               ],
               id: "411da194-94ab-5264-adea-785d3b1907e3",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -1860,7 +1860,7 @@ export const dumpEn = {
               ],
               id: "ac08b8db-70a6-5581-866b-f963cfa0798a",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -1932,7 +1932,7 @@ export const dumpEn = {
               ],
               id: "d452f0f3-4b5b-5023-8a27-2db828fa3c9a",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -2041,7 +2041,7 @@ export const dumpEn = {
               ],
               id: "c8ad020d-2515-574f-bfea-409232a3cb54",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -2113,7 +2113,7 @@ export const dumpEn = {
               ],
               id: "339506f8-c458-5968-a8f9-35b229b09375",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -2333,7 +2333,7 @@ export const dumpEn = {
               ],
               id: "7b14107f-5db7-5757-b9fe-d1e36db520b6",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -2387,7 +2387,7 @@ export const dumpEn = {
               ],
               id: "36cbe159-8152-56be-b24e-ba882fb47250",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -2459,7 +2459,7 @@ export const dumpEn = {
               ],
               id: "bfe5902d-80c9-5893-a6e7-7c50415bb5c3",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -2568,7 +2568,7 @@ export const dumpEn = {
               ],
               id: "7b208b50-e999-521f-acfe-850833985e0c",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -2640,7 +2640,7 @@ export const dumpEn = {
               ],
               id: "8a2fc97e-5f56-5c0a-ac38-9fa1896e542f",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -2860,7 +2860,7 @@ export const dumpEn = {
               ],
               id: "4b4e64ca-effb-555c-b5f7-855ead403524",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -2914,7 +2914,7 @@ export const dumpEn = {
               ],
               id: "f9b0f835-2e3c-5c66-99a6-56c3ee421493",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -2986,7 +2986,7 @@ export const dumpEn = {
               ],
               id: "a3cf1ec5-abee-569d-8a0c-7e8fecc1b1cb",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -3095,7 +3095,7 @@ export const dumpEn = {
               ],
               id: "9e627527-2cd5-58a5-9dab-7c2fc3822e8a",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -3167,7 +3167,7 @@ export const dumpEn = {
               ],
               id: "5da0fa63-9e3e-51a3-b6f1-b54bb20fa3bb",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -3387,7 +3387,7 @@ export const dumpEn = {
               ],
               id: "f9c0976c-09ce-5c08-b1f2-05e1c0e1f0ff",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -3441,7 +3441,7 @@ export const dumpEn = {
               ],
               id: "a791444d-d055-5573-b9c1-4e50ac35ef35",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -3513,7 +3513,7 @@ export const dumpEn = {
               ],
               id: "b767a612-1c35-5e33-b1fe-684f967f5777",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -3622,7 +3622,7 @@ export const dumpEn = {
               ],
               id: "cf4eba3a-3ca8-5f81-bb1f-3fb69c850e47",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -3694,7 +3694,7 @@ export const dumpEn = {
               ],
               id: "b716a86a-9f0c-5b55-b995-b420640ed0ab",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -3914,7 +3914,7 @@ export const dumpEn = {
               ],
               id: "a72ae1af-7824-53d4-918b-b00dfb172191",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -3968,7 +3968,7 @@ export const dumpEn = {
               ],
               id: "b98c6e2c-2e9d-55d1-96f1-1f88db7b545c",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -4040,7 +4040,7 @@ export const dumpEn = {
               ],
               id: "2052965d-9242-5db6-8fe4-78209ef8d01b",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -4315,7 +4315,7 @@ export const dumpEn = {
               ],
               id: "29fa6c51-2894-5a02-af40-5987de924539",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -4369,7 +4369,7 @@ export const dumpEn = {
               ],
               id: "8c958399-d283-54d4-a781-f0527cc4b7dd",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -4441,7 +4441,7 @@ export const dumpEn = {
               ],
               id: "008ecc68-fd15-5f85-b18e-9617b6a6413d",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -4550,7 +4550,7 @@ export const dumpEn = {
               ],
               id: "d06e5490-bb45-5736-819a-e94d2a6d5313",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -4622,7 +4622,7 @@ export const dumpEn = {
               ],
               id: "ebcd1286-4e8d-5fd0-9b1e-e8b2d42ec97b",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -4842,7 +4842,7 @@ export const dumpEn = {
               ],
               id: "4e80eb0a-0abb-5796-a61d-e52cb5ad12e8",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -4896,7 +4896,7 @@ export const dumpEn = {
               ],
               id: "aac47803-e9c2-53a5-8918-d018be8dac14",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -4968,7 +4968,7 @@ export const dumpEn = {
               ],
               id: "e9955d30-3fb8-5eb2-bc7e-e2984d8b9d02",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -5250,7 +5250,7 @@ export const dumpEn = {
               ],
               id: "800200e2-8a1b-5b72-9289-5d84927809d1",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -5304,7 +5304,7 @@ export const dumpEn = {
               ],
               id: "1dd20db1-818f-5d22-b365-bebd19a8cb72",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -5376,7 +5376,7 @@ export const dumpEn = {
               ],
               id: "e8f31be4-7c17-58e9-8f6d-9e0cf2abc5ad",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -5485,7 +5485,7 @@ export const dumpEn = {
               ],
               id: "d82cbcda-5b1d-558c-a975-d4c0ac20479b",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -5557,7 +5557,7 @@ export const dumpEn = {
               ],
               id: "2121b47b-8df9-58a0-9c6a-eb797e6b76b1",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -5777,7 +5777,7 @@ export const dumpEn = {
               ],
               id: "405fdf24-e7cb-53a0-9a94-1ec340024c01",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -5831,7 +5831,7 @@ export const dumpEn = {
               ],
               id: "1027c53f-03bb-5c79-99db-46bcff0fc5b9",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -5903,7 +5903,7 @@ export const dumpEn = {
               ],
               id: "ec684fb2-6325-5135-9084-ce80107333fc",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -6012,7 +6012,7 @@ export const dumpEn = {
               ],
               id: "fb854155-86de-5e8f-942a-d8d011a10453",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -6084,7 +6084,7 @@ export const dumpEn = {
               ],
               id: "701ea177-5e1b-5b7c-9aab-b80a8068fd23",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -6304,7 +6304,7 @@ export const dumpEn = {
               ],
               id: "e69dc60c-6ae2-5a5c-8fe5-86f0d803761a",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -6358,7 +6358,7 @@ export const dumpEn = {
               ],
               id: "0bf107ee-45e3-53a7-ab91-971b6f2d8bb4",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -6430,7 +6430,7 @@ export const dumpEn = {
               ],
               id: "b96e2898-95ea-5e93-a9f4-fbfce7b0045b",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -6539,7 +6539,7 @@ export const dumpEn = {
               ],
               id: "b3f82cb1-3a1a-5968-a93b-bca26b36256a",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -6611,7 +6611,7 @@ export const dumpEn = {
               ],
               id: "b03c052d-8b98-583a-961f-2df61fa0695a",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -6831,7 +6831,7 @@ export const dumpEn = {
               ],
               id: "c3378d03-d8f7-558b-9836-f54d12f7350d",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -6885,7 +6885,7 @@ export const dumpEn = {
               ],
               id: "6853def2-6a53-5959-998b-782ab57702fa",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -6957,7 +6957,7 @@ export const dumpEn = {
               ],
               id: "df906c68-028a-5fc8-abe1-be89296931ef",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -7066,7 +7066,7 @@ export const dumpEn = {
               ],
               id: "ae4ae6f3-e059-5d60-aa4a-3ab129867688",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -7138,7 +7138,7 @@ export const dumpEn = {
               ],
               id: "8e5856ac-336e-5a34-9510-147699503b0b",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -7358,7 +7358,7 @@ export const dumpEn = {
               ],
               id: "ca5861ee-3516-5191-9f6b-fe107f83d780",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -7412,7 +7412,7 @@ export const dumpEn = {
               ],
               id: "3ecc188e-2fb6-5641-ad91-0e1091387240",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -7484,7 +7484,7 @@ export const dumpEn = {
               ],
               id: "2f6b5018-4ba6-595d-98a8-851813e15c8c",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -7593,7 +7593,7 @@ export const dumpEn = {
               ],
               id: "b406a078-6ec3-5a70-8b09-4188899cab25",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -7665,7 +7665,7 @@ export const dumpEn = {
               ],
               id: "7e68c1cb-3600-569b-8f3d-cf5cc0c12449",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -7885,7 +7885,7 @@ export const dumpEn = {
               ],
               id: "fe5a98ac-bf24-5ef1-989d-246740ea1c6d",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -7939,7 +7939,7 @@ export const dumpEn = {
               ],
               id: "d304917f-6f64-5734-84c9-92b8a0df6e62",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -8011,7 +8011,7 @@ export const dumpEn = {
               ],
               id: "7c22f371-bb12-5456-a13d-643c71b97841",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -8120,7 +8120,7 @@ export const dumpEn = {
               ],
               id: "f8d8e510-b15f-58d5-bec4-38c64811875d",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -8192,7 +8192,7 @@ export const dumpEn = {
               ],
               id: "d154557e-1ba0-572f-9e6b-c2be704d743c",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -8412,7 +8412,7 @@ export const dumpEn = {
               ],
               id: "4c54f88a-1e98-5358-8546-8f7adcbf78d5",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -8466,7 +8466,7 @@ export const dumpEn = {
               ],
               id: "31316071-d478-55d4-ba15-1d5f3c3462ca",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -8538,7 +8538,7 @@ export const dumpEn = {
               ],
               id: "08344b2e-37c4-5533-992b-ea1a1f78f6e8",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -8647,7 +8647,7 @@ export const dumpEn = {
               ],
               id: "3a823d34-68c4-528d-a5cc-66a06cf58538",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -8719,7 +8719,7 @@ export const dumpEn = {
               ],
               id: "4174ae8e-6bf1-5e26-83d4-632d00b9423e",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -8939,7 +8939,7 @@ export const dumpEn = {
               ],
               id: "21c1248d-2f52-5dd7-b549-d4bbd8b545f1",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -8993,7 +8993,7 @@ export const dumpEn = {
               ],
               id: "d55c3fb1-2aff-50ea-9c8a-e2882ddb11d9",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -9065,7 +9065,7 @@ export const dumpEn = {
               ],
               id: "91cf4632-5052-5b3c-aa60-4c9e338c572e",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -9340,7 +9340,7 @@ export const dumpEn = {
               ],
               id: "a81350ef-db88-5c07-a6ff-a1fc3f2c6c5c",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -9394,7 +9394,7 @@ export const dumpEn = {
               ],
               id: "9b212f2d-1e15-5626-ab14-b5364a3b99e6",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -9466,7 +9466,7 @@ export const dumpEn = {
               ],
               id: "34e4d7b8-b858-5810-9f11-6afa5547b6f9",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -9575,7 +9575,7 @@ export const dumpEn = {
               ],
               id: "8b997565-1cb0-5b72-a452-b8e7f620d0bb",
               screen_order: 13,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -9647,7 +9647,7 @@ export const dumpEn = {
               ],
               id: "bc59785a-78ef-521f-8c8d-e90c1a615dad",
               screen_order: 17,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -9867,7 +9867,7 @@ export const dumpEn = {
               ],
               id: "85fceffe-44bf-51a6-9ab4-fafea2792093",
               screen_order: 1,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -9921,7 +9921,7 @@ export const dumpEn = {
               ],
               id: "d40b8ab1-a15e-5f62-b65a-098d81837216",
               screen_order: 4,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [
@@ -9993,7 +9993,7 @@ export const dumpEn = {
               ],
               id: "ae9aa4e3-1aeb-5353-8204-d964da431dc6",
               screen_order: 8,
-              title: "Remember the stroke order and pronunciation of this syllable.",
+              title: "Learn its strokes and sound.",
             },
             {
               blocks: [

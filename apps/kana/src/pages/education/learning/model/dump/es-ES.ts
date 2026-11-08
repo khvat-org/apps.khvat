@@ -225,7 +225,7 @@ export const dumpEsES = {
               ],
               id: "d1084e77-35c6-5d96-8d26-72b0a3229285",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -279,7 +279,7 @@ export const dumpEsES = {
               ],
               id: "8883df04-1102-514d-ba76-ce8329935650",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -351,7 +351,7 @@ export const dumpEsES = {
               ],
               id: "2c221d30-45e6-5921-a308-479af1fecdb0",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -460,7 +460,7 @@ export const dumpEsES = {
               ],
               id: "83c1aa83-98f3-5af4-b7bc-894babcdd26d",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -532,7 +532,7 @@ export const dumpEsES = {
               ],
               id: "766d2e4d-f45d-5808-a96f-01be718bda52",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -752,7 +752,7 @@ export const dumpEsES = {
               ],
               id: "203cadec-ef3b-5db3-94af-10654337b7e4",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -806,7 +806,7 @@ export const dumpEsES = {
               ],
               id: "8c9447df-11e6-5366-8320-878d31698099",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -878,7 +878,7 @@ export const dumpEsES = {
               ],
               id: "64aa58b2-f2c5-56d9-842c-80dfef02d9f5",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -987,7 +987,7 @@ export const dumpEsES = {
               ],
               id: "882dc256-5dcd-581c-9781-935d3867888d",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -1059,7 +1059,7 @@ export const dumpEsES = {
               ],
               id: "7a5390e9-8945-5c1d-8b90-27d02cf9e9a1",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -1279,7 +1279,7 @@ export const dumpEsES = {
               ],
               id: "5771c47f-015e-597b-9d1e-35eabdddb533",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -1333,7 +1333,7 @@ export const dumpEsES = {
               ],
               id: "adef4969-1b37-59cf-b6a0-d7e93b6fb3e9",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -1405,7 +1405,7 @@ export const dumpEsES = {
               ],
               id: "ea954958-9a0a-5571-995b-67047baade27",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -1514,7 +1514,7 @@ export const dumpEsES = {
               ],
               id: "75da5b94-958a-54a7-b821-feadb346fe9e",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -1586,7 +1586,7 @@ export const dumpEsES = {
               ],
               id: "047dc592-52c0-5452-8516-09220a706914",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -1806,7 +1806,7 @@ export const dumpEsES = {
               ],
               id: "2731d632-f0a9-5ee3-ae0b-0eed0e45b573",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -1860,7 +1860,7 @@ export const dumpEsES = {
               ],
               id: "e43516f5-4aa2-5709-82ba-0eddc109b525",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -1932,7 +1932,7 @@ export const dumpEsES = {
               ],
               id: "6e2f78fd-7123-5b13-a7fc-e47074967965",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -2041,7 +2041,7 @@ export const dumpEsES = {
               ],
               id: "1182710e-badf-55f5-aafc-7af27e2a63ac",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -2113,7 +2113,7 @@ export const dumpEsES = {
               ],
               id: "315f0d9c-c706-5949-8690-ead2888bb85c",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -2333,7 +2333,7 @@ export const dumpEsES = {
               ],
               id: "52e6e935-a717-50bc-a07f-d83a422a4ccc",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -2387,7 +2387,7 @@ export const dumpEsES = {
               ],
               id: "d82a0261-3f12-55e1-959c-a267c4a43746",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -2459,7 +2459,7 @@ export const dumpEsES = {
               ],
               id: "93a66930-aef7-5857-9f16-d4ff6dd345e9",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -2568,7 +2568,7 @@ export const dumpEsES = {
               ],
               id: "361dc433-3cbe-5c00-83c4-8412a1cdf916",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -2640,7 +2640,7 @@ export const dumpEsES = {
               ],
               id: "b7089d45-a91c-5849-919a-1be90df16302",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -2860,7 +2860,7 @@ export const dumpEsES = {
               ],
               id: "a883b27f-5f0a-5c77-8e92-8dca01cd4e3f",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -2914,7 +2914,7 @@ export const dumpEsES = {
               ],
               id: "c66ab33e-788b-5609-a91a-dbbd08330b9f",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -2986,7 +2986,7 @@ export const dumpEsES = {
               ],
               id: "ce0a28e3-5114-52a9-81ec-b026b532aad0",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -3095,7 +3095,7 @@ export const dumpEsES = {
               ],
               id: "986faa32-53d8-52b9-b2ea-03dadcbd81d0",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -3167,7 +3167,7 @@ export const dumpEsES = {
               ],
               id: "35ef7b9b-a94c-5ed8-9b53-24183554cd8f",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -3387,7 +3387,7 @@ export const dumpEsES = {
               ],
               id: "c3bcd68b-084f-51ec-8b23-ec4f5fcdc937",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -3441,7 +3441,7 @@ export const dumpEsES = {
               ],
               id: "f6c607df-99d5-5516-875f-3cfa09a293cc",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -3513,7 +3513,7 @@ export const dumpEsES = {
               ],
               id: "ce45bbfc-2dbf-57e2-83c8-a8c40a6e8fc2",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -3622,7 +3622,7 @@ export const dumpEsES = {
               ],
               id: "36b00c4d-c9fe-5f86-a4f6-069a2d15b4c4",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -3694,7 +3694,7 @@ export const dumpEsES = {
               ],
               id: "3c081c12-e92a-5b15-9ed4-86ce2f1b1cd3",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -3914,7 +3914,7 @@ export const dumpEsES = {
               ],
               id: "268c4311-b457-57e5-aa12-a24214579090",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -3968,7 +3968,7 @@ export const dumpEsES = {
               ],
               id: "23d6c4c9-eb7a-5a10-a441-f7af50bfa88f",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -4040,7 +4040,7 @@ export const dumpEsES = {
               ],
               id: "5b45ed50-a962-503c-a6aa-8133828c2e5d",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -4315,7 +4315,7 @@ export const dumpEsES = {
               ],
               id: "b1a4c13e-6214-5deb-ad8c-dc1a4db99a9b",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -4369,7 +4369,7 @@ export const dumpEsES = {
               ],
               id: "2643886b-c866-5161-a07a-2f375e3a5e29",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -4441,7 +4441,7 @@ export const dumpEsES = {
               ],
               id: "ed910f03-5610-5e3c-b168-e0a570f2bb71",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -4550,7 +4550,7 @@ export const dumpEsES = {
               ],
               id: "af99a5ae-1f3a-55d2-80d9-1e291ed9d051",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -4622,7 +4622,7 @@ export const dumpEsES = {
               ],
               id: "00ecdd4a-8913-5db3-8a65-b5780f22186d",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -4842,7 +4842,7 @@ export const dumpEsES = {
               ],
               id: "86bbb47d-3846-5f68-a5f7-d1597d199de6",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -4896,7 +4896,7 @@ export const dumpEsES = {
               ],
               id: "a908b5ee-e7ad-57d1-86f9-993cde13ef71",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -4968,7 +4968,7 @@ export const dumpEsES = {
               ],
               id: "9e91ef2c-4afa-5a2e-89f4-4f8bc9692f51",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -5250,7 +5250,7 @@ export const dumpEsES = {
               ],
               id: "8cbae21a-5e6d-5a0a-a1d5-f1cb885bfee0",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -5304,7 +5304,7 @@ export const dumpEsES = {
               ],
               id: "0fc19bb5-5ce0-5460-9657-73457db37838",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -5376,7 +5376,7 @@ export const dumpEsES = {
               ],
               id: "f377eb74-5253-5a83-9f90-6b3e122f2ced",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -5485,7 +5485,7 @@ export const dumpEsES = {
               ],
               id: "09794cce-eaf2-50c2-8f27-fe67bbd09c39",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -5557,7 +5557,7 @@ export const dumpEsES = {
               ],
               id: "51df47ac-d482-5888-b07f-1c9b9d99bf80",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -5777,7 +5777,7 @@ export const dumpEsES = {
               ],
               id: "e0b83235-b339-5708-948e-dfe66dbe8601",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -5831,7 +5831,7 @@ export const dumpEsES = {
               ],
               id: "103e7fb7-132f-554a-8e5c-ca72f93f3b06",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -5903,7 +5903,7 @@ export const dumpEsES = {
               ],
               id: "c4232de0-e5b3-51d1-b8d9-b785ae054b46",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -6012,7 +6012,7 @@ export const dumpEsES = {
               ],
               id: "51ac743d-09a3-588f-b06c-34b0ef3369da",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -6084,7 +6084,7 @@ export const dumpEsES = {
               ],
               id: "36136e0f-6596-5e9f-869a-ffe866d35d5a",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -6304,7 +6304,7 @@ export const dumpEsES = {
               ],
               id: "3143c41e-eb23-5ebe-9cc9-1870067be068",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -6358,7 +6358,7 @@ export const dumpEsES = {
               ],
               id: "aa77c16b-8958-53cb-a90a-c3ca0b65f62c",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -6430,7 +6430,7 @@ export const dumpEsES = {
               ],
               id: "8e6c024b-0654-505f-86f6-16f712edf442",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -6539,7 +6539,7 @@ export const dumpEsES = {
               ],
               id: "ad9dbce2-f95b-565d-ae0d-903550b3f497",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -6611,7 +6611,7 @@ export const dumpEsES = {
               ],
               id: "42707167-146e-50a0-9422-d4ac68ddcbd6",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -6831,7 +6831,7 @@ export const dumpEsES = {
               ],
               id: "5dde1900-7a0d-521b-94f7-57e1e21ab903",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -6885,7 +6885,7 @@ export const dumpEsES = {
               ],
               id: "6450e028-96d9-5bdd-96d2-c07df0946cea",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -6957,7 +6957,7 @@ export const dumpEsES = {
               ],
               id: "c1cc4a9a-6443-5f3f-b659-b1732ea01bb6",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -7066,7 +7066,7 @@ export const dumpEsES = {
               ],
               id: "d486a0d6-acbc-5130-8bc6-0a5aa590b7d9",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -7138,7 +7138,7 @@ export const dumpEsES = {
               ],
               id: "7a9f667e-e5a0-52df-9615-5a83fbbbe2bb",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -7358,7 +7358,7 @@ export const dumpEsES = {
               ],
               id: "47be0b48-e456-574c-907f-1a7c45f271de",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -7412,7 +7412,7 @@ export const dumpEsES = {
               ],
               id: "4e719b62-4499-510a-a945-f5d135b48310",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -7484,7 +7484,7 @@ export const dumpEsES = {
               ],
               id: "d2e07b13-c196-56c6-91a8-35d869347b37",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -7593,7 +7593,7 @@ export const dumpEsES = {
               ],
               id: "57fdf374-0f9f-5873-986b-aed1abc3b168",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -7665,7 +7665,7 @@ export const dumpEsES = {
               ],
               id: "197a2d77-e506-5adb-a1f2-e9180e9285cd",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -7885,7 +7885,7 @@ export const dumpEsES = {
               ],
               id: "e96a1f28-b34f-5371-b4c8-bbed90eb6fb9",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -7939,7 +7939,7 @@ export const dumpEsES = {
               ],
               id: "71f54cc0-a295-5322-8dd1-a2b0eec64c5c",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -8011,7 +8011,7 @@ export const dumpEsES = {
               ],
               id: "7308fd1f-b7dc-555f-8e44-1bf8f63c2817",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -8120,7 +8120,7 @@ export const dumpEsES = {
               ],
               id: "d96d2163-ae9f-5d33-819e-099db7f9f21c",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -8192,7 +8192,7 @@ export const dumpEsES = {
               ],
               id: "c5fa4e60-6d6d-5981-8387-421259c5bd2b",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -8412,7 +8412,7 @@ export const dumpEsES = {
               ],
               id: "de7d2843-fadc-5894-b7be-b661344393ca",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -8466,7 +8466,7 @@ export const dumpEsES = {
               ],
               id: "5efa6eed-07e5-5451-b6f4-7f254841d3ca",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -8538,7 +8538,7 @@ export const dumpEsES = {
               ],
               id: "005efbd8-58b4-58af-9a84-137ee8e42338",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -8647,7 +8647,7 @@ export const dumpEsES = {
               ],
               id: "df982216-73ce-5a30-97b1-317ce3c7db1a",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -8719,7 +8719,7 @@ export const dumpEsES = {
               ],
               id: "707bfc99-2882-54e2-a651-b47071dee7fe",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -8939,7 +8939,7 @@ export const dumpEsES = {
               ],
               id: "855e5918-e204-5123-8651-fc664a404afe",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -8993,7 +8993,7 @@ export const dumpEsES = {
               ],
               id: "85939a98-cfb6-58e0-b23b-02906a34e070",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -9065,7 +9065,7 @@ export const dumpEsES = {
               ],
               id: "a9ae82a2-f010-5cc8-b620-14eb875ebd59",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -9340,7 +9340,7 @@ export const dumpEsES = {
               ],
               id: "275eb86d-ee11-5656-a05a-8f07f31bc8d3",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -9394,7 +9394,7 @@ export const dumpEsES = {
               ],
               id: "b04287d5-62e7-5d40-9feb-82a3f9bb316a",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -9466,7 +9466,7 @@ export const dumpEsES = {
               ],
               id: "f0b9710a-8293-5d29-b05d-14207cb29978",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -9575,7 +9575,7 @@ export const dumpEsES = {
               ],
               id: "e6f147cc-d804-5d38-a9cb-2347b21fe2dd",
               screen_order: 13,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -9647,7 +9647,7 @@ export const dumpEsES = {
               ],
               id: "b1291e71-f79d-5ebc-9071-9bfe10a8c209",
               screen_order: 17,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -9867,7 +9867,7 @@ export const dumpEsES = {
               ],
               id: "75e659aa-dff9-591a-bc82-7b4855e54d8a",
               screen_order: 1,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -9921,7 +9921,7 @@ export const dumpEsES = {
               ],
               id: "ebe23365-4a34-5b4b-b94d-988407981605",
               screen_order: 4,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
@@ -9993,7 +9993,7 @@ export const dumpEsES = {
               ],
               id: "9eda9438-a44a-5e7e-a112-afc2588803c5",
               screen_order: 8,
-              title: "Recuerda el orden de los trazos y la pronunciación de esta sílaba.",
+              title: "Recuerda los trazos y el sonido.",
             },
             {
               blocks: [
