@@ -72,7 +72,7 @@ const ReportFields: React.FC<ReportFieldsProps> = ({ form, tags, onInputFocus, o
           </View>
         ))}
 
-        {Array.from({ length: form.processing }, (_, index) => (
+        {Array.from({ length: form.pending }, (_, index) => (
           <View key={`processing-${index}`} style={[styles.tile, styles.tileProcessing]}>
             <ImageIcon size={20} color={colors.TextPrimary} />
             <ActivityIndicator size="small" color={colors.BgGray} />

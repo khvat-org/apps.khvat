@@ -20,6 +20,7 @@ export const useReportForm = ({ context, onSent }: ReportFormOptions) => {
   const [text, setText] = useState("");
   const [images, setImages] = useState<ReportImage[]>([]);
   const [processing, setProcessing] = useState(0);
+  const [picking, setPicking] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<SendReportError | null>(null);
 
@@ -33,8 +34,9 @@ export const useReportForm = ({ context, onSent }: ReportFormOptions) => {
     };
   }, []);
 
-  const canAddImages = images.length + processing < REPORT_IMAGES_MAX;
-  const canSend = (selected.length > 0 || text.trim() !== "") && processing === 0 && !sending;
+  const pending = picking ? 1 : processing;
+  const canAddImages = !picking && images.length + processing < REPORT_IMAGES_MAX;
+  const canSend = (selected.length > 0 || text.trim() !== "") && pending === 0 && !sending;
 
   const toggleTag = (tag: string) => {
     setSelected((prev) => {
@@ -47,17 +49,30 @@ export const useReportForm = ({ context, onSent }: ReportFormOptions) => {
 
   const pickImages = async () => {
     const limit = REPORT_IMAGES_MAX - images.length - processing;
-    if (limit <= 0) return;
+    if (limit <= 0 || picking) return;
 
-    const result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ["images"],
-      allowsMultipleSelection: true,
-      selectionLimit: limit,
-      preferredAssetRepresentationMode:
-        ImagePicker.UIImagePickerPreferredAssetRepresentationMode.Compatible,
-    });
+    setPicking(true);
 
-    if (result.canceled || !alive.current) return;
+    let result: ImagePicker.ImagePickerResult;
+
+    try {
+      result = await ImagePicker.launchImageLibraryAsync({
+        mediaTypes: ["images"],
+        allowsMultipleSelection: true,
+        selectionLimit: limit,
+        preferredAssetRepresentationMode:
+          ImagePicker.UIImagePickerPreferredAssetRepresentationMode.Compatible,
+      });
+    } catch (_) {
+      if (alive.current) setPicking(false);
+      return;
+    }
+
+    if (!alive.current) return;
+
+    setPicking(false);
+
+    if (result.canceled) return;
 
     const assets = result.assets.slice(0, limit);
     setProcessing((prev) => prev + assets.length);
@@ -107,7 +122,7 @@ export const useReportForm = ({ context, onSent }: ReportFormOptions) => {
     setText,
     images,
     removeImage,
-    processing,
+    pending,
     canAddImages,
     pickImages,
     canSend,
