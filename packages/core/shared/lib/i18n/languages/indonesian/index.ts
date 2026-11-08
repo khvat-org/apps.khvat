@@ -36,7 +36,7 @@ const Indonesian = {
       matchingPairs: { title: "Pasangkan", subtitle: "Cocokkan pasangan kata" },
       wordBuilding: { title: "Membentuk Kata", subtitle: "Susun sebuah kata" },
       typing: { title: "Mengetik", subtitle: "Ketik suku kata" },
-      captcha: { title: "Captcha", subtitle: "Pilih semua gambar yang cocok" },
+      captcha: { title: "Captcha", subtitle: "Pilih gambar yang cocok" },
     },
 
     captcha: {
@@ -91,7 +91,7 @@ const Indonesian = {
   selectKana: {
     chooseKana: "Pilih kana",
     words: "Kata",
-    nothingSelected: "Tidak ada yang dipilih",
+    nothingSelected: "Belum dipilih",
   },
 
   settings: {

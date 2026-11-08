@@ -36,7 +36,7 @@ const ChineseHK = {
       matchingPairs: { title: "配對", subtitle: "配對單字" },
       wordBuilding: { title: "組字", subtitle: "組成單字" },
       typing: { title: "輸入", subtitle: "輸入音節" },
-      captcha: { title: "驗證碼", subtitle: "選出所有相符的圖片" },
+      captcha: { title: "驗證碼", subtitle: "選出相符的圖片" },
     },
 
     captcha: {
@@ -89,7 +89,7 @@ const ChineseHK = {
   selectKana: {
     chooseKana: "選擇假名",
     words: "單字",
-    nothingSelected: "未選擇任何項目",
+    nothingSelected: "尚未選擇",
   },
 
   settings: {

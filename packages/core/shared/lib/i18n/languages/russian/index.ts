@@ -36,7 +36,7 @@ const Russian = {
       matchingPairs: { title: "Составление пары", subtitle: "Собери пару из слов" },
       wordBuilding: { title: "Составление слова", subtitle: "Составь слово" },
       typing: { title: "Ввод", subtitle: "Напиши слог" },
-      captcha: { title: "Капча", subtitle: "Выбери все подходящие картинки" },
+      captcha: { title: "Капча", subtitle: "Выбери нужные картинки" },
     },
 
     captcha: {
@@ -90,7 +90,7 @@ const Russian = {
   selectKana: {
     chooseKana: "Выбрать кану",
     words: "Слов",
-    nothingSelected: "Ничего не выбрано",
+    nothingSelected: "Не выбрано",
   },
 
   settings: {

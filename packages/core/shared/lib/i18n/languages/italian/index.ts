@@ -36,7 +36,7 @@ const Italian = {
       matchingPairs: { title: "Abbinamento di coppie", subtitle: "Abbina le coppie di parole" },
       wordBuilding: { title: "Costruzione di parole", subtitle: "Forma una parola" },
       typing: { title: "Digitazione", subtitle: "Scrivi la sillaba" },
-      captcha: { title: "Captcha", subtitle: "Seleziona le immagini giuste" },
+      captcha: { title: "Captcha", subtitle: "Scegli le immagini giuste" },
     },
 
     captcha: {
@@ -91,7 +91,7 @@ const Italian = {
   selectKana: {
     chooseKana: "Scegli i kana",
     words: "Parole",
-    nothingSelected: "Niente selezionato",
+    nothingSelected: "Nessuna scelta",
   },
 
   settings: {

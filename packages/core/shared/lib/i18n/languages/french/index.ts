@@ -36,7 +36,7 @@ const French = {
       matchingPairs: { title: "Paires correspondantes", subtitle: "Associez les paires de mots" },
       wordBuilding: { title: "Construction de mot", subtitle: "Formez un mot" },
       typing: { title: "Saisie", subtitle: "Tapez la syllabe" },
-      captcha: { title: "Captcha", subtitle: "Sélectionnez les bonnes images" },
+      captcha: { title: "Captcha", subtitle: "Trouvez les bonnes images" },
     },
 
     captcha: {
@@ -92,7 +92,7 @@ const French = {
   selectKana: {
     chooseKana: "Choisir les kana",
     words: "Mots",
-    nothingSelected: "Rien de sélectionné",
+    nothingSelected: "Aucun choix",
   },
 
   settings: {

@@ -36,7 +36,7 @@ const PortugueseBR = {
       matchingPairs: { title: "Emparelhar pares", subtitle: "Combine pares de palavras" },
       wordBuilding: { title: "Construção de palavra", subtitle: "Forme uma palavra" },
       typing: { title: "Digitação", subtitle: "Digite a sílaba" },
-      captcha: { title: "Captcha", subtitle: "Selecione as imagens certas" },
+      captcha: { title: "Captcha", subtitle: "Escolha as imagens certas" },
     },
 
     captcha: {
@@ -91,7 +91,7 @@ const PortugueseBR = {
   selectKana: {
     chooseKana: "Escolher kana",
     words: "Palavras",
-    nothingSelected: "Nada selecionado",
+    nothingSelected: "Sem seleção",
   },
 
   settings: {

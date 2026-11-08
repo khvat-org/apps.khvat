@@ -36,7 +36,7 @@ const German = {
       matchingPairs: { title: "Paare bilden", subtitle: "Wortpaare zusammenstellen" },
       wordBuilding: { title: "Wortbildung", subtitle: "Ein Wort bilden" },
       typing: { title: "Eingabe", subtitle: "Die Silbe schreiben" },
-      captcha: { title: "Captcha", subtitle: "Alle passenden Bilder auswählen" },
+      captcha: { title: "Captcha", subtitle: "Passende Bilder wählen" },
     },
 
     captcha: {
@@ -93,7 +93,7 @@ const German = {
   selectKana: {
     chooseKana: "Kana auswählen",
     words: "Wörter",
-    nothingSelected: "Nichts ausgewählt",
+    nothingSelected: "Keine Auswahl",
   },
 
   settings: {

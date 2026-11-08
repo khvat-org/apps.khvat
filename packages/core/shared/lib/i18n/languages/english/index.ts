@@ -36,7 +36,7 @@ const English = {
       matchingPairs: { title: "Matching Pairs", subtitle: "Match word pairs" },
       wordBuilding: { title: "Word Building", subtitle: "Form a word" },
       typing: { title: "Typing", subtitle: "Type the syllable" },
-      captcha: { title: "Captcha", subtitle: "Select all matching images" },
+      captcha: { title: "Captcha", subtitle: "Pick matching images" },
     },
 
     captcha: {
@@ -91,7 +91,7 @@ const English = {
   selectKana: {
     chooseKana: "Choose kana",
     words: "Words",
-    nothingSelected: "Nothing selected",
+    nothingSelected: "None selected",
   },
 
   settings: {

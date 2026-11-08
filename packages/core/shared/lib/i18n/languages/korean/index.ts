@@ -36,7 +36,7 @@ const Korean = {
       matchingPairs: { title: "짝 맞추기", subtitle: "단어 짝 맞추기" },
       wordBuilding: { title: "단어 만들기", subtitle: "단어 구성하기" },
       typing: { title: "입력", subtitle: "음절 입력하기" },
-      captcha: { title: "캡차", subtitle: "알맞은 이미지를 모두 선택하기" },
+      captcha: { title: "캡차", subtitle: "알맞은 이미지 선택" },
     },
 
     captcha: {
@@ -90,7 +90,7 @@ const Korean = {
   selectKana: {
     chooseKana: "가나 선택",
     words: "단어",
-    nothingSelected: "선택된 항목 없음",
+    nothingSelected: "선택 없음",
   },
 
   settings: {

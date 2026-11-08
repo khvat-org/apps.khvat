@@ -36,7 +36,7 @@ const ChineseTW = {
       matchingPairs: { title: "配對", subtitle: "配對單字" },
       wordBuilding: { title: "組詞", subtitle: "組成單字" },
       typing: { title: "輸入", subtitle: "輸入音節" },
-      captcha: { title: "驗證碼", subtitle: "選出所有相符的圖片" },
+      captcha: { title: "驗證碼", subtitle: "選出相符的圖片" },
     },
 
     captcha: {

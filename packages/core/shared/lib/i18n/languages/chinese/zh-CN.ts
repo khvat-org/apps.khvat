@@ -36,7 +36,7 @@ const ChineseCN = {
       matchingPairs: { title: "配对", subtitle: "匹配单词对" },
       wordBuilding: { title: "组词", subtitle: "组成单词" },
       typing: { title: "输入", subtitle: "输入音节" },
-      captcha: { title: "验证码", subtitle: "选出所有匹配的图片" },
+      captcha: { title: "验证码", subtitle: "选出匹配的图片" },
     },
 
     captcha: {
@@ -89,7 +89,7 @@ const ChineseCN = {
   selectKana: {
     chooseKana: "选择假名",
     words: "单词",
-    nothingSelected: "未选择任何内容",
+    nothingSelected: "尚未选择",
   },
 
   settings: {
