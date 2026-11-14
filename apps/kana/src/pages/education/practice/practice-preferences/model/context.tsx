@@ -5,7 +5,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import { MIX_PRACTICE_TYPES, PracticeType } from "@/shared/constants/kana";
 
-export const QUESTIONS_COUNT = { min: 8, max: 40, step: 4 };
+export const QUESTIONS_COUNT = { min: 8, max: 96, step: 4 };
 export const TIMER_SECONDS = { min: 3, max: 12, step: 1 };
 
 export type PracticePreferences = {
