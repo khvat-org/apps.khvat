@@ -31,6 +31,7 @@ type SetDeviceRequestDeviceUpdateState = {
 
   version?: string; // * App version
   application_name?: string; // * App name
+  store?: string;
 
   signed_out?: boolean;
 };
@@ -98,8 +99,8 @@ export const setDevice = async (
     platform: isAndroid ? Platform.Android : Platform.IOS,
 
     version: process.env.VERSION,
-    // * App display name from the app's .env (react-native-dotenv inlines it at build time).
     application_name: process.env.APP_NAME,
+    store: process.env.STORE,
     ...payload,
   };
 
