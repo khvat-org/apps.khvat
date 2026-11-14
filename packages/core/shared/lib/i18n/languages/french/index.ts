@@ -135,6 +135,19 @@ const French = {
       subtitle: "Cela nous aide beaucoup",
     },
 
+    notifications: {
+      title: "Notifications",
+      on: "Activées",
+      off: "Désactivées",
+      reminders: "Rappels d'étude",
+      remindersHint: "Après une longue pause",
+      announcements: "Messages du développeur",
+      announcementsHint: "Nouveautés et mises à jour",
+      blocked:
+        "Les notifications sont désactivées dans les réglages du téléphone. Touchez l'interrupteur pour ouvrir les réglages et les autoriser.",
+      error: "Impossible d'enregistrer. Vérifiez votre connexion et réessayez.",
+    },
+
     joinOurCommunity: {
       title: "Rejoignez notre communauté",
     },

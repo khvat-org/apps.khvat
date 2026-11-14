@@ -6,9 +6,13 @@ import {
   DEVICE_ID,
   FAILED_TO_REQUEST_NOTIFICATION_TOKEN,
   NOTIFICATION_TOKEN,
+  PENDING_SIGN_OUT,
 } from "@nihongo/core/shared/constants/storageKeys";
 import { getAccessToken, subscribeToAuthChange } from "@nihongo/core/shared/lib/auth";
-import { useNotificationsContext } from "@nihongo/core/shared/lib/notifications";
+import {
+  NotificationPermission,
+  useNotificationsContext,
+} from "@nihongo/core/shared/lib/notifications";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import { Platform, setDevice, setDeviceOnline } from "./api";
@@ -64,24 +68,53 @@ async function registerDeviceImmediately() {
   } else {
     await setDeviceOnline();
     deviceId = await AsyncStorage.getItem(DEVICE_ID);
+    await retryPendingSignOut();
   }
 
   return deviceId;
 }
 
+async function sendSignOut(): Promise<boolean> {
+  const language = (await AsyncStorage.getItem(APP_LANG)) ?? "";
+  const response = await setDevice({ lang: language, signed_out: true });
+
+  if (!response.ok) return false;
+
+  await AsyncStorage.removeItem(PENDING_SIGN_OUT);
+  return true;
+}
+
+async function retryPendingSignOut() {
+  if ((await AsyncStorage.getItem(PENDING_SIGN_OUT)) !== "true") return;
+
+  if (await getAccessToken()) {
+    await AsyncStorage.removeItem(PENDING_SIGN_OUT);
+    return;
+  }
+
+  if (!(await sendSignOut())) {
+    console.log(`[${+new Date()}] [ERROR]: CANNOT RETRY DEVICE SIGN OUT`);
+  }
+}
+
 async function syncDeviceUser(signedIn: boolean, onCreated: (deviceId: string) => void) {
+  if (signedIn || !(await AsyncStorage.getItem(DEVICE_ID))) {
+    await AsyncStorage.removeItem(PENDING_SIGN_OUT);
+  } else {
+    await AsyncStorage.setItem(PENDING_SIGN_OUT, "true");
+  }
+
   if (!(await AsyncStorage.getItem(DEVICE_ID))) {
     const created = await createDevice();
     if (created) onCreated(created);
     return;
   }
 
-  const language = (await AsyncStorage.getItem(APP_LANG)) ?? "";
-  const response = await setDevice(
-    signedIn ? { lang: language } : { lang: language, signed_out: true },
-  );
+  const ok = signedIn
+    ? (await setDevice({ lang: (await AsyncStorage.getItem(APP_LANG)) ?? "" })).ok
+    : await sendSignOut();
 
-  if (!response.ok) {
+  if (!ok) {
     console.log(`[${+new Date()}] [ERROR]: CANNOT SYNC DEVICE USER`);
   }
 }
@@ -89,6 +122,7 @@ async function syncDeviceUser(signedIn: boolean, onCreated: (deviceId: string) =
 async function tryRegisterPushTokenLater(
   deviceId: string,
   requestPushNotificationsToken: () => Promise<string | null>,
+  getPermission: () => Promise<NotificationPermission>,
 ) {
   if (!deviceId) return;
 
@@ -96,15 +130,16 @@ async function tryRegisterPushTokenLater(
   const notificationToken = await AsyncStorage.getItem(NOTIFICATION_TOKEN);
   const failedBefore = await AsyncStorage.getItem(FAILED_TO_REQUEST_NOTIFICATION_TOKEN);
 
-  if (failedBefore === "true") {
-    return;
-  }
-
   try {
+    if (failedBefore === "true") {
+      if (!(await getPermission()).granted) return;
+      await AsyncStorage.removeItem(FAILED_TO_REQUEST_NOTIFICATION_TOKEN);
+    }
+
     const token = await requestPushNotificationsToken();
 
     if (!token) {
-      if (!notificationToken) {
+      if (!(await getPermission()).granted) {
         await AsyncStorage.setItem(FAILED_TO_REQUEST_NOTIFICATION_TOKEN, "true");
       }
       return;
@@ -133,7 +168,7 @@ async function tryRegisterPushTokenLater(
 }
 
 export const DeviceRegistrationProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const { requestPushNotificationsToken } = useNotificationsContext();
+  const { requestPushNotificationsToken, getPermission } = useNotificationsContext();
   const pushTokenTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const schedulePushToken = useCallback(
@@ -141,10 +176,10 @@ export const DeviceRegistrationProvider: React.FC<{ children: ReactNode }> = ({ 
       if (pushTokenTimer.current) return;
 
       pushTokenTimer.current = setTimeout(() => {
-        tryRegisterPushTokenLater(deviceId, requestPushNotificationsToken);
+        tryRegisterPushTokenLater(deviceId, requestPushNotificationsToken, getPermission);
       }, 12000);
     },
-    [requestPushNotificationsToken],
+    [requestPushNotificationsToken, getPermission],
   );
 
   useEffect(() => {

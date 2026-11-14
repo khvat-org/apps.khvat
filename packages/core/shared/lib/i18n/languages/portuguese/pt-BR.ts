@@ -133,6 +133,19 @@ const PortugueseBR = {
       subtitle: "Isso realmente nos ajuda muito",
     },
 
+    notifications: {
+      title: "Notificações",
+      on: "Ativadas",
+      off: "Desativadas",
+      reminders: "Lembretes de estudo",
+      remindersHint: "Se ficar um tempo sem estudar",
+      announcements: "Mensagens do desenvolvedor",
+      announcementsHint: "Novidades e atualizações",
+      blocked:
+        "As notificações estão desativadas nas configurações do celular. Toque no botão para abrir as configurações e permiti-las.",
+      error: "Não foi possível salvar. Verifique sua conexão e tente novamente.",
+    },
+
     joinOurCommunity: {
       title: "Junte-se à nossa comunidade",
     },

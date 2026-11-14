@@ -133,6 +133,19 @@ const SpanishMX = {
       subtitle: "Nos ayuda mucho",
     },
 
+    notifications: {
+      title: "Notificaciones",
+      on: "Activadas",
+      off: "Desactivadas",
+      reminders: "Recordatorios de estudio",
+      remindersHint: "Si llevas tiempo sin estudiar",
+      announcements: "Mensajes del desarrollador",
+      announcementsHint: "Novedades y actualizaciones",
+      blocked:
+        "Las notificaciones están desactivadas en la configuración del teléfono. Toca el interruptor para abrir la configuración y permitirlas.",
+      error: "No se pudo guardar. Revisa tu conexión e inténtalo de nuevo.",
+    },
+
     joinOurCommunity: {
       title: "Únete a nuestra comunidad",
     },

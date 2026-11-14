@@ -12,6 +12,7 @@ import ProfileEditPage from "@nihongo/core/pages/profile/edit";
 import ProfileChangeNamePage from "@nihongo/core/pages/profile/edit/change-name";
 import ProfileChangePasswordPage from "@nihongo/core/pages/profile/edit/change-password";
 import SettingsLanguagePage from "@nihongo/core/pages/settings/settings-language/settings-language";
+import SettingsNotificationsPage from "@nihongo/core/pages/settings/settings-notifications/settings-notifications";
 import SettingsReportPage from "@nihongo/core/pages/settings/settings-report/settings-report";
 import SettingsThemePage from "@nihongo/core/pages/settings/settings-theme/settings-theme";
 import SettingsTransliterationsPage from "@nihongo/core/pages/settings/settings-transliterations/settings-transliterations";
@@ -137,6 +138,7 @@ const RootStack = {
     [ROUTES.SETTINGS_THEME]: modal(SettingsThemePage),
     [ROUTES.SETTINGS_WIDGETS]: modal(SettingsWidgetsPage),
     [ROUTES.SETTINGS_REPORT]: modal(SettingsReportPage),
+    [ROUTES.SETTINGS_NOTIFICATIONS]: modal(SettingsNotificationsPage),
 
     [ROUTES.PROFILE_EDIT]: modal(ProfileEditPage),
     [ROUTES.PROFILE_EDIT_NAME]: modal(ProfileChangeNamePage),

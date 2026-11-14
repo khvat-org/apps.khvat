@@ -132,6 +132,18 @@ const Korean = {
       subtitle: "큰 도움이 됩니다",
     },
 
+    notifications: {
+      title: "알림",
+      on: "켜짐",
+      off: "꺼짐",
+      reminders: "학습 알림",
+      remindersHint: "한동안 학습하지 않았을 때",
+      announcements: "개발자 메시지",
+      announcementsHint: "소식 및 업데이트",
+      blocked: "휴대폰 설정에서 알림이 꺼져 있어요. 스위치를 눌러 설정을 열고 알림을 허용하세요.",
+      error: "저장하지 못했어요. 인터넷 연결을 확인하고 다시 시도하세요.",
+    },
+
     joinOurCommunity: {
       title: "커뮤니티에 참여하기",
     },

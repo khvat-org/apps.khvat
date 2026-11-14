@@ -12,6 +12,7 @@ import RemoveData from "@nihongo/core/features/settings/remove-data/remove-data"
 import ReportLink from "@nihongo/core/features/settings/report-link/report-link";
 import SettingsHaptic from "@nihongo/core/features/settings/settings-haptic/settings-haptic";
 import SettingsLanguage from "@nihongo/core/features/settings/settings-language/settings-language";
+import SettingsNotifications from "@nihongo/core/features/settings/settings-notifications/settings-notifications";
 import SettingsTheme from "@nihongo/core/features/settings/settings-theme/settings-theme";
 import SettingsTransliterations from "@nihongo/core/features/settings/settings-transliterations/settings-language";
 import SettingsWidgetsSection from "@nihongo/core/features/settings/settings-widgets/settings-widgets";
@@ -117,6 +118,11 @@ const SettingsPage: React.FC = () => {
 
           <SettingsSection>
             <StoreReviewLink iosId="id6479753061" packageName={process.env.ANDROID_PACKAGE} />
+            <SettingsNotifications
+              goToNotificationsPage={() =>
+                openSheet(() => navigation.navigate(ROUTES.SETTINGS_NOTIFICATIONS))
+              }
+            />
             <ReportLink
               goToReportPage={() => openSheet(() => navigation.navigate(ROUTES.SETTINGS_REPORT))}
             />

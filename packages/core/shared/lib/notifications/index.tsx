@@ -10,12 +10,18 @@ export const notificationDataSchema = z.object({
 
 export type NotificationData = z.infer<typeof notificationDataSchema>;
 
+export type NotificationPermission = { granted: boolean; canAskAgain: boolean };
+
 interface NotificationsContextType {
   requestPushNotificationsToken: () => Promise<string | null>;
+  getPermission: () => Promise<NotificationPermission>;
+  requestPermission: () => Promise<NotificationPermission>;
 }
 
 export const NotificationsContext = createContext<NotificationsContextType>({
   requestPushNotificationsToken: async () => null,
+  getPermission: async () => ({ granted: false, canAskAgain: false }),
+  requestPermission: async () => ({ granted: false, canAskAgain: false }),
 });
 
 export const useNotificationsContext = () => useContext(NotificationsContext);

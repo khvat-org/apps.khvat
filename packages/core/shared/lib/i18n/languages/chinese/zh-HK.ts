@@ -130,6 +130,18 @@ const ChineseHK = {
       subtitle: "這對我們幫助很大",
     },
 
+    notifications: {
+      title: "通知",
+      on: "已開啟",
+      off: "已關閉",
+      reminders: "學習提醒",
+      remindersHint: "一段時間沒有學習時",
+      announcements: "開發者訊息",
+      announcementsHint: "最新消息與更新",
+      blocked: "手機設定中已關閉通知。點擊開關，開啟設定並允許通知。",
+      error: "儲存失敗。請檢查網絡後再試一次。",
+    },
+
     joinOurCommunity: {
       title: "加入我們的社群",
     },

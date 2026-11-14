@@ -133,6 +133,19 @@ const English = {
       subtitle: "It really helps us a lot",
     },
 
+    notifications: {
+      title: "Notifications",
+      on: "On",
+      off: "Off",
+      reminders: "Study reminders",
+      remindersHint: "If you haven't studied in a while",
+      announcements: "Messages from the developer",
+      announcementsHint: "News and updates",
+      blocked:
+        "Notifications are turned off in your phone settings. Tap the switch to open settings and allow them.",
+      error: "Couldn't save. Check your connection and try again.",
+    },
+
     joinOurCommunity: {
       title: "Join our community",
     },

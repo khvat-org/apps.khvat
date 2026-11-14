@@ -135,6 +135,19 @@ const German = {
       subtitle: "Das hilft uns wirklich sehr",
     },
 
+    notifications: {
+      title: "Benachrichtigungen",
+      on: "An",
+      off: "Aus",
+      reminders: "Lernerinnerungen",
+      remindersHint: "Wenn du länger nicht gelernt hast",
+      announcements: "Nachrichten vom Entwickler",
+      announcementsHint: "Neuigkeiten und Updates",
+      blocked:
+        "Benachrichtigungen sind in den Telefoneinstellungen deaktiviert. Tippe auf den Schalter, um die Einstellungen zu öffnen und sie zu erlauben.",
+      error: "Speichern fehlgeschlagen. Prüfe deine Verbindung und versuche es erneut.",
+    },
+
     joinOurCommunity: {
       title: "Tritt unserer Community bei",
     },

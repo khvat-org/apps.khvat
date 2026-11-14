@@ -134,6 +134,19 @@ const PortuguesePT = {
       subtitle: "Ajuda-nos muito",
     },
 
+    notifications: {
+      title: "Notificações",
+      on: "Ativadas",
+      off: "Desativadas",
+      reminders: "Lembretes de estudo",
+      remindersHint: "Se ficar algum tempo sem estudar",
+      announcements: "Mensagens do programador",
+      announcementsHint: "Novidades e atualizações",
+      blocked:
+        "As notificações estão desativadas nas definições do telemóvel. Toque no interruptor para abrir as definições e permiti-las.",
+      error: "Não foi possível guardar. Verifique a ligação e tente novamente.",
+    },
+
     joinOurCommunity: {
       title: "Junte-se à nossa comunidade",
     },

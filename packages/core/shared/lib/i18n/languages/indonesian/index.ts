@@ -133,6 +133,19 @@ const Indonesian = {
       subtitle: "Ini sangat membantu kami",
     },
 
+    notifications: {
+      title: "Notifikasi",
+      on: "Aktif",
+      off: "Nonaktif",
+      reminders: "Pengingat belajar",
+      remindersHint: "Jika lama tidak belajar",
+      announcements: "Pesan dari pengembang",
+      announcementsHint: "Berita dan pembaruan",
+      blocked:
+        "Notifikasi dimatikan di pengaturan ponsel. Ketuk sakelar untuk membuka pengaturan dan mengizinkannya.",
+      error: "Gagal menyimpan. Periksa koneksi dan coba lagi.",
+    },
+
     joinOurCommunity: {
       title: "Bergabung dengan komunitas kami",
     },

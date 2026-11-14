@@ -134,6 +134,19 @@ const Italian = {
       subtitle: "Ci aiuta davvero tanto",
     },
 
+    notifications: {
+      title: "Notifiche",
+      on: "Attive",
+      off: "Disattivate",
+      reminders: "Promemoria di studio",
+      remindersHint: "Se non studi da un po'",
+      announcements: "Messaggi dallo sviluppatore",
+      announcementsHint: "Novità e aggiornamenti",
+      blocked:
+        "Le notifiche sono disattivate nelle impostazioni del telefono. Tocca l'interruttore per aprire le impostazioni e consentirle.",
+      error: "Impossibile salvare. Controlla la connessione e riprova.",
+    },
+
     joinOurCommunity: {
       title: "Unisciti alla nostra community",
     },

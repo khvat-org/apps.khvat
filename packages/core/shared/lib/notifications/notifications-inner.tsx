@@ -6,7 +6,7 @@ import { Linking, Platform } from "react-native";
 import { notificationsConfig } from "./config";
 import { registerPushToken } from "./register-push-token";
 
-import { NotificationsContext, notificationDataSchema } from "./index";
+import { NotificationPermission, NotificationsContext, notificationDataSchema } from "./index";
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -26,7 +26,25 @@ const requestPushNotificationsToken = async (): Promise<string | null> => {
   }
 };
 
-const contextValue = { requestPushNotificationsToken };
+const getPermission = async (): Promise<NotificationPermission> => {
+  try {
+    const permission = await Notifications.getPermissionsAsync();
+    return { granted: permission.status === "granted", canAskAgain: permission.canAskAgain };
+  } catch {
+    return { granted: false, canAskAgain: false };
+  }
+};
+
+const requestPermission = async (): Promise<NotificationPermission> => {
+  try {
+    const permission = await Notifications.requestPermissionsAsync();
+    return { granted: permission.status === "granted", canAskAgain: permission.canAskAgain };
+  } catch {
+    return { granted: false, canAskAgain: false };
+  }
+};
+
+const contextValue = { requestPushNotificationsToken, getPermission, requestPermission };
 
 const setupAndroidChannel = () =>
   Notifications.setNotificationChannelAsync(notificationsConfig.channels.default.id, {

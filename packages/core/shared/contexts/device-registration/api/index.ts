@@ -1,8 +1,11 @@
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
 import {
   APP_LANG,
+  CUSTOM_NOTIFICATIONS_ENABLED,
   DEVICE_ID,
+  FAILED_TO_REQUEST_NOTIFICATION_TOKEN,
   NOTIFICATION_TOKEN,
+  NOTIFICATIONS_ENABLED,
 } from "@nihongo/core/shared/constants/storageKeys";
 import { authFetch } from "@nihongo/core/shared/lib/auth";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -87,15 +90,60 @@ export const setDeviceOnline = async () => {
   }
 };
 
+export type NotificationsSettings = {
+  reminders: boolean;
+  announcements: boolean;
+};
+
+export const getNotificationsSettings = async (): Promise<NotificationsSettings> => {
+  const [reminders, announcements] = await Promise.all([
+    AsyncStorage.getItem(NOTIFICATIONS_ENABLED),
+    AsyncStorage.getItem(CUSTOM_NOTIFICATIONS_ENABLED),
+  ]);
+
+  return { reminders: reminders !== "false", announcements: announcements !== "false" };
+};
+
+export const saveNotificationsSettings = async (
+  changes: Partial<NotificationsSettings>,
+  token?: string | null,
+): Promise<boolean> => {
+  const settings = { ...(await getNotificationsSettings()), ...changes };
+
+  const response = await setDevice({
+    lang: (await AsyncStorage.getItem(APP_LANG)) ?? "",
+    notifications: settings.reminders,
+    custom_notifications: settings.announcements,
+    ...(token ? { token } : {}),
+  });
+
+  if (!response.ok) return false;
+
+  await AsyncStorage.multiSet([
+    [NOTIFICATIONS_ENABLED, String(settings.reminders)],
+    [CUSTOM_NOTIFICATIONS_ENABLED, String(settings.announcements)],
+  ]);
+
+  if (token) {
+    await AsyncStorage.setItem(NOTIFICATION_TOKEN, token);
+    await AsyncStorage.removeItem(FAILED_TO_REQUEST_NOTIFICATION_TOKEN);
+  }
+
+  return true;
+};
+
 export const setDevice = async (
   payload: SetDeviceRequestState,
 ): Promise<SetDeviceResponseState> => {
   const deviceId = await AsyncStorage.getItem(DEVICE_ID);
   const savedToken = await AsyncStorage.getItem(NOTIFICATION_TOKEN);
+  const notificationsSettings = await getNotificationsSettings();
 
   const fullPayload: SetDeviceRequestState = {
     ...(deviceId ? { id: deviceId } : {}),
     ...(savedToken ? { token: savedToken } : {}),
+    notifications: notificationsSettings.reminders,
+    custom_notifications: notificationsSettings.announcements,
     platform: isAndroid ? Platform.Android : Platform.IOS,
 
     version: process.env.VERSION,

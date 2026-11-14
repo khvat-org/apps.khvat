@@ -130,6 +130,18 @@ const ChineseCN = {
       subtitle: "这真的对我们很有帮助",
     },
 
+    notifications: {
+      title: "通知",
+      on: "已开启",
+      off: "已关闭",
+      reminders: "学习提醒",
+      remindersHint: "一段时间没有学习时",
+      announcements: "开发者消息",
+      announcementsHint: "新闻和更新",
+      blocked: "手机设置中已关闭通知。点击开关，打开设置并允许通知。",
+      error: "保存失败。请检查网络后重试。",
+    },
+
     joinOurCommunity: {
       title: "加入我们的社区",
     },
