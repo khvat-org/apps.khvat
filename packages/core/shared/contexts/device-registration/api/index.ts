@@ -1,6 +1,10 @@
 import { isAndroid } from "@nihongo/core/shared/constants/platformUtil";
-import { DEVICE_ID } from "@nihongo/core/shared/constants/storageKeys";
-import { apiFetch } from "@nihongo/core/shared/lib/api-gateway";
+import {
+  APP_LANG,
+  DEVICE_ID,
+  NOTIFICATION_TOKEN,
+} from "@nihongo/core/shared/constants/storageKeys";
+import { authFetch } from "@nihongo/core/shared/lib/auth";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export enum Platform {
@@ -11,6 +15,8 @@ export enum Platform {
 type SetDeviceRequestDeviceRegistrationState = {
   lang: string;
   platform?: Platform;
+
+  signed_out?: boolean;
 };
 
 type SetDeviceRequestDeviceUpdateState = {
@@ -25,12 +31,13 @@ type SetDeviceRequestDeviceUpdateState = {
 
   version?: string; // * App version
   application_name?: string; // * App name
+
+  signed_out?: boolean;
 };
 
 // ? Request payload for device registration
 type SetDeviceRequestState =
-  | SetDeviceRequestDeviceRegistrationState
-  | SetDeviceRequestDeviceUpdateState;
+  SetDeviceRequestDeviceRegistrationState | SetDeviceRequestDeviceUpdateState;
 
 // * Failed setDevice response
 type SetDeviceResponseFailedState = {
@@ -53,7 +60,7 @@ export const setDeviceOnline = async () => {
   if (!deviceId) return;
 
   try {
-    const response = await apiFetch("/api/v2/device/online", {
+    const response = await authFetch("/api/v2/device/online", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -65,7 +72,10 @@ export const setDeviceOnline = async () => {
       }),
     });
 
-    if (!response.ok) {
+    if (response.status === 404) {
+      console.log(`[${+new Date()}] [LOG]: Device not found on setDeviceOnline, re-registering`);
+      await setDevice({ lang: (await AsyncStorage.getItem(APP_LANG)) ?? "" });
+    } else if (!response.ok) {
       console.log(`[${+new Date()}] [ERROR]: Error setDeviceOnline request: `);
     } else {
       console.log(`[${+new Date()}] [LOG]: Send setDeviceOnline request: `);
@@ -80,9 +90,11 @@ export const setDevice = async (
   payload: SetDeviceRequestState,
 ): Promise<SetDeviceResponseState> => {
   const deviceId = await AsyncStorage.getItem(DEVICE_ID);
+  const savedToken = await AsyncStorage.getItem(NOTIFICATION_TOKEN);
 
   const fullPayload: SetDeviceRequestState = {
     ...(deviceId ? { id: deviceId } : {}),
+    ...(savedToken ? { token: savedToken } : {}),
     platform: isAndroid ? Platform.Android : Platform.IOS,
 
     version: process.env.VERSION,
@@ -96,7 +108,7 @@ export const setDevice = async (
   );
 
   try {
-    const response = await apiFetch("/api/v2/device", {
+    const response = await authFetch("/api/v2/device", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -112,6 +124,9 @@ export const setDevice = async (
     const body = await response.json();
 
     if (body.ok === true && !!body.id) {
+      if (body.id !== deviceId) {
+        await AsyncStorage.setItem(DEVICE_ID, body.id);
+      }
       return body;
     }
 
