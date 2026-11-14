@@ -33,6 +33,7 @@ const appAuthProps = {
 const config = {
   name: name,
   slug: "kana-master",
+  scheme: "nihongokana",
   version: process.env.VERSION,
   orientation: "default",
   githubUrl: process.env.GITHUB_LINK,
@@ -85,7 +86,7 @@ const config = {
     ],
     "expo-font",
     "expo-apple-authentication",
-    "expo-audio",
+    ["expo-audio", { enableBackgroundPlayback: false, recordAudioAndroid: false }],
     [
       "expo-splash-screen",
       {

@@ -9,26 +9,31 @@ start:
 # * Build for android .aab (Play Store)
 build_android_aab_google:
 	mkdir -p dist
+	rm -rf android
 	eas build --platform android --profile production_google --local --output dist/app_google_store.aab
 
 # * Build for android .aab (RuStore)
 build_android_aab_rustore:
 	mkdir -p dist
+	rm -rf android
 	eas build --platform android --profile production_rustore --local --output dist/app_rustore.aab
 
 # * Build for android .aab (Huawei AppGallery)
 build_android_aab_huawei:
 	mkdir -p dist
+	rm -rf android
 	eas build --platform android --profile production_huawei --local --output dist/app_huawei.aab
 
 # * Build for android .apk ( for testing )
 build_android_apk:
 	mkdir -p dist
+	rm -rf android
 	eas build --platform android --profile production_apk --local --output dist/app.apk
 
 # * Development Build for android (.apk)
 build_android_dev:
 	mkdir -p dist
+	rm -rf android
 	eas build --platform android --profile development --local --output dist/dev_app.apk
 
 # * Build for iOS
