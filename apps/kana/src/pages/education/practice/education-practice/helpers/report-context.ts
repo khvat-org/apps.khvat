@@ -43,5 +43,24 @@ const getSubject = (question: PracticeQuestion): string => {
   }
 };
 
-export const getPracticeReportContext = (question: PracticeQuestion) =>
-  ["practice:kana", getSubject(question), `mode:${question.type}`].filter(Boolean).join("/");
+type PreviousQuestion = {
+  question: PracticeQuestion;
+  isCorrectAnswer?: boolean;
+};
+
+const getPreviousContext = ({ question, isCorrectAnswer }: PreviousQuestion) => {
+  const result =
+    isCorrectAnswer === undefined ? "" : `result:${isCorrectAnswer ? "correct" : "wrong"}`;
+
+  return `prev:${[getSubject(question), `mode:${question.type}`, result].filter(Boolean).join(",")}`;
+};
+
+export const getPracticeReportContext = (question: PracticeQuestion, previous?: PreviousQuestion) =>
+  [
+    "practice:kana",
+    getSubject(question),
+    `mode:${question.type}`,
+    previous ? getPreviousContext(previous) : "",
+  ]
+    .filter(Boolean)
+    .join("/");

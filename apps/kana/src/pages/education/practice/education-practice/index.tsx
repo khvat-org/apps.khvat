@@ -220,7 +220,17 @@ const EducationPracticePage: React.FC<LearnScreenProps> = ({ route }) => {
                 setIsReporting(true);
                 openReport({
                   tags: REPORT_TAGS,
-                  context: getPracticeReportContext(question),
+                  context: getPracticeReportContext(
+                    question,
+                    currentIndex > 0
+                      ? {
+                          question: questions[currentIndex - 1],
+                          isCorrectAnswer: engine.questionsTime.find(
+                            (answer) => answer.index === currentIndex - 1,
+                          )?.isCorrectAnswer,
+                        }
+                      : undefined,
+                  ),
                   onClose: () => setIsReporting(false),
                 });
               }}

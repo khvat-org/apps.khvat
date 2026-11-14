@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 import { useReport } from "@nihongo/core/features/report/use-report";
 import { useHaptic } from "@nihongo/core/shared/contexts/haptic/haptic-context";
@@ -40,6 +40,27 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
     useEducationLessonContext();
 
   const navigation = useNavigation();
+
+  const screenHistory = useRef<{ current?: string; previous?: string }>({});
+
+  useEffect(() => {
+    const id = currentScreen?.id;
+    if (!id || id === screenHistory.current.current) return;
+
+    screenHistory.current = { previous: screenHistory.current.current, current: id };
+  }, [currentScreen?.id]);
+
+  const getReportContext = () => {
+    const previous = screenHistory.current.previous;
+
+    return [
+      `lesson:${lesson.lesson_key}`,
+      `screen:${currentScreen?.id}`,
+      previous ? `prev_screen:${previous}` : "",
+    ]
+      .filter(Boolean)
+      .join("/");
+  };
 
   useEffect(() => {
     navigation.setOptions({
@@ -122,7 +143,7 @@ const Lesson: React.FC<LessonProps> = ({ lesson }) => {
             onReport={() =>
               openReport({
                 tags: REPORT_TAGS,
-                context: `lesson:${lesson.lesson_key}/screen:${currentScreen?.id}`,
+                context: getReportContext(),
               })
             }
             current={screen}
